@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\ProfilController;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,5 +24,9 @@ Route::get('/', function () {
 Auth::routes();
 
 // Landing Page After Login
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-Route::get('/profil', [App\Http\Controllers\HomeController::class, 'profil'])->name('profil');
+Route::get('/home', [HomeController::class, 'index'])->name('home');
+
+// Profile's route
+Route::get('/profil', [ProfilController::class, 'index'])->name('profile');
+Route::get('/profil/edit', [ProfilController::class, 'edit'])->name('profile.edit');
+Route::patch('/profil/edit/update', [ProfilController::class, 'update'])->name('profile.update');
