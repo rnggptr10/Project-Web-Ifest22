@@ -8,6 +8,11 @@ use App\Models\User;
 
 class ProfilController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
     public function index()
     {
         $email = Auth::user()->email;
