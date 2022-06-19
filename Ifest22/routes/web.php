@@ -46,3 +46,21 @@ Route::get('/startup-talk', [StartupController::class, 'index'])->name('startup'
 Route::get('/intention', [IntentionController::class, 'index'])->name('intention');
 Route::get('/capture-the-flag', [CtfController::class, 'index'])->name('ctf');
 ROute::get('/data-analysis-competition', [DataAnalysisController::class, 'index'])->name('da');
+
+// Route for Registration's Competitions
+Route::middleware(['auth'])->group(function () {
+    // CTF
+    Route::get('/capture-the-flag/registration', [CtfController::class, 'registration'])->name('ctf.registration.view');
+    Route::patch('/capture-the-flag/registration', [CtfController::class, 'saveRegister'])->name('ctf.registration');
+
+    // DAC
+    Route::get('/data-analysis-competition/registration', [DataAnalysisController::class, 'registration'])->name('dac.registration.view');
+    Route::patch('/data-analysis-competition/registration', [DataAnalysisController::class, 'saveRegister'])->name('dac.registration');
+
+    // Intention
+    Route::get('/international-conference/registration', [IntentionController::class, 'registration'])->name('intention.registration.view');
+    Route::patch('/international-conference/registration', [IntentionController::class, 'saveRegister'])->name('intention.registration');
+});
+
+
+// Route for DAC's Dashboard

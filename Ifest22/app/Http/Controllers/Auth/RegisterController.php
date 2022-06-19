@@ -2,12 +2,13 @@
 
 namespace App\Http\Controllers\Auth;
 
-use App\Http\Controllers\Controller;
-use App\Providers\RouteServiceProvider;
 use App\Models\User;
-use Illuminate\Foundation\Auth\RegistersUsers;
+use App\Models\Ticket;
+use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Hash;
+use App\Providers\RouteServiceProvider;
 use Illuminate\Support\Facades\Validator;
+use Illuminate\Foundation\Auth\RegistersUsers;
 
 class RegisterController extends Controller
 {
@@ -64,6 +65,17 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
+        Ticket::create([
+            'email' => $data['email'],
+            'intention_status' => '0',
+            'da_status' => '0',
+            'ctf_status' => '0',
+            'techno_seminar_status' => '0',
+            'techno_ws_status' => '0',
+            'startup_status' => '0',
+            'incon_status' => '0',
+        ]);
+
         return User::create([
             'name' => $data['name'],
             'email' => $data['email'],
