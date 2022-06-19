@@ -34,8 +34,8 @@ class IntentionController extends Controller
         //     return redirect()->route('profile');
         // }
 
-        // return view('registration.regis-intention');
-        return redirect()->route('intention');
+        return view('registration.regis-intention');
+        // return redirect()->route('intention');
     }
 
     public function saveRegister(Request $request)
@@ -45,17 +45,17 @@ class IntentionController extends Controller
             'team_leader' => 'required',
             'team_member_1' => 'required',
             'team_member_2' => 'required',
-            'id_card' => 'required|file|mimes:zip|max:2000',
-            'payment_confirmation' => 'required|image|max:1024',
+            // 'id_card' => 'required|file|mimes:zip|max:2000',
+            // 'payment_confirmation' => 'required|image|max:1024',
         ]);
 
-        $id_card = $request->file('id_card');
-        $name_id_card = time() . "_" . $id_card->getClientOriginalName();
-        $id_card->storeAs('public/images/id_card/intention/', $name_id_card);
+        // $id_card = $request->file('id_card');
+        // $name_id_card = time() . "_" . $id_card->getClientOriginalName();
+        // $id_card->storeAs('public/images/id_card/intention/', $name_id_card);
 
-        $payment_confirmation = $request->file('payment_confirmation');
-        $name_payment_confirmation = time() . "_" . $payment_confirmation->getClientOriginalName();
-        $payment_confirmation->storeAs('public/images/payment_confirmation/intention/', $name_payment_confirmation);
+        // $payment_confirmation = $request->file('payment_confirmation');
+        // $name_payment_confirmation = time() . "_" . $payment_confirmation->getClientOriginalName();
+        // $payment_confirmation->storeAs('public/images/payment_confirmation/intention/', $name_payment_confirmation);
 
         Intention_form::create([
             'email' => Auth::user()->email,
@@ -65,10 +65,10 @@ class IntentionController extends Controller
             'team_member_2' => $request->team_member_2,
             'team_member_3' => $request->team_member_3,
             'team_member_4' => $request->team_member_4,
-            'id_card' => $name_id_card,
+            // 'id_card' => $name_id_card,
             'proposal_link' => null,
             'app_link' => null,
-            'proof_payment' => $name_payment_confirmation,
+            // 'proof_payment' => $name_payment_confirmation,
             'finalist' => null
         ]);
 
