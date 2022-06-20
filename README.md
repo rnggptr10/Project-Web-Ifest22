@@ -46,6 +46,7 @@ team_member_1|string|-
 team_member_2|string|-
 
 4. Tabel Ctf_forms
+
 **Nama Atribut**|**Tipe Data**|**Status**
 :-----:|:-----:|:-----:
 email|string|foreign key
