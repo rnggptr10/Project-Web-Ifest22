@@ -15,6 +15,7 @@ Yang Harus Dilakukan di Terminal Setelah Clone :
 
 Table Database Ifest22 :
 1. Tabel Users
+
 **Nama Atribut**|**Tipe Data**|**Status**
 :-----:|:-----:|:-----:
 B0655\_Bintang85Tahun|B0655\_Bintang85Tahun|POPUP
