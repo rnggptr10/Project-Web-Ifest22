@@ -18,4 +18,6 @@ Table Database Ifest22 :
 
 **Nama Atribut**|**Tipe Data**|**Status**
 :-----:|:-----:|:-----:
-B0655\_Bintang85Tahun|B0655\_Bintang85Tahun|POPUP
+name|string|-
+email|string|primary key
+password|string|-
