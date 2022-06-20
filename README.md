@@ -13,6 +13,7 @@ Yang Harus Dilakukan di Terminal Setelah Clone :
  8. Setelah berhasil jalankan perintah php artisan serve
  9. Selamat mengoding
 
+Table Database Ifest22 :
 **Campaign**|**Flight**|**Zone**|**Impressions**|**Clicks**|**CTR %**|**Conversions**|**Conversion Rate**
 :-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:
 B0655\_Bintang85Tahun|B0655\_Bintang85Tahun|POPUP|2|0|0.00%|0|0.00%
