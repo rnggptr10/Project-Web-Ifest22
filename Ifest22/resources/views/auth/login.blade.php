@@ -3,7 +3,7 @@
 
 <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Login {{ config('app.name') }}</title>
+    <title>IFest 2022 - Login</title>
     <meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport' />
     <link rel="icon" href="{{ asset('img/favicon.ico') }}" type="image/x-icon" />
 
@@ -22,7 +22,7 @@
         </div>
         <div class="login-aside w-50 d-flex align-items-center justify-content-center bg-white">
             <div class="container container-login container-transparent animated fadeIn">
-                <p class="text-center text-greeting">Hello!</p>
+                <p class="text-center text-greeting-big">Hello!</p>
                 <p class="text-center text-greeting-desc">Sign into Your Account</p>
 
                 <form action="{{ route('login') }}" method="post" autocomplete="off">
@@ -59,8 +59,8 @@
                             <a href="{{ route('password.request') }}" class="link float-right text-forgot-password">Forgot Password?</a>
                         </div>
                         <div class="form-group form-action-d-flex mb-3">
-                            <button type="submit" class="btn btn-primary ifest-btn-primary col-md-5 float-right mt-3 mt-sm-0 fw-bold">{{ __('Login') }}</button>
-                            <button class="btn btn-outline-primary ifest-btn-outline-primary col-md-5 float-right mt-3 mt-sm-0 fw-bold"><a class="ifest-btn-outline-primary-text" href="{{route('register')}}">Register</a></button>
+                            <button type="submit" class="btn btn-primary ifest-btn-primary-light-bg col-md-5 float-right mt-3 mt-sm-0 fw-bold">{{ __('Login') }}</button>
+                            <button class="btn btn-outline-primary ifest-btn-outline-primary-light-bg col-md-5 float-right mt-3 mt-sm-0 fw-bold"><a class="ifest-btn-outline-primary-light-bg-text" href="{{route('register')}}">Register</a></button>
                         </div>
                     </div>
                 </form>

@@ -2,8 +2,8 @@
 
 /* ------------------- General Styling ------------------- */
 
-/* BUTTON */
-.btn-outline-primary.ifest-btn-outline-primary {
+/* BUTTON LIGHT BG*/
+.btn-outline-primary.ifest-btn-outline-primary-light-bg {
     color: #1c1c1c;
     background-color: transparent;
     background-image: none;
@@ -11,52 +11,52 @@
     border-radius: 10px;
 }
 
-.btn-outline-primary.ifest-btn-outline-primary:hover {
+.btn-outline-primary.ifest-btn-outline-primary-light-bg:hover {
     color: #1c1c1c;
     background-color: #8267b498;
     border-color: #8267B4
 }
 
-.btn-outline-primary.ifest-btn-outline-primary.focus,
-.btn-outline-primary.ifest-btn-outline-primary:focus {
+.btn-outline-primary.ifest-btn-outline-primary-light-bg.focus,
+.btn-outline-primary.ifest-btn-outline-primary-light-bg:focus {
     box-shadow: 0 0 0 .2rem #8267B4;
     color: #1c1c1c;
 }
 
-.btn-outline-primary.ifest-btn-outline-primary.disabled,
-.btn-outline-primary.ifest-btn-outline-primary:disabled {
+.btn-outline-primary.ifest-btn-outline-primary-light-bg.disabled,
+.btn-outline-primary.ifest-btn-outline-primary-light-bg:disabled {
     color: #8267B4;
     background-color: transparent;
     color: #1c1c1c;
 }
 
-.btn-outline-primary.ifest-btn-outline-primary:not(:disabled):not(.disabled).active,
-.btn-outline-primary.ifest-btn-outline-primary:not(:disabled):not(.disabled):active,
-.show>.btn-outline-primary.ifest-btn-outline-primary.dropdown-toggle {
+.btn-outline-primary.ifest-btn-outline-primary-light-bg:not(:disabled):not(.disabled).active,
+.btn-outline-primary.ifest-btn-outline-primary-light-bg:not(:disabled):not(.disabled):active,
+.show>.btn-outline-primary.ifest-btn-outline-primary-light-bg.dropdown-toggle {
     color: #1c1c1c;
     background-color: #8267B4;
     border-color: #8267B4
 }
 
-.btn-outline-primary.ifest-btn-outline-primary:not(:disabled):not(.disabled).active:focus,
-.btn-outline-primary.ifest-btn-outline-primary:not(:disabled):not(.disabled):active:focus,
-.show>.btn-outline-primary.ifest-btn-outline-primary.dropdown-toggle:focus {
+.btn-outline-primary.ifest-btn-outline-primary-light-bg:not(:disabled):not(.disabled).active:focus,
+.btn-outline-primary.ifest-btn-outline-primary-light-bg:not(:disabled):not(.disabled):active:focus,
+.show>.btn-outline-primary.ifest-btn-outline-primary-light-bg.dropdown-toggle:focus {
     box-shadow: 0 0 0 .2rem #8267B4;
     color: #1c1c1c;
 }
 
-.ifest-btn-outline-primary-text {
+.ifest-btn-outline-primary-light-bg-text {
     text-decoration: none;
     color: #1c1c1c;
     font-family: "Poppins-SemiBold";
 }
 
-.ifest-btn-outline-primary-text:hover {
+.ifest-btn-outline-primary-light-bg-text:hover {
     text-decoration: none;
     color: #1c1c1c;
 }
 
-.btn-primary.ifest-btn-primary {
+.btn-primary.ifest-btn-primary-light-bg {
     color: #1c1c1c;
     background-color: #8267B4;
     border-color: #8267B4;
@@ -64,34 +64,127 @@
     font-family: "Poppins-SemiBold";
 }
 
-.btn-primary.ifest-btn-primary:hover {
+.btn-primary.ifest-btn-primary-light-bg:hover {
     color: #1c1c1c;
     background-color: #8267b498;
     border-color: #8267B4
 }
 
-.btn-primary.ifest-btn-primary.focus,
-.btn-primary.ifest-btn-primary:focus {
+.btn-primary.ifest-btn-primary-light-bg.focus,
+.btn-primary.ifest-btn-primary-light-bg:focus {
     box-shadow: 0 0 0 .2rem #8267B4
 }
 
-.btn-primary.ifest-btn-primary.disabled,
-.btn-primary.ifest-btn-primary:disabled {
+.btn-primary.ifest-btn-primary-light-bg.disabled,
+.btn-primary.ifest-btn-primary-light-bg:disabled {
     color: #8267B4;
     background-color: transparent
 }
 
-.btn-primary.ifest-btn-primary:not(:disabled):not(.disabled).active,
-.btn-primary.ifest-btn-primary:not(:disabled):not(.disabled):active,
-.show>.btn-primary.ifest-btn-primary.dropdown-toggle {
+.btn-primary.ifest-btn-primary-light-bg:not(:disabled):not(.disabled).active,
+.btn-primary.ifest-btn-primary-light-bg:not(:disabled):not(.disabled):active,
+.show>.btn-primary.ifest-btn-primary-light-bg.dropdown-toggle {
     color: #fff;
     background-color: #8267B4;
     border-color: #8267B4
 }
 
-.btn-primary.ifest-btn-primary:not(:disabled):not(.disabled).active:focus,
-.btn-primary.ifest-btn-primary:not(:disabled):not(.disabled):active:focus,
-.show>.btn-primary.ifest-btn-primary.dropdown-toggle:focus {
+.btn-primary.ifest-btn-primary-light-bg:not(:disabled):not(.disabled).active:focus,
+.btn-primary.ifest-btn-primary-light-bg:not(:disabled):not(.disabled):active:focus,
+.show>.btn-primary.ifest-btn-primary-light-bg.dropdown-toggle:focus {
+    box-shadow: 0 0 0 .2rem #8267B4
+}
+
+/* BUTTON DARK BG*/
+.btn-outline-primary.ifest-btn-outline-primary-dark-bg {
+    color: white;
+    background-color: transparent;
+    background-image: none;
+    border-color: #8267B4;
+    border-radius: 10px;
+}
+
+.btn-outline-primary.ifest-btn-outline-primary-dark-bg:hover {
+    color: white;
+    background-color: #8267b498;
+    border-color: #8267B4
+}
+
+.btn-outline-primary.ifest-btn-outline-primary-dark-bg.focus,
+.btn-outline-primary.ifest-btn-outline-primary-dark-bg:focus {
+    box-shadow: 0 0 0 0 #8267B4;
+    color: white;
+}
+
+.btn-outline-primary.ifest-btn-outline-primary-dark-bg.disabled,
+.btn-outline-primary.ifest-btn-outline-primary-dark-bg:disabled {
+    color: #8267B4;
+    background-color: transparent;
+    color: white;
+}
+
+.btn-outline-primary.ifest-btn-outline-primary-dark-bg:not(:disabled):not(.disabled).active,
+.btn-outline-primary.ifest-btn-outline-primary-dark-bg:not(:disabled):not(.disabled):active,
+.show>.btn-outline-primary.ifest-btn-outline-primary-dark-bg.dropdown-toggle {
+    color: white;
+    background-color: #8267B4;
+    border-color: #8267B4
+}
+
+.btn-outline-primary.ifest-btn-outline-primary-dark-bg:not(:disabled):not(.disabled).active:focus,
+.btn-outline-primary.ifest-btn-outline-primary-dark-bg:not(:disabled):not(.disabled):active:focus,
+.show>.btn-outline-primary.ifest-btn-outline-primary-dark-bg.dropdown-toggle:focus {
+    box-shadow: 0 0 0 .2rem #8267B4;
+    color: white;
+}
+
+.ifest-btn-primary-dark-bg-text {
+    text-decoration: none;
+    color: white;
+    font-family: "Poppins-SemiBold";
+}
+
+.ifest-btn-primary-dark-bg-text:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.btn-primary.ifest-btn-primary-dark-bg {
+    color: white;
+    background-color: #8267B4;
+    border-color: #8267B4;
+    border-radius: 10px;
+    font-family: "Poppins-SemiBold";
+}
+
+.btn-primary.ifest-btn-primary-dark-bg:hover {
+    color: white;
+    background-color: #8267b498;
+    border-color: #8267B4
+}
+
+.btn-primary.ifest-btn-primary-dark-bg.focus,
+.btn-primary.ifest-btn-primary-dark-bg:focus {
+    box-shadow: 0 0 0 .2rem #8267B4
+}
+
+.btn-primary.ifest-btn-primary-dark-bg.disabled,
+.btn-primary.ifest-btn-primary-dark-bg:disabled {
+    color: #8267B4;
+    background-color: transparent
+}
+
+.btn-primary.ifest-btn-primary-dark-bg:not(:disabled):not(.disabled).active,
+.btn-primary.ifest-btn-primary-dark-bg:not(:disabled):not(.disabled):active,
+.show>.btn-primary.ifest-btn-primary-dark-bg.dropdown-toggle {
+    color: #fff;
+    background-color: #8267B4;
+    border-color: #8267B4
+}
+
+.btn-primary.ifest-btn-primary-dark-bg:not(:disabled):not(.disabled).active:focus,
+.btn-primary.ifest-btn-primary-dark-bg:not(:disabled):not(.disabled):active:focus,
+.show>.btn-primary.ifest-btn-primary-dark-bg.dropdown-toggle:focus {
     box-shadow: 0 0 0 .2rem #8267B4
 }
 

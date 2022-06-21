@@ -1,23 +1,82 @@
-@extends('layouts.app')
-@section('content')
-<p>Halaman Edit Profil</p>
-<form class="user-data mt-4" method="post" action="{{ route('profile.update') }}" enctype="multipart/form-data">
-    @method('patch')
-    @csrf
-    <div class="data-item">
-        <h2>Email</h2>
-        <input type="email" disabled value="{{ $data->email }}">
-    </div>
-    <div class="data-item">
-        <h2>Full Name</h2>
-        <input type="text" value="{{ $data->name }}" name="name">
-        @error('name')
-        <div class="alert alert-danger mt-1 d-flex align-items-center" role="alert">
-            <span class="iconify me-1" data-icon="akar-icons:circle-alert" data-inline="false" style="color: #842029;"></span>
-            {{ $message }}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>IFest 2022 - Login</title>
+    <meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport' />
+    <link rel="icon" href="{{ asset('img/favicon.ico') }}" type="image/x-icon" />
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="{{ asset('atlantis/css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('atlantis/css/atlantis.css') }}">
+    <link rel="stylesheet" href="{{ URL::asset('css/login.css') }}">
+</head>
+
+<body class="login">
+    <div class="wrapper wrapper-login wrapper-login-full p-0" style="background-color: #1c1c1c;">
+        <div class="login-aside w-50 d-flex flex-column align-items-center justify-content-center text-center">
+            <div>
+                <img src="{{ asset('img/logo/logopurple.png') }}" alt="" style="width: 60%; height:auto;">
+            </div>
         </div>
-        @enderror
+        <div class="login-aside w-50 d-flex align-items-center justify-content-center bg-white">
+            <div class="container container-login container-transparent animated fadeIn">
+                <p class="text-center text-greeting-med">Create Account</p>
+                <form class="user-data mt-4" method="post" action="{{ route('profile.update') }}" enctype="multipart/form-data">
+                    @method('patch')
+                    @csrf
+                    <div class="row mb-2 data-item">
+                        <label for="email" class="placeholder text-form">{{ __('Email') }}</label>
+                        <input id="email" type="email" disabled value="{{ $data->email }}" class="form-control ifest-form" name="email">
+                    </div>
+                    <div class="row mb-2 data-item">
+                        <label for="name" class="placeholder text-form">{{ __('Name') }}</label>
+                        <input id="name" type="text" value="{{ $data->name }}" class="form-control ifest-form" name="name">
+                        @error('name')
+                        <div class="alert alert-danger mt-1 d-flex align-items-center" role="alert">
+                            <span class="iconify me-1" data-icon="akar-icons:circle-alert" data-inline="false" style="color: #842029;"></span>
+                            {{ $message }}
+                        </div>
+                        @enderror
+                    </div>
+                    <div class="row mb-2 data-item">
+                        <label for="institute" class="placeholder text-form">{{ __('Institute') }}</label>
+                        <input id="institute" type="text" value="{{ $data->institute }}" class="form-control ifest-form" name="institute" disabled>
+                        @error('institute')
+                        <div class="alert alert-danger mt-1 d-flex align-items-center" role="alert">
+                            <span class="iconify me-1" data-icon="akar-icons:circle-alert" data-inline="false" style="color: #842029;"></span>
+                            {{ $message }}
+                        </div>
+                        @enderror
+                    </div>
+                    <div class="row mb-2 data-item">
+                        <label for="profpic" class="placeholder text-form">{{ __('Profile Picture') }}</label>
+                        <input id="profpic" type="text" value="{{ $data->profpic }}" class="form-control ifest-form" name="profpic" disabled>
+                        @error('profpic')
+                        <div class="alert alert-danger mt-1 d-flex align-items-center" role="alert">
+                            <span class="iconify me-1" data-icon="akar-icons:circle-alert" data-inline="false" style="color: #842029;"></span>
+                            {{ $message }}
+                        </div>
+                        @enderror
+                    </div>
+                    <div class="row mb-2 data-item" style="margin-top:20px">
+                        <button class="form-control ifest-form" name="profpic" href="">{{ __('Change Password?') }}</button>
+                    </div>
+                    
+                    <div class="form-group form-action-d-flex mb-3 justify-content-center" style="margin-top:20px">
+                        <button type="submit" class="btn btn-primary ifest-btn-primary-light-bg col-md-5 float-right mt-3 mt-sm-0 fw-bold">{{ __('Save Changes') }}</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
     </div>
-    <input type="submit" class="mt-5" value="Save Changes"></input>
-</form>
-@endsection
+    <script src="{{ asset('atlantis/js/core/jquery.3.2.1.min.js') }}"></script>
+    <script src="{{ asset('atlantis/js/plugin/jquery-ui-1.12.1.custom/jquery-ui.min.js') }}"></script>
+    <script src="{{ asset('atlantis/js/core/popper.min.js') }}"></script>
+    <script src="{{ asset('atlantis/js/core/bootstrap.min.js') }}"></script>
+    <script src="{{ asset('atlantis/js/atlantis.min.js') }}"></script>
+</body>
+
+</html>

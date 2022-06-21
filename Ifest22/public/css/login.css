@@ -1,23 +1,27 @@
 @import url(font.css);
 @import url(generalStyle.css);
 
-/* ------------------- Page Login ------------------- */
-.text-greeting {
-    font-family: "Poppins-SemiBold";
-    font-size: 48px;
-    line-height: 30px;
-    color: #1c1c1c;
-}
-
+/* ------------------- General ------------------- */
 .text-greeting-desc {
     font-family: "Poppins-Regular";
     font-size: 16px;
-    line-height: 30px;
+    line-height: 20px;
     color: #1c1c1c;
 }
 
 .text-form {
     font-family: "Lato-Regular";
+    font-size: 24px;
+    font-weight: bolder;
+    margin-bottom: 8px;
+}
+
+/* ------------------- Page Login ------------------- */
+.text-greeting-big {
+    font-family: "Poppins-SemiBold";
+    font-size: 48px;
+    line-height: 30px;
+    color: #1c1c1c;
 }
 
 .text-remember-me {
@@ -38,4 +42,12 @@
     color: #1c1c1c;
     text-decoration: none;
     font-weight: bolder;
+}
+
+/* ------------------- Page Register ------------------- */
+.text-greeting-med {
+    font-family: "Poppins-SemiBold";
+    font-size: 24px;
+    line-height: 10px;
+    color: #1c1c1c;
 }
