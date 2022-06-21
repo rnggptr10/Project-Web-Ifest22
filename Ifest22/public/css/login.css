@@ -1,0 +1,41 @@
+@import url(font.css);
+@import url(generalStyle.css);
+
+/* ------------------- Page Login ------------------- */
+.text-greeting {
+    font-family: "Poppins-SemiBold";
+    font-size: 48px;
+    line-height: 30px;
+    color: #1c1c1c;
+}
+
+.text-greeting-desc {
+    font-family: "Poppins-Regular";
+    font-size: 16px;
+    line-height: 30px;
+    color: #1c1c1c;
+}
+
+.text-form {
+    font-family: "Lato-Regular";
+}
+
+.text-remember-me {
+    font-family: "Lato-Regular";
+}
+
+.text-forgot-password {
+    font-family: "Lato-Regular";
+    font-size: 14px;
+    text-align: right;
+    color: #1c1c1c;
+    text-decoration: none;
+}
+
+.text-forgot-password:hover,
+.text-forgot-password:active,
+.text-forgot-password:focus {
+    color: #1c1c1c;
+    text-decoration: none;
+    font-weight: bolder;
+}

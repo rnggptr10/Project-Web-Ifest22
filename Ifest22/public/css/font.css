@@ -1,0 +1,28 @@
+ /* ------------------- Font Family ------------------- */
+
+ /* Poppins */
+ @font-face {
+     font-family: Poppins-Regular;
+     src: url('../font/Poppins/Poppins-Regular.ttf') format('truetype');
+ }
+
+ @font-face {
+     font-family: Poppins-SemiBold;
+     src: url('../font/Poppins/Poppins-SemiBold.ttf') format('truetype');
+ }
+
+ @font-face {
+     font-family: Poppins-Bold;
+     src: url('../font/Poppins/Poppins-Bold.ttf') format('truetype');
+ }
+
+ /* Lato */
+ @font-face {
+     font-family: Lato-Regular;
+     src: url('../font/Lato/Lato-Regular.ttf') format('truetype');
+ }
+
+ @font-face {
+     font-family: Lato-Bold;
+     src: url('../font/Lato/Lato-Bold.ttf') format('truetype');
+ }
