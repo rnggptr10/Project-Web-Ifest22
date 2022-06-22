@@ -3,6 +3,7 @@
 @extends('layouts.app2')
 
 @section('content')
+
 <head>
     <title>IFest 2022</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -11,6 +12,7 @@
     <link rel="stylesheet" href="{{ URL::asset('css/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ URL::asset('css/competitions.css') }}">
 </head>
+
 <body style="background-color: #1c1c1c;">
     <div class="container" style="padding: 0; ">
         <div class="row">
@@ -57,7 +59,7 @@
                         </div>
                     </div>
                     <div class="col-1">
-                    <img class="arrow-switch" src="{{ URL::asset('icon/circle-arrow-right.svg') }}" alt="arrow-right">
+                        <img class="arrow-switch" src="{{ URL::asset('icon/circle-arrow-right.svg') }}" alt="arrow-right">
                     </div>
                 </div>
                 <div class="row" align="center" id="intPrizes" style="padding-top: 30px;padding-bottom: 30px;">

@@ -23,6 +23,7 @@
     @yield('css')
     <link rel="stylesheet" href="{{ asset('atlantis/css/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ asset('css/navbar.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/footer.css') }}">
 </head>
 
 <body>
@@ -58,7 +59,7 @@
                 </nav>
             </div>
             <div class="box-logo">
-                <a href="">
+                <a href="/">
                     <img src="{{ asset('img/logo/logo_nav.png') }}" alt="">
                 </a>
             </div>
@@ -86,9 +87,56 @@
                 @endguest
             </div>
         </header>
-        <main>
+        <main style="padding-top: 100px;">
             @yield('content')
         </main>
+        <footer class="footer_ bd-grid">
+            <div class="wrap">
+                <div class="section-1">
+                    <img class="footer-img-1" src="{{asset('img/logo/logo_footer.png')}}" alt="logo ifest" width="auto" height="120px">
+                    <div class="event-comp">
+                        <div class="fmain-event">
+                            <h3 class="footer-header">Event</h3>
+                            <ul class="footer-ul">
+                                <li class="footer-li"><a href="{{ route('incon') }}">International Conference</a></li>
+                                <li class="footer-li"><a href="{{ route('techno') }}">Technopreneur</a></li>
+                                <li class="footer-li"><a href="{{ route('startup') }}">StartUp Talk</a></li>
+                            </ul>
+                        </div>
+                        <div class="fcomp">
+                            <h3 class="footer-header">Competition</h3>
+                            <ul class="footer-ul">
+                                <li class="footer-li"><a href="{{ route('intention') }}">Intention</a></li>
+                                <li class="footer-li"><a href="{{ route('ctf') }}">Capture The Flag</a></li>
+                                <li class="footer-li"><a href="{{ route('da') }}">Data Analysis Competition</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="section-2">
+                    <div class="forganizer">
+                        <h3 class="footer-header text-center">Organizer</h3>
+                        <div class="dflex padding-center">
+                            <img class="footer-img-2" src="{{asset('img/organizer/himatif.png')}}" alt="logo unpad" width="75px" height="75px">
+                            <img class="footer-img-2" src="{{asset('img/organizer/unpad.png')}}" alt="logo himatif" width="75px" height="75px">
+                        </div>
+                    </div>
+                    <div class="fsocial">
+                        <h3 class="footer-header text-center" style="color: #ffff;">Find Us on Social Media</h3>
+                        <!-- <ul class="footer-ul dflex justify-content-center">
+                            <li class="footer-li lstyle-none socmed"><a href="https://linktr.ee/ifestunpad" target="_blank"><span class="iconify" data-icon="simple-icons:linktree" data-inline="false" data-width="32" data-height="32"></span></a></li>
+                        </ul> -->
+                        <div class="dflex padding-center">
+                            <img class="footer-img-2" src="{{asset('img/organizer/himatif.png')}}" alt="logo unpad" width="50px" height="50px">
+                            <img class="footer-img-2" src="{{asset('img/organizer/unpad.png')}}" alt="logo himatif" width="50px" height="50px">
+                            <img class="footer-img-2" src="{{asset('img/organizer/himatif.png')}}" alt="logo unpad" width="50px" height="50px">
+                            <img class="footer-img-2" src="{{asset('img/organizer/unpad.png')}}" alt="logo himatif" width="50px" height="50px">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h5 class="footer-copy text-center mt-4">&copy 2021 IFest</h5>
+        </footer>
     </div>
 </body>
 

@@ -23,7 +23,7 @@
     <link rel="stylesheet" href="{{ asset('atlantis/css/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ asset('css/navbar.css') }}">
     <link rel="stylesheet" href="{{ asset('css/footer.css') }}">
-
+    @yield('css')
 </head>
 
 <body>
@@ -59,7 +59,7 @@
                 </nav>
             </div>
             <div class="box-logo">
-                <a href="">
+                <a href="/">
                     <img src="{{ asset('img/logo/logo_nav.png') }}" alt="">
                 </a>
             </div>
@@ -67,7 +67,7 @@
                 <button><a href="{{route('login')}}">Login</a></button>
             </div>
         </header>
-        <main style="padding-top: 100px; height:100%;">
+        <main style="padding-top: 100px;">
             @yield('content')
         </main>
         <footer class="footer_ bd-grid">

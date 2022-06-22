@@ -1,6 +1,5 @@
 @import url(font.css);
-
-* {
+*{
     font-family: "Poppins-SemiBold";
 }
 
@@ -34,12 +33,11 @@
 }
 
 .footer_ {
-    position: absolute;
     font-family: "Poppins", sans-serif;
     font-size: var(--normal-font-size);
     border-top: 0.5px solid black;
     width: 100%;
-    background-color: #2D2D2D;
+    background-color:#2D2D2D;
     padding-bottom: 10px;
     padding-top: 25px;
 }
@@ -125,11 +123,9 @@
     .footer-img-1 {
         padding: 0;
     }
-
     .section-2 {
         margin-top: 1.5rem;
     }
-
     .fsocial {
         margin: 0 var(--mb-3) var(--mb-1) var(--mb-3);
     }
@@ -178,8 +174,7 @@
     }
 
     .fcomp,
-    .fmain-event,
-    .fsocial {
+    .fmain-event, .fsocial {
         margin: var(--mb-3) 0;
     }
 
