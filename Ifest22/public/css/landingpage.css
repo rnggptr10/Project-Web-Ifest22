@@ -72,3 +72,42 @@ div.banner span.details {
     display: inline-block;
     border: 2px solid #01142b;
 }
+
+section > h1,
+section > h1 a {
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 80px;
+    color: white;
+    text-decoration: none;
+}
+
+.container-90 {
+    max-width: 90%;
+    width: 1240px;
+    min-height: 190px;
+    margin: 0 auto;
+    margin-top: 24px;
+    background-color: rgba(255, 255, 255, 0.48);
+    border-radius: 10px;
+}
+
+#partners .container-90 {
+    margin-bottom: 60px;
+}
+
+.medpart {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #2D2D2D;
+}
+
+.backdrop {
+    backdrop-filter: blur(4px);
+}
+
+#support .medpart .sponsor {
+    justify-content: center;
+}
