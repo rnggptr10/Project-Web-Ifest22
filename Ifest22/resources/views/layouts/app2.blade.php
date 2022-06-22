@@ -67,7 +67,7 @@
                 <button><a href="{{route('login')}}">Login</a></button>
             </div>
         </header>
-        <main style="padding-top: 100px;">
+        <main style="padding-top: 100px; height:100%;">
             @yield('content')
         </main>
         <footer class="footer_ bd-grid">

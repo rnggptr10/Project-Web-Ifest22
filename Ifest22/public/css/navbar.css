@@ -6,15 +6,15 @@
     padding: 0;
     color: #fff;
 }
-  
-body{
+
+body {
     background-color: #1c1c1c;
 }
-  
+
 /* ------------ */
 /* Style Navbar */
 /* ------------ */
-header{
+header {
     position: fixed;
     width: 100%;
     display: flex;
@@ -22,41 +22,44 @@ header{
     align-items: center;
     padding: 10px 2%;
     background-color: #1c1c1c;
+    z-index: 999;
 }
 
-.box-login, .box-menu{
+.box-login,
+.box-menu {
     width: 30%;
 }
-.box-login{
+
+.box-login {
     display: flex;
     justify-content: flex-end;
 }
 
-.box-logo{
+.box-logo {
     display: flex;
     width: max-content;
     justify-content: space-around;
 }
 
-.menu{
+.menu {
     display: flex;
-    justify-content:space-around;
+    justify-content: space-around;
 }
 
-.menu li{
+.menu li {
     display: inline-block;
 }
 
-.menu li a{
+.menu li a {
     color: #fff;
     transition: all 0.3s ease 0s;
 }
 
-.menu li a:hover{
+.menu li a:hover {
     color: #8267B4;
 }
 
-button{
+button {
     padding: 5px 25px;
     background-color: #8267B4;
     border-radius: 10px;
@@ -64,11 +67,13 @@ button{
     transition: all 0.3s ease 0s;
 }
 
-.box-login a{
+.box-login a {
     color: #1c1c1c;
 }
 
-li,a, button{
+li,
+a,
+button {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: 500;
     font-size: 16px;
@@ -76,22 +81,23 @@ li,a, button{
     text-decoration: none;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
 /* Responsif */
 @media screen and (max-width: 1031px) {
-    .menu{
+    .menu {
         display: block;
     }
 
-    .box-menu,.box-login{
+    .box-menu,
+    .box-login {
         width: 20%;
     }
 }
 
-main{
+main {
     display: block;
     padding-top: 200px;
     color: aqua;

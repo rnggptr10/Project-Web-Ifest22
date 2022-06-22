@@ -7,6 +7,11 @@
  }
 
  @font-face {
+     font-family: Poppins-Medium;
+     src: url('../font/Poppins/Poppins-Medium.ttf') format('truetype');
+ }
+
+ @font-face {
      font-family: Poppins-SemiBold;
      src: url('../font/Poppins/Poppins-SemiBold.ttf') format('truetype');
  }

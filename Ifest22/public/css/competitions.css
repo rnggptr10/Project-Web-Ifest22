@@ -1,0 +1,31 @@
+@import url(font.css);
+@import url(generalStyle.css);
+
+/* ------------------- General ------------------- */
+.text-title {
+    font-family: "Poppins-SemiBold";
+    font-size: 40px;
+    line-height: 60px;
+    color: #ffffff;
+}
+
+.text-theme {
+    font-family: "Poppins-Medium";
+    font-size: 32px;
+    line-height: 48px;
+    color: #ffffff;
+}
+
+.text-desc {
+    font-family: "Poppins-Regular";
+    font-size: 16px;
+    line-height: 24px;
+    color: #ffffff;
+}
+
+.text-sub-title {
+    font-family: "Lato-Bold";
+    font-size: 40px;
+    line-height: 48px;
+    color: #ffffff;
+}

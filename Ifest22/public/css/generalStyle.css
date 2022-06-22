@@ -192,3 +192,20 @@
 .form-control.ifest-form {
     border-color: #c4c4c4;
 }
+
+/* ARROW */
+.arrow-switch {
+    width: 30px;
+    height: 30px;
+}
+
+/* LOGO */
+.logo-linkedin {
+    width: 40px;
+    height: 40px;
+}
+
+.logo-whatsapp {
+    width: 24px;
+    height: 24px;
+}
