@@ -2,9 +2,13 @@
 
 namespace App\Http\Controllers;
 
+
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use App\Models\User;
+use App\Models\Incon;
+use App\Models\Techno_ws_form;
+use App\Models\Ticket;
 
 class ProfilController extends Controller
 {
@@ -17,7 +21,24 @@ class ProfilController extends Controller
     {
         $email = Auth::user()->email;
         $data = User::where('email', $email)->first();
-        // dd('f');
+        $techno_ws = Techno_ws_form::where('email', $email)->first();
+        $status = Ticket::where('email', $email)->first();
+        $no_ticket_incon = null;
+
+        // if (Incon::where('email', $email)->first()) {
+        //     // $no_ticket_incon = 
+        // }
+        $all = [
+            'intention' => $status->intention_status,
+            'da' => $status->da_status,
+            'ctf' => $status->ctf_status,
+            'techno_seminar' => $status->techno_seminar_status,
+            'techno_ws' => $status->techno_ws_status,
+            'startup' => $status->startup_status,
+            'incon' => $status->incon_status,
+        ];
+
+
         return view('profils.profil', compact('data'));
     }
 

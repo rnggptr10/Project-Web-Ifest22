@@ -1,4 +1,8 @@
 @extends('layouts.app2')
+@section('content')
+<p>Rangga Putra</p>
+<p>Davio</p>
+@endsection
 <!-- <a href="/">Event
     <ul>
         <li><a href="{{ route('startup') }}">StartupTalk</a></li>

@@ -1,0 +1,99 @@
+/* ---------- */
+/* Style Umum */
+/* ---------- */
+* {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+  
+body{
+    background-color: #1c1c1c;
+}
+  
+/* ------------ */
+/* Style Navbar */
+/* ------------ */
+header{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 2%;
+    background-color: #1c1c1c;
+}
+
+.box-login, .box-menu{
+    width: 30%;
+}
+.box-login{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.box-logo{
+    display: flex;
+    width: max-content;
+    justify-content: space-around;
+}
+
+.menu{
+    display: flex;
+    justify-content:space-around;
+}
+
+.menu li{
+    display: inline-block;
+}
+
+.menu li a{
+    color: #fff;
+    transition: all 0.3s ease 0s;
+}
+
+.menu li a:hover{
+    color: #8267B4;
+}
+
+button{
+    padding: 5px 25px;
+    background-color: #8267B4;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.box-login a{
+    color: #1c1c1c;
+}
+
+li,a, button{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    /* color: #fff; */
+    text-decoration: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* Responsif */
+@media screen and (max-width: 1031px) {
+    .menu{
+        display: block;
+    }
+
+    .box-menu,.box-login{
+        width: 20%;
+    }
+}
+
+main{
+    display: block;
+    padding-top: 200px;
+    color: aqua;
+    height: 1000px;
+}

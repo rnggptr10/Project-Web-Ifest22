@@ -1,0 +1,193 @@
+@import url(font.css);
+*{
+    font-family: "Poppins-SemiBold";
+}
+
+:root {
+    --body-font: "Roboto", sans-serif;
+    --big-font-size: 2rem;
+    --h2-font-size: 1.25rem;
+    --normal-font-size: 0.938rem;
+}
+
+:root {
+    --first-colour: #468faf;
+    --second-color: #01142b;
+    --fourt-color: #ffff;
+}
+
+:root {
+    --mb-1: 0.5rem;
+    --mb-2: 1rem;
+    --mb-3: 1.5rem;
+    --mb-4: 2rem;
+    --mb-5: 2.5rem;
+    --mb-6: 3rem;
+}
+
+.wrap {
+    margin: 0 auto;
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+}
+
+.footer_ {
+    font-family: "Poppins", sans-serif;
+    font-size: var(--normal-font-size);
+    border-top: 0.5px solid black;
+    width: 100%;
+    background-color:#2D2D2D;
+    padding-bottom: 10px;
+    padding-top: 25px;
+}
+
+.footer-img-1 {
+    padding-top: 1.6rem;
+    max-width: 120px;
+    margin-right: var(--mb-6);
+}
+
+.footer-img-2 {
+    padding: 0.3rem;
+    max-width: 75px;
+    margin-top: 0.7rem;
+}
+
+.fcomp,
+.forganizer,
+.fmain-event {
+    margin: 0 var(--mb-6);
+}
+
+.fsocial {
+    display: grid;
+    justify-content: center;
+    margin: 0 0 0 var(--mb-6);
+}
+
+.forganizer {
+    justify-content: center;
+}
+
+.footer-ul {
+    margin: 0;
+    padding: 0 1rem;
+}
+
+.footer-li {
+    padding-top: 0.5rem;
+}
+
+.footer-li a {
+    text-decoration: none;
+    color: #ffff;
+}
+
+.footer-header {
+    font-size: 1.2rem;
+    margin-bottom: 0;
+    font-weight: 600;
+}
+
+.socmed {
+    padding: 0 1rem;
+    margin-top: -2.5rem;
+}
+
+.fab {
+    font-size: var(--big-font-size);
+}
+
+.section-1 {
+    display: flex;
+    margin-left: auto;
+}
+
+.section-2 {
+    display: flex;
+    margin-right: auto;
+}
+
+.event-comp {
+    display: flex;
+}
+
+.footer-copy {
+    color: #363636;
+    font-size: 1.1em;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 1180px) {
+    .footer-img-1 {
+        padding: 0;
+    }
+    .section-2 {
+        margin-top: 1.5rem;
+    }
+    .fsocial {
+        margin: 0 var(--mb-3) var(--mb-1) var(--mb-3);
+    }
+
+    .socmed {
+        margin: var(--mb-1) var(--mb-1);
+    }
+
+    .wrap {
+        display: block;
+    }
+
+    .section-1 {
+        justify-content: center;
+    }
+
+    .section-2 {
+        justify-content: center;
+        display: flex;
+        width: 100%;
+    }
+
+    .forganizer {
+        margin: 0 var(--mb-3);
+    }
+}
+
+@media screen and (max-width: 788px) {
+    .section-1 {
+        display: grid;
+        justify-content: center;
+    }
+
+    .footer-img-1 {
+        margin: 0 auto;
+    }
+
+    .section-2 {
+        margin-top: var(--mb-3);
+    }
+}
+
+@media screen and (max-width: 621px) {
+    .footer_ {
+        width: 100%;
+    }
+
+    .fcomp,
+    .fmain-event, .fsocial {
+        margin: var(--mb-3) 0;
+    }
+
+    .event-comp {
+        display: block;
+    }
+
+    .section-2 {
+        display: block;
+        margin-top: var(--mb-1);
+    }
+
+    .footer-header {
+        text-align: center;
+    }
+}
