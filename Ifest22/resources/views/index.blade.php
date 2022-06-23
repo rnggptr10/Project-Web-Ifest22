@@ -32,6 +32,20 @@
             <a href="{{ route('incon') }}"><span class="details" id="details">See Details</span></a>
         </div>
     </div>
+
+        <!-- Support -->
+    <section id="support">
+      <h1>Sponsored By</h1>
+      <div class="container-90 backdrop medpart">
+      </div>
+    </section>
+
+    <!-- Partners -->
+    <section id="partners">
+      <h1>Media Partners</h1>
+      <div class="container-90 backdrop medpart">     
+      </div>
+    </section>
 </div>
 
 <div>
