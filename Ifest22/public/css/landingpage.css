@@ -1,3 +1,6 @@
+/* 
+    Countdown
+*/
 div#info {
     flex-direction: column;
     /* position: absolute; */
@@ -24,7 +27,8 @@ div#info i {
 div#info div.banner {
     width: 80%;
     max-width: 1400px;
-    background-color: rgba(255, 255, 255, 0.71);
+    background-color: #291647;
+    border-radius: 10px;
     padding: 1rem 1.7rem;
     justify-content: space-between;
 }
@@ -57,12 +61,12 @@ div.banner h3 {
 
 div.banner span.register {
     padding: 10px 30px;
-    background-color: #01142b;
+    background-color: #8267B4;
     color: white;
     border-radius: 10px;
     display: inline-block;
     margin-bottom: 10px;
-    border: 2px solid #01142b;
+    /* border: 2px solid #01142b; */
 }
 
 div.banner span.details {
@@ -73,41 +77,82 @@ div.banner span.details {
     border: 2px solid #01142b;
 }
 
-section > h1,
-section > h1 a {
-    font-size: 2rem;
-    text-align: center;
-    margin-top: 80px;
-    color: white;
-    text-decoration: none;
-}
-
-.container-90 {
-    max-width: 90%;
-    width: 1240px;
-    min-height: 190px;
+/* 
+    Tabline
+*/
+.tab {
     margin: 0 auto;
-    margin-top: 24px;
-    background-color: rgba(255, 255, 255, 0.48);
-    border-radius: 10px;
+    box-align: center;
+    background-color: #A9D9F5;
+    height: 300px;
 }
-
-#partners .container-90 {
-    margin-bottom: 60px;
-}
-
-.medpart {
-    padding: 24px;
+.isian-tab button{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-color: #2D2D2D;
+    justify-content: space-between;
 }
 
-.backdrop {
-    backdrop-filter: blur(4px);
+.tablink {
+    background-color: #555;
+    color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 14px;
+    width: 18%;
 }
 
-#support .medpart .sponsor {
-    justify-content: center;
+.tablink:hover {
+    background-color: #A9D9F5;
 }
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+    color: white;
+    display: none;
+    padding: 100px 20px;
+    height: 100%;
+}
+
+.memek{
+display: block;
+}
+
+.isian-tab{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    padding: 20px;
+    border-radius: 10px 10px 0px 0px;
+    /* background: #291647; */
+    background-color: #c4c4c4;
+    color: white;
+    margin: 100px auto 0; 
+    /* code ini akan membuat div berada di tengah atas */
+}
+
+.pasklik{
+    width: 80%;
+    height: 300px;
+    padding: 20px;
+    /* background: #291647; */
+    background-color: #c4c4c4;
+    color: white;
+    margin: 0px auto; 
+}
+
+.jumbotron-tea{
+    width: 80%;
+    height: 250px;
+    padding: 20px;
+    /* background: #291647; */
+    background-color: #291647;
+    color: white;
+    margin: 0px auto 50px auto; 
+    border-radius: 0 0 10px 10px;
+}
+
+#Home {background-color: red;}
+#News {background-color: green;}
+#Contact {background-color: blue;}
+#About {background-color: orange;}
