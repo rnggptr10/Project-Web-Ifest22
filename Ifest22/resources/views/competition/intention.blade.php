@@ -113,24 +113,24 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 @section('competition_faq')
 <div class="row" style="padding-top: 30px;">
     <p style="color:white;">ini FAQ</p>
-    <!-- <div class="card">
-        <details style="color:#000000;">
-            <summary>Pertanyaan 1</summary>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting
+    <div class="card text-left">
+        <details>
+            <summary style="color:black;">Pertanyaan 1</summary>
+            <p style="color:black;">Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry.
                 Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
                 unknown</p>
         </details>
     </div>
-    <div class="card">
-        <details style="color:#000000;">
-            <summary>Pertanyaan 1</summary>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting
+    <div class="card text-left">
+        <details>
+            <summary style="color:black;">Pertanyaan 1</summary>
+            <p style="color:black;">Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry.
                 Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
                 unknown</p>
         </details>
-    </div> -->
+    </div>
 </div>
 @endsection
 

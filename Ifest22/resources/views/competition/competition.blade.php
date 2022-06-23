@@ -2,7 +2,8 @@
 <html lang="en">
 
 <title>IFest 2022 - @yield('competition_webtitle')</title>
-    @yield('competition_head')
+
+@yield('competition_head')
 
 @extends('layouts.app2')
 

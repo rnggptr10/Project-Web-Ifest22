@@ -1,0 +1,38 @@
+@import url(font.css);
+@import url(generalStyle.css);
+
+/* ------------------- General ------------------- */
+.regist-text-title {
+    font-family: "Poppins-SemiBold";
+    font-size: 40px;
+    line-height: 60px;
+    color: #ffffff;
+}
+
+.regist-text-desc {
+    font-family: "Poppins-Regular";
+    font-size: 28px;
+    line-height: 42px;
+    color: #ffffff;
+}
+
+.regist-form-text {
+    font-family: "Lato-Bold";
+    font-size: 18px;
+    line-height: 21.6px;
+    text-align: left;
+}
+
+/* ------------------- Form ------------------- */
+.form-control.ifest-regist-form {
+    border-color: #8267B4;
+    background-color: #1c1c1c;
+}
+
+.form-control.ifest-regist-form:hover,
+.form-control.ifest-regist-form:active,
+.form-control.ifest-regist-form:focus {
+    border-color: #8267B4;
+    background-color: #1c1c1c;
+    box-shadow: none;
+}
