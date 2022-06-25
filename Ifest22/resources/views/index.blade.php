@@ -9,7 +9,7 @@
         <div class="col-sm-8" style="border: 1px #fff solid;">
             <p style="font-size: 100px; width: max-content; color: #8E84D1  ;"><b>IFEST 2022</b></p>
             <!-- <h1>IFEST 2022</h1> -->
-            <img src="img/logo_landing.png" alt="logo" width="60%">
+            <img class="logo-landing" src="{{asset('img/logo/logo_landing.png')}}" alt="logo" width="60%">
         </div>
         <div class="col-sm-4" style="border: 1px #fff solid;">col-sm-4</div>
     </div>

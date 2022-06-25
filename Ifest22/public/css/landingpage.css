@@ -185,3 +185,14 @@ display: block;
 }
 
 /* speaker  */
+
+
+/* Logo Landing */
+
+.logo-landing{
+    transition: width 3s;
+}
+
+.logo-landing:hover{
+    width: 65%;
+}
