@@ -92,7 +92,7 @@ div.banner span.details {
 }
 
 .tablink {
-    background-color: #555;
+    background-color: #c0bebe;
     color: white;
     border: none;
     outline: none;
@@ -103,7 +103,7 @@ div.banner span.details {
 }
 
 .tablink:hover {
-    background-color: #A9D9F5;
+    background-color: #291647;
 }
 
 /* Style the tab content (and add height:100% for full page content) */
@@ -141,9 +141,8 @@ display: block;
     margin: 0px auto; 
 }
 
-.jumbotron-tea{
+.box-speaker{
     width: 80%;
-    height: 250px;
     padding: 20px;
     /* background: #291647; */
     background-color: #291647;
@@ -152,7 +151,37 @@ display: block;
     border-radius: 0 0 10px 10px;
 }
 
-#Home {background-color: red;}
+.speaker{
+    display: flex;
+    align-items: flex-start;
+    margin: 50px 20%;
+}
+
+.speaker img{
+    width: 180px;
+    height: 200px;  
+}
+
+
+/* #Home {background-color: red;}
 #News {background-color: green;}
 #Contact {background-color: blue;}
-#About {background-color: orange;}
+#About {background-color: orange;} */
+
+/* Medpart - Sponsored */
+.medpart-box, .sponsored-box{
+    width: 80%;
+    height: 200px;
+    padding: 20px;
+    background: #2d2d2d;
+    color: white;
+    margin: 0px auto 100px; 
+    /* code ini akan membuat div berada di tengah atas */
+}
+
+.title-box{
+    width: max-content;
+    margin: 100px auto 30px;
+}
+
+/* speaker  */
