@@ -12,7 +12,7 @@
     <div class="container" style="padding: 0; ">
         <div class="row">
             <div class="col" style="padding: 20px 0 20px 0;">
-                <div class="row" align="center" id="intDescription" style="padding-bottom: 30px;">
+                <div class="row" align="center" id="competitionDescription" style="padding-bottom: 30px;">
                     <div style="padding-bottom: 10px;">
                         <h1 class="text-title">@yield('competition_title')</h1>
                     </div>
