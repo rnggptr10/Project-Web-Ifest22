@@ -1,4 +1,4 @@
-@extends('layouts.app2')
+@extends('layouts.app')
 @section('css')
 <link rel="stylesheet" href="{{ asset('css/landingpage.css') }}">
 @endsection

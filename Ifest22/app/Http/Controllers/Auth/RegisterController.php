@@ -63,8 +63,16 @@ class RegisterController extends Controller
      * @param  array  $data
      * @return \App\Models\User
      */
+
     protected function create(array $data)
     {
+        // Alamat penyimpanan sementara
+        if ($data['profpic'] != null)
+            $data['profpic']->store('profpic-user');
+        // return $data['profpic']->store('profpic-user');
+
+        // untuk testing 
+        // ddd($data);
         Ticket::create([
             'email' => $data['email'],
             'intention_status' => '0',
@@ -79,7 +87,9 @@ class RegisterController extends Controller
         return User::create([
             'name' => $data['name'],
             'email' => $data['email'],
+            'institute' => $data['institute'],
             'password' => Hash::make($data['password']),
+            'image' => $data['profpic']->store('profpic-user'),
         ]);
     }
 }

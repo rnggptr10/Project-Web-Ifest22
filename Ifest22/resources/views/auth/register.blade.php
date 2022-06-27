@@ -24,7 +24,7 @@
             <div class="container container-login container-transparent animated fadeIn">
                 <p class="text-center text-greeting-med">Create Account</p>
                 <p class="text-center text-greeting-desc">Enter your personal details and start journey with us </p>
-                <form method="POST" action="{{ route('register') }}">
+                <form method="POST" action="{{ route('register') }}" enctype="multipart/form-data">
                     @csrf
 
                     <div class="row mb-2">
@@ -64,7 +64,7 @@
 
                     <div class="row mb-2">
                         <label for="institute" class="placeholder text-form">{{ __('Institute') }}</label>
-                        <input id="institute" type="text" class="form-control @error('institute') is-invalid @enderror ifest-form" name="institute" value="{{ old('institute') }}" required autocomplete="institute" autofocus disabled>
+                        <input id="institute" type="text" class="form-control @error('institute') is-invalid @enderror ifest-form" name="institute" value="{{ old('institute') }}" required autocomplete="institute" autofocus>
                         @error('institute')
                         <span class="invalid-feedback" role="alert">
                             <strong>{{ $message }}</strong>
@@ -74,7 +74,7 @@
 
                     <div class="row mb-2">
                         <label for="profpic" class="placeholder text-form">{{ __('Profile Picture') }}</label>
-                        <input id="profpic" type="text" class="form-control @error('profpic') is-invalid @enderror ifest-form" name="profpic" value="{{ old('profpic') }}" required autocomplete="profpic" autofocus disabled>
+                        <input id="profpic" type="file" class="form-control @error('profpic') is-invalid @enderror ifest-form" name="profpic" value="{{ old('profpic') }}" required autocomplete="profpic" autofocus>
                         @error('profpic')
                         <span class="invalid-feedback" role="alert">
                             <strong>{{ $message }}</strong>
