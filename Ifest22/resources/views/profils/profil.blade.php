@@ -2,6 +2,10 @@
 @section('content')
 <div>
     <p>Halaman Profile</p>
+    @if($data['image'])
+    <img src="{{asset('storage/' . $data['image'])}}" alt="">
+    @else
+    @endif
     <input type="email" disabled value="{{ $data->email }}"><br>
     <input type="text" disabled value="{{ $data->name }}" name="name"><br>
     <a href="{{ route('profile.edit') }}">Edit</a>

@@ -5,9 +5,10 @@
 
 @yield('competition_head')
 
-@extends('layouts.app2')
+@extends('layouts.app')
 
 @section('content')
+
 <body style="background-color: #1c1c1c;">
     <div class="container" style="padding: 0; ">
         <div class="row">
@@ -56,7 +57,7 @@
                 <h1 class="text-sub-title">Frequently Asked Question (FAQ)</h1>
                 @yield('competition_faq')
             </div>
-            
+
             <div class="row justify-content-center align-items-center" align="center" id="competitionCP" style="padding-top: 30px;padding-bottom: 30px;">
                 <h1 class="text-sub-title">Contact Person</h1>
                 <div class="col-2" style="padding-top: 30px;">
