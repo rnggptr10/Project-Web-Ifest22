@@ -88,9 +88,36 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 @endsection
 
 @section('competition_timeline')
-<div class="row" style="padding-top: 30px;">
-    <p style="color:white;">timeline bulet2 lah pokoknya</p>
-</div>
+    <section class="ps-timeline-sec">
+        <div class="container">
+            <ol class="ps-timeline">
+                <li>
+                    <div class="ps-bot">
+                        <p>Timeline 1</p>
+                    </div>
+                    <span class="ps-sp"></span>
+                </li>
+                <li>
+                    <div class="ps-bot">
+                        <p>Timeline 2</p>
+                    </div>
+                    <span class="ps-sp"></span>
+                </li>
+                <li>
+                    <div class="ps-bot">
+                        <p>Timeline 3</p>
+                    </div>
+                    <span class="ps-sp"></span>
+                </li>
+                <li>
+                    <div class="ps-bot">
+                        <p>Timeline 4</p>
+                    </div>
+                    <span class="ps-sp"></span>
+                </li>
+            </ol>
+        </div>
+    </section>
 @endsection
 
 @section('competition_button')
