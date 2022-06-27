@@ -20,9 +20,28 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 @endsection -->
 
 @section('event_detail')
+<!-- INI STARTUP PENGENNYA GERAK KYK COMPFEST -->
+<div class="row align-items-center" align="center" id="sutStartup" style="padding-top: 30px;padding-bottom: 30px;">
+    <h1 class="text-sub-title">Our Startup</h1>
+    <div class="row justify-content-center" style="padding-top: 30px;">
+        <div class="col">
+            <img class="sut-image" src="https://cf.shopee.co.id/file/e0d319d464c87407718586d008a144b7" alt="Startup">
+        </div>
+        <div class="col">
+            <img class="sut-image" src="https://cf.shopee.co.id/file/e0d319d464c87407718586d008a144b7" alt="Startup">
+        </div>
+        <div class="col">
+            <img class="sut-image" src="https://cf.shopee.co.id/file/e0d319d464c87407718586d008a144b7" alt="Startup">
+        </div>
+        <div class="col">
+            <img class="sut-image" src="https://cf.shopee.co.id/file/e0d319d464c87407718586d008a144b7" alt="Startup">
+        </div>
+    </div>
+</div>
+
 <div class="row align-items-center" align="center" id="sutSpeakers" style="padding-top: 30px;padding-bottom: 30px;">
     <h1 class="text-event-sub-title">Startup Talk Day 1</h1>
-    <h2 class="text-event-sub-theme">Tema Day 1</h2>
+    <h2 class="text-event-sub-theme">"Tema Day 1"</h2>
     <div class="row justify-content-center" style="padding-top: 30px;">
         <div class="col-4">
             <div class="card" style="border: 0; width:max-content">
@@ -62,7 +81,7 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 </div>
 <div class="row align-items-center" align="center" id="sutSpeakers" style="padding-top: 30px;padding-bottom: 30px;">
     <h1 class="text-event-sub-title">Startup Talk Day 2</h1>
-    <h2 class="text-event-sub-theme">Tema Day 2</h2>
+    <h2 class="text-event-sub-theme">"Tema Day 2"</h2>
     <div class="row justify-content-center" style="padding-top: 30px;">
         <div class="col-4">
             <div class="card" style="border: 0; width:max-content">
@@ -102,15 +121,15 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 </div>
 
 <!-- INI NANTI BISA PAKE LOOPING AJA -->
-<div class="row align-items-center justify-content-between" align="center" id="sutCards" style="padding-top: 30px;padding-bottom: 30px;">
+<div class="row align-items-center justify-content-between" align="left" id="sutCards" style="padding-top: 30px;padding-bottom: 30px;">
     <div class="col-6">
         <div class="card" style="border: 0; width:502px" id="cardTimeline">
             <div class="row align-items-center justify-content-start" style="padding:15px;">
                 <div class="col-2">
                     <img class="events-card-linkedin" src="{{ URL::asset('icon/linkedin.svg') }}" alt="linkedin">
                 </div>
-                <div class="col-6" style="line-height: 5px;">
-                    <p style="color:black;">20 - 21 Agustus 2022</p>
+                <div class="col-6">
+                    <h5 style="color:black; ">20 - 21 Agustus 2022</h5>
                 </div>
             </div>
         </div>
@@ -122,8 +141,7 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
                     <img class="events-card-linkedin" src="{{ URL::asset('icon/linkedin.svg') }}" alt="linkedin">
                 </div>
                 <div class="col-5" style="line-height: 5px;">
-                    <h5 style="color:black">Wildan Wortel</h5>
-                    <p style="color:black">Pejabat Negara</p>
+                    <h5 style="color:black;">Free</h5>
                 </div>
                 <div class="col-2" style="padding-left:45px">
                     <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 147px;height: 48px;">
@@ -140,7 +158,7 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
         </div>
     </div>
 </div>
-<div class="row align-items-center justify-content-center" align="center" id="sutCards" style="padding-top: 30px;padding-bottom: 30px;">
+<div class="row align-items-center justify-content-center" align="left" id="sutCards" style="padding-top: 30px;padding-bottom: 30px;">
     <div class="col-6">
         <div class="card" style="border: 0; width:502px" id="cardPlatform">
             <div class="row align-items-center" style="padding:15px">
@@ -148,8 +166,7 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
                     <img class="events-card-linkedin" src="{{ URL::asset('icon/linkedin.svg') }}" alt="linkedin">
                 </div>
                 <div class="col-5" style="line-height: 5px;">
-                    <h5 style="color:black">Wildan Wortel</h5>
-                    <p style="color:black">Pejabat Negara</p>
+                    <h5 style="color:black; ">Zoom Meeting</h5>
                 </div>
             </div>
         </div>

@@ -12,6 +12,12 @@
 
 @section('event_title', 'Seminar Nasional')
 
+@section('event_theme')
+<div style="padding-top: 10px;padding-bottom: 10px;">
+    <h2 class="text-theme">"Tema Semnas"</h2>
+</div>
+@endsection
+
 @section('event_desc')
 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
 @endsection
@@ -58,7 +64,7 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 </div>
 
 <!-- INI NANTI BISA PAKE LOOPING AJA -->
-<div class="row align-items-center justify-content-between" align="center" id="sutCards" style="padding-top: 30px;padding-bottom: 30px;">
+<div class="row align-items-center justify-content-between" align="left" id="sutCards" style="padding-top: 30px;padding-bottom: 30px;">
     <div class="col-6">
         <div class="card" style="border: 0; width:502px" id="cardTimeline">
             <div class="row align-items-center justify-content-start" style="padding:15px;">
@@ -66,7 +72,7 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
                     <img class="events-card-linkedin" src="{{ URL::asset('icon/linkedin.svg') }}" alt="linkedin">
                 </div>
                 <div class="col-6" style="line-height: 5px;">
-                    <p style="color:black;">22 Agustus 2022</p>
+                    <h5 style="color:black;">22 Agustus 2022</h5>
                 </div>
             </div>
         </div>
@@ -78,8 +84,8 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
                     <img class="events-card-linkedin" src="{{ URL::asset('icon/linkedin.svg') }}" alt="linkedin">
                 </div>
                 <div class="col-5" style="line-height: 5px;">
-                    <h5 style="color:black">Wildan Wortel</h5>
-                    <p style="color:black">Pejabat Negara</p>
+                    <h5 style="color:black">Seminar</h5>
+                    <p style="color:black">Rp. 40000</p>
                 </div>
                 <div class="col-2" style="padding-left:45px">
                     <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 147px;height: 48px;">
@@ -96,7 +102,7 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
         </div>
     </div>
 </div>
-<div class="row align-items-center justify-content-between" align="center" id="sutCards" style="padding-top: 30px;padding-bottom: 30px;">
+<div class="row align-items-center justify-content-between" align="left" id="sutCards" style="padding-top: 30px;padding-bottom: 30px;">
     <div class="col-6">
         <div class="card" style="border: 0; width:502px" id="cardTimeline">
             <div class="row align-items-center justify-content-start" style="padding:15px;">
@@ -104,7 +110,7 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
                     <img class="events-card-linkedin" src="{{ URL::asset('icon/linkedin.svg') }}" alt="linkedin">
                 </div>
                 <div class="col-6" style="line-height: 5px;">
-                    <p style="color:black;">Zoom Meetings</p>
+                    <h5 style="color:black;">Zoom Meetings</h5>
                 </div>
             </div>
         </div>

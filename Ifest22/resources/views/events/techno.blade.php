@@ -12,12 +12,18 @@
 
 @section('event_title', 'Technopreneur')
 
+@section('event_theme')
+<div style="padding-top: 10px;padding-bottom: 10px;">
+    <h2 class="text-theme">"Tema Techno"</h2>
+</div>
+@endsection
+
 @section('event_desc')
 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
 @endsection
 
 @section('event_detail')
-<div class="row align-items-center" align="center" id="sutSpeakers" style="padding-top: 30px;padding-bottom: 30px;">
+<div class="row align-items-center" align="center" id="technoSpeakers" style="padding-top: 30px;padding-bottom: 30px;">
     <h1 class="text-event-sub-title">Our Seminar Speakers</h1>
     <div class="row justify-content-center" style="padding-top: 30px;">
         <div class="col-4">
@@ -56,7 +62,7 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
         </div>
     </div>
 </div>
-<div class="row align-items-center" align="center" id="sutSpeakers" style="padding-top: 30px;padding-bottom: 30px;">
+<div class="row align-items-center" align="center" id="technoSpeakers" style="padding-top: 30px;padding-bottom: 30px;">
     <h1 class="text-event-sub-title">Our workshop Mentors</h1>
     <div class="row justify-content-center" style="padding-top: 30px;">
         <div class="col-4">
@@ -95,18 +101,17 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
         </div>
     </div>
 </div>
-@endsection
-
-@section('event_timeline')
-<div class="row" style="padding-top: 30px;">
-    <p style="color:white;">timeline bulet2 lah pokoknya</p>
+<div class="row" align="center" id="competitionTimeline" style="padding-top: 30px;padding-bottom: 30px;">
+    <h1 class="text-sub-title">Timeline</h1>
+    <div class="row" style="padding-top: 30px;">
+        <p style="color:white;">timeline bulet2 lah pokoknya</p>
+    </div>
 </div>
 @endsection
 
-
 @section('event_detail2')
 <!-- INI NANTI BISA PAKE LOOPING AJA -->
-<div class="row align-items-center justify-content-between" align="center" id="sutCards" style="padding-top: 30px;padding-bottom: 30px;">
+<div class="row align-items-center justify-content-between" align="left" id="technoCards" style="padding-top: 30px;padding-bottom: 30px;">
     <div class="col-6">
         <div class="card" style="border: 0; width:502px" id="cardTimeline">
             <div class="row align-items-center justify-content-start" style="padding:15px;">
@@ -114,7 +119,7 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
                     <img class="events-card-linkedin" src="{{ URL::asset('icon/linkedin.svg') }}" alt="linkedin">
                 </div>
                 <div class="col-6" style="line-height: 5px;">
-                    <p style="color:black;">22 Agustus 2022</p>
+                    <h5 style="color:black;">22 Agustus 2022</h5>
                 </div>
             </div>
         </div>
@@ -126,8 +131,8 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
                     <img class="events-card-linkedin" src="{{ URL::asset('icon/linkedin.svg') }}" alt="linkedin">
                 </div>
                 <div class="col-5" style="line-height: 5px;">
-                    <h5 style="color:black">Wildan Wortel</h5>
-                    <p style="color:black">Pejabat Negara</p>
+                    <h5 style="color:black">Seminar</h5>
+                    <p style="color:black">Free</p>
                 </div>
                 <div class="col-2" style="padding-left:45px">
                     <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 147px;height: 48px;">
@@ -136,7 +141,7 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
                         <a class="ifest-btn-primary-dark-bg-text" href="{{route('login')}}">Buy Ticket</a>
                         @endif
                         @else
-                        <a class="ifest-btn-primary-dark-bg-text" href="">Register Now</a>
+                        <a class="ifest-btn-primary-dark-bg-text" href="">Register</a>
                         @endguest
                     </button>
                 </div>
@@ -144,7 +149,7 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
         </div>
     </div>
 </div>
-<div class="row align-items-center justify-content-between" align="center" id="sutCards" style="padding-top: 30px;padding-bottom: 30px;">
+<div class="row align-items-center justify-content-between" align="left" id="technoCards" style="padding-top: 30px;padding-bottom: 30px;">
     <div class="col-6">
         <div class="card" style="border: 0; width:502px" id="cardTimeline">
             <div class="row align-items-center justify-content-start" style="padding:15px;">
@@ -152,7 +157,7 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
                     <img class="events-card-linkedin" src="{{ URL::asset('icon/linkedin.svg') }}" alt="linkedin">
                 </div>
                 <div class="col-6" style="line-height: 5px;">
-                    <p style="color:black;">Zoom Meetings</p>
+                    <h5 style="color:black;">Zoom Meetings</h5>
                 </div>
             </div>
         </div>
@@ -164,17 +169,17 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
                     <img class="events-card-linkedin" src="{{ URL::asset('icon/linkedin.svg') }}" alt="linkedin">
                 </div>
                 <div class="col-5" style="line-height: 5px;">
-                    <h5 style="color:black">Paper Submission</h5>
-
+                    <h5 style="color:black">Workshop</h5>
+                    <p style="color:black">Including Seminar</p>
                 </div>
                 <div class="col-2" style="padding-left:45px">
                     <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 147px;height: 48px;">
                         @guest
                         @if(Route::has('login'))
-                        <a class="ifest-btn-primary-dark-bg-text" href="{{route('login')}}">Register Now</a>
+                        <a class="ifest-btn-primary-dark-bg-text" href="{{route('login')}}">Register</a>
                         @endif
                         @else
-                        <a class="ifest-btn-primary-dark-bg-text" href="">Register Now</a>
+                        <a class="ifest-btn-primary-dark-bg-text" href="">Register</a>
                         @endguest
                     </button>
                 </div>
