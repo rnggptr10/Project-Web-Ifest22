@@ -16,6 +16,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="{{ asset('js/countdown.js') }}"></script>
     <script src="{{ asset('js/tab.js') }}"></script>
+    <script src="{{asset('js/nav.js')}}"></script>
 
     <!-- Fonts -->
     <!-- <link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -30,7 +31,7 @@
 
 <body>
     <div id="app">
-        <header>
+        <header id="navBar">
             <div class="box-menu">
                 <nav style="color: #fff;">
                     <ul class="menu" style="margin-bottom: 0;">
@@ -148,6 +149,16 @@
             <h5 class="footer-copy text-center mt-4">&copy 2021 IFest</h5>
         </footer>
     </div>
+    <script>
+        var navBar = document.getElementById('navBar');
+        window.onscroll = function() {
+            if (window.scrollY > 22) {
+                navBar.classList.add('scrolled');
+            } else {
+                navBar.classList.remove('scrolled');
+            }
+        };
+    </script>
 </body>
 
 </html>

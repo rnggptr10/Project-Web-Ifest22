@@ -8,6 +8,7 @@
 @extends('layouts.app2')
 
 @section('content')
+
 <body style="background-color: #1c1c1c;">
     <div class="container" style="padding: 0; ">
         <div class="row">
@@ -27,14 +28,24 @@
                     </div>
                 </div>
             </div>
-            
+
+
+
             @yield('event_detail')
 
+            <div class="row" align="center" id="competitionTimeline" style="padding-top: 30px;padding-bottom: 30px;">
+                <h1 class="text-sub-title">Timeline</h1>
+                @yield('event_timeline')
+            </div>
 
             <!-- <div class="row justify-content-center align-items-center" align="center" id="eventButton" style="padding-top: 30px;padding-bottom: 30px;">
+                
                 @yield('event_button')
             </div> -->
-            
+
+            @yield('event_detail2')
+
+
             <div class="row justify-content-center align-items-center" align="center" id="eventCP" style="padding-top: 30px;padding-bottom: 30px;">
                 <h1 class="text-sub-title">Contact Person</h1>
                 <div class="col-2" style="padding-top: 30px;">
