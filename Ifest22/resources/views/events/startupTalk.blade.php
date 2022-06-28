@@ -76,7 +76,7 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
                 <img class="arrow-switch" src="{{ URL::asset('icon/circle-arrow-left.svg') }}" alt="arrow-left">
                 <img class="arrow-switch" src="{{ URL::asset('icon/circle-arrow-right.svg') }}" alt="arrow-right">
             </div>
-        </div>     
+        </div>
     </div>
 </div>
 <div class="row align-items-center" align="center" id="sutSpeakers" style="padding-top: 30px;padding-bottom: 30px;">
@@ -116,7 +116,7 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
                 <img class="arrow-switch" src="{{ URL::asset('icon/circle-arrow-left.svg') }}" alt="arrow-left">
                 <img class="arrow-switch" src="{{ URL::asset('icon/circle-arrow-right.svg') }}" alt="arrow-right">
             </div>
-        </div>    
+        </div>
     </div>
 </div>
 
@@ -153,7 +153,7 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
                         <a class="ifest-btn-primary-dark-bg-text" href="">Register Now</a>
                         @endguest
                     </button>
-                </div> 
+                </div>
             </div>
         </div>
     </div>

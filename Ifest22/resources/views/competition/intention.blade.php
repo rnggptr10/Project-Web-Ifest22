@@ -53,9 +53,9 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 
 @section('competition_judges')
 <div class="row" align="center" id="intJudges" style="padding-top: 30px;padding-bottom: 30px;">
-    <h1 class="text-sub-title">Our Judges</h1>
+    <h1 data-aos="fade-down" data-aos-duration="1000" class="text-sub-title">Our Judges</h1>
     <div class="row justify-content-center" style="padding-top: 30px;">
-        <div class="col-4">
+        <div class="col-4" data-aos="fade-right" data-aos-duration="1000">
             <div class="card" style="border: 0; width:max-content">
                 <img class="card-img-top" style="width:100%;height:350px;" src="https://cf.shopee.co.id/file/e0d319d464c87407718586d008a144b7" alt="Card image cap">
                 <div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
@@ -69,7 +69,7 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
                 </div>
             </div>
         </div>
-        <div class="col-4">
+        <div class="col-4" data-aos="fade-left" data-aos-duration="1000">
             <div class="card" style="border: 0; width:max-content">
                 <img class="card-img-top" style="width:100%;height:350px;" src="https://cf.shopee.co.id/file/e0d319d464c87407718586d008a144b7" alt="Card image cap">
                 <div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
@@ -121,10 +121,10 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 @endsection
 
 @section('competition_button')
-<div class="col-2">
+<div class="col-2" data-aos="fade-right" data-aos-duration="1000">
     <button type="button" class="btn btn-outline-primary ifest-btn-outline-primary-dark-bg" style="width: 147px;height: 48px;">Guidebook</button>
 </div>
-<div class="col-2">
+<div class="col-2" data-aos="fade-left" data-aos-duration="1000">
     <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 147px;height: 48px;">
         @guest
         @if(Route::has('login'))

@@ -71,9 +71,9 @@
                         </span>
                         @enderror
                     </div>
-
                     <div class="row mb-2">
                         <label for="profpic" class="placeholder text-form">{{ __('Profile Picture') }}</label>
+
                         <input id="profpic" type="file" class="form-control @error('profpic') is-invalid @enderror ifest-form" name="profpic" value="{{ old('profpic') }}" required autocomplete="profpic" autofocus>
                         @error('profpic')
                         <span class="invalid-feedback" role="alert">

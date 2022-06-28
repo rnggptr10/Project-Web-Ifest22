@@ -1,5 +1,6 @@
 @extends('layouts.app')
 @section('css')
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 <link rel="stylesheet" href="{{ asset('css/landingpage.css') }}">
 @endsection
 @section('content')
@@ -16,7 +17,7 @@
 </div>
 
 
-<div id="info" class="flex">
+<div id="info" class="flex" data-aos="fade-up" data-aos-duration="1000">
     <!-- <i id="volume" class="fas fa-volume-mute"></i> -->
     <div class="banner backdrop flex">
         <div class="countdown">
@@ -46,7 +47,7 @@
     </div>
 </div>
 
-<div>
+<div data-aos="fade-up" data-aos-duration="1000">
     <div class="isian-tab">
         <button class="tablink" onclick="openPage('Home', this, '#291647')">Startup Talk</button>
         <button class="tablink" onclick="openPage('News', this, '#291647')" id="defaultOpen">Technopreneur</button>
@@ -121,14 +122,22 @@
 </div>
 
 <div>
-    <h1 class="title-box">Media Partner</h1>
-    <div class="medpart-box">
+    <div data-aos="fade-up" data-aos-duration="1000">
+        <h1 class="title-box">Media Partner</h1>
+        <div class="medpart-box">
 
+        </div>
     </div>
 
-    <h1 class="title-box">Sponsored By</h1>
-    <div class="sponsored-box">
+    <div data-aos="fade-up" data-aos-duration="1000">
+        <h1 class="title-box">Sponsored By</h1>
+        <div class="sponsored-box">
 
+        </div>
     </div>
 </div>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 @endsection
