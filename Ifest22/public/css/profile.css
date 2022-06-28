@@ -1,0 +1,64 @@
+@import url(font.css);
+@import url(generalStyle.css);
+
+/* ------------------- General ------------------- */
+.text-card-title {
+    font-family: "Poppins-SemiBold";
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 600;
+    color: #e6eef7;
+}
+
+.text-profile-head {
+    font-family: "Poppins-Regular";
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+.text-profile-data {
+    font-family: "Poppins-SemiBold";
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.text-tickets-head {
+    font-family: "Poppins-SemiBold";
+    font-size: 18px;
+    line-height: 10px;
+    font-weight: 600;
+    color: #000000;
+}
+
+.text-tickets-desc {
+    font-family: "Poppins-Regular";
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #000000;
+}
+
+.text-tickets-status {
+    font-family: "Poppins-SemiBold";
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 600;
+}
+
+/* ------------------- Image Profile ------------------- */
+.circular--portrait {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.circular--portrait img {
+    width: 100%;
+    height: auto;
+}
