@@ -88,36 +88,36 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 @endsection
 
 @section('competition_timeline')
-    <section class="ps-timeline-sec">
-        <div class="container">
-            <ol class="ps-timeline">
-                <li>
-                    <div class="ps-bot">
-                        <p>Timeline 1</p>
-                    </div>
-                    <span class="ps-sp"></span>
-                </li>
-                <li>
-                    <div class="ps-bot">
-                        <p>Timeline 2</p>
-                    </div>
-                    <span class="ps-sp"></span>
-                </li>
-                <li>
-                    <div class="ps-bot">
-                        <p>Timeline 3</p>
-                    </div>
-                    <span class="ps-sp"></span>
-                </li>
-                <li>
-                    <div class="ps-bot">
-                        <p>Timeline 4</p>
-                    </div>
-                    <span class="ps-sp"></span>
-                </li>
-            </ol>
-        </div>
-    </section>
+<section class="ps-timeline-sec">
+    <div class="container">
+        <ol class="ps-timeline">
+            <li>
+                <div class="ps-bot">
+                    <p>Timeline 1</p>
+                </div>
+                <span class="ps-sp"></span>
+            </li>
+            <li>
+                <div class="ps-bot">
+                    <p>Timeline 2</p>
+                </div>
+                <span class="ps-sp"></span>
+            </li>
+            <li>
+                <div class="ps-bot">
+                    <p>Timeline 3</p>
+                </div>
+                <span class="ps-sp"></span>
+            </li>
+            <li>
+                <div class="ps-bot">
+                    <p>Timeline 4</p>
+                </div>
+                <span class="ps-sp"></span>
+            </li>
+        </ol>
+    </div>
+</section>
 @endsection
 
 @section('competition_button')
@@ -139,20 +139,37 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 
 @section('competition_faq')
 <div class="row" style="padding-top: 30px;">
-    <p style="color:white;">ini FAQ</p>
-    <div class="card text-left">
+    <div class="card-faq text-left">
         <details>
-            <summary style="color:black;">Pertanyaan 1</summary>
-            <p style="color:black;">Lorem Ipsum is simply dummy text of the printing and typesetting
+            <summary>Pertanyaan 1</summary>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry.
                 Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
                 unknown</p>
         </details>
     </div>
-    <div class="card text-left">
+    <div class="card-faq text-left">
         <details>
-            <summary style="color:black;">Pertanyaan 1</summary>
-            <p style="color:black;">Lorem Ipsum is simply dummy text of the printing and typesetting
+            <summary>Pertanyaan 2</summary>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry.
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                unknown</p>
+        </details>
+    </div>
+    <div class="card-faq text-left">
+        <details>
+            <summary>Pertanyaan 3</summary>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry.
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                unknown</p>
+        </details>
+    </div>
+    <div class="card-faq text-left">
+        <details>
+            <summary>Pertanyaan 4</summary>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry.
                 Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
                 unknown</p>

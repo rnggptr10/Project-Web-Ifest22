@@ -25,6 +25,8 @@
     <!-- Styles -->
     @yield('css')
     <link rel="stylesheet" href="{{ asset('atlantis/css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
     <link rel="stylesheet" href="{{ asset('css/navbar.css') }}">
     <link rel="stylesheet" href="{{ asset('css/footer.css') }}">
 </head>
@@ -138,10 +140,16 @@
                             <li class="footer-li lstyle-none socmed"><a href="https://linktr.ee/ifestunpad" target="_blank"><span class="iconify" data-icon="simple-icons:linktree" data-inline="false" data-width="32" data-height="32"></span></a></li>
                         </ul> -->
                         <div class="dflex padding-center">
+                            <!-- Sosmed -->
+                            <a class="tombol footer-img-2" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="tombol footer-img-2" href=""><i class="fab fa-tiktok"></i></a>
+                            <a class="tombol footer-img-2" href=""><i class="fab fa-instagram"></i></a>
+                            <a class="tombol footer-img-2" href=""><i class="fab fa-linkedin"></i></a>
+
+                            <!-- <img class="footer-img-2" src="{{asset('img/organizer/himatif.png')}}" alt="logo unpad" width="50px" height="50px"> -->
+                            <!-- <img class="footer-img-2" src="{{asset('img/organizer/unpad.png')}}" alt="logo himatif" width="50px" height="50px">
                             <img class="footer-img-2" src="{{asset('img/organizer/himatif.png')}}" alt="logo unpad" width="50px" height="50px">
-                            <img class="footer-img-2" src="{{asset('img/organizer/unpad.png')}}" alt="logo himatif" width="50px" height="50px">
-                            <img class="footer-img-2" src="{{asset('img/organizer/himatif.png')}}" alt="logo unpad" width="50px" height="50px">
-                            <img class="footer-img-2" src="{{asset('img/organizer/unpad.png')}}" alt="logo himatif" width="50px" height="50px">
+                            <img class="footer-img-2" src="{{asset('img/organizer/unpad.png')}}" alt="logo himatif" width="50px" height="50px"> -->
                         </div>
                     </div>
                 </div>

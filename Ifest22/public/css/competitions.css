@@ -36,6 +36,25 @@
 .ps-timeline-sec .container {
   position: relative;
 }
+
+.card-faq{
+  position: relative;
+	display: flex;
+	flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+	background: #2d2d2d;
+  /* border: 1px solid rgba(0, 0, 0, .125); */
+  border-radius: 0.25rem;
+  margin-bottom: 20px;
+  padding: 10px;
+  color: #fff;
+}
+
+summary{
+background-color: #2d2d2d;
+}
+
 @media screen and (max-width: 767px) {
   .ps-timeline-sec .container ol:before {
     background: #348e80;

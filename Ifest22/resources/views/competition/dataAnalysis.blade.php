@@ -112,9 +112,8 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 
 @section('competition_faq')
 <div class="row" style="padding-top: 30px;">
-    <p style="color:white;">ini FAQ</p>
-    <!-- <div class="card">
-        <details style="color:#000000;">
+    <div class="card-faq text-left">
+        <details>
             <summary>Pertanyaan 1</summary>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry.
@@ -122,15 +121,33 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
                 unknown</p>
         </details>
     </div>
-    <div class="card">
-        <details style="color:#000000;">
-            <summary>Pertanyaan 1</summary>
+    <div class="card-faq text-left">
+        <details>
+            <summary>Pertanyaan 2</summary>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry.
                 Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
                 unknown</p>
         </details>
-    </div> -->
+    </div>
+    <div class="card-faq text-left">
+        <details>
+            <summary>Pertanyaan 3</summary>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry.
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                unknown</p>
+        </details>
+    </div>
+    <div class="card-faq text-left">
+        <details>
+            <summary>Pertanyaan 4</summary>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry.
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                unknown</p>
+        </details>
+    </div>
 </div>
 @endsection
 
