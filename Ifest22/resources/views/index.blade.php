@@ -8,7 +8,7 @@
 <div class="container" style="margin-top: 100px; margin-bottom:100px; width:100%">
     <div class="row">
         <div class="col-sm-8" style="border: 1px #fff solid;">
-            <p style="font-size: 100px; width: max-content; color: #8E84D1  ;"><b>IFEST 2022</b></p>
+            <!-- <p style="font-size: 100px; width: max-content; color: #8E84D1  ;"><b>IFEST 2022</b></p> -->
             <!-- <h1>IFEST 2022</h1> -->
             <img class="logo-landing" src="{{asset('img/logo/logo_landing.png')}}" alt="logo" width="60%">
         </div>
@@ -42,7 +42,8 @@
         <div class="conference-btn">
 
             <a href="{{ route('incon') }}"><span class="register">Register Now</span></a>
-            <a href="{{ route('incon') }}"><span class="details" id="details">See Details</span></a>
+            <a href="{{ route('incon') }}"><span class="register">See Details</span></a>
+            <!-- <a href="{{ route('incon') }}"><span class="details" id="details">See Details</span></a> -->
         </div>
     </div>
 </div>

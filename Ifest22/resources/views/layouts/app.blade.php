@@ -44,9 +44,9 @@
                             <div class="card-faq text-left">
                                 <details>
                                     <summary>Event</summary>
-                                    <a href="#" class="burger-details" style="padding-left: 15px;">Startup Talk</a>
-                                    <a href="#" class="burger-details" style="padding-left: 15px;">Seminar Nasional</a>
-                                    <a href="#" class="burger-details" style="padding-left: 15px;">Technopreneur</a>
+                                    <a href="{{ route('startup') }}" class="burger-details" style="padding-left: 15px;">Startup Talk</a>
+                                    <a href="{{ route('incon') }}" class="burger-details" style="padding-left: 15px;">Seminar Nasional</a>
+                                    <a href="{{ route('techno') }}" class="burger-details" style="padding-left: 15px;">Technopreneur</a>
                                 </details>
                             </div>
                         </div>
@@ -54,9 +54,9 @@
                             <div class="card-faq text-left">
                                 <details>
                                     <summary>Competition</summary>
-                                    <a href="#" class="burger-details" style="padding-left: 15px;">CTF</a>
-                                    <a href="#" class="burger-details" style="padding-left: 15px;">DAC</a>
-                                    <a href="#" class="burger-details" style="padding-left: 15px;">Intention</a>
+                                    <a href="{{ route('ctf') }}" class="burger-details" style="padding-left: 15px;">CTF</a>
+                                    <a href="{{ route('da') }}" class="burger-details" style="padding-left: 15px;">DAC</a>
+                                    <a href="{{ route('intention') }}" class="burger-details" style="padding-left: 15px;">Intention</a>
                                 </details>
                             </div>
                         </div>

@@ -187,7 +187,7 @@ a {
 }
 
 /* Membuat Nav bagian kiri menjadi hamburgermenu */
-@media screen and (max-width:800px) {
+@media screen and (max-width:850px) {
     nav{
         display:none;
     }
