@@ -35,30 +35,59 @@
     <div id="app">
         <header id="navBar">
             <div class="box-menu">
+                <div class="hamburger-menu">
+                    <div id="mySidenav" class="sidenav">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        <!-- <a href="#">Event</a>
+                        <a href="#">Competition</a> -->
+                        <div class="sa">
+                            <div class="card-faq text-left">
+                                <details>
+                                    <summary>Event</summary>
+                                    <a href="#" class="burger-details" style="padding-left: 15px;">Startup Talk</a>
+                                    <a href="#" class="burger-details" style="padding-left: 15px;">Seminar Nasional</a>
+                                    <a href="#" class="burger-details" style="padding-left: 15px;">Technopreneur</a>
+                                </details>
+                            </div>
+                        </div>
+                        <div class="sa">
+                            <div class="card-faq text-left">
+                                <details>
+                                    <summary>Competition</summary>
+                                    <a href="#" class="burger-details" style="padding-left: 15px;">CTF</a>
+                                    <a href="#" class="burger-details" style="padding-left: 15px;">DAC</a>
+                                    <a href="#" class="burger-details" style="padding-left: 15px;">Intention</a>
+                                </details>
+                            </div>
+                        </div>
+                        <a href="#">Ipod</a>
+                    </div>
+                    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+                </div>
                 <nav style="color: #fff;">
                     <ul class="menu" style="margin-bottom: 0;">
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: #ffff;">
+                            <a class="nav-link dropdown-toggle left-nav" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Event
                             </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: #1c1c1c;">
-                                <a class="dropdown-item" href="{{ route('startup') }}" style="color: #8267B4;">Startup Talk</a>
-                                <a class="dropdown-item" href="{{ route('incon') }}" style="color: #8267B4;">Seminar Nasional</a>
-                                <a class="dropdown-item" href="{{ route('techno') }}" style="color: #8267B4;">Technopreneur</a>
+                            <div class="dropdown-menu border-dropmenu" aria-labelledby="navbarDropdown" style="background-color: #1c1c1c;">
+                                <a class="item-dropmenu" href="{{ route('startup') }}">Startup Talk</a>
+                                <a class="item-dropmenu" href="{{ route('incon') }}">Seminar Nasional</a>
+                                <a class="item-dropmenu" href="{{ route('techno') }}">Technopreneur</a>
                             </div>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="clr nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <a class="clr nav-link dropdown-toggle left-nav " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Competition
                             </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: #1c1c1c; color: #ffff;">
-                                <a class="dropdown-item" href="{{ route('ctf') }}" style="color: #8267B4;">CTF</a>
-                                <a class="dropdown-item" href="{{ route('da') }}" style="color: #8267B4;">DAC</a>
-                                <a class="dropdown-item" href="{{ route('intention') }}" style="color: #8267B4;">Intention</a>
+                            <div class="dropdown-menu border-dropmenu" aria-labelledby="navbarDropdown" style="background-color: #1c1c1c; color: #ffff;">
+                                <a class="item-dropmenu" href="{{ route('ctf') }}" style="color: #8267B4;">CTF</a>
+                                <a class="item-dropmenu" href="{{ route('da') }}" style="color: #8267B4;">DAC</a>
+                                <a class="item-dropmenu" href="{{ route('intention') }}" style="color: #8267B4;">Intention</a>
                             </div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="">Ipod</a>
+                            <a class="nav-link left-nav" href="">Ipod</a>
                         </li>
                     </ul>
                 </nav>
@@ -81,10 +110,10 @@
                     <li class="nav-item dropdown">
                         @guest
                         @if (Route::has('login'))
-                        <button><a href="{{route('login')}}">Login</a></button>
+                        <button class="button-login"><a href="{{route('login')}}" style="color: #1c1c1c; text-decoration:none;">Login</a></button>
                         @endif
                         @else
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: #ffff;">
+                        <a class="nav-link dropdown-toggle right-nav" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: #ffff;">
                             {{ Auth::user()->name }}
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: #1c1c1c;">
@@ -166,6 +195,14 @@
                 navBar.classList.remove('scrolled');
             }
         };
+
+        function openNav() {
+            document.getElementById("mySidenav").style.display = "block";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.display = "none";
+        }
     </script>
 </body>
 

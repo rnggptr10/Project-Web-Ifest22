@@ -1,6 +1,7 @@
 /* ---------- */
 /* Style Umum */
 /* ---------- */
+@import url(font.css);
 * {
     margin: 0;
     padding: 0;
@@ -56,34 +57,41 @@ header {
     display: inline-block;
 }
 
-.menu li a {
+.left-nav{
     color: #fff;
+    transition: all 0.3s ease 0s; 
+}
+
+.right-nav{
+    color: #1c1c1c;
+    text-decoration: none;
     transition: all 0.3s ease 0s;
 }
 
-.menu li a:hover {
+.nav-item a:hover {
     color: #8267B4;
 }
 
-button {
+.button-login {
     padding: 5px 25px;
     background-color: #8267B4;
+    color: #1c1c1c;
+    text-decoration: none;
     border-radius: 10px;
     cursor: pointer;
     transition: all 0.3s ease 0s;
 }
 
-.box-login a {
+.button-login a{
     color: #1c1c1c;
 }
 
 li,
 a,
 button {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: "Poppins-Medium";
     font-weight: 500;
-    font-size: 16px;
-    /* color: #fff; */
+    font-size: 15px;
     text-decoration: none;
 }
 
@@ -91,21 +99,100 @@ a {
     text-decoration: none;
 }
 
+.item-dropmenu{
+    display: block;
+    width: 100%;
+    padding: 0.25rem 1.5rem;
+    clear: both;
+    font-weight: 400;
+    color: #8267B4;
+    text-align: inherit;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+}
+
+.item-dropmenu:hover{
+    color: #1c1c1c;
+    text-decoration: none;
+    /* background-color: #8267B4; */
+}
+
+.border-dropmenu{
+    border: 1.5px #161616 solid;
+}
+
+
+/* Hamburger Menu */
+.sidenav {
+    display: none;
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #1c1c1c;
+    border: 1px #161616 solid;
+    overflow-x: hidden;
+    padding-top: 60px;
+  }
+  
+  .sidenav a, .sa {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 15px;
+    color: #ffff;
+    display: block;
+  }
+
+  .burger-details:hover{
+    color: #8267B4;
+  }
+  
+  .hamburger-menu{
+    display: none;
+  }
+
+  /* .sidenav a:hover {
+    color: #f1f1f1;
+  } */
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+/* ========= */
 /* Responsif */
-@media screen and (max-width: 1031px) {
+/* ========= */
+/* Membuat bagian nav kiri menjadi inline */
+@media screen and (max-width: 1040px) {
     .menu {
         display: block;
     }
 
     .box-menu,
     .box-login {
-        width: 20%;
+        width: 40%;
     }
 }
 
-main {
-    display: block;
-    padding-top: 200px;
-    color: aqua;
-    height:fit-content;
+/* Membuat Nav bagian kiri menjadi hamburgermenu */
+@media screen and (max-width:800px) {
+    nav{
+        display:none;
+    }
+
+    .hamburger-menu{
+        display: block;
+    }
 }
