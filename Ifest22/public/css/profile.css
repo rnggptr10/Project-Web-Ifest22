@@ -29,7 +29,7 @@
 .text-tickets-head {
     font-family: "Poppins-SemiBold";
     font-size: 18px;
-    line-height: 10px;
+    line-height: 20px;
     font-weight: 600;
     color: #000000;
 }
@@ -40,6 +40,7 @@
     line-height: 18px;
     font-weight: 400;
     color: #000000;
+    margin-bottom: 0;
 }
 
 .text-tickets-status {
@@ -61,4 +62,39 @@
 .circular--portrait img {
     width: 100%;
     height: auto;
+}
+
+/* ------------------- Ticket Details ------------------- */
+.text-details-card-title {
+    font-family: "Poppins-SemiBold";
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 600;
+    color: #e6eef7;
+}
+
+.text-details-card-head {
+    font-family: "Poppins-SemiBold";
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 600;
+    color: black;
+}
+
+.text-details-card-desc {
+    font-family: "Poppins-Regular";
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 400;
+    color: black;
+}
+
+.card.ifest-card-details {
+    background-color: #A1A1A1;
+    border: 0;
+}
+
+.circular-number {
+    width: 75px;
+    height: 75px;
 }

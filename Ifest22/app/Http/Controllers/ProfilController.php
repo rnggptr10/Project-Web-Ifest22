@@ -60,4 +60,10 @@ class ProfilController extends Controller
 
         return redirect()->route('profile');
     }
+
+    public function ticketDetails()
+    {
+        $data = User::where('email', Auth::user()->email)->first();
+        return view('profils.ticketDetails', compact('data'));
+    }
 }

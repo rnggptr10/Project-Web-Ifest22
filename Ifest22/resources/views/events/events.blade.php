@@ -4,6 +4,7 @@
 <title>IFest 2022 - @yield('event_webtitle')</title>
 
 @yield('event_head')
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 @extends('layouts.app')
 
@@ -35,7 +36,7 @@
 
             @yield('event_detail2')
 
-            <div class="row justify-content-center align-items-center" align="center" id="eventCP" style="padding-top: 30px;padding-bottom: 30px;">
+            <div data-aos="fade-up" data-aos-duration="1000" class="row justify-content-center align-items-center" align="center" id="eventCP" style="padding-top: 30px;padding-bottom: 30px;">
                 <h1 class="text-sub-title">Contact Person</h1>
                 <div class="col-2" style="padding-top: 30px;">
                     <button type="button" class="btn btn-outline-primary ifest-btn-outline-primary-dark-bg" style="width: 147px;height: 48px;" onclick="window.location.href='https://wa.me/@yield('cp1_wa')';">
@@ -52,5 +53,10 @@
             </div>
         </div>
     </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 @endsection

@@ -22,36 +22,106 @@
 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
 @endsection
 
+<!-- SPEAKERS -->
+@section('techno_speakers_1')
+<img class="card-img-top" style="width:100%;height:350px;" src="https://cf.shopee.co.id/file/e0d319d464c87407718586d008a144b7" alt="Speakers-1">
+<div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
+    <div class="col-7" style="line-height: 5px;">
+        <h5 style="color:black">Wortel</h5>
+        <p style="color:black">Pejabat</p>
+    </div>
+    <div class="col-3">
+        <a href=""><img class="logo-linkedin" src="{{ URL::asset('icon/linkedin.svg') }}" alt="linkedin"></a>
+    </div>
+</div>
+@endsection
+
+@section('techno_speakers_2')
+<img class="card-img-top" style="width:100%;height:350px;" src="https://cf.shopee.co.id/file/e0d319d464c87407718586d008a144b7" alt="Speakers-2">
+<div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
+    <div class="col-7" style="line-height: 5px;">
+        <h5 style="color:black">Wortel</h5>
+        <p style="color:black">Pejabat</p>
+    </div>
+    <div class="col-3">
+        <a href=""><img class="logo-linkedin" src="{{ URL::asset('icon/linkedin.svg') }}" alt="linkedin"></a>
+    </div>
+</div>
+@endsection
+
+<!-- MENTORS -->
+@section('techno_mentor_1')
+<img class="card-img-top" style="width:100%;height:350px;" src="https://cf.shopee.co.id/file/e0d319d464c87407718586d008a144b7" alt="Mentor-1">
+<div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
+    <div class="col-7" style="line-height: 5px;">
+        <h5 style="color:black">Wortel</h5>
+        <p style="color:black">Pejabat</p>
+    </div>
+    <div class="col-3">
+        <a href=""><img class="logo-linkedin" src="{{ URL::asset('icon/linkedin.svg') }}" alt="linkedin"></a>
+    </div>
+</div>
+@endsection
+
+@section('techno_mentor_2')
+<img class="card-img-top" style="width:100%;height:350px;" src="https://cf.shopee.co.id/file/e0d319d464c87407718586d008a144b7" alt="Mentor-2">
+<div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
+    <div class="col-7" style="line-height: 5px;">
+        <h5 style="color:black">Wortel</h5>
+        <p style="color:black">Pejabat</p>
+    </div>
+    <div class="col-3">
+        <a href=""><img class="logo-linkedin" src="{{ URL::asset('icon/linkedin.svg') }}" alt="linkedin"></a>
+    </div>
+</div>
+@endsection
+
+<!-- FAQ -->
+@section('faq_techno_1')
+<summary>Pertanyaan 1</summary>
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting
+    industry.
+    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+    unknown</p>
+@endsection
+
+@section('faq_techno_2')
+<summary>Pertanyaan 2</summary>
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting
+    industry.
+    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+    unknown</p>
+@endsection
+
+@section('faq_techno_3')
+<summary>Pertanyaan 3</summary>
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting
+    industry.
+    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+    unknown</p>
+@endsection
+
+@section('faq_techno_4')
+<summary>Pertanyaan 4</summary>
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting
+    industry.
+    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+    unknown</p>
+@endsection
+
+<!-- TEMPLATE BODY -->
 @section('event_detail')
-<div class="row align-items-center" align="center" id="technoSpeakers" style="padding-top: 30px;padding-bottom: 30px;">
+<div data-aos="fade-down" data-aos-duration="1000" class="row align-items-center" align="center" id="technoSpeakers" style="padding-top: 30px;padding-bottom: 30px;">
     <h1 class="text-event-sub-title">Our Seminar Speakers</h1>
     <div class="row justify-content-center" style="padding-top: 30px;">
         <div class="col-4">
             <div class="card" style="border: 0; width:max-content">
-                <img class="card-img-top" style="width:100%;height:350px;" src="https://cf.shopee.co.id/file/e0d319d464c87407718586d008a144b7" alt="Card image cap">
-                <div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
-                    <div class="col-7" style="line-height: 5px;">
-                        <h5 style="color:black">Wildan Wortel</h5>
-                        <p style="color:black">Pejabat Negara</p>
-                    </div>
-                    <div class="col-3">
-                        <img class="logo-linkedin" src="{{ URL::asset('icon/linkedin.svg') }}" alt="linkedin">
-                    </div>
-                </div>
+                @yield('techno_speakers_1')
             </div>
         </div>
         <div class="col-4">
             <div class="card" style="border: 0; width:max-content">
-                <img class="card-img-top" style="width:100%;height:350px;" src="https://cf.shopee.co.id/file/e0d319d464c87407718586d008a144b7" alt="Card image cap">
-                <div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
-                    <div class="col-7" style="line-height: 5px;">
-                        <h5 style="color:black">Wildan Wortel</h5>
-                        <p style="color:black">Pejabat Negara</p>
-                    </div>
-                    <div class="col-3">
-                        <img class="logo-linkedin" src="{{ URL::asset('icon/linkedin.svg') }}" alt="linkedin">
-                    </div>
-                </div>
+                @yield('techno_speakers_2')
             </div>
         </div>
         <div class="row justify-content-center" style="padding-top: 30px;">
@@ -62,35 +132,17 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
         </div>
     </div>
 </div>
-<div class="row align-items-center" align="center" id="technoSpeakers" style="padding-top: 30px;padding-bottom: 30px;">
-    <h1 class="text-event-sub-title">Our workshop Mentors</h1>
+<div data-aos="fade-down" data-aos-duration="1000" class="row align-items-center" align="center" id="technoSpeakers" style="padding-top: 30px;padding-bottom: 30px;">
+    <h1 class="text-event-sub-title">Our Workshop Mentors</h1>
     <div class="row justify-content-center" style="padding-top: 30px;">
         <div class="col-4">
             <div class="card" style="border: 0; width:max-content">
-                <img class="card-img-top" style="width:100%;height:350px;" src="https://cf.shopee.co.id/file/e0d319d464c87407718586d008a144b7" alt="Card image cap">
-                <div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
-                    <div class="col-7" style="line-height: 5px;">
-                        <h5 style="color:black">Wildan Wortel</h5>
-                        <p style="color:black">Pejabat Negara</p>
-                    </div>
-                    <div class="col-3">
-                        <img class="logo-linkedin" src="{{ URL::asset('icon/linkedin.svg') }}" alt="linkedin">
-                    </div>
-                </div>
+                @yield('techno_mentor_1')
             </div>
         </div>
         <div class="col-4">
             <div class="card" style="border: 0; width:max-content">
-                <img class="card-img-top" style="width:100%;height:350px;" src="https://cf.shopee.co.id/file/e0d319d464c87407718586d008a144b7" alt="Card image cap">
-                <div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
-                    <div class="col-7" style="line-height: 5px;">
-                        <h5 style="color:black">Wildan Wortel</h5>
-                        <p style="color:black">Pejabat Negara</p>
-                    </div>
-                    <div class="col-3">
-                        <img class="logo-linkedin" src="{{ URL::asset('icon/linkedin.svg') }}" alt="linkedin">
-                    </div>
-                </div>
+                @yield('techno_mentor_2')
             </div>
         </div>
         <div class="row justify-content-center" style="padding-top: 30px;">
@@ -101,22 +153,49 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
         </div>
     </div>
 </div>
-<div class="row" align="center" id="competitionTimeline" style="padding-top: 30px;padding-bottom: 30px;">
+<div data-aos="fade-up" data-aos-duration="1000" class="row" align="center" id="eventTimeline" style="padding-top: 30px;padding-bottom: 30px;">
     <h1 class="text-sub-title">Timeline</h1>
-    <div class="row" style="padding-top: 30px;">
-        <p style="color:white;">timeline bulet2 lah pokoknya</p>
-    </div>
+    <section class="ps-timeline-sec">
+        <div class="container">
+            <ol class="ps-timeline">
+                <li>
+                    <div class="ps-bot">
+                        <p>Timeline 1</p>
+                    </div>
+                    <span class="ps-sp"></span>
+                </li>
+                <li>
+                    <div class="ps-bot">
+                        <p>Timeline 2</p>
+                    </div>
+                    <span class="ps-sp"></span>
+                </li>
+                <li>
+                    <div class="ps-bot">
+                        <p>Timeline 3</p>
+                    </div>
+                    <span class="ps-sp"></span>
+                </li>
+                <li>
+                    <div class="ps-bot">
+                        <p>Timeline 4</p>
+                    </div>
+                    <span class="ps-sp"></span>
+                </li>
+            </ol>
+        </div>
+    </section>
 </div>
 @endsection
 
 @section('event_detail2')
 <!-- INI NANTI BISA PAKE LOOPING AJA -->
-<div class="row align-items-center justify-content-between" align="left" id="technoCards" style="padding-top: 30px;padding-bottom: 30px;">
+<div data-aos="fade-up" data-aos-duration="1000" class="row align-items-center justify-content-between" align="left" id="technoCards1" style="padding-top: 30px;padding-bottom: 30px;">
     <div class="col-6">
         <div class="card" style="border: 0; width:502px" id="cardTimeline">
             <div class="row align-items-center justify-content-start" style="padding:15px;">
                 <div class="col-2">
-                    <img class="events-card-linkedin" src="{{ URL::asset('icon/linkedin.svg') }}" alt="linkedin">
+                    <img class="events-card-logo" src="{{ URL::asset('icon/date.png') }}" alt="Date">
                 </div>
                 <div class="col-6" style="line-height: 5px;">
                     <h5 style="color:black;">22 Agustus 2022</h5>
@@ -128,7 +207,7 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
         <div class="card" style="border: 0; width:502px" id="cardTicket">
             <div class="row align-items-center" style="padding:15px">
                 <div class="col-2">
-                    <img class="events-card-linkedin" src="{{ URL::asset('icon/linkedin.svg') }}" alt="linkedin">
+                    <img class="events-card-logo" src="{{ URL::asset('icon/seminar.png') }}" alt="Seminar">
                 </div>
                 <div class="col-5" style="line-height: 5px;">
                     <h5 style="color:black">Seminar</h5>
@@ -149,12 +228,12 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
         </div>
     </div>
 </div>
-<div class="row align-items-center justify-content-between" align="left" id="technoCards" style="padding-top: 30px;padding-bottom: 30px;">
+<div data-aos="fade-up" data-aos-duration="1000" class="row align-items-center justify-content-between" align="left" id="technoCards2" style="padding-top: 30px;padding-bottom: 30px;">
     <div class="col-6">
         <div class="card" style="border: 0; width:502px" id="cardTimeline">
             <div class="row align-items-center justify-content-start" style="padding:15px;">
                 <div class="col-2">
-                    <img class="events-card-linkedin" src="{{ URL::asset('icon/linkedin.svg') }}" alt="linkedin">
+                    <img class="events-card-logo" src="{{ URL::asset('icon/platform.png') }}" alt="Platform">
                 </div>
                 <div class="col-6" style="line-height: 5px;">
                     <h5 style="color:black;">Zoom Meetings</h5>
@@ -166,7 +245,7 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
         <div class="card" style="border: 0; width:502px" id="cardTicket">
             <div class="row align-items-center" style="padding:15px">
                 <div class="col-2">
-                    <img class="events-card-linkedin" src="{{ URL::asset('icon/linkedin.svg') }}" alt="linkedin">
+                    <img class="events-card-logo" src="{{ URL::asset('icon/workshop.png') }}" alt="Workshop">
                 </div>
                 <div class="col-5" style="line-height: 5px;">
                     <h5 style="color:black">Workshop</h5>
@@ -184,6 +263,31 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
                     </button>
                 </div>
             </div>
+        </div>
+    </div>
+</div>
+<div data-aos="fade-up" data-aos-duration="1000" class="row justify-content-center align-items-center" align="center" id="eventFAQ" style="padding-top: 30px;padding-bottom: 30px;">
+    <h1 class="text-sub-title">Frequently Asked Question (FAQ)</h1>
+    <div class="row" style="padding-top: 30px;">
+        <div class="card-faq text-left">
+            <details>
+                @yield('faq_techno_1')
+            </details>
+        </div>
+        <div class="card-faq text-left">
+            <details>
+                @yield('faq_techno_2')
+            </details>
+        </div>
+        <div class="card-faq text-left">
+            <details>
+                @yield('faq_techno_3')
+            </details>
+        </div>
+        <div class="card-faq text-left">
+            <details>
+                @yield('faq_techno_4')
+            </details>
         </div>
     </div>
 </div>

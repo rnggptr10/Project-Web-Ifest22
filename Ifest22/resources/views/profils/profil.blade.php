@@ -68,19 +68,36 @@
                     <div class="row" align="center">
                         <h2 class="text-card-title">Your Tickets</h2>
                     </div>
-                    <div class="row" align="center">
+                    <!-- NANTI INI PAKE LOOPING TERGANTUNG TIKET DI USER -->
+                    <!-- DATANYA JG BEDA TIAP TIKET, DI SET DI SETIAP IF ELSE -->
+                    <div class="row" align="center" style="padding:5px 0 5px 0">
                         <div class="col">
-                            <div class="card" style="background-color:#e6eef7;padding:20px 20px 0 20px">
-                                <div class="row">
+                            <div class="card" style="background-color:#e6eef7;padding:20px">
+                                <div class="row align-items-center">
                                     <div class="col-7" align="left">
-                                        <!-- NANTI INI PAKE LOOPING TERGANTUNG TIKET DI USER -->
-                                        <!-- DATANYA JG BEDA TIAP TIKET, DI SET DI SETIAP IF ELSE -->
                                         <h6 class="text-tickets-head">Startup Talk</h6>
                                         <p class="text-tickets-desc">20-21 Agustus 2022<br>Status : <span class="text-tickets-status" style="color:green">{{ $data->institute }}</span></p>
                                     </div>
                                     <div class="col-5">
                                         <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 147px;height: 48px;">
                                             <a class="ifest-btn-primary-dark-bg-text" href="">Link Zoom</a>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row" align="center" style="padding:5px 0 5px 0">
+                        <div class="col">
+                            <div class="card" style="background-color:#e6eef7;padding:20px">
+                                <div class="row align-items-center">
+                                    <div class="col-7" align="left">
+                                        <h6 class="text-tickets-head">Innovative Technology Competition (INTENTION)</h6>
+                                        <p class="text-tickets-desc">20-21 Agustus 2022<br>Status : <span class="text-tickets-status" style="color:green">{{ $data->institute }}</span></p>
+                                    </div>
+                                    <div class="col-5">
+                                        <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 147px;height: 48px;">
+                                            <a class="ifest-btn-primary-dark-bg-text" href="{{ route('profile.ticketDetails') }}">See Details</a>
                                         </button>
                                     </div>
                                 </div>

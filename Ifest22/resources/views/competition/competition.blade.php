@@ -31,19 +31,20 @@
                 <div data-aos="fade-down" data-aos-duration="1000" class="row" align="center" id="competitionPrizes" style="padding-top: 30px;padding-bottom: 30px;">
                     <h1 class="text-sub-title">Prizes</h1>
                     <div class="row justify-content-center" style="padding-top: 20px;"">
-                            <div class=" col-2">
-                        <img style="width:100%;height: 160px;" src="https://clipground.com/images/trophy-winner-clipart-5.jpg">
-                        <p style="color:white">@yield('first_prize')</p>
+                        <div class=" col-2">
+                            <img style="width:100%;height: 160px;" src="https://clipground.com/images/trophy-winner-clipart-5.jpg">
+                            <p style="color:white">@yield('second_prize')</p>
+                        </div>
+                        <div class="col-2">
+                            <img style="width:100%;height: 180px;" src="https://clipground.com/images/trophy-winner-clipart-5.jpg">
+                            <p style="color:white">@yield('first_prize')</p>
+                        </div>
+                        @yield('third_prize')
                     </div>
-                    <div class="col-2">
-                        <img style="width:100%;height: 180px;" src="https://clipground.com/images/trophy-winner-clipart-5.jpg">
-                        <p style="color:white">@yield('second_prize')</p>
-                    </div>
-                    @yield('third_prize')
                 </div>
             </div>
 
-            @yield('competition_judges')
+                @yield('competition_judges')
 
             <div data-aos="fade-up" data-aos-duration="1000" class="row" align="center" id="competitionTimeline" style="padding-top: 30px;padding-bottom: 30px;">
                 <h1 class="text-sub-title">Timeline</h1>

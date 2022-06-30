@@ -36,6 +36,7 @@ Route::get('/home', [HomeController::class, 'index'])->name('home');
 Route::get('/profil', [ProfilController::class, 'index'])->name('profile');
 Route::get('/profil/edit', [ProfilController::class, 'edit'])->name('profile.edit');
 Route::patch('/profil/edit/update', [ProfilController::class, 'update'])->name('profile.update');
+Route::get('/profil/ticket-details', [ProfilController::class, 'ticketDetails'])->name('profile.ticketDetails');
 
 // Route for Event
 Route::get('/international-conference', [InconController::class, 'index'])->name('incon');
