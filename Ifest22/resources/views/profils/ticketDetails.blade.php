@@ -1,14 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <title>IFest 2022 - Ticket Details @yield('event_webtitle')</title>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport' />
-    <link rel="stylesheet" href="{{ URL::asset('css/generalStyle.css') }}">
-    <link rel="stylesheet" href="{{ URL::asset('css/bootstrap.min.css') }}">
-    <link rel="stylesheet" href="{{ URL::asset('css/profile.css') }}">
-</head>
+<title>IFest 2022 - Ticket Details @yield('event_webtitle')</title> 
+
+@yield('ticket_details_head')
 
 @extends('layouts.app')
 
@@ -30,16 +25,23 @@
                                 <div class="row" align="left" style="padding:20px">
                                     <div class="col">
                                         <div class="row" style="padding-bottom:7px;">
-                                            <h5 class="text-details-card-head">Name</h5>
+                                            <h5 class="text-details-card-head">Nama Tim</h5>
                                             <p class="text-details-card-desc">{{ $data->name }}</p>
                                         </div>
                                         <div class="row" style="padding-bottom:7px">
-                                            <h5 class="text-details-card-head">Email</h5>
+                                            <h5 class="text-details-card-head">Email Tim</h5>
                                             <p class="text-details-card-desc">{{ $data->email }}</p>
                                         </div>
                                         <div class="row">
-                                            <h5 class="text-details-card-head">Institute</h5>
-                                            <p class="text-details-card-desc">{{ $data->institute }}</p>
+                                            <h5 class="text-details-card-head">Data Ketua Tim</h5>
+                                            <p class="text-details-card-desc">{{ $data->name }} - {{ $data->institute }}</p>
+                                        </div>
+                                        <div class="row">
+                                            <h5 class="text-details-card-head">Data Anggota Tim</h5>
+                                            <p class="text-details-card-desc">
+                                                • {{ $data->name }} - {{ $data->institute }}<br>
+                                                • {{ $data->name }} - {{ $data->institute }}<br>
+                                            </p>
                                         </div>
                                     </div>
                                 </div>
@@ -50,34 +52,13 @@
                                 <div class="row" align="center" style="background-color:#291647; margin:0; border-radius:3px 3px 0 0; padding: 5px 0 5px 0">
                                     <h2 class="text-details-card-title" style="color:white; padding:0; margin:0">Progress Lomba</h2>
                                 </div>
-                                <div class="row" align="left" style="padding:20px">
-                                    <div class="col-2" style="padding:0 15px 0 8px">
-                                        <img class="circular-number" src="{{ URL::asset('icon/page-details/circle-1.svg') }}" alt="1">
-                                    </div>
-                                    <div class="col-6" align="left" style="padding:0 8px 0 15px">
-                                        <h6 class="text-tickets-head">Startup Talk</h6>
-                                        <p class="text-tickets-desc">20-21 Agustus 2022<br>Status : <span class="text-tickets-status" style="color:green">{{ $data->institute }}</span></p>
-                                    </div>
-                                    <div class="col-4" style="padding:0">
-                                        <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 147px;height: 48px;">
-                                            <a class="ifest-btn-primary-dark-bg-text" href="">Link Zoom</a>
-                                        </button>
-                                    </div>
-                                </div>
-                                <div class="row" align="left" style="padding:20px">
-                                    <div class="col-2" style="padding:0 15px 0 8px">
-                                        <img class="circular-number" src="{{ URL::asset('icon/page-details/circle-2.svg') }}" alt="2">
-                                    </div>
-                                    <div class="col-6" align="left" style="padding:0 8px 0 15px">
-                                        <h6 class="text-tickets-head">Startup Talk</h6>
-                                        <p class="text-tickets-desc">20-21 Agustus 2022<br>Status : <span class="text-tickets-status" style="color:green">{{ $data->institute }}</span></p>
-                                    </div>
-                                    <div class="col-4" style="padding:0">
-                                        <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 147px;height: 48px;">
-                                            <a class="ifest-btn-primary-dark-bg-text" href="">Link Zoom</a>
-                                        </button>
-                                    </div>
-                                </div>
+                                @yield('event_section_1')
+                                @yield('event_section_2')
+                                @yield('event_section_3')
+                                @yield('event_section_4')
+                                @yield('event_section_5')
+                                @yield('event_section_6')
+                                @yield('event_section_7')
                             </div>
                         </div>
                     </div>

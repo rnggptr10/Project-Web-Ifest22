@@ -36,7 +36,11 @@ Route::get('/home', [HomeController::class, 'index'])->name('home');
 Route::get('/profil', [ProfilController::class, 'index'])->name('profile');
 Route::get('/profil/edit', [ProfilController::class, 'edit'])->name('profile.edit');
 Route::patch('/profil/edit/update', [ProfilController::class, 'update'])->name('profile.update');
-Route::get('/profil/ticket-details', [ProfilController::class, 'ticketDetails'])->name('profile.ticketDetails');
+Route::get('/profil/ticket-details-intention', [ProfilController::class, 'ticketDetailsIntention'])->name('profile.ticketDetailsIntention');
+Route::get('/profil/ticket-details-dac', [ProfilController::class, 'ticketDetailsDac'])->name('profile.ticketDetailsDac');
+Route::get('/profil/ticket-details-ctf', [ProfilController::class, 'ticketDetailsCtf'])->name('profile.ticketDetailsCtf');
+Route::get('/profil/ticket-details-technopreneur-workshop', [ProfilController::class, 'ticketDetailsTechnoWorkshop'])->name('profile.ticketDetailsTechnoWorkshop');
+
 
 // Route for Event
 Route::get('/international-conference', [InconController::class, 'index'])->name('incon');
@@ -59,8 +63,12 @@ Route::middleware(['auth'])->group(function () {
     Route::patch('/data-analysis-competition/registration', [DataAnalysisController::class, 'saveRegister'])->name('dac.registration');
 
     // Intention
-    Route::get('/international-conference/registration', [IntentionController::class, 'registration'])->name('intention.registration.view');
-    Route::patch('/international-conference/registration', [IntentionController::class, 'saveRegister'])->name('intention.registration');
+    Route::get('/intention/registration', [IntentionController::class, 'registration'])->name('intention.registration.view');
+    Route::patch('/intention/registration', [IntentionController::class, 'saveRegister'])->name('intention.registration');
+
+    // Techno Workshop
+    Route::get('/technopreneur-workshop/registration', [TechnoController::class, 'registrationWorkshop'])->name('technoWorkshop.registration.view');
+    Route::patch('/technopreneur-workshop/registration', [TechnoController::class, 'saveRegisterWorkshop'])->name('technoWorkshop.registration');
 });
 
 

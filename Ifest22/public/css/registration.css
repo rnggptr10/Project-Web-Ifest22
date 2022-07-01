@@ -23,6 +23,14 @@
     text-align: left;
 }
 
+.regist-form-notes-text {
+    font-family: "Lato-Regular";
+    font-size: 16px;
+    line-height: 19.2px;
+    font-weight: 400;
+    text-align: left;
+}
+
 /* ------------------- Form ------------------- */
 .form-control.ifest-regist-form {
     border-color: #8267B4;

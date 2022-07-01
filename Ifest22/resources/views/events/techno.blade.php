@@ -258,7 +258,7 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
                         <a class="ifest-btn-primary-dark-bg-text" href="{{route('login')}}">Register</a>
                         @endif
                         @else
-                        <a class="ifest-btn-primary-dark-bg-text" href="">Register</a>
+                        <a class="ifest-btn-primary-dark-bg-text" href="{{route('technoWorkshop.registration.view')}}">Register</a>
                         @endguest
                     </button>
                 </div>

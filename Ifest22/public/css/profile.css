@@ -98,3 +98,15 @@
     width: 75px;
     height: 75px;
 }
+
+.status-green {
+    color: green;
+}
+
+.status-orange {
+    color: #D78915;
+}
+
+.status-red {
+    color: #D71515;
+}

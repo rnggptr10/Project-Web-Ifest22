@@ -30,7 +30,7 @@ class TechnoController extends Controller
         // $data_ws = Techno_ws_form::where('email',  Auth::user()->email)->first();
         // if ($data_ws != null)  return redirect()->route('techno');
         // return view('registration.regis-techno-ws');
-        return redirect()->route('techno');
+        return view('registration.regis-techno-workshop');
     }
 
     public function saveRegisterWorkshop(Request $request)

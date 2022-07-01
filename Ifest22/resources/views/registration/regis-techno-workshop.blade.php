@@ -8,12 +8,12 @@
 <link rel="stylesheet" href="{{ URL::asset('css/registration.css') }}">
 @endsection
 
-@section('regist_competition_webtitle', 'Data Analysis Competition')
+@section('regist_competition_webtitle', 'Technopreneur Workshop')
 
-@section('regist_competition_title', 'Data Analysis Competition')
+@section('regist_competition_title', 'Technopreneur Workshop')
 
 @section('regist-competition-form')
-<form action="{{route('dac.registration')}}" method="post" enctype="multipart/form-data">
+<form action="{{route('technoWorkshop.registration')}}" method="post" enctype="multipart/form-data">
     @method('patch')
     @csrf
 
@@ -221,7 +221,7 @@
     <div class="row justify-content-center align-items-center" align="center" id="registCompButton" style="padding:30px 0 30px 0">
         <div class="col-4">
             <!-- VERTICAL ALIGN NYA BELOM JALAN -->
-            <a class="btn btn-outline-primary ifest-btn-outline-primary-dark-bg mt-3 mt-sm-0 fw-bold text-center" href="{{ route('da') }}" style="height:44px; width:128px;">{{ __('< Back') }}</a>
+            <a class="btn btn-outline-primary ifest-btn-outline-primary-dark-bg mt-3 mt-sm-0 fw-bold text-center" href="{{ route('techno') }}" style="height:44px; width:128px;">{{ __('< Back') }}</a>
         </div>
         <div class="col-4">
             <button class="btn btn-primary ifest-btn-primary-dark-bg mt-3 mt-sm-0 fw-bold" href="" style="height:44px; width:128px">{{ __('Next') }}</button>

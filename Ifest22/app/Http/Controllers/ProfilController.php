@@ -61,9 +61,27 @@ class ProfilController extends Controller
         return redirect()->route('profile');
     }
 
-    public function ticketDetails()
+    public function ticketDetailsIntention()
     {
         $data = User::where('email', Auth::user()->email)->first();
-        return view('profils.ticketDetails', compact('data'));
+        return view('profils.ticketDetailsIntention', compact('data'));
+    }
+
+    public function ticketDetailsDac()
+    {
+        $data = User::where('email', Auth::user()->email)->first();
+        return view('profils.ticketDetailsDac', compact('data'));
+    }
+
+    public function ticketDetailsCtf()
+    {
+        $data = User::where('email', Auth::user()->email)->first();
+        return view('profils.ticketDetailsCtf', compact('data'));
+    }
+
+    public function ticketDetailsTechnoWorkshop()
+    {
+        $data = User::where('email', Auth::user()->email)->first();
+        return view('profils.ticketDetailsTechnoWorkshop', compact('data'));
     }
 }

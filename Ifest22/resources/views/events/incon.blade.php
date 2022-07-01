@@ -128,7 +128,6 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
                 </div>
                 <div class="col-5" style="line-height: 5px;">
                     <h5 style="color:black">Seminar</h5>
-                    <p style="color:black">Rp. 40000</p>
                 </div>
                 <div class="col-2" style="padding-left:45px">
                     <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 147px;height: 48px;">
