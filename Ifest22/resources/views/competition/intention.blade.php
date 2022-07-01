@@ -52,6 +52,14 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 @endsection
 
 @section('competition_judges')
+<div class="row">
+    <div class="col-sm-6" style="border: 1px #ffff solid;">
+        <p>juri 1</p>
+    </div>
+    <div class="col-sm-6" style="border: 1px #ffff solid;">
+        <p>juri 2</p>
+    </div>
+</div>
 <div class="row" align="center" id="intJudges" style="padding-top: 30px;padding-bottom: 30px;">
     <h1 data-aos="fade-down" data-aos-duration="1000" class="text-sub-title">Our Judges</h1>
     <div class="row justify-content-center" style="padding-top: 30px;">

@@ -5,16 +5,16 @@
 @endsection
 @section('content')
 
-<div class="container" style="margin-top: 100px; margin-bottom:100px; width:100%">
+<!-- <div class="container" style="margin-top: 100px; margin-bottom:100px; width:100%">
     <div class="row">
         <div class="col-sm-8" style="border: 1px #fff solid;">
             <!-- <p style="font-size: 100px; width: max-content; color: #8E84D1  ;"><b>IFEST 2022</b></p> -->
-            <!-- <h1>IFEST 2022</h1> -->
-            <img class="logo-landing" src="{{asset('img/logo/logo_landing.png')}}" alt="logo" width="60%">
-        </div>
-        <div class="col-sm-4" style="border: 1px #fff solid;">col-sm-4</div>
-    </div>
+<!-- <h1>IFEST 2022</h1>
+<img class="logo-landing" src="{{asset('img/logo/logo_landing.png')}}" alt="logo" width="60%">
 </div>
+<div class="col-sm-4" style="border: 1px #fff solid;">col-sm-4</div>
+</div>
+</div> -->
 
 
 <div id="info" class="flex" data-aos="fade-up" data-aos-duration="1000">
@@ -38,19 +38,65 @@
                 <p>seconds</p>
             </div>
         </div>
-        <h3>International Conference</h3>
+        <p class="title-cd">International Conference</p>
+        <!-- <h3>International Conference</h3> -->
         <div class="conference-btn">
 
-            <a href="{{ route('incon') }}"><span class="register">Register Now</span></a>
-            <a href="{{ route('incon') }}"><span class="register">See Details</span></a>
-            <!-- <a href="{{ route('incon') }}"><span class="details" id="details">See Details</span></a> -->
+            <a href="{{ route('incon') }}"><span class="register">Register</span></a>
+            <!-- <a href="{{ route('incon') }}"><span class="register">See Details</span></a> -->
+            <a href="{{ route('incon') }}"><span class="details" id="details">Details</span></a>
+        </div>
+    </div>
+</div>
+<div class="box-countdown">
+    <div class="container">
+        <div class="row rw">
+            <div class="col-sm-4">
+                <div class="countdown2">
+                    <div class="box-timer">
+                        <div id="days2">0</div>
+                        <p>days</p>
+                    </div>
+                    <div class="box-timer">
+                        <div id="hours2">0</div>
+                        <p>hours</p>
+                    </div>
+                    <div class="box-timer">
+                        <div id="minutes2">0</div>
+                        <p>minutes</p>
+                    </div>
+                    <div class="box-timer">
+                        <div id="seconds2">0</div>
+                        <p>seconds</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="title-countdown">
+                    <p>International Conference</p>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="conference-btn2">
+                    <button class="btn btn-outline-primary ifest-btn-outline-primary-light-bg col-md-5 float-right mt-3 mt-sm-0 fw-bold"><a class="ifest-btn-outline-primary-light-bg-text" href="{{route('register')}}">Register</a></button>
+
+                    <!-- <button class="register">
+                            <a href="{{ route('incon') }}">Register</a>
+                        </button> -->
+                    <!-- <button class="details">
+                            <a href="{{ route('incon') }}">Details</a>
+                        </button> -->
+                    <button class="btn btn-outline-primary ifest-btn-outline-primary-light-bg col-md-5 float-right mt-3 mt-sm-0 fw-bold"><a class="ifest-btn-outline-primary-light-bg-text" href="{{route('register')}}">Details</a></button>
+
+                </div>
+            </div>
         </div>
     </div>
 </div>
 
 <div data-aos="fade-up" data-aos-duration="1000">
-    <div class="isian-tab">
-        <button class="tablink" onclick="openPage('Home', this, '#291647')">Startup Talk</button>
+    <div class="isian-tab" onshow="openPage('Home', this, '#291647')">
+        <button class="tablink" onshow="" onclick="openPage('Home', this, '#291647')">Startup Talk</button>
         <button class="tablink" onclick="openPage('News', this, '#291647')" id="defaultOpen">Technopreneur</button>
         <button class="tablink" onclick="openPage('Contact', this, '#291647')">IT Competition</button>
         <button class="tablink" onclick="openPage('About', this, '#291647')">Seminar Nasional</button>

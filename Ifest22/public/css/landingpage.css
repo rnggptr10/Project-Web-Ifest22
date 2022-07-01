@@ -85,6 +85,57 @@ div.banner span.details {
     border: 2px solid #01142b;
 }
 
+.title-cd{
+    font-size:110%;
+}
+
+div .countdown2{
+    display: flex;
+    justify-content: space-around;
+}
+
+.box-countdown{
+    display: none;
+    width: 80%;
+    background-color: #291647;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.box-timer{
+    width: 20%;
+    border: 1px #000 solid;
+    background-color: #ffff;
+    border-radius: 5px;
+}
+
+.box-timer div, .box-timer p{
+    display: flex;
+    justify-content: space-around;
+}
+
+#days2, #hours2, #minutes2, #seconds2{
+    color: #1c1c1c;
+    font-size: 2vw;
+    font-weight: bolder;
+}
+
+.title-countdown p{
+    margin-top:20px ;
+    color: #fff;
+    font-size: 5vw;
+    font-weight: bolder;
+    text-align: center;
+}
+
+div.countdown2 p {
+    text-align: center;
+    color: #1c1c1c;
+    font-size: 1vw;
+    font-weight: bolder;
+}
+
 /* 
     Tabline
 */
@@ -204,3 +255,115 @@ display: block;
 .logo-landing:hover{
     width: 65%;
 }
+
+/* ---------------------- */
+/* Responsif Landing Page */
+/* ---------------------- */
+
+/* Countdown */
+/* @media screen and  (max-width:1224px){
+    div.banner div.countdown > div {
+        width: 55px;
+        height: 70px;
+    }
+
+    div.countdown div {
+        font-size: 1.2rem;
+    }
+
+    div.countdown p {
+        color: #1c1c1c;
+        font-size: 0.5rem;
+    }
+}
+@media screen and  (max-width:1090px){
+    div.banner div.countdown > div {
+        width: 45px;
+        height: 60px;
+    }
+
+    div.countdown div {
+        font-size: 1.0rem;
+    }
+
+    div.countdown p {
+        color: #1c1c1c;
+        font-size: 0.4rem;
+    }
+} */
+
+/* Ket : Setengah Layar */
+@media screen and  (max-width:1167px){
+    div.banner div.countdown > div {
+        margin-top: 10px;
+    }
+}
+
+@media screen and  (max-width:665px){
+    div.banner div.countdown > div {
+        margin-top: 10px;
+        width: 40%;
+        height: 50px;
+    }
+
+    div.countdown div {
+        font-size: 1.0rem;
+    }
+
+    div.countdown p {
+        color: #1c1c1c;
+        font-size: 0.3rem;
+    }
+}
+
+@media screen and  (max-width:550px){
+    div.banner div.countdown > div {
+        margin-top: 10px;
+        width: 30%;
+        height: 40px;
+    }
+
+    div.countdown div {
+        font-size: 1.0rem;
+    }
+
+    div.countdown p {
+        color: #1c1c1c;
+        font-size: 0.3rem;
+    }
+
+    div.banner span.register {
+        padding: 5px 10px;
+    }
+}
+
+@media screen and  (max-width:570px){
+    #info{
+        display: none;
+    }
+
+    .box-countdown{
+        display: block;
+    }
+}
+
+@media screen and  (max-width:450px){
+    div.banner div.countdown > div {
+        margin-top: 10px;
+        width: 40px;
+        height: 55px;
+    }
+
+    div.countdown div {
+        font-size: 1.0rem;
+    }
+
+    div.countdown p {
+        color: #1c1c1c;
+        font-size: 0.3rem;
+    }
+}
+
+/*  */
+
+/* 570 cd2 show, cd1 none */

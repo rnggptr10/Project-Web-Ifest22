@@ -135,7 +135,7 @@
         <footer class="footer_ bd-grid">
             <div class="wrap">
                 <div class="section-1">
-                    <img class="footer-img-1" src="{{asset('img/logo/logo_footer.png')}}" alt="logo ifest" width="auto" height="120px">
+                    <img class="footer-img-1" src="{{asset('img/logo/logo_footer.png')}}" alt="logo ifest">
                     <div class="event-comp">
                         <div class="fmain-event">
                             <h3 class="footer-header">Event</h3>
