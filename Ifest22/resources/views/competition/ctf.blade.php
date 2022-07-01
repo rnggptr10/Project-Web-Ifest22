@@ -85,17 +85,17 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 @endsection
 
 @section('competition_button')
-<div class="col-2">
+<div class="col" data-aos="fade-right" data-aos-duration="1000" style="text-align: right;">
     <button type="button" class="btn btn-outline-primary ifest-btn-outline-primary-dark-bg" style="width: 147px;height: 48px;">Guidebook</button>
 </div>
-<div class="col-2">
+<div class="col" data-aos="fade-left" data-aos-duration="1000" style="text-align: left;">
     <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 147px;height: 48px;">
         @guest
         @if(Route::has('login'))
         <a class="ifest-btn-primary-dark-bg-text" href="{{route('login')}}">Register Now</a>
         @endif
         @else
-        <a class="ifest-btn-primary-dark-bg-text" href="{{route('ctf.registration.view')}}">Register Now</a>
+        <a class="ifest-btn-primary-dark-bg-text" href="{{route('intention.registration.view')}}">Register Now</a>
         @endguest
     </button>
 </div>
