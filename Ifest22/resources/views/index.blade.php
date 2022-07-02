@@ -2,6 +2,7 @@
 @section('css')
 <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 <link rel="stylesheet" href="{{ asset('css/landingpage.css') }}">
+<link rel="stylesheet" href="{{ asset('atlantis/css/bootstrap.min.css') }}">
 @endsection
 @section('content')
 
@@ -124,12 +125,12 @@
                 <a class="nav-link dropdown-toggle left-nav" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Our Events
                 </a>
-                <div class="dropdown-menu border-dropmenu" aria-labelledby="navbarDropdown" style="background-color: #1c1c1c;">
-                    <a href="#" onclick="openPage('Home','StartupTalk-speakers' , this, '#291647')">Startup Talk</a>
-                    <a href="#" onclick="openPage('News', 'Technopreneur-speakers', this, '#291647')">Technopreneur</a>
-                    <a href="#" onclick="openPage('Contact','ITComp-speakers', this, '#291647')">IT Competition</a>
-                    <a href="#" onclick="openPage('About', 'Semnas-speakers', this, '#291647')">Seminar Nasional</a>
-                    <a href="#" onclick="openPage('About2', 'AwardingNight-speakers', this, '#291647')">Awarding Night</a>
+                <div class="dropdown-menu border-dropmenu" aria-labelledby="navbarDropdown" style="background-color: #c4c4c4; border: none;">
+                    <a class="item-dropmenu" style="padding: 0.25rem 1rem;" href="#" onclick="openPage('Home','StartupTalk-speakers' , this, '#291647')">Startup Talk</a>
+                    <a class="item-dropmenu" style="padding: 0.25rem 1rem;" href="#" onclick="openPage('News', 'Technopreneur-speakers', this, '#291647')">Technopreneur</a>
+                    <a class="item-dropmenu" style="padding: 0.25rem 1rem;" href="#" onclick="openPage('Contact','ITComp-speakers', this, '#291647')">IT Competition</a>
+                    <a class="item-dropmenu" style="padding: 0.25rem 1rem;" href="#" onclick="openPage('About', 'Semnas-speakers', this, '#291647')">Seminar Nasional</a>
+                    <a class="item-dropmenu" style="padding: 0.25rem 1rem;" href="#" onclick="openPage('About2', 'AwardingNight-speakers', this, '#291647')">Awarding Night</a>
 
                 </div>
             </li>
@@ -169,7 +170,7 @@
                             <h5 class="mt-0">Speaker 1</h5>
                             <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
                             <div class="button-speakers-details">
-                                <button><a href="">See All Speakers</a></button>
+                                <button class="allspeaker"><a style="color:white; text-decoration:none;" href="">See All Speakers</a></button>
                             </div>
                         </div>
                     </div>
@@ -183,7 +184,7 @@
                             <h5 class="mt-0">Speaker 2</h5>
                             <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
                             <div class="button-speakers-details">
-                                <button><a href="">See All Speakers</a></button>
+                                <button class="allspeaker"><a style="color:white; text-decoration:none;" href="">See All Speakers</a></button>
                             </div>
                         </div>
                     </div>
@@ -197,7 +198,7 @@
                             <h5 class="mt-0">Speaker 3</h5>
                             <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
                             <div class="button-speakers-details">
-                                <button><a href="">See All Speakers</a></button>
+                                <button class="allspeaker"><a style="color:white; text-decoration:none;" href="">See All Speakers</a></button>
                             </div>
                         </div>
                     </div>
@@ -223,7 +224,7 @@
                             <h5 class="mt-0">Speaker 4</h5>
                             <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
                             <div class="button-speakers-details">
-                                <button><a href="">See All Speakers</a></button>
+                                <button class="allspeaker"><a style="color:white; text-decoration:none;" href="">See All Speakers</a></button>
                             </div>
                         </div>
                     </div>
@@ -237,7 +238,7 @@
                             <h5 class="mt-0">Speaker 5</h5>
                             <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
                             <div class="button-speakers-details">
-                                <button><a href="">See All Speakers</a></button>
+                                <button class="allspeaker"><a style="color:white; text-decoration:none;" href="">See All Speakers</a></button>
                             </div>
                         </div>
                     </div>
@@ -251,7 +252,7 @@
                             <h5 class="mt-0">Speaker 6</h5>
                             <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
                             <div class="button-speakers-details">
-                                <button><a href="">See All Speakers</a></button>
+                                 
                             </div>
                         </div>
                     </div>
@@ -277,7 +278,7 @@
                             <h5 class="mt-0">Speaker 7</h5>
                             <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
                             <div class="button-speakers-details">
-                                <button><a href="">See All Speakers</a></button>
+                                 
                             </div>
                         </div>
                     </div>
@@ -291,7 +292,7 @@
                             <h5 class="mt-0">Speaker 8</h5>
                             <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
                             <div class="button-speakers-details">
-                                <button><a href="">See All Speakers</a></button>
+                                 
                             </div>
                         </div>
                     </div>
@@ -305,7 +306,7 @@
                             <h5 class="mt-0">Speaker 9</h5>
                             <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
                             <div class="button-speakers-details">
-                                <button><a href="">See All Speakers</a></button>
+                                 
                             </div>
                         </div>
                     </div>
@@ -331,7 +332,7 @@
                             <h5 class="mt-0">Speaker 10</h5>
                             <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
                             <div class="button-speakers-details">
-                                <button><a href="">See All Speakers</a></button>
+                                 
                             </div>
                         </div>
                     </div>
@@ -345,7 +346,7 @@
                             <h5 class="mt-0">Speaker 11</h5>
                             <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
                             <div class="button-speakers-details">
-                                <button><a href="">See All Speakers</a></button>
+                                 
                             </div>
                         </div>
                     </div>
@@ -359,7 +360,7 @@
                             <h5 class="mt-0">Speaker 12</h5>
                             <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
                             <div class="button-speakers-details">
-                                <button><a href="">See All Speakers</a></button>
+                                 
                             </div>
                         </div>
                     </div>
@@ -385,7 +386,7 @@
                             <h5 class="mt-0">Speaker 13</h5>
                             <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
                             <div class="button-speakers-details">
-                                <button><a href="">See All Speakers</a></button>
+                                 
                             </div>
                         </div>
                     </div>
@@ -399,7 +400,7 @@
                             <h5 class="mt-0">Speaker 14</h5>
                             <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
                             <div class="button-speakers-details">
-                                <button><a href="">See All Speakers</a></button>
+                                 
                             </div>
                         </div>
                     </div>
@@ -413,7 +414,7 @@
                             <h5 class="mt-0">Speaker 15</h5>
                             <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
                             <div class="button-speakers-details">
-                                <button><a href="">See All Speakers</a></button>
+                                 
                             </div>
                         </div>
                     </div>

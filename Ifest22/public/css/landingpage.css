@@ -71,6 +71,14 @@ div.banner span.register {
     /* border: 2px solid #01142b; */
 }
 
+div.button-speakers-details button.allspeaker {
+    padding: 5px 20px;
+    background-color: #8267B4;
+    border-radius: 5px;
+    display: inline-block;
+    border: none;
+}
+
 div.banner span.details {
     padding: 10px 30px;
     /* background-color: #8267B4; */
@@ -424,6 +432,29 @@ display: block;
     
     .media-body p{
         font-size: 0.5vm;
+    }
+
+    .item-dropmenu{
+        display: block;
+        width: 100%;
+        padding: 0.25rem 1.5rem;
+        clear: both;
+        font-weight: 400;
+        color: #8267B4;
+        text-align: inherit;
+        white-space: nowrap;
+        background-color: transparent;
+        border: 0;
+    }
+    
+    .item-dropmenu:hover{
+        color: #c4c4c4;
+        text-decoration: none;
+        /* background-color: #8267B4; */
+    }
+    
+    .border-dropmenu{
+        border: 1.5px #161616 solid;
     }
 }
 

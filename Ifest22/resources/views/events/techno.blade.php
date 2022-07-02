@@ -191,7 +191,7 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 @section('event_detail2')
 <!-- INI NANTI BISA PAKE LOOPING AJA -->
 <div data-aos="fade-up" data-aos-duration="1000" class="row align-items-center justify-content-between" align="left" id="technoCards1" style="padding-top: 30px;padding-bottom: 30px;">
-    <div class="col-6">
+    <div class="col-sm-6">
         <div class="card" style="border: 0; width:502px" id="cardTimeline">
             <div class="row align-items-center justify-content-start" style="padding:15px;">
                 <div class="col-2">
@@ -203,7 +203,7 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
             </div>
         </div>
     </div>
-    <div class="col-6">
+    <div class="col-sm-6">
         <div class="card" style="border: 0; width:502px" id="cardTicket">
             <div class="row align-items-center" style="padding:15px">
                 <div class="col-2">
@@ -229,7 +229,7 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
     </div>
 </div>
 <div data-aos="fade-up" data-aos-duration="1000" class="row align-items-center justify-content-between" align="left" id="technoCards2" style="padding-top: 30px;padding-bottom: 30px;">
-    <div class="col-6">
+    <div class="col-sm-6">
         <div class="card" style="border: 0; width:502px" id="cardTimeline">
             <div class="row align-items-center justify-content-start" style="padding:15px;">
                 <div class="col-2">
@@ -241,7 +241,7 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
             </div>
         </div>
     </div>
-    <div class="col-6">
+    <div class="col-sm-6">
         <div class="card" style="border: 0; width:502px" id="cardTicket">
             <div class="row align-items-center" style="padding:15px">
                 <div class="col-2">
