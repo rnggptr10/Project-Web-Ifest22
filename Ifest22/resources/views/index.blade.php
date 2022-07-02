@@ -96,12 +96,44 @@
 </div>
 
 <div data-aos="fade-up" data-aos-duration="1000">
-    <div class="isian-tab">
+    <div class="isian-tab1">
         <button id="defaultOpen" class="tablink" onclick="openPage('Home','StartupTalk-speakers' , this, '#291647')" id="defaultOpen">Startup Talk</button>
         <button class="tablink" onclick="openPage('News', 'Technopreneur-speakers', this, '#291647')">Technopreneur</button>
         <button class="tablink" onclick="openPage('Contact','ITComp-speakers', this, '#291647')">IT Competition</button>
         <button class="tablink" onclick="openPage('About', 'Semnas-speakers', this, '#291647')">Seminar Nasional</button>
         <button class="tablink" onclick="openPage('About2', 'AwardingNight-speakers', this, '#291647')">Awarding Night</button>
+    </div>
+    <div class="isian-tab2">
+        <!-- <div class="sa">
+            <div class="card-faq text-left">
+                <details>
+                    <summary>Our Events</summary>
+                    <!-- <a href="{{ route('startup') }}" class="burger-details" style="padding-left: 15px;">Startup Talk</a>
+                    <a href="{{ route('incon') }}" class="burger-details" style="padding-left: 15px;">Seminar Nasional</a>
+                    <a href="{{ route('techno') }}" class="burger-details" style="padding-left: 15px;">Technopreneur</a> -->
+        <!-- <a href="#" onclick="openPage('Home','StartupTalk-speakers' , this, '#291647')">Startup Talk</a>
+                    <a href="#" onclick="openPage('News', 'Technopreneur-speakers', this, '#291647')">Technopreneur</a>
+                    <a href="#" onclick="openPage('Contact','ITComp-speakers', this, '#291647')">IT Competition</a>
+                    <a href="#" onclick="openPage('About', 'Semnas-speakers', this, '#291647')">Seminar Nasional</a>
+                    <a href="#" onclick="openPage('About2', 'AwardingNight-speakers', this, '#291647')">Awarding Night</a> -->
+        <!-- </details>
+            </div> -->
+        <!-- </div> -->
+        <ul class="menu" style="margin-bottom: 0;">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle left-nav" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Our Events
+                </a>
+                <div class="dropdown-menu border-dropmenu" aria-labelledby="navbarDropdown" style="background-color: #1c1c1c;">
+                    <a href="#" onclick="openPage('Home','StartupTalk-speakers' , this, '#291647')">Startup Talk</a>
+                    <a href="#" onclick="openPage('News', 'Technopreneur-speakers', this, '#291647')">Technopreneur</a>
+                    <a href="#" onclick="openPage('Contact','ITComp-speakers', this, '#291647')">IT Competition</a>
+                    <a href="#" onclick="openPage('About', 'Semnas-speakers', this, '#291647')">Seminar Nasional</a>
+                    <a href="#" onclick="openPage('About2', 'AwardingNight-speakers', this, '#291647')">Awarding Night</a>
+
+                </div>
+            </li>
+        </ul>
     </div>
     <div class="pasklik">
         <div id="Home" class="tabcontent">
@@ -130,31 +162,43 @@
             <div class="carousel-inner" class="tabcontent">
                 <div class="carousel-item active" style="background-color: transparent;">
                     <div class="speaker">
-                        <img class="align-self-center mr-3" src="{{asset('img/speakers/pasfotokulyah.jpeg')}}" alt="Generic placeholder image">
+                        <div class="img-speakers">
+                            <img class="align-self-center mr-3" src="{{asset('img/speakers/pasfotokulyah.jpeg')}}" alt="Generic placeholder image">
+                        </div>
                         <div class="media-body">
                             <h5 class="mt-0">Speaker 1</h5>
                             <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
-                            <button><a href="">See All Speakers</a></button>
+                            <div class="button-speakers-details">
+                                <button><a href="">See All Speakers</a></button>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item" style="background-color: transparent;">
                     <div class="speaker">
-                        <img class="align-self-center mr-3" src="{{asset('img/speakers/Rectangle 49.png')}}" alt="Generic placeholder image">
+                        <div class="img-speakers">
+                            <img class="align-self-center mr-3" src="{{asset('img/speakers/pasfotokulyah.jpeg')}}" alt="Generic placeholder image">
+                        </div>
                         <div class="media-body">
                             <h5 class="mt-0">Speaker 2</h5>
                             <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
-                            <button><a href="">See All Speakers</a></button>
+                            <div class="button-speakers-details">
+                                <button><a href="">See All Speakers</a></button>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item" style="background-color: transparent;">
                     <div class="speaker">
-                        <img class="align-self-center mr-3" src="{{asset('img/speakers/pasfotokulyah.jpeg')}}" alt="Generic placeholder image">
+                        <div class="img-speakers">
+                            <img class="align-self-center mr-3" src="{{asset('img/speakers/pasfotokulyah.jpeg')}}" alt="Generic placeholder image">
+                        </div>
                         <div class="media-body">
                             <h5 class="mt-0">Speaker 3</h5>
                             <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
-                            <button><a href="">See All Speakers</a></button>
+                            <div class="button-speakers-details">
+                                <button><a href="">See All Speakers</a></button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -172,31 +216,43 @@
             <div class="carousel-inner" class="tabcontent">
                 <div class="carousel-item active" style="background-color: transparent;">
                     <div class="speaker">
-                        <!-- <img class="align-self-center mr-3" src="{{asset('img/speakers/pasfotokulyah.jpeg')}}" alt="Generic placeholder image"> -->
+                        <div class="img-speakers">
+                            <img class="align-self-center mr-3" src="{{asset('img/speakers/pasfotokulyah.jpeg')}}" alt="Generic placeholder image">
+                        </div>
                         <div class="media-body">
                             <h5 class="mt-0">Speaker 4</h5>
                             <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
-                            <button><a href="">See All Speakers</a></button>
+                            <div class="button-speakers-details">
+                                <button><a href="">See All Speakers</a></button>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item" style="background-color: transparent;">
                     <div class="speaker">
-                        <!-- <img class="align-self-center mr-3" src="{{asset('img/speakers/Rectangle 49.png')}}" alt="Generic placeholder image"> -->
+                        <div class="img-speakers">
+                            <img class="align-self-center mr-3" src="{{asset('img/speakers/pasfotokulyah.jpeg')}}" alt="Generic placeholder image">
+                        </div>
                         <div class="media-body">
                             <h5 class="mt-0">Speaker 5</h5>
                             <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
-                            <button><a href="">See All Speakers</a></button>
+                            <div class="button-speakers-details">
+                                <button><a href="">See All Speakers</a></button>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item" style="background-color: transparent;">
                     <div class="speaker">
-                        <!-- <img class="align-self-center mr-3" src="{{asset('img/speakers/pasfotokulyah.jpeg')}}" alt="Generic placeholder image"> -->
+                        <div class="img-speakers">
+                            <img class="align-self-center mr-3" src="{{asset('img/speakers/pasfotokulyah.jpeg')}}" alt="Generic placeholder image">
+                        </div>
                         <div class="media-body">
                             <h5 class="mt-0">Speaker 6</h5>
                             <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
-                            <button><a href="">See All Speakers</a></button>
+                            <div class="button-speakers-details">
+                                <button><a href="">See All Speakers</a></button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -214,31 +270,43 @@
             <div class="carousel-inner" class="tabcontent">
                 <div class="carousel-item active" style="background-color: transparent;">
                     <div class="speaker">
-                        <img class="align-self-center mr-3" src="{{asset('img/speakers/pasfotokulyah.jpeg')}}" alt="Generic placeholder image">
+                        <div class="img-speakers">
+                            <img class="align-self-center mr-3" src="{{asset('img/speakers/pasfotokulyah.jpeg')}}" alt="Generic placeholder image">
+                        </div>
                         <div class="media-body">
                             <h5 class="mt-0">Speaker 7</h5>
                             <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
-                            <button><a href="">See All Speakers</a></button>
+                            <div class="button-speakers-details">
+                                <button><a href="">See All Speakers</a></button>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item" style="background-color: transparent;">
                     <div class="speaker">
-                        <img class="align-self-center mr-3" src="{{asset('img/speakers/Rectangle 49.png')}}" alt="Generic placeholder image">
+                        <div class="img-speakers">
+                            <img class="align-self-center mr-3" src="{{asset('img/speakers/pasfotokulyah.jpeg')}}" alt="Generic placeholder image">
+                        </div>
                         <div class="media-body">
                             <h5 class="mt-0">Speaker 8</h5>
                             <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
-                            <button><a href="">See All Speakers</a></button>
+                            <div class="button-speakers-details">
+                                <button><a href="">See All Speakers</a></button>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item" style="background-color: transparent;">
                     <div class="speaker">
-                        <img class="align-self-center mr-3" src="{{asset('img/speakers/pasfotokulyah.jpeg')}}" alt="Generic placeholder image">
+                        <div class="img-speakers">
+                            <img class="align-self-center mr-3" src="{{asset('img/speakers/pasfotokulyah.jpeg')}}" alt="Generic placeholder image">
+                        </div>
                         <div class="media-body">
                             <h5 class="mt-0">Speaker 9</h5>
                             <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
-                            <button><a href="">See All Speakers</a></button>
+                            <div class="button-speakers-details">
+                                <button><a href="">See All Speakers</a></button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -256,31 +324,43 @@
             <div class="carousel-inner" class="tabcontent">
                 <div class="carousel-item active" style="background-color: transparent;">
                     <div class="speaker">
-                        <img class="align-self-center mr-3" src="{{asset('img/speakers/pasfotokulyah.jpeg')}}" alt="Generic placeholder image">
+                        <div class="img-speakers">
+                            <img class="align-self-center mr-3" src="{{asset('img/speakers/pasfotokulyah.jpeg')}}" alt="Generic placeholder image">
+                        </div>
                         <div class="media-body">
                             <h5 class="mt-0">Speaker 10</h5>
                             <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
-                            <button><a href="">See All Speakers</a></button>
+                            <div class="button-speakers-details">
+                                <button><a href="">See All Speakers</a></button>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item" style="background-color: transparent;">
                     <div class="speaker">
-                        <img class="align-self-center mr-3" src="{{asset('img/speakers/Rectangle 49.png')}}" alt="Generic placeholder image">
+                        <div class="img-speakers">
+                            <img class="align-self-center mr-3" src="{{asset('img/speakers/pasfotokulyah.jpeg')}}" alt="Generic placeholder image">
+                        </div>
                         <div class="media-body">
                             <h5 class="mt-0">Speaker 11</h5>
                             <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
-                            <button><a href="">See All Speakers</a></button>
+                            <div class="button-speakers-details">
+                                <button><a href="">See All Speakers</a></button>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item" style="background-color: transparent;">
                     <div class="speaker">
-                        <img class="align-self-center mr-3" src="{{asset('img/speakers/pasfotokulyah.jpeg')}}" alt="Generic placeholder image">
+                        <div class="img-speakers">
+                            <img class="align-self-center mr-3" src="{{asset('img/speakers/pasfotokulyah.jpeg')}}" alt="Generic placeholder image">
+                        </div>
                         <div class="media-body">
                             <h5 class="mt-0">Speaker 12</h5>
                             <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
-                            <button><a href="">See All Speakers</a></button>
+                            <div class="button-speakers-details">
+                                <button><a href="">See All Speakers</a></button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -298,31 +378,43 @@
             <div class="carousel-inner" class="tabcontent">
                 <div class="carousel-item active" style="background-color: transparent;">
                     <div class="speaker">
-                        <img class="align-self-center mr-3" src="{{asset('img/speakers/pasfotokulyah.jpeg')}}" alt="Generic placeholder image">
+                        <div class="img-speakers">
+                            <img class="align-self-center mr-3" src="{{asset('img/speakers/pasfotokulyah.jpeg')}}" alt="Generic placeholder image">
+                        </div>
                         <div class="media-body">
                             <h5 class="mt-0">Speaker 13</h5>
                             <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
-                            <button><a href="">See All Speakers</a></button>
+                            <div class="button-speakers-details">
+                                <button><a href="">See All Speakers</a></button>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item" style="background-color: transparent;">
                     <div class="speaker">
-                        <img class="align-self-center mr-3" src="{{asset('img/speakers/Rectangle 49.png')}}" alt="Generic placeholder image">
+                        <div class="img-speakers">
+                            <img class="align-self-center mr-3" src="{{asset('img/speakers/pasfotokulyah.jpeg')}}" alt="Generic placeholder image">
+                        </div>
                         <div class="media-body">
                             <h5 class="mt-0">Speaker 14</h5>
                             <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
-                            <button><a href="">See All Speakers</a></button>
+                            <div class="button-speakers-details">
+                                <button><a href="">See All Speakers</a></button>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item" style="background-color: transparent;">
                     <div class="speaker">
-                        <img class="align-self-center mr-3" src="{{asset('img/speakers/pasfotokulyah.jpeg')}}" alt="Generic placeholder image">
+                        <div class="img-speakers">
+                            <img class="align-self-center mr-3" src="{{asset('img/speakers/pasfotokulyah.jpeg')}}" alt="Generic placeholder image">
+                        </div>
                         <div class="media-body">
                             <h5 class="mt-0">Speaker 15</h5>
                             <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
-                            <button><a href="">See All Speakers</a></button>
+                            <div class="button-speakers-details">
+                                <button><a href="">See All Speakers</a></button>
+                            </div>
                         </div>
                     </div>
                 </div>

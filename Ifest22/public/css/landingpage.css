@@ -1,6 +1,8 @@
 /* 
     Countdown
 */
+@import url(font.css);
+
 div#info {
     flex-direction: column;
     /* position: absolute; */
@@ -139,13 +141,20 @@ div.countdown2 p {
 /* 
     Tabline
 */
+.media-body p{
+    font-family: "Poppins-Regular";
+    text-align: justify ;
+    font-size: 1vm;
+}
+
+
 .tab {
     margin: 0 auto;
     box-align: center;
     background-color: #A9D9F5;
     height: 300px;
 }
-.isian-tab button{
+.isian-tab1 button{
     display: flex;
     justify-content: space-between;
 }
@@ -177,7 +186,7 @@ div.countdown2 p {
 display: block;
 }
 
-.isian-tab{
+.isian-tab1{
     display: flex;
     justify-content: space-between;
     width: 80%;
@@ -188,6 +197,18 @@ display: block;
     color: white;
     margin: 100px auto 0; 
     /* code ini akan membuat div berada di tengah atas */
+}
+
+.isian-tab2{
+    display: none;
+    justify-content:start;
+    width: 80%;
+    padding: 10px;
+    border-radius: 10px 10px 0px 0px;
+    /* background: #291647; */
+    background-color: #c4c4c4;
+    color: white;
+    margin: 100px auto 0;
 }
 
 .pasklik{
@@ -212,6 +233,7 @@ display: block;
 
 .speaker{
     display: flex;
+    flex-wrap: wrap;
     align-items: flex-start;
     margin: 50px 20%;
 }
@@ -222,7 +244,6 @@ display: block;
 }
 
 .carousel-pembicara{
-    display: none;
     position: relative;
 }
 
@@ -372,6 +393,42 @@ display: block;
     }
 }
 
-/*  */
+/* Tablink Responsif */
+@media screen and (max-width: 925px){
+    .isian-tab1{
+        display: none;
+    }
 
-/* 570 cd2 show, cd1 none */
+    .isian-tab2{
+        display: flex;
+    }
+
+    .speaker {
+        display: inline-block;
+    }
+
+    .img-speakers{
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 20px;
+    }
+    
+    .speaker h5{
+        text-align: center;
+    }
+
+    .button-speakers-details{
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .media-body p{
+        font-size: 0.5vm;
+    }
+}
+
+@media screen and (max-width: 505px){   
+    .media-body p{
+        font-size: 12px;
+    }
+}
