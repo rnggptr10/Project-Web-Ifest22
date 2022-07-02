@@ -23,12 +23,20 @@
 
                 <div class="row justify-content-center" align="center" id="intRegistDescription" style="padding-bottom: 30px;">
                     <div class="col-5">
-                        @yield('regist-competition-form')
+                        <div class="row">
+                            <form action="{{route('intention.registration')}}" method="post" enctype="multipart/form-data">
+                                @method('patch')
+                                @csrf
+
+                                @yield('regist-competition-form')
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </body>
-@yield('regist-competition-js')
 @endsection
+
+<script src="{{ asset('js/regist-competition-js.js')}}"></script>

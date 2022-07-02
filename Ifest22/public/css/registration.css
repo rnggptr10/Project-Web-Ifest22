@@ -16,6 +16,14 @@
     color: #ffffff;
 }
 
+.regist-text-subhead {
+    font-family: "Poppins-Regular";
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 400;
+    text-align: center;
+}
+
 .regist-form-text {
     font-family: "Lato-Bold";
     font-size: 18px;
@@ -29,6 +37,30 @@
     line-height: 19.2px;
     font-weight: 400;
     text-align: left;
+}
+
+.regist-form-text-payment-head {
+    font-family: "Poppins-SemiBold";
+    font-size: 18px;
+    line-height: 8px;
+    text-align: left;
+    font-weight: 700;
+}
+
+.regist-form-text-price {
+    font-family: "Poppins-Regular";
+    font-size: 20px;
+    line-height: 8px;
+    text-align: left;
+    font-weight: 400;
+}
+
+.regist-form-text-payment {
+    font-family: "Poppins-Regular";
+    font-size: 16px;
+    line-height: 6px;
+    text-align: left;
+    font-weight: 400;
 }
 
 /* ------------------- Form ------------------- */
