@@ -48,7 +48,8 @@
         </div>
     </div>
 </div>
-<div class="box-countdown">
+
+<div class="box-countdown" data-aos="fade-up" data-aos-duration="1000">
     <div class="container">
         <div class="row rw">
             <div class="col-sm-4">
@@ -95,14 +96,12 @@
 </div>
 
 <div data-aos="fade-up" data-aos-duration="1000">
-    <div class="isian-tab" onshow="openPage('Home', this, '#291647')">
-        <button class="tablink" onshow="" onclick="openPage('Home', this, '#291647')">Startup Talk</button>
-        <button class="tablink" onclick="openPage('News', this, '#291647')" id="defaultOpen">Technopreneur</button>
-        <button class="tablink" onclick="openPage('Contact', this, '#291647')">IT Competition</button>
-        <button class="tablink" onclick="openPage('About', this, '#291647')">Seminar Nasional</button>
-        <button class="tablink" onclick="openPage('About', this, '#291647')">Awarding Night</button>
-
-
+    <div class="isian-tab">
+        <button id="defaultOpen" class="tablink" onclick="openPage('Home','StartupTalk-speakers' , this, '#291647')" id="defaultOpen">Startup Talk</button>
+        <button class="tablink" onclick="openPage('News', 'Technopreneur-speakers', this, '#291647')">Technopreneur</button>
+        <button class="tablink" onclick="openPage('Contact','ITComp-speakers', this, '#291647')">IT Competition</button>
+        <button class="tablink" onclick="openPage('About', 'Semnas-speakers', this, '#291647')">Seminar Nasional</button>
+        <button class="tablink" onclick="openPage('About2', 'AwardingNight-speakers', this, '#291647')">Awarding Night</button>
     </div>
     <div class="pasklik">
         <div id="Home" class="tabcontent">
@@ -118,13 +117,17 @@
             <p>Description IT Competition...</p>
         </div>
         <div id="About" class="tabcontent">
+            <h3>Seminar Nasional</h3>
+            <p>Description Seminar Nasional...</p>
+        </div>
+        <div id="About2" class="tabcontent">
             <h3>Awarding Night</h3>
             <p>Description Awarding Night...</p>
         </div>
     </div>
     <div class="box-speaker">
-        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner">
+        <div id="StartupTalk-speakers" class="carousel-pembicara slide" data-ride="carousel">
+            <div class="carousel-inner" class="tabcontent">
                 <div class="carousel-item active" style="background-color: transparent;">
                     <div class="speaker">
                         <img class="align-self-center mr-3" src="{{asset('img/speakers/pasfotokulyah.jpeg')}}" alt="Generic placeholder image">
@@ -165,6 +168,174 @@
                 <span class="sr-only">Next</span>
             </a>
         </div>
+        <div id="Technopreneur-speakers" class="carousel-pembicara slide" data-ride="carousel">
+            <div class="carousel-inner" class="tabcontent">
+                <div class="carousel-item active" style="background-color: transparent;">
+                    <div class="speaker">
+                        <!-- <img class="align-self-center mr-3" src="{{asset('img/speakers/pasfotokulyah.jpeg')}}" alt="Generic placeholder image"> -->
+                        <div class="media-body">
+                            <h5 class="mt-0">Speaker 4</h5>
+                            <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+                            <button><a href="">See All Speakers</a></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item" style="background-color: transparent;">
+                    <div class="speaker">
+                        <!-- <img class="align-self-center mr-3" src="{{asset('img/speakers/Rectangle 49.png')}}" alt="Generic placeholder image"> -->
+                        <div class="media-body">
+                            <h5 class="mt-0">Speaker 5</h5>
+                            <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+                            <button><a href="">See All Speakers</a></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item" style="background-color: transparent;">
+                    <div class="speaker">
+                        <!-- <img class="align-self-center mr-3" src="{{asset('img/speakers/pasfotokulyah.jpeg')}}" alt="Generic placeholder image"> -->
+                        <div class="media-body">
+                            <h5 class="mt-0">Speaker 6</h5>
+                            <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+                            <button><a href="">See All Speakers</a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        <div id="ITComp-speakers" class="carousel-pembicara slide" data-ride="carousel">
+            <div class="carousel-inner" class="tabcontent">
+                <div class="carousel-item active" style="background-color: transparent;">
+                    <div class="speaker">
+                        <img class="align-self-center mr-3" src="{{asset('img/speakers/pasfotokulyah.jpeg')}}" alt="Generic placeholder image">
+                        <div class="media-body">
+                            <h5 class="mt-0">Speaker 7</h5>
+                            <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+                            <button><a href="">See All Speakers</a></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item" style="background-color: transparent;">
+                    <div class="speaker">
+                        <img class="align-self-center mr-3" src="{{asset('img/speakers/Rectangle 49.png')}}" alt="Generic placeholder image">
+                        <div class="media-body">
+                            <h5 class="mt-0">Speaker 8</h5>
+                            <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+                            <button><a href="">See All Speakers</a></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item" style="background-color: transparent;">
+                    <div class="speaker">
+                        <img class="align-self-center mr-3" src="{{asset('img/speakers/pasfotokulyah.jpeg')}}" alt="Generic placeholder image">
+                        <div class="media-body">
+                            <h5 class="mt-0">Speaker 9</h5>
+                            <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+                            <button><a href="">See All Speakers</a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        <div id="Semnas-speakers" class="carousel-pembicara slide" data-ride="carousel">
+            <div class="carousel-inner" class="tabcontent">
+                <div class="carousel-item active" style="background-color: transparent;">
+                    <div class="speaker">
+                        <img class="align-self-center mr-3" src="{{asset('img/speakers/pasfotokulyah.jpeg')}}" alt="Generic placeholder image">
+                        <div class="media-body">
+                            <h5 class="mt-0">Speaker 10</h5>
+                            <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+                            <button><a href="">See All Speakers</a></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item" style="background-color: transparent;">
+                    <div class="speaker">
+                        <img class="align-self-center mr-3" src="{{asset('img/speakers/Rectangle 49.png')}}" alt="Generic placeholder image">
+                        <div class="media-body">
+                            <h5 class="mt-0">Speaker 11</h5>
+                            <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+                            <button><a href="">See All Speakers</a></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item" style="background-color: transparent;">
+                    <div class="speaker">
+                        <img class="align-self-center mr-3" src="{{asset('img/speakers/pasfotokulyah.jpeg')}}" alt="Generic placeholder image">
+                        <div class="media-body">
+                            <h5 class="mt-0">Speaker 12</h5>
+                            <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+                            <button><a href="">See All Speakers</a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        <div id="AwardingNight-speakers" class="carousel-pembicara slide" data-ride="carousel">
+            <div class="carousel-inner" class="tabcontent">
+                <div class="carousel-item active" style="background-color: transparent;">
+                    <div class="speaker">
+                        <img class="align-self-center mr-3" src="{{asset('img/speakers/pasfotokulyah.jpeg')}}" alt="Generic placeholder image">
+                        <div class="media-body">
+                            <h5 class="mt-0">Speaker 13</h5>
+                            <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+                            <button><a href="">See All Speakers</a></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item" style="background-color: transparent;">
+                    <div class="speaker">
+                        <img class="align-self-center mr-3" src="{{asset('img/speakers/Rectangle 49.png')}}" alt="Generic placeholder image">
+                        <div class="media-body">
+                            <h5 class="mt-0">Speaker 14</h5>
+                            <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+                            <button><a href="">See All Speakers</a></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item" style="background-color: transparent;">
+                    <div class="speaker">
+                        <img class="align-self-center mr-3" src="{{asset('img/speakers/pasfotokulyah.jpeg')}}" alt="Generic placeholder image">
+                        <div class="media-body">
+                            <h5 class="mt-0">Speaker 15</h5>
+                            <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+                            <button><a href="">See All Speakers</a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
     </div>
 </div>
 
@@ -186,5 +357,8 @@
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>
     AOS.init();
+</script>
+<script>
+    document.getElementById("defaultOpen").click();
 </script>
 @endsection

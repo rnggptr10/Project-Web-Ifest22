@@ -38,11 +38,58 @@
         <h3>International Conference</h3>
         <div class="conference-btn">
 
-            <a href="{{ route('incon') }}"><span class="register">Register Now</span></a>
-            <a href="{{ route('incon') }}"><span class="details" id="details">See Details</span></a>
+            <a href="{{ route('incon') }}"><span class="register">Register</span></a>
+            <a href="{{ route('incon') }}"><span class="details" id="details">Details</span></a>
         </div>
     </div>
 </div>
+<div class="box-countdown" data-aos="fade-up" data-aos-duration="1000">
+    <div class="container">
+        <div class="row rw">
+            <div class="col-sm-4">
+                <div class="countdown2">
+                    <div class="box-timer">
+                        <div id="days2">0</div>
+                        <p>days</p>
+                    </div>
+                    <div class="box-timer">
+                        <div id="hours2">0</div>
+                        <p>hours</p>
+                    </div>
+                    <div class="box-timer">
+                        <div id="minutes2">0</div>
+                        <p>minutes</p>
+                    </div>
+                    <div class="box-timer">
+                        <div id="seconds2">0</div>
+                        <p>seconds</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="title-countdown">
+                    <p>International Conference</p>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="conference-btn2">
+                    <button class="btn btn-outline-primary ifest-btn-outline-primary-light-bg col-md-5 float-right mt-3 mt-sm-0 fw-bold"><a class="ifest-btn-outline-primary-light-bg-text" href="{{route('register')}}">Register</a></button>
+
+                    <!-- <button class="register">
+                            <a href="{{ route('incon') }}">Register</a>
+                        </button> -->
+                    <!-- <button class="details">
+                            <a href="{{ route('incon') }}">Details</a>
+                        </button> -->
+                    <button class="btn btn-outline-primary ifest-btn-outline-primary-light-bg col-md-5 float-right mt-3 mt-sm-0 fw-bold"><a class="ifest-btn-outline-primary-light-bg-text" href="{{route('register')}}">Details</a></button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
 
 <div>
     <div class="isian-tab">

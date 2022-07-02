@@ -221,6 +221,14 @@ display: block;
     height: 200px;  
 }
 
+.carousel-pembicara{
+    display: none;
+    position: relative;
+}
+
+.box-tab{
+    height: 500px;
+}
 
 /* #Home {background-color: red;}
 #News {background-color: green;}
