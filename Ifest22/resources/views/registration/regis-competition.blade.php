@@ -8,6 +8,7 @@
 @extends('layouts.app')
 
 @section('content')
+
 <body style="background-color: #1c1c1c;">
     <div class="container" style="padding: 0; ">
         <div class="row">

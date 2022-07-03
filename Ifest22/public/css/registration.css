@@ -76,3 +76,25 @@
     background-color: #1c1c1c;
     box-shadow: none;
 }
+
+/* Add 1 Member Intention */
+.row-addmember-btn{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.row-addmember{
+    display: none;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.row-removemember-btn{
+    display: none;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}

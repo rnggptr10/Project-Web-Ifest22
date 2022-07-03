@@ -364,14 +364,14 @@
             <div class="row justify-content-center align-items-center" align="center" id="registCompButton2" style="padding:30px 0 30px 0">
                 <div class="col-4">
                     <!-- VERTICAL ALIGN NYA BELOM JALAN -->
-                    <a class="btn btn-outline-primary ifest-btn-outline-primary-dark-bg mt-3 mt-sm-0 fw-bold text-center" onclick="backToSection1()"  style="height:44px; width:128px;">{{ __('< Back') }}</a>
+                    <a class="btn btn-outline-primary ifest-btn-outline-primary-dark-bg mt-3 mt-sm-0 fw-bold text-center" onclick="backToSection1()" style="height:44px; width:128px;">{{ __('< Back') }}</a>
                 </div>
                 <div class="col-4">
                     <button id="regist-submit-regist" type="submit" class="btn btn-primary ifest-btn-primary-dark-bg mt-3 mt-sm-0 fw-bold" onclick="registNextSection()" style="height:44px; width:128px" disabled>{{ __('Submit') }}</button>
                 </div>
             </div>
         </div>
-    </div> 
+    </div>
 </div>
 @endsection
 
