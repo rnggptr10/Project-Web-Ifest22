@@ -37,6 +37,7 @@
             </div>
         </div>
     </div>
+    @yield('js-addmember')
 </body>
 @endsection
 

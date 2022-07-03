@@ -1,20 +1,3 @@
-// JS untuk tambah 1 peserta Intention
-function addMemberIntention(idCompetition, idBtn1, idBtn2){
-    document.getElementById(idCompetition).style.display = "block";
-    document.getElementById(idBtn1).style.display = "none";
-    document.getElementById(idBtn2).style.display = "flex";
-}
-
-function removeMemberIntentionButton(idCompetition, idBtn1, idBtn2){
-    document.getElementById(idCompetition).style.display = "none";
-    document.getElementById(idBtn1).style.display = "flex";
-    document.getElementById(idBtn2).style.display = "none";
-}
-
-// JS untukk tambah 2 peserta CTF
-
-
-
 let count = 3;
 const openOptionalMem = (category) => {
     // 1 for Intention

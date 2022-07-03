@@ -431,6 +431,23 @@
         </div>
     </div>
 </div>
+@section('js-addmember')
+<script>
+    // JS untuk tambah 1 peserta Intention
+    function addMemberIntention(idCompetition, idBtn1, idBtn2) {
+        document.getElementById(idCompetition).style.display = "block";
+        document.getElementById(idBtn1).style.display = "none";
+        document.getElementById(idBtn2).style.display = "flex";
+    }
+
+    function removeMemberIntentionButton(idCompetition, idBtn1, idBtn2) {
+        document.getElementById(idCompetition).style.display = "none";
+        document.getElementById(idBtn1).style.display = "flex";
+        document.getElementById(idBtn2).style.display = "none";
+    }
+</script>
+@endsection
+
 @endsection
 
 @section('cp_registrasi')
