@@ -19,7 +19,7 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 @endsection
 
 @section('competition_flashback')
-<div class="row align-items-center" align="center" id="intFlashback" style="padding-top: 30px;padding-bottom: 30px;">
+<div class="row-carousel-ctf align-items-center" align="center" id="intFlashback" style="padding-top: 30px;padding-bottom: 30px;">
     <div class="col-1">
         <img class="arrow-switch" src="{{ URL::asset('icon/circle-arrow-left.svg') }}" alt="arrow-left">
     </div>
@@ -85,24 +85,28 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 @endsection
 
 @section('competition_button')
-<div class="col" data-aos="fade-right" data-aos-duration="1000" style="text-align: right;">
-    <button type="button" class="btn btn-outline-primary ifest-btn-outline-primary-dark-bg" style="width: 147px;height: 48px;">Guidebook</button>
-</div>
-<div class="col" data-aos="fade-left" data-aos-duration="1000" style="text-align: left;">
-    <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 147px;height: 48px;">
-        @guest
-        @if(Route::has('login'))
-        <a class="ifest-btn-primary-dark-bg-text" href="{{route('login')}}">Register Now</a>
-        @endif
-        @else
-        <a class="ifest-btn-primary-dark-bg-text" href="{{route('ctf.registration.view')}}">Register Now</a>
-        @endguest
-    </button>
+<div class="row-cp" style="margin-left: 0; margin-right:0;">
+    <div class="col-btn-left">
+        <button type="button" class="btn btn-outline-primary ifest-btn-outline-primary-dark-bg">
+            <a class="ifest-btn-primary-dark-bg-text" href="">Guidebook</a>
+        </button>
+    </div>
+    <div class="col-btn-right">
+        <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg">
+            @guest
+            @if(Route::has('login'))
+            <a class="ifest-btn-primary-dark-bg-text" href="{{route('login')}}">Register Now</a>
+            @endif
+            @else
+            <a class="ifest-btn-primary-dark-bg-text" href="{{route('ctf.registration.view')}}">Register Now</a>
+            @endguest
+        </button>
+    </div>
 </div>
 @endsection
 
 @section('competition_faq')
-<div class="row" style="padding-top: 30px;">
+<div class="row-box-question-faq" style="padding-top: 30px;">
     <div class="card-faq text-left">
         <details>
             <summary>Pertanyaan 1</summary>

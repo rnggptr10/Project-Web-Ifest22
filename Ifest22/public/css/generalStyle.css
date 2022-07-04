@@ -220,6 +220,7 @@ summary {
     display: flex;
     flex-direction: column;
     min-width: 0;
+    width: 100%;
     word-wrap: break-word;
     background: #2d2d2d;
     /* border: 1px solid rgba(0, 0, 0, .125); */
@@ -231,6 +232,7 @@ summary {
 
 /* TIMELINE */
 .ps-timeline-sec {
+    width: 100%;
     position: relative;
 }
 
