@@ -75,35 +75,32 @@
     border-color: #8267B4;
     background-color: #1c1c1c;
     box-shadow: none;
+    color: #ffffff;
 }
 
-/* Add 1 Member Intention */
-.row-addmember-btn{
-    display: flex;
-    flex-wrap: wrap;
-    margin-right: -15px;
-    margin-left: -15px;
-}
-
-.row-addmember{
+/* Add Member*/
+.row-addmember {
     display: none;
     flex-wrap: wrap;
     margin-right: -15px;
     margin-left: -15px;
 }
 
-.row-removemember-btn{
-    display: none;
-    flex-wrap: wrap;
-    margin-right: -15px;
-    margin-left: -15px;
-}
-
-.input-element-regis{
-    background-color: #1c1c1c; 
-    width:100%; 
+.input-element-regis {
+    background-color: #1c1c1c;
+    width: 100%;
     border: 1px solid #8267B4;
     height: calc(2.25rem + 2px);
     border-radius: 0.25rem;
     box-shadow: none;
+}
+
+.input-element-regis:hover,
+.input-element-regis:focus,
+.input-element-regis:active {
+    border: 1px solid #8267B4;
+}
+
+input.placeholder {
+    text-align: center;
 }

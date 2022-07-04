@@ -1,31 +1,3 @@
-let count = 3;
-const openOptionalMem = (category) => {
-    // 1 for Intention
-    // 2 for CTF
-    // 3 for DA
-    if (category === 1) {
-        var numberOfMember = 5;
-    } else if (category === 2) {
-        var numberOfMember = 4;
-    } else if (category === 3) {
-        var numberOfMember = 4;
-    } else {
-        var numberOfMember = 4;
-    }
-    var input = document.createElement("input");
-    var parent = document.getElementById("optional-member");
-    var button = document.getElementById("add-member");
-    input.setAttribute("type", "text");
-    input.setAttribute("name", `team_member_${count}`);
-    input.setAttribute("placeholder", `Member ${count}'s Name (Optional)`);
-    input.setAttribute("class", "input-element-regis mt-3 dflex");
-    parent.appendChild(input);
-    count++;
-    if (count === numberOfMember) {
-        button.remove();
-    }
-};
-
 const registNextSection = () => {
     setTimeout(() => {
         setTimeout(() => {
@@ -74,4 +46,60 @@ if (document.getElementById("payment-confirmation") !== null) {
     paymentFileBtn.addEventListener("change", function () {
         fileChoosenPayment.textContent = this.files[0].name;
     });
+}
+
+// ADD MEMBER
+var noBox = 1;
+
+function AddMember(addMember, addMemberBtn, removeMemberBtn) {
+    console.log(noBox);
+    if (noBox == 1) {
+        noBox++;
+        document.getElementById(addMember).style.display = "block";
+        document.getElementById(addMemberBtn).style.display = "block";
+        document.getElementById(removeMemberBtn).style.display = "block";
+    } else if (noBox == 2) {
+        document.getElementById('addmember2').style.display = "block";
+        document.getElementById(addMemberBtn).style.display = "none";
+        document.getElementById(removeMemberBtn).style.display = "block";
+    }
+}
+
+function AddMemberDAC(addMember, addMemberBtn, removeMemberBtn) {
+    console.log(noBox);
+    if (noBox == 1) {
+        noBox++;
+        document.getElementById(addMember).style.display = "block";
+        document.getElementById(addMemberBtn).style.display = "none";
+        document.getElementById(removeMemberBtn).style.display = "block";
+    }
+}
+
+function RemoveMember(addMember, addMemberBtn, removeMemberBtn) {
+    console.log(noBox);
+    if (noBox == 2) {
+        noBox--;
+        document.getElementById('addmember2').style.display = "none";
+        document.getElementById(addMemberBtn).style.display = "block";
+        document.getElementById(removeMemberBtn).style.display = "block";
+    }
+    else if (noBox == 1) {
+        document.getElementById(addMember).style.display = "none";
+        document.getElementById(addMemberBtn).style.display = "block";
+        document.getElementById(removeMemberBtn).style.display = "none";
+    }
+}
+
+function RemoveMemberDAC(addMember, addMemberBtn, removeMemberBtn) {
+    console.log(noBox);
+    if (noBox == 2) {
+        noBox--;
+        document.getElementById(addMemberBtn).style.display = "none";
+        document.getElementById(removeMemberBtn).style.display = "block";
+    }
+    else if (noBox == 1) {
+        document.getElementById(addMember).style.display = "none";
+        document.getElementById(addMemberBtn).style.display = "block";
+        document.getElementById(removeMemberBtn).style.display = "none";
+    }
 }

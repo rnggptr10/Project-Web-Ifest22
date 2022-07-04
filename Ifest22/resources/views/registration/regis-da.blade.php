@@ -12,12 +12,14 @@
 
 @section('regist_competition_title', 'Data Analysis Competition')
 
+@section('regist_action_form', "{{route('dac.registration')}}")
+
 @section('regist-competition-form')
 <!-- PAGE 1 -->
 <div id="regist-section-1">
     <div class="row mb-2">
         <label for="team_name" class="placeholder regist-form-text" style="padding:0">{{ __('Team Name') }}</label>
-        <input id="team_name" type="text" class="form-control @error('team_name') is-invalid @enderror ifest-regist-form" name="team_name" value="{{ old('team_name') }}" required autocomplete="team_name" autofocus>
+        <input id="team_name" type="text" class="form-control @error('team_name') is-invalid @enderror ifest-regist-form text-center" name="team_name" value="{{ old('team_name') }}" required autocomplete="team_name" autofocus placeholder="Insert Team Name">
         @error('team_name')
         <div class="alert alert-danger mt-1 d-flex align-items-center" role="alert" style="width: 100%;
         max-width: 333px; margin: 0 auto">
@@ -37,7 +39,7 @@
                 <div class="col-10 text-left" style="padding:0">
                     <div class="row mb-2">
                         <div class="col">
-                            <input id="team_leader" type="text" class="form-control @error('team_leader') is-invalid @enderror ifest-regist-form" name="team_leader" value="{{ old('team_leader') }}" required autocomplete="team_leader" autofocus>
+                            <input id="team_leader" type="text" class="form-control @error('team_leader') is-invalid @enderror ifest-regist-form text-center" name="team_leader" value="{{ old('team_leader') }}" required autocomplete="team_leader" autofocus placeholder="Insert Name" placeholder="Insert Name">
                             @error('team_leader')
                             <div class="alert alert-danger mt-1 d-flex align-items-center" role="alert" style="width: 100%;
                             max-width: 333px; margin: 0 auto">
@@ -49,7 +51,7 @@
                     </div>
                     <div class="row mb-2">
                         <div class="col">
-                            <input id="team_leader" type="text" class="form-control @error('team_leader') is-invalid @enderror ifest-regist-form" name="team_leader" value="{{ old('team_leader') }}" required autocomplete="team_leader" autofocus>
+                            <input id="team_leader" type="text" class="form-control @error('team_leader') is-invalid @enderror ifest-regist-form text-center" name="team_leader" value="{{ old('team_leader') }}" required autocomplete="team_leader" autofocus placeholder="Insert Institute">
                             @error('team_leader')
                             <div class="alert alert-danger mt-1 d-flex align-items-center" role="alert" style="width: 100%;
                             max-width: 333px; margin: 0 auto">
@@ -100,7 +102,7 @@
                 <div class="col-10 text-left" style="padding:0">
                     <div class="row mb-2">
                         <div class="col">
-                            <input id="team_leader" type="text" class="form-control @error('team_leader') is-invalid @enderror ifest-regist-form" name="team_leader" value="{{ old('team_leader') }}" required autocomplete="team_leader" autofocus>
+                            <input id="team_leader" type="text" class="form-control @error('team_leader') is-invalid @enderror ifest-regist-form text-center" name="team_leader" value="{{ old('team_leader') }}" required autocomplete="team_leader" autofocus placeholder="Insert Name">
                             @error('team_leader')
                             <div class="alert alert-danger mt-1 d-flex align-items-center" role="alert" style="width: 100%;
                             max-width: 333px; margin: 0 auto">
@@ -112,7 +114,7 @@
                     </div>
                     <div class="row mb-2">
                         <div class="col">
-                            <input id="team_leader" type="text" class="form-control @error('team_leader') is-invalid @enderror ifest-regist-form" name="team_leader" value="{{ old('team_leader') }}" required autocomplete="team_leader" autofocus>
+                            <input id="team_leader" type="text" class="form-control @error('team_leader') is-invalid @enderror ifest-regist-form text-center" name="team_leader" value="{{ old('team_leader') }}" required autocomplete="team_leader" autofocus placeholder="Insert Institute">
                             @error('team_leader')
                             <div class="alert alert-danger mt-1 d-flex align-items-center" role="alert" style="width: 100%;
                             max-width: 333px; margin: 0 auto">
@@ -164,7 +166,7 @@
                 <div class="col-10 text-left" style="padding:0">
                     <div class="row mb-2">
                         <div class="col">
-                            <input id="team_leader" type="text" class="form-control @error('team_leader') is-invalid @enderror ifest-regist-form" name="team_leader" value="{{ old('team_leader') }}" required autocomplete="team_leader" autofocus>
+                            <input id="team_leader" type="text" class="form-control @error('team_leader') is-invalid @enderror ifest-regist-form text-center" name="team_leader" value="{{ old('team_leader') }}" required autocomplete="team_leader" autofocus placeholder="Insert Name">
                             @error('team_leader')
                             <div class="alert alert-danger mt-1 d-flex align-items-center" role="alert" style="width: 100%;
                             max-width: 333px; margin: 0 auto">
@@ -176,7 +178,7 @@
                     </div>
                     <div class="row mb-2">
                         <div class="col">
-                            <input id="team_leader" type="text" class="form-control @error('team_leader') is-invalid @enderror ifest-regist-form" name="team_leader" value="{{ old('team_leader') }}" required autocomplete="team_leader" autofocus>
+                            <input id="team_leader" type="text" class="form-control @error('team_leader') is-invalid @enderror ifest-regist-form text-center" name="team_leader" value="{{ old('team_leader') }}" required autocomplete="team_leader" autofocus placeholder="Insert Institute">
                             @error('team_leader')
                             <div class="alert alert-danger mt-1 d-flex align-items-center" role="alert" style="width: 100%;
                             max-width: 333px; margin: 0 auto">
@@ -229,7 +231,7 @@
                 <div class="col-10 text-left" style="padding:0">
                     <div class="row mb-2">
                         <div class="col">
-                            <input id="team_leader" type="text" class="form-control @error('team_leader') is-invalid @enderror ifest-regist-form" name="team_leader" value="{{ old('team_leader') }}" required autocomplete="team_leader" autofocus>
+                            <input id="team_leader" type="text" class="form-control @error('team_leader') is-invalid @enderror ifest-regist-form text-center" name="team_leader" value="{{ old('team_leader') }}" required autocomplete="team_leader" autofocus placeholder="Insert Name">
                             @error('team_leader')
                             <div class="alert alert-danger mt-1 d-flex align-items-center" role="alert" style="width: 100%;
                             max-width: 333px; margin: 0 auto">
@@ -241,7 +243,7 @@
                     </div>
                     <div class="row mb-2">
                         <div class="col">
-                            <input id="team_leader" type="text" class="form-control @error('team_leader') is-invalid @enderror ifest-regist-form" name="team_leader" value="{{ old('team_leader') }}" required autocomplete="team_leader" autofocus>
+                            <input id="team_leader" type="text" class="form-control @error('team_leader') is-invalid @enderror ifest-regist-form text-center" name="team_leader" value="{{ old('team_leader') }}" required autocomplete="team_leader" autofocus placeholder="Insert Institute">
                             @error('team_leader')
                             <div class="alert alert-danger mt-1 d-flex align-items-center" role="alert" style="width: 100%;
                             max-width: 333px; margin: 0 auto">
@@ -283,140 +285,14 @@
         </div>
     </div>
 
-    <!-- 2 -->
-    <div id="addmemberDAC2" class="row-addmember mb-2 align-items-center">
-        <div class="col">
-            <div class="row" align="left">
-                <h5 class="placeholder regist-form-text" style="padding:0">Team Member 4</h5>
-            </div>
-            <div class="row">
-                <div class="col-10 text-left" style="padding:0">
-                    <div class="row mb-2">
-                        <div class="col">
-                            <input id="team_leader" type="text" class="form-control @error('team_leader') is-invalid @enderror ifest-regist-form" name="team_leader" value="{{ old('team_leader') }}" required autocomplete="team_leader" autofocus>
-                            @error('team_leader')
-                            <div class="alert alert-danger mt-1 d-flex align-items-center" role="alert" style="width: 100%;
-                            max-width: 333px; margin: 0 auto">
-                                <span class="iconify me-1" data-icon="akar-icons:circle-alert" data-inline="false" style="color: #842029;"></span>
-                                {{ $message }}
-                            </div>
-                            @enderror
-                        </div>
-                    </div>
-                    <div class="row mb-2">
-                        <div class="col">
-                            <input id="team_leader" type="text" class="form-control @error('team_leader') is-invalid @enderror ifest-regist-form" name="team_leader" value="{{ old('team_leader') }}" required autocomplete="team_leader" autofocus>
-                            @error('team_leader')
-                            <div class="alert alert-danger mt-1 d-flex align-items-center" role="alert" style="width: 100%;
-                            max-width: 333px; margin: 0 auto">
-                                <span class="iconify me-1" data-icon="akar-icons:circle-alert" data-inline="false" style="color: #842029;"></span>
-                                {{ $message }}
-                            </div>
-                            @enderror
-                        </div>
-                    </div>
-                </div>
-                <div class="col-2">
-                    <div class="row mb-2">
-                        <div class="col">
-                            <input type="file" id="id_card" name="id_card" accept=".png" value="+ ID Card" style="color:transparent">
-                            @error('id_card')
-                            <div class="alert alert-danger mt-1 d-flex align-items-center" role="alert" style="width: 100%;
-                            max-width: 333px; margin: 0 auto">
-                                <span class="iconify me-1" data-icon="akar-icons:circle-alert" data-inline="false" style="color: #842029;"></span>
-                                {{ $message }}
-                            </div>
-                            @enderror
-                        </div>
-                    </div>
-                    <!-- KLO BLM UPLOAD CUMA 1 BUTTON -->
-                    <!-- <div class="row mb-2">
-                        <div class="col">
-                            <input type="file" id="id_card" name="id_card" accept=".png" value="+ ID Card" style="color:transparent">
-                            @error('id_card')
-                            <div class="alert alert-danger mt-1 d-flex align-items-center" role="alert" style="width: 100%;
-                            max-width: 333px; margin: 0 auto">
-                                <span class="iconify me-1" data-icon="akar-icons:circle-alert" data-inline="false" style="color: #842029;"></span>
-                                {{ $message }}
-                            </div>
-                            @enderror
-                        </div>
-                    </div> -->
-                </div>
-            </div>
-        </div>
-        <!-- 3 -->
-        <div id="addmemberDAC3" class="row-addmember mb-2 align-items-center">
-            <div class="col">
-                <div class="row" align="left">
-                    <h5 class="placeholder regist-form-text" style="padding:0">Team Member 5</h5>
-                </div>
-                <div class="row">
-                    <div class="col-10 text-left" style="padding:0">
-                        <div class="row mb-2">
-                            <div class="col">
-                                <input id="team_leader" type="text" class="form-control @error('team_leader') is-invalid @enderror ifest-regist-form" name="team_leader" value="{{ old('team_leader') }}" required autocomplete="team_leader" autofocus>
-                                @error('team_leader')
-                                <div class="alert alert-danger mt-1 d-flex align-items-center" role="alert" style="width: 100%;
-                            max-width: 333px; margin: 0 auto">
-                                    <span class="iconify me-1" data-icon="akar-icons:circle-alert" data-inline="false" style="color: #842029;"></span>
-                                    {{ $message }}
-                                </div>
-                                @enderror
-                            </div>
-                        </div>
-                        <div class="row mb-2">
-                            <div class="col">
-                                <input id="team_leader" type="text" class="form-control @error('team_leader') is-invalid @enderror ifest-regist-form" name="team_leader" value="{{ old('team_leader') }}" required autocomplete="team_leader" autofocus>
-                                @error('team_leader')
-                                <div class="alert alert-danger mt-1 d-flex align-items-center" role="alert" style="width: 100%;
-                            max-width: 333px; margin: 0 auto">
-                                    <span class="iconify me-1" data-icon="akar-icons:circle-alert" data-inline="false" style="color: #842029;"></span>
-                                    {{ $message }}
-                                </div>
-                                @enderror
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-2">
-                        <div class="row mb-2">
-                            <div class="col">
-                                <input type="file" id="id_card" name="id_card" accept=".png" value="+ ID Card" style="color:transparent">
-                                @error('id_card')
-                                <div class="alert alert-danger mt-1 d-flex align-items-center" role="alert" style="width: 100%;
-                            max-width: 333px; margin: 0 auto">
-                                    <span class="iconify me-1" data-icon="akar-icons:circle-alert" data-inline="false" style="color: #842029;"></span>
-                                    {{ $message }}
-                                </div>
-                                @enderror
-                            </div>
-                        </div>
-                        <!-- KLO BLM UPLOAD CUMA 1 BUTTON -->
-                        <!-- <div class="row mb-2">
-                        <div class="col">
-                            <input type="file" id="id_card" name="id_card" accept=".png" value="+ ID Card" style="color:transparent">
-                            @error('id_card')
-                            <div class="alert alert-danger mt-1 d-flex align-items-center" role="alert" style="width: 100%;
-                            max-width: 333px; margin: 0 auto">
-                                <span class="iconify me-1" data-icon="akar-icons:circle-alert" data-inline="false" style="color: #842029;"></span>
-                                {{ $message }}
-                            </div>
-                            @enderror
-                        </div>
-                    </div> -->
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
     <!-- ADD MEMBER -->
     <div class="row mb-2">
         <div class="col-10" style="padding:0">
-            <button id="btn-addRegisDAC" type="button" class="input-element-regis mt-3" style="background-color: #1c1c1c; width:100%; border-color: #8267B4;" onclick="openOptionalMem(1)">+</button>
+            <button id="btn-addRegisDAC" type="button" class="input-element-regis mt-3" onclick="AddMemberDAC('addmemberDAC1', 'btn-addRegisDAC', 'btn-removeRegisDAC')">+</button>
         </div>
         <!-- Button Remove Member -->
         <div class="col-10" style="padding:0">
-            <button id="btn-removeRegisDAC" type="button" class="input-element-regis mt-3" style="background-color: #1c1c1c; width:100%; border-color: #8267B4;">-</button>
+            <button id="btn-removeRegisDAC" type="button" class="input-element-regis mt-3" onclick="RemoveMemberDAC('addmemberDAC1', 'btn-addRegisDAC', 'btn-removeRegisDAC')" style="display:none">-</button>
         </div>
     </div>
 
@@ -452,11 +328,11 @@
     </div>
 
     <div class="row justify-content-center align-items-center" align="center" id="registCompButton" style="padding:30px 0 30px 0">
-        <div class="col">
+        <div class="col-4">
             <!-- VERTICAL ALIGN NYA BELOM JALAN -->
-            <a class="btn btn-outline-primary ifest-btn-outline-primary-dark-bg mt-3 mt-sm-0 fw-bold text-center" href="{{ route('intention') }}" style="height:44px; width:128px;">{{ __('< Back') }}</a>
+            <a class="btn btn-outline-primary ifest-btn-outline-primary-dark-bg mt-3 mt-sm-0 fw-bold text-center" href="{{ route('da') }}" style="height:44px; width:128px;">{{ __('< Back') }}</a>
         </div>
-        <div class="col">
+        <div class="col-4">
             <button id="regist-next-section" type="button" class="btn btn-primary ifest-btn-primary-dark-bg mt-3 mt-sm-0 fw-bold" onclick="registNextSection()" style="height:44px; width:128px">{{ __('Next') }}</button>
         </div>
     </div>
@@ -464,69 +340,6 @@
 
 <!-- PAGE 2 -->
 <div id="regist-section-2" hidden>
-    <div class="row">
-        <h6 class="regist-text-subhead">Informasi Tim</h6>
-    </div>
-    <div class="row mb-2">
-        <label for="team_name" class="placeholder regist-form-text" style="padding:0">{{ __('Team Name') }}</label>
-        <input id="team_name" type="text" class="form-control @error('team_name') is-invalid @enderror ifest-regist-form" name="team_name" value="{{ old('team_name') }}" disabled autocomplete="team_name" autofocus>
-        @error('team_name')
-        <div class="alert alert-danger mt-1 d-flex align-items-center" role="alert" style="width: 100%;
-        max-width: 333px; margin: 0 auto">
-            <span class="iconify me-1" data-icon="akar-icons:circle-alert" data-inline="false" style="color: #842029;"></span>
-            {{ $message }}
-        </div>
-        @enderror
-    </div>
-    <div class="row mb-2 align-items-center">
-        <div class="col">
-            <div class="row" align="left">
-                <h5 class="placeholder regist-form-text" style="padding:10px 0 10px 0">Team Leader</h5>
-            </div>
-            <div class="row">
-                <div class="col-10 text-left" style="padding:0">
-                    <div class="row mb-2">
-                        <div class="col">
-                            <input id="team_leader" type="text" class="form-control @error('team_leader') is-invalid @enderror ifest-regist-form" name="team_leader" value="{{ old('team_leader') }}" disabled autocomplete="team_leader" autofocus>
-                            @error('team_leader')
-                            <div class="alert alert-danger mt-1 d-flex align-items-center" role="alert" style="width: 100%;
-                            max-width: 333px; margin: 0 auto">
-                                <span class="iconify me-1" data-icon="akar-icons:circle-alert" data-inline="false" style="color: #842029;"></span>
-                                {{ $message }}
-                            </div>
-                            @enderror
-                        </div>
-                    </div>
-                    <div class="row mb-2">
-                        <div class="col">
-                            <input id="team_leader" type="text" class="form-control @error('team_leader') is-invalid @enderror ifest-regist-form" name="team_leader" value="{{ old('team_leader') }}" disabled autocomplete="team_leader" autofocus>
-                            @error('team_leader')
-                            <div class="alert alert-danger mt-1 d-flex align-items-center" role="alert" style="width: 100%;
-                            max-width: 333px; margin: 0 auto">
-                                <span class="iconify me-1" data-icon="akar-icons:circle-alert" data-inline="false" style="color: #842029;"></span>
-                                {{ $message }}
-                            </div>
-                            @enderror
-                        </div>
-                    </div>
-                </div>
-                <div class="col-2">
-                    <div class="row mb-2">
-                        <div class="col">
-                            <input type="file" id="id_card" name="id_card" accept=".png" value="+ ID Card" style="color:transparent" disabled>
-                            @error('id_card')
-                            <div class="alert alert-danger mt-1 d-flex align-items-center" role="alert" style="width: 100%;
-                            max-width: 333px; margin: 0 auto">
-                                <span class="iconify me-1" data-icon="akar-icons:circle-alert" data-inline="false" style="color: #842029;"></span>
-                                {{ $message }}
-                            </div>
-                            @enderror
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
     <div class="row">
         <h6 class="regist-text-subhead">Registration Payment</h6>
     </div>
@@ -586,40 +399,6 @@
         </button>
     </div>
 </div>
-@section('js-addmember')
-<script>
-    // JS untukk tambah 2 peserta CTF
-    var btn_addRegisDAC = document.getElementById('btn-addRegisDAC');
-    var btn_removeRegisDAC = document.getElementById('btn-removeRegisDAC');
-    var noBox = 1;
-
-    btn_addRegisDAC.onclick = function() {
-        console.log(noBox);
-        if (noBox == 1) {
-            document.getElementById('addmemberDAC1').style.display = "block";
-            noBox++;
-        } else if (noBox == 2) {
-            document.getElementById('addmemberDAC2').style.display = "block";
-            noBox++;
-        } else if (noBox == 3) {
-            document.getElementById('addmemberDAC3').style.display = "block";
-        }
-    }
-
-    btn_removeRegisDAC.onclick = function() {
-        console.log(noBox);
-        if (noBox == 3) {
-            document.getElementById('addmemberDAC3').style.display = "none";
-            noBox--;
-        } else if (noBox == 2) {
-            document.getElementById('addmemberDAC2').style.display = "none";
-            noBox--;
-        } else if (noBox == 1) {
-            document.getElementById('addmemberDAC1').style.display = "none";
-        }
-    }
-</script>
-@endsection
 @endsection
 
 @section('cp1_wa', '6287720201166')

@@ -25,7 +25,7 @@
                 <div class="row justify-content-center" align="center" id="intRegistDescription" style="padding-bottom: 30px;">
                     <div class="col-5">
                         <div class="row">
-                            <form action="{{route('intention.registration')}}" method="post" enctype="multipart/form-data">
+                            <form action="@yield('regist_action_form')" method="post" enctype="multipart/form-data">
                                 @method('patch')
                                 @csrf
 
@@ -37,7 +37,6 @@
             </div>
         </div>
     </div>
-    @yield('js-addmember')
 </body>
 @endsection
 
