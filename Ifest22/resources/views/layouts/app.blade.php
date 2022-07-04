@@ -36,9 +36,9 @@
                         <!-- <a href="#">Event</a>
                         <a href="#">Competition</a> -->
                         <div class="sa">
-                            <div class="card-faq text-left">
+                            <div class="card-hamburger text-left">
                                 <details>
-                                    <summary>Event</summary>
+                                    <summary style="background-color: transparent;">Event</summary>
                                     <a href="{{ route('startup') }}" class="burger-details" style="padding-left: 15px;">Startup Talk</a>
                                     <a href="{{ route('incon') }}" class="burger-details" style="padding-left: 15px;">Seminar Nasional</a>
                                     <a href="{{ route('techno') }}" class="burger-details" style="padding-left: 15px;">Technopreneur</a>
@@ -46,7 +46,7 @@
                             </div>
                         </div>
                         <div class="sa">
-                            <div class="card-faq text-left">
+                            <div class="card-hamburger text-left">
                                 <details>
                                     <summary>Competition</summary>
                                     <a href="{{ route('ctf') }}" class="burger-details" style="padding-left: 15px;">CTF</a>
