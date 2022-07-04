@@ -272,14 +272,14 @@
     <!-- Button ADD MEMBER -->
     <div id="add-member" class="row-addmember-btn mb-2">
         <div class="col-10" style="padding:0">
-            <button type="button" class="input-element-regis mt-3" style="background-color: #c4c4c4; width:100%;" onclick="addMemberIntention('addmemberInt', 'add-member', 'remove-member')">+</button>
+            <button type="button" class="input-element-regis mt-3" style="background-color: #1c1c1c; width:100%; border-color: #8267B4;" onclick="addMemberIntention('addmemberInt', 'add-member', 'remove-member')">+</button>
         </div>
     </div>
 
     <!-- Button Remove Member -->
     <div id="remove-member" class="row-removemember-btn mb-2">
         <div class="col-10" style="padding:0">
-            <button type="button" class="input-element-regis mt-3" style="background-color: #c4c4c4; width:100%;" onclick="removeMemberIntentionButton('addmemberInt','add-member', 'remove-member')">-</button>
+            <button type="button" class="input-element-regis mt-3" style="background-color: #1c1c1c; width:100%; border-color: #8267B4;" onclick="removeMemberIntentionButton('addmemberInt','add-member', 'remove-member')">-</button>
         </div>
     </div>
 
@@ -315,11 +315,11 @@
     </div>
 
     <div class="row justify-content-center align-items-center" align="center" id="registCompButton" style="padding:30px 0 30px 0">
-        <div class="col-4">
+        <div class="col">
             <!-- VERTICAL ALIGN NYA BELOM JALAN -->
             <a class="btn btn-outline-primary ifest-btn-outline-primary-dark-bg mt-3 mt-sm-0 fw-bold text-center" href="{{ route('intention') }}" style="height:44px; width:128px;">{{ __('< Back') }}</a>
         </div>
-        <div class="col-4">
+        <div class="col">
             <button id="regist-next-section" type="button" class="btn btn-primary ifest-btn-primary-dark-bg mt-3 mt-sm-0 fw-bold" onclick="registNextSection()" style="height:44px; width:128px">{{ __('Next') }}</button>
         </div>
     </div>
@@ -420,11 +420,11 @@
                 @enderror
             </div>
             <div class="row justify-content-center align-items-center" align="center" id="registCompButton2" style="padding:30px 0 30px 0">
-                <div class="col-4">
+                <div class="col" style="text-align: right;">
                     <!-- VERTICAL ALIGN NYA BELOM JALAN -->
                     <a class="btn btn-outline-primary ifest-btn-outline-primary-dark-bg mt-3 mt-sm-0 fw-bold text-center" onclick="backToSection1()" style="height:44px; width:128px;">{{ __('< Back') }}</a>
                 </div>
-                <div class="col-4">
+                <div class="col" style="text-align: right;">
                     <button id="regist-submit-regist" type="submit" class="btn btn-primary ifest-btn-primary-dark-bg mt-3 mt-sm-0 fw-bold" onclick="registNextSection()" style="height:44px; width:128px" disabled>{{ __('Submit') }}</button>
                 </div>
             </div>
