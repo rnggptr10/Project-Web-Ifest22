@@ -1,7 +1,31 @@
+@import url(font.css);
+
+/* 
+    Main Content
+*/
+.content-main{
+    position: relative;
+    margin: 0 auto;
+    margin-bottom: 100px;
+    width: 100%;
+}
+
+.logo-content-main{
+    width: 30%;
+    margin: 0 auto;
+    position: absolute;
+    top: 42%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}   
+
+.logo-content-main img{
+    width: 100%;
+}
+
 /* 
     Countdown
 */
-@import url(font.css);
 
 div#info {
     flex-direction: column;

@@ -190,7 +190,7 @@ a {
 /* Membuat bagian nav kiri menjadi inline */
 @media screen and (max-width: 1040px) {
     header{
-        padding: 0 20px;
+        padding: 10px 20px;
     }
 
     .menu {

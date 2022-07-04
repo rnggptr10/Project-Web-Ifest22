@@ -17,7 +17,12 @@
 </div>
 </div> -->
 
-
+<div class="content-main">
+    <img src="{{asset('img/bg-fix.png')}}" alt="" style="width:100%;">
+    <div class="logo-content-main">
+        <img src="{{asset('img/logo/logo_landing.png')}}" alt="">
+    </div>
+</div>
 <div id="info" class="flex" data-aos="fade-up" data-aos-duration="1000">
     <!-- <i id="volume" class="fas fa-volume-mute"></i> -->
     <div class="banner backdrop flex">
@@ -252,7 +257,7 @@
                             <h5 class="mt-0">Speaker 6</h5>
                             <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
                             <div class="button-speakers-details">
-                                 
+
                             </div>
                         </div>
                     </div>
@@ -278,7 +283,7 @@
                             <h5 class="mt-0">Speaker 7</h5>
                             <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
                             <div class="button-speakers-details">
-                                 
+
                             </div>
                         </div>
                     </div>
@@ -292,7 +297,7 @@
                             <h5 class="mt-0">Speaker 8</h5>
                             <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
                             <div class="button-speakers-details">
-                                 
+
                             </div>
                         </div>
                     </div>
@@ -306,7 +311,7 @@
                             <h5 class="mt-0">Speaker 9</h5>
                             <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
                             <div class="button-speakers-details">
-                                 
+
                             </div>
                         </div>
                     </div>
@@ -332,7 +337,7 @@
                             <h5 class="mt-0">Speaker 10</h5>
                             <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
                             <div class="button-speakers-details">
-                                 
+
                             </div>
                         </div>
                     </div>
@@ -346,7 +351,7 @@
                             <h5 class="mt-0">Speaker 11</h5>
                             <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
                             <div class="button-speakers-details">
-                                 
+
                             </div>
                         </div>
                     </div>
@@ -360,7 +365,7 @@
                             <h5 class="mt-0">Speaker 12</h5>
                             <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
                             <div class="button-speakers-details">
-                                 
+
                             </div>
                         </div>
                     </div>
@@ -386,7 +391,7 @@
                             <h5 class="mt-0">Speaker 13</h5>
                             <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
                             <div class="button-speakers-details">
-                                 
+
                             </div>
                         </div>
                     </div>
@@ -400,7 +405,7 @@
                             <h5 class="mt-0">Speaker 14</h5>
                             <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
                             <div class="button-speakers-details">
-                                 
+
                             </div>
                         </div>
                     </div>
@@ -414,7 +419,7 @@
                             <h5 class="mt-0">Speaker 15</h5>
                             <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
                             <div class="button-speakers-details">
-                                 
+
                             </div>
                         </div>
                     </div>

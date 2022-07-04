@@ -5,18 +5,12 @@
 <link rel="stylesheet" href="{{ asset('atlantis/css/bootstrap.min.css') }}">
 @endsection
 @section('content')
-
-<!-- <div class="container" style="margin-top: 100px; margin-bottom:100px; width:100%">
-    <div class="row">
-        <div class="col-sm-8" style="border: 1px #fff solid;">
-            <!-- <p style="font-size: 100px; width: max-content; color: #8E84D1  ;"><b>IFEST 2022</b></p> -->
-<!-- <h1>IFEST 2022</h1>
-<img class="logo-landing" src="{{asset('img/logo/logo_landing.png')}}" alt="logo" width="60%">
+<div class="content-main">
+    <img src="{{asset('img/bg-fix.png')}}" alt="" style="width:100%;">
+    <div class="logo-content-main">
+        <img src="{{asset('img/logo/logo_landing.png')}}" alt="">
+    </div>
 </div>
-<div class="col-sm-4" style="border: 1px #fff solid;">col-sm-4</div>
-</div>
-</div> -->
-
 
 <div id="info" class="flex" data-aos="fade-up" data-aos-duration="1000">
     <!-- <i id="volume" class="fas fa-volume-mute"></i> -->
@@ -252,7 +246,7 @@
                             <h5 class="mt-0">Speaker 6</h5>
                             <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
                             <div class="button-speakers-details">
-                                 
+
                             </div>
                         </div>
                     </div>
@@ -278,7 +272,7 @@
                             <h5 class="mt-0">Speaker 7</h5>
                             <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
                             <div class="button-speakers-details">
-                                 
+
                             </div>
                         </div>
                     </div>
@@ -292,7 +286,7 @@
                             <h5 class="mt-0">Speaker 8</h5>
                             <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
                             <div class="button-speakers-details">
-                                 
+
                             </div>
                         </div>
                     </div>
@@ -306,7 +300,7 @@
                             <h5 class="mt-0">Speaker 9</h5>
                             <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
                             <div class="button-speakers-details">
-                                 
+
                             </div>
                         </div>
                     </div>
@@ -332,7 +326,7 @@
                             <h5 class="mt-0">Speaker 10</h5>
                             <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
                             <div class="button-speakers-details">
-                                 
+
                             </div>
                         </div>
                     </div>
@@ -346,7 +340,7 @@
                             <h5 class="mt-0">Speaker 11</h5>
                             <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
                             <div class="button-speakers-details">
-                                 
+
                             </div>
                         </div>
                     </div>
@@ -360,7 +354,7 @@
                             <h5 class="mt-0">Speaker 12</h5>
                             <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
                             <div class="button-speakers-details">
-                                 
+
                             </div>
                         </div>
                     </div>
@@ -386,7 +380,7 @@
                             <h5 class="mt-0">Speaker 13</h5>
                             <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
                             <div class="button-speakers-details">
-                                 
+
                             </div>
                         </div>
                     </div>
@@ -400,7 +394,7 @@
                             <h5 class="mt-0">Speaker 14</h5>
                             <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
                             <div class="button-speakers-details">
-                                 
+
                             </div>
                         </div>
                     </div>
@@ -414,7 +408,7 @@
                             <h5 class="mt-0">Speaker 15</h5>
                             <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
                             <div class="button-speakers-details">
-                                 
+
                             </div>
                         </div>
                     </div>

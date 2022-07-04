@@ -124,7 +124,7 @@
                 </ul>
             </div>
         </header>
-        <main style="padding-top: 100px;">
+        <main style="padding-top: 10px;">
             @yield('content')
         </main>
         <footer class="footer_ bd-grid">
