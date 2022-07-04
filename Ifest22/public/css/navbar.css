@@ -162,6 +162,23 @@ a {
     margin-left: 50px;
 }
 
+.card-hamburger{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    width: 100%;
+    word-wrap: break-word;
+    /* border: 1px solid rgba(0, 0, 0, .125); */
+    border-radius: 0.25rem;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.card-hamburger summary{
+    background-color: transparent;
+}
+
 @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
