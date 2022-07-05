@@ -102,12 +102,12 @@
 </div>
 
 <div data-aos="fade-up" data-aos-duration="1000">
-    <div class="isian-tab1">
-        <button id="defaultOpen" class="tablink" onclick="openPage('Home','StartupTalk-speakers' , this, '#291647')" id="defaultOpen">Startup Talk</button>
-        <button class="tablink" onclick="openPage('News', 'Technopreneur-speakers', this, '#291647')">Technopreneur</button>
-        <button class="tablink" onclick="openPage('Contact','ITComp-speakers', this, '#291647')">IT Competition</button>
-        <button class="tablink" onclick="openPage('About', 'Semnas-speakers', this, '#291647')">Seminar Nasional</button>
-        <button class="tablink" onclick="openPage('About2', 'AwardingNight-speakers', this, '#291647')">Awarding Night</button>
+    <div class="isian-tab1" >
+        <button id="defaultOpen" class="tablink justify-content-center" onclick="openPage('Home','StartupTalk-speakers' , this, '#291647')" id="defaultOpen">Startup Talk</button>
+        <button class="tablink justify-content-center" onclick="openPage('News', 'Technopreneur-speakers', this, '#291647')">Technopreneur</button>
+        <button class="tablink justify-content-center" onclick="openPage('Contact','ITComp-speakers', this, '#291647')">IT Competition</button>
+        <button class="tablink justify-content-center" onclick="openPage('About', 'Semnas-speakers', this, '#291647')">Seminar Nasional</button>
+        <button class="tablink justify-content-center" onclick="openPage('About2', 'AwardingNight-speakers', this, '#291647')">Awarding Night</button>
     </div>
     <div class="isian-tab2">
         <!-- <div class="sa">
@@ -136,7 +136,6 @@
                     <a class="item-dropmenu" style="padding: 0.25rem 1rem;" href="#" onclick="openPage('Contact','ITComp-speakers', this, '#291647')">IT Competition</a>
                     <a class="item-dropmenu" style="padding: 0.25rem 1rem;" href="#" onclick="openPage('About', 'Semnas-speakers', this, '#291647')">Seminar Nasional</a>
                     <a class="item-dropmenu" style="padding: 0.25rem 1rem;" href="#" onclick="openPage('About2', 'AwardingNight-speakers', this, '#291647')">Awarding Night</a>
-
                 </div>
             </li>
         </ul>
@@ -164,7 +163,7 @@
         </div>
     </div>
     <div class="box-speaker">
-        <div id="StartupTalk-speakers" class="carousel-pembicara slide" data-ride="carousel">
+        <div id="StartupTalk-speakers" class="carousel carousel-pembicara slide" data-ride="carousel">
             <div class="carousel-inner" class="tabcontent">
                 <div class="carousel-item active" style="background-color: transparent;">
                     <div class="speaker">
@@ -209,11 +208,11 @@
                     </div>
                 </div>
             </div>
-            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <a class="carousel-control-prev" href="#StartupTalk-speakers" role="button" data-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="sr-only">Previous</span>
             </a>
-            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <a class="carousel-control-next" href="#StartupTalk-speakers" role="button" data-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="sr-only">Next</span>
             </a>

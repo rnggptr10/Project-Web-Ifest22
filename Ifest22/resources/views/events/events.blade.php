@@ -11,7 +11,7 @@
 @section('content')
 
 <body style="background-color: #1c1c1c;">
-    <div class="container" style="padding: 0; padding-bottom:50px">
+    <div class="container" style="padding: 100px 0 50px 0;">
         <div class="row">
             <div class="col" style="padding: 20px 0 20px 0;">
                 <div class="row" align="center" id="eventDescription" style="padding-bottom: 30px;">
@@ -26,9 +26,9 @@
                         <p class="text-desc">@yield('event_desc')</p>
                     </div>
                 </div>
+                @yield('event_detail')
             </div>
 
-            @yield('event_detail')
 
             <!-- <div class="row justify-content-center align-items-center" align="center" id="eventButton" style="padding-top: 30px;padding-bottom: 30px;">
                 @yield('event_button')

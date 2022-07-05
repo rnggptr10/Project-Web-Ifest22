@@ -18,19 +18,19 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 
 <!-- STARTUP LOGO -->
 @section('startup1_logo')
-<img class="sut-image" src="https://cf.shopee.co.id/file/e0d319d464c87407718586d008a144b7" alt="Startup1">
+<img class="sut-image" src="https://logodownload.org/wp-content/uploads/2014/04/mercedes-benz-logo-8.png" alt="Startup1">
 @endsection
 
 @section('startup2_logo')
-<img class="sut-image" src="https://cf.shopee.co.id/file/e0d319d464c87407718586d008a144b7" alt="Startup1">
+<img class="sut-image" src="https://www.motoinsight.com/wp-content/themes/motoinsight/html/images/oem/honda-logo.png" alt="Startup2">
 @endsection
 
 @section('startup3_logo')
-<img class="sut-image" src="https://cf.shopee.co.id/file/e0d319d464c87407718586d008a144b7" alt="Startup1">
+<img class="sut-image" src="https://logodownload.org/wp-content/uploads/2019/08/land-rover-logo.png" alt="Startup3">
 @endsection
 
 @section('startup4_logo')
-<img class="sut-image" src="https://cf.shopee.co.id/file/e0d319d464c87407718586d008a144b7" alt="Startup1">
+<img class="sut-image" src="https://i0.wp.com/brzoapp.com/wp-content/uploads/2018/11/Porsche-Logo.png?w=1080&ssl=1" alt="Startup4">
 @endsection
 
 <!-- SPEAKERS DAY 1 -->
@@ -91,9 +91,9 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 <!-- TEMPLATE BODY -->
 @section('event_detail')
 <!-- INI STARTUP PENGENNYA GERAK KYK COMPFEST -->
-<div data-aos="fade-down" data-aos-duration="1000" class="row align-items-center" align="center" id="sutStartup" style="padding-top: 30px;padding-bottom: 30px;">
-    <h1 class="text-sub-title">Our Startup</h1>
-    <div class="row justify-content-center" style="padding-top: 30px;">
+<div data-aos="fade-down" data-aos-duration="1000" class="row align-items-center justify-content-center" align="center" id="sutStartup" style="padding-top: 30px;padding-bottom: 30px;">
+    <h1 class="text-sub-title">Our Startup Partners</h1>
+    <div class="row justify-content-center" style="padding-top: 30px; padding-bottom: 30px;">
         <div class="col">
             @yield('startup1_logo')
         </div>
@@ -109,7 +109,7 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
     </div>
 </div>
 
-<div data-aos="fade-down" data-aos-duration="1000" class="row align-items-center" align="center" id="sutSpeakers" style="padding-top: 30px;padding-bottom: 30px;">
+<div data-aos="fade-down" data-aos-duration="1000" class="row align-items-center justify-content-center" align="center" id="sutSpeakers" style="padding-top: 30px;padding-bottom: 30px;">
     <h1 class="text-event-sub-title">Startup Talk Day 1</h1>
     <h2 class="text-event-sub-theme">"Tema Day 1"</h2>
     <div class="row justify-content-center" style="padding-top: 30px;">
@@ -131,7 +131,7 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
         </div>
     </div>
 </div>
-<div data-aos="fade-down" data-aos-duration="1000" class="row align-items-center" align="center" id="sutSpeakers" style="padding-top: 30px;padding-bottom: 30px;">
+<div data-aos="fade-down" data-aos-duration="1000" class="row align-items-center justify-content-center" align="center" id="sutSpeakers" style="padding-top: 30px;padding-bottom: 30px;">
     <h1 class="text-event-sub-title">Startup Talk Day 2</h1>
     <h2 class="text-event-sub-theme">"Tema Day 2"</h2>
     <div class="row justify-content-center" style="padding-top: 30px;">
@@ -154,9 +154,8 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
     </div>
 </div>
 
-<!-- INI NANTI BISA PAKE LOOPING AJA -->
-<div data-aos="fade-up" data-aos-duration="1000" class="row align-items-center justify-content-between" align="left" id="sutCards" style="padding-top: 30px;padding-bottom: 30px;">
-    <div class="col-sm-6">
+<div data-aos="fade-up" data-aos-duration="1000" class="row align-items-center justify-content-center" align="left" id="sutCards" style="padding-top: 30px;padding-bottom: 30px;">
+    <div class="col-6" align="center" style="padding:0">
         <div class="card" style="border: 0; width:502px" id="cardTimeline">
             <div class="row align-items-center justify-content-start" style="padding:15px;">
                 <div class="col-2">
@@ -168,7 +167,7 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
             </div>
         </div>
     </div>
-    <div class="col-sm-6">
+    <div class="col-6" align="center" style="padding:0">
         <div class="card" style="border: 0; width:502px" id="cardTicket">
             <div class="row align-items-center" style="padding:15px">
                 <div class="col-2">
@@ -193,7 +192,7 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
     </div>
 </div>
 <div data-aos="fade-up" data-aos-duration="1000" class="row align-items-center justify-content-center" align="left" id="sutCards" style="padding-top: 30px;padding-bottom: 30px;">
-    <div class="col-6">
+    <div class="col-6" align="center">
         <div class="card" style="border: 0; width:502px" id="cardPlatform">
             <div class="row align-items-center" style="padding:15px">
                 <div class="col-2">

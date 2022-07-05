@@ -1,7 +1,7 @@
 @import url(font.css);
 @import url(generalStyle.css);
 
-*{
+* {
   margin: 0;
 }
 
@@ -15,8 +15,8 @@
 
 .text-theme {
   font-family: "Poppins-Medium";
-  font-size: 32px;
-  line-height: 48px;
+  font-size: 28px;
+  line-height: 40px;
   color: #ffffff;
 }
 
@@ -39,25 +39,30 @@
 
 
 /* Title Competition  */
-.title-competition{
-  font-size: 50px;
-  font-weight: bolder;
+.title-competition {
+  font-family: "Poppins-SemiBold";
+  font-size: 40px;
+  line-height: 40px;
+  color: #ffffff;
 }
 
 /* Description */
-.col-desc{    
-    flex-basis: 0;
-    flex-grow: 1;
-    max-width: 100%;
-    position: relative;
-    width: 100%;
-    min-height: 1px;
-    padding-right: 15px;
-    padding-left: 15px;
+.col-desc {
+  flex-basis: 0;
+  flex-grow: 1;
+  max-width: 100%;
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 
 /* Carousel */
-.row-carousel-ctf, .row-img-prize, .row-timeline, .row-faq{
+.row-carousel-ctf,
+.row-img-prize,
+.row-timeline,
+.row-faq {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
@@ -66,7 +71,7 @@
   margin-left: -15px;
 }
 
-.row-box-question-faq{
+.row-box-question-faq {
   display: flex;
   width: 100%;
   flex-wrap: wrap;
@@ -79,52 +84,60 @@
 }
 
 /* Button */
-.col-btn-left{
-  display:flex; 
-  justify-content:end;
+.col-btn-left {
+  display: flex;
+  justify-content: end;
   position: relative;
   width: 100%;
   min-height: 1px;
   padding-right: 15px;
-  padding-left: 15px;  
+  padding-left: 15px;
 }
 
-.col-btn-right{
-  display:flex; 
-  justify-content:start;
+.col-btn-right {
+  display: flex;
+  justify-content: start;
   position: relative;
   width: 100%;
   min-height: 1px;
   padding-right: 15px;
-  padding-left: 15px;  
+  padding-left: 15px;
 }
 
-.col-btn-left button, .col-btn-right button{
+.col-btn-left button,
+.col-btn-right button {
   width: 147px;
   height: 48px;
 }
 
 /* Responsif */
 @media screen and (max-width: 820px) {
-  .row-carousel-ctf, .row-img-prize, .row-timeline  {
+
+  .row-carousel-ctf,
+  .row-img-prize,
+  .row-timeline {
     display: none;
   }
 
-  .row-box-question-faq{
+  .row-box-question-faq {
     margin: 0 20px;
   }
 
-  .col-btn-left button, .col-btn-right button{
+  .col-btn-left button,
+  .col-btn-right button {
     width: 110px;
     height: 40px;
     font-size: 1vm;
   }
 
-  .col-btn-right a, .col-btn-left a, .col-btn-left span, .col-btn-right span{
+  .col-btn-right a,
+  .col-btn-left a,
+  .col-btn-left span,
+  .col-btn-right span {
     font-size: 12px;
   }
 
-  .title-competition{
+  .title-competition {
     font-size: 35px;
     font-weight: bolder;
   }
@@ -132,34 +145,33 @@
 
 
 @media screen and (max-width: 650px) {
-  .title-competition{
+  .title-competition {
     font-size: 20px;
     font-weight: bolder;
   }
 
-  .text-theme{
+  .text-theme {
     font-size: 14px;
   }
 
-  .text-desc{
+  .text-desc {
     font-size: 12px;
   }
 }
 
 /* button cp, button guidbook & register */
 @media screen and (max-width: 350px) {
-  .row-cp{
+  .row-cp {
     display: block;
   }
 
-  .col-btn-left{
+  .col-btn-left {
     justify-content: center;
   }
 
-  .col-btn-right{
+  .col-btn-right {
     margin-top: 20px;
     justify-content: center;
   }
 
 }
-

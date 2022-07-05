@@ -11,7 +11,7 @@
 @section('content')
 
 <!-- <body style="background-color: #1c1c1c;"> -->
-<div class="container" style="padding: 0; padding-bottom:50px">
+<div class="container" style="padding: 100px 0 50px 0;">
     <div class="row" style="margin-left: 0; margin-right:0;">
         <div class="col-desc" style="padding: 20px 0 20px 0;">
             <div class="row" align="center" id="competitionDescription" style="padding-bottom: 30px;">
@@ -33,12 +33,14 @@
                 <h1 class="text-sub-title">Prizes</h1>
                 <div class="row justify-content-center" style="padding-top: 20px;"">
                         <div class=" col-2">
-                    <img style="width:100%;height: 160px;" src="https://clipground.com/images/trophy-winner-clipart-5.jpg">
+                    <img style="width:100%;height: 160px;" src="{{ URL::asset('icon/trophy/2.png') }}">
+                    <p style="color:white; margin:0">2nd Place</p>
                     <p style="color:white">@yield('second_prize')</p>
                 </div>
                 <div class="col-2">
-                    <img style="width:100%;height: 180px;" src="https://clipground.com/images/trophy-winner-clipart-5.jpg">
-                    <p style="color:white">@yield('first_prize')</p>
+                    <img style="width:100%;height: 180px;" src="{{ URL::asset('icon/trophy/1.png') }}">
+                    <p style="color:white; margin:0">1st Place</p>
+                    <p style="color:white;">@yield('first_prize')</p>
                 </div>
                 @yield('third_prize')
             </div>

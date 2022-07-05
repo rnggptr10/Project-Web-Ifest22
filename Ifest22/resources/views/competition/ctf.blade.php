@@ -42,14 +42,8 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 </div>
 @endsection
 
-@section('first_prize', 'Rp.3.000.000')
-@section('second_prize', 'Rp.2.000.000')
-@section('third_prize')
-<div class="col-2">
-    <img style="width:100%;height: 160px;" src="https://clipground.com/images/trophy-winner-clipart-5.jpg">
-    <p style="color:white">Rp. 1.000.000</p>
-</div>
-@endsection
+@section('first_prize', 'Rp 2.000.000')
+@section('second_prize', 'Rp 1.000.000')
 
 @section('competition_timeline')
 <section class="ps-timeline-sec">

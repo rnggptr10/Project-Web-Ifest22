@@ -46,7 +46,8 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 @section('second_prize', 'Rp.3.000.000')
 @section('third_prize')
 <div class="col-2">
-    <img style="width:100%;height: 160px;" src="https://clipground.com/images/trophy-winner-clipart-5.jpg">
+    <img style="width:100%;height: 160px;" src="{{ URL::asset('icon/trophy/3.png') }}">
+    <p style="color:white; margin:0">3rd Place</p>
     <p style="color:white">Rp. 1.000.000</p>
 </div>
 @endsection

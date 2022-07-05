@@ -3,23 +3,23 @@
 /* 
     Main Content
 */
-.content-main{
+.content-main {
     position: relative;
     margin: 0 auto;
     margin-bottom: 100px;
     width: 100%;
 }
 
-.logo-content-main{
+.logo-content-main {
     width: 30%;
     margin: 0 auto;
     position: absolute;
     top: 42%;
     left: 50%;
     transform: translate(-50%, -50%);
-}   
+}
 
-.logo-content-main img{
+.logo-content-main img {
     width: 100%;
 }
 
@@ -59,7 +59,7 @@ div#info div.banner {
     justify-content: space-between;
 }
 
-div.banner div.countdown > div {
+div.banner div.countdown>div {
     display: inline-block;
     width: 70px;
     height: 85px;
@@ -119,16 +119,16 @@ div.banner span.details {
     border: 2px solid #01142b;
 }
 
-.title-cd{
-    font-size:110%;
+.title-cd {
+    font-size: 110%;
 }
 
-div .countdown2{
+div .countdown2 {
     display: flex;
     justify-content: space-around;
 }
 
-.box-countdown{
+.box-countdown {
     display: none;
     width: 80%;
     background-color: #291647;
@@ -137,26 +137,30 @@ div .countdown2{
     border-radius: 10px;
 }
 
-.box-timer{
+.box-timer {
     width: 20%;
     border: 1px #000 solid;
     background-color: #ffff;
     border-radius: 5px;
 }
 
-.box-timer div, .box-timer p{
+.box-timer div,
+.box-timer p {
     display: flex;
     justify-content: space-around;
 }
 
-#days2, #hours2, #minutes2, #seconds2{
+#days2,
+#hours2,
+#minutes2,
+#seconds2 {
     color: #1c1c1c;
     font-size: 2vw;
     font-weight: bolder;
 }
 
-.title-countdown p{
-    margin-top:20px ;
+.title-countdown p {
+    margin-top: 20px;
     color: #fff;
     font-size: 5vw;
     font-weight: bolder;
@@ -173,9 +177,9 @@ div.countdown2 p {
 /* 
     Tabline
 */
-.media-body p{
+.media-body p {
     font-family: "Poppins-Regular";
-    text-align: justify ;
+    text-align: justify;
     font-size: 1vm;
 }
 
@@ -186,7 +190,8 @@ div.countdown2 p {
     background-color: #A9D9F5;
     height: 300px;
 }
-.isian-tab1 button{
+
+.isian-tab1 button {
     display: flex;
     justify-content: space-between;
 }
@@ -199,7 +204,8 @@ div.countdown2 p {
     cursor: pointer;
     padding: 14px 16px;
     font-size: 14px;
-    width: 18%;
+    width: 19%;
+    border-radius: 10px;
 }
 
 .tablink:hover {
@@ -214,26 +220,26 @@ div.countdown2 p {
     height: 100%;
 }
 
-.memek{
-display: block;
+.memek {
+    display: block;
 }
 
-.isian-tab1{
+.isian-tab1 {
     display: flex;
     justify-content: space-between;
     width: 80%;
-    padding: 20px;
+    padding: 5px;
     border-radius: 10px 10px 0px 0px;
     /* background: #291647; */
     background-color: #c4c4c4;
     color: white;
-    margin: 100px auto 0; 
+    margin: 100px auto 0;
     /* code ini akan membuat div berada di tengah atas */
 }
 
-.isian-tab2{
+.isian-tab2 {
     display: none;
-    justify-content:start;
+    justify-content: start;
     width: 80%;
     padding: 10px;
     border-radius: 10px 10px 0px 0px;
@@ -243,43 +249,43 @@ display: block;
     margin: 100px auto 0;
 }
 
-.pasklik{
+.pasklik {
     width: 80%;
     height: 300px;
     padding: 20px;
     /* background: #291647; */
     background-color: #c4c4c4;
     color: white;
-    margin: 0px auto; 
+    margin: 0px auto;
 }
 
-.box-speaker{
+.box-speaker {
     width: 80%;
     padding: 20px;
     /* background: #291647; */
     background-color: #291647;
     color: white;
-    margin: 0px auto 50px auto; 
+    margin: 0px auto 50px auto;
     border-radius: 0 0 10px 10px;
 }
 
-.speaker{
+.speaker {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
     margin: 50px 20%;
 }
 
-.speaker img{
+.speaker img {
     width: 180px;
-    height: 200px;  
+    height: 200px;
 }
 
-.carousel-pembicara{
+.carousel-pembicara {
     position: relative;
 }
 
-.box-tab{
+.box-tab {
     height: 500px;
 }
 
@@ -289,17 +295,18 @@ display: block;
 #About {background-color: orange;} */
 
 /* Medpart - Sponsored */
-.medpart-box, .sponsored-box{
+.medpart-box,
+.sponsored-box {
     width: 80%;
     height: 200px;
     padding: 20px;
     background: #2d2d2d;
     color: white;
-    margin: 0px auto 100px; 
+    margin: 0px auto 100px;
     /* code ini akan membuat div berada di tengah atas */
 }
 
-.title-box{
+.title-box {
     width: max-content;
     margin: 100px auto 30px;
 }
@@ -309,11 +316,11 @@ display: block;
 
 /* Logo Landing */
 
-.logo-landing{
+.logo-landing {
     transition: width 3s;
 }
 
-.logo-landing:hover{
+.logo-landing:hover {
     width: 65%;
 }
 
@@ -354,14 +361,14 @@ display: block;
 } */
 
 /* Ket : Setengah Layar */
-@media screen and  (max-width:1167px){
-    div.banner div.countdown > div {
+@media screen and (max-width:1167px) {
+    div.banner div.countdown>div {
         margin-top: 10px;
     }
 }
 
-@media screen and  (max-width:665px){
-    div.banner div.countdown > div {
+@media screen and (max-width:665px) {
+    div.banner div.countdown>div {
         margin-top: 10px;
         width: 40%;
         height: 50px;
@@ -377,8 +384,8 @@ display: block;
     }
 }
 
-@media screen and  (max-width:550px){
-    div.banner div.countdown > div {
+@media screen and (max-width:550px) {
+    div.banner div.countdown>div {
         margin-top: 10px;
         width: 30%;
         height: 40px;
@@ -398,18 +405,18 @@ display: block;
     }
 }
 
-@media screen and  (max-width:570px){
-    #info{
+@media screen and (max-width:570px) {
+    #info {
         display: none;
     }
 
-    .box-countdown{
+    .box-countdown {
         display: block;
     }
 }
 
-@media screen and  (max-width:450px){
-    div.banner div.countdown > div {
+@media screen and (max-width:450px) {
+    div.banner div.countdown>div {
         margin-top: 10px;
         width: 40px;
         height: 55px;
@@ -426,12 +433,12 @@ display: block;
 }
 
 /* Tablink Responsif */
-@media screen and (max-width: 925px){
-    .isian-tab1{
+@media screen and (max-width: 925px) {
+    .isian-tab1 {
         display: none;
     }
 
-    .isian-tab2{
+    .isian-tab2 {
         display: flex;
     }
 
@@ -439,26 +446,26 @@ display: block;
         display: inline-block;
     }
 
-    .img-speakers{
+    .img-speakers {
         display: flex;
         justify-content: space-around;
         margin-bottom: 20px;
     }
-    
-    .speaker h5{
+
+    .speaker h5 {
         text-align: center;
     }
 
-    .button-speakers-details{
+    .button-speakers-details {
         display: flex;
         justify-content: space-around;
     }
-    
-    .media-body p{
+
+    .media-body p {
         font-size: 0.5vm;
     }
 
-    .item-dropmenu{
+    .item-dropmenu {
         display: block;
         width: 100%;
         padding: 0.25rem 1.5rem;
@@ -470,20 +477,20 @@ display: block;
         background-color: transparent;
         border: 0;
     }
-    
-    .item-dropmenu:hover{
+
+    .item-dropmenu:hover {
         color: #c4c4c4;
         text-decoration: none;
         /* background-color: #8267B4; */
     }
-    
-    .border-dropmenu{
+
+    .border-dropmenu {
         border: 1.5px #161616 solid;
     }
 }
 
-@media screen and (max-width: 505px){   
-    .media-body p{
+@media screen and (max-width: 505px) {
+    .media-body p {
         font-size: 12px;
     }
 }
