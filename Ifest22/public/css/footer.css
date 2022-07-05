@@ -108,12 +108,21 @@
     font-weight: 500;
 }
 
+@media screen and (max-width: 1500px) {
+    .footer-img-1 {
+        max-width: 112px;
+        max-height: 81.2px;
+        margin-right: 0;
+        padding-top: 40px;
+    }
+}
+
 @media screen and (max-width: 1343px) {
     .footer-img-1 {
         max-width: 112px;
         max-height: 81.2px;
         margin-right: 0;
-        padding-top: 30px;
+        padding-top: 40px;
     }
 }
 
