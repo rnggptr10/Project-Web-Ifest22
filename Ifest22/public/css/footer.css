@@ -45,6 +45,7 @@
 .footer-img-1 {
     padding-top: 1.6rem;
     max-width: 120px;
+    max-height: auto;
     margin-right: var(--mb-6);
 }
 
@@ -107,9 +108,42 @@
     font-weight: 500;
 }
 
+@media screen and (max-width: 1343px) {
+    .footer-img-1 {
+        max-width: 112px;
+        max-height: 81.2px;
+        margin-right: 0;
+        padding-top: 30px;
+    }
+}
+
+@media screen and (max-width: 1295px) {
+    .footer-img-1 {
+        max-width: 112px;
+        max-height: 81.2px;
+        margin-right: 0;
+        padding-top: 40px;
+    }
+    
+    .section-1{
+        padding-left: 20px;
+    }
+}
+
+@media screen and (max-width: 1295px) {
+    .fsocial{
+        text-align: center;
+    }
+
+    .padding-center{
+        text-align: center;
+    }
+}
+
 @media screen and (max-width: 1180px) {
     .footer-img-1 {
-        padding: 0;
+        max-width: 120px;
+        max-height: auto;
     }
     .section-2 {
         margin-top: 1.5rem;
@@ -149,6 +183,8 @@
 
     .footer-img-1 {
         margin: 0 auto;
+        padding: 0;
+        padding-bottom: 20px;
     }
 
     .section-2 {
@@ -178,6 +214,21 @@
     .footer-header {
         text-align: center;
     }
+
+    .padding-center{
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    .fsocial{
+        margin: 0 0 0 0;
+    }
+
+    .footer-img-1{
+        max-width: 112px;
+        max-height: 81.2px;
+        padding: 0;
+    }
 }
 
 /* Sosmed */
@@ -190,7 +241,6 @@
 .fsocial {
     display: grid;
     justify-content: center;
-    margin: 0 0 0 var(--mb-6);
 }
 
 .tombol{

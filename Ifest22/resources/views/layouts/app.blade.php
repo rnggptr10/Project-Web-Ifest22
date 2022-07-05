@@ -154,8 +154,8 @@
                     <div class="forganizer">
                         <h3 class="footer-header text-center">Organizer</h3>
                         <div class="dflex padding-center">
-                            <img class="footer-img-2" src="{{asset('img/organizer/himatif.png')}}" alt="logo unpad" width="75px" height="75px">
-                            <img class="footer-img-2" src="{{asset('img/organizer/unpad.png')}}" alt="logo himatif" width="75px" height="75px">
+                            <img class="footer-img-2" src="{{asset('img/organizer/himatif.png')}}" alt="logo unpad" width="65px">
+                            <img class="footer-img-2" src="{{asset('img/organizer/unpad.png')}}" alt="logo himatif" width="65px">
                         </div>
                     </div>
                     <div class="fsocial">
