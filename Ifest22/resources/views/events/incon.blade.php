@@ -14,7 +14,7 @@
 
 @section('event_theme')
 <div style="padding-top: 10px;padding-bottom: 10px;">
-    <h2 class="text-theme">"Tema Semnas"</h2>
+    <h2 class="text-theme">"Cloud Computing for Digital Era"</h2>
 </div>
 @endsection
 
@@ -24,27 +24,69 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 
 <!-- SPEAKERS -->
 @section('semnas_speakers_1')
-<img class="card-img-top" style="width:100%;height:350px;" src="https://cf.shopee.co.id/file/e0d319d464c87407718586d008a144b7" alt="Speakers-1">
-<div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
-    <div class="col-7" style="line-height: 5px;">
-        <h5 style="color:black">Wortel</h5>
-        <p style="color:black">Pejabat</p>
-    </div>
-    <div class="col-3">
-        <a href=""><img class="logo-linkedin" src="{{ URL::asset('icon/linkedin.svg') }}" alt="linkedin"></a>
+<div class="col-4">
+    <div class="card ifest-photo-card" style="border: 0; width:max-content">
+        <img class="card-img-top" style="width:100%;height:350px;" src="https://cf.shopee.co.id/file/e0d319d464c87407718586d008a144b7" alt="Speakers-1">
+        <div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
+            <div class="col-7" style="line-height: 5px;">
+                <h5 class="text-photo-card-name">Wortel1</h5>
+                <p class="text-photo-card-position">Pejabat</p>
+            </div>
+            <div class="col-3">
+                <a href=""><img class="logo-linkedin" src="{{ URL::asset('icon/linkedin.svg') }}" alt="linkedin"></a>
+            </div>
+        </div>
     </div>
 </div>
 @endsection
 
 @section('semnas_speakers_2')
-<img class="card-img-top" style="width:100%;height:350px;" src="https://cf.shopee.co.id/file/e0d319d464c87407718586d008a144b7" alt="Speakers-2">
-<div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
-    <div class="col-7" style="line-height: 5px;">
-        <h5 style="color:black">Wortel</h5>
-        <p style="color:black">Pejabat</p>
+<div class="col-4">
+    <div class="card ifest-photo-card" style="border: 0; width:max-content">
+        <img class="card-img-top" style="width:100%;height:350px;" src="https://cf.shopee.co.id/file/e0d319d464c87407718586d008a144b7" alt="Speakers-1">
+        <div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
+            <div class="col-7" style="line-height: 5px;">
+                <h5 class="text-photo-card-name">Wortel2</h5>
+                <p class="text-photo-card-position">Pejabat</p>
+            </div>
+            <div class="col-3">
+                <a href=""><img class="logo-linkedin" src="{{ URL::asset('icon/linkedin.svg') }}" alt="linkedin"></a>
+            </div>
+        </div>
     </div>
-    <div class="col-3">
-        <a href=""><img class="logo-linkedin" src="{{ URL::asset('icon/linkedin.svg') }}" alt="linkedin"></a>
+</div>
+@endsection
+
+@section('semnas_speakers_3')
+<div class="col-4">
+    <div class="card ifest-photo-card" style="border: 0; width:max-content">
+        <img class="card-img-top" style="width:100%;height:350px;" src="https://cf.shopee.co.id/file/e0d319d464c87407718586d008a144b7" alt="Speakers-1">
+        <div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
+            <div class="col-7" style="line-height: 5px;">
+                <h5 class="text-photo-card-name">Wortel3</h5>
+                <p class="text-photo-card-position">Pejabat</p>
+            </div>
+            <div class="col-3">
+                <a href=""><img class="logo-linkedin" src="{{ URL::asset('icon/linkedin.svg') }}" alt="linkedin"></a>
+            </div>
+        </div>
+    </div>
+</div>
+@endsection
+
+@section('semnas_speakers_4')
+<div class="col-4">
+    <div class="card ifest-photo-card" style="border: 0; width:max-content">
+        <img class="card-img-top" style="width:100%;height:350px;" src="https://cf.shopee.co.id/file/e0d319d464c87407718586d008a144b7" alt="Speakers-1">
+        <div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
+            <div class="col-7" style="line-height: 5px;">
+                <h5 class="text-photo-card-name">Wortel4</h5>
+                <p class="text-photo-card-position">Pejabat</p>
+            </div>
+            <div class="col-3">
+                <a href=""><img class="logo-linkedin" src="{{ URL::asset('icon/linkedin.svg') }}" alt="linkedin"></a>
+            </div>
+        </div>
     </div>
 </div>
 @endsection
@@ -84,24 +126,34 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 
 <!-- TEMPLATE BODY -->
 @section('event_detail')
-<div data-aos="fade-down" data-aos-duration="1000" class="row align-items-center" align="center" id="semnasSpeakers" style="padding-top: 30px;padding-bottom: 30px;">
+<div data-aos="fade-down" data-aos-duration="1000" class="row align-items-center" align="center" style="padding-top: 30px;padding-bottom: 30px;">
     <h1 class="text-event-sub-title">Speakers</h1>
+    <div id="semnasSpeakers" class="row justify-content-center carousel slide" data-ride="carousel" style="padding-top: 30px; position:relative">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="row justify-content-center">
+                    @yield('semnas_speakers_1')
+                    @yield('semnas_speakers_2')
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="row justify-content-center">
+                    @yield('semnas_speakers_3')
+                    @yield('semnas_speakers_4')
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="row justify-content-center" style="padding-top: 30px;">
-        <div class="col-4">
-            <div class="card" style="border: 0; width:max-content">
-                @yield('semnas_speakers_1')
-            </div>
-        </div>
-        <div class="col-4">
-            <div class="card" style="border: 0; width:max-content">
-                @yield('semnas_speakers_2')
-            </div>
-        </div>
-        <div class="row justify-content-center" style="padding-top: 30px;">
-            <div class="col-2">
-                <img class="arrow-switch" src="{{ URL::asset('icon/circle-arrow-left.svg') }}" alt="arrow-left">
-                <img class="arrow-switch" src="{{ URL::asset('icon/circle-arrow-right.svg') }}" alt="arrow-right">
-            </div>
+        <div class="col-1">
+            <a class="carousel-control-prev" href="#semnasSpeakers" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#semnasSpeakers" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
         </div>
     </div>
 </div>
@@ -109,7 +161,7 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 <!-- INI NANTI BISA PAKE LOOPING AJA -->
 <div data-aos="fade-up" data-aos-duration="1000" class="row align-items-center justify-content-between" align="left" id="semnasCards1" style="padding-top: 30px;padding-bottom: 30px;">
     <div class="col-sm-6">
-        <div class="card" style="border: 0; width:502px;" id="cardTimeline">
+        <div class="card" style="border: 0; width:90%;" id="cardTimeline">
             <div class="row align-items-center justify-content-start" style="padding:15px;">
                 <div class="col-2">
                     <img class="events-card-logo" src="{{ URL::asset('icon/date.png') }}" alt="Date">
@@ -121,7 +173,7 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
         </div>
     </div>
     <div class="col-sm-6">
-        <div class="card" style="border: 0; width:502px" id="cardTicket">
+        <div class="card" style="border: 0; width:90%" id="cardTicket">
             <div class="row align-items-center" style="padding:15px">
                 <div class="col-2">
                     <img class="events-card-logo" src="{{ URL::asset('icon/seminar.png') }}" alt="Seminar">
@@ -146,7 +198,7 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 </div>
 <div data-aos="fade-up" data-aos-duration="1000" class="row align-items-center justify-content-between" align="left" id="semnasCards2" style="padding-top: 30px;padding-bottom: 30px;">
     <div class="col-sm-6">
-        <div class="card" style="border: 0; width:502px" id="cardTimeline">
+        <div class="card" style="border: 0; width:90%" id="cardTimeline">
             <div class="row align-items-center justify-content-start" style="padding:15px;">
                 <div class="col-2">
                     <img class="events-card-logo" src="{{ URL::asset('icon/platform.png') }}" alt="Platform">
@@ -158,7 +210,7 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
         </div>
     </div>
     <div class="col-sm-6">
-        <div class="card" style="border: 0; width:502px" id="cardTicket">
+        <div class="card" style="border: 0; width:90%" id="cardTicket">
             <div class="row align-items-center" style="padding:15px">
                 <div class="col-2">
                     <img class="events-card-logo" src="{{ URL::asset('icon/paper.png') }}" alt="Paper">

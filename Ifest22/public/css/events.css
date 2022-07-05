@@ -37,11 +37,40 @@
     color: #ffffff;
 }
 
+.text-photo-card-name {
+    font-family: "Poppins-SemiBold";
+    font-size: 20px;
+    line-height: 30px;
+    color: #ffffff;
+    margin: 0;
+}
+
+.text-photo-card-position {
+    font-family: "Poppins-Medium";
+    font-size: 16px;
+    line-height: 24px;
+    color: #ffffff;
+    margin: 0;
+}
+
+.ifest-photo-card {
+    background-color: #291647 !important;
+}
+
 .sut-image {
     height: 100px;
+    width: max-content;
+    padding: 0 20px 0 20px;
 }
 
 .events-card-logo {
     width: 50px;
     height: 50px;
+}
+
+.events-card-text {
+    font-family: "Poppins-SemiBold";
+    font-size: 40px;
+    line-height: 60px;
+    color: #ffffff;
 }

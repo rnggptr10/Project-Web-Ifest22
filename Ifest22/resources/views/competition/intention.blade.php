@@ -12,33 +12,48 @@
 
 @section('competition_title', 'Innovative Technology Competition (INTENTION)')
 
-@section('competition_theme', 'Tema')
+@section('competition_theme', 'Reigniting and Developing Innovative Ideas to Face Rapidly Changing Technology')
 
 @section('competition_desc')
 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
 @endsection
 
 @section('competition_flashback')
-<div class="row align-items-center" align="center" id="intFlashback" style="padding-top: 30px;padding-bottom: 30px;">
-    <div class="col-1">
-        <img class="arrow-switch" src="{{ URL::asset('icon/circle-arrow-left.svg') }}" alt="arrow-left">
-    </div>
-    <div class="col-10">
-        <div class="row">
-            <div class="col-sm" align="center" style="padding-right: 25px;">
-                <img style="width:100%;height: 320px;" src="https://cf.shopee.co.id/file/e0d319d464c87407718586d008a144b7">
+<div class="row align-items-center carousel slide" align="center" id="intFlashback" data-ride="carousel" style="padding-top: 30px;padding-bottom: 30px;">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <div class="row justify-content-center">
+                <div class="col-4" align="center" style="padding-right: 25px;">
+                    <img class="photo-flashback" src="https://cf.shopee.co.id/file/e0d319d464c87407718586d008a144b7">
+                </div>
+                <div class="col-4" align="center" style="padding-left: 25px;">
+                    <img class="photo-flashback" src="https://cf.shopee.co.id/file/e0d319d464c87407718586d008a144b7">
+                </div>
             </div>
-            <div class="col-sm" align="center" style="padding-right: 25px;padding-left: 25px;">
-                <img style="width:100%;height: 320px;" src="https://cf.shopee.co.id/file/e0d319d464c87407718586d008a144b7">
+            <!-- <img class="arrow-switch" src="{{ URL::asset('icon/circle-arrow-left.svg') }}" alt="arrow-left">
+            <img class="arrow-switch" src="{{ URL::asset('icon/circle-arrow-right.svg') }}" alt="arrow-right"> -->
+        </div>
+        <div class="carousel-item">
+            <div class="row justify-content-center">
+                <div class="col-4" align="center" style="padding-right: 25px;">
+                    <img style="width:100%;height: 320px;" src="https://cf.shopee.co.id/file/e0d319d464c87407718586d008a144b7">
+                </div>
+                <div class="col-4" align="center" style="padding-left: 25px;">
+                    <img style="width:100%;height: 320px;" src="https://cf.shopee.co.id/file/e0d319d464c87407718586d008a144b7">
+                </div>
             </div>
-            <div class="col-sm" align="center" style="padding-left: 25px;">
-                <img style="width:100%;height: 320px;" src="https://cf.shopee.co.id/file/e0d319d464c87407718586d008a144b7">
-            </div>
+            <!-- <img class="arrow-switch" src="{{ URL::asset('icon/circle-arrow-left.svg') }}" alt="arrow-left">
+            <img class="arrow-switch" src="{{ URL::asset('icon/circle-arrow-right.svg') }}" alt="arrow-right"> -->
         </div>
     </div>
-    <div class="col-1">
-        <img class="arrow-switch" src="{{ URL::asset('icon/circle-arrow-right.svg') }}" alt="arrow-right">
-    </div>
+    <a class="carousel-control-prev" href="#intFlashback" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#intFlashback" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
 </div>
 @endsection
 
@@ -53,16 +68,16 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 @endsection
 
 @section('competition_judges')
-<div class="row" align="center" id="intJudges" style="padding-top: 30px;padding-bottom: 30px;">
-    <h1 data-aos="fade-down" data-aos-duration="1000" class="text-sub-title">Our Judges</h1>
+<div class="row" data-aos="fade-down" data-aos-duration="1000" align="center" id="intJudges" style="padding-top: 30px;padding-bottom: 30px;">
+    <h1 class="text-sub-title">Our Judges</h1>
     <div class="row justify-content-center" style="padding-top: 30px;">
-        <div class="col-sm-6" data-aos="fade-right" data-aos-duration="1000">
-            <div class="card" style="border: 0; width:max-content">
+        <div class="col-4" data-aos="fade-right" data-aos-duration="1000" style="padding-right: 50px;">
+            <div class="card ifest-photo-card" style="border: 0; width:max-content">
                 <img class="card-img-top" style="width:100%;height:350px;" src="https://cf.shopee.co.id/file/e0d319d464c87407718586d008a144b7" alt="Card image cap">
                 <div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
                     <div class="col-7" style="line-height: 5px;">
-                        <h5 style="color:black">Wildan Wortel</h5>
-                        <p style="color:black">Pejabat Negara</p>
+                        <h5 class="text-photo-card-name">Wildan Wortel</h5>
+                        <p class="text-photo-card-position">Pejabat Negara</p>
                     </div>
                     <div class="col-3">
                         <img class="logo-linkedin" src="{{ URL::asset('icon/linkedin.svg') }}" alt="linkedin">
@@ -70,13 +85,13 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
                 </div>
             </div>
         </div>
-        <div class="col-sm-6" data-aos="fade-left" data-aos-duration="1000">
-            <div class="card" style="border: 0; width:max-content">
+        <div class="col-4" data-aos="fade-left" data-aos-duration="1000" style="padding-left: 50px;">
+            <div class="card ifest-photo-card" style="border: 0; width:max-content">
                 <img class="card-img-top" style="width:100%;height:350px;" src="https://cf.shopee.co.id/file/e0d319d464c87407718586d008a144b7" alt="Card image cap">
                 <div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
                     <div class="col-7" style="line-height: 5px;">
-                        <h5 style="color:black">Wildan Wortel</h5>
-                        <p style="color:black">Pejabat Negara</p>
+                        <h5 class="text-photo-card-name">Wildan Wortel</h5>
+                        <p class="text-photo-card-position">Pejabat Negara</p>
                     </div>
                     <div class="col-3">
                         <img class="logo-linkedin" src="{{ URL::asset('icon/linkedin.svg') }}" alt="linkedin">

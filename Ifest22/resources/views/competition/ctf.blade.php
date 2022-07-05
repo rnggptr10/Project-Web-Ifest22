@@ -19,26 +19,41 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 @endsection
 
 @section('competition_flashback')
-<div class="row-carousel-ctf align-items-center" align="center" id="intFlashback" style="padding-top: 30px;padding-bottom: 30px;">
-    <div class="col-1">
-        <img class="arrow-switch" src="{{ URL::asset('icon/circle-arrow-left.svg') }}" alt="arrow-left">
-    </div>
-    <div class="col-10">
-        <div class="row">
-            <div class="col-sm" align="center" style="padding-right: 25px;">
-                <img style="width:100%;height: 320px;" src="https://cf.shopee.co.id/file/e0d319d464c87407718586d008a144b7">
+<div class="row align-items-center carousel slide" align="center" id="dacFlashback" data-ride="carousel" style="padding-top: 30px;padding-bottom: 30px;">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <div class="row justify-content-center">
+                <div class="col-4" align="center" style="padding-right: 25px;">
+                    <img class="photo-flashback" src="https://cf.shopee.co.id/file/e0d319d464c87407718586d008a144b7">
+                </div>
+                <div class="col-4" align="center" style="padding-left: 25px;">
+                    <img class="photo-flashback" src="https://cf.shopee.co.id/file/e0d319d464c87407718586d008a144b7">
+                </div>
             </div>
-            <div class="col-sm" align="center" style="padding-right: 25px;padding-left: 25px;">
-                <img style="width:100%;height: 320px;" src="https://cf.shopee.co.id/file/e0d319d464c87407718586d008a144b7">
+            <!-- <img class="arrow-switch" src="{{ URL::asset('icon/circle-arrow-left.svg') }}" alt="arrow-left">
+            <img class="arrow-switch" src="{{ URL::asset('icon/circle-arrow-right.svg') }}" alt="arrow-right"> -->
+        </div>
+        <div class="carousel-item">
+            <div class="row justify-content-center">
+                <div class="col-4" align="center" style="padding-right: 25px;">
+                    <img style="width:100%;height: 320px;" src="https://cf.shopee.co.id/file/e0d319d464c87407718586d008a144b7">
+                </div>
+                <div class="col-4" align="center" style="padding-left: 25px;">
+                    <img style="width:100%;height: 320px;" src="https://cf.shopee.co.id/file/e0d319d464c87407718586d008a144b7">
+                </div>
             </div>
-            <div class="col-sm" align="center" style="padding-left: 25px;">
-                <img style="width:100%;height: 320px;" src="https://cf.shopee.co.id/file/e0d319d464c87407718586d008a144b7">
-            </div>
+            <!-- <img class="arrow-switch" src="{{ URL::asset('icon/circle-arrow-left.svg') }}" alt="arrow-left">
+            <img class="arrow-switch" src="{{ URL::asset('icon/circle-arrow-right.svg') }}" alt="arrow-right"> -->
         </div>
     </div>
-    <div class="col-1">
-        <img class="arrow-switch" src="{{ URL::asset('icon/circle-arrow-right.svg') }}" alt="arrow-right">
-    </div>
+    <a class="carousel-control-prev" href="#dacFlashback" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#dacFlashback" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
 </div>
 @endsection
 

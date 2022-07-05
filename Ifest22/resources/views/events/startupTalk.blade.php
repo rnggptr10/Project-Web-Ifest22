@@ -33,13 +33,29 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 <img class="sut-image" src="https://i0.wp.com/brzoapp.com/wp-content/uploads/2018/11/Porsche-Logo.png?w=1080&ssl=1" alt="Startup4">
 @endsection
 
+@section('startup5_logo')
+<img class="sut-image" src="https://logodownload.org/wp-content/uploads/2014/04/mercedes-benz-logo-8.png" alt="Startup1">
+@endsection
+
+@section('startup6_logo')
+<img class="sut-image" src="https://www.motoinsight.com/wp-content/themes/motoinsight/html/images/oem/honda-logo.png" alt="Startup2">
+@endsection
+
+@section('startup7_logo')
+<img class="sut-image" src="https://logodownload.org/wp-content/uploads/2019/08/land-rover-logo.png" alt="Startup3">
+@endsection
+
+@section('startup8_logo')
+<img class="sut-image" src="https://i0.wp.com/brzoapp.com/wp-content/uploads/2018/11/Porsche-Logo.png?w=1080&ssl=1" alt="Startup4">
+@endsection
+
 <!-- SPEAKERS DAY 1 -->
 @section('startup1_speakers')
-<img class="card-img-top" style="width:100%;height:350px;" src="https://cf.shopee.co.id/file/e0d319d464c87407718586d008a144b7" alt="Speakers-1">
+<img class="card-img-top" style="width:100%;height:350px;" src="https://th.bing.com/th/id/OIP.7Am2M7LE8WqW0IYT5rM6yAAAAA?pid=ImgDet&rs=1" alt="Speakers-1">
 <div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
     <div class="col-7" style="line-height: 5px;">
-        <h5 style="color:black">Wortel</h5>
-        <p style="color:black">Pejabat</p>
+        <h5 class="text-photo-card-name">Wortel1</h5>
+        <p class="text-photo-card-position">Pejabat</p>
     </div>
     <div class="col-3">
         <a href=""><img class="logo-linkedin" src="{{ URL::asset('icon/linkedin.svg') }}" alt="linkedin"></a>
@@ -48,11 +64,11 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 @endsection
 
 @section('startup2_speakers')
-<img class="card-img-top" style="width:100%;height:350px;" src="https://cf.shopee.co.id/file/e0d319d464c87407718586d008a144b7" alt="Speakers-2">
+<img class="card-img-top" style="width:100%;height:350px;" src="https://th.bing.com/th/id/OIP.7Am2M7LE8WqW0IYT5rM6yAAAAA?pid=ImgDet&rs=1" alt="Speakers-2">
 <div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
     <div class="col-7" style="line-height: 5px;">
-        <h5 style="color:black">Wortel</h5>
-        <p style="color:black">Pejabat</p>
+        <h5 class="text-photo-card-name">Wortel2</h5>
+        <p class="text-photo-card-position">Pejabat</p>
     </div>
     <div class="col-3">
         <a href=""><img class="logo-linkedin" src="{{ URL::asset('icon/linkedin.svg') }}" alt="linkedin"></a>
@@ -61,11 +77,11 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 @endsection
 
 @section('startup3_speakers')
-<img class="card-img-top" style="width:100%;height:350px;" src="https://cf.shopee.co.id/file/e0d319d464c87407718586d008a144b7" alt="Speakers-3">
+<img class="card-img-top" style="width:100%;height:350px;" src="https://th.bing.com/th/id/OIP.7Am2M7LE8WqW0IYT5rM6yAAAAA?pid=ImgDet&rs=1" alt="Speakers-3">
 <div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
     <div class="col-7" style="line-height: 5px;">
-        <h5 style="color:black">Wortel</h5>
-        <p style="color:black">Pejabat</p>
+        <h5 class="text-photo-card-name">Wortel3</h5>
+        <p class="text-photo-card-position">Pejabat</p>
     </div>
     <div class="col-3">
         <a href=""><img class="logo-linkedin" src="{{ URL::asset('icon/linkedin.svg') }}" alt="linkedin"></a>
@@ -74,14 +90,66 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 @endsection
 
 @section('startup4_speakers')
-<img class="card-img-top" style="width:100%;height:350px;" src="https://cf.shopee.co.id/file/e0d319d464c87407718586d008a144b7" alt="Speakers-4">
+<img class="card-img-top" style="width:100%;height:350px;" src="https://th.bing.com/th/id/OIP.7Am2M7LE8WqW0IYT5rM6yAAAAA?pid=ImgDet&rs=1" alt="Speakers-4">
 <div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
     <div class="col-7" style="line-height: 5px;">
-        <h5 style="color:black">Wortel</h5>
-        <p style="color:black">Pejabat</p>
+        <h5 class="text-photo-card-name">Peler</h5>
+        <p class="text-photo-card-position">Pejabat</p>
     </div>
     <div class="col-3">
         <a href=""><img class="logo-linkedin" src="{{ URL::asset('icon/linkedin.svg') }}" alt="linkedin"></a>
+    </div>
+</div>
+@endsection
+
+@section('startup5_speakers')
+<img class="card-img-top" style="width:100%;height:350px;" src="https://th.bing.com/th/id/OIP.7Am2M7LE8WqW0IYT5rM6yAAAAA?pid=ImgDet&rs=1" alt="Speakers-4">
+<div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
+    <div class="col-7" style="line-height: 5px;">
+        <h5 class="text-photo-card-name">Peler1</h5>
+        <p class="text-photo-card-position">Pejabat</p>
+    </div>
+    <div class="col-3">
+        <a href=""><img class="logo-linkedin" src="{{ URL::asset('icon/linkedin.svg') }}" alt="linkedin"></a>
+    </div>
+</div>
+@endsection
+
+@section('startup6_speakers')
+<img class="card-img-top" style="width:100%;height:350px;" src="https://th.bing.com/th/id/OIP.7Am2M7LE8WqW0IYT5rM6yAAAAA?pid=ImgDet&rs=1" alt="Speakers-4">
+<div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
+    <div class="col-7" style="line-height: 5px;">
+        <h5 class="text-photo-card-name">Peler2</h5>
+        <p class="text-photo-card-position">Pejabat</p>
+    </div>
+    <div class="col-3">
+        <a href=""><img class="logo-linkedin" src="{{ URL::asset('icon/linkedin.svg') }}" alt="linkedin"></a>
+    </div>
+</div>
+@endsection
+
+@section('startup7_speakers')
+<img class="card-img-top" style="width:100%;height:350px;" src="https://th.bing.com/th/id/OIP.7Am2M7LE8WqW0IYT5rM6yAAAAA?pid=ImgDet&rs=1" alt="Speakers-4">
+<div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
+    <div class="col-7" style="line-height: 5px;">
+        <h5 class="text-photo-card-name">Peler3</h5>
+        <p class="text-photo-card-position">Pejabat</p>
+    </div>
+    <div class="col-3">
+        <a href=""><img class="logo-linkedin" src="{{ URL::asset('icon/linkedin.svg') }}" alt="linkedin"></a>
+    </div>
+</div>
+@endsection
+
+@section('startup8_speakers')
+<img class="card-img-top" style="width:100%;height:350px;" src="https://th.bing.com/th/id/OIP.7Am2M7LE8WqW0IYT5rM6yAAAAA?pid=ImgDet&rs=1" alt="Speakers-4">
+<div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
+    <div class="col-7" style="line-height: 5px;">
+        <h5 class="text-photo-card-name">Peler4</h5>
+        <p class="text-photo-card-position">Pejabat</p>
+    </div>
+    <div class="col-3">
+        <a href="https://www.linkedin.com/in/rhezapandya"><img class="logo-linkedin" src="{{ URL::asset('icon/linkedin.svg') }}" alt="linkedin"></a>
     </div>
 </div>
 @endsection
@@ -95,80 +163,134 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
     <h1 class="text-sub-title">Our Startup Partners</h1>
     <div class="row justify-content-center" style="padding-top: 30px; padding-bottom: 30px;">
         <div class="col">
-            @yield('startup1_logo')
-        </div>
-        <div class="col">
-            @yield('startup2_logo')
-        </div>
-        <div class="col">
-            @yield('startup3_logo')
-        </div>
-        <div class="col">
-            @yield('startup4_logo')
+            <div class="row justify-content-center" style="padding-bottom: 20px;">
+                @yield('startup1_logo')
+                @yield('startup2_logo')
+                @yield('startup3_logo')
+                @yield('startup4_logo')
+            </div>
+            <div class="row justify-content-center" style="padding-top: 20px;">
+                @yield('startup5_logo')
+                @yield('startup6_logo')
+                @yield('startup7_logo')
+                @yield('startup8_logo')
+            </div>
         </div>
     </div>
 </div>
 
 <div data-aos="fade-down" data-aos-duration="1000" class="row align-items-center justify-content-center" align="center" id="sutSpeakers" style="padding-top: 30px;padding-bottom: 30px;">
-    <h1 class="text-event-sub-title">Startup Talk Day 1</h1>
-    <h2 class="text-event-sub-theme">"Tema Day 1"</h2>
-    <div class="row justify-content-center" style="padding-top: 30px;">
-        <div class="col-4">
-            <div class="card" style="border: 0; width:max-content">
-                @yield('startup1_speakers')
+    <h1 class="text-event-sub-title">Startup Talk : Day 1</h1>
+    <h2 class="text-event-sub-theme">"Metaverse, The Next Level of Human Culture"</h2>
+    <div id="sutSpeakersDay1" class="row justify-content-center carousel slide" data-ride="carousel" style="padding-top: 30px; position:relative">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="row justify-content-center">
+                    <div class="col-4">
+                        <div class="card ifest-photo-card" style="border: 0; width:max-content">
+                            @yield('startup1_speakers')
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card ifest-photo-card" style="border: 0; width:max-content">
+                            @yield('startup2_speakers')
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="col-4">
-            <div class="card" style="border: 0; width:max-content">
-                @yield('startup2_speakers')
-            </div>
-        </div>
-        <div class="row justify-content-center" style="padding-top: 30px;">
-            <div class="col-2">
-                <img class="arrow-switch" src="{{ URL::asset('icon/circle-arrow-left.svg') }}" alt="arrow-left">
-                <img class="arrow-switch" src="{{ URL::asset('icon/circle-arrow-right.svg') }}" alt="arrow-right">
+            <div class="carousel-item">
+                <div class="row justify-content-center">
+                    <div class="col-4">
+                        <div class="card ifest-photo-card" style="border: 0; width:max-content">
+                            @yield('startup3_speakers')
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card ifest-photo-card" style="border: 0; width:max-content">
+                            @yield('startup4_speakers')
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-</div>
-<div data-aos="fade-down" data-aos-duration="1000" class="row align-items-center justify-content-center" align="center" id="sutSpeakers" style="padding-top: 30px;padding-bottom: 30px;">
-    <h1 class="text-event-sub-title">Startup Talk Day 2</h1>
-    <h2 class="text-event-sub-theme">"Tema Day 2"</h2>
     <div class="row justify-content-center" style="padding-top: 30px;">
-        <div class="col-4">
-            <div class="card" style="border: 0; width:max-content">
-                @yield('startup3_speakers')
+        <div class="col-1">
+            <a class="carousel-control-prev" href="#sutSpeakersDay1" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#sutSpeakersDay1" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+</div>
+<div data-aos="fade-down" data-aos-duration="1000" class="row align-items-center justify-content-center" align="center" style="padding-top: 30px;padding-bottom: 30px;">
+    <h1 class="text-event-sub-title">Startup Talk : Day 2</h1>
+    <h2 class="text-event-sub-theme">"Evolution of Digital Transformation"</h2>
+    <div id="sutSpeakersDay2" class="row justify-content-center carousel slide" data-ride="carousel" style="padding-top: 30px; position:relative">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="row justify-content-center">
+                    <div class="col-4">
+                        <div class="card ifest-photo-card" style="border: 0; width:max-content">
+                            @yield('startup5_speakers')
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card ifest-photo-card" style="border: 0; width:max-content">
+                            @yield('startup6_speakers')
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="row justify-content-center">
+                    <div class="col-4">
+                        <div class="card ifest-photo-card" style="border: 0; width:max-content">
+                            @yield('startup7_speakers')
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card ifest-photo-card" style="border: 0; width:max-content">
+                            @yield('startup8_speakers')
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="col-4">
-            <div class="card" style="border: 0; width:max-content">
-                @yield('startup4_speakers')
-            </div>
-        </div>
-        <div class="row justify-content-center" style="padding-top: 30px;">
-            <div class="col-2">
-                <img class="arrow-switch" src="{{ URL::asset('icon/circle-arrow-left.svg') }}" alt="arrow-left">
-                <img class="arrow-switch" src="{{ URL::asset('icon/circle-arrow-right.svg') }}" alt="arrow-right">
-            </div>
+    </div>
+    <div class="row justify-content-center" style="padding-top: 30px;">
+        <div class="col-1">
+            <a class="carousel-control-prev" href="#sutSpeakersDay2" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#sutSpeakersDay2" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
         </div>
     </div>
 </div>
 
 <div data-aos="fade-up" data-aos-duration="1000" class="row align-items-center justify-content-center" align="left" id="sutCards" style="padding-top: 30px;padding-bottom: 30px;">
     <div class="col-6" align="center" style="padding:0">
-        <div class="card" style="border: 0; width:502px" id="cardTimeline">
+        <div class="card" style="border: 0; width:90%" id="cardTimeline">
             <div class="row align-items-center justify-content-start" style="padding:15px;">
                 <div class="col-2">
                     <img class="events-card-logo" src="{{ URL::asset('icon/date.png') }}" alt="Date">
                 </div>
                 <div class="col-6">
-                    <h5 style="color:black; ">20 - 21 Agustus 2022</h5>
+                    <h5 style="color:black;">20 - 21 Agustus 2022</h5>
                 </div>
             </div>
         </div>
     </div>
     <div class="col-6" align="center" style="padding:0">
-        <div class="card" style="border: 0; width:502px" id="cardTicket">
+        <div class="card" style="border: 0; width:90%" id="cardTicket">
             <div class="row align-items-center" style="padding:15px">
                 <div class="col-2">
                     <img class="events-card-logo" src="{{ URL::asset('icon/ticket.png') }}" alt="Ticket">
@@ -193,7 +315,7 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 </div>
 <div data-aos="fade-up" data-aos-duration="1000" class="row align-items-center justify-content-center" align="left" id="sutCards" style="padding-top: 30px;padding-bottom: 30px;">
     <div class="col-6" align="center">
-        <div class="card" style="border: 0; width:502px" id="cardPlatform">
+        <div class="card" style="border: 0; width:90%" id="cardPlatform">
             <div class="row align-items-center" style="padding:15px">
                 <div class="col-2">
                     <img class="events-card-logo" src="{{ URL::asset('icon/platform.png') }}" alt="Platform">
