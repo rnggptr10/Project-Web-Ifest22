@@ -6,7 +6,7 @@
 @yield('competition_head')
 <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
-@extends('layouts.app')
+<!-- @extends('layouts.app') -->
 
 @section('content')
 

@@ -20,7 +20,7 @@
 <div class="content-main">
     <img src="{{asset('img/bg-fix.png')}}" alt="" style="width:100%;">
     <div class="logo-content-main">
-        <img src="{{asset('img/logo/logo_landing.png')}}" alt="">
+        <img class="logo-landing" src="{{asset('img/logo/logo_landing.png')}}" alt="">
     </div>
 </div>
 <div id="info" class="flex" data-aos="fade-up" data-aos-duration="1000">
@@ -102,7 +102,7 @@
 </div>
 
 <div data-aos="fade-up" data-aos-duration="1000">
-    <div class="isian-tab1" >
+    <div class="isian-tab1">
         <button id="defaultOpen" class="tablink justify-content-center" onclick="openPage('Home','StartupTalk-speakers' , this, '#291647')" id="defaultOpen">Startup Talk</button>
         <button class="tablink justify-content-center" onclick="openPage('News', 'Technopreneur-speakers', this, '#291647')">Technopreneur</button>
         <button class="tablink justify-content-center" onclick="openPage('Contact','ITComp-speakers', this, '#291647')">IT Competition</button>

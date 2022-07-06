@@ -26,7 +26,6 @@
                 <p class="text-center text-greeting-desc">Enter your personal details and start journey with us </p>
                 <form method="POST" action="{{ route('register') }}" enctype="multipart/form-data">
                     @csrf
-
                     <div class="row mb-2">
                         <label for="name" class="placeholder text-form">{{ __('Name') }}</label>
                         <input id="name" type="text" class="form-control @error('name') is-invalid @enderror ifest-form" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>

@@ -38,6 +38,7 @@ class CtfController extends Controller
 
     public function saveRegister(Request $request)
     {
+        // dd($request);
         $request->validate([
             'team_name' => 'required',
             'team_leader' => 'required',
