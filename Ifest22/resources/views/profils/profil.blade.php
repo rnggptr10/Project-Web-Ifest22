@@ -25,15 +25,9 @@
 
 @section('content')
 <body style="background-color: #1c1c1c;">
-<<<<<<< HEAD
-    <div class="container" style="padding: 100px 0 50px 0;">
-        <div class="row justify-content-between">
-            <div class="col-6">
-=======
     <div class="container" style="padding: 0; padding-bottom:50px; padding-top:80px;">
         <div class="row justify-content-between" style="width: 100%; margin-left: 0;">
             <div class="col-sm-6">
->>>>>>> f09b62d31764cd9a8e9c889ee1f815d0ffb78344
                 <div class="card" style="padding:20px; background-color:#2D2D2D">
                     <div class="row" align="center" style="padding-bottom:15px;">
                         <h2 class="text-card-title">Your Profile</h2>
