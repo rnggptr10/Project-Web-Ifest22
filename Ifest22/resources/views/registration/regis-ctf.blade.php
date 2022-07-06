@@ -284,51 +284,51 @@
             </div>
         </div>
     </div>
-</form>
 
-<!-- PAGE 2 -->
-<div id="regist-section-2" hidden>
-    <div class="row">
-        <h6 class="regist-text-subhead">Registration Payment</h6>
-    </div>
-    <div class="row">
-        <div class="col">
-            <div class="row" style="padding:0 0 5px 0">
-                <p class="regist-form-text-payment-head">Amount to pay :</p>
-                <p class="regist-form-text-price">Rp.150000</p>
-            </div>
-            <div class="row" style="padding:5px 0 5px 0">
-                <p class="regist-form-text-payment-head">Payment Methods :</p>
-                <p class="regist-form-text-payment">BRI : 1212434343 a.n. Protprot</p>
-                <p class="regist-form-text-payment">BNI : 1392832983 a.n. Protprot</p>
-            </div>
-            <div class="row">
-                <div class="container-upload dflex">
-                    <label for="payment-confirmation" class="payment-upload d-flex justify-content-center align-items-center">
-                        <span class="iconify me-2" data-icon="feather:upload" data-inline="false" style="color: #001d3d;"></span>
-                        Upload Payment Proof
-                    </label>
-                    <input type="file" id="payment-confirmation" name="payment_confirmation" accept=".jpg, .png, .jpeg" style="color:transparent">
+    <!-- PAGE 2 -->
+    <div id="regist-section-2" hidden>
+        <div class="row">
+            <h6 class="regist-text-subhead">Registration Payment</h6>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="row" style="padding:0 0 5px 0">
+                    <p class="regist-form-text-payment-head">Amount to pay :</p>
+                    <p class="regist-form-text-price">Rp.150000</p>
                 </div>
-                @error('payment_confirmation')
-                <div class="alert alert-danger mt-1 d-flex align-items-center" role="alert" style="width: 100%; margin: 0 auto">
-                    <span class="iconify me-1" data-icon="akar-icons:circle-alert" data-inline="false" style="color: #842029;"></span>
-                    {{ $message }}
+                <div class="row" style="padding:5px 0 5px 0">
+                    <p class="regist-form-text-payment-head">Payment Methods :</p>
+                    <p class="regist-form-text-payment">BRI : 1212434343 a.n. Protprot</p>
+                    <p class="regist-form-text-payment">BNI : 1392832983 a.n. Protprot</p>
                 </div>
-                @enderror
-            </div>
-            <div class="row justify-content-center align-items-center" align="center" id="registCompButton2" style="padding:30px 0 30px 0">
-                <div class="col-4">
-                    <!-- VERTICAL ALIGN NYA BELOM JALAN -->
-                    <a class="btn btn-outline-primary ifest-btn-outline-primary-dark-bg mt-3 mt-sm-0 fw-bold text-center" onclick="backToSection1()" style="height:44px; width:128px;">{{ __('< Back') }}</a>
+                <div class="row">
+                    <div class="container-upload dflex">
+                        <label for="payment-confirmation" class="payment-upload d-flex justify-content-center align-items-center">
+                            <span class="iconify me-2" data-icon="feather:upload" data-inline="false" style="color: #001d3d;"></span>
+                            Upload Payment Proof
+                        </label>
+                        <input type="file" id="payment-confirmation" name="payment_confirmation" accept=".jpg, .png, .jpeg" style="color:transparent" required>
+                    </div>
+                    @error('payment_confirmation')
+                    <div class="alert alert-danger mt-1 d-flex align-items-center" role="alert" style="width: 100%; margin: 0 auto">
+                        <span class="iconify me-1" data-icon="akar-icons:circle-alert" data-inline="false" style="color: #842029;"></span>
+                        {{ $message }}
+                    </div>
+                    @enderror
                 </div>
-                <div class="col-4">
-                    <button id="regist-submit-regist" type="submit" class="btn btn-primary ifest-btn-primary-dark-bg mt-3 mt-sm-0 fw-bold" style="height:44px; width:128px">{{ __('Submit') }}</button>
+                <div class="row justify-content-center align-items-center" align="center" id="registCompButton2" style="padding:30px 0 30px 0">
+                    <div class="col-4">
+                        <!-- VERTICAL ALIGN NYA BELOM JALAN -->
+                        <a class="btn btn-outline-primary ifest-btn-outline-primary-dark-bg mt-3 mt-sm-0 fw-bold text-center" onclick="backToSection1()" style="height:44px; width:128px;">{{ __('< Back') }}</a>
+                    </div>
+                    <div class="col-4">
+                        <button id="regist-submit-regist" type="submit" class="btn btn-primary ifest-btn-primary-dark-bg mt-3 mt-sm-0 fw-bold" style="height:44px; width:128px">{{ __('Submit') }}</button>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
+</form>
 @endsection
 
 @section('cp_registrasi')

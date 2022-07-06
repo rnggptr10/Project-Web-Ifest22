@@ -58,8 +58,9 @@ class CtfController extends Controller
             'email' => Auth::user()->email,
             'team_name' => $request->team_name,
             'team_leader' => $request->team_leader,
-            'team_member_1' => $request->team_member_1,
-            'team_member_2' => $request->team_member_2,
+            'team_leader_institute' => $request->team_leader_institute,
+            'team_member_1_institute' => $request->team_member_1_institute,
+            'team_member_2_institute' => $request->team_member_2_institute,
             // 'id_card' => $name_id_card,
             // 'proof_payment' => $name_payment_confirmation,
         ]);

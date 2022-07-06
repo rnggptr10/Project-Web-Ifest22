@@ -13,8 +13,11 @@ class Ctf_form extends Model
         'email',
         'team_name',
         'team_leader',
+        'team_leader_institute',
         'team_member_1',
+        'team_member_1_institute',
         'team_member_2',
+        'team_member_2_institute',
         'id_card',
         'proof_payment',
     ];

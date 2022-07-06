@@ -18,10 +18,15 @@ class CreateIntentionFormsTable extends Migration
             $table->string('email')->unique();
             $table->string('team_name');
             $table->string('team_leader');
+            $table->string('team_leader_institute');
             $table->string('team_member_1');
+            $table->string('team_member_1_institute');
             $table->string('team_member_2');
+            $table->string('team_member_2_institute');
             $table->string('team_member_3')->nullable();
+            $table->string('team_member_3_institute')->nullable();
             $table->string('team_member_4')->nullable();
+            $table->string('team_member_4_institute')->nullable();
             // $table->string('id_card');
             $table->string('proof_payment')->nullable();
             $table->string('proposal_link')->nullable();
