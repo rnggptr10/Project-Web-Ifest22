@@ -25,9 +25,15 @@
 
 @section('content')
 <body style="background-color: #1c1c1c;">
+<<<<<<< HEAD
     <div class="container" style="padding: 100px 0 50px 0;">
         <div class="row justify-content-between">
             <div class="col-6">
+=======
+    <div class="container" style="padding: 0; padding-bottom:50px; padding-top:80px;">
+        <div class="row justify-content-between" style="width: 100%; margin-left: 0;">
+            <div class="col-sm-6">
+>>>>>>> f09b62d31764cd9a8e9c889ee1f815d0ffb78344
                 <div class="card" style="padding:20px; background-color:#2D2D2D">
                     <div class="row" align="center" style="padding-bottom:15px;">
                         <h2 class="text-card-title">Your Profile</h2>
@@ -63,7 +69,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-6">
+            <div class="col-sm-6">
                 <div class="card" style="padding:20px; background-color:#2D2D2D">
                     <div class="row" align="center">
                         <h2 class="text-card-title">Your Tickets</h2>
@@ -78,7 +84,7 @@
                                         <h6 class="text-tickets-head">Startup Talk</h6>
                                         <p class="text-tickets-desc">20-21 Agustus 2022<br>Registration Status : <span class="text-tickets-status" style="color:green">{{ $data->institute }}</span></p>
                                     </div>
-                                    <div class="col-5">
+                                    <div class="col">
                                         <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 147px;height: 48px;">
                                             <a class="ifest-btn-primary-dark-bg-text" href="">Link Zoom</a>
                                         </button>
@@ -95,7 +101,7 @@
                                         <h6 class="text-tickets-head">Seminar Nasional - Non Pemakalah</h6>
                                         <p class="text-tickets-desc">20-21 Agustus 2022<br>Registration Status : <span class="text-tickets-status status-orange">{{ $data->institute }}</span></p>
                                     </div>
-                                    <div class="col-5">
+                                    <div class="col">
                                         <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 147px;height: 48px;">
                                             <a class="ifest-btn-primary-dark-bg-text" href="">Link Zoom</a>
                                         </button>
@@ -112,7 +118,7 @@
                                         <h6 class="text-tickets-head">Seminar Nasional - Pemakalah</h6>
                                         <p class="text-tickets-desc">Juli - Oktober<br>Registration Status : <span class="text-tickets-status status-green">{{ $data->institute }}</span></p>
                                     </div>
-                                    <div class="col-5">
+                                    <div class="col">
                                         <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 147px;height: 48px;">
                                             <a class="ifest-btn-primary-dark-bg-text" href="">See Details</a>
                                         </button>
@@ -129,7 +135,7 @@
                                         <h6 class="text-tickets-head">Technopreneur Seminar</h6>
                                         <p class="text-tickets-desc">11, 18 September 2022<br>Registration Status : <span class="text-tickets-status" style="color:green">{{ $data->institute }}</span></p>
                                     </div>
-                                    <div class="col-5">
+                                    <div class="col">
                                         <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 147px;height: 48px;">
                                             <a class="ifest-btn-primary-dark-bg-text" href="">Link Zoom</a>
                                         </button>
@@ -146,7 +152,7 @@
                                         <h6 class="text-tickets-head">Innovative Technology Competition (INTENTION)</h6>
                                         <p class="text-tickets-desc">Juli - Oktober<br>Registration Status : <span class="text-tickets-status" style="color:green">{{ $data->institute }}</span></p>
                                     </div>
-                                    <div class="col-5">
+                                    <div class="col">
                                         <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 147px;height: 48px;">
                                             <a class="ifest-btn-primary-dark-bg-text" href="{{ route('profile.ticketDetailsIntention') }}">See Details</a>
                                         </button>
@@ -163,7 +169,7 @@
                                         <h6 class="text-tickets-head">Data Analysis Competition</h6>
                                         <p class="text-tickets-desc">Juli - Oktober<br>Registration Status : <span class="text-tickets-status" style="color:green">{{ $data->institute }}</span></p>
                                     </div>
-                                    <div class="col-5">
+                                    <div class="col">
                                         <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 147px;height: 48px;">
                                             <a class="ifest-btn-primary-dark-bg-text" href="{{ route('profile.ticketDetailsDac') }}">See Details</a>
                                         </button>
@@ -180,7 +186,7 @@
                                         <h6 class="text-tickets-head">Capture The Flag</h6>
                                         <p class="text-tickets-desc">Juli - September<br>Registration Status : <span class="text-tickets-status" style="color:green">{{ $data->institute }}</span></p>
                                     </div>
-                                    <div class="col-5">
+                                    <div class="col">
                                         <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 147px;height: 48px;">
                                             <a class="ifest-btn-primary-dark-bg-text" href="{{ route('profile.ticketDetailsCtf') }}">See Details</a>
                                         </button>
@@ -197,7 +203,7 @@
                                         <h6 class="text-tickets-head">Technopreneur Workshop</h6>
                                         <p class="text-tickets-desc">Juli - Oktober<br>Registration Status : <span class="text-tickets-status" style="color:green">{{ $data->institute }}</span></p>
                                     </div>
-                                    <div class="col-5">
+                                    <div class="col">
                                         <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 147px;height: 48px;">
                                             <a class="ifest-btn-primary-dark-bg-text" href="{{ route('profile.ticketDetailsTechnoWorkshop') }}">See Details</a>
                                         </button>
