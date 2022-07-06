@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<title>IFest 2022 - Seminar Nasional Payment</title>
+<title>IFest 2022 - Technopreneur Workshop Payment</title>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport' />
 <link rel="stylesheet" href="{{ URL::asset('css/generalStyle.css') }}">
@@ -20,7 +20,7 @@
                         <h1 class="regist-text-title">Payment Form</h1>
                     </div>
                     <div style="padding-bottom: 10px;">
-                        <h2 class="regist-text-desc">Seminar Nasional</h2>
+                        <h2 class="regist-text-desc">Technopreneur Workshop</h2>
                     </div>
                 </div>
 
@@ -38,7 +38,7 @@
                                         <div class="col">
                                             <div class="row" style="padding:0 0 5px 0">
                                                 <p class="regist-form-text-payment-head">Amount to pay :</p>
-                                                <p class="regist-form-text-price">Rp.50000</p>
+                                                <p class="regist-form-text-price">Rp.150000</p>
                                             </div>
                                             <div class="row" style="padding:5px 0 5px 0">
                                                 <p class="regist-form-text-payment-head">Payment Methods :</p>
@@ -62,7 +62,7 @@
                                             </div>
                                             <div class="row justify-content-center align-items-center" align="center" id="registCompButton2" style="padding:30px 0 30px 0">
                                                 <div class="col-4">
-                                                    <a class="btn btn-outline-primary ifest-btn-outline-primary-dark-bg mt-3 mt-sm-0 fw-bold text-center" style="height:44px; width:128px;" href="{{ route('incon') }}">{{ __('< Back') }}</a>
+                                                    <a class="btn btn-outline-primary ifest-btn-outline-primary-dark-bg mt-3 mt-sm-0 fw-bold text-center" style="height:44px; width:128px;" href="{{ route('profile.ticketDetailsTechnoWorkshop') }}">{{ __('< Back') }}</a>
                                                 </div>
                                                 <div class="col-4">
                                                     <button id="regist-submit-regist" type="submit" class="btn btn-primary ifest-btn-primary-dark-bg mt-3 mt-sm-0 fw-bold" style="height:44px; width:128px" disabled>{{ __('Submit') }}</button>

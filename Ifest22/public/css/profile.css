@@ -110,3 +110,19 @@
 .status-red {
     color: #D71515;
 }
+
+@media screen and (max-width: 1199px) {
+    .ifest-btn-primary-dark-bg{
+        margin-top: 20px;
+    }
+
+    .col-7{
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .col-sm-6{
+        margin-top: 30px;
+    }
+}
