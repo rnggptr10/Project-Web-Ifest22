@@ -67,6 +67,48 @@ class ProfilController extends Controller
         return view('profils.ticketDetailsIntention', compact('data'));
     }
 
+    public function submittingProposalIntention()
+    {
+        $data = User::where('email', Auth::user()->email)->first();
+        return view('submitting.submitting-intention-proposal', compact('data'));
+    }
+
+    public function submittingProjectIntention()
+    {
+        $data = User::where('email', Auth::user()->email)->first();
+        return view('submitting.submitting-intention-project', compact('data'));
+    }
+
+    public function submittingPaperDAC()
+    {
+        $data = User::where('email', Auth::user()->email)->first();
+        return view('submitting.submitting-dac-paper', compact('data'));
+    }
+
+    public function submittingAnalysisDAC()
+    {
+        $data = User::where('email', Auth::user()->email)->first();
+        return view('submitting.submitting-dac-analysis', compact('data'));
+    }
+
+    public function submittingProposalTechno()
+    {
+        $data = User::where('email', Auth::user()->email)->first();
+        return view('submitting.submitting-techno-proposal', compact('data'));
+    }
+
+    public function submittingPitchdeck1Techno()
+    {
+        $data = User::where('email', Auth::user()->email)->first();
+        return view('submitting.submitting-techno-pitchdeck-1', compact('data'));
+    }
+
+    public function submittingPitchdeck2Techno()
+    {
+        $data = User::where('email', Auth::user()->email)->first();
+        return view('submitting.submitting-techno-pitchdeck-2', compact('data'));
+    }
+
     public function ticketDetailsDac()
     {
         $data = User::where('email', Auth::user()->email)->first();

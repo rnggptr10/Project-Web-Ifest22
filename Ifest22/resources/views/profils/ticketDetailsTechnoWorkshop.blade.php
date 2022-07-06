@@ -44,7 +44,7 @@
     </div>
     <div class="col-4" align="center" style="padding:0">
         <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 120px;height: 48px;">
-            <a class="ifest-btn-primary-dark-bg-text" href="">View</a>
+            <a class="ifest-btn-primary-dark-bg-text" href="{{ route('techno.submitting.proposal.view') }}">View</a>
         </button>
     </div>
 </div>
@@ -65,7 +65,7 @@
     </div>
     <div class="col-4" align="center" style="padding:0">
         <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 120px;height: 48px;">
-            <a class="ifest-btn-primary-dark-bg-text" href="">Details</a>
+            <a class="ifest-btn-primary-dark-bg-text" href="{{ route('technoWorkshop.payment.view') }}">Submit</a>
         </button>
     </div>
 </div>
@@ -103,7 +103,7 @@
     </div>
     <div class="col-4" align="center" style="padding:0">
         <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 120px;height: 48px;">
-            <a class="ifest-btn-primary-dark-bg-text" href="">Submit</a>
+            <a class="ifest-btn-primary-dark-bg-text" href="{{ route('techno.submitting.pitchdeck1.view') }}">Submit</a>
         </button>
     </div>
 </div>
@@ -145,7 +145,7 @@
     </div>
     <div class="col-4" align="center" style="padding:0">
         <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 120px;height: 48px;">
-            <a class="ifest-btn-primary-dark-bg-text" href="">Submit</a>
+            <a class="ifest-btn-primary-dark-bg-text" href="{{ route('techno.submitting.pitchdeck2.view') }}">Submit</a>
         </button>
     </div>
 </div>

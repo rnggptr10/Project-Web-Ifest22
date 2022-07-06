@@ -44,7 +44,7 @@
     </div>
     <div class="col-4" align="center" style="padding:0">
         <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 120px;height: 48px;">
-            <a class="ifest-btn-primary-dark-bg-text" href="">View</a>
+            <a class="ifest-btn-primary-dark-bg-text" href="{{ route('dac.submitting.paper.view') }}">Submit</a>
         </button>
     </div>
 </div>
@@ -65,7 +65,7 @@
     </div>
     <div class="col-4" align="center" style="padding:0">
         <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 120px;height: 48px;">
-            <a class="ifest-btn-primary-dark-bg-text" href="">Submit</a>
+            <a class="ifest-btn-primary-dark-bg-text" href="{{ route('dac.submitting.analysis.view') }}">Submit</a>
         </button>
     </div>
 </div>

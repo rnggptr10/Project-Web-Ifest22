@@ -92,9 +92,8 @@
         </div>
     </div>
 
-    <!-- Add 2 Member -->
-    <!-- 1 -->
-    <div id="addmember1" class="row-addmember mb-2 align-items-center">
+    <!-- TEAM MEMBER 1 -->
+    <div class="row mb-2 align-items-center">
         <div class="col">
             <div class="row" align="left">
                 <h5 class="placeholder regist-form-text" style="padding:0">Team Member 1</h5>
@@ -139,8 +138,7 @@
                             @enderror
                         </div>
                     </div>
-                    <!-- KLO BLM UPLOAD CUMA 1 BUTTON -->
-                    <!-- <div class="row mb-2">
+                    <div class="row mb-2">
                         <div class="col">
                             <input type="file" id="id_card" name="id_card" accept=".png" value="+ ID Card" style="color:transparent">
                             @error('id_card')
@@ -151,14 +149,15 @@
                             </div>
                             @enderror
                         </div>
-                    </div> -->
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- 2 -->
-    <div id="addmember2" class="row-addmember mb-2 align-items-center">
+    <!-- Add 2 Member -->
+    <!-- 1 -->
+    <div id="addmember1" class="row-addmember mb-2 align-items-center">
         <div class="col">
             <div class="row" align="left">
                 <h5 class="placeholder regist-form-text" style="padding:0">Team Member 2</h5>
@@ -224,12 +223,12 @@
     <!-- ADD MEMBER -->
     <div class="row mb-2">
         <div class="col-10" style="padding:0">
-            <button id="btn-addRegisTechnoWorkshop" type="button" class="input-element-regis mt-3" onclick="AddMember('addmember1', 'btn-addRegisTechnoWorkshop', 'btn-removeRegisTechnoWorkshop')">+</button>
+            <button id="btn-addRegisTechnoWorkshop" type="button" class="input-element-regis mt-3" onclick="AddMemberDAC('addmember1', 'btn-addRegisTechnoWorkshop', 'btn-removeRegisTechnoWorkshop')">+</button>
         </div>
 
         <!-- Button Remove Member -->
         <div class="col-10" style="padding:0">
-            <button id="btn-removeRegisTechnoWorkshop" type="button" class="input-element-regis mt-3" onclick="RemoveMember('addmember1', 'btn-addRegisTechnoWorkshop', 'btn-removeRegisTechnoWorkshop')" style="display:none">-</button>
+            <button id="btn-removeRegisTechnoWorkshop" type="button" class="input-element-regis mt-3" onclick="RemoveMemberDAC('addmember1', 'btn-addRegisTechnoWorkshop', 'btn-removeRegisTechnoWorkshop')" style="display:none">-</button>
         </div>
     </div>
 
@@ -270,13 +269,13 @@
             <a class="btn btn-outline-primary ifest-btn-outline-primary-dark-bg mt-3 mt-sm-0 fw-bold text-center" href="{{ route('techno') }}" style="height:44px; width:128px;">{{ __('< Back') }}</a>
         </div>
         <div class="col-4">
-            <button id="regist-next-section" type="button" class="btn btn-primary ifest-btn-primary-dark-bg mt-3 mt-sm-0 fw-bold" onclick="registNextSection()" style="height:44px; width:128px">{{ __('Next') }}</button>
+            <button id="regist-next-section" type="button" class="btn btn-primary ifest-btn-primary-dark-bg mt-3 mt-sm-0 fw-bold" style="height:44px; width:128px" disabled>{{ __('Submit') }}</button>
         </div>
     </div>
 </div>
 
 <!-- PAGE 2 -->
-<div id="regist-section-2" hidden>
+<!-- <div id="regist-section-2" hidden>
     <div class="row">
         <h6 class="regist-text-subhead">Registration Payment</h6>
     </div>
@@ -308,7 +307,6 @@
             </div>
             <div class="row justify-content-center align-items-center" align="center" id="registCompButton2" style="padding:30px 0 30px 0">
                 <div class="col-4">
-                    <!-- VERTICAL ALIGN NYA BELOM JALAN -->
                     <a class="btn btn-outline-primary ifest-btn-outline-primary-dark-bg mt-3 mt-sm-0 fw-bold text-center" onclick="backToSection1()"  style="height:44px; width:128px;">{{ __('< Back') }}</a>
                 </div>
                 <div class="col-4">
@@ -317,7 +315,7 @@
             </div>
         </div>
     </div> 
-</div>
+</div> -->
 @endsection
 
 @section('cp_registrasi')
