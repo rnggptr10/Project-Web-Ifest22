@@ -24,7 +24,7 @@ class CreateCtfFormsTable extends Migration
             $table->string('team_member_2')->nullable();
             $table->string('team_member_2_institute')->nullable();
             // $table->string('id_card')->nullable();
-            // $table->string('proof_payment');
+            $table->string('proof_payment');
             $table->timestamps();
         });
     }

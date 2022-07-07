@@ -13,10 +13,14 @@ class Da_Form extends Model
         'email',
         'team_name',
         'team_leader',
+        'team_leader_institute',
         'team_member_1',
+        'team_member_1_institute',
         'team_member_2',
+        'team_member_2_institute',
         'team_member_3',
+        'team_member_3_institute',
         // 'id_card',
-        // 'proof_payment',
+        'proof_payment',
     ];
 }

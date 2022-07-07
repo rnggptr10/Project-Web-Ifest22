@@ -27,7 +27,7 @@ class CreateDaFormsTable extends Migration
             $table->string('team_member_3')->nullable();
             $table->string('team_member_3_institute')->nullable();
             // $table->string('id_card');
-            // $table->string('proof_payment');
+            $table->string('proof_payment');
             $table->timestamps();
         });
     }

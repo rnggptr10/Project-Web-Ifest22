@@ -43,11 +43,17 @@ class IntentionController extends Controller
         $request->validate([
             'team_name' => 'required',
             'team_leader' => 'required',
+            'team_leader_institute' => 'required',
             'team_member_1' => 'required',
+            'team_member_1_institute' => 'required',
             'team_member_2' => 'required',
+            'team_member_2_institute' => 'required',
             // 'id_card' => 'required|file|mimes:zip|max:2000',
             // 'payment_confirmation' => 'required|image|max:1024',
         ]);
+
+        // Alamat Penyimpanan
+        $request->payment_confirmation->store('intention-payment-proof');
 
         // $id_card = $request->file('id_card');
         // $name_id_card = time() . "_" . $id_card->getClientOriginalName();
@@ -61,14 +67,19 @@ class IntentionController extends Controller
             'email' => Auth::user()->email,
             'team_name' => $request->team_name,
             'team_leader' => $request->team_leader,
+            'team_leader_institute' => $request->team_leader_institute,
             'team_member_1' => $request->team_member_1,
+            'team_member_1_institute' => $request->team_member_1_institute,
             'team_member_2' => $request->team_member_2,
+            'team_member_2_institute' => $request->team_member_2_institute,
             'team_member_3' => $request->team_member_3,
+            'team_member_3_institute' => $request->team_member_3_institute,
             'team_member_4' => $request->team_member_4,
+            'team_member_4_institute' => $request->team_member_4_institute,
             // 'id_card' => $name_id_card,
             'proposal_link' => null,
             'app_link' => null,
-            // 'proof_payment' => $name_payment_confirmation,
+            'proof_payment' => $request->payment_confirmation->store('intention-payment-proof'),
             'finalist' => null
         ]);
 

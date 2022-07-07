@@ -46,6 +46,9 @@ class CtfController extends Controller
             // 'payment_confirmation' => 'required|image|max:1024',
         ]);
 
+        // Alamat penyimpanan payment proof
+        $request->payment_confirmation->store('ctf-payment-proof');
+
         // $id_card = $request->file('id_card');
         // $name_id_card = time() . "_" . $id_card->getClientOriginalName();
         // $id_card->storeAs('public/images/id_card/ctf/', $name_id_card);
@@ -59,10 +62,12 @@ class CtfController extends Controller
             'team_name' => $request->team_name,
             'team_leader' => $request->team_leader,
             'team_leader_institute' => $request->team_leader_institute,
+            'team_member_1' => $request->team_member_1,
             'team_member_1_institute' => $request->team_member_1_institute,
+            'team_member_2' => $request->team_member_2,
             'team_member_2_institute' => $request->team_member_2_institute,
             // 'id_card' => $name_id_card,
-            // 'proof_payment' => $name_payment_confirmation,
+            'proof_payment' => $request->payment_confirmation->store('ctf-payment-proof'),
         ]);
 
         Ticket::where('email', Auth::user()->email)->update([
