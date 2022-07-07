@@ -45,13 +45,13 @@
                                                 <p class="regist-form-text-payment">BRI : 1212434343 a.n. Protprot</p>
                                                 <p class="regist-form-text-payment">BNI : 1392832983 a.n. Protprot</p>
                                             </div>
-                                            <div class="row">
+                                            <div class="row" style="padding-top:20px">
                                                 <div class="container-upload dflex">
-                                                    <label for="payment-confirmation" class="payment-upload d-flex justify-content-center align-items-center">
+                                                    <label for="payment-confirmation" class="payment-upload d-flex justify-content-center align-items-center button-upload text-button-upload">
                                                         <span class="iconify me-2" data-icon="feather:upload" data-inline="false" style="color: #001d3d;"></span>
                                                         Upload Payment Proof
                                                     </label>
-                                                    <input type="file" id="payment-confirmation" name="payment_confirmation" accept=".jpg, .png, .jpeg" style="color:transparent">
+                                                    <input type="file" id="payment-confirmation" name="payment_confirmation" accept=".jpg, .png, .jpeg" style="color:transparent" required hidden>
                                                 </div>
                                                 @error('payment_confirmation')
                                                 <div class="alert alert-danger mt-1 d-flex align-items-center" role="alert" style="width: 100%; margin: 0 auto">
@@ -62,7 +62,7 @@
                                             </div>
                                             <div class="row justify-content-center align-items-center" align="center" id="registCompButton2" style="padding:30px 0 30px 0">
                                                 <div class="col-4">
-                                                    <a class="btn btn-outline-primary ifest-btn-outline-primary-dark-bg mt-3 mt-sm-0 fw-bold text-center" style="height:44px; width:128px;" href="{{ route('incon') }}">{{ __('< Back') }}</a>
+                                                    <button class="btn btn-outline-primary ifest-btn-outline-primary-dark-bg mt-3 mt-sm-0 fw-bold text-center" style="height:44px; width:128px;"><a class="ifest-btn-primary-dark-bg-text" href="{{ route('incon') }}">{{ __('< Back') }}</a></button>
                                                 </div>
                                                 <div class="col-4">
                                                     <button id="regist-submit-regist" type="submit" class="btn btn-primary ifest-btn-primary-dark-bg mt-3 mt-sm-0 fw-bold" style="height:44px; width:128px" disabled>{{ __('Submit') }}</button>

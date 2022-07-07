@@ -65,19 +65,8 @@
                 <div class="col-2">
                     <div class="row mb-2">
                         <div class="col">
-                            <input type="file" id="id_card" name="id_card" accept=".png" value="+ ID Card" style="color:transparent">
-                            @error('id_card')
-                            <div class="alert alert-danger mt-1 d-flex align-items-center" role="alert" style="width: 100%;
-                            max-width: 333px; margin: 0 auto">
-                                <span class="iconify me-1" data-icon="akar-icons:circle-alert" data-inline="false" style="color: #842029;"></span>
-                                {{ $message }}
-                            </div>
-                            @enderror
-                        </div>
-                    </div>
-                    <div class="row mb-2">
-                        <div class="col">
-                            <input type="file" id="id_card" name="id_card" accept=".png" value="+ ID Card" style="color:transparent">
+                            <label class="button-upload text-button-upload" for="team_leader_id">+ ID Card</label>
+                            <input type="file" id="team_leader_id" accept=".png" style="color:transparent" hidden>
                             @error('id_card')
                             <div class="alert alert-danger mt-1 d-flex align-items-center" role="alert" style="width: 100%;
                             max-width: 333px; margin: 0 auto">
@@ -128,19 +117,8 @@
                 <div class="col-2">
                     <div class="row mb-2">
                         <div class="col">
-                            <input type="file" id="id_card" name="id_card" accept=".png" value="+ ID Card" style="color:transparent">
-                            @error('id_card')
-                            <div class="alert alert-danger mt-1 d-flex align-items-center" role="alert" style="width: 100%;
-                            max-width: 333px; margin: 0 auto">
-                                <span class="iconify me-1" data-icon="akar-icons:circle-alert" data-inline="false" style="color: #842029;"></span>
-                                {{ $message }}
-                            </div>
-                            @enderror
-                        </div>
-                    </div>
-                    <div class="row mb-2">
-                        <div class="col">
-                            <input type="file" id="id_card" name="id_card" accept=".png" value="+ ID Card" style="color:transparent">
+                            <label class="button-upload text-button-upload" for="team_member_1_id">+ ID Card</label>
+                            <input type="file" id="team_member_1_id" accept=".png" style="color:transparent" hidden>
                             @error('id_card')
                             <div class="alert alert-danger mt-1 d-flex align-items-center" role="alert" style="width: 100%;
                             max-width: 333px; margin: 0 auto">
@@ -192,7 +170,8 @@
                 <div class="col-2">
                     <div class="row mb-2">
                         <div class="col">
-                            <input type="file" id="id_card" name="id_card" accept=".png" value="+ ID Card" style="color:transparent">
+                            <label class="button-upload text-button-upload" for="team_member_2_id">+ ID Card</label>
+                            <input type="file" id="team_member_2_id" accept=".png" style="color:transparent" hidden>
                             @error('id_card')
                             <div class="alert alert-danger mt-1 d-flex align-items-center" role="alert" style="width: 100%;
                             max-width: 333px; margin: 0 auto">
@@ -202,19 +181,6 @@
                             @enderror
                         </div>
                     </div>
-                    <!-- KLO BLM UPLOAD CUMA 1 BUTTON -->
-                    <!-- <div class="row mb-2">
-                        <div class="col">
-                            <input type="file" id="id_card" name="id_card" accept=".png" value="+ ID Card" style="color:transparent">
-                            @error('id_card')
-                            <div class="alert alert-danger mt-1 d-flex align-items-center" role="alert" style="width: 100%;
-                            max-width: 333px; margin: 0 auto">
-                                <span class="iconify me-1" data-icon="akar-icons:circle-alert" data-inline="false" style="color: #842029;"></span>
-                                {{ $message }}
-                            </div>
-                            @enderror
-                        </div>
-                    </div> -->
                 </div>
             </div>
         </div>
@@ -266,10 +232,10 @@
     <div class="row justify-content-center align-items-center" align="center" id="registCompButton" style="padding:30px 0 30px 0">
         <div class="col-4">
             <!-- VERTICAL ALIGN NYA BELOM JALAN -->
-            <a class="btn btn-outline-primary ifest-btn-outline-primary-dark-bg mt-3 mt-sm-0 fw-bold text-center" href="{{ route('techno') }}" style="height:44px; width:128px;">{{ __('< Back') }}</a>
+            <button class="btn btn-outline-primary ifest-btn-outline-primary-dark-bg mt-3 mt-sm-0 fw-bold text-center" style="height:44px; width:128px;"><a class="ifest-btn-primary-dark-bg-text" href="{{ route('techno') }}">{{ __('< Back') }}</a></button>
         </div>
         <div class="col-4">
-            <button id="regist-next-section" type="button" class="btn btn-primary ifest-btn-primary-dark-bg mt-3 mt-sm-0 fw-bold" style="height:44px; width:128px" disabled>{{ __('Submit') }}</button>
+            <button id="regist-next-section" type="button" class="btn btn-primary ifest-btn-primary-dark-bg mt-3 mt-sm-0 fw-bold" style="height:44px; width:128px">{{ __('Submit') }}</button>
         </div>
     </div>
 </div>

@@ -296,7 +296,8 @@ div.countdown2 p {
 
 /* Medpart - Sponsored */
 .medpart-box,
-.sponsored-box {
+.sponsored-box,
+.ipod-box {
     width: 80%;
     height: 200px;
     padding: 20px;

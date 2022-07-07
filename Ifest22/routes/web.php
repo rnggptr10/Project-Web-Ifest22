@@ -61,6 +61,7 @@ Route::patch('/profil/ticket-details-technopreneur-workshop/submit-pitchdeck-2',
 Route::get('/international-conference', [InconController::class, 'index'])->name('incon');
 Route::get('/technopreneur', [TechnoController::class, 'index'])->name('techno');
 Route::get('/startup-talk', [StartupController::class, 'index'])->name('startup');
+Route::get('/ipod', [HomeController::class, 'ipodIndex'])->name('ipod');
 
 // Route for Competition
 Route::get('/intention', [IntentionController::class, 'index'])->name('intention');

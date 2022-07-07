@@ -68,19 +68,8 @@
                     <div class="col-2">
                         <div class="row mb-2">
                             <div class="col">
-                                <input type="file" id="id_card" name="id_card" accept=".png" value="+ ID Card" style="color:transparent">
-                                @error('id_card')
-                                <div class="alert alert-danger mt-1 d-flex align-items-center" role="alert" style="width: 100%;
-                            max-width: 333px; margin: 0 auto">
-                                    <span class="iconify me-1" data-icon="akar-icons:circle-alert" data-inline="false" style="color: #842029;"></span>
-                                    {{ $message }}
-                                </div>
-                                @enderror
-                            </div>
-                        </div>
-                        <div class="row mb-2">
-                            <div class="col">
-                                <input type="file" id="id_card" name="id_card" accept=".png" value="+ ID Card" style="color:transparent">
+                                <label class="button-upload text-button-upload" for="team_leader_id">+ ID Card</label>
+                                <input type="file" id="team_leader_id" accept=".png" style="color:transparent" hidden>
                                 @error('id_card')
                                 <div class="alert alert-danger mt-1 d-flex align-items-center" role="alert" style="width: 100%;
                             max-width: 333px; margin: 0 auto">
@@ -131,7 +120,8 @@
                     <div class="col-2">
                         <div class="row mb-2">
                             <div class="col">
-                                <input type="file" id="id_card" name="id_card" accept=".png" value="+ ID Card" style="color:transparent">
+                                <label class="button-upload text-button-upload" for="team_member_1_id">+ ID Card</label>
+                                <input type="file" id="team_member_1_id" accept=".png" style="color:transparent" hidden>
                                 @error('id_card')
                                 <div class="alert alert-danger mt-1 d-flex align-items-center" role="alert" style="width: 100%;
                             max-width: 333px; margin: 0 auto">
@@ -195,7 +185,8 @@
                     <div class="col-2">
                         <div class="row mb-2">
                             <div class="col">
-                                <input type="file" id="id_card" name="id_card" accept=".png" value="+ ID Card" style="color:transparent">
+                                <label class="button-upload text-button-upload" for="team_member_2_id">+ ID Card</label>
+                                <input type="file" id="team_member_2_id" accept=".png" style="color:transparent" hidden>
                                 @error('id_card')
                                 <div class="alert alert-danger mt-1 d-flex align-items-center" role="alert" style="width: 100%;
                             max-width: 333px; margin: 0 auto">
@@ -260,10 +251,11 @@
                     <div class="col-2">
                         <div class="row mb-2">
                             <div class="col">
-                                <input type="file" id="id_card" name="id_card" accept=".png" value="+ ID Card" style="color:transparent">
+                                <label class="button-upload text-button-upload" for="team_member_3_id">+ ID Card</label>
+                                <input type="file" id="team_member_3_id" accept=".png" style="color:transparent" hidden>
                                 @error('id_card')
                                 <div class="alert alert-danger mt-1 d-flex align-items-center" role="alert" style="width: 100%;
-                            max-width: 333px; margin: 0 auto">
+                                max-width: 333px; margin: 0 auto">
                                     <span class="iconify me-1" data-icon="akar-icons:circle-alert" data-inline="false" style="color: #842029;"></span>
                                     {{ $message }}
                                 </div>
@@ -333,7 +325,7 @@
         <div class="row justify-content-center align-items-center" align="center" id="registCompButton" style="padding:30px 0 30px 0">
             <div class="col-4">
                 <!-- VERTICAL ALIGN NYA BELOM JALAN -->
-                <a class="btn btn-outline-primary ifest-btn-outline-primary-dark-bg mt-3 mt-sm-0 fw-bold text-center" href="{{ route('da') }}" style="height:44px; width:128px;">{{ __('< Back') }}</a>
+                <button class="btn btn-outline-primary ifest-btn-outline-primary-dark-bg mt-3 mt-sm-0 fw-bold text-center" style="height:44px; width:128px;"><a class="ifest-btn-primary-dark-bg-text" href="{{ route('da') }}">{{ __('< Back') }}</a></button>
             </div>
             <div class="col-4">
                 <button id="regist-next-section" type="button" class="btn btn-primary ifest-btn-primary-dark-bg mt-3 mt-sm-0 fw-bold" onclick="registNextSection()" style="height:44px; width:128px">{{ __('Next') }}</button>
@@ -357,13 +349,13 @@
                     <p class="regist-form-text-payment">BRI : 1212434343 a.n. Protprot</p>
                     <p class="regist-form-text-payment">BNI : 1392832983 a.n. Protprot</p>
                 </div>
-                <div class="row">
+                <div class="row" style="padding-top:20px">
                     <div class="container-upload dflex">
-                        <label for="payment-confirmation" class="payment-upload d-flex justify-content-center align-items-center">
+                        <label for="payment-confirmation" class="payment-upload d-flex justify-content-center align-items-center button-upload text-button-upload">
                             <span class="iconify me-2" data-icon="feather:upload" data-inline="false" style="color: #001d3d;"></span>
                             Upload Payment Proof
                         </label>
-                        <input type="file" id="payment-confirmation" name="payment_confirmation" accept=".jpg, .png, .jpeg" style="color:transparent" required>
+                        <input type="file" id="payment-confirmation" name="payment_confirmation" accept=".jpg, .png, .jpeg" style="color:transparent" required hidden>
                     </div>
                     @error('payment_confirmation')
                     <div class="alert alert-danger mt-1 d-flex align-items-center" role="alert" style="width: 100%; margin: 0 auto">
@@ -375,7 +367,7 @@
                 <div class="row justify-content-center align-items-center" align="center" id="registCompButton2" style="padding:30px 0 30px 0">
                     <div class="col-4">
                         <!-- VERTICAL ALIGN NYA BELOM JALAN -->
-                        <a class="btn btn-outline-primary ifest-btn-outline-primary-dark-bg mt-3 mt-sm-0 fw-bold text-center" onclick="backToSection1()" style="height:44px; width:128px;">{{ __('< Back') }}</a>
+                        <button class="btn btn-outline-primary ifest-btn-outline-primary-dark-bg mt-3 mt-sm-0 fw-bold text-center" style="height:44px; width:128px;"><a class="ifest-btn-primary-dark-bg-text" onclick="backToSection1()">{{ __('< Back') }}</a></button>
                     </div>
                     <div class="col-4">
                         <button id="regist-submit-regist" type="submit" class="btn btn-primary ifest-btn-primary-dark-bg mt-3 mt-sm-0 fw-bold" style="height:44px; width:128px">{{ __('Submit') }}</button>

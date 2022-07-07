@@ -82,7 +82,7 @@
                             </div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link left-nav" href="">Ipod</a>
+                            <a class="nav-link left-nav" href="{{ route('ipod') }}">Ipod</a>
                         </li>
                     </ul>
                 </nav>

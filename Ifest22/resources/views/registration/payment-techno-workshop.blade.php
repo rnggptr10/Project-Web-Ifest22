@@ -45,13 +45,13 @@
                                                 <p class="regist-form-text-payment">BRI : 1212434343 a.n. Protprot</p>
                                                 <p class="regist-form-text-payment">BNI : 1392832983 a.n. Protprot</p>
                                             </div>
-                                            <div class="row">
+                                            <div class="row" style="padding-top:20px">
                                                 <div class="container-upload dflex">
-                                                    <label for="payment-confirmation" class="payment-upload d-flex justify-content-center align-items-center">
+                                                    <label for="payment-confirmation" class="payment-upload d-flex justify-content-center align-items-center button-upload text-button-upload">
                                                         <span class="iconify me-2" data-icon="feather:upload" data-inline="false" style="color: #001d3d;"></span>
                                                         Upload Payment Proof
                                                     </label>
-                                                    <input type="file" id="payment-confirmation" name="payment_confirmation" accept=".jpg, .png, .jpeg" style="color:transparent">
+                                                    <input type="file" id="payment-confirmation" name="payment_confirmation" accept=".jpg, .png, .jpeg" style="color:transparent" required hidden>
                                                 </div>
                                                 @error('payment_confirmation')
                                                 <div class="alert alert-danger mt-1 d-flex align-items-center" role="alert" style="width: 100%; margin: 0 auto">
