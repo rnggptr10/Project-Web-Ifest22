@@ -19,11 +19,13 @@ class CreateCtfFormsTable extends Migration
             $table->string('team_name');
             $table->string('team_leader');
             $table->string('team_leader_institute');
+            $table->string('team_leader_id_card');
             $table->string('team_member_1')->nullable();
             $table->string('team_member_1_institute')->nullable();
+            $table->string('team_member_1_id_card')->nullable();
             $table->string('team_member_2')->nullable();
             $table->string('team_member_2_institute')->nullable();
-            // $table->string('id_card')->nullable();
+            $table->string('team_member_2_id_card')->nullable();
             $table->string('proof_payment');
             $table->timestamps();
         });

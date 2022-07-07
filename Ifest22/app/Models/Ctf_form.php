@@ -14,11 +14,13 @@ class Ctf_form extends Model
         'team_name',
         'team_leader',
         'team_leader_institute',
+        'team_leader_id_card',
         'team_member_1',
         'team_member_1_institute',
+        'team_member_1_id_card',
         'team_member_2',
         'team_member_2_institute',
-        'id_card',
+        'team_member_2_id_card',
         'proof_payment',
     ];
 }

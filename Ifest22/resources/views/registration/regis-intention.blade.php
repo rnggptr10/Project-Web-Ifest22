@@ -69,17 +69,17 @@
                     </div>
                     <div class="col-2">
                         <div class="row mb-2">
-                                <div class="button-upload-wrap">
-                                    <label class="button-upload text-button-upload" for="team_leader_id">+ ID Card</label>
-                                    <input type="file" id="team_leader_id" accept=".png" style="color:transparent" hidden>
-                                    @error('id_card')
-                                    <div class="alert alert-danger mt-1 d-flex align-items-center" role="alert" style="width: 100%;
+                            <div class="button-upload-wrap">
+                                <label class="button-upload text-button-upload" for="team_leader_id">+ ID Card</label>
+                                <input type="file" id="team_leader_id" accept=".png" style="color:transparent" hidden>
+                                @error('id_card')
+                                <div class="alert alert-danger mt-1 d-flex align-items-center" role="alert" style="width: 100%;
                                     max-width: 333px; margin: 0 auto">
-                                        <span class="iconify me-1" data-icon="akar-icons:circle-alert" data-inline="false" style="color: #842029;"></span>
-                                        {{ $message }}
-                                    </div>
-                                    @enderror
+                                    <span class="iconify me-1" data-icon="akar-icons:circle-alert" data-inline="false" style="color: #842029;"></span>
+                                    {{ $message }}
                                 </div>
+                                @enderror
+                            </div>
                         </div>
                         <!-- <div class="row mb-2">
                             <div class="col">
