@@ -42,11 +42,13 @@ class CtfController extends Controller
         $request->validate([
             'team_name' => 'required',
             'team_leader' => 'required',
-            // 'id_card' => 'required|file|mimes:zip|max:2000',
-            // 'payment_confirmation' => 'required|image|max:1024',
+            'team_leader_institute' => 'required',
+            'team_leader_id_card' => 'required',
+            'payment_confirmation' => 'required',
         ]);
 
         // Alamat penyimpanan payment proof
+        $request->team_leader_id_card->store('id-card-ctf');
         $request->payment_confirmation->store('ctf-payment-proof');
 
         // $id_card = $request->file('id_card');
@@ -62,6 +64,7 @@ class CtfController extends Controller
             'team_name' => $request->team_name,
             'team_leader' => $request->team_leader,
             'team_leader_institute' => $request->team_leader_institute,
+            'team_leader_id_card' => $request->team_leader_id_card->store('id-card-ctf'),
             'team_member_1' => $request->team_member_1,
             'team_member_1_institute' => $request->team_member_1_institute,
             'team_member_2' => $request->team_member_2,

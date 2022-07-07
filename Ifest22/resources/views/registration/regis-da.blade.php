@@ -312,11 +312,11 @@
     @enderror -->
 
         <div class="row mb-2 text-left">
-            <div class="          <p class="regist-form-notes-text">
-                    Notes :<br>
-                    • ID Card hanya dapat berbentuk KTP, KTM, SIM, dan Paspor.<br>
-                    • Scan/Foto ID Card harus jelas.<br>
-                    • Apabila tidak memenuhi 2 poin diatas, maka pendaftaran ditolak.
+            <div class="          <p class=" regist-form-notes-text">
+                Notes :<br>
+                • ID Card hanya dapat berbentuk KTP, KTM, SIM, dan Paspor.<br>
+                • Scan/Foto ID Card harus jelas.<br>
+                • Apabila tidak memenuhi 2 poin diatas, maka pendaftaran ditolak.
                 </p>
             </div>
         </div>
@@ -324,10 +324,10 @@
         <div class="row justify-content-center align-items-center" align="center" id="registCompButton" style="padding:30px 0 30px 0; text-align:center;">
             <div class="col"">
                 <!-- VERTICAL ALIGN NYA BELOM JALAN -->
-                <button class="btn btn-outline-primary ifest-btn-outline-primary-dark-bg mt-3 mt-sm-0 fw-bold text-center" style="height:44px; width:128px;"><a class="ifest-btn-primary-dark-bg-text" href="{{ route('da') }}">{{ __('< Back') }}</a></button>
+                <button class=" btn btn-outline-primary ifest-btn-outline-primary-dark-bg mt-3 mt-sm-0 fw-bold text-center" style="height:44px; width:128px;"><a class="ifest-btn-primary-dark-bg-text" href="{{ route('da') }}">{{ __('< Back') }}</a></button>
             </div>
             <div class="col"">
-                <button id="regist-next-section" type="button" class="btn btn-primary ifest-btn-primary-dark-bg mt-3 mt-sm-0 fw-bold" onclick="registNextSection()" style="height:44px; width:128px">{{ __('Next') }}</button>
+                <button id=" regist-next-section" type="button" class="btn btn-primary ifest-btn-primary-dark-bg mt-3 mt-sm-0 fw-bold" onclick="registNextSection()" style="height:44px; width:128px">{{ __('Next') }}</button>
             </div>
         </div>
     </div>

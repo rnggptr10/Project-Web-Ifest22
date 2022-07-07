@@ -70,9 +70,9 @@
                     <div class="col-2">
                         <div class="row mb-2">
                             <div class="button-upload-wrap">
-                                <label class="button-upload text-button-upload" for="team_leader_id">+ ID Card</label>
-                                <input type="file" id="team_leader_id" accept=".png" style="color:transparent" hidden>
-                                @error('id_card')
+                                <label class="button-upload text-button-upload" for="team_leader_id_card">+ ID Card</label>
+                                <input type="file" id="team_leader_id_card" accept=".png" style="color:transparent" hidden required>
+                                @error('team_leader_id_card')
                                 <div class="alert alert-danger mt-1 d-flex align-items-center" role="alert" style="width: 100%;
                                     max-width: 333px; margin: 0 auto">
                                     <span class="iconify me-1" data-icon="akar-icons:circle-alert" data-inline="false" style="color: #842029;"></span>
@@ -134,9 +134,9 @@
                     <div class="col-2">
                         <div class="row mb-2">
                             <div class="col">
-                                <label class="button-upload text-button-upload" for="team_member_1_id">+ ID Card</label>
-                                <input type="file" id="team_member_1_id" accept=".png" style="color:transparent" hidden>
-                                @error('id_card')
+                                <label class="button-upload text-button-upload" for="team_member_1_id_card">+ ID Card</label>
+                                <input type="file" id="team_member_1_id_card" accept=".png" style="color:transparent" hidden required>
+                                @error('team_member_1_id_card')
                                 <div class="alert alert-danger mt-1 d-flex align-items-center" role="alert" style="width: 100%;
                                 max-width: 333px; margin: 0 auto">
                                     <span class="iconify me-1" data-icon="akar-icons:circle-alert" data-inline="false" style="color: #842029;"></span>
@@ -199,9 +199,9 @@
                     <div class="col-2">
                         <div class="row mb-2">
                             <div class="col">
-                                <label class="button-upload text-button-upload" for="team_member_2_id">+ ID Card</label>
-                                <input type="file" id="team_member_2_id" accept=".png" style="color:transparent" hidden>
-                                @error('id_card')
+                                <label class="button-upload text-button-upload" for="team_member_2_id_card">+ ID Card</label>
+                                <input type="file" id="team_member_2_id_card" accept=".png" style="color:transparent" hidden required>
+                                @error('team_member_2_id_card')
                                 <div class="alert alert-danger mt-1 d-flex align-items-center" role="alert" style="width: 100%;
                                 max-width: 333px; margin: 0 auto">
                                     <span class="iconify me-1" data-icon="akar-icons:circle-alert" data-inline="false" style="color: #842029;"></span>
@@ -265,9 +265,9 @@
                     <div class="col-2">
                         <div class="row mb-2">
                             <div class="col">
-                                <label class="button-upload text-button-upload" for="team_member_3_id">+ ID Card</label>
-                                <input type="file" id="team_member_3_id" accept=".png" style="color:transparent" hidden>
-                                @error('id_card')
+                                <label class="button-upload text-button-upload" for="team_member_3_id_card">+ ID Card</label>
+                                <input type="file" id="team_member_3_id_card" accept=".png" style="color:transparent" hidden required>
+                                @error('team_member_3_id_card')
                                 <div class="alert alert-danger mt-1 d-flex align-items-center" role="alert" style="width: 100%;
                                 max-width: 333px; margin: 0 auto">
                                     <span class="iconify me-1" data-icon="akar-icons:circle-alert" data-inline="false" style="color: #842029;"></span>
@@ -330,9 +330,9 @@
                     <div class="col-2">
                         <div class="row mb-2">
                             <div class="col">
-                                <label class="button-upload text-button-upload" for="team_member_4_id">+ ID Card</label>
-                                <input type="file" id="team_member_4_id" accept=".png" style="color:transparent" hidden>
-                                @error('id_card')
+                                <label class="button-upload text-button-upload" for="team_member_4_id_card">+ ID Card</label>
+                                <input type="file" id="team_member_4_id_card" accept=".png" style="color:transparent" hidden required>
+                                @error('team_member_4_id_card')
                                 <div class="alert alert-danger mt-1 d-flex align-items-center" role="alert" style="width: 100%;
                                 max-width: 333px; margin: 0 auto">
                                     <span class="iconify me-1" data-icon="akar-icons:circle-alert" data-inline="false" style="color: #842029;"></span>
@@ -361,11 +361,11 @@
 
         <div class="row mb-2">
             <div class="col-10" style="padding:0">
-                <button id="btn-addRegisInt" type="button" class="input-element-regis mt-3" onclick="AddMember('addmember1', 'btn-addRegisInt', 'btn-removeRegisInt')">+</button>
+                <button id="btn-addRegisInt" type="button" class="input-element-regis mt-3" onclick="AddMemberIntention('addmember1', 'btn-addRegisInt', 'btn-removeRegisInt')">+</button>
             </div>
             <!-- Button Remove Member -->
             <div class="col-10" style="padding:0">
-                <button id="btn-removeRegisInt" type="button" class="input-element-regis mt-3" onclick="RemoveMember('addmember1', 'btn-addRegisInt', 'btn-removeRegisInt')" style="display:none">-</button>
+                <button id="btn-removeRegisInt" type="button" class="input-element-regis mt-3" onclick="RemoveMemberIntention('addmember1', 'btn-addRegisInt', 'btn-removeRegisInt')" style="display:none">-</button>
             </div>
         </div>
 
@@ -403,16 +403,16 @@
         <div class="row justify-content-center align-items-center" align="center" id="registCompButton" style="padding:30px 0 30px 0; text-align:center;">
             <div class="col"">
                 <!-- VERTICAL ALIGN NYA BELOM JALAN -->
-                <button class="btn btn-outline-primary ifest-btn-outline-primary-dark-bg mt-3 mt-sm-0 fw-bold text-center" style="height:44px; width:128px;"><a class="ifest-btn-primary-dark-bg-text" href="{{ route('intention') }}">{{ __('< Back') }}</a></button>
+                <button class=" btn btn-outline-primary ifest-btn-outline-primary-dark-bg mt-3 mt-sm-0 fw-bold text-center" style="height:44px; width:128px;"><a class="ifest-btn-primary-dark-bg-text" href="{{ route('intention') }}">{{ __('< Back') }}</a></button>
             </div>
             <div class="col"">
-                <button id="regist-next-section" type="button" class="btn btn-primary ifest-btn-primary-dark-bg mt-3 mt-sm-0 fw-bold" onclick="registNextSection()" style="height:44px; width:128px">{{ __('Next') }}</button>
+                <button id=" regist-next-section" type="button" class="btn btn-primary ifest-btn-primary-dark-bg mt-3 mt-sm-0 fw-bold" onclick="registNextSection()" style="height:44px; width:128px">{{ __('Next') }}</button>
             </div>
         </div>
     </div>
 
     <!-- PAGE 2 -->
-    <div id="regist-section-2" hidden>
+    <div id="regist-section-2" hidden required>
         <div class="row">
             <h6 class="regist-text-subhead">Registration Payment</h6>
         </div>

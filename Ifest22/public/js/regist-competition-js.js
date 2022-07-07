@@ -32,39 +32,50 @@ const backToSection1 = () => {
     }, 50);
 };
 
-if (document.getElementById("id_card") !== null) {
-    const idCardFileBtn = document.getElementById("id_card");
-    const fileChoosenIdCard = document.getElementById("idcard-chosen");
-    idCardFileBtn.addEventListener("change", function () {
-        fileChoosenIdCard.textContent = this.files[0].name;
-    });
-}
-
-if (document.getElementById("payment-confirmation") !== null) {
-    const paymentFileBtn = document.getElementById("payment-confirmation");
-    const fileChoosenPayment = document.getElementById("payment-chosen");
-    paymentFileBtn.addEventListener("change", function () {
-        fileChoosenPayment.textContent = this.files[0].name;
-    });
-}
-
 // ADD MEMBER
 var noBox = 1;
 
-function AddMember(addMember, addMemberBtn, removeMemberBtn) {
+function AddMemberCTF(addMember, addMemberBtn, removeMemberBtn) {
     console.log(noBox);
     if (noBox == 1) {
         noBox++;
         document.getElementById(addMember).style.display = "block";
         document.getElementById(addMemberBtn).style.display = "block";
         document.getElementById(removeMemberBtn).style.display = "block";
+        document.getElementById("team_member_1").setAttribute("required","");
+        document.getElementById("team_member_1_institute").setAttribute("required","");
+        document.getElementById("team_member_1_id").setAttribute("required","");
     } else if (noBox == 2) {
         document.getElementById('addmember2').style.display = "block";
         document.getElementById(addMemberBtn).style.display = "none";
         document.getElementById(removeMemberBtn).style.display = "block";
+        document.getElementById("team_member_2").setAttribute("required","");
+        document.getElementById("team_member_2_institute").setAttribute("required","");
+        document.getElementById("team_member_2_id").setAttribute("required","");
     }
 }
 
+function AddMemberIntention(addMember, addMemberBtn, removeMemberBtn) {
+    console.log(noBox);
+    if (noBox == 1) {
+        noBox++;
+        document.getElementById(addMember).style.display = "block";
+        document.getElementById(addMemberBtn).style.display = "block";
+        document.getElementById(removeMemberBtn).style.display = "block";
+        document.getElementById("team_member_3").setAttribute("required","");
+        document.getElementById("team_member_3_institute").setAttribute("required","");
+        document.getElementById("team_member_3_id").setAttribute("required","");
+    } else if (noBox == 2) {
+        document.getElementById('addmember2').style.display = "block";
+        document.getElementById(addMemberBtn).style.display = "none";
+        document.getElementById(removeMemberBtn).style.display = "block";
+        document.getElementById("team_member_4").setAttribute("required","");
+        document.getElementById("team_member_4_institute").setAttribute("required","");
+        document.getElementById("team_member_4_id").setAttribute("required","");
+    }
+}
+
+//  Buat DAC & Techno
 function AddMemberDAC(addMember, addMemberBtn, removeMemberBtn) {
     console.log(noBox);
     if (noBox == 1) {
@@ -72,21 +83,51 @@ function AddMemberDAC(addMember, addMemberBtn, removeMemberBtn) {
         document.getElementById(addMember).style.display = "block";
         document.getElementById(addMemberBtn).style.display = "none";
         document.getElementById(removeMemberBtn).style.display = "block";
+        document.getElementById("team_member_1").setAttribute("required","");
+        document.getElementById("team_member_1_institute").setAttribute("required","");
+        document.getElementById("team_member_1_id").setAttribute("required","");
     }
 }
 
-function RemoveMember(addMember, addMemberBtn, removeMemberBtn) {
+function RemoveMemberCTF(addMember, addMemberBtn, removeMemberBtn) {
     console.log(noBox);
     if (noBox == 2) {
         noBox--;
         document.getElementById('addmember2').style.display = "none";
         document.getElementById(addMemberBtn).style.display = "block";
         document.getElementById(removeMemberBtn).style.display = "block";
+        document.getElementById("team_member_2").removeAttribute("required");
+        document.getElementById("team_member_2_institute").removeAttribute("required");
+        document.getElementById("team_member_2_id").removeAttribute("required");
     }
     else if (noBox == 1) {
         document.getElementById(addMember).style.display = "none";
         document.getElementById(addMemberBtn).style.display = "block";
         document.getElementById(removeMemberBtn).style.display = "none";
+        document.getElementById("team_member_1").removeAttribute("required");
+        document.getElementById("team_member_1_institute").removeAttribute("required");
+        document.getElementById("team_member_1_id").removeAttribute("required");
+    }
+}
+
+function RemoveMemberIntention(addMember, addMemberBtn, removeMemberBtn) {
+    console.log(noBox);
+    if (noBox == 2) {
+        noBox--;
+        document.getElementById('addmember2').style.display = "none";
+        document.getElementById(addMemberBtn).style.display = "block";
+        document.getElementById(removeMemberBtn).style.display = "block";
+        document.getElementById("team_member_4").removeAttribute("required");
+        document.getElementById("team_member_4_institute").removeAttribute("required");
+        document.getElementById("team_member_4_id").removeAttribute("required");
+    }
+    else if (noBox == 1) {
+        document.getElementById(addMember).style.display = "none";
+        document.getElementById(addMemberBtn).style.display = "block";
+        document.getElementById(removeMemberBtn).style.display = "none";
+        document.getElementById("team_member_3").removeAttribute("required");
+        document.getElementById("team_member_3_institute").removeAttribute("required");
+        document.getElementById("team_member_3_id").removeAttribute("required");
     }
 }
 

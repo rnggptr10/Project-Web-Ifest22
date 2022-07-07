@@ -72,9 +72,9 @@
                     <div class="col-2">
                         <div class="row mb-2">
                             <div class="col">
-                                <label class="button-upload text-button-upload" for="team_leader_id">+ ID Card</label>
-                                <input type="file" id="team_leader_id" accept=".png" style="color:transparent" hidden>
-                                @error('id_card')
+                                <label class="button-upload text-button-upload" for="team_leader_id_card">+ ID Card</label>
+                                <input type="file" id="team_leader_id_card" name="team_leader_id_card" accept=".png" style="color:transparent" hidden required>
+                                @error('team_leader_id_card')
                                 <div class="alert alert-danger mt-1 d-flex align-items-center" role="alert" style="width: 100%;
                             max-width: 333px; margin: 0 auto">
                                     <span class="iconify me-1" data-icon="akar-icons:circle-alert" data-inline="false" style="color: #842029;"></span>
@@ -191,7 +191,7 @@
                         <div class="row mb-2">
                             <div class="col">
                                 <label class="button-upload text-button-upload" for="team_member_2_id">+ ID Card</label>
-                                <input type="file" id="team_member_2_id" accept=".png" style="color:transparent" hidden>
+                                <input type="file" id="team_member_2_id" accept=".png" style="color:transparent" hidden required>
                                 @error('id_card')
                                 <div class="alert alert-danger mt-1 d-flex align-items-center" role="alert" style="width: 100%;
                             max-width: 333px; margin: 0 auto">
@@ -222,12 +222,12 @@
         <!-- ADD MEMBER -->
         <div class="row mb-2">
             <div class="col-10" style="padding:0">
-                <button id="btn-addRegisCTF" type="button" class="input-element-regis mt-3" onclick="AddMember('addmember1', 'btn-addRegisCTF', 'btn-removeRegisCTF')">+</button>
+                <button id="btn-addRegisCTF" type="button" class="input-element-regis mt-3" onclick="AddMemberCTF('addmember1', 'btn-addRegisCTF', 'btn-removeRegisCTF')">+</button>
             </div>
 
             <!-- Button Remove Member -->
             <div class="col-10" style="padding:0">
-                <button id="btn-removeRegisCTF" type="button" class="input-element-regis mt-3" onclick="RemoveMember('addmember1', 'btn-addRegisCTF', 'btn-removeRegisCTF')" style="display:none">-</button>
+                <button id="btn-removeRegisCTF" type="button" class="input-element-regis mt-3" onclick="RemoveMemberCTF('addmember1', 'btn-addRegisCTF', 'btn-removeRegisCTF')" style="display:none">-</button>
             </div>
         </div>
 
@@ -290,11 +290,11 @@
                 <div class="row" style="padding:5px 0 5px 0">
                     <p class="regist-form-text-payment-head">Payment Methods :</p>
                     <p class="regist-form-text-payment">BRI : 1212434343 a.n. Protprot<br>
-                                                        BNI : 1392832983 a.n. Protprot</p>
+                        BNI : 1392832983 a.n. Protprot</p>
                 </div>
                 <div class="row" style="padding-top:20px">
                     <div class="container-upload dflex">
-                        <label for="payment-confirmation" class="payment-upload d-flex justify-content-center align-items-center button-upload text-button-upload">
+                        <label for="payment_confirmation" class="payment-upload d-flex justify-content-center align-items-center button-upload text-button-upload">
                             <span class="iconify me-2" data-icon="feather:upload" data-inline="false" style="color: #001d3d;"></span>
                             Upload Payment Proof
                         </label>
