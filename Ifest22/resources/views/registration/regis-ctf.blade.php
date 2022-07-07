@@ -263,7 +263,7 @@
             </div>
         </div>
 
-        <div class="row justify-content-center align-items-center" align="center" id="registCompButton" style="padding:30px 0 30px 0">
+        <div class="row justify-content-center align-items-center" align="center" id="registCompButton" style="padding:30px 0 30px 0; text-align:center;">
             <div class="col">
                 <!-- VERTICAL ALIGN NYA BELOM JALAN -->
                 <button class="btn btn-outline-primary ifest-btn-outline-primary-dark-bg mt-3 mt-sm-0 fw-bold text-center" style="height:44px; width:128px;"><a class="ifest-btn-primary-dark-bg-text" href="{{ route('ctf') }}">{{ __('< Back') }}</a></button>
@@ -289,8 +289,8 @@
                 </div>
                 <div class="row" style="padding:5px 0 5px 0">
                     <p class="regist-form-text-payment-head">Payment Methods :</p>
-                    <p class="regist-form-text-payment">BRI : 1212434343 a.n. Protprot</p>
-                    <p class="regist-form-text-payment">BNI : 1392832983 a.n. Protprot</p>
+                    <p class="regist-form-text-payment">BRI : 1212434343 a.n. Protprot<br>
+                                                        BNI : 1392832983 a.n. Protprot</p>
                 </div>
                 <div class="row" style="padding-top:20px">
                     <div class="container-upload dflex">
@@ -307,12 +307,12 @@
                     </div>
                     @enderror
                 </div>
-                <div class="row justify-content-center align-items-center" align="center" id="registCompButton2" style="padding:30px 0 30px 0">
-                    <div class="col-4">
+                <div class="row justify-content-center align-items-center" align="center" id="registCompButton2" style="padding:30px 0 30px 0; text-align:center;">
+                    <div class="col">
                         <!-- VERTICAL ALIGN NYA BELOM JALAN -->
                         <button class="btn btn-outline-primary ifest-btn-outline-primary-dark-bg mt-3 mt-sm-0 fw-bold text-center" style="height:44px; width:128px;"><a class="ifest-btn-primary-dark-bg-text" onclick="backToSection1()">{{ __('< Back') }}</a></button>
                     </div>
-                    <div class="col-4">
+                    <div class="col">
                         <button id="regist-submit-regist" type="submit" class="btn btn-primary ifest-btn-primary-dark-bg mt-3 mt-sm-0 fw-bold" style="height:44px; width:128px">{{ __('Submit') }}</button>
                     </div>
                 </div>
