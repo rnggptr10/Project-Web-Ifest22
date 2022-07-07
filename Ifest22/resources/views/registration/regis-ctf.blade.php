@@ -125,8 +125,8 @@
                     <div class="col-2">
                         <div class="row mb-2">
                             <div class="col">
-                                <label class="button-upload text-button-upload" for="team_member_1_id">+ ID Card</label>
-                                <input type="file" id="team_member_1_id" accept=".png" style="color:transparent" hidden>
+                                <label class="button-upload text-button-upload" for="team_member_1_id_card">+ ID Card</label>
+                                <input type="file" id="team_member_1_id_card"  name="team_member_1_id_card" accept=".png" style="color:transparent" hidden>
                                 @error('id_card')
                                 <div class="alert alert-danger mt-1 d-flex align-items-center" role="alert" style="width: 100%;
                             max-width: 333px; margin: 0 auto">
@@ -190,8 +190,8 @@
                     <div class="col-2">
                         <div class="row mb-2">
                             <div class="col">
-                                <label class="button-upload text-button-upload" for="team_member_2_id">+ ID Card</label>
-                                <input type="file" id="team_member_2_id" accept=".png" style="color:transparent" hidden required>
+                                <label class="button-upload text-button-upload" for="team_member_2_id_card">+ ID Card</label>
+                                <input type="file" id="team_member_2_id_card" name="team_member_2_id_card" accept=".png" style="color:transparent" hidden>
                                 @error('id_card')
                                 <div class="alert alert-danger mt-1 d-flex align-items-center" role="alert" style="width: 100%;
                             max-width: 333px; margin: 0 auto">

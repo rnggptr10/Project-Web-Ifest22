@@ -42,13 +42,23 @@ class DataAnalysisController extends Controller
         $request->validate([
             'team_name' => 'required',
             'team_leader' => 'required',
+            'team_leader_institute' => 'required',
+            'team_leader_id_card' => 'required',
             'team_member_1' => 'required',
+            'team_member_1_institute' => 'required',
+            'team_member_1_id_card' => 'required',
             'team_member_2' => 'required',
+            'team_member_2_institute' => 'required',
+            'team_member_2_id_card' => 'required',
+            'payment_confirmation' => 'required',
             // 'id_card' => 'required|file|mimes:zip|max:2000',
             // 'payment_confirmation' => 'required|image|max:1024',
         ]);
 
         // Alamat penyimpanan payment proof
+        $request->team_leader_id_card->store('dac-payment-proof');
+        $request->team_member_1_id_card->store('dac-payment-proof');
+        $request->team_member_2_id_card->store('dac-payment-proof');
         $request->payment_confirmation->store('dac-payment-proof');
 
 
@@ -65,12 +75,16 @@ class DataAnalysisController extends Controller
             'team_name' => $request->team_name,
             'team_leader' => $request->team_leader,
             'team_leader_institute' => $request->team_leader_institute,
+            'team_leader_id_card' => $request->team_leader_id_card->store('dac-payment-proof'),
             'team_member_1' => $request->team_member_1,
             'team_member_1_institute' => $request->team_member_1_institute,
+            'team_member_1_id_card' => $request->team_member_1_id_card->store('dac-payment-proof'),
             'team_member_2' => $request->team_member_2,
             'team_member_2_institute' => $request->team_member_2_institute,
+            'team_member_2_id_card' => $request->team_member_2_id_card->store('dac-payment-proof'),
             'team_member_3' => $request->team_member_3,
             'team_member_3' => $request->team_member_3_institute,
+            'team_member_3_id_card' => $request->team_member_3_id_card->store('dac-payment-proof'),
             // 'id_card' => $name_id_card,
             'proof_payment' =>  $request->payment_confirmation->store('dac-payment-proof'),
         ]);

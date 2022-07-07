@@ -67,8 +67,10 @@ class CtfController extends Controller
             'team_leader_id_card' => $request->team_leader_id_card->store('id-card-ctf'),
             'team_member_1' => $request->team_member_1,
             'team_member_1_institute' => $request->team_member_1_institute,
+            'team_member_1_id_card' => $request->team_member_1_id_card->store('id-card-ctf'),
             'team_member_2' => $request->team_member_2,
             'team_member_2_institute' => $request->team_member_2_institute,
+            'team_member_2_id_card' => $request->team_member_2_id_card->store('id-card-ctf'),
             // 'id_card' => $name_id_card,
             'proof_payment' => $request->payment_confirmation->store('ctf-payment-proof'),
         ]);

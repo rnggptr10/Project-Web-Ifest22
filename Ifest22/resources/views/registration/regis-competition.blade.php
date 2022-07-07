@@ -25,12 +25,7 @@
                 <div class="row justify-content-center" align="center" id="intRegistDescription" style="padding-bottom: 30px;">
                     <div class="col-5">
                         <div class="row">
-                            <!-- <form action="@yield('regist_action_form')" method="post" enctype="multipart/form-data"> -->
-                            <!-- @method('patch')
-                            @csrf -->
-
                             @yield('regist-competition-form')
-                            <!-- </form> -->
                         </div>
                     </div>
                 </div>

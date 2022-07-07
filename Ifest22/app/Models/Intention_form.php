@@ -30,6 +30,6 @@ class Intention_form extends Model
         'proof_payment',
         'proposal_link',
         'app_link',
-        'finalist'
+        'finalist',
     ];
 }

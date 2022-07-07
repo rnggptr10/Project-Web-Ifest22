@@ -71,7 +71,7 @@
                         <div class="row mb-2">
                             <div class="button-upload-wrap">
                                 <label class="button-upload text-button-upload" for="team_leader_id_card">+ ID Card</label>
-                                <input type="file" id="team_leader_id_card" accept=".png" style="color:transparent" hidden required>
+                                <input type="file" id="team_leader_id_card" name="team_leader_id_card" accept=".png" style="color:transparent" hidden required>
                                 @error('team_leader_id_card')
                                 <div class="alert alert-danger mt-1 d-flex align-items-center" role="alert" style="width: 100%;
                                     max-width: 333px; margin: 0 auto">
@@ -135,7 +135,7 @@
                         <div class="row mb-2">
                             <div class="col">
                                 <label class="button-upload text-button-upload" for="team_member_1_id_card">+ ID Card</label>
-                                <input type="file" id="team_member_1_id_card" accept=".png" style="color:transparent" hidden required>
+                                <input type="file" id="team_member_1_id_card" name="team_member_1_id_card" accept=".png" style="color:transparent" hidden required>
                                 @error('team_member_1_id_card')
                                 <div class="alert alert-danger mt-1 d-flex align-items-center" role="alert" style="width: 100%;
                                 max-width: 333px; margin: 0 auto">
@@ -200,7 +200,7 @@
                         <div class="row mb-2">
                             <div class="col">
                                 <label class="button-upload text-button-upload" for="team_member_2_id_card">+ ID Card</label>
-                                <input type="file" id="team_member_2_id_card" accept=".png" style="color:transparent" hidden required>
+                                <input type="file" id="team_member_2_id_card" name="team_member_2_id_card" accept=".png" style="color:transparent" hidden required>
                                 @error('team_member_2_id_card')
                                 <div class="alert alert-danger mt-1 d-flex align-items-center" role="alert" style="width: 100%;
                                 max-width: 333px; margin: 0 auto">
@@ -266,7 +266,7 @@
                         <div class="row mb-2">
                             <div class="col">
                                 <label class="button-upload text-button-upload" for="team_member_3_id_card">+ ID Card</label>
-                                <input type="file" id="team_member_3_id_card" accept=".png" style="color:transparent" hidden required>
+                                <input type="file" id="team_member_3_id_card" name="team_member_3_id_card" accept=".png" style="color:transparent" hidden>
                                 @error('team_member_3_id_card')
                                 <div class="alert alert-danger mt-1 d-flex align-items-center" role="alert" style="width: 100%;
                                 max-width: 333px; margin: 0 auto">
@@ -331,7 +331,7 @@
                         <div class="row mb-2">
                             <div class="col">
                                 <label class="button-upload text-button-upload" for="team_member_4_id_card">+ ID Card</label>
-                                <input type="file" id="team_member_4_id_card" accept=".png" style="color:transparent" hidden required>
+                                <input type="file" id="team_member_4_id_card" name="team_member_4_id_card" accept=".png" style="color:transparent" hidden>
                                 @error('team_member_4_id_card')
                                 <div class="alert alert-danger mt-1 d-flex align-items-center" role="alert" style="width: 100%;
                                 max-width: 333px; margin: 0 auto">
@@ -412,7 +412,7 @@
     </div>
 
     <!-- PAGE 2 -->
-    <div id="regist-section-2" hidden required>
+    <div id="regist-section-2" hidden>
         <div class="row">
             <h6 class="regist-text-subhead">Registration Payment</h6>
         </div>
@@ -429,11 +429,11 @@
                 </div>
                 <div class="row" style="padding-top:20px">
                     <div class="container-upload dflex">
-                        <label for="payment-confirmation" class="payment-upload d-flex justify-content-center align-items-center button-upload text-button-upload">
+                        <label for="payment_confirmation" class="payment-upload d-flex justify-content-center align-items-center button-upload text-button-upload">
                             <span class="iconify me-2" data-icon="feather:upload" data-inline="false" style="color: #001d3d;"></span>
                             Upload Payment Proof
                         </label>
-                        <input type="file" id="payment-confirmation" name="payment_confirmation" accept=".jpg, .png, .jpeg" style="color:transparent" required hidden>
+                        <input type="file" id="payment_confirmation" name="payment_confirmation" accept=".jpg, .png, .jpeg" style="color:transparent" required hidden>
                     </div>
                     @error('payment_confirmation')
                     <div class="alert alert-danger mt-1 d-flex align-items-center" role="alert" style="width: 100%; margin: 0 auto">

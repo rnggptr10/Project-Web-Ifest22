@@ -51,15 +51,13 @@ class IntentionController extends Controller
             'team_member_2' => 'required',
             'team_member_2_institute' => 'required',
             'team_member_2_id_card' => 'required',
-            'proof_payment' => 'required',
+            'payment_confirmation' => 'required',
         ]);
 
         // Alamat Penyimpanan
         $request->team_leader_id_card->store('intention-payment-proof');
         $request->team_member_1_id_card->store('intention-payment-proof');
         $request->team_member_2_id_card->store('intention-payment-proof');
-        $request->team_member_3_id_card->store('intention-payment-proof');
-        $request->team_member_4_id_card->store('intention-payment-proof');
         $request->payment_confirmation->store('intention-payment-proof');
 
         // $id_card = $request->file('id_card');
@@ -75,30 +73,31 @@ class IntentionController extends Controller
             'team_name' => $request->team_name,
             'team_leader' => $request->team_leader,
             'team_leader_institute' => $request->team_leader_institute,
-            'team_leader_id_card' => $request->team_leader_id_card,
+            'team_leader_id_card' => $request->team_leader_id_card->store('intention-payment-proof'),
             'team_member_1' => $request->team_member_1,
             'team_member_1_institute' => $request->team_member_1_institute,
-            'team_member_1_id_card' => $request->team_member_1_id_card,
+            'team_member_1_id_card' => $request->team_member_1_id_card->store('intention-payment-proof'),
             'team_member_2' => $request->team_member_2,
             'team_member_2_institute' => $request->team_member_2_institute,
-            'team_member_2_id_card' => $request->team_member_2_id_card,
+            'team_member_2_id_card' => $request->team_member_2_id_card->store('intention-payment-proof'),
             'team_member_3' => $request->team_member_3,
             'team_member_3_institute' => $request->team_member_3_institute,
-            'team_member_3_id_card' => $request->team_member_3_id_card,
+            'team_member_3_id_card' => $request->team_member_3_id_card->store('intention-payment-proof'),
             'team_member_4' => $request->team_member_4,
             'team_member_4_institute' => $request->team_member_4_institute,
-            'team_member_4_id_card' => $request->team_member_4_id_card,
-            'proposal_link' => null,
-            'app_link' => null,
+            'team_member_4_id_card' => $request->team_member_4_id_card->store('intention-payment-proof'),
             'proof_payment' => $request->payment_confirmation->store('intention-payment-proof'),
-            'finalist' => null
+            'proposal_link' => NULL,
+            'app_link' => NULL,
+            'finalist' => NULL,
         ]);
 
         Ticket::where('email', Auth::user()->email)->update([
-            'intention_status' => 1
+            'intention_status' => '1'
         ]);
 
-        return redirect()->route('profile')->with('status', 'Registration Completed!');
+        // return redirect()->route('profile')->with('status', 'Registration Completed!');
+        return redirect()->route('home');
     }
 
     public function formProposal()

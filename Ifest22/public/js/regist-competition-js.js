@@ -42,16 +42,16 @@ function AddMemberCTF(addMember, addMemberBtn, removeMemberBtn) {
         document.getElementById(addMember).style.display = "block";
         document.getElementById(addMemberBtn).style.display = "block";
         document.getElementById(removeMemberBtn).style.display = "block";
-        document.getElementById("team_member_1").setAttribute("required","");
-        document.getElementById("team_member_1_institute").setAttribute("required","");
-        document.getElementById("team_member_1_id").setAttribute("required","");
+        document.getElementById("team_member_1").setAttribute("required", "");
+        document.getElementById("team_member_1_institute").setAttribute("required", "");
+        document.getElementById("team_member_1_id_card").setAttribute("required", "");
     } else if (noBox == 2) {
         document.getElementById('addmember2').style.display = "block";
         document.getElementById(addMemberBtn).style.display = "none";
         document.getElementById(removeMemberBtn).style.display = "block";
-        document.getElementById("team_member_2").setAttribute("required","");
-        document.getElementById("team_member_2_institute").setAttribute("required","");
-        document.getElementById("team_member_2_id").setAttribute("required","");
+        document.getElementById("team_member_2").setAttribute("required", "");
+        document.getElementById("team_member_2_institute").setAttribute("required", "");
+        document.getElementById("team_member_2_id_card").setAttribute("required", "");
     }
 }
 
@@ -62,16 +62,16 @@ function AddMemberIntention(addMember, addMemberBtn, removeMemberBtn) {
         document.getElementById(addMember).style.display = "block";
         document.getElementById(addMemberBtn).style.display = "block";
         document.getElementById(removeMemberBtn).style.display = "block";
-        document.getElementById("team_member_3").setAttribute("required","");
-        document.getElementById("team_member_3_institute").setAttribute("required","");
-        document.getElementById("team_member_3_id").setAttribute("required","");
+        document.getElementById("team_member_3").setAttribute("required", "");
+        document.getElementById("team_member_3_institute").setAttribute("required", "");
+        document.getElementById("team_member_3_id_card").setAttribute("required", "");
     } else if (noBox == 2) {
         document.getElementById('addmember2').style.display = "block";
         document.getElementById(addMemberBtn).style.display = "none";
         document.getElementById(removeMemberBtn).style.display = "block";
-        document.getElementById("team_member_4").setAttribute("required","");
-        document.getElementById("team_member_4_institute").setAttribute("required","");
-        document.getElementById("team_member_4_id").setAttribute("required","");
+        document.getElementById("team_member_4").setAttribute("required", "");
+        document.getElementById("team_member_4_institute").setAttribute("required", "");
+        document.getElementById("team_member_4_id_card").setAttribute("required", "");
     }
 }
 
@@ -83,9 +83,9 @@ function AddMemberDAC(addMember, addMemberBtn, removeMemberBtn) {
         document.getElementById(addMember).style.display = "block";
         document.getElementById(addMemberBtn).style.display = "none";
         document.getElementById(removeMemberBtn).style.display = "block";
-        document.getElementById("team_member_1").setAttribute("required","");
-        document.getElementById("team_member_1_institute").setAttribute("required","");
-        document.getElementById("team_member_1_id").setAttribute("required","");
+        document.getElementById("team_member_3").setAttribute("required", "");
+        document.getElementById("team_member_3_institute").setAttribute("required", "");
+        document.getElementById("team_member_3_id_card").setAttribute("required", "");
     }
 }
 
@@ -98,7 +98,7 @@ function RemoveMemberCTF(addMember, addMemberBtn, removeMemberBtn) {
         document.getElementById(removeMemberBtn).style.display = "block";
         document.getElementById("team_member_2").removeAttribute("required");
         document.getElementById("team_member_2_institute").removeAttribute("required");
-        document.getElementById("team_member_2_id").removeAttribute("required");
+        document.getElementById("team_member_2_id_card").removeAttribute("required");
     }
     else if (noBox == 1) {
         document.getElementById(addMember).style.display = "none";
@@ -106,7 +106,7 @@ function RemoveMemberCTF(addMember, addMemberBtn, removeMemberBtn) {
         document.getElementById(removeMemberBtn).style.display = "none";
         document.getElementById("team_member_1").removeAttribute("required");
         document.getElementById("team_member_1_institute").removeAttribute("required");
-        document.getElementById("team_member_1_id").removeAttribute("required");
+        document.getElementById("team_member_1_id_card").removeAttribute("required");
     }
 }
 
@@ -119,7 +119,7 @@ function RemoveMemberIntention(addMember, addMemberBtn, removeMemberBtn) {
         document.getElementById(removeMemberBtn).style.display = "block";
         document.getElementById("team_member_4").removeAttribute("required");
         document.getElementById("team_member_4_institute").removeAttribute("required");
-        document.getElementById("team_member_4_id").removeAttribute("required");
+        document.getElementById("team_member_4_id_card").removeAttribute("required");
     }
     else if (noBox == 1) {
         document.getElementById(addMember).style.display = "none";
@@ -127,7 +127,7 @@ function RemoveMemberIntention(addMember, addMemberBtn, removeMemberBtn) {
         document.getElementById(removeMemberBtn).style.display = "none";
         document.getElementById("team_member_3").removeAttribute("required");
         document.getElementById("team_member_3_institute").removeAttribute("required");
-        document.getElementById("team_member_3_id").removeAttribute("required");
+        document.getElementById("team_member_3_id_card").removeAttribute("required");
     }
 }
 
@@ -137,6 +137,9 @@ function RemoveMemberDAC(addMember, addMemberBtn, removeMemberBtn) {
         noBox--;
         document.getElementById(addMemberBtn).style.display = "none";
         document.getElementById(removeMemberBtn).style.display = "block";
+        document.getElementById("team_member_1").removeAttribute("required");
+        document.getElementById("team_member_1_institute").removeAttribute("required");
+        document.getElementById("team_member_1_id_card").removeAttribute("required");
     }
     else if (noBox == 1) {
         document.getElementById(addMember).style.display = "none";
