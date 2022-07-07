@@ -229,12 +229,12 @@
         </div>
     </div>
 
-    <div class="row justify-content-center align-items-center" align="center" id="registCompButton" style="padding:30px 0 30px 0">
-        <div class="col-4">
+    <div class="row justify-content-center align-items-center" align="center" id="registCompButton" style="padding:30px 0 30px 0; text-align:center;">
+        <div class="col">
             <!-- VERTICAL ALIGN NYA BELOM JALAN -->
             <button class="btn btn-outline-primary ifest-btn-outline-primary-dark-bg mt-3 mt-sm-0 fw-bold text-center" style="height:44px; width:128px;"><a class="ifest-btn-primary-dark-bg-text" href="{{ route('techno') }}">{{ __('< Back') }}</a></button>
         </div>
-        <div class="col-4">
+        <div class="col">
             <button id="regist-next-section" type="button" class="btn btn-primary ifest-btn-primary-dark-bg mt-3 mt-sm-0 fw-bold" style="height:44px; width:128px">{{ __('Submit') }}</button>
         </div>
     </div>
