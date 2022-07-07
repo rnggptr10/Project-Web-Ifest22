@@ -2,6 +2,11 @@
 @import url(generalStyle.css);
 
 /* ------------------- General ------------------- */
+html, body{
+    overflow-x: hidden;
+    width: 100%;
+}
+
 .regist-text-title {
     font-family: "Poppins-SemiBold";
     font-size: 40px;

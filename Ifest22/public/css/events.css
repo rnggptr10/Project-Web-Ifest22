@@ -1,6 +1,11 @@
 @import url(font.css);
 @import url(generalStyle.css);
 
+html, body{
+    overflow-x: hidden;
+    width: 100%;
+}
+
 /* ------------------- General ------------------- */
 .text-title {
     font-family: "Poppins-SemiBold";

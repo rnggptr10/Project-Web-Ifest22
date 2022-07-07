@@ -5,6 +5,11 @@
   margin: 0;
 }
 
+html, body{
+  overflow-x: hidden;
+  width: 100%;
+}
+
 /* ------------------- General ------------------- */
 .text-title {
   font-family: "Poppins-SemiBold";
