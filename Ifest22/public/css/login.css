@@ -51,3 +51,34 @@
     line-height: 10px;
     color: #1c1c1c;
 }
+
+.button-upload {
+    display: inline-block;
+    background-color: #ffffff;
+    border: 1px solid #8267B4;
+    border-radius: 5px;
+    color: #ffffff;
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+    width: 100%;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.button-upload-wrap {
+    position: relative;
+    width: max-content;
+}
+
+.button-upload:hover {
+    background-color: #8267b498;
+}
+
+.text-button-upload {
+    font-family: "Lato-Regular";
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 400;
+    text-align: center;
+}

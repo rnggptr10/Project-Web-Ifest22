@@ -22,7 +22,7 @@ class ProfilController extends Controller
         $email = Auth::user()->email;
         $data = User::where('email', $email)->first();
         $techno_ws = Techno_ws_form::where('email', $email)->first();
-        $status = Ticket::where('email', $email)->first();
+        $status = Ticket::where('email', Auth::user()->email)->first();
         $no_ticket_incon = null;
 
         // if (Incon::where('email', $email)->first()) {
@@ -39,7 +39,7 @@ class ProfilController extends Controller
         ];
 
 
-        return view('profils.profil', compact('data'));
+        return view('profils.profil', compact('data', 'status'));
     }
 
     public function edit()
@@ -50,17 +50,29 @@ class ProfilController extends Controller
 
     public function update(Request $request)
     {
+        $data = User::where('email', Auth::user()->email)->first();
+
         $request->validate([
             'name' => 'required',
+            'institute' => 'required',
         ]);
+
+        if ($request->profpic == null) {
+            $new_profpic = $data->image;
+        } else {
+            $new_profpic = $request->profpic->store('profpic-user');
+        }
 
         User::where('email', Auth::user()->email)->update([
             'name' => $request->name,
+            'institute' => $request->institute,
+            'image' => $new_profpic,
         ]);
 
         return redirect()->route('profile');
     }
 
+    // INTENTION
     public function ticketDetailsIntention()
     {
         $data = User::where('email', Auth::user()->email)->first();
@@ -79,6 +91,13 @@ class ProfilController extends Controller
         return view('submitting.submitting-intention-project', compact('data'));
     }
 
+    // DAC
+    public function ticketDetailsDac()
+    {
+        $data = User::where('email', Auth::user()->email)->first();
+        return view('profils.ticketDetailsDac', compact('data'));
+    }
+
     public function submittingPaperDAC()
     {
         $data = User::where('email', Auth::user()->email)->first();
@@ -89,6 +108,20 @@ class ProfilController extends Controller
     {
         $data = User::where('email', Auth::user()->email)->first();
         return view('submitting.submitting-dac-analysis', compact('data'));
+    }
+
+    // CTF
+    public function ticketDetailsCtf()
+    {
+        $data = User::where('email', Auth::user()->email)->first();
+        return view('profils.ticketDetailsCtf', compact('data'));
+    }
+
+    // TECHNO WS
+    public function ticketDetailsTechnoWorkshop()
+    {
+        $data = User::where('email', Auth::user()->email)->first();
+        return view('profils.ticketDetailsTechnoWorkshop', compact('data'));
     }
 
     public function submittingProposalTechno()
@@ -107,23 +140,5 @@ class ProfilController extends Controller
     {
         $data = User::where('email', Auth::user()->email)->first();
         return view('submitting.submitting-techno-pitchdeck-2', compact('data'));
-    }
-
-    public function ticketDetailsDac()
-    {
-        $data = User::where('email', Auth::user()->email)->first();
-        return view('profils.ticketDetailsDac', compact('data'));
-    }
-
-    public function ticketDetailsCtf()
-    {
-        $data = User::where('email', Auth::user()->email)->first();
-        return view('profils.ticketDetailsCtf', compact('data'));
-    }
-
-    public function ticketDetailsTechnoWorkshop()
-    {
-        $data = User::where('email', Auth::user()->email)->first();
-        return view('profils.ticketDetailsTechnoWorkshop', compact('data'));
     }
 }

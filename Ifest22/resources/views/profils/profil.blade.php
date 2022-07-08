@@ -138,6 +138,7 @@
                             </div>
                         </div>
                     </div>
+                    @if ($status->intention_status === '1')
                     <div class="row" align="center" style="padding:5px 0 5px 0">
                         <div class="col">
                             <div class="card" style="background-color:#e6eef7;padding:20px">
@@ -155,6 +156,9 @@
                             </div>
                         </div>
                     </div>
+                    @elseif ($status->intention_status === '0')
+                    @endif
+                    @if ($status->da_status === '1')
                     <div class="row" align="center" style="padding:5px 0 5px 0">
                         <div class="col">
                             <div class="card" style="background-color:#e6eef7;padding:20px">
@@ -172,6 +176,9 @@
                             </div>
                         </div>
                     </div>
+                    @elseif ($status->da_status === '0')
+                    @endif
+                    @if ($status->ctf_status === '1')
                     <div class="row" align="center" style="padding:5px 0 5px 0">
                         <div class="col">
                             <div class="card" style="background-color:#e6eef7;padding:20px">
@@ -189,6 +196,8 @@
                             </div>
                         </div>
                     </div>
+                    @elseif ($status->ctf_status === '0')
+                    @endif
                     <div class="row" align="center" style="padding:5px 0 5px 0">
                         <div class="col">
                             <div class="card" style="background-color:#e6eef7;padding:20px">

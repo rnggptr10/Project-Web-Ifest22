@@ -3,7 +3,7 @@
 
 <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>IFest 2022 - Login</title>
+    <title>IFest 2022 - Edit Profile</title>
     <meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport' />
     <link rel="icon" href="{{ asset('img/favicon.ico') }}" type="image/x-icon" />
 
@@ -22,7 +22,7 @@
         </div>
         <div class="login-aside w-50 d-flex align-items-center justify-content-center bg-white">
             <div class="container container-login container-transparent animated fadeIn">
-                <p class="text-center text-greeting-med">Create Account</p>
+                <p class="text-center text-greeting-med">Edit Profile</p>
                 <form class="user-data mt-4" method="post" action="{{ route('profile.update') }}" enctype="multipart/form-data">
                     @method('patch')
                     @csrf
@@ -42,7 +42,7 @@
                     </div>
                     <div class="row mb-2 data-item">
                         <label for="institute" class="placeholder text-form">{{ __('Institute') }}</label>
-                        <input id="institute" type="text" value="{{ $data->institute }}" class="form-control ifest-form" name="institute" disabled>
+                        <input id="institute" type="text" value="{{ $data->institute }}" class="form-control ifest-form" name="institute">
                         @error('institute')
                         <div class="alert alert-danger mt-1 d-flex align-items-center" role="alert">
                             <span class="iconify me-1" data-icon="akar-icons:circle-alert" data-inline="false" style="color: #842029;"></span>
@@ -50,9 +50,9 @@
                         </div>
                         @enderror
                     </div>
-                    <div class="row mb-2 data-item">
-                        <label for="profpic" class="placeholder text-form">{{ __('Profile Picture') }}</label>
-                        <input id="profpic" type="text" value="{{ $data->profpic }}" class="form-control ifest-form" name="profpic" disabled>
+                    <div class="row mb-2 data-item" style="margin-top:20px">
+                        <label for="profpic" class="d-flex justify-content-center align-items-center placeholder text-form button-upload text-button-upload">{{ __('Change Profile Picture?') }}</label>
+                        <input id="profpic" name="profpic" type="file" value="{{ $data->image }}" class="form-control ifest-form" accept=".jpg, .png, .jpeg" style="color:transparent" hidden>
                         @error('profpic')
                         <div class="alert alert-danger mt-1 d-flex align-items-center" role="alert">
                             <span class="iconify me-1" data-icon="akar-icons:circle-alert" data-inline="false" style="color: #842029;"></span>
@@ -60,7 +60,7 @@
                         </div>
                         @enderror
                     </div>
-                    <div class="row mb-2 data-item" style="margin-top:20px">
+                    <div class="row mb-2 data-item" style="margin-top:10px">
                         <button class="form-control ifest-form" name="profpic" href="">{{ __('Change Password?') }}</button>
                     </div>
                     
