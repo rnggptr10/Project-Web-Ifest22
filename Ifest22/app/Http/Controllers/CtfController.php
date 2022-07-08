@@ -38,7 +38,6 @@ class CtfController extends Controller
 
     public function saveRegister(Request $request)
     {
-        // dd($request);
         $request->validate([
             'team_name' => 'required',
             'team_leader' => 'required',
@@ -51,13 +50,24 @@ class CtfController extends Controller
         $request->team_leader_id_card->store('id-card-ctf');
         $request->payment_confirmation->store('ctf-payment-proof');
 
-        // $id_card = $request->file('id_card');
-        // $name_id_card = time() . "_" . $id_card->getClientOriginalName();
-        // $id_card->storeAs('public/images/id_card/ctf/', $name_id_card);
+        // =================================================
+        // IF ELSE UNTUK 'IDCARD' DEFAULTNYA NONREQUIRED
+        // =================================================
 
-        // $payment_confirmation = $request->file('payment_confirmation');
-        // $name_payment_confirmation = time() . "_" . $payment_confirmation->getClientOriginalName();
-        // $payment_confirmation->storeAs('public/images/payment_confirmation/ctf/', $name_payment_confirmation);
+        // ID Card ADD Member 1
+        if ($request->team_member_1_id_card == null) {
+            $file_team_member_1 = null;
+        } else {
+            $file_team_member_1 = $request->team_member_1_id_card->store('id-card-ctf');
+        }
+
+        // id Card ADD Member 2
+        if ($request->team_member_2_id_card == null) {
+            $file_team_member_2 = null;
+        } else {
+            $file_team_member_2 = $request->team_member_2_id_card->store('id-card-ctf');
+        }
+
 
         Ctf_form::create([
             'email' => Auth::user()->email,
@@ -67,11 +77,10 @@ class CtfController extends Controller
             'team_leader_id_card' => $request->team_leader_id_card->store('id-card-ctf'),
             'team_member_1' => $request->team_member_1,
             'team_member_1_institute' => $request->team_member_1_institute,
-            'team_member_1_id_card' => $request->team_member_1_id_card->store('id-card-ctf'),
+            'team_member_1_id_card' => $file_team_member_1,
             'team_member_2' => $request->team_member_2,
             'team_member_2_institute' => $request->team_member_2_institute,
-            'team_member_2_id_card' => $request->team_member_2_id_card->store('id-card-ctf'),
-            // 'id_card' => $name_id_card,
+            'team_member_2_id_card' => $file_team_member_2,
             'proof_payment' => $request->payment_confirmation->store('ctf-payment-proof'),
         ]);
 

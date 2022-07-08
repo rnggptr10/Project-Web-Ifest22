@@ -55,37 +55,46 @@ class IntentionController extends Controller
         ]);
 
         // Alamat Penyimpanan
-        $request->team_leader_id_card->store('intention-payment-proof');
-        $request->team_member_1_id_card->store('intention-payment-proof');
-        $request->team_member_2_id_card->store('intention-payment-proof');
+        $request->team_leader_id_card->store('id-card-intention');
+        $request->team_member_1_id_card->store('id-card-intention');
+        $request->team_member_2_id_card->store('id-card-intention');
         $request->payment_confirmation->store('intention-payment-proof');
 
-        // $id_card = $request->file('id_card');
-        // $name_id_card = time() . "_" . $id_card->getClientOriginalName();
-        // $id_card->storeAs('public/images/id_card/intention/', $name_id_card);
+        // =================================================
+        // IF ELSE UNTUK 'IDCARD' DEFAULTNYA NONREQUIRED
+        // =================================================
 
-        // $payment_confirmation = $request->file('payment_confirmation');
-        // $name_payment_confirmation = time() . "_" . $payment_confirmation->getClientOriginalName();
-        // $payment_confirmation->storeAs('public/images/payment_confirmation/intention/', $name_payment_confirmation);
+        // ID Card ADD Member 2
+        if ($request->team_member_3_id_card == null) {
+            $file_team_member_3 = null;
+        } else {
+            $file_team_member_3 = $request->team_member_3_id_card->store('id-card-intention');
+        }
+
+        if ($request->team_member_4_id_card == null) {
+            $file_team_member_4 = null;
+        } else {
+            $file_team_member_4 = $request->team_member_4_id_card->store('id-card-intention');
+        }
 
         Intention_form::create([
             'email' => Auth::user()->email,
             'team_name' => $request->team_name,
             'team_leader' => $request->team_leader,
             'team_leader_institute' => $request->team_leader_institute,
-            'team_leader_id_card' => $request->team_leader_id_card->store('intention-payment-proof'),
+            'team_leader_id_card' => $request->team_leader_id_card->store('id-card-intention'),
             'team_member_1' => $request->team_member_1,
             'team_member_1_institute' => $request->team_member_1_institute,
-            'team_member_1_id_card' => $request->team_member_1_id_card->store('intention-payment-proof'),
+            'team_member_1_id_card' => $request->team_member_1_id_card->store('id-card-intention'),
             'team_member_2' => $request->team_member_2,
             'team_member_2_institute' => $request->team_member_2_institute,
-            'team_member_2_id_card' => $request->team_member_2_id_card->store('intention-payment-proof'),
+            'team_member_2_id_card' => $request->team_member_2_id_card->store('id-card-intention'),
             'team_member_3' => $request->team_member_3,
             'team_member_3_institute' => $request->team_member_3_institute,
-            'team_member_3_id_card' => $request->team_member_3_id_card->store('intention-payment-proof'),
+            'team_member_3_id_card' => $file_team_member_3,
             'team_member_4' => $request->team_member_4,
             'team_member_4_institute' => $request->team_member_4_institute,
-            'team_member_4_id_card' => $request->team_member_4_id_card->store('intention-payment-proof'),
+            'team_member_4_id_card' => $file_team_member_4,
             'proof_payment' => $request->payment_confirmation->store('intention-payment-proof'),
             'proposal_link' => NULL,
             'app_link' => NULL,

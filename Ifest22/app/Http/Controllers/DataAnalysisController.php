@@ -51,24 +51,24 @@ class DataAnalysisController extends Controller
             'team_member_2_institute' => 'required',
             'team_member_2_id_card' => 'required',
             'payment_confirmation' => 'required',
-            // 'id_card' => 'required|file|mimes:zip|max:2000',
-            // 'payment_confirmation' => 'required|image|max:1024',
         ]);
 
         // Alamat penyimpanan payment proof
-        $request->team_leader_id_card->store('dac-payment-proof');
-        $request->team_member_1_id_card->store('dac-payment-proof');
-        $request->team_member_2_id_card->store('dac-payment-proof');
+        $request->team_leader_id_card->store('id-card-dac');
+        $request->team_member_1_id_card->store('id-card-dac');
+        $request->team_member_2_id_card->store('id-card-dac');
         $request->payment_confirmation->store('dac-payment-proof');
 
+        // =================================================
+        // IF ELSE UNTUK 'IDCARD' DEFAULTNYA NONREQUIRED
+        // =================================================
 
-        // $id_card = $request->file('id_card');
-        // $name_id_card = time() . "_" . $id_card->getClientOriginalName();
-        // $id_card->storeAs('public/images/id_card/data_analyst/', $name_id_card);
-
-        // $payment_confirmation = $request->file('payment_confirmation');
-        // $name_payment_confirmation = time() . "_" . $payment_confirmation->getClientOriginalName();
-        // $payment_confirmation->storeAs('public/images/payment_confirmation/data_analyst/', $name_payment_confirmation);
+        // ID Card ADD Member 1
+        if ($request->team_member_3_id_card == null) {
+            $file_team_member_3 = null;
+        } else {
+            $file_team_member_3 = $request->team_member_3_id_card->store('id-card-dac');
+        }
 
         Da_Form::create([
             'email' => Auth::user()->email,
@@ -83,9 +83,9 @@ class DataAnalysisController extends Controller
             'team_member_2_institute' => $request->team_member_2_institute,
             'team_member_2_id_card' => $request->team_member_2_id_card->store('dac-payment-proof'),
             'team_member_3' => $request->team_member_3,
-            'team_member_3' => $request->team_member_3_institute,
-            'team_member_3_id_card' => $request->team_member_3_id_card->store('dac-payment-proof'),
-            // 'id_card' => $name_id_card,
+            'team_member_3_institute' => $request->team_member_3_institute,
+            // 'team_member_3_id_card' => $request->team_member_3_id_card->store('dac-payment-proof'),
+            'team_member_3_id_card' => $file_team_member_3,
             'proof_payment' =>  $request->payment_confirmation->store('dac-payment-proof'),
         ]);
 
