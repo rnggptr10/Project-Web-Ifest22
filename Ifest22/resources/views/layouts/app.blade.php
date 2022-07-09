@@ -43,7 +43,7 @@
                                 <details>
                                     <summary style="background-color: transparent;">Event</summary>
                                     <a href="{{ route('startup') }}" class="burger-details" style="padding-left: 15px;">Startup Talk</a>
-                                    <a href="{{ route('incon') }}" class="burger-details" style="padding-left: 15px;">Seminar Nasional</a>
+                                    <a href="{{ route('semnas') }}" class="burger-details" style="padding-left: 15px;">Seminar Nasional</a>
                                     <a href="{{ route('techno') }}" class="burger-details" style="padding-left: 15px;">Technopreneur</a>
                                 </details>
                             </div>
@@ -70,7 +70,7 @@
                             </a>
                             <div class="dropdown-menu border-dropmenu" aria-labelledby="navbarDropdown" style="background-color: #1c1c1c;">
                                 <a class="item-dropmenu" href="{{ route('startup') }}">Startup Talk</a>
-                                <a class="item-dropmenu" href="{{ route('incon') }}">Seminar Nasional</a>
+                                <a class="item-dropmenu" href="{{ route('semnas') }}">Seminar Nasional</a>
                                 <a class="item-dropmenu" href="{{ route('techno') }}">Technopreneur</a>
                             </div>
                         </li>
@@ -138,7 +138,7 @@
                         <div class="fmain-event">
                             <h3 class="footer-header">Event</h3>
                             <ul class="footer-ul">
-                                <li class="footer-li"><a href="{{ route('incon') }}">International Conference</a></li>
+                                <li class="footer-li"><a href="{{ route('semnas') }}">International Conference</a></li>
                                 <li class="footer-li"><a href="{{ route('techno') }}">Technopreneur</a></li>
                                 <li class="footer-li"><a href="{{ route('startup') }}">StartUp Talk</a></li>
                             </ul>

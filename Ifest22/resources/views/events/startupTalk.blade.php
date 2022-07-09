@@ -305,7 +305,7 @@ Startup Talk is a talk show that aims as a means to bring together Founders or S
                         <a class="ifest-btn-primary-dark-bg-text" href="{{route('login')}}">Register Now</a>
                         @endif
                         @else
-                        <a class="ifest-btn-primary-dark-bg-text" href="">Register Now</a>
+                        <a class="ifest-btn-primary-dark-bg-text" href="{{route('startup.registration')}}">Register Now</a>
                         @endguest
                     </button>
                 </div>
@@ -357,4 +357,3 @@ Startup Talk is a talk show that aims as a means to bring together Founders or S
 @endsection
 @section('cp2_contact', 'https://line.me/ti/p/~hmd4')
 @section('cp2_name', 'Mohammad Sulaeman')
-

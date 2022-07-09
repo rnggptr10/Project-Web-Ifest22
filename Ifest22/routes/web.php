@@ -5,7 +5,7 @@ use App\Http\Controllers\DataAnalysisController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
-use App\Http\Controllers\InconController;
+use App\Http\Controllers\SemnasController;
 use App\Http\Controllers\IntentionController;
 use App\Http\Controllers\ProfilController;
 use App\Http\Controllers\StartupController;
@@ -59,7 +59,7 @@ Route::get('/profil/ticket-details-technopreneur-workshop/submit-pitchdeck-2', [
 Route::patch('/profil/ticket-details-technopreneur-workshop/submit-pitchdeck-2', [ProfilController::class, 'belom'])->name('techno.submitting.pitchdeck2');
 
 // Route for Event
-Route::get('/international-conference', [InconController::class, 'index'])->name('incon');
+Route::get('/seminar-nasional', [SemnasController::class, 'index'])->name('semnas');
 Route::get('/technopreneur', [TechnoController::class, 'index'])->name('techno');
 Route::get('/startup-talk', [StartupController::class, 'index'])->name('startup');
 Route::get('/ipod', [HomeController::class, 'ipodIndex'])->name('ipod');
@@ -79,9 +79,9 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/data-analysis-competition/registration', [DataAnalysisController::class, 'registration'])->name('dac.registration.view');
     Route::patch('/data-analysis-competition/registration', [DataAnalysisController::class, 'saveRegister'])->name('dac.registration');
 
-    // Intention
-    Route::get('/intention/registration', [IntentionController::class, 'registration'])->name('intention.registration.view');
-    Route::patch('/intention/registration', [IntentionController::class, 'saveRegister'])->name('intention.registration');
+    // Seminar Nasional
+    Route::get('/semnas/registration', [IntentionController::class, 'registration'])->name('intention.registration.view');
+    Route::patch('/semnas/registration', [IntentionController::class, 'saveRegister'])->name('intention.registration');
 
     // Techno Workshop
     Route::get('/technopreneur-workshop/registration', [TechnoController::class, 'registrationWorkshop'])->name('technoWorkshop.registration.view');
@@ -94,9 +94,12 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/technopreneur-workshop/payment', [TechnoController::class, 'paymentWorkshop'])->name('technoWorkshop.payment.view');
     Route::patch('/technopreneur-workshop/payment', [TechnoController::class, 'savePaymentWorkshop'])->name('technoWorkshop.payment');
 
+    // StartupTalk
+    Route::get('/startup-talk/registration', [StartupController::class, 'saveRegister'])->name('startup.registration');
+
     // Seminar Nasional Payment
-    Route::get('/seminar-nasional/registration', [InconController::class, 'registration'])->name('seminarNasional.registration.view');
-    Route::patch('/seminar-nasional/registration', [InconController::class, 'saveRegister'])->name('seminarNasional.registration');
+    Route::get('/seminar-nasional/registration', [SemnasController::class, 'registration'])->name('seminarNasional.registration.view');
+    Route::patch('/seminar-nasional/registration', [SemnasController::class, 'saveRegister'])->name('seminarNasional.registration');
 });
 
 

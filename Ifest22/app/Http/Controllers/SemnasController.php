@@ -8,7 +8,7 @@ use App\Models\Ticket;
 use App\Models\Incon;
 use App\Models\Profile;
 
-class InconController extends Controller
+class SemnasController extends Controller
 {
     public function index()
     {
