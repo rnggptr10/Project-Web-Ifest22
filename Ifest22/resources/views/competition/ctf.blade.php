@@ -12,10 +12,9 @@
 
 @section('competition_title', 'Capture The Flag')
 
-@section('competition_theme', 'Tema')
-
 @section('competition_desc')
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+Capture The Flag (CTF) is a national-scale competition organized by Himatif FMIPA Unpad as part of the Informatics Festival (IFest) 2022. Capture The Flag is a competition in the field of network security that requires each participant to think creatively in search of certain strings called flags.
+This competition is held online and is intended for high school / vocational students or active S1/D4/D3 students as evidenced by a student card. This competition uses the jeopardy concept which will test participants' abilities in the fields of Web Hacking, Binary Exploitation, Reverse Engineering, Digital Forensic, Cryptography, and Misc and will be contested by the entire team consisting of 1-3 people.
 @endsection
 
 @section('competition_flashback')
@@ -24,10 +23,10 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
         <div class="carousel-item active">
             <div class="row justify-content-center">
                 <div class="col-4" align="center" style="padding-right: 25px;">
-                    <img class="photo-flashback" src="https://cf.shopee.co.id/file/e0d319d464c87407718586d008a144b7">
+                    <img class="photo-flashback" src="https://cdn6.dissolve.com/p/D1061_185_320/D1061_185_320_1200.jpg">
                 </div>
                 <div class="col-4" align="center" style="padding-left: 25px;">
-                    <img class="photo-flashback" src="https://cf.shopee.co.id/file/e0d319d464c87407718586d008a144b7">
+                    <img class="photo-flashback" src="https://cdn6.dissolve.com/p/D1061_185_320/D1061_185_320_1200.jpg">
                 </div>
             </div>
             <!-- <img class="arrow-switch" src="{{ URL::asset('icon/circle-arrow-left.svg') }}" alt="arrow-left">
@@ -36,10 +35,10 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
         <div class="carousel-item">
             <div class="row justify-content-center">
                 <div class="col-4" align="center" style="padding-right: 25px;">
-                    <img style="width:100%;height: 320px;" src="https://cf.shopee.co.id/file/e0d319d464c87407718586d008a144b7">
+                    <img style="width:100%;height: 320px;" src="https://cdn6.dissolve.com/p/D1061_185_320/D1061_185_320_1200.jpg">
                 </div>
                 <div class="col-4" align="center" style="padding-left: 25px;">
-                    <img style="width:100%;height: 320px;" src="https://cf.shopee.co.id/file/e0d319d464c87407718586d008a144b7">
+                    <img style="width:100%;height: 320px;" src="https://cdn6.dissolve.com/p/D1061_185_320/D1061_185_320_1200.jpg">
                 </div>
             </div>
             <!-- <img class="arrow-switch" src="{{ URL::asset('icon/circle-arrow-left.svg') }}" alt="arrow-left">
@@ -118,44 +117,68 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 <div class="row-box-question-faq" style="padding-top: 30px;">
     <div class="card-faq text-left">
         <details>
-            <summary>Pertanyaan 1</summary>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry.
-                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
-                unknown</p>
+            <summary class="card-faq-q-text">What type of ID Card is used for the CTF 2022 registration ?</summary>
+            <p class="card-faq-a-text">Identity card in the form of an active student card uploaded by the team leader on the website.</p>
         </details>
     </div>
     <div class="card-faq text-left">
         <details>
-            <summary>Pertanyaan 2</summary>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry.
-                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
-                unknown</p>
+            <summary class="card-faq-q-text">Does each participant have to fill in personal data on the website separately ?</summary>
+            <p class="card-faq-a-text">No, filling in and uploading the member data of each team is only done by the team leader.</p>
         </details>
     </div>
     <div class="card-faq text-left">
         <details>
-            <summary>Pertanyaan 3</summary>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry.
-                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
-                unknown</p>
+            <summary class="card-faq-q-text">Is it allowed to have members from other institutions ?</summary>
+            <p class="card-faq-a-text">It is allowed as long as it still meets the participant requirements.</p>
         </details>
     </div>
     <div class="card-faq text-left">
         <details>
-            <summary>Pertanyaan 4</summary>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry.
-                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
-                unknown</p>
+            <summary class="card-faq-q-text">Will the participant's write-up be published ?</summary>
+            <p class="card-faq-a-text">The committee will not issue a participant's write-up in any form.</p>
+        </details>
+    </div>
+    <div class="card-faq text-left">
+        <details>
+            <summary class="card-faq-q-text">Is the use of automated brute force tools allowed ?</summary>
+            <p class="card-faq-a-text">Not allowed. If detected, the team will be disqualified.</p>
+        </details>
+    </div>
+    <div class="card-faq text-left">
+        <details>
+            <summary class="card-faq-q-text">What categories of CTF questions will be contested ?</summary>
+            <p class="card-faq-a-text">The categories that will be contested are Web Hacking, Binary Exploitation, Reverse Engineering, Cryptography, Digital Forensic, and Misc.</p>
         </details>
     </div>
 </div>
 @endsection
 
-@section('cp1_wa', '6287720201166')
-@section('cp1_name', 'Jarwo 1')
-@section('cp2_wa', '6287720201177')
-@section('cp2_name', 'Jarwo 2')
+@section('cp1_media')
+<img class="logo-whatsapp" src="{{ URL::asset('icon/whatsapp.svg') }}" alt="Whatsapp">
+@endsection
+@section('cp1_contact', 'https://wa.me/6285793831376')
+@section('cp1_name', 'Rihlan Lumenda Suherman')
+
+@section('cp2_media')
+<img class="logo-whatsapp" src="{{ URL::asset('icon/line.svg') }}" alt="Line">
+@endsection
+@section('cp2_contact', 'https://line.me/ti/p/~Lanrihlan24')
+@section('cp2_name', 'Rihlan Lumenda Suherman')
+
+@section('add_cp3_cp4')
+<div class="row-cp">
+    <div class="col-btn-left" style="padding-top: 30px;">
+        <button id="btn-cp3" type="button" class="btn btn-outline-primary ifest-btn-outline-primary-dark-bg" style="width: fit-content;padding:10px 20px 10px 20px" onclick="window.location.href='https://wa.me/6285252709071';">
+            <img class="logo-whatsapp" src="{{ URL::asset('icon/whatsapp.svg') }}" alt="Whatsapp">
+            <span style="margin-left:10px">M. Attila An Naufal</span>
+        </button>
+    </div>
+    <div class="col-btn-right" style="padding-top: 30px;">
+        <button id="btn-cp4" type="button" class="btn btn-outline-primary ifest-btn-outline-primary-dark-bg" style="width: fit-content;padding:10px 20px 10px 20px" onclick="window.location.href='https://line.me/ti/p/~annaufal12';">
+            <img class="logo-whatsapp" src="{{ URL::asset('icon/line.svg') }}" alt="Line">
+            <span style="margin-left:10px">M. Attila An Naufal</span>
+        </button>
+    </div>
+</div>
+@endsection

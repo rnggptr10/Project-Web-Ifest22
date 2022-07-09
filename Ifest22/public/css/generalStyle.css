@@ -232,6 +232,20 @@ summary {
     color: #fff;
 }
 
+.card-faq-q-text {
+    font-family: "Poppins-SemiBold";
+    font-size: 16px;
+    line-height: 24px;
+    color: #ffffff;
+}
+
+.card-faq-a-text {
+    font-family: "Poppins-Regular";
+    font-size: 16px;
+    line-height: 24px;
+    color: #ffffff;
+}
+
 /* TIMELINE */
 .ps-timeline-sec {
     width: 100%;

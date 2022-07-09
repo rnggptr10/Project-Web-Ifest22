@@ -13,7 +13,7 @@
 @section('event_title', 'Startup Talk')
 
 @section('event_desc')
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+Startup Talk is a talk show that aims as a means to bring together Founders or Strategic Partners of a Startup with participants to share experiences about Metaverse & Digital Transformation. This series is the right place for startups to do soft selling and increase brand awareness.
 @endsection
 
 <!-- STARTUP LOGO -->
@@ -51,11 +51,11 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 
 <!-- SPEAKERS DAY 1 -->
 @section('startup1_speakers')
-<img class="card-img-top" style="width:100%;height:350px;" src="https://th.bing.com/th/id/OIP.7Am2M7LE8WqW0IYT5rM6yAAAAA?pid=ImgDet&rs=1" alt="Speakers-1">
+<img class="card-img-top" style="width:100%;height:350px;" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg" alt="Speakers-1">
 <div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
     <div class="col-7" style="line-height: 5px;">
-        <h5 class="text-photo-card-name">Wortel1</h5>
-        <p class="text-photo-card-position">Pejabat</p>
+        <h5 class="text-photo-card-name">Speaker1</h5>
+        <p class="text-photo-card-position">CEO</p>
     </div>
     <div class="col-3">
         <a href=""><img class="logo-linkedin" src="{{ URL::asset('icon/linkedin.svg') }}" alt="linkedin"></a>
@@ -64,11 +64,11 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 @endsection
 
 @section('startup2_speakers')
-<img class="card-img-top" style="width:100%;height:350px;" src="https://th.bing.com/th/id/OIP.7Am2M7LE8WqW0IYT5rM6yAAAAA?pid=ImgDet&rs=1" alt="Speakers-2">
+<img class="card-img-top" style="width:100%;height:350px;" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg" alt="Speakers-2">
 <div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
     <div class="col-7" style="line-height: 5px;">
-        <h5 class="text-photo-card-name">Wortel2</h5>
-        <p class="text-photo-card-position">Pejabat</p>
+        <h5 class="text-photo-card-name">Speaker2</h5>
+        <p class="text-photo-card-position">CEO</p>
     </div>
     <div class="col-3">
         <a href=""><img class="logo-linkedin" src="{{ URL::asset('icon/linkedin.svg') }}" alt="linkedin"></a>
@@ -77,11 +77,11 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 @endsection
 
 @section('startup3_speakers')
-<img class="card-img-top" style="width:100%;height:350px;" src="https://th.bing.com/th/id/OIP.7Am2M7LE8WqW0IYT5rM6yAAAAA?pid=ImgDet&rs=1" alt="Speakers-3">
+<img class="card-img-top" style="width:100%;height:350px;" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg" alt="Speakers-3">
 <div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
     <div class="col-7" style="line-height: 5px;">
-        <h5 class="text-photo-card-name">Wortel3</h5>
-        <p class="text-photo-card-position">Pejabat</p>
+        <h5 class="text-photo-card-name">Speaker3</h5>
+        <p class="text-photo-card-position">CEO</p>
     </div>
     <div class="col-3">
         <a href=""><img class="logo-linkedin" src="{{ URL::asset('icon/linkedin.svg') }}" alt="linkedin"></a>
@@ -90,11 +90,11 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 @endsection
 
 @section('startup4_speakers')
-<img class="card-img-top" style="width:100%;height:350px;" src="https://th.bing.com/th/id/OIP.7Am2M7LE8WqW0IYT5rM6yAAAAA?pid=ImgDet&rs=1" alt="Speakers-4">
+<img class="card-img-top" style="width:100%;height:350px;" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg" alt="Speakers-4">
 <div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
     <div class="col-7" style="line-height: 5px;">
-        <h5 class="text-photo-card-name">Peler</h5>
-        <p class="text-photo-card-position">Pejabat</p>
+        <h5 class="text-photo-card-name">Speaker4</h5>
+        <p class="text-photo-card-position">CEO</p>
     </div>
     <div class="col-3">
         <a href=""><img class="logo-linkedin" src="{{ URL::asset('icon/linkedin.svg') }}" alt="linkedin"></a>
@@ -103,11 +103,11 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 @endsection
 
 @section('startup5_speakers')
-<img class="card-img-top" style="width:100%;height:350px;" src="https://th.bing.com/th/id/OIP.7Am2M7LE8WqW0IYT5rM6yAAAAA?pid=ImgDet&rs=1" alt="Speakers-4">
+<img class="card-img-top" style="width:100%;height:350px;" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg" alt="Speakers-4">
 <div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
     <div class="col-7" style="line-height: 5px;">
-        <h5 class="text-photo-card-name">Peler1</h5>
-        <p class="text-photo-card-position">Pejabat</p>
+        <h5 class="text-photo-card-name">Speaker4</h5>
+        <p class="text-photo-card-position">CEO</p>
     </div>
     <div class="col-3">
         <a href=""><img class="logo-linkedin" src="{{ URL::asset('icon/linkedin.svg') }}" alt="linkedin"></a>
@@ -116,11 +116,11 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 @endsection
 
 @section('startup6_speakers')
-<img class="card-img-top" style="width:100%;height:350px;" src="https://th.bing.com/th/id/OIP.7Am2M7LE8WqW0IYT5rM6yAAAAA?pid=ImgDet&rs=1" alt="Speakers-4">
+<img class="card-img-top" style="width:100%;height:350px;" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg" alt="Speakers-4">
 <div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
     <div class="col-7" style="line-height: 5px;">
-        <h5 class="text-photo-card-name">Peler2</h5>
-        <p class="text-photo-card-position">Pejabat</p>
+        <h5 class="text-photo-card-name">Speaker6</h5>
+        <p class="text-photo-card-position">CEO</p>
     </div>
     <div class="col-3">
         <a href=""><img class="logo-linkedin" src="{{ URL::asset('icon/linkedin.svg') }}" alt="linkedin"></a>
@@ -129,11 +129,11 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 @endsection
 
 @section('startup7_speakers')
-<img class="card-img-top" style="width:100%;height:350px;" src="https://th.bing.com/th/id/OIP.7Am2M7LE8WqW0IYT5rM6yAAAAA?pid=ImgDet&rs=1" alt="Speakers-4">
+<img class="card-img-top" style="width:100%;height:350px;" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg" alt="Speakers-4">
 <div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
     <div class="col-7" style="line-height: 5px;">
-        <h5 class="text-photo-card-name">Peler3</h5>
-        <p class="text-photo-card-position">Pejabat</p>
+        <h5 class="text-photo-card-name">Speaker7</h5>
+        <p class="text-photo-card-position">CEO</p>
     </div>
     <div class="col-3">
         <a href=""><img class="logo-linkedin" src="{{ URL::asset('icon/linkedin.svg') }}" alt="linkedin"></a>
@@ -142,14 +142,14 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 @endsection
 
 @section('startup8_speakers')
-<img class="card-img-top" style="width:100%;height:350px;" src="https://th.bing.com/th/id/OIP.7Am2M7LE8WqW0IYT5rM6yAAAAA?pid=ImgDet&rs=1" alt="Speakers-4">
+<img class="card-img-top" style="width:100%;height:350px;" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg" alt="Speakers-4">
 <div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
     <div class="col-7" style="line-height: 5px;">
-        <h5 class="text-photo-card-name">Peler4</h5>
-        <p class="text-photo-card-position">Pejabat</p>
+        <h5 class="text-photo-card-name">Speaker8</h5>
+        <p class="text-photo-card-position">CEO</p>
     </div>
     <div class="col-3">
-        <a href="https://www.linkedin.com/in/rhezapandya"><img class="logo-linkedin" src="{{ URL::asset('icon/linkedin.svg') }}" alt="linkedin"></a>
+        <a href=""><img class="logo-linkedin" src="{{ URL::asset('icon/linkedin.svg') }}" alt="linkedin"></a>
     </div>
 </div>
 @endsection
@@ -346,8 +346,15 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 </div>
 @endsection -->
 
-@section('cp1_wa', '6287720201166')
-@section('cp1_name', 'Jarwo 1')
-@section('cp2_wa', '6287720201177')
-@section('cp2_name', 'Jarwo 2')
+@section('cp1_media')
+<img class="logo-whatsapp" src="{{ URL::asset('icon/whatsapp.svg') }}" alt="Whatsapp">
+@endsection
+@section('cp1_contact', 'https://wa.me/6282235596465')
+@section('cp1_name', 'Mohammad Sulaeman')
+
+@section('cp2_media')
+<img class="logo-whatsapp" src="{{ URL::asset('icon/line.svg') }}" alt="Line">
+@endsection
+@section('cp2_contact', 'https://line.me/ti/p/~hmd4')
+@section('cp2_name', 'Mohammad Sulaeman')
 

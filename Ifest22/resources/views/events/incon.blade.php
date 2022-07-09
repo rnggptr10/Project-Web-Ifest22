@@ -19,18 +19,18 @@
 @endsection
 
 @section('event_desc')
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+Seminar Nasional is a national seminar that invites experienced speakers in those relevant to the IFEST theme. Seminar Nasional aims to build a platform and provide opportunities for national academics, researchers, and practitioners to exchange and share their experiences, ideas, knowledge, and research results about Cloud Computing.
 @endsection
 
 <!-- SPEAKERS -->
 @section('semnas_speakers_1')
 <div class="col-4">
     <div class="card ifest-photo-card" style="border: 0; width:max-content">
-        <img class="card-img-top" style="width:100%;height:350px;" src="https://cf.shopee.co.id/file/e0d319d464c87407718586d008a144b7" alt="Speakers-1">
+        <img class="card-img-top" style="width:100%;height:350px;" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg" alt="Speakers-1">
         <div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
             <div class="col-7" style="line-height: 5px;">
-                <h5 class="text-photo-card-name">Wortel1</h5>
-                <p class="text-photo-card-position">Pejabat</p>
+                <h5 class="text-photo-card-name">Speaker1</h5>
+                <p class="text-photo-card-position">CEO</p>
             </div>
             <div class="col-3">
                 <a href=""><img class="logo-linkedin" src="{{ URL::asset('icon/linkedin.svg') }}" alt="linkedin"></a>
@@ -43,11 +43,11 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 @section('semnas_speakers_2')
 <div class="col-4">
     <div class="card ifest-photo-card" style="border: 0; width:max-content">
-        <img class="card-img-top" style="width:100%;height:350px;" src="https://cf.shopee.co.id/file/e0d319d464c87407718586d008a144b7" alt="Speakers-1">
+        <img class="card-img-top" style="width:100%;height:350px;" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg" alt="Speakers-1">
         <div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
             <div class="col-7" style="line-height: 5px;">
-                <h5 class="text-photo-card-name">Wortel2</h5>
-                <p class="text-photo-card-position">Pejabat</p>
+                <h5 class="text-photo-card-name">Speaker2</h5>
+                <p class="text-photo-card-position">CEO</p>
             </div>
             <div class="col-3">
                 <a href=""><img class="logo-linkedin" src="{{ URL::asset('icon/linkedin.svg') }}" alt="linkedin"></a>
@@ -60,11 +60,11 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 @section('semnas_speakers_3')
 <div class="col-4">
     <div class="card ifest-photo-card" style="border: 0; width:max-content">
-        <img class="card-img-top" style="width:100%;height:350px;" src="https://cf.shopee.co.id/file/e0d319d464c87407718586d008a144b7" alt="Speakers-1">
+        <img class="card-img-top" style="width:100%;height:350px;" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg" alt="Speakers-1">
         <div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
             <div class="col-7" style="line-height: 5px;">
-                <h5 class="text-photo-card-name">Wortel3</h5>
-                <p class="text-photo-card-position">Pejabat</p>
+                <h5 class="text-photo-card-name">Speaker3</h5>
+                <p class="text-photo-card-position">CEO</p>
             </div>
             <div class="col-3">
                 <a href=""><img class="logo-linkedin" src="{{ URL::asset('icon/linkedin.svg') }}" alt="linkedin"></a>
@@ -77,11 +77,11 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 @section('semnas_speakers_4')
 <div class="col-4">
     <div class="card ifest-photo-card" style="border: 0; width:max-content">
-        <img class="card-img-top" style="width:100%;height:350px;" src="https://cf.shopee.co.id/file/e0d319d464c87407718586d008a144b7" alt="Speakers-1">
+        <img class="card-img-top" style="width:100%;height:350px;" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg" alt="Speakers-1">
         <div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
             <div class="col-7" style="line-height: 5px;">
-                <h5 class="text-photo-card-name">Wortel4</h5>
-                <p class="text-photo-card-position">Pejabat</p>
+                <h5 class="text-photo-card-name">Speaker4</h5>
+                <p class="text-photo-card-position">CEO</p>
             </div>
             <div class="col-3">
                 <a href=""><img class="logo-linkedin" src="{{ URL::asset('icon/linkedin.svg') }}" alt="linkedin"></a>
@@ -278,7 +278,14 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 </div>
 @endsection -->
 
-@section('cp1_wa', '6287720201166')
-@section('cp1_name', 'Jarwo 1')
-@section('cp2_wa', '6287720201177')
-@section('cp2_name', 'Jarwo 2')
+@section('cp1_media')
+<img class="logo-whatsapp" src="{{ URL::asset('icon/whatsapp.svg') }}" alt="Whatsapp">
+@endsection
+@section('cp1_contact', 'https://wa.me/628569904718')
+@section('cp1_name', 'Bagus Prasetyo')
+
+@section('cp2_media')
+<img class="logo-whatsapp" src="{{ URL::asset('icon/line.svg') }}" alt="Line">
+@endsection
+@section('cp2_contact', 'https://line.me/ti/p/~johanesbagus2506')
+@section('cp2_name', 'Bagus Prasetyo')

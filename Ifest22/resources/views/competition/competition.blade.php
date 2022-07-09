@@ -19,9 +19,7 @@
                     <p class="title-competition">@yield('competition_title')</p>
                     <!-- <h1 class="text-title"></h1> -->
                 </div>
-                <div style="padding-top: 10px;padding-bottom: 10px;">
-                    <h2 class="text-theme">"@yield('competition_theme')"</h2>
-                </div>
+                @yield('competition_theme')
                 <div style="padding: 10px 50px 0 50px; font-size: 16px;">
                     <p class="text-desc">@yield('competition_desc')</p>
                 </div>
@@ -69,19 +67,20 @@
     <div data-aos="fade-up" data-aos-duration="1000" class="row justify-content-center align-items-center" align="center" id="competitionCP" style="margin-left: 0; margin-right:0; padding-top: 30px;padding-bottom: 30px;">
         <h1 class="text-sub-title">Contact Person</h1>
         <div class="row-cp">
-            <div class="col-btn-left" style="">
-                <button id="btn-cp1" type="button" class="btn btn-outline-primary ifest-btn-outline-primary-dark-bg" onclick="window.location.href='https://wa.me/@yield('cp1_wa')';">
-                    <img class="logo-whatsapp" src="{{ URL::asset('icon/whatsapp.svg') }}" alt="whatsapp">
-                    <span>@yield('cp1_name')</span>
+            <div class="col-btn-left" style="padding-top: 30px;">
+                <button id="btn-cp1" type="button" class="btn btn-outline-primary ifest-btn-outline-primary-dark-bg" style="width: fit-content;padding:10px 20px 10px 20px" onclick="window.location.href='@yield('cp1_contact')';">
+                    @yield('cp1_media')
+                    <span style="margin-left:10px">@yield('cp1_name')</span>
                 </button>
             </div>
-            <div class="col-btn-right" style="">
-                <button id="btn-cp2" type="button" class="btn btn-outline-primary ifest-btn-outline-primary-dark-bg" onclick="window.location.href='https://wa.me/@yield('cp2_wa')';">
-                    <img class="logo-whatsapp" src="{{ URL::asset('icon/whatsapp.svg') }}" alt="whatsapp">
-                    <span>@yield('cp2_name')</span>
+            <div class="col-btn-right" style="padding-top: 30px;">
+                <button id="btn-cp2" type="button" class="btn btn-outline-primary ifest-btn-outline-primary-dark-bg" style="width: fit-content;padding:10px 20px 10px 20px" onclick="window.location.href='@yield('cp2_contact')';">
+                    @yield('cp2_media')
+                    <span style="margin-left:10px">@yield('cp2_name')</span>
                 </button>
             </div>
         </div>
+        @yield('add_cp3_cp4')
     </div>
 </div>
 

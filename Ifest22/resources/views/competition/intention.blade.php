@@ -12,10 +12,16 @@
 
 @section('competition_title', 'Innovative Technology Competition (INTENTION)')
 
-@section('competition_theme', 'Reigniting and Developing Innovative Ideas to Face Rapidly Changing Technology')
+@section('competition_theme')
+<div style="padding-top: 10px;padding-bottom: 10px;">
+    <h2 class="text-theme">"Reigniting and Developing Innovative Ideas to Face Rapidly Changing Technology"</h2>
+</div>
+@endsection
 
 @section('competition_desc')
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+Innovative Technology Competition (INTENTION) is a national-scale competition organized by Himatif FMIPA Unpad as part of the Informatics Festival (IFest) 2022. INTENTION is a competition to turn innovative ideas into useful applications or websites.
+This competition is held online and is intended for high school / vocational students or active S1/D4/D3 students as evidenced by a student card. Participants in this competition are a team of 3-5 people. In addition, this competition is divided into two rounds, namely the preliminary round and the final round. With this theme, we hope that participants will be able to create applications that can be a trigger to reignite the spirit of innovation which is much needed to face the ever-changing technological trends.
+
 @endsection
 
 @section('competition_flashback')
@@ -24,10 +30,10 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
         <div class="carousel-item active">
             <div class="row justify-content-center">
                 <div class="col-4" align="center" style="padding-right: 25px;">
-                    <img class="photo-flashback" src="https://cf.shopee.co.id/file/e0d319d464c87407718586d008a144b7">
+                    <img class="photo-flashback" src="https://cdn6.dissolve.com/p/D1061_185_320/D1061_185_320_1200.jpg">
                 </div>
                 <div class="col-4" align="center" style="padding-left: 25px;">
-                    <img class="photo-flashback" src="https://cf.shopee.co.id/file/e0d319d464c87407718586d008a144b7">
+                    <img class="photo-flashback" src="https://cdn6.dissolve.com/p/D1061_185_320/D1061_185_320_1200.jpg">
                 </div>
             </div>
             <!-- <img class="arrow-switch" src="{{ URL::asset('icon/circle-arrow-left.svg') }}" alt="arrow-left">
@@ -36,10 +42,10 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
         <div class="carousel-item">
             <div class="row justify-content-center">
                 <div class="col-4" align="center" style="padding-right: 25px;">
-                    <img style="width:100%;height: 320px;" src="https://cf.shopee.co.id/file/e0d319d464c87407718586d008a144b7">
+                    <img style="width:100%;height: 320px;" src="https://cdn6.dissolve.com/p/D1061_185_320/D1061_185_320_1200.jpg">
                 </div>
                 <div class="col-4" align="center" style="padding-left: 25px;">
-                    <img style="width:100%;height: 320px;" src="https://cf.shopee.co.id/file/e0d319d464c87407718586d008a144b7">
+                    <img style="width:100%;height: 320px;" src="https://cdn6.dissolve.com/p/D1061_185_320/D1061_185_320_1200.jpg">
                 </div>
             </div>
             <!-- <img class="arrow-switch" src="{{ URL::asset('icon/circle-arrow-left.svg') }}" alt="arrow-left">
@@ -73,11 +79,11 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
     <div class="row justify-content-center" style="padding-top: 30px;">
         <div class="col-4" data-aos="fade-right" data-aos-duration="1000" style="padding-right: 50px;">
             <div class="card ifest-photo-card" style="border: 0; width:max-content">
-                <img class="card-img-top" style="width:100%;height:350px;" src="https://cf.shopee.co.id/file/e0d319d464c87407718586d008a144b7" alt="Card image cap">
+                <img class="card-img-top" style="width:100%;height:350px;" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg" alt="Card image cap">
                 <div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
                     <div class="col-7" style="line-height: 5px;">
-                        <h5 class="text-photo-card-name">Wildan Wortel</h5>
-                        <p class="text-photo-card-position">Pejabat Negara</p>
+                        <h5 class="text-photo-card-name">Juri 1</h5>
+                        <p class="text-photo-card-position">FullStack</p>
                     </div>
                     <div class="col-3">
                         <img class="logo-linkedin" src="{{ URL::asset('icon/linkedin.svg') }}" alt="linkedin">
@@ -87,11 +93,11 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
         </div>
         <div class="col-4" data-aos="fade-left" data-aos-duration="1000" style="padding-left: 50px;">
             <div class="card ifest-photo-card" style="border: 0; width:max-content">
-                <img class="card-img-top" style="width:100%;height:350px;" src="https://cf.shopee.co.id/file/e0d319d464c87407718586d008a144b7" alt="Card image cap">
+                <img class="card-img-top" style="width:100%;height:350px;" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg" alt="Card image cap">
                 <div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
                     <div class="col-7" style="line-height: 5px;">
-                        <h5 class="text-photo-card-name">Wildan Wortel</h5>
-                        <p class="text-photo-card-position">Pejabat Negara</p>
+                        <h5 class="text-photo-card-name">Juri 2</h5>
+                        <p class="text-photo-card-position">FullStack</p>
                     </div>
                     <div class="col-3">
                         <img class="logo-linkedin" src="{{ URL::asset('icon/linkedin.svg') }}" alt="linkedin">
@@ -157,44 +163,68 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
 <div class="row" style="padding-top: 30px;">
     <div class="card-faq text-left">
         <details>
-            <summary>Pertanyaan 1</summary>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry.
-                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
-                unknown</p>
+            <summary class="card-faq-q-text">What type of ID Card is used for the INTENTION 2022 registration ?</summary>
+            <p class="card-faq-a-text">Identity card in the form of an active student card uploaded by the team leader on the website.</p>
         </details>
     </div>
     <div class="card-faq text-left">
         <details>
-            <summary>Pertanyaan 2</summary>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry.
-                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
-                unknown</p>
+            <summary class="card-faq-q-text">Does each participant have to fill in personal data on the website separately ?</summary>
+            <p class="card-faq-a-text">No, filling in and uploading the member data of each team is only done by the team leader.</p>
         </details>
     </div>
     <div class="card-faq text-left">
         <details>
-            <summary>Pertanyaan 3</summary>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry.
-                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
-                unknown</p>
+            <summary class="card-faq-q-text">Is it allowed to have members from other institutions ?</summary>
+            <p class="card-faq-a-text">It is allowed as long as it still meets the participant requirements.</p>
         </details>
     </div>
     <div class="card-faq text-left">
         <details>
-            <summary>Pertanyaan 4</summary>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry.
-                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
-                unknown</p>
+            <summary class="card-faq-q-text">Is there a specific theme for the development of the project ?</summary>
+            <p class="card-faq-a-text">There is no specific theme. The things that are prioritized are uniqueness and strength of the innovation that is implemented in the development of the project.</p>
+        </details>
+    </div>
+    <div class="card-faq text-left">
+        <details>
+            <summary class="card-faq-q-text">What programming languages and frameworks are allowed in INTENTION ?</summary>
+            <p class="card-faq-a-text">Any programming language and framework is allowed as long as it does not violate the terms and conditions of the competition.</p>
+        </details>
+    </div>
+    <div class="card-faq text-left">
+        <details>
+            <summary class="card-faq-q-text">Does the cover need to be included in the submission video ?</summary>
+            <p class="card-faq-a-text">Yes. The cover is uploaded as the first page of the instagram post and also inserted into the front of the INTENTION submission video.</p>
         </details>
     </div>
 </div>
 @endsection
 
-@section('cp1_wa', '6287720201166')
-@section('cp1_name', 'Jarwo 1')
-@section('cp2_wa', '6287720201177')
-@section('cp2_name', 'Jarwo 2')
+@section('cp1_media')
+<img class="logo-whatsapp" src="{{ URL::asset('icon/whatsapp.svg') }}" alt="Whatsapp">
+@endsection
+@section('cp1_contact', 'https://wa.me/6285793831376')
+@section('cp1_name', 'Rihlan Lumenda Suherman')
+
+@section('cp2_media')
+<img class="logo-whatsapp" src="{{ URL::asset('icon/line.svg') }}" alt="Line">
+@endsection
+@section('cp2_contact', 'https://line.me/ti/p/~Lanrihlan24')
+@section('cp2_name', 'Rihlan Lumenda Suherman')
+
+@section('add_cp3_cp4')
+<div class="row-cp">
+    <div class="col-btn-left" style="padding-top: 30px;">
+        <button id="btn-cp3" type="button" class="btn btn-outline-primary ifest-btn-outline-primary-dark-bg" style="width: fit-content;padding:10px 20px 10px 20px" onclick="window.location.href='https://wa.me/6282178237082';">
+            <img class="logo-whatsapp" src="{{ URL::asset('icon/whatsapp.svg') }}" alt="Whatsapp">
+            <span style="margin-left:10px">Hudzaifah Al Mutaz Billah</span>
+        </button>
+    </div>
+    <div class="col-btn-right" style="padding-top: 30px;">
+        <button id="btn-cp4" type="button" class="btn btn-outline-primary ifest-btn-outline-primary-dark-bg" style="width: fit-content;padding:10px 20px 10px 20px" onclick="window.location.href='https://line.me/ti/p/~saudaramutaz';">
+            <img class="logo-whatsapp" src="{{ URL::asset('icon/line.svg') }}" alt="Line">
+            <span style="margin-left:10px">Hudzaifah Al Mutaz Billah</span>
+        </button>
+    </div>
+</div>
+@endsection
