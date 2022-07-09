@@ -28,4 +28,5 @@ class HomeController extends Controller
     {
         return view('events.ipod');
     }
+    
 }

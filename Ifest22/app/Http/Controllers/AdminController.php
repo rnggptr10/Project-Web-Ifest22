@@ -23,4 +23,9 @@ class AdminController extends Controller
     {
         return view('admin.admin-startup');
     }
+
+    public function dataIntention()
+    {
+        return view('admin.admin-intention');
+    }
 }

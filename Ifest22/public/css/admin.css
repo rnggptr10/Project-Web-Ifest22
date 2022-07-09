@@ -1,0 +1,35 @@
+@import url(font.css);
+@import url(generalStyle.css);
+
+/* ------------------- General ------------------- */
+.text-title {
+    font-family: "Poppins-SemiBold";
+    font-size: 40px;
+    line-height: 60px;
+    color: #000000;
+}
+
+.text-theme {
+    font-family: "Poppins-Medium";
+    font-size: 32px;
+    line-height: 48px;
+    color: #000000;
+}
+
+.text-table-title {
+    font-family: "Poppins-SemiBold";
+    font-size: 24px;
+    line-height: 36px;
+    color: #000000;
+}
+
+table thead,
+table tbody {
+    border: 1px solid black;
+}
+
+table tbody tr th,
+table tbody tr td {
+    color: #000000;
+    border: 1px solid black;
+}

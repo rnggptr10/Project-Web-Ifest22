@@ -1,5 +1,5 @@
-<!doctype html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
@@ -8,10 +8,8 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <!-- <title>{{ config('app.name', 'IFest 2022') }}</title> -->
-    <title>IFest 2022 - Admin</title>
+    <title>IFest 2022 - Admin @yield('admin_title')</title>
     <link rel="icon" href="{{ asset('img/logo/logo_nav.png') }}">
-
 
     <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -24,6 +22,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 
     <link rel="stylesheet" href="{{ asset('css/navbar.css') }}">
+    <link rel="stylesheet" href="{{ URL::asset('css/admin.css') }}">
 </head>
 
 <body>
@@ -39,13 +38,13 @@
                             <div class="card-hamburger text-left">
                                 <details>
                                     <summary style="background-color: transparent;">Event</summary>
-                                    <a href="{{ route() }}" class="burger-details" style="padding-left: 15px;">Startup Talk</a>
-                                    <a href="{{ route() }}" class="burger-details" style="padding-left: 15px;">Seminar Nasional</a>
-                                    <a href="{{ route() }}" class="burger-details" style="padding-left: 15px;">Technopreneur</a>
-                                    <a href="{{ route() }}" class="burger-details" style="padding-left: 15px;">INTENTION</a>
-                                    <a href="{{ route() }}" class="burger-details" style="padding-left: 15px;">DAC</a>
-                                    <a href="{{ route() }}" class="burger-details" style="padding-left: 15px;">CTF</a>
-                                    <a href="{{ route() }}" class="burger-details" style="padding-left: 15px;">Ipod</a>
+                                    <a href="" class="burger-details" style="padding-left: 15px;">Startup Talk</a>
+                                    <a href="" class="burger-details" style="padding-left: 15px;">Seminar Nasional</a>
+                                    <a href="" class="burger-details" style="padding-left: 15px;">Technopreneur</a>
+                                    <a href="" class="burger-details" style="padding-left: 15px;">INTENTION</a>
+                                    <a href="" class="burger-details" style="padding-left: 15px;">DAC</a>
+                                    <a href="" class="burger-details" style="padding-left: 15px;">CTF</a>
+                                    <a href="" class="burger-details" style="padding-left: 15px;">Ipod</a>
                                 </details>
                             </div>
                         </div>
@@ -59,13 +58,13 @@
                                 Event
                             </a>
                             <div class="dropdown-menu border-dropmenu" aria-labelledby="navbarDropdown" style="background-color: #1c1c1c;">
-                                <a class="item-dropmenu" href="{{ route() }}">Startup Talk</a>
-                                <a class="item-dropmenu" href="{{ route() }}">Seminar Nasional</a>
-                                <a class="item-dropmenu" href="{{ route() }}">Technopreneur</a>
-                                <a class="item-dropmenu" href="{{ route() }}" style="color: #8267B4;">CTF</a>
-                                <a class="item-dropmenu" href="{{ route() }}" style="color: #8267B4;">DAC</a>
-                                <a class="item-dropmenu" href="{{ route() }}" style="color: #8267B4;">Intention</a>
-                                <a class="item-dropmenu" href="{{ route() }}">Ipod</a>
+                                <a class="item-dropmenu" href="{{ route('admin-startup') }}">Startup Talk</a>
+                                <a class="item-dropmenu" href="">Seminar Nasional</a>
+                                <a class="item-dropmenu" href="">Technopreneur</a>
+                                <a class="item-dropmenu" href="">CTF</a>
+                                <a class="item-dropmenu" href="">DAC</a>
+                                <a class="item-dropmenu" href="{{ route('admin-intention') }}">Intention</a>
+                                <a class="item-dropmenu" href="">Ipod</a>
                             </div>
                         </li>
                     </ul>
@@ -74,12 +73,12 @@
             <div class="box-logo">
                 @guest
                 @if (Route::has('login'))
-                <a href="/">
+                <a href="">
                     <img src="{{ asset('img/logo/logo_nav.png') }}" alt="">
                 </a>
                 @endif
                 @else
-                <a href="{{route()}}">
+                <a href="">
                     <img src="{{ asset('img/logo/logo_nav.png') }}" alt="">
                 </a>
                 @endguest
@@ -109,7 +108,21 @@
             </div>
         </header>
         <main style="padding-top: 10px;">
-            @yield('content')
+            <body style="background-color: #F0F0F0;">
+                <div class="container" style="padding: 100px 0 50px 0;">
+                    <div class="row align-items-center justify-content-center">
+                        <div class="col" style="padding: 20px 0 20px 0;">
+                            <div class="row align-items-center justify-content-center" align="center" style="padding-bottom: 15px;">
+                                <h1 class="text-title">Admin Page - @yield('admin_title')</h1>
+                            </div>
+                            <div class="row align-items-center justify-content-center" align="center" style="padding-bottom: 15px;">
+                                <h2 class="text-theme">Welcome, {{ Auth::user()->name }}</h2>
+                            </div>
+                            @yield('admin_detail')
+                        </div>
+                    </div>
+                </div>
+            </body>
         </main>
     </div>
     <script>
