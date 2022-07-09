@@ -86,6 +86,9 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/technopreneur-workshop/registration', [TechnoController::class, 'registrationWorkshop'])->name('technoWorkshop.registration.view');
     Route::patch('/technopreneur-workshop/registration', [TechnoController::class, 'saveRegisterWorkshop'])->name('technoWorkshop.registration');
 
+    // Techno Seminar
+    Route::get('/technopreneur-seminar/registration', [TechnoController::class, 'saveRegisterSeminar'])->name('techoSeminar.registration');
+
     // Techno Workshop Payment
     Route::get('/technopreneur-workshop/payment', [TechnoController::class, 'paymentWorkshop'])->name('technoWorkshop.payment.view');
     Route::patch('/technopreneur-workshop/payment', [TechnoController::class, 'savePaymentWorkshop'])->name('technoWorkshop.payment');
@@ -96,4 +99,5 @@ Route::middleware(['auth'])->group(function () {
 });
 
 
-// Route for DAC's Dashboard
+// Route for Admin Page Dashboard
+Route::get('/admin', [AdminController::class, 'dataStartup'])->name('admin-startup');

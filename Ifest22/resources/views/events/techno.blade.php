@@ -186,7 +186,7 @@ Technopreneur is a webinar and workshop that provides training & development fac
         </div>
     </div> -->
 </div>
-<div data-aos="fade-down" data-aos-duration="1000" class="row align-items-center" align="center"style="padding-top: 30px;padding-bottom: 30px;">
+<div data-aos="fade-down" data-aos-duration="1000" class="row align-items-center" align="center" style="padding-top: 30px;padding-bottom: 30px;">
     <h1 class="text-event-sub-title">Our Workshop Mentors</h1>
     <div id="technoMentor" class="row justify-content-center carousel slide" data-ride="carousel" style="padding-top: 30px; position:relative">
         <div class="carousel-inner">
@@ -284,7 +284,7 @@ Technopreneur is a webinar and workshop that provides training & development fac
                         <a class="ifest-btn-primary-dark-bg-text" href="{{route('login')}}">Buy Ticket</a>
                         @endif
                         @else
-                        <a class="ifest-btn-primary-dark-bg-text" href="">Register</a>
+                        <a class="ifest-btn-primary-dark-bg-text" href="{{route('techoSeminar.registration')}}">Register</a>
                         @endguest
                     </button>
                 </div>

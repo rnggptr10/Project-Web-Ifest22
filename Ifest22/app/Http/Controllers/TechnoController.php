@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use App\Models\Techno_ws_form;
 use App\Models\Ticket;
+use App\Models\User;
 
 class TechnoController extends Controller
 {
@@ -88,7 +89,8 @@ class TechnoController extends Controller
         ]);
 
         Ticket::where('email', Auth::user()->email)->update([
-            'techno_ws_status' => 1
+            'techno_ws_status' => 1,
+            'techno_seminar_status' => 1,
         ]);
 
         return redirect()->route('profile');
@@ -130,6 +132,10 @@ class TechnoController extends Controller
 
     public function saveRegisterSeminar()
     {
+        Ticket::where('email', Auth::user()->email)->update([
+            'techno_seminar_status' => 1
+        ]);
+
         // $status = Ticket::where('email', Auth::user()->email)->first();
 
         // if($status->techno_seminar_status === '2'){
@@ -140,8 +146,8 @@ class TechnoController extends Controller
         //     'techno_seminar_status' => '2'
         // ]);
 
-        // return redirect()->route('profile')->with('status', 'Registration Completed!');
-        return redirect()->route('techno');
+        return redirect()->route('profile');
+        // return redirect()->route('techno');
     }
 
     public function payment()
