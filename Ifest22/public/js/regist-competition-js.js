@@ -75,7 +75,7 @@ function AddMemberIntention(addMember, addMemberBtn, removeMemberBtn) {
     }
 }
 
-//  Buat DAC & Techno
+//  Buat DAC
 function AddMemberDAC(addMember, addMemberBtn, removeMemberBtn) {
     console.log(noBox);
     if (noBox == 1) {
@@ -86,6 +86,20 @@ function AddMemberDAC(addMember, addMemberBtn, removeMemberBtn) {
         document.getElementById("team_member_3").setAttribute("required", "");
         document.getElementById("team_member_3_institute").setAttribute("required", "");
         document.getElementById("team_member_3_id_card").setAttribute("required", "");
+    }
+}
+
+//  Buat Techno
+function AddMemberTechno(addMember, addMemberBtn, removeMemberBtn) {
+    console.log(noBox);
+    if (noBox == 1) {
+        noBox++;
+        document.getElementById(addMember).style.display = "block";
+        document.getElementById(addMemberBtn).style.display = "none";
+        document.getElementById(removeMemberBtn).style.display = "block";
+        document.getElementById("team_member_2").setAttribute("required", "");
+        document.getElementById("team_member_2_institute").setAttribute("required", "");
+        document.getElementById("team_member_2_id_card").setAttribute("required", "");
     }
 }
 
@@ -140,6 +154,23 @@ function RemoveMemberDAC(addMember, addMemberBtn, removeMemberBtn) {
         document.getElementById("team_member_1").removeAttribute("required");
         document.getElementById("team_member_1_institute").removeAttribute("required");
         document.getElementById("team_member_1_id_card").removeAttribute("required");
+    }
+    else if (noBox == 1) {
+        document.getElementById(addMember).style.display = "none";
+        document.getElementById(addMemberBtn).style.display = "block";
+        document.getElementById(removeMemberBtn).style.display = "none";
+    }
+}
+
+function RemoveMemberTechno(addMember, addMemberBtn, removeMemberBtn) {
+    console.log(noBox);
+    if (noBox == 2) {
+        noBox--;
+        document.getElementById(addMemberBtn).style.display = "none";
+        document.getElementById(removeMemberBtn).style.display = "block";
+        document.getElementById("team_member_2").removeAttribute("required");
+        document.getElementById("team_member_2_institute").removeAttribute("required");
+        document.getElementById("team_member_2_id_card").removeAttribute("required");
     }
     else if (noBox == 1) {
         document.getElementById(addMember).style.display = "none";

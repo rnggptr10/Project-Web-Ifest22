@@ -13,11 +13,19 @@ class Techno_ws_form extends Model
         'email',
         'team_name',
         'team_leader',
+        'team_leader_institute',
+        'team_leader_id_card',
         'team_member_1',
+        'team_member_1_institute',
+        'team_member_1_id_card',
         'team_member_2',
+        'team_member_2_institute',
+        'team_member_2_id_card',
         'proposal_link',
-        'id_card',
         'proof_payment',
-        'selected_team'
+        'status_pembayaran',
+        'selected_team',
+        'pitcdeck1_link',
+        'pitcdeck2_link',
     ];
 }

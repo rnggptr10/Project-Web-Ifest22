@@ -22,6 +22,7 @@
     <div id="regist-section-1">
         <div class="row mb-2">
             <div class="col-10 text-left" style="padding:0">
+                <!-- Input Team Name -->
                 <label for="team_name" class="placeholder regist-form-text" style="padding:0">{{ __('Team Name') }}</label>
                 <input id="team_name" name="team_name" type="text" class="form-control @error('team_name') is-invalid @enderror ifest-regist-form text-center" value="{{ old('team_name') }}" required autocomplete="team_name" autofocus placeholder="Insert Team Name">
                 @error('team_name')
@@ -44,6 +45,7 @@
                     <div class="col-10 text-left" style="padding:0">
                         <div class="row mb-2">
                             <div class="col">
+                                <!-- Input Nama Team Leader -->
                                 <input id="team_leader" name="team_leader" type="text" class="form-control @error('team_leader') is-invalid @enderror ifest-regist-form text-center" value="{{ old('team_leader') }}" required autocomplete="team_leader" autofocus placeholder="Insert Name">
                                 @error('team_leader')
                                 <div class="alert alert-danger mt-1 d-flex align-items-center" role="alert" style="width: 100%;
@@ -56,6 +58,7 @@
                         </div>
                         <div class="row mb-2">
                             <div class="col">
+                                <!-- Input Institute Team Leader -->
                                 <input id="team_leader_institute" name="team_leader_institute" type="text" class="form-control @error('team_leader_institute') is-invalid @enderror ifest-regist-form text-center" value="{{ old('team_leader_institute') }}" required autocomplete="team_leader_institute" autofocus placeholder="Insert Institute">
                                 @error('team_leader_institute')
                                 <div class="alert alert-danger mt-1 d-flex align-items-center" role="alert" style="width: 100%;
@@ -145,19 +148,7 @@
                                 @enderror
                             </div>
                         </div>
-                        <!-- KLO BLM UPLOAD CUMA 1 BUTTON -->
-                        <!-- <div class="row mb-2">
-                        <div class="col">
-                            <input type="file" id="id_card" name="id_card" accept=".png" value="+ ID Card" style="color:transparent">
-                            @error('id_card')
-                            <div class="alert alert-danger mt-1 d-flex align-items-center" role="alert" style="width: 100%;
-                            max-width: 333px; margin: 0 auto">
-                            <span class="iconify me-1" data-icon="akar-icons:circle-alert" data-inline="false" style="color: #842029;"></span>
-                            {{ $message }}
-                        </div>
-                        @enderror
-                    </div>
-                </div> -->
+
                     </div>
                 </div>
             </div>
@@ -341,19 +332,6 @@
                                 @enderror
                             </div>
                         </div>
-                        <!-- KLO BLM UPLOAD CUMA 1 BUTTON -->
-                        <!-- <div class="row mb-2">
-                        <div class="col">
-                            <input type="file" id="id_card" name="id_card" accept=".png" value="+ ID Card" style="color:transparent">
-                            @error('id_card')
-                            <div class="alert alert-danger mt-1 d-flex align-items-center" role="alert" style="width: 100%;
-                            max-width: 333px; margin: 0 auto">
-                            <span class="iconify me-1" data-icon="akar-icons:circle-alert" data-inline="false" style="color: #842029;"></span>
-                            {{ $message }}
-                        </div>
-                        @enderror
-                    </div>
-                </div> -->
                     </div>
                 </div>
             </div>
@@ -368,26 +346,6 @@
                 <button id="btn-removeRegisInt" type="button" class="input-element-regis mt-3" onclick="RemoveMemberIntention('addmember1', 'btn-addRegisInt', 'btn-removeRegisInt')" style="display:none">-</button>
             </div>
         </div>
-
-        <!-- <div class="mt-4 upload-idcard-regis">
-    <label for="id_card" class="file-upload d-flex justify-content-center align-items-center">
-        <span class="iconify me-2" data-icon="feather:upload" data-inline="false" style="color: #001d3d;">
-            </span> Upload ID-Card (ZIP File)
-        </label>
-        <br>
-        <input type="file" id="id_card" name="id_card" accept=".zip">
-        <div id="idcard-chosen" class="text-center">No file chosen</div>
-    </div>
-    <div class="hint hint-file hint-file-regis">
-        <p>ID-card file size limit to 2MB</p>
-    </div>
-    @error('id_card')
-    <div class="alert alert-danger mt-1 d-flex align-items-center" role="alert" style="width: 100%;
-    max-width: 333px; margin: 0 auto">
-    <span class="iconify me-1" data-icon="akar-icons:circle-alert" data-inline="false" style="color: #842029;"></span>
-    {{ $message }}
-</div>
-@enderror -->
 
         <div class="row mb-2 text-left">
             <div class="col" style="padding:0">
