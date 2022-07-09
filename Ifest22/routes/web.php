@@ -10,6 +10,7 @@ use App\Http\Controllers\IntentionController;
 use App\Http\Controllers\ProfilController;
 use App\Http\Controllers\StartupController;
 use App\Http\Controllers\TechnoController;
+use App\Http\Controllers\AdminController;
 
 /*
 |--------------------------------------------------------------------------
@@ -100,4 +101,5 @@ Route::middleware(['auth'])->group(function () {
 
 
 // Route for Admin Page Dashboard
-Route::get('/admin', [AdminController::class, 'dataStartup'])->name('admin-startup');
+Route::get('/admin/startup-talk', [AdminController::class, 'dataStartup'])->name('admin-startup');
+Route::get('/admin/intention', [AdminController::class, 'dataIntention'])->name('admin-intention');

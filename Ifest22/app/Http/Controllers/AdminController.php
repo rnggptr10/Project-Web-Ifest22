@@ -21,8 +21,11 @@ class AdminController extends Controller
      */
     public function dataStartup()
     {
-
-
         return view('admin.admin-startup');
+    }
+
+    public function dataIntention()
+    {
+        return view('admin.admin-intention');
     }
 }
