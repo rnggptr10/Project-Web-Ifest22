@@ -34,7 +34,7 @@ class CreateDaFormsTable extends Migration
             $table->string('paper_link')->nullable(); //
             $table->string('analytics_result')->nullable(); //
             $table->char('status_pembayaran', 1); //
-            $table->char('status_finalist', 0); //
+            $table->char('status_finalist', 1); //
             $table->timestamps();
         });
     }

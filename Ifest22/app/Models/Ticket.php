@@ -16,6 +16,7 @@ class Ticket extends Model
         'techno_seminar_status',
         'techno_ws_status',
         'startup_status',
-        'incon_status',
+        'semnas_status',
+        'semnas_paper_status',
     ];
 }

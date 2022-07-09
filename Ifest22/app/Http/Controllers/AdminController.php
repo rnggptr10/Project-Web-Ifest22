@@ -21,8 +21,6 @@ class AdminController extends Controller
      */
     public function dataStartup()
     {
-
-
         return view('admin.admin-startup');
     }
 }

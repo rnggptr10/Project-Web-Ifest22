@@ -96,9 +96,8 @@ class IntentionController extends Controller
             'team_member_4_institute' => $request->team_member_4_institute,
             'team_member_4_id_card' => $file_team_member_4,
             'proof_payment' => $request->payment_confirmation->store('intention-payment-proof'),
-            'proposal_link' => NULL,
-            'app_link' => NULL,
-            'finalist' => NULL,
+            'status_pembayaran' => 1,
+            'status_finalist' => 0,
         ]);
 
         Ticket::where('email', Auth::user()->email)->update([

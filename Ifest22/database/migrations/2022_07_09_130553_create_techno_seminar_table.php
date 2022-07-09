@@ -13,7 +13,7 @@ class CreateTechnoSeminarTable extends Migration
      */
     public function up()
     {
-        Schema::create('techno_seminar', function (Blueprint $table) {
+        Schema::create('techno_seminars', function (Blueprint $table) {
             $table->id();
             $table->string('email')->unique();
             $table->string('name')->nullable();

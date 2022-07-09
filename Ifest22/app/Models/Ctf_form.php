@@ -22,5 +22,6 @@ class Ctf_form extends Model
         'team_member_2_institute',
         'team_member_2_id_card',
         'proof_payment',
+        'status_pembayaran',
     ];
 }
