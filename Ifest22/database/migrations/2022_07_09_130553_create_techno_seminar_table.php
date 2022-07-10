@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateInconsTable extends Migration
+class CreateTechnoSeminarTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +13,11 @@ class CreateInconsTable extends Migration
      */
     public function up()
     {
-        Schema::create('incons', function (Blueprint $table) {
+        Schema::create('techno_seminars', function (Blueprint $table) {
             $table->id();
             $table->string('email')->unique();
-            $table->string('proof_payment');
+            $table->string('name')->nullable();
+            $table->string('institute')->nullable();
             $table->timestamps();
         });
     }
@@ -28,6 +29,6 @@ class CreateInconsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('incons');
+        Schema::dropIfExists('techno_seminar');
     }
 }

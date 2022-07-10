@@ -82,6 +82,7 @@ class CtfController extends Controller
             'team_member_2_institute' => $request->team_member_2_institute,
             'team_member_2_id_card' => $file_team_member_2,
             'proof_payment' => $request->payment_confirmation->store('ctf-payment-proof'),
+            'status_pembayaran' => 1, //
         ]);
 
         Ticket::where('email', Auth::user()->email)->update([

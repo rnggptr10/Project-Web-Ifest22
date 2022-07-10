@@ -33,9 +33,10 @@ class CreateIntentionFormsTable extends Migration
             $table->string('team_member_4_institute')->nullable();
             $table->string('team_member_4_id_card')->nullable();
             $table->string('proof_payment');
+            $table->char('status_pembayaran', 1);
             $table->string('proposal_link')->nullable();
             $table->string('app_link')->nullable();
-            $table->string('finalist')->nullable();
+            $table->char('status_finalist', 1);
             $table->timestamps();
         });
     }

@@ -5,12 +5,13 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Startup extends Model
+class Semnas extends Model
 {
     use HasFactory;
     protected $fillable = [
         'email',
         'name',
         'institute',
+        'proof_payment',
     ];
 }

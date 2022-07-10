@@ -11,6 +11,7 @@
 @extends('layouts.app')
 
 @section('content')
+
 <body style="background-color: #1c1c1c;">
     <div class="container" style="padding: 0; ">
         <div class="row">
@@ -27,7 +28,7 @@
                 <div class="row justify-content-center" align="center" id="technoWSPayment" style="padding-bottom: 30px;">
                     <div class="col-5">
                         <div class="row">
-                            <form action="@yield('regist_action_form')" method="post" enctype="multipart/form-data">
+                            <form action="{{route('semnas.registration')}}" method="post" enctype="multipart/form-data">
                                 @method('patch')
                                 @csrf
                                 <div id="regist-section-1">
@@ -62,14 +63,14 @@
                                             </div>
                                             <div class="row justify-content-center align-items-center" align="center" id="registCompButton2" style="padding:30px 0 30px 0; text-align:center;">
                                                 <div class="col">
-                                                    <button class="btn btn-outline-primary ifest-btn-outline-primary-dark-bg mt-3 mt-sm-0 fw-bold text-center" style="height:44px; width:128px;"><a class="ifest-btn-primary-dark-bg-text" href="{{ route('incon') }}">{{ __('< Back') }}</a></button>
+                                                    <button class="btn btn-outline-primary ifest-btn-outline-primary-dark-bg mt-3 mt-sm-0 fw-bold text-center" style="height:44px; width:128px;"><a class="ifest-btn-primary-dark-bg-text" href="{{ route('semnas') }}">{{ __('< Back') }}</a></button>
                                                 </div>
                                                 <div class="col">
-                                                    <button id="regist-submit-regist" type="submit" class="btn btn-primary ifest-btn-primary-dark-bg mt-3 mt-sm-0 fw-bold" style="height:44px; width:128px" disabled>{{ __('Submit') }}</button>
+                                                    <button id="regist-submit-regist" type="submit" class="btn btn-primary ifest-btn-primary-dark-bg mt-3 mt-sm-0 fw-bold" style="height:44px; width:128px">{{ __('Submit') }}</button>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div> 
+                                    </div>
                                 </div>
                             </form>
                         </div>

@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-class HomeController extends Controller
+class AdminController extends Controller
 {
     /**
      * Create a new controller instance.
@@ -19,14 +19,13 @@ class HomeController extends Controller
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */
-    public function index()
+    public function dataStartup()
     {
-        return view('home');
+        return view('admin.admin-startup');
     }
 
-    public function ipodIndex()
+    public function dataIntention()
     {
-        return view('events.ipod');
+        return view('admin.admin-intention');
     }
-    
 }

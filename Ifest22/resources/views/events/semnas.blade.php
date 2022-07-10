@@ -226,7 +226,7 @@ Seminar Nasional is a national seminar that invites experienced speakers in thos
                         <a class="ifest-btn-primary-dark-bg-text" href="{{route('login')}}">Register Now</a>
                         @endif
                         @else
-                        <a class="ifest-btn-primary-dark-bg-text" href="">Register Now</a>
+                        <a class="ifest-btn-primary-dark-bg-text" href="{{route('semnas.registration.view')}}">Register Now</a>
                         @endguest
                     </button>
                 </div>
@@ -260,23 +260,6 @@ Seminar Nasional is a national seminar that invites experienced speakers in thos
     </div>
 </div>
 @endsection
-
-<!-- @section('competition_button')
-<div class="col-2">
-    <button type="button" class="btn btn-outline-primary ifest-btn-outline-primary-dark-bg" style="width: 147px;height: 48px;">Guidebook</button>
-</div>
-<div class="col-2">
-    <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 147px;height: 48px;">
-        @guest
-        @if(Route::has('login'))
-        <a class="ifest-btn-primary-dark-bg-text" href="{{route('login')}}">Register Now</a>
-        @endif
-        @else
-        <a class="ifest-btn-primary-dark-bg-text" href="{{route('intention.registration.view')}}">Register Now</a>
-        @endguest
-    </button>
-</div>
-@endsection -->
 
 @section('cp1_media')
 <img class="logo-whatsapp" src="{{ URL::asset('icon/whatsapp.svg') }}" alt="Whatsapp">

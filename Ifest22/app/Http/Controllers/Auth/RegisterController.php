@@ -82,7 +82,8 @@ class RegisterController extends Controller
             'techno_seminar_status' => '0',
             'techno_ws_status' => '0',
             'startup_status' => '0',
-            'incon_status' => '0',
+            'semnas_status' => '0',
+            'semnas_paper_status' => '0',
         ]);
 
         return User::create([

@@ -25,5 +25,9 @@ class Da_Form extends Model
         'team_member_3_institute',
         'team_member_3_id_card',
         'proof_payment',
+        'paper_link',
+        'analytics_result',
+        'status_pembayaran',
+        'status_finalist',
     ];
 }

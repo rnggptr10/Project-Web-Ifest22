@@ -28,8 +28,9 @@ class Intention_form extends Model
         'team_member_4_institute',
         'team_member_4_id_card',
         'proof_payment',
+        'status_pembayaran',
         'proposal_link',
         'app_link',
-        'finalist',
+        'status_finalist',
     ];
 }

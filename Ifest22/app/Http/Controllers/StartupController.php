@@ -42,27 +42,19 @@ class StartupController extends Controller
         return redirect()->route('startup');
     }
 
-    public function saveRegister(Request $request)
+    public function saveRegister()
     {
-        $request->validate([
-            'payment_confirmation' => 'required|image|max:1024',
+        Startup::create([
+            'email' => Auth::user()->email,
+            'name' => Auth::user()->name,
+            'institute' => Auth::user()->institute,
         ]);
 
-        $payment_confirmation = $request->file('payment_confirmation');
-        $name_payment_confirmation = time() . "_" . $payment_confirmation->getClientOriginalName();
-        $payment_confirmation->storeAs('public/images/payment_confirmation/startup/', $name_payment_confirmation);
-
-        $email = Auth::user()->email;
-
-        Ticket::where('email', $email)->update([
+        Ticket::where('email', Auth::user()->email)->update([
             'startup_status' => '1'
         ]);
 
-        Startup::create([
-            'email' => $email,
-            'proof_payment' => $name_payment_confirmation,
-        ]);
 
-        return redirect()->route('profile')->with('status', 'Registration Completed!');
+        return redirect()->route('profile');
     }
 }

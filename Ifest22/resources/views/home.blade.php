@@ -48,9 +48,9 @@
         <!-- <h3>International Conference</h3> -->
         <div class="conference-btn">
 
-            <a href="{{ route('incon') }}"><span class="register">Register</span></a>
-            <!-- <a href="{{ route('incon') }}"><span class="register">See Details</span></a> -->
-            <a href="{{ route('incon') }}"><span class="details" id="details">Details</span></a>
+            <a href="{{ route('semnas') }}"><span class="register">Register</span></a>
+            <!-- <a href="{{ route('semnas') }}"><span class="register">See Details</span></a> -->
+            <a href="{{ route('semnas') }}"><span class="details" id="details">Details</span></a>
         </div>
     </div>
 </div>
@@ -88,10 +88,10 @@
                     <button class="btn btn-outline-primary ifest-btn-outline-primary-light-bg col-md-5 float-right mt-3 mt-sm-0 fw-bold"><a class="ifest-btn-outline-primary-light-bg-text" href="{{route('register')}}">Register</a></button>
 
                     <!-- <button class="register">
-                            <a href="{{ route('incon') }}">Register</a>
+                            <a href="{{ route('semnas') }}">Register</a>
                         </button> -->
                     <!-- <button class="details">
-                            <a href="{{ route('incon') }}">Details</a>
+                            <a href="{{ route('semnas') }}">Details</a>
                         </button> -->
                     <button class="btn btn-outline-primary ifest-btn-outline-primary-light-bg col-md-5 float-right mt-3 mt-sm-0 fw-bold"><a class="ifest-btn-outline-primary-light-bg-text" href="{{route('register')}}">Details</a></button>
 
@@ -115,7 +115,7 @@
                 <details>
                     <summary>Our Events</summary>
                     <!-- <a href="{{ route('startup') }}" class="burger-details" style="padding-left: 15px;">Startup Talk</a>
-                    <a href="{{ route('incon') }}" class="burger-details" style="padding-left: 15px;">Seminar Nasional</a>
+                    <a href="{{ route('semnas') }}" class="burger-details" style="padding-left: 15px;">Seminar Nasional</a>
                     <a href="{{ route('techno') }}" class="burger-details" style="padding-left: 15px;">Technopreneur</a> -->
         <!-- <a href="#" onclick="openPage('Home','StartupTalk-speakers' , this, '#291647')">Startup Talk</a>
                     <a href="#" onclick="openPage('News', 'Technopreneur-speakers', this, '#291647')">Technopreneur</a>

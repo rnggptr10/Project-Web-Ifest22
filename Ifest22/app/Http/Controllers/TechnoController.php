@@ -5,7 +5,9 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use App\Models\Techno_ws_form;
+use App\Models\Techno_seminar;
 use App\Models\Ticket;
+use App\Models\User;
 
 class TechnoController extends Controller
 {
@@ -81,14 +83,11 @@ class TechnoController extends Controller
             'team_member_2_id_card' => $file_team_member_2,
             'status_pembayaran' => 1,
             'selected_team' => 1,
-            // 'proposal_link' => null,
-            // 'proof_payment' => null,
-            // 'pitcdeck1_link' => null,
-            // 'pitcdeck2_link' => null,
         ]);
 
         Ticket::where('email', Auth::user()->email)->update([
-            'techno_ws_status' => 1
+            'techno_ws_status' => 1,
+            'techno_seminar_status' => 1,
         ]);
 
         return redirect()->route('profile');
@@ -130,18 +129,17 @@ class TechnoController extends Controller
 
     public function saveRegisterSeminar()
     {
-        // $status = Ticket::where('email', Auth::user()->email)->first();
+        Techno_seminar::create([
+            'email' => Auth::user()->email,
+            'name' => Auth::user()->name,
+            'institute' => Auth::user()->institute,
+        ]);
 
-        // if($status->techno_seminar_status === '2'){
-        //     return redirect()->route('profile');
-        // }
+        Ticket::where('email', Auth::user()->email)->update([
+            'techno_seminar_status' => 1
+        ]);
 
-        // Ticket::where('email',Auth::user()->email)->update([
-        //     'techno_seminar_status' => '2'
-        // ]);
-
-        // return redirect()->route('profile')->with('status', 'Registration Completed!');
-        return redirect()->route('techno');
+        return redirect()->route('profile');
     }
 
     public function payment()
