@@ -17,7 +17,7 @@
                         <h1 class="text-card-title">Competition Detail - @yield('event_title')</h1>
                     </div>
                     <div class="row">
-                        <div class="col-6">
+                        <div class="col-sm-6">
                             <div class="card ifest-card-details" style="padding:0;">
                                 <div class="row" align="center" style="background-color:#291647; margin:0; border-radius:3px 3px 0 0; padding: 5px 0 5px 0">
                                     <h2 class="text-details-card-title" style="color:white; padding:0; margin:0">Data Tim</h2>
@@ -47,7 +47,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-6">
+                        <div class="col-sm-6">
                             <div class="card ifest-card-details" style="padding:0;">
                                 <div class="row" align="center" style="background-color:#291647; margin:0; border-radius:3px 3px 0 0; padding: 5px 0 5px 0">
                                     <h2 class="text-details-card-title" style="color:white; padding:0; margin:0">Progress Lomba</h2>

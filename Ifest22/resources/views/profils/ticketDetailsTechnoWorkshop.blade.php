@@ -42,7 +42,7 @@
             </span>
         </p>
     </div>
-    <div class="col-4" align="center" style="padding:0">
+    <div class="col" align="center" style="padding:0">
         <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 120px;height: 48px;">
             <a class="ifest-btn-primary-dark-bg-text" href="{{ route('techno.submitting.proposal.view') }}">View</a>
         </button>
@@ -51,7 +51,7 @@
 @endsection
 
 @section('event_section_3')
-<div class="row align-items-center" align="left" style="padding:20px">
+<div class="row align-items-center" align="left" style="padding:20px; border-bottom:1px;">
     <div class="col-2" style="padding:0 15px 0 8px">
         <img class="circular-number" src="{{ URL::asset('icon/page-details/circle-3.svg') }}" alt="3">
     </div>
@@ -63,7 +63,7 @@
             </span>
         </p>
     </div>
-    <div class="col-4" align="center" style="padding:0">
+    <div class="col" align="center" style="padding:0">
         <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 120px;height: 48px;">
             <a class="ifest-btn-primary-dark-bg-text" href="{{ route('technoWorkshop.payment.view') }}">Submit</a>
         </button>
@@ -80,7 +80,7 @@
         <h6 class="text-tickets-head">Seminar</h6>
         <p class="text-tickets-desc">11, 18 September 2022</p>
     </div>
-    <div class="col-4" align="center" style="padding:0">
+    <div class="col" align="center" style="padding:0">
         <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 120px;height: 48px;">
             <a class="ifest-btn-primary-dark-bg-text" href="">Link Zoom</a>
         </button>
@@ -101,7 +101,7 @@
             </span>
         </p>
     </div>
-    <div class="col-4" align="center" style="padding:0">
+    <div class="col" align="center" style="padding:0">
         <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 120px;height: 48px;">
             <a class="ifest-btn-primary-dark-bg-text" href="{{ route('techno.submitting.pitchdeck1.view') }}">Submit</a>
         </button>
@@ -122,7 +122,7 @@
             </span>
         </p>
     </div>
-    <div class="col-4" align="center" style="padding:0">
+    <div class="col" align="center" style="padding:0">
         <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 120px;height: 48px;">
             <a class="ifest-btn-primary-dark-bg-text" href="">View</a>
         </button>
@@ -143,7 +143,7 @@
             </span>
         </p>
     </div>
-    <div class="col-4" align="center" style="padding:0">
+    <div class="col" align="center" style="padding:0">
         <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 120px;height: 48px;">
             <a class="ifest-btn-primary-dark-bg-text" href="{{ route('techno.submitting.pitchdeck2.view') }}">Submit</a>
         </button>
