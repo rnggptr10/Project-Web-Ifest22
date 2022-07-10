@@ -5,8 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use App\Models\Ticket;
-use App\Models\Incon;
-use App\Models\Profile;
+use App\Models\Semnas;
 
 class SemnasController extends Controller
 {
@@ -22,50 +21,42 @@ class SemnasController extends Controller
         // }
 
         // return view('events.incon', compact('registered', 'onLogin'));
-        return view('events.incon');
+        return view('events.semnas');
     }
 
     public function registration()
     {
         $check = Ticket::where('email', Auth::user()->email)->first();
 
-        if ($check->incon_status != '0') {
+        // Error Handling
+        if ($check->semnas_status != '0') {
             return redirect()->route('profile');
         }
 
-        return view('registration.regis-incon');
+        return view('registration.regis-semnas');
     }
 
     public function saveRegister(Request $request)
     {
         $request->validate([
-            'id_card' => 'required|image|max:1024',
             'payment_confirmation' => 'required|image|max:1024',
         ]);
 
-        $id_card = $request->file('id_card');
-        $name_id_card = time() . "_" . $id_card->getClientOriginalName();
-        $id_card->storeAs('public/images/id_card/', $name_id_card);
-
-        $payment_confirmation = $request->file('payment_confirmation');
-        $name_payment_confirmation = time() . "_" . $payment_confirmation->getClientOriginalName();
-        $payment_confirmation->storeAs('public/images/payment_confirmation/incon/', $name_payment_confirmation);
+        // Alamat Penyimpanan 
+        $request->payment_confirmation->store('semnas-payment-proof');
 
 
-        $email = Auth::user()->email;
-        Profile::where('email', $email)->update([
-            'id_card' => $name_id_card
+        Semnas::create([
+            'email' => Auth::user()->email,
+            'name' => Auth::user()->name,
+            'institute' => Auth::user()->institute,
+            'proof_payment' => $request->payment_confirmation->store('semnas-payment-proof'),
         ]);
 
-        Ticket::where('email', $email)->update([
-            'incon_status' => '1'
+        Ticket::where('email', Auth::user()->email)->update([
+            'semnas_status' => '1'
         ]);
 
-        Incon::create([
-            'email' => $email,
-            'proof_payment' => $name_payment_confirmation,
-        ]);
-
-        return redirect()->route('profile')->with('status', 'Registration Completed!');
+        return redirect()->route('profile');
     }
 }

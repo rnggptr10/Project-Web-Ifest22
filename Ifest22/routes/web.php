@@ -6,7 +6,6 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\SemnasController;
-use App\Http\Controllers\IntentionController;
 use App\Http\Controllers\ProfilController;
 use App\Http\Controllers\StartupController;
 use App\Http\Controllers\TechnoController;
@@ -65,7 +64,7 @@ Route::get('/startup-talk', [StartupController::class, 'index'])->name('startup'
 Route::get('/ipod', [HomeController::class, 'ipodIndex'])->name('ipod');
 
 // Route for Competition
-Route::get('/intention', [IntentionController::class, 'index'])->name('intention');
+Route::get('/intention', [SemnasController::class, 'index'])->name('intention');
 Route::get('/capture-the-flag', [CtfController::class, 'index'])->name('ctf');
 ROute::get('/data-analysis-competition', [DataAnalysisController::class, 'index'])->name('da');
 
@@ -79,9 +78,6 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/data-analysis-competition/registration', [DataAnalysisController::class, 'registration'])->name('dac.registration.view');
     Route::patch('/data-analysis-competition/registration', [DataAnalysisController::class, 'saveRegister'])->name('dac.registration');
 
-    // Seminar Nasional
-    Route::get('/semnas/registration', [IntentionController::class, 'registration'])->name('intention.registration.view');
-    Route::patch('/semnas/registration', [IntentionController::class, 'saveRegister'])->name('intention.registration');
 
     // Techno Workshop
     Route::get('/technopreneur-workshop/registration', [TechnoController::class, 'registrationWorkshop'])->name('technoWorkshop.registration.view');
@@ -96,6 +92,12 @@ Route::middleware(['auth'])->group(function () {
 
     // StartupTalk
     Route::get('/startup-talk/registration', [StartupController::class, 'saveRegister'])->name('startup.registration');
+
+    // Seminar Nasional Non Pemakalah
+    Route::get('/semnas/registration', [SemnasController::class, 'registration'])->name('semnas.registration.view');
+    Route::patch('/semnas/registration', [SemnasController::class, 'saveRegister'])->name('semnas.registration');
+
+
 
     // Seminar Nasional Payment
     Route::get('/seminar-nasional/registration', [SemnasController::class, 'registration'])->name('seminarNasional.registration.view');
