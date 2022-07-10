@@ -13,7 +13,7 @@
 @section('event_title', 'Data Analysis Competition')
 
 @section('event_team_data')
-<div class="col-6">
+<div class="col-sm-6">
     <div class="card ifest-card-details" style="padding:0;">
         <div class="row" align="center" style="background-color:#291647; margin:0; border-radius:3px 3px 0 0; padding: 5px 0 5px 0">
             <h2 class="text-details-card-title" style="color:white; padding:0; margin:0">Data Tim</h2>
@@ -50,7 +50,7 @@
 @endsection
 
 @section('event_progress')
-<div class="col-6">
+<div class="col-sm-6">
     <div class="card ifest-card-details" style="padding:0;">
         <div class="row" align="center" style="background-color:#291647; margin:0; border-radius:3px 3px 0 0; padding: 5px 0 5px 0">
             <h2 class="text-details-card-title" style="color:white; padding:0; margin:0">Progress Lomba</h2>

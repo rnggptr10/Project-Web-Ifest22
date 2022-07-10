@@ -13,7 +13,7 @@
 @section('event_title', 'Technopreneur Workshop')
 
 @section('event_team_data')
-<div class="col-6">
+<div class="col-sm-6">
     <div class="card ifest-card-details" style="padding:0;">
         <div class="row" align="center" style="background-color:#291647; margin:0; border-radius:3px 3px 0 0; padding: 5px 0 5px 0">
             <h2 class="text-details-card-title" style="color:white; padding:0; margin:0">Data Tim</h2>
@@ -49,7 +49,7 @@
 @endsection
 
 @section('event_progress')
-<div class="col-6">
+<div class="col-sm-6">
     <div class="card ifest-card-details" style="padding:0;">
         <div class="row" align="center" style="background-color:#291647; margin:0; border-radius:3px 3px 0 0; padding: 5px 0 5px 0">
             <h2 class="text-details-card-title" style="color:white; padding:0; margin:0">Progress Lomba</h2>
@@ -88,7 +88,7 @@
                     @endif
                 </p>
             </div>
-            <div class="col-4" align="center" style="padding:0">
+            <div class="col" align="center" style="padding:0">
                 @if ($techno_ws->proposal_link === null)
                     <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 120px;height: 48px;">
                         <a class="ifest-btn-primary-dark-bg-text" href="{{ route('technoWorkshop.submitting.proposal.view') }}">Submit</a>
@@ -121,7 +121,7 @@
                     @endif
                 </p>
             </div>
-            <div class="col-4" align="center" style="padding:0">
+            <div class="col" align="center" style="padding:0">
                 @if ($techno_ws->proposal_link === null)
                     <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 120px;height: 48px;">
                         <a class="ifest-btn-primary-dark-bg-text" href="{{ route('technoWorkshop.payment.view') }}">Submit</a>
@@ -141,7 +141,7 @@
                 <h6 class="text-tickets-head">Seminar</h6>
                 <p class="text-tickets-desc">11, 18 September 2022</p>
             </div>
-            <div class="col-4" align="center" style="padding:0">
+            <div class="col" align="center" style="padding:0">
                 <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 120px;height: 48px;" disabled>
                     <a class="ifest-btn-primary-dark-bg-text" href="">Link Zoom</a>
                 </button>
@@ -161,7 +161,7 @@
                     @endif
                 </p>
             </div>
-            <div class="col-4" align="center" style="padding:0">
+            <div class="col" align="center" style="padding:0">
                 @if ($techno_ws->pitcdeck1_link === null)
                     <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 120px;height: 48px;">
                         <a class="ifest-btn-primary-dark-bg-text" href="{{ route('technoWorkshop.submitting.pitchdeck1.view') }}">Submit</a>
@@ -186,7 +186,7 @@
                     </span> -->
                 </p>
             </div>
-            <!-- <div class="col-4" align="center" style="padding:0">
+            <!-- <div class="col" align="center" style="padding:0">
                 <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 120px;height: 48px;">
                     <a class="ifest-btn-primary-dark-bg-text" href="">View</a>
                 </button>
@@ -206,7 +206,7 @@
                     @endif
                 </p>
             </div>
-            <div class="col-4" align="center" style="padding:0">
+            <div class="col" align="center" style="padding:0">
                 @if ($techno_ws->pitcdeck1_link === null)
                     <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 120px;height: 48px;">
                         <a class="ifest-btn-primary-dark-bg-text" href="{{ route('technoWorkshop.submitting.pitchdeck2.view') }}">Submit</a>
