@@ -122,11 +122,11 @@
                 </p>
             </div>
             <div class="col" align="center" style="padding:0">
-                @if ($techno_ws->proposal_link === null)
+                @if ($techno_ws->proof_payment === null)
                     <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 120px;height: 48px;">
                         <a class="ifest-btn-primary-dark-bg-text" href="{{ route('technoWorkshop.payment.view') }}">Submit</a>
                     </button>
-                @elseif ($techno_ws->proposal_link !== null)
+                @elseif ($techno_ws->proof_payment !== null)
                     <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 120px;height: 48px;">
                         <a class="ifest-btn-primary-dark-bg-text" href="">Re-Submit?</a>
                     </button>
@@ -157,7 +157,7 @@
                     @if ($techno_ws->pitcdeck1_link === null)
                         <span class="text-tickets-status status-red">Unsubmitted</span>
                     @elseif ($techno_ws->pitcdeck1_link !== null)
-                        <span class="text-tickets-status status-green">Submitted. Waiting for Review.</span>
+                        <span class="text-tickets-status status-green">Submitted</span>
                     @endif
                 </p>
             </div>
@@ -207,11 +207,11 @@
                 </p>
             </div>
             <div class="col" align="center" style="padding:0">
-                @if ($techno_ws->pitcdeck1_link === null)
+                @if ($techno_ws->pitcdeck2_link === null)
                     <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 120px;height: 48px;">
                         <a class="ifest-btn-primary-dark-bg-text" href="{{ route('technoWorkshop.submitting.pitchdeck2.view') }}">Submit</a>
                     </button>
-                @elseif ($techno_ws->pitcdeck1_link !== null)
+                @elseif ($techno_ws->pitcdeck2_link !== null)
                     <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 120px;height: 48px;">
                         <a class="ifest-btn-primary-dark-bg-text" href="">Re-Submit?</a>
                     </button>

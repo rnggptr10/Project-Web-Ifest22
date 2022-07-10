@@ -148,4 +148,29 @@ class ProfilController extends Controller
         $data = User::where('email', Auth::user()->email)->first();
         return view('submitting.submitting-techno-pitchdeck-2', compact('data'));
     }
+
+    // SEMNAS PRESENTER
+    public function ticketDetailsSemnasPresenter()
+    {
+        $data = User::where('email', Auth::user()->email)->first();
+        return view('profils.ticketDetailsSemnasPresenter', compact('data'));
+    }
+
+    public function paymentSemnasPresenter()
+    {
+        $data = User::where('email', Auth::user()->email)->first();
+        return view('registration.payment-semnas-presenter', compact('data'));
+    }
+
+    public function submittingPaper1SemnasPresenter()
+    {
+        $data = User::where('email', Auth::user()->email)->first();
+        return view('submitting.submitting-semnas-paper-1', compact('data'));
+    }
+
+    public function submittingPaper2SemnasPresenter()
+    {
+        $data = User::where('email', Auth::user()->email)->first();
+        return view('submitting.submitting-semnas-paper-2', compact('data'));
+    }
 }

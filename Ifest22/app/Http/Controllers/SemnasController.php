@@ -59,4 +59,42 @@ class SemnasController extends Controller
 
         return redirect()->route('profile');
     }
+
+    public function presenterRegistration()
+    {
+        $check = Ticket::where('email', Auth::user()->email)->first();
+
+        // Error Handling
+        if ($check->semnas_paper_status != '0') {
+            return redirect()->route('profile');
+        }
+
+        return view('registration.regis-semnas-presenter');
+    }
+
+    // public function presenterSaveRegister(Request $request)
+    // {
+    //     $request->validate([
+    //         // ini nanti butuh link buat paper
+    //         'payment_confirmation' => 'required|image|max:1024',
+    //     ]);
+
+    //     // Alamat Penyimpanan 
+    //     $request->payment_confirmation->store('semnas-payment-proof');
+
+
+    //     Semnas::create([
+    //         'email' => Auth::user()->email,
+    //         'name' => Auth::user()->name,
+    //         'institute' => Auth::user()->institute,
+    //         'proof_payment' => $request->payment_confirmation->store('semnas-payment-proof'),
+    //         // ini nanti butuh link buat paper
+    //     ]);
+
+    //     Ticket::where('email', Auth::user()->email)->update([
+    //         'semnas_paper_status' => '1'
+    //     ]);
+
+    //     return redirect()->route('profile');
+    // }
 }

@@ -188,7 +188,7 @@ Seminar Nasional is a national seminar that invites experienced speakers in thos
                         <a class="ifest-btn-primary-dark-bg-text" href="{{route('login')}}">Buy Ticket</a>
                         @endif
                         @else
-                        <a class="ifest-btn-primary-dark-bg-text" href="{{route('seminarNasional.registration.view')}}">Register Now</a>
+                        <a class="ifest-btn-primary-dark-bg-text" href="{{route('semnas.registration.view')}}">Register Now</a>
                         @endguest
                     </button>
                 </div>
@@ -216,8 +216,7 @@ Seminar Nasional is a national seminar that invites experienced speakers in thos
                     <img class="events-card-logo" src="{{ URL::asset('icon/paper.png') }}" alt="Paper">
                 </div>
                 <div class="col-5" style="line-height: 5px;">
-                    <h5 style="color:black">Paper Submission</h5>
-
+                    <h5 style="color:black">Presenter Registration</h5>
                 </div>
                 <div class="col-2" style="padding-left:45px">
                     <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 147px;height: 48px;">
@@ -226,7 +225,7 @@ Seminar Nasional is a national seminar that invites experienced speakers in thos
                         <a class="ifest-btn-primary-dark-bg-text" href="{{route('login')}}">Register Now</a>
                         @endif
                         @else
-                        <a class="ifest-btn-primary-dark-bg-text" href="{{route('semnas.registration.view')}}">Register Now</a>
+                        <a class="ifest-btn-primary-dark-bg-text" href="{{route('semnas.presenter.registration.view')}}">Register Now</a>
                         @endguest
                     </button>
                 </div>

@@ -115,26 +115,23 @@
                         </div>
                         @elseif ($status->semnas_status === '0')
                         @endif
-                        @if ($status->semnas_paper_status === '1')
                         <div class="row" align="center" style="padding:5px 0 5px 0">
                             <div class="col">
                                 <div class="card" style="background-color:#e6eef7;padding:20px">
                                     <div class="row align-items-center">
                                         <div class="col-7" align="left">
                                             <h6 class="text-tickets-head">Seminar Nasional - Pemakalah</h6>
-                                            <p class="text-tickets-desc">Juli - Oktober<br>Registration Status : <span class="text-tickets-status status-green">{{ $data->institute }}</span></p>
+                                            <p class="text-tickets-desc">Juli - Oktober</p>
                                         </div>
                                         <div class="col">
                                             <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 147px;height: 48px;">
-                                                <a class="ifest-btn-primary-dark-bg-text" href="">See Details</a>
+                                                <a class="ifest-btn-primary-dark-bg-text" href="{{ route('profile.ticketDetailsSemnasPresenter') }}">See Details</a>
                                             </button>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        @elseif ($status->semnas_paper_status === '0')
-                        @endif
                         @if ($status->techno_seminar_status === '1')
                         <div class="row" align="center" style="padding:5px 0 5px 0">
                             <div class="col">
@@ -186,7 +183,7 @@
                                     <div class="row align-items-center">
                                         <div class="col-7" align="left">
                                             <h6 class="text-tickets-head">Innovative Technology Competition (INTENTION)</h6>
-                                            <p class="text-tickets-desc">Juli - Oktober<br>Registration Status : <span class="text-tickets-status" style="color:green">{{ $data->institute }}</span></p>
+                                            <p class="text-tickets-desc">Juli - Oktober</p>
                                         </div>
                                         <div class="col">
                                             <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 147px;height: 48px;">
@@ -206,7 +203,7 @@
                                     <div class="row align-items-center">
                                         <div class="col-7" align="left">
                                             <h6 class="text-tickets-head">Data Analysis Competition</h6>
-                                            <p class="text-tickets-desc">Juli - Oktober<br>Registration Status : <span class="text-tickets-status" style="color:green">{{ $data->institute }}</span></p>
+                                            <p class="text-tickets-desc">Juli - Oktober</p>
                                         </div>
                                         <div class="col">
                                             <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 147px;height: 48px;">
@@ -226,7 +223,7 @@
                                     <div class="row align-items-center">
                                         <div class="col-7" align="left">
                                             <h6 class="text-tickets-head">Capture The Flag</h6>
-                                            <p class="text-tickets-desc">Juli - September<br>Registration Status : <span class="text-tickets-status" style="color:green">{{ $data->institute }}</span></p>
+                                            <p class="text-tickets-desc">Juli - September</p>
                                         </div>
                                         <div class="col">
                                             <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 147px;height: 48px;">

@@ -87,7 +87,7 @@ class DataAnalysisController extends Controller
             'team_member_3_id_card' => $file_team_member_3,
             'proof_payment' =>  $request->payment_confirmation->store('dac-payment-proof'),
             'status_pembayaran' => 1,
-            'status_finalist' => 1,
+            'status_finalist' => 0,
         ]);
 
         Ticket::where('email', Auth::user()->email)->update([

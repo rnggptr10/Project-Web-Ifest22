@@ -21,14 +21,14 @@
                         <h1 class="regist-text-title">Payment Form</h1>
                     </div>
                     <div style="padding-bottom: 10px;">
-                        <h2 class="regist-text-desc">Seminar Nasional - Non Presenter</h2>
+                        <h2 class="regist-text-desc">Seminar Nasional - Presenter</h2>
                     </div>
                 </div>
 
                 <div class="row justify-content-center" align="center" id="technoWSPayment" style="padding-bottom: 30px;">
                     <div class="col-5">
                         <div class="row">
-                            <form action="{{route('semnas.registration')}}" method="post" enctype="multipart/form-data">
+                            <form action="" method="post" enctype="multipart/form-data">
                                 @method('patch')
                                 @csrf
                                 <div id="regist-section-1">
@@ -63,7 +63,7 @@
                                             </div>
                                             <div class="row justify-content-center align-items-center" align="center" id="registCompButton2" style="padding:30px 0 30px 0; text-align:center;">
                                                 <div class="col">
-                                                    <button class="btn btn-outline-primary ifest-btn-outline-primary-dark-bg mt-3 mt-sm-0 fw-bold text-center" style="height:44px; width:128px;"><a class="ifest-btn-primary-dark-bg-text" href="{{ route('semnas') }}">{{ __('< Back') }}</a></button>
+                                                    <button class="btn btn-outline-primary ifest-btn-outline-primary-dark-bg mt-3 mt-sm-0 fw-bold text-center" style="height:44px; width:128px;"><a class="ifest-btn-primary-dark-bg-text" href="{{ route('profile.ticketDetailsSemnasPresenter') }}">{{ __('< Back') }}</a></button>
                                                 </div>
                                                 <div class="col">
                                                     <button id="regist-submit-regist" type="submit" class="btn btn-primary ifest-btn-primary-dark-bg mt-3 mt-sm-0 fw-bold" style="height:44px; width:128px">{{ __('Submit') }}</button>

@@ -41,6 +41,7 @@ Route::get('/profil/ticket-details-intention', [ProfilController::class, 'ticket
 Route::get('/profil/ticket-details-dac', [ProfilController::class, 'ticketDetailsDac'])->name('profile.ticketDetailsDac');
 Route::get('/profil/ticket-details-ctf', [ProfilController::class, 'ticketDetailsCtf'])->name('profile.ticketDetailsCtf');
 Route::get('/profil/ticket-details-technopreneur-workshop', [ProfilController::class, 'ticketDetailsTechnoWorkshop'])->name('profile.ticketDetailsTechnoWorkshop');
+Route::get('/profil/ticket-details-seminar-nasional/presenter', [ProfilController::class, 'ticketDetailsSemnasPresenter'])->name('profile.ticketDetailsSemnasPresenter');
 
 // Submitting's route
 Route::get('/profil/ticket-details-intention/submit-proposal', [ProfilController::class, 'submittingProposalIntention'])->name('intention.submitting.proposal.view');
@@ -57,6 +58,13 @@ Route::get('/profil/ticket-details-technopreneur-workshop/submit-pitchdeck-1', [
 Route::patch('/profil/ticket-details-technopreneur-workshop/submit-pitchdeck-1', [ProfilController::class, 'belom'])->name('technoWorkshop.submitting.pitchdeck1');
 Route::get('/profil/ticket-details-technopreneur-workshop/submit-pitchdeck-2', [ProfilController::class, 'submittingPitchdeck2Techno'])->name('technoWorkshop.submitting.pitchdeck2.view');
 Route::patch('/profil/ticket-details-technopreneur-workshop/submit-pitchdeck-2', [ProfilController::class, 'belom'])->name('technoWorkshop.submitting.pitchdeck2');
+
+Route::get('/profil/ticket-details-seminar-nasional/presenter/payment', [ProfilController::class, 'paymentSemnasPresenter'])->name('semnas.presenter.payment.view');
+Route::patch('/profil/ticket-details-seminar-nasional/presenter/payment', [ProfilController::class, 'belom'])->name('semnas.presenter.payment');
+Route::get('/profil/ticket-details-seminar-nasional/presenter/submit-paper-1', [ProfilController::class, 'submittingPaper1SemnasPresenter'])->name('semnas.presenter.submitting.paper1.view');
+Route::patch('/profil/ticket-details-seminar-nasional/presenter/submit-paper-1', [ProfilController::class, 'belom'])->name('semnas.presenter.submitting.paper1');
+Route::get('/profil/ticket-details-seminar-nasional/presenter/submit-paper-2', [ProfilController::class, 'submittingPaper2SemnasPresenter'])->name('semnas.presenter.submitting.paper2.view');
+Route::patch('/profil/ticket-details-seminar-nasional/presenter/submit-paper-2', [ProfilController::class, 'belom'])->name('semnas.presenter.submitting.paper2');
 
 // Route for Event
 Route::get('/seminar-nasional', [SemnasController::class, 'index'])->name('semnas');
@@ -98,12 +106,12 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/startup-talk/registration', [StartupController::class, 'saveRegister'])->name('startup.registration');
 
     // Seminar Nasional Non Pemakalah
-    Route::get('/semnas/registration', [SemnasController::class, 'registration'])->name('semnas.registration.view');
-    Route::patch('/semnas/registration', [SemnasController::class, 'saveRegister'])->name('semnas.registration');
+    Route::get('/seminar-nasional/registration', [SemnasController::class, 'registration'])->name('semnas.registration.view');
+    Route::patch('/seminar-nasional/registration', [SemnasController::class, 'saveRegister'])->name('semnas.registration');
 
-    // Seminar Nasional Payment
-    Route::get('/seminar-nasional/registration', [SemnasController::class, 'registration'])->name('seminarNasional.registration.view');
-    Route::patch('/seminar-nasional/registration', [SemnasController::class, 'saveRegister'])->name('seminarNasional.registration');
+    // Seminar Nasional Pemakalah
+    Route::get('/seminar-nasional/presenter-registration', [SemnasController::class, 'presenterRegistration'])->name('semnas.presenter.registration.view');
+    Route::patch('/seminar-nasional/presenter-registration', [SemnasController::class, 'presenterSaveRegister'])->name('semnas.presenter.registration');
 });
 
 
