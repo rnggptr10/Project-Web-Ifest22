@@ -38,13 +38,16 @@
                             <div class="card-hamburger text-left">
                                 <details>
                                     <summary style="background-color: transparent;">Event</summary>
-                                    <a href="" class="burger-details" style="padding-left: 15px;">Startup Talk</a>
-                                    <a href="" class="burger-details" style="padding-left: 15px;">Seminar Nasional</a>
-                                    <a href="" class="burger-details" style="padding-left: 15px;">Technopreneur</a>
-                                    <a href="" class="burger-details" style="padding-left: 15px;">INTENTION</a>
-                                    <a href="" class="burger-details" style="padding-left: 15px;">DAC</a>
-                                    <a href="" class="burger-details" style="padding-left: 15px;">CTF</a>
+                                    <a href="{{ route('admin-startup') }}" class="burger-details" style="padding-left: 15px;">Startup Talk</a>
+                                    <a href="{{ route('admin-semnas') }}" class="burger-details" style="padding-left: 15px;">Seminar Nasional</a>
+                                    <a href="" class="burger-details" style="padding-left: 15px;">Seminar Nasional - Presenter</a>
+                                    <a href="{{ route('admin-techno') }}" class="burger-details" style="padding-left: 15px;">Techno Seminar</a>
+                                    <a href="{{ route('admin-techno-ws') }}" class="burger-details" style="padding-left: 15px;">Techno Workshop</a>
+                                    <a href="{{ route('admin-intention') }}" class="burger-details" style="padding-left: 15px;">INTENTION</a>
+                                    <a href="{{ route('admin-dac') }}" class="burger-details" style="padding-left: 15px;">DAC</a>
+                                    <a href="{{ route('admin-ctf') }}" class="burger-details" style="padding-left: 15px;">CTF</a>
                                     <a href="" class="burger-details" style="padding-left: 15px;">Ipod</a>
+                                    <a href="{{ route('admin-user') }}" class="burger-details" style="padding-left: 15px;">Users</a>
                                 </details>
                             </div>
                         </div>
@@ -59,12 +62,15 @@
                             </a>
                             <div class="dropdown-menu border-dropmenu" aria-labelledby="navbarDropdown" style="background-color: #1c1c1c;">
                                 <a class="item-dropmenu" href="{{ route('admin-startup') }}">Startup Talk</a>
-                                <a class="item-dropmenu" href="">Seminar Nasional</a>
-                                <a class="item-dropmenu" href="">Technopreneur</a>
-                                <a class="item-dropmenu" href="">CTF</a>
-                                <a class="item-dropmenu" href="">DAC</a>
+                                <a class="item-dropmenu" href="{{ route('admin-semnas') }}">Seminar Nasional</a>
+                                <a class="item-dropmenu" href="">Seminar Nasional - Presenter</a>
+                                <a class="item-dropmenu" href="{{ route('admin-techno') }}">Techno Seminar</a>
+                                <a class="item-dropmenu" href="{{ route('admin-techno-ws') }}">Techno Workshop</a>
+                                <a class="item-dropmenu" href="{{ route('admin-ctf') }}">CTF</a>
+                                <a class="item-dropmenu" href="{{ route('admin-dac') }}">DAC</a>
                                 <a class="item-dropmenu" href="{{ route('admin-intention') }}">Intention</a>
                                 <a class="item-dropmenu" href="">Ipod</a>
+                                <a class="item-dropmenu" href="{{ route('admin-user') }}">Users</a>
                             </div>
                         </li>
                     </ul>

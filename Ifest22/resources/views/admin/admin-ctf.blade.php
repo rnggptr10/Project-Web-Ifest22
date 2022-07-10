@@ -7,7 +7,7 @@
 <link rel="stylesheet" href="{{ URL::asset('css/bootstrap.min.css') }}">
 @endsection
 
-@section('admin_title', 'INTENTION')
+@section('admin_title', 'CTF')
 
 @section('admin_detail')
 <div class="row align-items-center justify-content-center" align="center" id="tableDataStartup" style="padding-top: 10px;padding-bottom: 10px;">
@@ -25,15 +25,13 @@
                             <th scope="col">Nama Ketua</th>
                             <th scope="col">Anggota 1</th>
                             <th scope="col">Anggota 2</th>
-                            <th scope="col">Anggota 3</th>
-                            <th scope="col">Anggota 4</th>
                             <th scope="col">Bukti Bayar</th>
                             <th scope="col">Status Konfirmasi</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            @foreach ($intention as $data)
+                            @foreach ($ctf as $data)
                                 <td>{{ $data->email }}</td>
                                 <td>{{ $data->team_name }}</td>
                                 <td>
@@ -52,22 +50,6 @@
                                     @if ($data->team_member_2 !== null)
                                         {{ $data->team_member_2 }} - {{ $data->team_member_2_institute }} -
                                         <a href="{{asset('storage/' . $data['team_member_2_id_card'])}}"> Id Card</a>
-                                    @else
-                                        NULL
-                                    @endif
-                                </td>
-                                <td>
-                                    @if ($data->team_member_3 !== null)
-                                        {{ $data->team_member_3 }} - {{ $data->team_member_3_institute }} -
-                                        <a href="{{asset('storage/' . $data['team_member_3_id_card'])}}"> Id Card</a>
-                                    @else
-                                        NULL
-                                    @endif
-                                </td>
-                                <td>
-                                    @if ($data->team_member_4 !== null)
-                                        {{ $data->team_member_4 }} - {{ $data->team_member_4_institute }} -
-                                        <a href="{{asset('storage/' . $data['team_member_4_id_card'])}}"> Id Card</a>
                                     @else
                                         NULL
                                     @endif
@@ -91,62 +73,6 @@
                                     </div>
                                 </td>
                             @endforeach
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-        <div class="row justify-content-center" style="padding-bottom: 10px;">
-            <h1 class="text-table-title ">Data Project Lomba</h1>
-        </div>
-        <div class="row justify-content-center" style="padding-bottom: 30px;">
-            <div class="table-responsive">
-                <table class="table table-hover">
-                    <thead class="thead-dark">
-                        <tr>
-                            <th scope="col">Nama Tim</th>
-                            <th scope="col">Nama Ketua</th>
-                            <th scope="col">Status Tim</th>
-                            <th scope="col">Link Proposal</th>
-                            <th scope="col">Link Project</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                        @foreach ($intention as $data)
-                            <td>{{ $data->team_name }}</td>
-                            <td>{{ $data->team_leader }}</td>
-                            <td>
-                                <div class="btn-group">
-                                    <!-- <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        Confirmed
-                                    </button>
-                                    <div class="dropdown-menu">
-                                        <a class="dropdown-item" href="#">Action</a>
-                                        <a class="dropdown-item" href="#">Another action</a>
-                                        <a class="dropdown-item" href="#">Something else here</a>
-                                    </div> -->
-                                    <select name="confirm-status" id="confirm-status" style="color:black">
-                                        <option value="Participant">Participant</option>
-                                        <option value="Finalist" active>Finalist</option>
-                                    </select>
-                                </div>
-                            </td>
-                            <td>
-                                @if ($data->proposal_link !== null)
-                                    <a href="">{{ $data->proposal_link }}</a>
-                                @else
-                                    NULL
-                                @endif
-                            </td>
-                            <td>
-                                @if ($data->app_link !== null)
-                                    <a href="">{{ $data->app_link }}</a>
-                                @else
-                                    NULL
-                                @endif
-                            </td>
-                        @endforeach
                         </tr>
                     </tbody>
                 </table>

@@ -7,7 +7,7 @@
 <link rel="stylesheet" href="{{ URL::asset('css/bootstrap.min.css') }}">
 @endsection
 
-@section('admin_title', 'INTENTION')
+@section('admin_title', 'DAC')
 
 @section('admin_detail')
 <div class="row align-items-center justify-content-center" align="center" id="tableDataStartup" style="padding-top: 10px;padding-bottom: 10px;">
@@ -26,14 +26,13 @@
                             <th scope="col">Anggota 1</th>
                             <th scope="col">Anggota 2</th>
                             <th scope="col">Anggota 3</th>
-                            <th scope="col">Anggota 4</th>
                             <th scope="col">Bukti Bayar</th>
                             <th scope="col">Status Konfirmasi</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            @foreach ($intention as $data)
+                            @foreach ($dac as $data)
                                 <td>{{ $data->email }}</td>
                                 <td>{{ $data->team_name }}</td>
                                 <td>
@@ -64,14 +63,6 @@
                                         NULL
                                     @endif
                                 </td>
-                                <td>
-                                    @if ($data->team_member_4 !== null)
-                                        {{ $data->team_member_4 }} - {{ $data->team_member_4_institute }} -
-                                        <a href="{{asset('storage/' . $data['team_member_4_id_card'])}}"> Id Card</a>
-                                    @else
-                                        NULL
-                                    @endif
-                                </td>
                                 <td><a href="{{asset('storage/' . $data['proof_payment'])}}"> Proof Payment</a></td>
                                 <td>
                                     <div class="btn-group">
@@ -84,9 +75,8 @@
                                             <a class="dropdown-item" href="#">Something else here</a>
                                         </div> -->
                                         <select name="confirm-status" id="confirm-status" style="color:black">
-                                            <option value="Confirmed">Confirmed</option>
-                                            <option value="Pending" active>Pending</option>
-                                            <option value="Declined">Declined</option>
+                                            <option value="Participant">Participant</option>
+                                            <option value="Finalist" active>Finalist</option>
                                         </select>
                                     </div>
                                 </td>
@@ -107,13 +97,13 @@
                             <th scope="col">Nama Tim</th>
                             <th scope="col">Nama Ketua</th>
                             <th scope="col">Status Tim</th>
-                            <th scope="col">Link Proposal</th>
-                            <th scope="col">Link Project</th>
+                            <th scope="col">Link Paper</th>
+                            <th scope="col">Link Hasil Analisis</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                        @foreach ($intention as $data)
+                        @foreach ($dac as $data)
                             <td>{{ $data->team_name }}</td>
                             <td>{{ $data->team_leader }}</td>
                             <td>
@@ -127,21 +117,22 @@
                                         <a class="dropdown-item" href="#">Something else here</a>
                                     </div> -->
                                     <select name="confirm-status" id="confirm-status" style="color:black">
-                                        <option value="Participant">Participant</option>
-                                        <option value="Finalist" active>Finalist</option>
+                                        <option value="Confirmed">Confirmed</option>
+                                        <option value="Pending" active>Pending</option>
+                                        <option value="Declined">Declined</option>
                                     </select>
                                 </div>
                             </td>
                             <td>
-                                @if ($data->proposal_link !== null)
-                                    <a href="">{{ $data->proposal_link }}</a>
+                                @if ($data->paper_link !== null)
+                                    <a href="">{{ $data->paper_link }}</a>
                                 @else
                                     NULL
                                 @endif
                             </td>
                             <td>
-                                @if ($data->app_link !== null)
-                                    <a href="">{{ $data->app_link }}</a>
+                                @if ($data->analytics_result !== null)
+                                    <a href="">{{ $data->analytics_result }}</a>
                                 @else
                                     NULL
                                 @endif

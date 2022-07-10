@@ -116,5 +116,11 @@ Route::middleware(['auth'])->group(function () {
 
 
 // Route for Admin Page Dashboard
+Route::get('/admin/users', [AdminController::class, 'dataUser'])->name('admin-user');
 Route::get('/admin/startup-talk', [AdminController::class, 'dataStartup'])->name('admin-startup');
+Route::get('/admin/technopreneur', [AdminController::class, 'dataTechno'])->name('admin-techno');
+Route::get('/admin/technopreneur-workshop', [AdminController::class, 'dataTechnoWs'])->name('admin-techno-ws');
+Route::get('/admin/seminar-nasional', [AdminController::class, 'dataSemnas'])->name('admin-semnas');
 Route::get('/admin/intention', [AdminController::class, 'dataIntention'])->name('admin-intention');
+Route::get('/admin/dac', [AdminController::class, 'dataDac'])->name('admin-dac');
+Route::get('/admin/ctf', [AdminController::class, 'dataCtf'])->name('admin-ctf');

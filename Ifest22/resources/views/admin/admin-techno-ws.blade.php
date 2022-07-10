@@ -7,7 +7,7 @@
 <link rel="stylesheet" href="{{ URL::asset('css/bootstrap.min.css') }}">
 @endsection
 
-@section('admin_title', 'INTENTION')
+@section('admin_title', 'Technopreneur Workshop')
 
 @section('admin_detail')
 <div class="row align-items-center justify-content-center" align="center" id="tableDataStartup" style="padding-top: 10px;padding-bottom: 10px;">
@@ -25,15 +25,13 @@
                             <th scope="col">Nama Ketua</th>
                             <th scope="col">Anggota 1</th>
                             <th scope="col">Anggota 2</th>
-                            <th scope="col">Anggota 3</th>
-                            <th scope="col">Anggota 4</th>
                             <th scope="col">Bukti Bayar</th>
                             <th scope="col">Status Konfirmasi</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            @foreach ($intention as $data)
+                            @foreach ($techno_ws as $data)
                                 <td>{{ $data->email }}</td>
                                 <td>{{ $data->team_name }}</td>
                                 <td>
@@ -52,22 +50,6 @@
                                     @if ($data->team_member_2 !== null)
                                         {{ $data->team_member_2 }} - {{ $data->team_member_2_institute }} -
                                         <a href="{{asset('storage/' . $data['team_member_2_id_card'])}}"> Id Card</a>
-                                    @else
-                                        NULL
-                                    @endif
-                                </td>
-                                <td>
-                                    @if ($data->team_member_3 !== null)
-                                        {{ $data->team_member_3 }} - {{ $data->team_member_3_institute }} -
-                                        <a href="{{asset('storage/' . $data['team_member_3_id_card'])}}"> Id Card</a>
-                                    @else
-                                        NULL
-                                    @endif
-                                </td>
-                                <td>
-                                    @if ($data->team_member_4 !== null)
-                                        {{ $data->team_member_4 }} - {{ $data->team_member_4_institute }} -
-                                        <a href="{{asset('storage/' . $data['team_member_4_id_card'])}}"> Id Card</a>
                                     @else
                                         NULL
                                     @endif
@@ -107,13 +89,14 @@
                             <th scope="col">Nama Tim</th>
                             <th scope="col">Nama Ketua</th>
                             <th scope="col">Status Tim</th>
-                            <th scope="col">Link Proposal</th>
-                            <th scope="col">Link Project</th>
+                            <th scope="col">Link Abstract</th>
+                            <th scope="col">Link Pitchdeck 1</th>
+                            <th scope="col">Link Pitchdeck 2</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                        @foreach ($intention as $data)
+                        @foreach ($techno_ws as $data)
                             <td>{{ $data->team_name }}</td>
                             <td>{{ $data->team_leader }}</td>
                             <td>
@@ -140,8 +123,15 @@
                                 @endif
                             </td>
                             <td>
-                                @if ($data->app_link !== null)
-                                    <a href="">{{ $data->app_link }}</a>
+                                @if ($data->pitcdeck1_link !== null)
+                                    <a href="">{{ $data->pitcdeck1_link }}</a>
+                                @else
+                                    NULL
+                                @endif
+                            </td>
+                            <td>
+                                @if ($data->pitcdeck2_link !== null)
+                                    <a href="">{{ $data->pitcdeck2_link }}</a>
                                 @else
                                     NULL
                                 @endif

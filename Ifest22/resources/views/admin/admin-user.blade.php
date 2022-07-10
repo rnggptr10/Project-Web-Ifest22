@@ -7,46 +7,34 @@
 <link rel="stylesheet" href="{{ URL::asset('css/bootstrap.min.css') }}">
 @endsection
 
-@section('admin_title', 'Startup Talk')
+@section('admin_title', 'Users')
 
 @section('admin_detail')
 <div class="row align-items-center justify-content-center" align="center" id="tableDataStartup" style="padding-top: 10px;padding-bottom: 10px;">
     <div class="col" style="padding: 10px 0 10px 0;">
         <div class="row justify-content-center" style="padding-bottom: 10px;">
-            <h1 class="text-table-title ">Data Peserta</h1>
+            <h1 class="text-table-title ">Data Users</h1>
         </div>
         <div class="row justify-content-center" style="padding-bottom: 30px;">
             <div class="table-responsive">
                 <table class="table table-hover">
                     <thead class="thead-dark">
                         <tr>
+                            <th scope="col">Id</th>
                             <th scope="col">Email</th>
-                            <th scope="col">Nama Peserta</th>
+                            <th scope="col">Nama</th>
                             <th scope="col">Instansi</th>
-                            <th scope="col">Status Konfirmasi</th>
+                            <th scope="col">Image</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                        @foreach ($startup as $data)
+                        @foreach ($user as $data)
+                            <td>{{ $data->id }}</td>
                             <td>{{ $data->email }}</td>
                             <td>{{ $data->name }}</td>
                             <td>{{ $data->institute }}</td>
-                            <td>
-                                <div class="btn-group">
-                                    <!-- <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        Confirmed
-                                    </button>
-                                    <div class="dropdown-menu">
-                                        <a class="dropdown-item" href="#">Action</a>
-                                        <a class="dropdown-item" href="#">Another action</a>
-                                        <a class="dropdown-item" href="#">Something else here</a>
-                                    </div> -->
-                                    <select name="startup-status" id="startup-status" style="color:black">
-                                        <option value="Confirmed">Confirmed</option>
-                                    </select>
-                                </div>
-                            </td>
+                            <td><a href="{{asset('storage/' . $data['image'])}}"> Profpic</a></td>
                         @endforeach
                         </tr>
                     </tbody>

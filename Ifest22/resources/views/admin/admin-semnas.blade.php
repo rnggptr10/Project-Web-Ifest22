@@ -7,7 +7,7 @@
 <link rel="stylesheet" href="{{ URL::asset('css/bootstrap.min.css') }}">
 @endsection
 
-@section('admin_title', 'Startup Talk')
+@section('admin_title', 'Seminar Nasional')
 
 @section('admin_detail')
 <div class="row align-items-center justify-content-center" align="center" id="tableDataStartup" style="padding-top: 10px;padding-bottom: 10px;">
@@ -23,15 +23,17 @@
                             <th scope="col">Email</th>
                             <th scope="col">Nama Peserta</th>
                             <th scope="col">Instansi</th>
+                            <th scope="col">Bukti Pembayaran</th>
                             <th scope="col">Status Konfirmasi</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                        @foreach ($startup as $data)
+                        @foreach ($semnas as $data)
                             <td>{{ $data->email }}</td>
                             <td>{{ $data->name }}</td>
                             <td>{{ $data->institute }}</td>
+                            <td><a href="{{asset('storage/' . $data['proof_payment'])}}"> Proof Payment</a></td>
                             <td>
                                 <div class="btn-group">
                                     <!-- <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
