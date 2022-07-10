@@ -43,8 +43,8 @@
                                 <details>
                                     <summary style="background-color: transparent;">Event</summary>
                                     <a href="{{ route('startup') }}" class="burger-details" style="padding-left: 15px;">Startup Talk</a>
-                                    <a href="{{ route('semnas') }}" class="burger-details" style="padding-left: 15px;">Seminar Nasional</a>
                                     <a href="{{ route('techno') }}" class="burger-details" style="padding-left: 15px;">Technopreneur</a>
+                                    <a href="{{ route('semnas') }}" class="burger-details" style="padding-left: 15px;">Seminar Nasional</a>
                                 </details>
                             </div>
                         </div>
@@ -52,9 +52,9 @@
                             <div class="card-hamburger text-left">
                                 <details>
                                     <summary>Competition</summary>
-                                    <a href="{{ route('ctf') }}" class="burger-details" style="padding-left: 15px;">CTF</a>
-                                    <a href="{{ route('da') }}" class="burger-details" style="padding-left: 15px;">DAC</a>
                                     <a href="{{ route('intention') }}" class="burger-details" style="padding-left: 15px;">Intention</a>
+                                    <a href="{{ route('da') }}" class="burger-details" style="padding-left: 15px;">DAC</a>
+                                    <a href="{{ route('ctf') }}" class="burger-details" style="padding-left: 15px;">CTF</a>
                                 </details>
                             </div>
                         </div>
@@ -70,8 +70,8 @@
                             </a>
                             <div class="dropdown-menu border-dropmenu" aria-labelledby="navbarDropdown" style="background-color: #1c1c1c;">
                                 <a class="item-dropmenu" href="{{ route('startup') }}">Startup Talk</a>
-                                <a class="item-dropmenu" href="{{ route('semnas') }}">Seminar Nasional</a>
                                 <a class="item-dropmenu" href="{{ route('techno') }}">Technopreneur</a>
+                                <a class="item-dropmenu" href="{{ route('semnas') }}">Seminar Nasional</a>
                             </div>
                         </li>
                         <li class="nav-item dropdown">
@@ -79,9 +79,9 @@
                                 Competition
                             </a>
                             <div class="dropdown-menu border-dropmenu" aria-labelledby="navbarDropdown" style="background-color: #1c1c1c; color: #ffff;">
-                                <a class="item-dropmenu" href="{{ route('ctf') }}" style="color: #8267B4;">CTF</a>
+                                <a class="item-dropmenu" href="{{ route('intention') }}" style="color: #8267B4;">Intention</a>    
                                 <a class="item-dropmenu" href="{{ route('da') }}" style="color: #8267B4;">DAC</a>
-                                <a class="item-dropmenu" href="{{ route('intention') }}" style="color: #8267B4;">Intention</a>
+                                <a class="item-dropmenu" href="{{ route('ctf') }}" style="color: #8267B4;">CTF</a>
                             </div>
                         </li>
                         <li class="nav-item">

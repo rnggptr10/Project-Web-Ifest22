@@ -1,7 +1,8 @@
 @import url(font.css);
 @import url(generalStyle.css);
 
-html, body{
+html,
+body {
     overflow-x: hidden;
     width: 100%;
 }
@@ -53,6 +54,13 @@ html, body{
     font-size: 12px;
     line-height: 18px;
     font-weight: 600;
+}
+
+.no-tickets-text {
+    font-family: "Poppins-Regular";
+    font-size: 16px;
+    line-height: 18px;
+    color: #ffffff;
 }
 
 /* ------------------- Image Profile ------------------- */
@@ -117,17 +125,17 @@ html, body{
 }
 
 @media screen and (max-width: 1199px) {
-    .ifest-btn-primary-dark-bg{
+    .ifest-btn-primary-dark-bg {
         margin-top: 20px;
     }
 
-    .col-7{
+    .col-7 {
         max-width: 100%;
     }
 }
 
 @media screen and (max-width: 575px) {
-    .col-sm-6{
+    .col-sm-6 {
         margin-top: 30px;
     }
 }

@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\CtfController;
 use App\Http\Controllers\DataAnalysisController;
+use App\Http\Controllers\IntentionController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
@@ -50,12 +51,12 @@ Route::get('/profil/ticket-details-dac/submit-paper', [ProfilController::class, 
 Route::patch('/profil/ticket-details-dac/submit-paper', [ProfilController::class, 'belom'])->name('dac.submitting.paper');
 Route::get('/profil/ticket-details-dac/submit-analysis', [ProfilController::class, 'submittingAnalysisDAC'])->name('dac.submitting.analysis.view');
 Route::patch('/profil/ticket-details-dac/submit-analysis', [ProfilController::class, 'belom'])->name('dac.submitting.analysis');
-Route::get('/profil/ticket-details-technopreneur-workshop/submit-proposal', [ProfilController::class, 'submittingProposalTechno'])->name('techno.submitting.proposal.view');
-Route::patch('/profil/ticket-details-technopreneur-workshop/submit-proposal', [ProfilController::class, 'belom'])->name('techno.submitting.proposal');
-Route::get('/profil/ticket-details-technopreneur-workshop/submit-pitchdeck-1', [ProfilController::class, 'submittingPitchdeck1Techno'])->name('techno.submitting.pitchdeck1.view');
-Route::patch('/profil/ticket-details-technopreneur-workshop/submit-pitchdeck-1', [ProfilController::class, 'belom'])->name('techno.submitting.pitchdeck1');
-Route::get('/profil/ticket-details-technopreneur-workshop/submit-pitchdeck-2', [ProfilController::class, 'submittingPitchdeck2Techno'])->name('techno.submitting.pitchdeck2.view');
-Route::patch('/profil/ticket-details-technopreneur-workshop/submit-pitchdeck-2', [ProfilController::class, 'belom'])->name('techno.submitting.pitchdeck2');
+Route::get('/profil/ticket-details-technopreneur-workshop/submit-proposal', [ProfilController::class, 'submittingProposalTechno'])->name('technoWorkshop.submitting.proposal.view');
+Route::patch('/profil/ticket-details-technopreneur-workshop/submit-proposal', [ProfilController::class, 'belom'])->name('technoWorkshop.submitting.proposal');
+Route::get('/profil/ticket-details-technopreneur-workshop/submit-pitchdeck-1', [ProfilController::class, 'submittingPitchdeck1Techno'])->name('technoWorkshop.submitting.pitchdeck1.view');
+Route::patch('/profil/ticket-details-technopreneur-workshop/submit-pitchdeck-1', [ProfilController::class, 'belom'])->name('technoWorkshop.submitting.pitchdeck1');
+Route::get('/profil/ticket-details-technopreneur-workshop/submit-pitchdeck-2', [ProfilController::class, 'submittingPitchdeck2Techno'])->name('technoWorkshop.submitting.pitchdeck2.view');
+Route::patch('/profil/ticket-details-technopreneur-workshop/submit-pitchdeck-2', [ProfilController::class, 'belom'])->name('technoWorkshop.submitting.pitchdeck2');
 
 // Route for Event
 Route::get('/seminar-nasional', [SemnasController::class, 'index'])->name('semnas');
@@ -64,7 +65,7 @@ Route::get('/startup-talk', [StartupController::class, 'index'])->name('startup'
 Route::get('/ipod', [HomeController::class, 'ipodIndex'])->name('ipod');
 
 // Route for Competition
-Route::get('/intention', [SemnasController::class, 'index'])->name('intention');
+Route::get('/intention', [IntentionController::class, 'index'])->name('intention');
 Route::get('/capture-the-flag', [CtfController::class, 'index'])->name('ctf');
 ROute::get('/data-analysis-competition', [DataAnalysisController::class, 'index'])->name('da');
 
@@ -78,6 +79,9 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/data-analysis-competition/registration', [DataAnalysisController::class, 'registration'])->name('dac.registration.view');
     Route::patch('/data-analysis-competition/registration', [DataAnalysisController::class, 'saveRegister'])->name('dac.registration');
 
+    // DAC
+    Route::get('/intention/registration', [IntentionController::class, 'registration'])->name('intention.registration.view');
+    Route::patch('/intention/registration', [IntentionController::class, 'saveRegister'])->name('intention.registration');
 
     // Techno Workshop
     Route::get('/technopreneur-workshop/registration', [TechnoController::class, 'registrationWorkshop'])->name('technoWorkshop.registration.view');
@@ -96,8 +100,6 @@ Route::middleware(['auth'])->group(function () {
     // Seminar Nasional Non Pemakalah
     Route::get('/semnas/registration', [SemnasController::class, 'registration'])->name('semnas.registration.view');
     Route::patch('/semnas/registration', [SemnasController::class, 'saveRegister'])->name('semnas.registration');
-
-
 
     // Seminar Nasional Payment
     Route::get('/seminar-nasional/registration', [SemnasController::class, 'registration'])->name('seminarNasional.registration.view');

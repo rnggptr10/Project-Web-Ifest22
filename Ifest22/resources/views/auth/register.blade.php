@@ -81,7 +81,9 @@
                         @enderror
                     </div>
                     <div class="form-group form-action-d-flex mb-3" style="margin-top:20px">
-                        <button class="btn btn-outline-primary ifest-btn-outline-primary-light-bg col-md-5 float-right mt-3 mt-sm-0 fw-bold" href="">{{ __('< Back') }}</button>
+                        <button type="button" class="btn btn-outline-primary ifest-btn-outline-primary-light-bg col-md-5 float-right mt-3 mt-sm-0 fw-bold">
+                            <a href="{{ route('login') }}" class="ifest-btn-outline-primary-light-bg-text">{{ __('< Back') }}</a>
+                        </button>
                         <button type="submit" class="btn btn-primary ifest-btn-primary-light-bg col-md-5 float-right mt-3 mt-sm-0 fw-bold">{{ __('Register') }}</button>
                     </div>
                 </form>

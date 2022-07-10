@@ -70,151 +70,180 @@
                     </div>
                     <!-- NANTI INI PAKE LOOPING TERGANTUNG TIKET DI USER -->
                     <!-- DATANYA JG BEDA TIAP TIKET, DI SET DI SETIAP IF ELSE -->
-                    <div class="row" align="center" style="padding:5px 0 5px 0">
-                        <div class="col">
-                            <div class="card" style="background-color:#e6eef7;padding:20px">
-                                <div class="row align-items-center">
-                                    <div class="col-7" align="left">
-                                        <h6 class="text-tickets-head">Startup Talk</h6>
-                                        <p class="text-tickets-desc">20-21 Agustus 2022<br>Registration Status : <span class="text-tickets-status" style="color:green">{{ $data->institute }}</span></p>
-                                    </div>
-                                    <div class="col">
-                                        <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 147px;height: 48px;">
-                                            <a class="ifest-btn-primary-dark-bg-text" href="">Link Zoom</a>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row" align="center" style="padding:5px 0 5px 0">
-                        <div class="col">
-                            <div class="card" style="background-color:#e6eef7;padding:20px">
-                                <div class="row align-items-center">
-                                    <div class="col-7" align="left">
-                                        <h6 class="text-tickets-head">Seminar Nasional - Non Pemakalah</h6>
-                                        <p class="text-tickets-desc">20-21 Agustus 2022<br>Registration Status : <span class="text-tickets-status status-orange">{{ $data->institute }}</span></p>
-                                    </div>
-                                    <div class="col">
-                                        <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 147px;height: 48px;">
-                                            <a class="ifest-btn-primary-dark-bg-text" href="">Link Zoom</a>
-                                        </button>
+                    @if ($status->startup_status === '1' || $status->semnas_status === '1' || $status->semnas_paper_status === '1' || $status->techno_seminar_status === '1' || $status->techno_ws_status === '1' || $status->intention_status === '1' || $status->dac_status === '1' || $status->ctf_status === '1')
+                        @if ($status->startup_status === '1')
+                        <div class="row" align="center" style="padding:5px 0 5px 0">
+                            <div class="col">
+                                <div class="card" style="background-color:#e6eef7;padding:20px">
+                                    <div class="row align-items-center">
+                                        <div class="col-7" align="left">
+                                            <h6 class="text-tickets-head">Startup Talk</h6>
+                                            <p class="text-tickets-desc">20-21 Agustus 2022<br>Registration Status : 
+                                                <span class="text-tickets-status status-green">
+                                                    Confirmed
+                                                </span>
+                                            </p>
+                                        </div>
+                                        <div class="col">
+                                            <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 147px;height: 48px;" disabled>
+                                                <a class="ifest-btn-primary-dark-bg-text" href="">Link Zoom</a>
+                                            </button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="row" align="center" style="padding:5px 0 5px 0">
-                        <div class="col">
-                            <div class="card" style="background-color:#e6eef7;padding:20px">
-                                <div class="row align-items-center">
-                                    <div class="col-7" align="left">
-                                        <h6 class="text-tickets-head">Seminar Nasional - Pemakalah</h6>
-                                        <p class="text-tickets-desc">Juli - Oktober<br>Registration Status : <span class="text-tickets-status status-green">{{ $data->institute }}</span></p>
-                                    </div>
-                                    <div class="col">
-                                        <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 147px;height: 48px;">
-                                            <a class="ifest-btn-primary-dark-bg-text" href="">See Details</a>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row" align="center" style="padding:5px 0 5px 0">
-                        <div class="col">
-                            <div class="card" style="background-color:#e6eef7;padding:20px">
-                                <div class="row align-items-center">
-                                    <div class="col-7" align="left">
-                                        <h6 class="text-tickets-head">Technopreneur Seminar</h6>
-                                        <p class="text-tickets-desc">11, 18 September 2022<br>Registration Status : <span class="text-tickets-status" style="color:green">{{ $data->institute }}</span></p>
-                                    </div>
-                                    <div class="col">
-                                        <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 147px;height: 48px;">
-                                            <a class="ifest-btn-primary-dark-bg-text" href="">Link Zoom</a>
-                                        </button>
+                        @elseif ($status->startup_status === '0')
+                        @endif
+                        @if ($status->semnas_status === '1')
+                        <div class="row" align="center" style="padding:5px 0 5px 0">
+                            <div class="col">
+                                <div class="card" style="background-color:#e6eef7;padding:20px">
+                                    <div class="row align-items-center">
+                                        <div class="col-7" align="left">
+                                            <h6 class="text-tickets-head">Seminar Nasional - Non Pemakalah</h6>
+                                            <p class="text-tickets-desc">20-21 Agustus 2022<br>Registration Status : <span class="text-tickets-status status-orange">{{ $data->institute }}</span></p>
+                                        </div>
+                                        <div class="col">
+                                            <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 147px;height: 48px;" disabled>
+                                                <a class="ifest-btn-primary-dark-bg-text" href="">Link Zoom</a>
+                                            </button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    @if ($status->intention_status === '1')
-                    <div class="row" align="center" style="padding:5px 0 5px 0">
-                        <div class="col">
-                            <div class="card" style="background-color:#e6eef7;padding:20px">
-                                <div class="row align-items-center">
-                                    <div class="col-7" align="left">
-                                        <h6 class="text-tickets-head">Innovative Technology Competition (INTENTION)</h6>
-                                        <p class="text-tickets-desc">Juli - Oktober<br>Registration Status : <span class="text-tickets-status" style="color:green">{{ $data->institute }}</span></p>
-                                    </div>
-                                    <div class="col">
-                                        <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 147px;height: 48px;">
-                                            <a class="ifest-btn-primary-dark-bg-text" href="{{ route('profile.ticketDetailsIntention') }}">See Details</a>
-                                        </button>
+                        @elseif ($status->semnas_status === '0')
+                        @endif
+                        @if ($status->semnas_paper_status === '1')
+                        <div class="row" align="center" style="padding:5px 0 5px 0">
+                            <div class="col">
+                                <div class="card" style="background-color:#e6eef7;padding:20px">
+                                    <div class="row align-items-center">
+                                        <div class="col-7" align="left">
+                                            <h6 class="text-tickets-head">Seminar Nasional - Pemakalah</h6>
+                                            <p class="text-tickets-desc">Juli - Oktober<br>Registration Status : <span class="text-tickets-status status-green">{{ $data->institute }}</span></p>
+                                        </div>
+                                        <div class="col">
+                                            <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 147px;height: 48px;">
+                                                <a class="ifest-btn-primary-dark-bg-text" href="">See Details</a>
+                                            </button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    @elseif ($status->intention_status === '0')
+                        @elseif ($status->semnas_paper_status === '0')
+                        @endif
+                        @if ($status->techno_seminar_status === '1')
+                        <div class="row" align="center" style="padding:5px 0 5px 0">
+                            <div class="col">
+                                <div class="card" style="background-color:#e6eef7;padding:20px">
+                                    <div class="row align-items-center">
+                                        <div class="col-7" align="left">
+                                            <h6 class="text-tickets-head">Technopreneur Seminar</h6>
+                                            <p class="text-tickets-desc">20-21 Agustus 2022<br>Registration Status : 
+                                                <span class="text-tickets-status status-green">
+                                                    Confirmed
+                                                </span>
+                                            </p>
+                                        </div>
+                                        <div class="col">
+                                            <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 147px;height: 48px;" disabled>
+                                                <a class="ifest-btn-primary-dark-bg-text" href="">Link Zoom</a>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        @elseif ($status->techno_seminar_status === '0')
+                        @endif
+                        @if ($status->techno_ws_status === '1')
+                        <div class="row" align="center" style="padding:5px 0 5px 0">
+                            <div class="col">
+                                <div class="card" style="background-color:#e6eef7;padding:20px">
+                                    <div class="row align-items-center">
+                                        <div class="col-7" align="left">
+                                            <h6 class="text-tickets-head">Technopreneur Workshop</h6>
+                                            <p class="text-tickets-desc">Juli - Oktober</p>
+                                        </div>
+                                        <div class="col">
+                                            <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 147px;height: 48px;">
+                                                <a class="ifest-btn-primary-dark-bg-text" href="{{ route('profile.ticketDetailsTechnoWorkshop') }}">See Details</a>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        @elseif ($status->techno_ws_status === '0')
+                        @endif
+                        @if ($status->intention_status === '1')
+                        <div class="row" align="center" style="padding:5px 0 5px 0">
+                            <div class="col">
+                                <div class="card" style="background-color:#e6eef7;padding:20px">
+                                    <div class="row align-items-center">
+                                        <div class="col-7" align="left">
+                                            <h6 class="text-tickets-head">Innovative Technology Competition (INTENTION)</h6>
+                                            <p class="text-tickets-desc">Juli - Oktober<br>Registration Status : <span class="text-tickets-status" style="color:green">{{ $data->institute }}</span></p>
+                                        </div>
+                                        <div class="col">
+                                            <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 147px;height: 48px;">
+                                                <a class="ifest-btn-primary-dark-bg-text" href="{{ route('profile.ticketDetailsIntention') }}">See Details</a>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        @elseif ($status->intention_status === '0')
+                        @endif
+                        @if ($status->da_status === '1')
+                        <div class="row" align="center" style="padding:5px 0 5px 0">
+                            <div class="col">
+                                <div class="card" style="background-color:#e6eef7;padding:20px">
+                                    <div class="row align-items-center">
+                                        <div class="col-7" align="left">
+                                            <h6 class="text-tickets-head">Data Analysis Competition</h6>
+                                            <p class="text-tickets-desc">Juli - Oktober<br>Registration Status : <span class="text-tickets-status" style="color:green">{{ $data->institute }}</span></p>
+                                        </div>
+                                        <div class="col">
+                                            <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 147px;height: 48px;">
+                                                <a class="ifest-btn-primary-dark-bg-text" href="{{ route('profile.ticketDetailsDac') }}">See Details</a>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        @elseif ($status->da_status === '0')
+                        @endif
+                        @if ($status->ctf_status === '1')
+                        <div class="row" align="center" style="padding:5px 0 5px 0">
+                            <div class="col">
+                                <div class="card" style="background-color:#e6eef7;padding:20px">
+                                    <div class="row align-items-center">
+                                        <div class="col-7" align="left">
+                                            <h6 class="text-tickets-head">Capture The Flag</h6>
+                                            <p class="text-tickets-desc">Juli - September<br>Registration Status : <span class="text-tickets-status" style="color:green">{{ $data->institute }}</span></p>
+                                        </div>
+                                        <div class="col">
+                                            <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 147px;height: 48px;">
+                                                <a class="ifest-btn-primary-dark-bg-text" href="{{ route('profile.ticketDetailsCtf') }}">See Details</a>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        @elseif ($status->ctf_status === '0')
+                        @endif
+                    @else
+                        <div class="row" align="center" style="padding:20px 0 5px 0">
+                            <p class="no-tickets-text">You don't have any tickets yet</p>
+                        </div>
                     @endif
-                    @if ($status->da_status === '1')
-                    <div class="row" align="center" style="padding:5px 0 5px 0">
-                        <div class="col">
-                            <div class="card" style="background-color:#e6eef7;padding:20px">
-                                <div class="row align-items-center">
-                                    <div class="col-7" align="left">
-                                        <h6 class="text-tickets-head">Data Analysis Competition</h6>
-                                        <p class="text-tickets-desc">Juli - Oktober<br>Registration Status : <span class="text-tickets-status" style="color:green">{{ $data->institute }}</span></p>
-                                    </div>
-                                    <div class="col">
-                                        <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 147px;height: 48px;">
-                                            <a class="ifest-btn-primary-dark-bg-text" href="{{ route('profile.ticketDetailsDac') }}">See Details</a>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    @elseif ($status->da_status === '0')
-                    @endif
-                    @if ($status->ctf_status === '1')
-                    <div class="row" align="center" style="padding:5px 0 5px 0">
-                        <div class="col">
-                            <div class="card" style="background-color:#e6eef7;padding:20px">
-                                <div class="row align-items-center">
-                                    <div class="col-7" align="left">
-                                        <h6 class="text-tickets-head">Capture The Flag</h6>
-                                        <p class="text-tickets-desc">Juli - September<br>Registration Status : <span class="text-tickets-status" style="color:green">{{ $data->institute }}</span></p>
-                                    </div>
-                                    <div class="col">
-                                        <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 147px;height: 48px;">
-                                            <a class="ifest-btn-primary-dark-bg-text" href="{{ route('profile.ticketDetailsCtf') }}">See Details</a>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    @elseif ($status->ctf_status === '0')
-                    @endif
-                    <div class="row" align="center" style="padding:5px 0 5px 0">
-                        <div class="col">
-                            <div class="card" style="background-color:#e6eef7;padding:20px">
-                                <div class="row align-items-center">
-                                    <div class="col-7" align="left">
-                                        <h6 class="text-tickets-head">Technopreneur Workshop</h6>
-                                        <p class="text-tickets-desc">Juli - Oktober<br>Registration Status : <span class="text-tickets-status" style="color:green">{{ $data->institute }}</span></p>
-                                    </div>
-                                    <div class="col">
-                                        <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 147px;height: 48px;">
-                                            <a class="ifest-btn-primary-dark-bg-text" href="{{ route('profile.ticketDetailsTechnoWorkshop') }}">See Details</a>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                     <!-- <div class="row justify-content-center" align="center">
                         <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 147px;height: 48px;">
                             <a class="ifest-btn-primary-dark-bg-text" href="{{ route('profile.edit') }}">Edit Profile</a>

@@ -12,78 +12,142 @@
 
 @section('event_title', 'Innovative Technology Competition (INTENTION)')
 
-@section('event_section_1')
-<div class="row align-items-center" align="left" style="padding:20px">
-    <div class="col-2" style="padding:0 15px 0 8px">
-        <img class="circular-number" src="{{ URL::asset('icon/page-details/circle-1.svg') }}" alt="1">
-    </div>
-    <div class="col-6" align="left" style="padding:0 8px 0 15px">
-        <h6 class="text-tickets-head">Registrasi Tim</h6>
-        <!-- BUAT STATUS, CLASS TERGANTUNG STATUS DI DATABASE -->
-        <p class="text-tickets-desc">20-25 Agustus 2022<br>Status : 
-            <span class="text-tickets-status status-green">
-            {{ $data->institute }}
-        </span>
-        </p>
-    </div>
-</div>
-@endsection
-
-@section('event_section_2')
-<div class="row align-items-center" align="left" style="padding:20px">
-    <div class="col-2" style="padding:0 15px 0 8px">
-        <img class="circular-number" src="{{ URL::asset('icon/page-details/circle-2.svg') }}" alt="2">
-    </div>
-    <div class="col-6" align="left" style="padding:0 8px 0 15px">
-        <h6 class="text-tickets-head">Pengumpulan Proposal</h6>
-        <p class="text-tickets-desc">26-30 Agustus 2022<br>Status : 
-            <span class="text-tickets-status status-orange">
-            {{ $data->institute }}
-            </span>
-        </p>
-    </div>
-    <div class="col-4" align="center" style="padding:0">
-        <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 120px;height: 48px;">
-            <a class="ifest-btn-primary-dark-bg-text" href="{{ route('intention.submitting.proposal.view') }}">Submit</a>
-        </button>
-    </div>
-</div>
-@endsection
-
-@section('event_section_3')
-<div class="row align-items-center" align="left" style="padding:20px">
-    <div class="col-2" style="padding:0 15px 0 8px">
-        <img class="circular-number" src="{{ URL::asset('icon/page-details/circle-3.svg') }}" alt="3">
-    </div>
-    <div class="col-6" align="left" style="padding:0 8px 0 15px">
-        <h6 class="text-tickets-head">Pengumpulan Project</h6>
-        <p class="text-tickets-desc">1-5 September 2022<br>Status : 
-            <span class="text-tickets-status status-red">
-            {{ $data->institute }}
-            </span>
-        </p>
-    </div>
-    <div class="col-4" align="center" style="padding:0">
-        <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 120px;height: 48px;">
-            <a class="ifest-btn-primary-dark-bg-text" href="{{ route('intention.submitting.project.view') }}">Submit</a>
-        </button>
+@section('event_team_data')
+<div class="col-6">
+    <div class="card ifest-card-details" style="padding:0;">
+        <div class="row" align="center" style="background-color:#291647; margin:0; border-radius:3px 3px 0 0; padding: 5px 0 5px 0">
+            <h2 class="text-details-card-title" style="color:white; padding:0; margin:0">Data Tim</h2>
+        </div>
+        <div class="row" align="left" style="padding:20px">
+            <div class="col">
+                <div class="row" style="padding-bottom:7px;">
+                    <h5 class="text-details-card-head">Nama Tim</h5>
+                    <p class="text-details-card-desc">{{ $intention->team_name }}</p>
+                </div>
+                <div class="row" style="padding-bottom:7px">
+                    <h5 class="text-details-card-head">Email Tim</h5>
+                    <p class="text-details-card-desc">{{ $intention->email }}</p>
+                </div>
+                <div class="row">
+                    <h5 class="text-details-card-head">Data Ketua Tim</h5>
+                    <p class="text-details-card-desc">{{ $intention->team_leader }} - {{ $intention->team_leader_institute }}</p>
+                </div>
+                <div class="row">
+                    <h5 class="text-details-card-head">Data Anggota Tim</h5>
+                    <p class="text-details-card-desc">
+                        • {{ $intention->team_member_1 }} - {{ $intention->team_member_1_institute }}
+                        <br>• {{ $intention->team_member_2 }} - {{ $intention->team_member_2_institute }}
+                        @if ($intention->team_member_3 === true)
+                            <br>• {{ $intention->team_member_3 }} - {{ $intention->team_member_3_institute }}
+                        @else
+                        @endif
+                        @if ($intention->team_member_4 === true)
+                            <br>• {{ $intention->team_member_4 }} - {{ $intention->team_member_4_institute }}
+                        @else
+                        @endif
+                    </p>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 @endsection
 
-@section('event_section_4')
-<div class="row align-items-center" align="left" style="padding:20px">
-    <div class="col-2" style="padding:0 15px 0 8px">
-        <img class="circular-number" src="{{ URL::asset('icon/page-details/circle-4.svg') }}" alt="4">
-    </div>
-    <div class="col-6" align="left" style="padding:0 8px 0 15px">
-        <h6 class="text-tickets-head">Zoom Babak Final</h6>
-        <p class="text-tickets-desc">6 September 2022</p>
-    </div>
-    <div class="col-4" align="center" style="padding:0">
-        <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 120px;height: 48px;">
-            <a class="ifest-btn-primary-dark-bg-text" href="">Link Zoom</a>
-        </button>
+@section('event_progress')
+<div class="col-6">
+    <div class="card ifest-card-details" style="padding:0;">
+        <div class="row" align="center" style="background-color:#291647; margin:0; border-radius:3px 3px 0 0; padding: 5px 0 5px 0">
+            <h2 class="text-details-card-title" style="color:white; padding:0; margin:0">Progress Lomba</h2>
+        </div>
+        <div class="row align-items-center" align="left" style="padding:20px">
+            <div class="col-2" style="padding:0 15px 0 8px">
+                <img class="circular-number" src="{{ URL::asset('icon/page-details/circle-1.svg') }}" alt="1">
+            </div>
+            <div class="col-6" align="left" style="padding:0 8px 0 15px">
+                <h6 class="text-tickets-head">Registrasi Tim</h6>
+                <!-- BUAT STATUS, CLASS TERGANTUNG STATUS DI DATABASE -->
+                <p class="text-tickets-desc">20-25 Agustus 2022<br>Status : 
+                    @if ($intention->status_pembayaran === 1)
+                        <span class="text-tickets-status status-orange">Waiting for Confirmation</span>
+                    @elseif ($intention->status_pembayaran === 0)
+                        <span class="text-tickets-status status-red">Payment Failed. Please Re-Upload Payment Proof</span>
+                    @elseif ($intention->status_pembayaran === 2)
+                        <span class="text-tickets-status status-green">Payment Completed</span>
+                    @endif
+                </span>
+                </p>
+            </div>
+        </div>
+        <div class="row align-items-center" align="left" style="padding:20px">
+            <div class="col-2" style="padding:0 15px 0 8px">
+                <img class="circular-number" src="{{ URL::asset('icon/page-details/circle-2.svg') }}" alt="2">
+            </div>
+            <div class="col-6" align="left" style="padding:0 8px 0 15px">
+                <h6 class="text-tickets-head">Pengumpulan Proposal</h6>
+                <p class="text-tickets-desc">26-30 Agustus 2022<br>Status : 
+                    @if ($intention->proposal_link === null)
+                        <span class="text-tickets-status status-red">Unsubmitted</span>
+                    @elseif ($intention->proposal_link !== null)
+                        @if ($intention->status_finalist === 0)
+                            <span class="text-tickets-status status-orange">Submitted. Waiting for Selection.</span>
+                        @elseif ($intention->status_finalist === 1)
+                            <span class="text-tickets-status status-green">Proposal Selected!</span>
+                        @endif
+                    @endif
+                </p>
+            </div>
+            <div class="col-4" align="center" style="padding:0">
+                @if ($intention->proposal_link === null)
+                    <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 120px;height: 48px;">
+                        <a class="ifest-btn-primary-dark-bg-text" href="{{ route('intention.submitting.proposal.view') }}">Submit</a>
+                    </button>
+                @elseif ($intention->proposal_link !== null)
+                    <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 120px;height: 48px;">
+                        <a class="ifest-btn-primary-dark-bg-text" href="">Re-Submit?</a>
+                    </button>
+                @endif
+            </div>
+        </div>
+        <div class="row align-items-center" align="left" style="padding:20px">
+            <div class="col-2" style="padding:0 15px 0 8px">
+                <img class="circular-number" src="{{ URL::asset('icon/page-details/circle-3.svg') }}" alt="3">
+            </div>
+            <div class="col-6" align="left" style="padding:0 8px 0 15px">
+                <h6 class="text-tickets-head">Pengumpulan Project</h6>
+                <p class="text-tickets-desc">1-5 September 2022<br>Status : 
+                    @if ($intention->app_link === null)
+                        <span class="text-tickets-status status-red">Unsubmitted</span>
+                    @elseif ($intention->app_link !== null)
+                        <span class="text-tickets-status status-green">Submitted</span>
+                    @endif
+                </p>
+            </div>
+            <div class="col-4" align="center" style="padding:0">
+                @if ($intention->app_link === null)
+                    <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 120px;height: 48px;">
+                        <a class="ifest-btn-primary-dark-bg-text" href="{{ route('intention.submitting.project.view') }}">Submit</a>
+                    </button>
+                @elseif ($intention->app_link !== null)
+                    <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 120px;height: 48px;">
+                        <a class="ifest-btn-primary-dark-bg-text" href="">Re-Submit?</a>
+                    </button>
+                @endif
+            </div>
+        </div>
+        <div class="row align-items-center" align="left" style="padding:20px">
+            <div class="col-2" style="padding:0 15px 0 8px">
+                <img class="circular-number" src="{{ URL::asset('icon/page-details/circle-4.svg') }}" alt="4">
+            </div>
+            <div class="col-6" align="left" style="padding:0 8px 0 15px">
+                <h6 class="text-tickets-head">Zoom Babak Final</h6>
+                <p class="text-tickets-desc">6 September 2022</p>
+            </div>
+            <div class="col-4" align="center" style="padding:0">
+                <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 120px;height: 48px;" disabled>
+                    <a class="ifest-btn-primary-dark-bg-text" href="">Link Zoom</a>
+                </button>
+            </div>
+        </div>
     </div>
 </div>
 @endsection

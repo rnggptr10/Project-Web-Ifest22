@@ -9,6 +9,9 @@ use App\Models\User;
 use App\Models\Incon;
 use App\Models\Techno_ws_form;
 use App\Models\Ticket;
+use App\Models\Intention_form;
+use App\Models\Da_form;
+use App\Models\Ctf_form;
 
 class ProfilController extends Controller
 {
@@ -76,7 +79,8 @@ class ProfilController extends Controller
     public function ticketDetailsIntention()
     {
         $data = User::where('email', Auth::user()->email)->first();
-        return view('profils.ticketDetailsIntention', compact('data'));
+        $intention = Intention_form::where('email', Auth::user()->email)->first();
+        return view('profils.ticketDetailsIntention', compact('data', 'intention'));
     }
 
     public function submittingProposalIntention()
@@ -95,7 +99,8 @@ class ProfilController extends Controller
     public function ticketDetailsDac()
     {
         $data = User::where('email', Auth::user()->email)->first();
-        return view('profils.ticketDetailsDac', compact('data'));
+        $dac = Da_form::where('email', Auth::user()->email)->first();
+        return view('profils.ticketDetailsDac', compact('data', 'dac'));
     }
 
     public function submittingPaperDAC()
@@ -114,14 +119,16 @@ class ProfilController extends Controller
     public function ticketDetailsCtf()
     {
         $data = User::where('email', Auth::user()->email)->first();
-        return view('profils.ticketDetailsCtf', compact('data'));
+        $ctf = Ctf_form::where('email', Auth::user()->email)->first();
+        return view('profils.ticketDetailsCtf', compact('data', 'ctf'));
     }
 
     // TECHNO WS
     public function ticketDetailsTechnoWorkshop()
     {
         $data = User::where('email', Auth::user()->email)->first();
-        return view('profils.ticketDetailsTechnoWorkshop', compact('data'));
+        $techno_ws = Techno_ws_form::where('email', Auth::user()->email)->first();
+        return view('profils.ticketDetailsTechnoWorkshop', compact('data', 'techno_ws'));
     }
 
     public function submittingProposalTechno()

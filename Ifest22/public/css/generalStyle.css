@@ -171,7 +171,8 @@
 .btn-primary.ifest-btn-primary-dark-bg.disabled,
 .btn-primary.ifest-btn-primary-dark-bg:disabled {
     color: #8267B4;
-    background-color: transparent
+    background-color: #8267b498;
+    border-color: #8267B4
 }
 
 .btn-primary.ifest-btn-primary-dark-bg:not(:disabled):not(.disabled).active,
