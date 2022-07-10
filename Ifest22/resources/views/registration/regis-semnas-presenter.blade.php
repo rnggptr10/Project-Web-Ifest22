@@ -28,14 +28,14 @@
                 <div class="row justify-content-center" align="center" id="technoWSPayment" style="padding-bottom: 30px;">
                     <div class="col-5">
                         <div class="row">
-                            <form action="" method="post" enctype="multipart/form-data">
+                            <form action="{{route('semnas.presenter.registration')}}" method="post" enctype="multipart/form-data">
                                 @method('patch')
                                 @csrf
                                 <div id="regist-section-1">
                                     <div class="row mb-2" style="padding-bottom:20px">
-                                        <label for="team_name" class="placeholder regist-form-text" style="padding:0">{{ __('Abstract Link') }}</label>
-                                        <input id="team_name" type="text" class="form-control @error('team_name') is-invalid @enderror ifest-regist-form text-center" name="team_name" value="{{ old('team_name') }}" required autocomplete="team_name" autofocus placeholder="Insert Abstract Link">
-                                        @error('team_name')
+                                        <label for="abstract_link" class="placeholder regist-form-text" style="padding:0">{{ __('Abstract Link') }}</label>
+                                        <input id="abstract_link" name="abstract_link" type="text" class="form-control @error('abstract_link') is-invalid @enderror ifest-regist-form text-center" value="{{ old('abstract_link') }}" required autocomplete="abstract_link" autofocus placeholder="Insert Abstract Link">
+                                        @error('abstract_link')
                                         <div class="alert alert-danger mt-1 d-flex align-items-center" role="alert" style="width: 100%;
                                         max-width: 333px; margin: 0 auto">
                                             <span class="iconify me-1" data-icon="akar-icons:circle-alert" data-inline="false" style="color: #842029;"></span>
@@ -43,7 +43,7 @@
                                         </div>
                                         @enderror
                                     </div>
-                                    
+
                                     <div class="row">
                                         <div class="col">
                                             <div class="row justify-content-center align-items-center" align="center" id="registCompButton" style="padding:30px 0 30px 0">
@@ -52,7 +52,7 @@
                                                     <a class="btn btn-outline-primary ifest-btn-outline-primary-dark-bg mt-3 mt-sm-0 fw-bold text-center" href="{{ route('semnas') }}" style="height:44px; width:128px;">{{ __('< Back') }}</a>
                                                 </div>
                                                 <div class="col-4">
-                                                    <button id="regist-next-section" type="button" class="btn btn-primary ifest-btn-primary-dark-bg mt-3 mt-sm-0 fw-bold" style="height:44px; width:128px" disabled>{{ __('Submit') }}</button>
+                                                    <button id="regist-next-section" type="submit" class="btn btn-primary ifest-btn-primary-dark-bg mt-3 mt-sm-0 fw-bold" style="height:44px; width:128px">{{ __('Submit') }}</button>
                                                 </div>
                                             </div>
                                         </div>

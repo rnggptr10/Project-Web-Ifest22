@@ -79,7 +79,7 @@
                                 Competition
                             </a>
                             <div class="dropdown-menu border-dropmenu" aria-labelledby="navbarDropdown" style="background-color: #1c1c1c; color: #ffff;">
-                                <a class="item-dropmenu" href="{{ route('intention') }}" style="color: #8267B4;">Intention</a>    
+                                <a class="item-dropmenu" href="{{ route('intention') }}" style="color: #8267B4;">Intention</a>
                                 <a class="item-dropmenu" href="{{ route('da') }}" style="color: #8267B4;">DAC</a>
                                 <a class="item-dropmenu" href="{{ route('ctf') }}" style="color: #8267B4;">CTF</a>
                             </div>
