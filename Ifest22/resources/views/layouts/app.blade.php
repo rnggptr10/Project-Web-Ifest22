@@ -114,8 +114,17 @@
                         <a class="nav-link dropdown-toggle right-nav" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: #ffff;">
                             {{ Auth::user()->name }}
                         </a>
+                        <!-- <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: #1c1c1c;">
+                            <a class="dropdown-item" href="{{route('profile')}}" style="color: #8267B4;">Profile</a>
+                            <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();" style=" color: #8267B4;">Logout</a>
+                        </div> -->
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: #1c1c1c;">
                             <a class="dropdown-item" href="{{route('profile')}}" style="color: #8267B4;">Profile</a>
+                            @if (Auth::user()->is_admin === '1')
+                            <a class="dropdown-item" href="{{route('admin-user')}}" style="color: #8267B4;">Admin Page</a>
+                            @else
+                            @endif
                             <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();" style=" color: #8267B4;">Logout</a>
                         </div>

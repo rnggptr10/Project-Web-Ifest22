@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\User;
+
 class HomeController extends Controller
 {
     /**
@@ -21,12 +23,13 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        // return view('home');
+        $user = User::all();
+        return view('home', compact('user'));
     }
 
     public function ipodIndex()
     {
         return view('events.ipod');
     }
-    
 }

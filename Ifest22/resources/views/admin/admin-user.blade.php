@@ -28,15 +28,15 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
                         @foreach ($user as $data)
+                        <tr>
                             <td>{{ $data->id }}</td>
                             <td>{{ $data->email }}</td>
                             <td>{{ $data->name }}</td>
                             <td>{{ $data->institute }}</td>
                             <td><a href="{{asset('storage/' . $data['image'])}}"> Profpic</a></td>
-                        @endforeach
                         </tr>
+                        @endforeach
                     </tbody>
                 </table>
             </div>

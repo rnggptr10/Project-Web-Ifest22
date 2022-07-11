@@ -91,6 +91,7 @@ class RegisterController extends Controller
             'email' => $data['email'],
             'institute' => $data['institute'],
             'password' => Hash::make($data['password']),
+            'is_admin' => 0,
             'image' => $data['profpic']->store('profpic-user'),
         ]);
     }

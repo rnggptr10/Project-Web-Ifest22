@@ -12,6 +12,7 @@ use App\Models\Semnas;
 use App\Models\Intention_form;
 use App\Models\Da_form;
 use App\Models\Ctf_form;
+use App\Models\Semnas_semnas;
 
 class AdminController extends Controller
 {
@@ -31,51 +32,90 @@ class AdminController extends Controller
      * @return \Illuminate\Contracts\Support\Renderable
      */
 
+    // public function checkUser()
+    // {
+    //     if (Auth::user()->is_admin == 0) return redirect()->route('home');
+    // }
+
+
+
     public function dataUser()
     {
-        $user = User::all();
-        return view('admin.admin-user', compact('user'));
+        if (Auth::user()->is_admin == 0) {
+            if (Auth::user()->is_admin == 0) return redirect()->route('home');
+        } else {
+            $user = User::all();
+            return view('admin.admin-user', compact('user'));
+        }
     }
 
     public function dataStartup()
     {
-        $startup = Startup::all();
-        return view('admin.admin-startup', compact('startup'));
+        if (Auth::user()->is_admin == 0) {
+            if (Auth::user()->is_admin == 0) return redirect()->route('home');
+        } else {
+            $startup = Startup::all();
+            return view('admin.admin-startup', compact('startup'));
+        }
     }
 
     public function dataIntention()
     {
-        $intention = Intention_form::all();
-        return view('admin.admin-intention', compact('intention'));
+        if (Auth::user()->is_admin == 0) {
+            if (Auth::user()->is_admin == 0) return redirect()->route('home');
+        } else {
+            $intention = Intention_form::all();
+            return view('admin.admin-intention', compact('intention'));
+        }
     }
 
     public function dataDac()
     {
-        $dac = Da_form::all();
-        return view('admin.admin-dac', compact('dac'));
+        if (Auth::user()->is_admin == 0) {
+            if (Auth::user()->is_admin == 0) return redirect()->route('home');
+        } else {
+            $dac = Da_form::all();
+            return view('admin.admin-dac', compact('dac'));
+        }
     }
 
     public function dataCtf()
     {
-        $ctf = Ctf_form::all();
-        return view('admin.admin-ctf', compact('ctf'));
+        if (Auth::user()->is_admin == 0) {
+            if (Auth::user()->is_admin == 0) return redirect()->route('home');
+        } else {
+            $ctf = Ctf_form::all();
+            return view('admin.admin-ctf', compact('ctf'));
+        }
     }
 
     public function dataTechno()
     {
-        $techno = Techno_seminar::all();
-        return view('admin.admin-techno', compact('techno'));
+        if (Auth::user()->is_admin == 0) {
+            if (Auth::user()->is_admin == 0) return redirect()->route('home');
+        } else {
+            $techno = Techno_seminar::all();
+            return view('admin.admin-techno', compact('techno'));
+        }
     }
 
     public function dataTechnoWs()
     {
-        $techno_ws = Techno_ws_form::all();
-        return view('admin.admin-techno-ws', compact('techno_ws'));
+        if (Auth::user()->is_admin == 0) {
+            if (Auth::user()->is_admin == 0) return redirect()->route('home');
+        } else {
+            $techno_ws = Techno_ws_form::all();
+            return view('admin.admin-techno-ws', compact('techno_ws'));
+        }
     }
 
     public function dataSemnas()
     {
-        $semnas = Semnas::all();
-        return view('admin.admin-semnas', compact('semnas'));
+        if (Auth::user()->is_admin == 0) {
+            if (Auth::user()->is_admin == 0) return redirect()->route('home');
+        } else {
+            $semnas = Semnas_semnas::all();
+            return view('admin.admin-semnas', compact('semnas'));
+        }
     }
 }
