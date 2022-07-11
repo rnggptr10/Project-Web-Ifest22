@@ -22,15 +22,15 @@
             <div class="col">
                 <div class="row" style="padding-bottom:7px;">
                     <h5 class="text-details-card-head">Presenter's Name</h5>
-                    <p class="text-details-card-desc">a</p>
+                    <p class="text-details-card-desc">{{ $presenter->name }}</p>
                 </div>
                 <div class="row" style="padding-bottom:7px">
                     <h5 class="text-details-card-head">Presenter's Email</h5>
-                    <p class="text-details-card-desc">a</p>
+                    <p class="text-details-card-desc">{{ $presenter->email }}</p>
                 </div>
                 <div class="row">
                     <h5 class="text-details-card-head">Presenter's Institute</h5>
-                    <p class="text-details-card-desc">a</p>
+                    <p class="text-details-card-desc">{{ $presenter->institute }}</p>
                 </div>
             </div>
         </div>
@@ -51,10 +51,14 @@
             <div class="col-6" align="left" style="padding:0 8px 0 15px">
                 <h6 class="text-tickets-head">Abstract</h6>
                 <!-- BUAT STATUS, CLASS TERGANTUNG STATUS DI DATABASE -->
-                <p class="text-tickets-desc">20-25 Agustus 2022<br>Status : 
-                    <span class="text-tickets-status status-green">
-                        Abstract Declined
-                    </span>
+                <p class="text-tickets-desc">20-25 Agustus 2022<br>Status :
+                @if ($presenter->status_selected === '0')
+                    <span class="text-tickets-status status-red">Abstract Declined</span>
+                @elseif ($presenter->status_selected === '1')
+                    <span class="text-tickets-status status-orange">Submitted. Waiting For Review</span>
+                @elseif ($presenter->status_selected === '2')
+                    <span class="text-tickets-status status-green">Abstract Selected</span>
+                @endif
                 </p>
             </div>
         </div>
@@ -81,6 +85,11 @@
             <div class="col-6" align="left" style="padding:0 8px 0 15px">
                 <h6 class="text-tickets-head">Paper Submission</h6>
                 <p class="text-tickets-desc">21-25 September 2022<br>Status : 
+                    @if ($presenter->paper1_link === null)
+                        <span class="text-tickets-status status-red">Unsubmitted</span>
+                    @elseif ($presenter->paper1_link !== null)
+                        <span class="text-tickets-status status-green">Submitted</span>
+                    @endif
                 </p>
             </div>
             <div class="col" align="center" style="padding:0">
@@ -115,6 +124,11 @@
             <div class="col-6" align="left" style="padding:0 8px 0 15px">
                 <h6 class="text-tickets-head">Pengumpulan Revisi Paper</h6>
                 <p class="text-tickets-desc">30 September 2022<br>Status : 
+                    @if ($presenter->paper2_link === null)
+                        <span class="text-tickets-status status-red">Unsubmitted</span>
+                    @elseif ($presenter->paper2_link !== null)
+                        <span class="text-tickets-status status-green">Submitted</span>
+                    @endif
                 </p>
             </div>
             <div class="col" align="center" style="padding:0">

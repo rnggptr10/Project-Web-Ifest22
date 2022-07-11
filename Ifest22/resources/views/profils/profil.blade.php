@@ -102,12 +102,24 @@
                                     <div class="row align-items-center">
                                         <div class="col-7" align="left">
                                             <h6 class="text-tickets-head">Seminar Nasional - Non Pemakalah</h6>
-                                            <p class="text-tickets-desc">20-21 Agustus 2022<br>Registration Status : <span class="text-tickets-status status-orange">{{ $data->institute }}</span></p>
+                                            <p class="text-tickets-desc">20-21 Agustus 2022<br>Registration Status : 
+                                            @if ($semnas->status_pembayaran === '0')
+                                                <span class="text-tickets-status status-red">Payment Failed. Please Re-Upload Payment Proof</span>
+                                            @elseif ($semnas->status_pembayaran === '1')
+                                                <span class="text-tickets-status status-orange">Waiting for Confirmation</span>
+                                            @elseif ($semnas->status_pembayaran === '2')
+                                                <span class="text-tickets-status status-green">Payment Completed</span>
+                                            @endif
+                                            </p>
                                         </div>
                                         <div class="col">
+                                            @if ($semnas->status_pembayaran === '0')
+                                            @elseif ($semnas->status_pembayaran === '1')
+                                            @elseif ($semnas->status_pembayaran === '2')
                                             <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 147px;height: 48px;" disabled>
                                                 <a class="ifest-btn-primary-dark-bg-text" href="">Link Zoom</a>
                                             </button>
+                                            @endif
                                         </div>
                                     </div>
                                 </div>
@@ -115,6 +127,7 @@
                         </div>
                         @elseif ($status->semnas_status === '0')
                         @endif
+                        @if ($status->semnas_paper_status === '1')
                         <div class="row" align="center" style="padding:5px 0 5px 0">
                             <div class="col">
                                 <div class="card" style="background-color:#e6eef7;padding:20px">
@@ -132,6 +145,8 @@
                                 </div>
                             </div>
                         </div>
+                        @elseif ($status->semnas_paper_status === '0')
+                        @endif
                         @if ($status->techno_seminar_status === '1')
                         <div class="row" align="center" style="padding:5px 0 5px 0">
                             <div class="col">

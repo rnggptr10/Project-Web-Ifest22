@@ -9,6 +9,8 @@ use App\Models\User;
 use App\Models\Incon;
 use App\Models\Techno_ws_form;
 use App\Models\Ticket;
+use App\Models\Semnas_semnas;
+use App\Models\Semnas_paper;
 use App\Models\Intention_form;
 use App\Models\Da_form;
 use App\Models\Ctf_form;
@@ -26,6 +28,7 @@ class ProfilController extends Controller
         $data = User::where('email', $email)->first();
         $techno_ws = Techno_ws_form::where('email', $email)->first();
         $status = Ticket::where('email', Auth::user()->email)->first();
+        $semnas = Semnas_semnas::where('email', Auth::user()->email)->first();
         $no_ticket_incon = null;
 
         // if (Incon::where('email', $email)->first()) {
@@ -42,7 +45,7 @@ class ProfilController extends Controller
         ];
 
 
-        return view('profils.profil', compact('data', 'status'));
+        return view('profils.profil', compact('data', 'status', 'semnas'));
     }
 
     public function edit()
@@ -153,7 +156,8 @@ class ProfilController extends Controller
     public function ticketDetailsSemnasPresenter()
     {
         $data = User::where('email', Auth::user()->email)->first();
-        return view('profils.ticketDetailsSemnasPresenter', compact('data'));
+        $presenter = Semnas_paper::where('email', Auth::user()->email)->first();
+        return view('profils.ticketDetailsSemnasPresenter', compact('data', 'presenter'));
     }
 
     public function paymentSemnasPresenter()
