@@ -45,26 +45,26 @@ Route::get('/profil/ticket-details-seminar-nasional/presenter', [ProfilControlle
 
 // Submitting's route
 Route::get('/profil/ticket-details-intention/submit-proposal', [ProfilController::class, 'submittingProposalIntention'])->name('intention.submitting.proposal.view');
-Route::patch('/profil/ticket-details-intention/submit-proposal', [ProfilController::class, 'belom'])->name('intention.submitting.proposal');
+Route::patch('/profil/ticket-details-intention/submit-proposal', [ProfilController::class, 'saveProposalIntention'])->name('intention.submitting.proposal');
 Route::get('/profil/ticket-details-intention/submit-project', [ProfilController::class, 'submittingProjectIntention'])->name('intention.submitting.project.view');
-Route::patch('/profil/ticket-details-intention/submit-project', [ProfilController::class, 'belom'])->name('intention.submitting.project');
+Route::patch('/profil/ticket-details-intention/submit-project', [ProfilController::class, 'saveProjectIntention'])->name('intention.submitting.project');
 Route::get('/profil/ticket-details-dac/submit-paper', [ProfilController::class, 'submittingPaperDAC'])->name('dac.submitting.paper.view');
-Route::patch('/profil/ticket-details-dac/submit-paper', [ProfilController::class, 'belom'])->name('dac.submitting.paper');
+Route::patch('/profil/ticket-details-dac/submit-paper', [ProfilController::class, 'savePaperDAC'])->name('dac.submitting.paper');
 Route::get('/profil/ticket-details-dac/submit-analysis', [ProfilController::class, 'submittingAnalysisDAC'])->name('dac.submitting.analysis.view');
-Route::patch('/profil/ticket-details-dac/submit-analysis', [ProfilController::class, 'belom'])->name('dac.submitting.analysis');
+Route::patch('/profil/ticket-details-dac/submit-analysis', [ProfilController::class, 'saveAnalysisDAC'])->name('dac.submitting.analysis');
 Route::get('/profil/ticket-details-technopreneur-workshop/submit-proposal', [ProfilController::class, 'submittingProposalTechno'])->name('technoWorkshop.submitting.proposal.view');
-Route::patch('/profil/ticket-details-technopreneur-workshop/submit-proposal', [ProfilController::class, 'belom'])->name('technoWorkshop.submitting.proposal');
+Route::patch('/profil/ticket-details-technopreneur-workshop/submit-proposal', [ProfilController::class, 'saveProposalTechno'])->name('technoWorkshop.submitting.proposal');
 Route::get('/profil/ticket-details-technopreneur-workshop/submit-pitchdeck-1', [ProfilController::class, 'submittingPitchdeck1Techno'])->name('technoWorkshop.submitting.pitchdeck1.view');
-Route::patch('/profil/ticket-details-technopreneur-workshop/submit-pitchdeck-1', [ProfilController::class, 'belom'])->name('technoWorkshop.submitting.pitchdeck1');
+Route::patch('/profil/ticket-details-technopreneur-workshop/submit-pitchdeck-1', [ProfilController::class, 'savePitchdeck1Techno'])->name('technoWorkshop.submitting.pitchdeck1');
 Route::get('/profil/ticket-details-technopreneur-workshop/submit-pitchdeck-2', [ProfilController::class, 'submittingPitchdeck2Techno'])->name('technoWorkshop.submitting.pitchdeck2.view');
-Route::patch('/profil/ticket-details-technopreneur-workshop/submit-pitchdeck-2', [ProfilController::class, 'belom'])->name('technoWorkshop.submitting.pitchdeck2');
+Route::patch('/profil/ticket-details-technopreneur-workshop/submit-pitchdeck-2', [ProfilController::class, 'savePitchdeck2Techno'])->name('technoWorkshop.submitting.pitchdeck2');
 
 Route::get('/profil/ticket-details-seminar-nasional/presenter/payment', [ProfilController::class, 'paymentSemnasPresenter'])->name('semnas.presenter.payment.view');
-Route::patch('/profil/ticket-details-seminar-nasional/presenter/payment', [ProfilController::class, 'belom'])->name('semnas.presenter.payment');
+Route::patch('/profil/ticket-details-seminar-nasional/presenter/payment', [ProfilController::class, 'savePaymentSemnasPresenter'])->name('semnas.presenter.payment');
 Route::get('/profil/ticket-details-seminar-nasional/presenter/submit-paper-1', [ProfilController::class, 'submittingPaper1SemnasPresenter'])->name('semnas.presenter.submitting.paper1.view');
-Route::patch('/profil/ticket-details-seminar-nasional/presenter/submit-paper-1', [ProfilController::class, 'belom'])->name('semnas.presenter.submitting.paper1');
+Route::patch('/profil/ticket-details-seminar-nasional/presenter/submit-paper-1', [ProfilController::class, 'savePaper1SemnasPresenter'])->name('semnas.presenter.submitting.paper1');
 Route::get('/profil/ticket-details-seminar-nasional/presenter/submit-paper-2', [ProfilController::class, 'submittingPaper2SemnasPresenter'])->name('semnas.presenter.submitting.paper2.view');
-Route::patch('/profil/ticket-details-seminar-nasional/presenter/submit-paper-2', [ProfilController::class, 'belom'])->name('semnas.presenter.submitting.paper2');
+Route::patch('/profil/ticket-details-seminar-nasional/presenter/submit-paper-2', [ProfilController::class, 'savePaper2SemnasPresenter'])->name('semnas.presenter.submitting.paper2');
 
 // Route for Event
 Route::get('/seminar-nasional', [SemnasController::class, 'index'])->name('semnas');
