@@ -10,6 +10,8 @@
 
 @section('event_webtitle', 'Data Analysis Competition')
 
+@section('event_type', 'Competition Detail')
+
 @section('event_title', 'Data Analysis Competition')
 
 @section('event_team_data')
@@ -37,7 +39,7 @@
                     <p class="text-details-card-desc">
                         • {{ $dac->team_member_1 }} - {{ $dac->team_member_1_institute }}
                         <br>• {{ $dac->team_member_2 }} - {{ $dac->team_member_2_institute }}
-                        @if ($dac->team_member_3 === true)
+                        @if ($dac->team_member_3 !== null)
                             <br>• {{ $dac->team_member_3 }} - {{ $dac->team_member_3_institute }}
                         @else
                         @endif

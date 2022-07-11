@@ -10,13 +10,15 @@
 
 @section('event_webtitle', 'Seminar Nasional - Presenter')
 
-@section('event_title', 'Seminar Nasional - Presenter')
+@section('event_type', 'Seminar Nasional Detail')
+
+@section('event_title', 'Presenter')
 
 @section('event_team_data')
 <div class="col-sm-6">
     <div class="card ifest-card-details" style="padding:0;">
         <div class="row" align="center" style="background-color:#291647; margin:0; border-radius:3px 3px 0 0; padding: 5px 0 5px 0">
-            <h2 class="text-details-card-title" style="color:white; padding:0; margin:0">Data Tim</h2>
+            <h2 class="text-details-card-title" style="color:white; padding:0; margin:0">Presenter's Data</h2>
         </div>
         <div class="row" align="left" style="padding:20px">
             <div class="col">
@@ -42,7 +44,7 @@
 <div class="col-sm-6">
     <div class="card ifest-card-details" style="padding:0;">
         <div class="row" align="center" style="background-color:#291647; margin:0; border-radius:3px 3px 0 0; padding: 5px 0 5px 0">
-            <h2 class="text-details-card-title" style="color:white; padding:0; margin:0">Progress Event</h2>
+            <h2 class="text-details-card-title" style="color:white; padding:0; margin:0">Event Progress</h2>
         </div>
         <div class="row align-items-center" align="left" style="padding:20px">
             <div class="col-2" style="padding:0 15px 0 8px">

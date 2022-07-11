@@ -10,6 +10,8 @@
 
 @section('event_webtitle', 'INTENTION')
 
+@section('event_type', 'Competition Detail')
+
 @section('event_title', 'Innovative Technology Competition (INTENTION)')
 
 @section('event_team_data')
@@ -37,11 +39,11 @@
                     <p class="text-details-card-desc">
                         • {{ $intention->team_member_1 }} - {{ $intention->team_member_1_institute }}
                         <br>• {{ $intention->team_member_2 }} - {{ $intention->team_member_2_institute }}
-                        @if ($intention->team_member_3 === true)
+                        @if ($intention->team_member_3 !== null)
                             <br>• {{ $intention->team_member_3 }} - {{ $intention->team_member_3_institute }}
                         @else
                         @endif
-                        @if ($intention->team_member_4 === true)
+                        @if ($intention->team_member_4 !== null)
                             <br>• {{ $intention->team_member_4 }} - {{ $intention->team_member_4_institute }}
                         @else
                         @endif

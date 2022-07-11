@@ -25,6 +25,7 @@
                             <th scope="col">Nama</th>
                             <th scope="col">Instansi</th>
                             <th scope="col">Image</th>
+                            <th scope="col">Akun</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -35,6 +36,13 @@
                             <td>{{ $data->name }}</td>
                             <td>{{ $data->institute }}</td>
                             <td><a href="{{asset('storage/' . $data['image'])}}"> Profpic</a></td>
+                            <td>
+                                @if($data->is_admin === '1')
+                                    Admin
+                                @else  
+                                    Peserta
+                                @endif
+                            </td>
                         </tr>
                         @endforeach
                     </tbody>

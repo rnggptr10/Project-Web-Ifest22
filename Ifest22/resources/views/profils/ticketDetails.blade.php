@@ -14,7 +14,7 @@
             <div class="col">
                 <div class="card" style="padding:40px; background-color:#2D2D2D">
                     <div class="row" align="center" style="padding-bottom:15px;">
-                        <h1 class="text-card-title">Competition Detail - @yield('event_title')</h1>
+                        <h1 class="text-card-title">@yield('event_type') - @yield('event_title')</h1>
                     </div>
                     <div class="row">
                         @yield('event_team_data')

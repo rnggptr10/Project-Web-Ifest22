@@ -10,6 +10,8 @@
 
 @section('event_webtitle', 'Technopreneur Workshop')
 
+@section('event_type', 'Workshop Detail')
+
 @section('event_title', 'Technopreneur Workshop')
 
 @section('event_team_data')
@@ -36,7 +38,7 @@
                     <h5 class="text-details-card-head">Data Anggota Tim</h5>
                     <p class="text-details-card-desc">
                         • {{ $techno_ws->team_member_1 }} - {{ $techno_ws->team_member_1_institute }}
-                        @if ($techno_ws->team_member_2 === true)
+                        @if ($techno_ws->team_member_2 !== null)
                             <br>• {{ $techno_ws->team_member_2 }} - {{ $techno_ws->team_member_2_institute }}
                         @else
                         @endif

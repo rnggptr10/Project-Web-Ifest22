@@ -10,6 +10,8 @@
 
 @section('event_webtitle', 'Capture The Flag')
 
+@section('event_type', 'Competition Detail')
+
 @section('event_title', 'Capture The Flag')
 
 @section('event_team_data')
@@ -32,12 +34,12 @@
                     <h5 class="text-details-card-head">Data Ketua Tim</h5>
                     <p class="text-details-card-desc">{{ $ctf->team_leader }} - {{ $ctf->team_leader_institute }}</p>
                 </div>
-                @if ($ctf->team_member_1 === true)
+                @if ($ctf->team_member_1 !== null)
                     <div class="row">
                         <h5 class="text-details-card-head">Data Anggota Tim</h5>
                         <p class="text-details-card-desc">
                             • {{ $ctf->team_member_1 }} - {{ $ctf->team_member_1_institute }}
-                            @if ($ctf->team_member_2 === true)
+                            @if ($ctf->team_member_2 !== null)
                                 <br>• {{ $ctf->team_member_2 }} - {{ $ctf->team_member_2_institute }}
                             @else
                             @endif
@@ -65,11 +67,11 @@
                 <h6 class="text-tickets-head">Registrasi Tim</h6>
                 <!-- BUAT STATUS, CLASS TERGANTUNG STATUS DI DATABASE -->
                 <p class="text-tickets-desc">20-25 Agustus 2022<br>Status : 
-                    @if ($ctf->status_pembayaran === 1)
+                    @if ($ctf->status_pembayaran === '1')
                         <span class="text-tickets-status status-orange">Waiting for Confirmation</span>
-                    @elseif ($ctf->status_pembayaran === 0)
+                    @elseif ($ctf->status_pembayaran === '0')
                         <span class="text-tickets-status status-red">Payment Failed. Please Re-Upload Payment Proof</span>
-                    @elseif ($ctf->status_pembayaran === 2)
+                    @elseif ($ctf->status_pembayaran === '2')
                         <span class="text-tickets-status status-green">Payment Completed</span>
                     @endif
                 </span>
