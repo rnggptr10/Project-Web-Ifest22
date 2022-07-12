@@ -14,6 +14,7 @@ use App\Models\Semnas_paper;
 use App\Models\Intention_form;
 use App\Models\Da_form;
 use App\Models\Ctf_form;
+use Illuminate\Support\Facades\Hash;
 
 class ProfilController extends Controller
 {
@@ -53,6 +54,38 @@ class ProfilController extends Controller
         $data = User::where('email', Auth::user()->email)->first();
         return view('profils.editProfil', compact('data'));
     }
+
+    public function editPassword()
+    {
+        return view('profils.resetPassword');
+    }
+
+    public function updatePassword(Request $request)
+    {
+        $request->validate([
+            'old_password' => 'required',
+            'new_password' => ['required', 'string', 'min:8'],
+            'confirm_password' => ['required', 'string', 'min:8'],
+        ]);
+
+        $currentPassword = Auth::user()->password;
+        $oldPassword = $request->old_password;
+
+        if (Hash::check($oldPassword, $currentPassword) && $request->new_password == $request->confirm_password) {
+            User::where('email', Auth::user()->email)->update([
+                'password' => bcrypt($request->new_password),
+            ]);
+
+            return redirect()->route('profile');
+        } else {
+            if (!Hash::check($oldPassword, $currentPassword)) {
+                return back()->withErrors(['old_password' => 'Make sure your password !']);
+            } else {
+                return back()->withErrors(['old_password' => 'The password confirmation does not match !']);
+            }
+        }
+    }
+
 
     public function update(Request $request)
     {

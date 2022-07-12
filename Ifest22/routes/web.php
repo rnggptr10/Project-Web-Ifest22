@@ -36,6 +36,8 @@ Route::get('/home', [HomeController::class, 'index'])->name('home');
 // Profile's route
 Route::get('/profil', [ProfilController::class, 'index'])->name('profile');
 Route::get('/profil/edit', [ProfilController::class, 'edit'])->name('profile.edit');
+Route::get('/profil/edit/password', [ProfilController::class, 'editPassword'])->name('profile.edit.password');
+Route::patch('/profil/edit/password', [ProfilController::class, 'updatePassword'])->name('profile.update.password');
 Route::patch('/profil/edit/update', [ProfilController::class, 'update'])->name('profile.update');
 Route::get('/profil/ticket-details-intention', [ProfilController::class, 'ticketDetailsIntention'])->name('profile.ticketDetailsIntention');
 Route::get('/profil/ticket-details-dac', [ProfilController::class, 'ticketDetailsDac'])->name('profile.ticketDetailsDac');

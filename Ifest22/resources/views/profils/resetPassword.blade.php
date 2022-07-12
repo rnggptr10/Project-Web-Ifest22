@@ -23,17 +23,13 @@
         <div class="login-aside w-50 d-flex align-items-center justify-content-center bg-white">
             <div class="container container-login container-transparent animated fadeIn">
                 <p class="text-center text-greeting-med">Edit Profile</p>
-                <form class="user-data mt-4" method="post" action="{{ route('profile.update') }}" enctype="multipart/form-data">
+                <form class="user-data mt-4" method="post" action="{{route('profile.update.password')}}">
                     @method('patch')
                     @csrf
                     <div class="row mb-2 data-item">
-                        <label for="email" class="placeholder text-form">{{ __('Email') }}</label>
-                        <input id="email" type="email" disabled value="{{ $data->email }}" class="form-control ifest-form" name="email">
-                    </div>
-                    <div class="row mb-2 data-item">
-                        <label for="name" class="placeholder text-form">{{ __('Name') }}</label>
-                        <input id="name" type="text" value="{{ $data->name }}" class="form-control ifest-form" name="name">
-                        @error('name')
+                        <label for="old_password" class="placeholder text-form">{{ __('Old Password') }}</label>
+                        <input id="old_password" type="password" value="{{ old('old_password') }}" class="form-control ifest-form" name="old_password" required>
+                        @error('old_password')
                         <div class="alert alert-danger mt-1 d-flex align-items-center" role="alert">
                             <span class="iconify me-1" data-icon="akar-icons:circle-alert" data-inline="false" style="color: #842029;"></span>
                             {{ $message }}
@@ -41,34 +37,28 @@
                         @enderror
                     </div>
                     <div class="row mb-2 data-item">
-                        <label for="institute" class="placeholder text-form">{{ __('Institute') }}</label>
-                        <input id="institute" type="text" value="{{ $data->institute }}" class="form-control ifest-form" name="institute">
-                        @error('institute')
+                        <label for="new_password" class="placeholder text-form">{{ __('New Password') }}</label>
+                        <input id="new_password" type="password" value="{{ old('new_password') }}" class="form-control ifest-form" name="new_password" required>
+                        @error('new_password')
                         <div class="alert alert-danger mt-1 d-flex align-items-center" role="alert">
                             <span class="iconify me-1" data-icon="akar-icons:circle-alert" data-inline="false" style="color: #842029;"></span>
                             {{ $message }}
                         </div>
                         @enderror
                     </div>
-                    <div class="row mb-2 data-item" style="margin-top:20px">
-                        <label for="profpic" class="d-flex justify-content-center align-items-center placeholder text-form button-upload text-button-upload">{{ __('Change Profile Picture?') }}</label>
-                        <input id="profpic" name="profpic" type="file" value="{{ $data->image }}" class="form-control ifest-form" accept=".jpg, .png, .jpeg" style="color:transparent" hidden>
-                        @error('profpic')
+                    <div class="row mb-2 data-item">
+                        <label for="confirm_password" class="placeholder text-form">{{ __('Confirm Password') }}</label>
+                        <input id="confirm_password" type="password" value="{{ old('confirm_password') }}" class="form-control ifest-form" name="confirm_password" required>
+                        @error('confirm_password')
                         <div class="alert alert-danger mt-1 d-flex align-items-center" role="alert">
                             <span class="iconify me-1" data-icon="akar-icons:circle-alert" data-inline="false" style="color: #842029;"></span>
                             {{ $message }}
                         </div>
                         @enderror
                     </div>
-                    <div class="row mb-2 data-item" style="margin-top:10px">
-                        <!-- <button class="form-control ifest-form" href="">{{ __('Change Password?') }}</button> -->
-                        <a href="{{route('profile.edit.password')}}">Change Password ?</a>
-                    </div>
-
                     <div class="form-group form-action-d-flex mb-3 justify-content-center" style="margin-top:20px">
                         <button type="submit" class="btn btn-primary ifest-btn-primary-light-bg col-md-5 float-right mt-3 mt-sm-0 fw-bold">{{ __('Save Changes') }}</button>
                     </div>
-
                 </form>
             </div>
         </div>
