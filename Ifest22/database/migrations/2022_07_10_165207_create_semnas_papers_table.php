@@ -19,7 +19,8 @@ class CreateSemnasPapersTable extends Migration
             $table->string('name');
             $table->string('institute');
             $table->string('abstract_link');
-            $table->char('status_selected', 1);
+            $table->char('status_selected', 1)->nullable();
+            $table->char('status_pembayaran', 1)->nullable();
             $table->string('proof_payment')->nullable();
             $table->string('paper1_link')->nullable();
             $table->string('paper2_link')->nullable();
