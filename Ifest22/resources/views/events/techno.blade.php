@@ -255,30 +255,30 @@ Technopreneur is a webinar and workshop that provides training & development fac
 @section('event_detail2')
 <!-- INI NANTI BISA PAKE LOOPING AJA -->
 <div data-aos="fade-up" data-aos-duration="1000" class="row align-items-center justify-content-between" align="left" id="technoCards1" style="padding-top: 30px;padding-bottom: 30px;">
-    <div class="col-sm-6">
+    <div class="col-xs-6 col-lg-6" align="center" style="padding:0">
         <div class="card" style="border: 0; width:90%" id="cardTimeline">
             <div class="row align-items-center justify-content-start" style="padding:15px;">
                 <div class="col-2">
-                    <img class="events-card-logo" src="{{ URL::asset('icon/platform.png') }}" alt="Platform">
+                    <img class="img-fluid events-card-logo" src="{{ URL::asset('icon/platform.png') }}" alt="Platform">
                 </div>
-                <div class="col-10" style="line-height: 5px;">
+                <div class="col-10" style="text-align:left;">
                     <h5 style="color:black;">Youtube & Zoom Meetings</h5>
                 </div>
             </div>
         </div>
     </div>
-    <div class="col-sm-6">
+    <div class="col-xs-6 col-lg-6" align="center" style="padding:0">
         <div class="card" style="border: 0; width:90%" id="cardTicket">
             <div class="row align-items-center" style="padding:15px">
                 <div class="col-2">
-                    <img class="events-card-logo" src="{{ URL::asset('icon/seminar.png') }}" alt="Seminar">
+                    <img class="img-fluid events-card-logo" src="{{ URL::asset('icon/seminar.png') }}" alt="Seminar">
                 </div>
-                <div class="col-5" style="line-height: 5px;">
-                    <h5 style="color:black">Seminar</h5>
-                    <p style="color:black">Free</p>
+                <div class="col-5" style="text-align: left;">
+                    <h5 style="color:black;margin-bottom:0;">Seminar</h5>
+                    <p style="color:black;margin-bottom:0;">Free</p>
                 </div>
-                <div class="col-2" style="padding-left:45px">
-                    <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 147px;height: 48px;">
+                <div class="col-5">
+                    <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg">
                         @guest
                         @if(Route::has('login'))
                         <a class="ifest-btn-primary-dark-bg-text" href="{{route('login')}}">Buy Ticket</a>
@@ -293,35 +293,35 @@ Technopreneur is a webinar and workshop that provides training & development fac
     </div>
 </div>
 <div data-aos="fade-up" data-aos-duration="1000" class="row align-items-center justify-content-between" align="left" id="technoCards2" style="padding-top: 30px;padding-bottom: 30px;">
-    <div class="col-sm-6">
+    <div class="col-xs-6 col-lg-6" align="center" style="padding:0">
         <div class="card" style="border: 0; width:90%" id="cardTimeline">
             <div class="row align-items-center justify-content-start" style="padding:15px;">
                 <div class="col-2">
-                    <img class="events-card-logo" src="{{ URL::asset('icon/guidebook.png') }}" alt="Guidebook">
+                    <img class="img-fluid events-card-logo" src="{{ URL::asset('icon/guidebook.png') }}" alt="Guidebook">
                 </div>
-                <div class="col-5" style="line-height: 5px;">
-                    <h5 style="color:black">Workshop Guidebook</h5>
+                <div class="col-5" style="text-align: left;">
+                    <h5 style="color:black;margin-bottom:0;">Workshop Guidebook</h5>
                 </div>
-                <div class="col-2" style="padding-left:45px">
-                    <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 147px;height: 48px;">
+                <div class="col-5">
+                    <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg">
                         <a class="ifest-btn-primary-dark-bg-text" href="">Download</a>
                     </button>
                 </div>
             </div>
         </div>
     </div>
-    <div class="col-sm-6">
+    <div class="col-xs-6 col-lg-6" align="center" style="padding:0">
         <div class="card" style="border: 0; width:90%" id="cardTicket">
             <div class="row align-items-center" style="padding:15px">
                 <div class="col-2">
-                    <img class="events-card-logo" src="{{ URL::asset('icon/workshop.png') }}" alt="Workshop">
+                    <img class="img-fluid events-card-logo" src="{{ URL::asset('icon/workshop.png') }}" alt="Workshop">
                 </div>
-                <div class="col-5" style="line-height: 5px;">
-                    <h5 style="color:black">Workshop</h5>
-                    <p style="color:black">Including Seminar</p>
+                <div class="col-5" style="text-align: left;">
+                    <h5 style="color:black;margin-bottom:0;">Workshop</h5>
+                    <p style="color:black;margin-bottom:0;">Including Seminar</p>
                 </div>
-                <div class="col-2" style="padding-left:45px">
-                    <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 147px;height: 48px;">
+                <div class="col-5">
+                    <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg">
                         @guest
                         @if(Route::has('login'))
                         <a class="ifest-btn-primary-dark-bg-text" href="{{route('login')}}">Register</a>
@@ -369,10 +369,10 @@ Technopreneur is a webinar and workshop that provides training & development fac
 
 <!-- @section('competition_button')
 <div class="col-2">
-    <button type="button" class="btn btn-outline-primary ifest-btn-outline-primary-dark-bg" style="width: 147px;height: 48px;">Guidebook</button>
+    <button type="button" class="btn btn-outline-primary ifest-btn-outline-primary-dark-bg">Guidebook</button>
 </div>
 <div class="col-2">
-    <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 147px;height: 48px;">
+    <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg">
         @guest
         @if(Route::has('login'))
         <a class="ifest-btn-primary-dark-bg-text" href="{{route('login')}}">Register Now</a>

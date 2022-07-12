@@ -277,29 +277,29 @@ Startup Talk is a talk show that aims as a means to bring together Founders or S
 </div>
 
 <div data-aos="fade-up" data-aos-duration="1000" class="row align-items-center justify-content-center" align="left" id="sutCards" style="padding-top: 30px;padding-bottom: 30px;">
-    <div class="col-6" align="center" style="padding:0">
+    <div class="col-xs-6 col-lg-6" align="center" style="padding:0">
         <div class="card" style="border: 0; width:90%" id="cardTimeline">
             <div class="row align-items-center justify-content-start" style="padding:15px;">
                 <div class="col-2">
-                    <img class="events-card-logo" src="{{ URL::asset('icon/date.png') }}" alt="Date">
+                    <img class="img-fluid events-card-logo" src="{{ URL::asset('icon/date.png') }}" alt="Date">
                 </div>
-                <div class="col-6">
+                <div class="col-10" style="text-align: left;">
                     <h5 style="color:black;">20 - 21 Agustus 2022</h5>
                 </div>
             </div>
         </div>
     </div>
-    <div class="col-6" align="center" style="padding:0">
+    <div class="col-xs-6 col-lg-6" align="center" style="padding:0">
         <div class="card" style="border: 0; width:90%" id="cardTicket">
             <div class="row align-items-center" style="padding:15px">
                 <div class="col-2">
-                    <img class="events-card-logo" src="{{ URL::asset('icon/ticket.png') }}" alt="Ticket">
+                    <img class="img-fluid events-card-logo" src="{{ URL::asset('icon/ticket.png') }}" alt="Ticket">
                 </div>
-                <div class="col-5" style="line-height: 5px;">
+                <div class="col-5" style="text-align: left;">
                     <h5 style="color:black;">Free</h5>
                 </div>
-                <div class="col-2" style="padding-left:45px">
-                    <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 147px;height: 48px;">
+                <div class="col-5">
+                    <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg">
                         @guest
                         @if(Route::has('login'))
                         <a class="ifest-btn-primary-dark-bg-text" href="{{route('login')}}">Register Now</a>
@@ -314,13 +314,13 @@ Startup Talk is a talk show that aims as a means to bring together Founders or S
     </div>
 </div>
 <div data-aos="fade-up" data-aos-duration="1000" class="row align-items-center justify-content-center" align="left" id="sutCards" style="padding-top: 30px;padding-bottom: 30px;">
-    <div class="col-6" align="center">
+    <div class="col-xs-6 col-lg-6" align="center" style="padding: 0;">
         <div class="card" style="border: 0; width:90%" id="cardPlatform">
             <div class="row align-items-center" style="padding:15px">
                 <div class="col-2">
-                    <img class="events-card-logo" src="{{ URL::asset('icon/platform.png') }}" alt="Platform">
+                    <img class="img-fluid events-card-logo" src="{{ URL::asset('icon/platform.png') }}" alt="Platform">
                 </div>
-                <div class="col-5" style="line-height: 5px;">
+                <div class="col-10" style="text-align:left;">
                     <h5 style="color:black; ">Zoom Meeting</h5>
                 </div>
             </div>

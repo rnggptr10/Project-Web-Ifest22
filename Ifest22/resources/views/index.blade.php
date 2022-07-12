@@ -133,11 +133,11 @@
     <div class="pasklik">
         <div id="Home" class="tabcontent">
             <h3>Startup Talk</h3>
-            <p>Description Startup Talk...</p>
+            <p>Startup Talk is a talk show that aims as a means to bring together Founders or Strategic Partners of a Startup with participants to share experiences about Metaverse & Digital Transformation. This series is the right place for startups to do soft selling and increase brand awareness.</p>
         </div>
         <div id="News" class="tabcontent">
             <h3>Technopreneur</h3>
-            <p>Description Technopreneur...</p>
+            <p>Technopreneur is a webinar and workshop that provides training & development facilities by professionals to develop people's entrepreneurial interests and talents in IT, so that they are able to use digital technology as an opportunity to develop business. Technopreneur 2022 collaborating with great incubators and companies in Indonesia to help the participants in developing their digital startup idea so that it is ready to be executed. Technopreneur 2022 presents concepts and themes where participants can practice and develop digital startup ideas from a young age, of course, accompanied by professionals. The materials that will be presented are "Introduction to Startup and Design Thinking", "Business Concept", "Branding and Market Validation", and "Funding and Pitching".</p>
         </div>
         <div id="Contact" class="tabcontent">
             <h3>IT Competition</h3>
@@ -145,7 +145,7 @@
         </div>
         <div id="About" class="tabcontent">
             <h3>Seminar Nasional</h3>
-            <p>Description Seminar Nasional...</p>
+            <p>Seminar Nasional is a national seminar that invites experienced speakers in those relevant to the IFEST theme. Seminar Nasional aims to build a platform and provide opportunities for national academics, researchers, and practitioners to exchange and share their experiences, ideas, knowledge, and research results about Cloud Computing.</p>
         </div>
         <div id="About2" class="tabcontent">
             <h3>Awarding Night</h3>
