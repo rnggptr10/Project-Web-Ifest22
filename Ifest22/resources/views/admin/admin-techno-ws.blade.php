@@ -89,7 +89,7 @@
                             <th scope="col">Nama Tim</th>
                             <th scope="col">Nama Ketua</th>
                             <th scope="col">Status Tim</th>
-                            <th scope="col">Link Abstract</th>
+                            <th scope="col">Link Proposal</th>
                             <th scope="col">Link Pitchdeck 1</th>
                             <th scope="col">Link Pitchdeck 2</th>
                         </tr>
@@ -117,21 +117,21 @@
                             </td>
                             <td>
                                 @if ($data->proposal_link !== null)
-                                    <a href="">{{ $data->proposal_link }}</a>
+                                    <a href="{{ $data->proposal_link }}">Link Proposal</a>
                                 @else
                                     NULL
                                 @endif
                             </td>
                             <td>
                                 @if ($data->pitcdeck1_link !== null)
-                                    <a href="">{{ $data->pitcdeck1_link }}</a>
+                                    <a href="{{ $data->pitcdeck1_link }}">Link Pitchdeck 1</a>
                                 @else
                                     NULL
                                 @endif
                             </td>
                             <td>
                                 @if ($data->pitcdeck2_link !== null)
-                                    <a href="">{{ $data->pitcdeck2_link }}</a>
+                                    <a href="{{ $data->pitcdeck2_link }}">Link Pitchdeck 2</a>
                                 @else
                                     NULL
                                 @endif

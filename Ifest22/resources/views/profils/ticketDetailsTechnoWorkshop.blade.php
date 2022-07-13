@@ -80,146 +80,269 @@
                     @if ($techno_ws->proposal_link === null)
                         <span class="text-tickets-status status-red">Unsubmitted</span>
                     @elseif ($techno_ws->proposal_link !== null)
-                        @if ($techno_ws->selected_team === 1)
+                        @if ($techno_ws->selected_team === '1')
                             <span class="text-tickets-status status-orange">Waiting for Selection</span>
-                        @elseif ($techno_ws->selected_team === 0)
+                        @elseif ($techno_ws->selected_team === '0')
                         <span class="text-tickets-status status-red">Proposal Declined</span>
-                        @elseif ($techno_ws->selected_team === 2)
+                        @elseif ($techno_ws->selected_team === '2')
                             <span class="text-tickets-status status-green">Proposal Selected!</span>
                         @endif
                     @endif
                 </p>
             </div>
             <div class="col" align="center" style="padding:0">
+            @if ($techno_ws->selected_team === '1')
                 @if ($techno_ws->proposal_link === null)
                     <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 120px;height: 48px;">
                         <a class="ifest-btn-primary-dark-bg-text" href="{{ route('technoWorkshop.submitting.proposal.view') }}">Submit</a>
                     </button>
                 @elseif ($techno_ws->proposal_link !== null)
                     <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 120px;height: 48px;">
-                        <a class="ifest-btn-primary-dark-bg-text" href="">Re-Submit?</a>
+                        <a class="ifest-btn-primary-dark-bg-text" href="{{ route('technoWorkshop.submitting.proposal.view') }}">Re-Submit?</a>
                     </button>
                 @endif
-                
-            </div>
-        </div>
-        <div class="row align-items-center" align="left" style="padding:20px">
-            <div class="col-2" style="padding:0 15px 0 8px">
-                <img class="circular-number" src="{{ URL::asset('icon/page-details/circle-3.svg') }}" alt="3">
-            </div>
-            <div class="col-6" align="left" style="padding:0 8px 0 15px">
-                <h6 class="text-tickets-head">Workshop Payment</h6>
-                <p class="text-tickets-desc">1-5 September 2022<br>Status : 
-                    @if ($techno_ws->proof_payment === null)
-                        <span class="text-tickets-status status-red">Not Yet Paid</span>
-                    @elseif ($techno_ws->proof_payment !== null)
-                        @if ($techno_ws->status_pembayaran === 1)
-                            <span class="text-tickets-status status-orange">Waiting for Confirmation</span>
-                        @elseif ($techno_ws->status_pembayaran === 0)
-                            <span class="text-tickets-status status-red">Payment Failed. Please Re-Upload Payment Proof</span>
-                        @elseif ($techno_ws->status_pembayaran === 2)
-                            <span class="text-tickets-status status-green">Payment Completed</span>
-                        @endif
-                    @endif
-                </p>
-            </div>
-            <div class="col" align="center" style="padding:0">
-                @if ($techno_ws->proof_payment === null)
-                    <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 120px;height: 48px;">
-                        <a class="ifest-btn-primary-dark-bg-text" href="{{ route('technoWorkshop.payment.view') }}">Submit</a>
-                    </button>
-                @elseif ($techno_ws->proof_payment !== null)
-                    <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 120px;height: 48px;">
-                        <a class="ifest-btn-primary-dark-bg-text" href="">Re-Submit?</a>
-                    </button>
-                @endif
-            </div>
-        </div>
-        <div class="row align-items-center" align="left" style="padding:20px">
-            <div class="col-2" style="padding:0 15px 0 8px">
-                <img class="circular-number" src="{{ URL::asset('icon/page-details/circle-4.svg') }}" alt="4">
-            </div>
-            <div class="col-6" align="left" style="padding:0 8px 0 15px">
-                <h6 class="text-tickets-head">Seminar</h6>
-                <p class="text-tickets-desc">11, 18 September 2022</p>
-            </div>
-            <div class="col" align="center" style="padding:0">
-                <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 120px;height: 48px;" disabled>
-                    <a class="ifest-btn-primary-dark-bg-text" href="">Link Zoom</a>
-                </button>
-            </div>
-        </div>
-        <div class="row align-items-center" align="left" style="padding:20px">
-            <div class="col-2" style="padding:0 15px 0 8px">
-                <img class="circular-number" src="{{ URL::asset('icon/page-details/circle-5.svg') }}" alt="5">
-            </div>
-            <div class="col-6" align="left" style="padding:0 8px 0 15px">
-                <h6 class="text-tickets-head">Pengumpulan Pitchdeck</h6>
-                <p class="text-tickets-desc">21-25 September 2022<br>Status : 
-                    @if ($techno_ws->pitcdeck1_link === null)
-                        <span class="text-tickets-status status-red">Unsubmitted</span>
-                    @elseif ($techno_ws->pitcdeck1_link !== null)
-                        <span class="text-tickets-status status-green">Submitted</span>
-                    @endif
-                </p>
-            </div>
-            <div class="col" align="center" style="padding:0">
-                @if ($techno_ws->pitcdeck1_link === null)
-                    <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 120px;height: 48px;">
-                        <a class="ifest-btn-primary-dark-bg-text" href="{{ route('technoWorkshop.submitting.pitchdeck1.view') }}">Submit</a>
-                    </button>
-                @elseif ($techno_ws->pitcdeck1_link !== null)
-                    <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 120px;height: 48px;">
-                        <a class="ifest-btn-primary-dark-bg-text" href="">Re-Submit?</a>
-                    </button>
-                @endif
-            </div>
-        </div>
-        <div class="row align-items-center" align="left" style="padding:20px">
-            <div class="col-2" style="padding:0 15px 0 8px">
-                <img class="circular-number" src="{{ URL::asset('icon/page-details/circle-6.svg') }}" alt="6">
-            </div>
-            <div class="col-6" align="left" style="padding:0 8px 0 15px">
-                <h6 class="text-tickets-head">Masa Revisi Pitchdeck</h6>
-                <p class="text-tickets-desc">21-25 September 2022
-                    <!-- <br>Status : 
-                    <span class="text-tickets-status status-green">
-                    {{ $data->institute }}
-                    </span> -->
-                </p>
-            </div>
-            <!-- <div class="col" align="center" style="padding:0">
+            @elseif ($techno_ws->selected_team === '2')
                 <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 120px;height: 48px;">
-                    <a class="ifest-btn-primary-dark-bg-text" href="">View</a>
+                    <a class="ifest-btn-primary-dark-bg-text" href="{{ $techno_ws->proposal_link }}">View</a>
                 </button>
-            </div> -->
-        </div>
-        <div class="row align-items-center" align="left" style="padding:20px">
-            <div class="col-2" style="padding:0 15px 0 8px">
-                <img class="circular-number" src="{{ URL::asset('icon/page-details/circle-7.svg') }}" alt="7">
+            @endif
             </div>
-            <div class="col-6" align="left" style="padding:0 8px 0 15px">
-                <h6 class="text-tickets-head">Pengumpulan Revisi Pitchdeck</h6>
-                <p class="text-tickets-desc">30 September 2022<br>Status : 
-                    @if ($techno_ws->pitcdeck2_link === null)
-                        <span class="text-tickets-status status-red">Unsubmitted</span>
-                    @elseif ($techno_ws->pitcdeck2_link !== null)
-                        <span class="text-tickets-status status-green">Submitted</span>
+        </div>
+        @if ($techno_ws->selected_team === '2')
+            <div class="row align-items-center" align="left" style="padding:20px">
+                <div class="col-2" style="padding:0 15px 0 8px">
+                    <img class="circular-number" src="{{ URL::asset('icon/page-details/circle-3.svg') }}" alt="3">
+                </div>
+                <div class="col-6" align="left" style="padding:0 8px 0 15px">
+                    <h6 class="text-tickets-head">Workshop Payment</h6>
+                    <p class="text-tickets-desc">1-5 September 2022<br>Status : 
+                        @if ($techno_ws->proof_payment === null)
+                            <span class="text-tickets-status status-red">Not Yet Paid</span>
+                        @elseif ($techno_ws->proof_payment !== null)
+                            @if ($techno_ws->status_pembayaran === '1')
+                                <span class="text-tickets-status status-orange">Waiting for Confirmation</span>
+                            @elseif ($techno_ws->status_pembayaran === '0')
+                                <span class="text-tickets-status status-red">Payment Failed. Please Re-Upload Payment Proof</span>
+                            @elseif ($techno_ws->status_pembayaran === '2')
+                                <span class="text-tickets-status status-green">Payment Completed</span>
+                            @endif
+                        @endif
+                    </p>
+                </div>
+                <div class="col" align="center" style="padding:0">
+                @if ($techno_ws->status_pembayaran === '1')
+                    @if ($techno_ws->proof_payment === null)
+                        <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 120px;height: 48px;">
+                            <a class="ifest-btn-primary-dark-bg-text" href="{{ route('technoWorkshop.payment.view') }}">Submit</a>
+                        </button>
+                    @elseif ($techno_ws->proof_payment !== null)
+                        <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 120px;height: 48px;">
+                            <a class="ifest-btn-primary-dark-bg-text" href="{{ route('technoWorkshop.payment.view') }}">Re-Submit?</a>
+                        </button>
                     @endif
-                </p>
-            </div>
-            <div class="col" align="center" style="padding:0">
-                @if ($techno_ws->pitcdeck2_link === null)
+                <!-- NANTI INI DI SET WAKTU SAMPE ABIS TEMPO PEMBAYARAN -->
+                @elseif ($techno_ws->status_pembayaran === '0')
                     <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 120px;height: 48px;">
-                        <a class="ifest-btn-primary-dark-bg-text" href="{{ route('technoWorkshop.submitting.pitchdeck2.view') }}">Submit</a>
+                        <a class="ifest-btn-primary-dark-bg-text" href="{{ route('technoWorkshop.payment.view') }}">Re-Submit</a>
                     </button>
-                @elseif ($techno_ws->pitcdeck2_link !== null)
-                    <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 120px;height: 48px;">
-                        <a class="ifest-btn-primary-dark-bg-text" href="">Re-Submit?</a>
-                    </button>
+                @else
                 @endif
+                </div>
             </div>
-        </div>
+            @if ($techno_ws->status_pembayaran === '2')
+                <div class="row align-items-center" align="left" style="padding:20px">
+                    <div class="col-2" style="padding:0 15px 0 8px">
+                        <img class="circular-number" src="{{ URL::asset('icon/page-details/circle-4.svg') }}" alt="4">
+                    </div>
+                    <div class="col-6" align="left" style="padding:0 8px 0 15px">
+                        <h6 class="text-tickets-head">Seminar</h6>
+                        <p class="text-tickets-desc">11, 18 September 2022</p>
+                    </div>
+                        <?php
+                            // SET TANGGAL ACARA
+                            $techno_seminar_date_start = Carbon::create(2022, 7, 7, 7, 00, 00, 'Asia/Jakarta');
+                            $techno_seminar_date_end = Carbon::create(2022, 7, 17, 15, 00, 00, 'Asia/Jakarta');
+                            $techno_seminar_now = Carbon::now('Asia/Jakarta');
+
+                            $techno_seminar_date_start->toDateTimeString(); 
+                            $techno_seminar_now->toDateTimeString(); 
+
+                            if ($techno_seminar_now->greaterThan($techno_seminar_date_start) && $techno_seminar_now->lessThan($techno_seminar_date_end)) {
+                                ?>
+                                <div class="col" align="center" style="padding:0">
+                                    <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 120px;height: 48px;" disabled>
+                                        <a class="ifest-btn-primary-dark-bg-text" href="">Link Zoom</a>
+                                    </button>
+                                </div>
+                                <?php
+                            } elseif ($techno_seminar_now->lessThan($techno_seminar_date_start) || $techno_seminar_now->greaterThan($techno_seminar_date_end)) { 
+                                ?>
+                                <?php
+                            }
+                        ?>
+                </div>
+                <?php
+                    // SET TANGGAL ACARA
+                    $techno_submit_p1_date_start = Carbon::create(2022, 7, 12, 7, 00, 00, 'Asia/Jakarta');
+                    $techno_submit_p1_date_end = Carbon::create(2022, 7, 17, 14, 00, 00, 'Asia/Jakarta');
+                    $techno_submit_p1_now = Carbon::now('Asia/Jakarta');
+
+                    $techno_submit_p1_date_start->toDateTimeString(); 
+                    $techno_submit_p1_now->toDateTimeString(); 
+
+                    if ($techno_submit_p1_now->greaterThan($techno_submit_p1_date_start) && $techno_submit_p1_now->lessThan($techno_submit_p1_date_end)) {
+                        ?>
+                        <div class="row align-items-center" align="left" style="padding:20px">
+                            <div class="col-2" style="padding:0 15px 0 8px">
+                                <img class="circular-number" src="{{ URL::asset('icon/page-details/circle-5.svg') }}" alt="5">
+                            </div>
+                            <div class="col-6" align="left" style="padding:0 8px 0 15px">
+                                <h6 class="text-tickets-head">Pengumpulan Pitchdeck</h6>
+                                <p class="text-tickets-desc">21-25 September 2022<br>Status : 
+                                    @if ($techno_ws->pitcdeck1_link === null)
+                                        <span class="text-tickets-status status-red">Unsubmitted</span>
+                                    @elseif ($techno_ws->pitcdeck1_link !== null)
+                                        <span class="text-tickets-status status-green">Submitted</span>
+                                    @endif
+                                </p>
+                            </div>
+                            <div class="col" align="center" style="padding:0">
+                                @if ($techno_ws->pitcdeck1_link === null)
+                                    <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 120px;height: 48px;">
+                                        <a class="ifest-btn-primary-dark-bg-text" href="{{ route('technoWorkshop.submitting.pitchdeck1.view') }}">Submit</a>
+                                    </button>
+                                @elseif ($techno_ws->pitcdeck1_link !== null)
+                                    <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 120px;height: 48px;">
+                                        <a class="ifest-btn-primary-dark-bg-text" href="">Re-Submit?</a>
+                                    </button>
+                                @endif
+                            </div>
+                        </div>
+                        <?php
+                    } elseif ($techno_submit_p1_now->lessThan($techno_submit_p1_date_start) || $techno_submit_p1_now->greaterThan($techno_submit_p1_date_end)) { 
+                        ?>
+                        <div class="row align-items-center" align="left" style="padding:20px">
+                            <div class="col-2" style="padding:0 15px 0 8px">
+                                <img class="circular-number" src="{{ URL::asset('icon/page-details/circle-5.svg') }}" alt="5">
+                            </div>
+                            <div class="col-6" align="left" style="padding:0 8px 0 15px">
+                                <h6 class="text-tickets-head">Pengumpulan Pitchdeck</h6>
+                                <p class="text-tickets-desc">21-25 September 2022<br>Status : 
+                                    @if ($techno_ws->pitcdeck1_link === null)
+                                        <span class="text-tickets-status status-red">Unsubmitted</span>
+                                    @elseif ($techno_ws->pitcdeck1_link !== null)
+                                        <span class="text-tickets-status status-green">Submitted</span>
+                                    @endif
+                                </p>
+                            </div>
+                            <div class="col" align="center" style="padding:0">
+                                    <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 120px;height: 48px;">
+                                        <a class="ifest-btn-primary-dark-bg-text" href="{{ $techno_ws->pitcdeck1_link }}">View</a>
+                                    </button>
+                            </div>
+                        </div>
+                        <?php
+                    }
+                ?>
+
+                <?php
+                    // SET TANGGAL ACARA
+                    $techno_revisi_date_start = Carbon::create(2022, 7, 7, 7, 00, 00, 'Asia/Jakarta');
+                    $techno_revisi_now = Carbon::now('Asia/Jakarta');
+
+                    $techno_revisi_date_start->toDateTimeString(); 
+                    $techno_revisi_now->toDateTimeString(); 
+
+                    if ($techno_revisi_now->greaterThan($techno_revisi_date_start)) {
+                        ?>
+                        <div class="row align-items-center" align="left" style="padding:20px">
+                            <div class="col-2" style="padding:0 15px 0 8px">
+                                <img class="circular-number" src="{{ URL::asset('icon/page-details/circle-6.svg') }}" alt="6">
+                            </div>
+                            <div class="col-6" align="left" style="padding:0 8px 0 15px">
+                                <h6 class="text-tickets-head">Masa Revisi Pitchdeck</h6>
+                                <p class="text-tickets-desc">21-25 September 2022</p>
+                            </div>
+                        </div>
+                        <?php
+                    }
+                ?>
+
+                <?php
+                    // SET TANGGAL ACARA
+                    $techno_submit_p2_date_start = Carbon::create(2022, 7, 12, 7, 00, 00, 'Asia/Jakarta');
+                    $techno_submit_p2_date_end = Carbon::create(2022, 7, 17, 14, 00, 00, 'Asia/Jakarta');
+                    $techno_submit_p2_now = Carbon::now('Asia/Jakarta');
+
+                    $techno_submit_p2_date_start->toDateTimeString(); 
+                    $techno_submit_p2_now->toDateTimeString(); 
+
+                    if ($techno_submit_p2_now->greaterThan($techno_submit_p2_date_start) && $techno_submit_p2_now->lessThan($techno_submit_p2_date_end)) {
+                        ?>
+                        <div class="row align-items-center" align="left" style="padding:20px">
+                            <div class="col-2" style="padding:0 15px 0 8px">
+                                <img class="circular-number" src="{{ URL::asset('icon/page-details/circle-7.svg') }}" alt="7">
+                            </div>
+                            <div class="col-6" align="left" style="padding:0 8px 0 15px">
+                                <h6 class="text-tickets-head">Pengumpulan Revisi Pitchdeck</h6>
+                                <p class="text-tickets-desc">30 September 2022<br>Status : 
+                                    @if ($techno_ws->pitcdeck2_link === null)
+                                        <span class="text-tickets-status status-red">Unsubmitted</span>
+                                    @elseif ($techno_ws->pitcdeck2_link !== null)
+                                        <span class="text-tickets-status status-green">Submitted</span>
+                                    @endif
+                                </p>
+                            </div>
+                            <div class="col" align="center" style="padding:0">
+                                @if ($techno_ws->pitcdeck2_link === null)
+                                    <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 120px;height: 48px;">
+                                        <a class="ifest-btn-primary-dark-bg-text" href="{{ route('technoWorkshop.submitting.pitchdeck2.view') }}">Submit</a>
+                                    </button>
+                                @elseif ($techno_ws->pitcdeck2_link !== null)
+                                    <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 120px;height: 48px;">
+                                        <a class="ifest-btn-primary-dark-bg-text" href="">Re-Submit?</a>
+                                    </button>
+                                @endif
+                            </div>
+                        </div>
+                        <?php
+                    } elseif ($techno_submit_p2_now->lessThan($techno_submit_p2_date_start) || $techno_submit_p2_now->greaterThan($techno_submit_p2_date_end)) { 
+                        ?>
+                        <div class="row align-items-center" align="left" style="padding:20px">
+                            <div class="col-2" style="padding:0 15px 0 8px">
+                                <img class="circular-number" src="{{ URL::asset('icon/page-details/circle-7.svg') }}" alt="7">
+                            </div>
+                            <div class="col-6" align="left" style="padding:0 8px 0 15px">
+                                <h6 class="text-tickets-head">Pengumpulan Revisi Pitchdeck</h6>
+                                <p class="text-tickets-desc">30 September 2022<br>Status : 
+                                    @if ($techno_ws->pitcdeck2_link === null)
+                                        <span class="text-tickets-status status-red">Unsubmitted</span>
+                                    @elseif ($techno_ws->pitcdeck2_link !== null)
+                                        <span class="text-tickets-status status-green">Submitted</span>
+                                    @endif
+                                </p>
+                            </div>
+                            <div class="col" align="center" style="padding:0">
+                                    <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 120px;height: 48px;">
+                                        <a class="ifest-btn-primary-dark-bg-text" href="{{ $techno_ws->pitcdeck2_link }}">View</a>
+                                    </button>
+                            </div>
+                        </div>
+                        <?php
+                    }
+                ?>
+ 
     </div>
+    @elseif ($techno_ws->status_pembayaran === '0')
+    <!-- BIKIN STATUS TIDAK LOLOS KE BABAK SELANJUTNYA -->
+    @elseif ($techno_ws->status_pembayaran === '1')
+    <!-- BIKIN GEMBOK -->
+    @endif
+
+    @elseif ($techno_ws->selected_team === '0')
+    <!-- BIKIN STATUS TIDAK LOLOS KE BABAK SELANJUTNYA -->
+    @elseif ($techno_ws->selected_team === '1')
+    <!-- BIKIN GEMBOK -->
+    @endif
 </div>
 @endsection

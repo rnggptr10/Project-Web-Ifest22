@@ -27,7 +27,7 @@
                 <div class="row justify-content-center" align="center" id="technoWSPayment" style="padding-bottom: 30px;">
                     <div class="col-5">
                         <div class="row">
-                            <form action="@yield('regist_action_form')" method="post" enctype="multipart/form-data">
+                            <form action="{{route('technoWorkshop.payment')}}" method="post" enctype="multipart/form-data">
                                 @method('patch')
                                 @csrf
                                 <div id="regist-section-1">
@@ -65,7 +65,7 @@
                                                     <a class="btn btn-outline-primary ifest-btn-outline-primary-dark-bg mt-3 mt-sm-0 fw-bold text-center" style="height:44px; width:128px;" href="{{ route('profile.ticketDetailsTechnoWorkshop') }}">{{ __('< Back') }}</a>
                                                 </div>
                                                 <div class="col-4">
-                                                    <button id="regist-submit-regist" type="submit" class="btn btn-primary ifest-btn-primary-dark-bg mt-3 mt-sm-0 fw-bold" style="height:44px; width:128px" disabled>{{ __('Submit') }}</button>
+                                                    <button id="regist-submit-regist" type="submit" class="btn btn-primary ifest-btn-primary-dark-bg mt-3 mt-sm-0 fw-bold" style="height:44px; width:128px">{{ __('Submit') }}</button>
                                                 </div>
                                             </div>
                                         </div>
