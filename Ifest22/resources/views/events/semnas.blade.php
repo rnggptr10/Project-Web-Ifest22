@@ -24,9 +24,7 @@ Seminar Nasional is a national seminar that invites experienced speakers in thos
 
 <!-- SPEAKERS -->
 @section('semnas_speakers_1')
-<div class="col-4">
-    <div class="card ifest-photo-card" style="border: 0; width:max-content">
-        <img class="card-img-top" style="width:100%;height:350px;" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg" alt="Speakers-1">
+<img class="card-img-top" style="width:100%;height:350px;" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg" alt="Speakers-1">
         <div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
             <div class="col-7">
                 <h5 class="text-photo-card-name">Speaker1</h5>
@@ -36,14 +34,10 @@ Seminar Nasional is a national seminar that invites experienced speakers in thos
                 <a href=""><img class="logo-linkedin" src="{{ URL::asset('icon/linkedin.svg') }}" alt="linkedin"></a>
             </div>
         </div>
-    </div>
-</div>
 @endsection
 
 @section('semnas_speakers_2')
-<div class="col-4">
-    <div class="card ifest-photo-card" style="border: 0; width:max-content">
-        <img class="card-img-top" style="width:100%;height:350px;" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg" alt="Speakers-1">
+<img class="card-img-top" style="width:100%;height:350px;" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg" alt="Speakers-1">
         <div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
             <div class="col-7">
                 <h5 class="text-photo-card-name">Speaker2</h5>
@@ -53,14 +47,10 @@ Seminar Nasional is a national seminar that invites experienced speakers in thos
                 <a href=""><img class="logo-linkedin" src="{{ URL::asset('icon/linkedin.svg') }}" alt="linkedin"></a>
             </div>
         </div>
-    </div>
-</div>
 @endsection
 
 @section('semnas_speakers_3')
-<div class="col-4">
-    <div class="card ifest-photo-card" style="border: 0; width:max-content">
-        <img class="card-img-top" style="width:100%;height:350px;" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg" alt="Speakers-1">
+<img class="card-img-top" style="width:100%;height:350px;" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg" alt="Speakers-1">
         <div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
             <div class="col-7">
                 <h5 class="text-photo-card-name">Speaker3</h5>
@@ -70,14 +60,10 @@ Seminar Nasional is a national seminar that invites experienced speakers in thos
                 <a href=""><img class="logo-linkedin" src="{{ URL::asset('icon/linkedin.svg') }}" alt="linkedin"></a>
             </div>
         </div>
-    </div>
-</div>
 @endsection
 
 @section('semnas_speakers_4')
-<div class="col-4">
-    <div class="card ifest-photo-card" style="border: 0; width:max-content">
-        <img class="card-img-top" style="width:100%;height:350px;" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg" alt="Speakers-1">
+<img class="card-img-top" style="width:100%;height:350px;" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg" alt="Speakers-1">
         <div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
             <div class="col-7">
                 <h5 class="text-photo-card-name">Speaker4</h5>
@@ -87,8 +73,6 @@ Seminar Nasional is a national seminar that invites experienced speakers in thos
                 <a href=""><img class="logo-linkedin" src="{{ URL::asset('icon/linkedin.svg') }}" alt="linkedin"></a>
             </div>
         </div>
-    </div>
-</div>
 @endsection
 
 <!-- FAQ -->
@@ -126,20 +110,36 @@ Seminar Nasional is a national seminar that invites experienced speakers in thos
 
 <!-- TEMPLATE BODY -->
 @section('event_detail')
-<div data-aos="fade-down" data-aos-duration="1000" class="row align-items-center" align="center" style="padding-top: 30px;padding-bottom: 30px;">
-    <h1 class="text-event-sub-title">Speakers</h1>
-    <div id="semnasSpeakers" class="row justify-content-center carousel slide" data-ride="carousel" style="padding-top: 30px; position:relative">
+<div id="Speaker1" data-aos="fade-down" data-aos-duration="1000" align="center" style="padding-top: 30px;padding-bottom: 30px;">
+    <h1 class="text-event-sub-title">Our Workshop Mentors</h1>
+    <div id="semnasSpeakers" class="row justify-content-center carousel slide" data-ride="carousel" style="padding-top: 30px;">
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <div class="row justify-content-center">
-                    @yield('semnas_speakers_1')
-                    @yield('semnas_speakers_2')
+                    <div class="col-4">
+                        <div class="card ifest-photo-card" style="border: 0; width:max-content">
+                            @yield('semnas_speakers_1')
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card ifest-photo-card" style="border: 0; width:max-content">
+                            @yield('semnas_speakers_2')
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="carousel-item">
                 <div class="row justify-content-center">
-                    @yield('semnas_speakers_3')
-                    @yield('semnas_speakers_4')
+                    <div class="col-4">
+                        <div class="card ifest-photo-card" style="border: 0; width:max-content">
+                            @yield('semnas_speakers_3')
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card ifest-photo-card" style="border: 0; width:max-content">
+                            @yield('semnas_speakers_4')
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -151,6 +151,62 @@ Seminar Nasional is a national seminar that invites experienced speakers in thos
                 <span class="sr-only">Previous</span>
             </a>
             <a class="carousel-control-next" href="#semnasSpeakers" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+</div>
+
+<div id="Speaker2" data-aos="fade-down" data-aos-duration="1000" align="center" id="sutSpeakers" style="padding-top: 30px;padding-bottom: 30px;">
+<h1 class="text-event-sub-title">Speakers</h1>
+    <div id="semnasSpeakers2" class="row justify-content-center carousel slide" data-ride="carousel" style="padding-top: 30px; position:relative">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="row justify-content-center">
+                    <div class="col">
+                        <div class="card ifest-photo-card" style="border: 0;text-align:center; width:350px;">
+                            @yield('semnas_speakers_1')
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="row justify-content-center">
+                    <div class="col">
+                        <div class="card ifest-photo-card" style="border: 0; text-align:center; width:350px;">
+                            @yield('semnas_speakers_2')
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="row justify-content-center">
+                    <div class="col">
+                        <div class="card ifest-photo-card" style="border: 0; text-align:center; width:350px;">
+                            @yield('semnas_speakers_3')
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="row justify-content-center">
+                    <div class="col">
+                        <div class="card ifest-photo-card" style="border: 0; text-align:center; width:350px;">
+                            @yield('semnas_speakers_4')
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row justify-content-center" style="padding-top: 30px;">
+        <div class="col-1">
+            <a class="carousel-control-prev" href="#semnasSpeakers2" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#sutSpeakers2Day2" role="button" data-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="sr-only">Next</span>
             </a>

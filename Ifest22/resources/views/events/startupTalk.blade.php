@@ -159,7 +159,7 @@ Startup Talk is a talk show that aims as a means to bring together Founders or S
 <!-- TEMPLATE BODY -->
 @section('event_detail')
 <!-- INI STARTUP PENGENNYA GERAK KYK COMPFEST -->
-<div data-aos="fade-down" data-aos-duration="1000" class="row align-items-center justify-content-center" align="center" id="sutStartup" style="padding-top: 30px;padding-bottom: 30px;">
+<div data-aos="fade-down" data-aos-duration="1000" align="center" id="sutStartup" style="padding-top: 30px;padding-bottom: 30px;">
     <h1 class="text-sub-title">Our Startup Partners</h1>
     <div class="row justify-content-center" style="padding-top: 30px; padding-bottom: 30px;">
         <div class="col">
@@ -179,7 +179,7 @@ Startup Talk is a talk show that aims as a means to bring together Founders or S
     </div>
 </div>
 
-<div data-aos="fade-down" data-aos-duration="1000" class="row align-items-center justify-content-center" align="center" id="sutSpeakers" style="padding-top: 30px;padding-bottom: 30px;">
+<div id="Speaker1" data-aos="fade-down" data-aos-duration="1000" align="center" id="sutSpeakers" style="padding-top: 30px;padding-bottom: 30px;">
     <h1 class="text-event-sub-title">Startup Talk : Day 1</h1>
     <h2 class="text-event-sub-theme">"Metaverse, The Next Level of Human Culture"</h2>
     <div id="sutSpeakersDay1" class="row justify-content-center carousel slide" data-ride="carousel" style="padding-top: 30px; position:relative">
@@ -227,7 +227,65 @@ Startup Talk is a talk show that aims as a means to bring together Founders or S
         </div>
     </div>
 </div>
-<div data-aos="fade-down" data-aos-duration="1000" class="row align-items-center justify-content-center" align="center" style="padding-top: 30px;padding-bottom: 30px;">
+
+<div id="Speaker2" data-aos="fade-down" data-aos-duration="1000" align="center" id="sutSpeakers" style="padding-top: 30px;padding-bottom: 30px;">
+    <h1 class="text-event-sub-title">Startup Talk : Day 1</h1>
+    <h2 class="text-event-sub-theme">"Metaverse, The Next Level of Human Culture"</h2>
+    <div id="sutSpeakers2Day1" class="row justify-content-center carousel slide" data-ride="carousel" style="padding-top: 30px; position:relative">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="row justify-content-center">
+                    <div class="col">
+                        <div class="card ifest-photo-card" style="border: 0;text-align:center; width:350px;">
+                            @yield('startup1_speakers')
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="row justify-content-center">
+                    <div class="col">
+                        <div class="card ifest-photo-card" style="border: 0; text-align:center; width:350px;">
+                            @yield('startup2_speakers')
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="row justify-content-center">
+                    <div class="col">
+                        <div class="card ifest-photo-card" style="border: 0; text-align:center; width:350px;">
+                            @yield('startup3_speakers')
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="row justify-content-center">
+                    <div class="col">
+                        <div class="card ifest-photo-card" style="border: 0; text-align:center; width:350px;">
+                            @yield('startup4_speakers')
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row justify-content-center" style="padding-top: 30px;">
+        <div class="col-1">
+            <a class="carousel-control-prev" href="#sutSpeakers2Day1" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#sutSpeakers2Day1" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+</div>
+
+<div id="Speaker1" data-aos="fade-down" data-aos-duration="1000" align="center" style="padding-top: 30px;padding-bottom: 30px;">
     <h1 class="text-event-sub-title">Startup Talk : Day 2</h1>
     <h2 class="text-event-sub-theme">"Evolution of Digital Transformation"</h2>
     <div id="sutSpeakersDay2" class="row justify-content-center carousel slide" data-ride="carousel" style="padding-top: 30px; position:relative">
@@ -269,6 +327,63 @@ Startup Talk is a talk show that aims as a means to bring together Founders or S
                 <span class="sr-only">Previous</span>
             </a>
             <a class="carousel-control-next" href="#sutSpeakersDay2" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+</div>
+
+<div id="Speaker2" data-aos="fade-down" data-aos-duration="1000" align="center" id="sutSpeakers" style="padding-top: 30px;padding-bottom: 30px;">
+    <h1 class="text-event-sub-title">Startup Talk : Day 2</h1>
+    <h2 class="text-event-sub-theme">"Evolution of Digital Transformation"</h2>
+    <div id="sutSpeakers2Day2" class="row justify-content-center carousel slide" data-ride="carousel" style="padding-top: 30px; position:relative">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="row justify-content-center">
+                    <div class="col">
+                        <div class="card ifest-photo-card" style="border: 0;text-align:center; width:350px;">
+                            @yield('startup5_speakers')
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="row justify-content-center">
+                    <div class="col">
+                        <div class="card ifest-photo-card" style="border: 0; text-align:center; width:350px;">
+                            @yield('startup6_speakers')
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="row justify-content-center">
+                    <div class="col">
+                        <div class="card ifest-photo-card" style="border: 0; text-align:center; width:350px;">
+                            @yield('startup7_speakers')
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="row justify-content-center">
+                    <div class="col">
+                        <div class="card ifest-photo-card" style="border: 0; text-align:center; width:350px;">
+                            @yield('startup8_speakers')
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row justify-content-center" style="padding-top: 30px;">
+        <div class="col-1">
+            <a class="carousel-control-prev" href="#sutSpeakers2Day2" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#sutSpeakers2Day2" role="button" data-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="sr-only">Next</span>
             </a>

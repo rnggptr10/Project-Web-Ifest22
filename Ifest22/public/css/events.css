@@ -152,3 +152,18 @@ body {
         margin-top: 30px;
     }
 }
+
+#Speaker2{
+    display: none;
+}
+
+@media screen and (max-width:1200px) {
+    #Speaker1 {
+        display: none;
+    }
+
+    #Speaker2 {
+        display: block;
+    }
+}
+

@@ -25,8 +25,6 @@ Technopreneur is a webinar and workshop that provides training & development fac
 
 <!-- SPEAKERS -->
 @section('techno_speakers_1')
-<div class="col-4">
-    <div class="card ifest-photo-card" style="border: 0; width:max-content">
         <img class="card-img-top" style="width:100%;height:350px;" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg" alt="Speakers-1">
         <div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
             <div class="col-7" style="line-height: 5px;">
@@ -37,13 +35,9 @@ Technopreneur is a webinar and workshop that provides training & development fac
                 <a href=""><img class="logo-linkedin" src="{{ URL::asset('icon/linkedin.svg') }}" alt="linkedin"></a>
             </div>
         </div>
-    </div>
-</div>
 @endsection
 
 @section('techno_speakers_2')
-<div class="col-4">
-    <div class="card ifest-photo-card" style="border: 0; width:max-content">
         <img class="card-img-top" style="width:100%;height:350px;" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg" alt="Speakers-1">
         <div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
             <div class="col-7" style="line-height: 5px;">
@@ -54,14 +48,10 @@ Technopreneur is a webinar and workshop that provides training & development fac
                 <a href=""><img class="logo-linkedin" src="{{ URL::asset('icon/linkedin.svg') }}" alt="linkedin"></a>
             </div>
         </div>
-    </div>
-</div>
 @endsection
 
 <!-- MENTORS -->
 @section('techno_mentor_1')
-<div class="col-4">
-    <div class="card ifest-photo-card" style="border: 0; width:max-content">
         <img class="card-img-top" style="width:100%;height:350px;" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg" alt="Speakers-1">
         <div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
             <div class="col-7" style="line-height: 5px;">
@@ -72,13 +62,9 @@ Technopreneur is a webinar and workshop that provides training & development fac
                 <a href=""><img class="logo-linkedin" src="{{ URL::asset('icon/linkedin.svg') }}" alt="linkedin"></a>
             </div>
         </div>
-    </div>
-</div>
 @endsection
 
 @section('techno_mentor_2')
-<div class="col-4">
-    <div class="card ifest-photo-card" style="border: 0; width:max-content">
         <img class="card-img-top" style="width:100%;height:350px;" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg" alt="Speakers-1">
         <div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
             <div class="col-7" style="line-height: 5px;">
@@ -89,13 +75,9 @@ Technopreneur is a webinar and workshop that provides training & development fac
                 <a href=""><img class="logo-linkedin" src="{{ URL::asset('icon/linkedin.svg') }}" alt="linkedin"></a>
             </div>
         </div>
-    </div>
-</div>
 @endsection
 
 @section('techno_mentor_3')
-<div class="col-4">
-    <div class="card ifest-photo-card" style="border: 0; width:max-content">
         <img class="card-img-top" style="width:100%;height:350px;" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg" alt="Speakers-1">
         <div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
             <div class="col-7" style="line-height: 5px;">
@@ -106,13 +88,9 @@ Technopreneur is a webinar and workshop that provides training & development fac
                 <a href=""><img class="logo-linkedin" src="{{ URL::asset('icon/linkedin.svg') }}" alt="linkedin"></a>
             </div>
         </div>
-    </div>
-</div>
 @endsection
 
 @section('techno_mentor_4')
-<div class="col-4">
-    <div class="card ifest-photo-card" style="border: 0; width:max-content">
         <img class="card-img-top" style="width:100%;height:350px;" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg" alt="Speakers-1">
         <div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
             <div class="col-7" style="line-height: 5px;">
@@ -123,8 +101,6 @@ Technopreneur is a webinar and workshop that provides training & development fac
                 <a href=""><img class="logo-linkedin" src="{{ URL::asset('icon/linkedin.svg') }}" alt="linkedin"></a>
             </div>
         </div>
-    </div>
-</div>
 @endsection
 
 <!-- FAQ -->
@@ -155,14 +131,22 @@ Technopreneur is a webinar and workshop that provides training & development fac
 
 <!-- TEMPLATE BODY -->
 @section('event_detail')
-<div data-aos="fade-down" data-aos-duration="1000" class="row align-items-center" align="center" style="padding-top: 30px;padding-bottom: 30px;">
+<div id="Speaker1" data-aos="fade-down" data-aos-duration="1000" class="row align-items-center" align="center" style="padding-top: 30px;padding-bottom: 30px;">
     <h1 class="text-event-sub-title">Our Seminar Speakers</h1>
     <div id="technoSpeakers" class="row justify-content-center carousel slide" data-ride="carousel" style="padding-top: 30px; position:relative">
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <div class="row justify-content-center">
-                    @yield('techno_speakers_1')
-                    @yield('techno_speakers_2')
+                    <div class="col-4">
+                        <div class="card ifest-photo-card" style="border: 0; width:max-content">
+                            @yield('techno_speakers_1')
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card ifest-photo-card" style="border: 0; width:max-content">
+                            @yield('techno_speakers_2')
+                        </div>
+                    </div>
                 </div>
             </div>
             <!-- <div class="carousel-item">
@@ -186,20 +170,75 @@ Technopreneur is a webinar and workshop that provides training & development fac
         </div>
     </div> -->
 </div>
-<div data-aos="fade-down" data-aos-duration="1000" class="row align-items-center" align="center" style="padding-top: 30px;padding-bottom: 30px;">
+
+<div id="Speaker2" data-aos="fade-down" data-aos-duration="1000" align="center" id="sutSpeakers" style="padding-top: 30px;padding-bottom: 30px;">
+<h1 class="text-event-sub-title">Our Seminar Speakers</h1>
+    <div id="technoMentor1" class="row justify-content-center carousel slide" data-ride="carousel" style="padding-top: 30px; position:relative">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="row justify-content-center">
+                    <div class="col">
+                        <div class="card ifest-photo-card" style="border: 0;text-align:center; width:350px;">
+                            @yield('techno_speakers_1')
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="row justify-content-center">
+                    <div class="col">
+                        <div class="card ifest-photo-card" style="border: 0;text-align:center; width:350px;">
+                            @yield('techno_speakers_2')
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row justify-content-center" style="padding-top: 30px;">
+        <div class="col-1">
+            <a class="carousel-control-prev" href="#technoMentor1" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#technoMentor1" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+</div>
+
+<div id="Speaker1" data-aos="fade-down" data-aos-duration="1000" align="center" style="padding-top: 30px;padding-bottom: 30px;">
     <h1 class="text-event-sub-title">Our Workshop Mentors</h1>
     <div id="technoMentor" class="row justify-content-center carousel slide" data-ride="carousel" style="padding-top: 30px; position:relative">
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <div class="row justify-content-center">
-                    @yield('techno_mentor_1')
-                    @yield('techno_mentor_2')
+                    <div class="col-4">
+                        <div class="card ifest-photo-card" style="border: 0; width:max-content">
+                            @yield('techno_mentor_1')
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card ifest-photo-card" style="border: 0; width:max-content">
+                            @yield('techno_mentor_2')
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="carousel-item">
                 <div class="row justify-content-center">
-                    @yield('techno_mentor_3')
-                    @yield('techno_mentor_4')
+                    <div class="col-4">
+                        <div class="card ifest-photo-card" style="border: 0; width:max-content">
+                            @yield('techno_mentor_3')
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card ifest-photo-card" style="border: 0; width:max-content">
+                            @yield('techno_mentor_4')
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -217,6 +256,63 @@ Technopreneur is a webinar and workshop that provides training & development fac
         </div>
     </div>
 </div>
+
+<div id="Speaker2" data-aos="fade-down" data-aos-duration="1000" align="center" id="sutSpeakers" style="padding-top: 30px;padding-bottom: 30px;">
+<h1 class="text-event-sub-title">Our Workshop Mentors</h1>
+    <div id="technoMentor1" class="row justify-content-center carousel slide" data-ride="carousel" style="padding-top: 30px; position:relative">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="row justify-content-center">
+                    <div class="col">
+                        <div class="card ifest-photo-card" style="border: 0;text-align:center; width:350px;">
+                            @yield('techno_mentor_1')
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="row justify-content-center">
+                    <div class="col">
+                        <div class="card ifest-photo-card" style="border: 0;text-align:center; width:350px;">
+                            @yield('techno_mentor_2')
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="row justify-content-center">
+                    <div class="col">
+                        <div class="card ifest-photo-card" style="border: 0;text-align:center; width:350px;">
+                            @yield('techno_mentor_3')
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="row justify-content-center">
+                    <div class="col">
+                        <div class="card ifest-photo-card" style="border: 0;text-align:center; width:350px;">
+                            @yield('techno_mentor_4')
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row justify-content-center" style="padding-top: 30px;">
+        <div class="col-1">
+            <a class="carousel-control-prev" href="#technoMentor1" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#technoMentor1" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+</div>
+
 <div data-aos="fade-up" data-aos-duration="1000" class="row" align="center" id="eventTimeline" style="padding-top: 30px;padding-bottom: 30px;">
     <h1 class="text-sub-title">Timeline</h1>
     <section class="ps-timeline-sec">
