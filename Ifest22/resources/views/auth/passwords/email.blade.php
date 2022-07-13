@@ -1,14 +1,14 @@
-@extends('registration.regis-competition')
+@extends('auth.passwords.forgotPassword')
 
-@section('regist_competition_head')
+@section('head')
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport' />
 <link rel="stylesheet" href="{{ URL::asset('css/generalStyle.css') }}">
 <link rel="stylesheet" href="{{ URL::asset('css/bootstrap.min.css') }}">
 <link rel="stylesheet" href="{{ URL::asset('css/registration.css') }}">
 @endsection
-@section('regist_competition_title', 'Reset Password')
-@section('regist-competition-form')
+@section('title', 'Reset Password')
+@section('form')
 
 <form method="post" action="{{ route('password.email') }}" enctype="multipart/form-data">
     @csrf
@@ -31,7 +31,7 @@
             </div>
             @enderror
         </div>
-        <div class="col">
+        <div class="col" style="padding-top:30px">
             <button type="submit" class="btn btn-primary" style="background-color: #8267B4; border:none;">
                 {{ __('Send Password Reset Link') }}
             </button>
@@ -39,26 +39,3 @@
     </div>
 </form>
 @endsection
-
-@section('cp_registrasi')
-<div class="row justify-content-center align-items-center" align="center" id="eventCP" style="padding-top: 30px;padding-bottom: 30px;">
-    <h1 class="text-sub-title">Contact Person</h1>
-    <div class="col-2" style="padding-top: 30px;">
-        <button type="button" class="btn btn-outline-primary ifest-btn-outline-primary-dark-bg" style="width: 147px;height: 48px;" onclick="window.location.href='https://wa.me/@yield('cp1_wa')';">
-            <img class="logo-whatsapp" src="{{ URL::asset('icon/whatsapp.svg') }}" alt="whatsapp">
-            <span>@yield('cp1_name')</span>
-        </button>
-    </div>
-    <div class="col-2" style="padding-top: 30px;">
-        <button type="button" class="btn btn-outline-primary ifest-btn-outline-primary-dark-bg" style="width: 147px;height: 48px;" onclick="window.location.href='https://wa.me/@yield('cp2_wa')';">
-            <img class="logo-whatsapp" src="{{ URL::asset('icon/whatsapp.svg') }}" alt="whatsapp">
-            <span>@yield('cp2_name')</span>
-        </button>
-    </div>
-</div>
-@endsection
-
-@section('cp1_wa', '6287720201166')
-@section('cp1_name', 'Jarwo 1')
-@section('cp2_wa', '6287720201177')
-@section('cp2_name', 'Jarwo 2')

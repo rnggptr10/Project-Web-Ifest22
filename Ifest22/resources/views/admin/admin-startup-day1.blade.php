@@ -7,7 +7,7 @@
 <link rel="stylesheet" href="{{ URL::asset('css/bootstrap.min.css') }}">
 @endsection
 
-@section('admin_title', 'Seminar Nasional')
+@section('admin_title', 'Startup Talk Day 1')
 
 @section('admin_detail')
 <div class="row align-items-center justify-content-center" align="center" id="tableDataStartup" style="padding-top: 10px;padding-bottom: 10px;">
@@ -23,37 +23,32 @@
                             <th scope="col">Email</th>
                             <th scope="col">Nama Peserta</th>
                             <th scope="col">Instansi</th>
-                            <th scope="col">Bukti Pembayaran</th>
                             <th scope="col">Status Konfirmasi</th>
                         </tr>
                     </thead>
                     <tbody>
-                        @foreach ($semnas as $data)
                         <tr>
-                        <form action="{{ route('admin-semnas-change-status-pembayaran') }}" method="post">
-                            @method('put')
-                            @csrf
-                            <td><input name="semnas_email" id="semnas_email" value="{{ $data->email }}" hidden>{{ $data->email }}</td>
+                        @foreach ($startup as $data)
+                            <td>{{ $data->email }}</td>
                             <td>{{ $data->name }}</td>
                             <td>{{ $data->institute }}</td>
-                            <td><a href="{{asset('storage/' . $data['proof_payment'])}}"> Proof Payment</a></td>
                             <td>
                                 <div class="btn-group">
-                                    <!-- <select name="startup-status" id="startup-status" style="color:black">
+                                    <!-- <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Confirmed
+                                    </button>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                    </div> -->
+                                    <select name="startup-status" id="startup-status" style="color:black">
                                         <option value="Confirmed">Confirmed</option>
-                                        <option value="Pending">Pending</option>
-                                        <option value="Declined">Declined</option>
-                                    </select> -->
-                                    <select name="semnas_payment_status" id="semnas_payment_status" style="color:black" onchange="this.form.submit()">
-                                        <option style="color:black" value="2" <?php if($data->status_pembayaran === '2') {echo('selected');}?>>Confirmed</option>
-                                        <option style="color:black" value="1" <?php if($data->status_pembayaran === '1') {echo('selected');}?>>Pending</option>
-                                        <option style="color:black" value="0" <?php if($data->status_pembayaran === '0') {echo('selected');}?>>Declined</option>
                                     </select>
                                 </div>
                             </td>
-                        </form>
-                        </tr>
                         @endforeach
+                        </tr>
                     </tbody>
                 </table>
             </div>
