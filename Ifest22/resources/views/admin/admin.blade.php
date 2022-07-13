@@ -38,7 +38,8 @@
                             <div class="card-hamburger text-left">
                                 <details>
                                     <summary style="background-color: transparent;">Event</summary>
-                                    <a href="{{ route('admin-startup') }}" class="burger-details" style="padding-left: 15px;">Startup Talk</a>
+                                    <a href="{{ route('admin-startup-day1') }}" class="burger-details" style="padding-left: 15px;">Startup Talk Day 1</a>
+                                    <a href="{{ route('admin-startup-day2') }}" class="burger-details" style="padding-left: 15px;">Startup Talk Day 2</a>
                                     <a href="{{ route('admin-semnas') }}" class="burger-details" style="padding-left: 15px;">Seminar Nasional</a>
                                     <a href="" class="burger-details" style="padding-left: 15px;">Seminar Nasional - Presenter</a>
                                     <a href="{{ route('admin-techno') }}" class="burger-details" style="padding-left: 15px;">Techno Seminar</a>
@@ -61,7 +62,8 @@
                                 Event
                             </a>
                             <div class="dropdown-menu border-dropmenu" aria-labelledby="navbarDropdown" style="background-color: #1c1c1c;">
-                                <a class="item-dropmenu" href="{{ route('admin-startup') }}">Startup Talk</a>
+                                <a class="item-dropmenu" href="{{ route('admin-startup-day1') }}">Startup Talk Day 1</a>
+                                <a class="item-dropmenu" href="{{ route('admin-startup-day2') }}">Startup Talk Day 2</a>
                                 <a class="item-dropmenu" href="{{ route('admin-semnas') }}">Seminar Nasional</a>
                                 <a class="item-dropmenu" href="">Seminar Nasional - Presenter</a>
                                 <a class="item-dropmenu" href="{{ route('admin-techno') }}">Techno Seminar</a>

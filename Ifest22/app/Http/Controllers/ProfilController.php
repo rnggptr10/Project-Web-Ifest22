@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-
+use Illuminate\Support\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use App\Models\User;
@@ -236,7 +236,7 @@ class ProfilController extends Controller
             'proposal_link' => $request->proposal_link,
         ]);
 
-        return redirect()->route('profile');
+        return redirect()->route('profile.ticketDetailsTechnoWorkshop');
     }
 
     public function submittingPitchdeck1Techno()
@@ -255,7 +255,7 @@ class ProfilController extends Controller
             'pitcdeck1_link' => $request->pitcdeck1_link,
         ]);
 
-        return redirect()->route('profile');
+        return redirect()->route('profile.ticketDetailsTechnoWorkshop');
     }
 
     public function submittingPitchdeck2Techno()
@@ -274,7 +274,7 @@ class ProfilController extends Controller
             'pitcdeck2_link' => $request->pitcdeck2_link,
         ]);
 
-        return redirect()->route('profile');
+        return redirect()->route('profile.ticketDetailsTechnoWorkshop');
     }
 
 

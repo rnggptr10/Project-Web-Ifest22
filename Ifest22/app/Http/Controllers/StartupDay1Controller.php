@@ -5,10 +5,10 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use App\Models\Ticket;
-use App\Models\Startup;
+use App\Models\StartupDay1;
 use Carbon\Carbon;
 
-class StartupController extends Controller
+class StartupDay1Controller extends Controller
 {
     public function isOpened()
     {
@@ -42,16 +42,16 @@ class StartupController extends Controller
         return redirect()->route('startup');
     }
 
-    public function saveRegister()
+    public function saveRegisterDay1()
     {
-        Startup::create([
+        StartupDay1::create([
             'email' => Auth::user()->email,
             'name' => Auth::user()->name,
             'institute' => Auth::user()->institute,
         ]);
 
         Ticket::where('email', Auth::user()->email)->update([
-            'startup_status' => '1'
+            'startupDay1_status' => '1'
         ]);
 
 

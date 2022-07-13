@@ -5,7 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use App\Models\User;
-use App\Models\Startup;
+use App\Models\StartupDay1;
+use App\Models\StartupDay2;
 use App\Models\Techno_seminar;
 use App\Models\Techno_ws_form;
 use App\Models\Semnas;
@@ -49,13 +50,23 @@ class AdminController extends Controller
         }
     }
 
-    public function dataStartup()
+    public function dataStartupDay1()
     {
         if (Auth::user()->is_admin == 0) {
             if (Auth::user()->is_admin == 0) return redirect()->route('home');
         } else {
-            $startup = Startup::all();
-            return view('admin.admin-startup', compact('startup'));
+            $startup = StartupDay1::all();
+            return view('admin.admin-startup-day1', compact('startup'));
+        }
+    }
+
+    public function dataStartupDay2()
+    {
+        if (Auth::user()->is_admin == 0) {
+            if (Auth::user()->is_admin == 0) return redirect()->route('home');
+        } else {
+            $startup = StartupDay2::all();
+            return view('admin.admin-startup-day2', compact('startup'));
         }
     }
 
@@ -117,5 +128,15 @@ class AdminController extends Controller
             $semnas = Semnas_semnas::all();
             return view('admin.admin-semnas', compact('semnas'));
         }
+    }
+
+    // DROPDOWN CHANGE
+    public function changeSemnasStatusPembayaran(Request $request)
+    {  
+        Semnas_semnas::where('email', $request->semnas_email)->update([
+            'status_pembayaran' => $request->semnas_payment_status,
+        ]);
+
+        return redirect()->route('admin-semnas');
     }
 }

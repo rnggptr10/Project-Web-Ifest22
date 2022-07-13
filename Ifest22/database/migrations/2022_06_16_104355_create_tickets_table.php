@@ -21,7 +21,8 @@ class CreateTicketsTable extends Migration
             $table->char('ctf_status', 1);
             $table->char('techno_seminar_status', 1);
             $table->char('techno_ws_status', 1);
-            $table->char('startup_status', 1);
+            $table->char('startupDay1_status', 1);
+            $table->char('startupDay2_status', 1);
             $table->char('semnas_status', 1);;
             $table->char('semnas_paper_status', 1);
             $table->timestamps();

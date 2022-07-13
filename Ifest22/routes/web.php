@@ -8,7 +8,8 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\SemnasController;
 use App\Http\Controllers\ProfilController;
-use App\Http\Controllers\StartupController;
+use App\Http\Controllers\StartupDay1Controller;
+use App\Http\Controllers\StartupDay2Controller;
 use App\Http\Controllers\TechnoController;
 use App\Http\Controllers\AdminController;
 
@@ -71,7 +72,7 @@ Route::patch('/profil/ticket-details-seminar-nasional/presenter/submit-paper-2',
 // Route for Event
 Route::get('/seminar-nasional', [SemnasController::class, 'index'])->name('semnas');
 Route::get('/technopreneur', [TechnoController::class, 'index'])->name('techno');
-Route::get('/startup-talk', [StartupController::class, 'index'])->name('startup');
+Route::get('/startup-talk', [StartupDay1Controller::class, 'index'])->name('startup');
 Route::get('/ipod', [HomeController::class, 'ipodIndex'])->name('ipod');
 
 // Route for Competition
@@ -105,7 +106,8 @@ Route::middleware(['auth'])->group(function () {
     Route::patch('/technopreneur-workshop/payment', [TechnoController::class, 'savePaymentWorkshop'])->name('technoWorkshop.payment');
 
     // StartupTalk
-    Route::get('/startup-talk/registration', [StartupController::class, 'saveRegister'])->name('startup.registration');
+    Route::get('/startup-talk/registration-day1', [StartupDay1Controller::class, 'saveRegisterDay1'])->name('startup.day1.registration');
+    Route::get('/startup-talk/registration-day2', [StartupDay2Controller::class, 'saveRegisterDay2'])->name('startup.day2.registration');
 
     // Seminar Nasional Non Pemakalah
     Route::get('/seminar-nasional/registration', [SemnasController::class, 'registration'])->name('semnas.registration.view');
@@ -119,10 +121,15 @@ Route::middleware(['auth'])->group(function () {
 
 // Route for Admin Page Dashboard
 Route::get('/admin/users', [AdminController::class, 'dataUser'])->name('admin-user');
-Route::get('/admin/startup-talk', [AdminController::class, 'dataStartup'])->name('admin-startup');
+Route::get('/admin/startup-talk-day1', [AdminController::class, 'dataStartupDay1'])->name('admin-startup-day1');
+Route::get('/admin/startup-talk-day2', [AdminController::class, 'dataStartupDay2'])->name('admin-startup-day2');
 Route::get('/admin/technopreneur', [AdminController::class, 'dataTechno'])->name('admin-techno');
 Route::get('/admin/technopreneur-workshop', [AdminController::class, 'dataTechnoWs'])->name('admin-techno-ws');
 Route::get('/admin/seminar-nasional', [AdminController::class, 'dataSemnas'])->name('admin-semnas');
 Route::get('/admin/intention', [AdminController::class, 'dataIntention'])->name('admin-intention');
 Route::get('/admin/dac', [AdminController::class, 'dataDac'])->name('admin-dac');
 Route::get('/admin/ctf', [AdminController::class, 'dataCtf'])->name('admin-ctf');
+
+// Route for Admin Data Dropdown Change
+Route::put('/admin/seminar-nasional', [AdminController::class, 'changeSemnasStatusPembayaran'])->name('admin-semnas-change-status-pembayaran');
+

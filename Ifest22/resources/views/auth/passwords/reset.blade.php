@@ -1,65 +1,68 @@
-@extends('layouts.app')
+@extends('auth.passwords.forgotPassword')
 
-@section('content')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Reset Password') }}</div>
+@section('head')
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport' />
+<link rel="stylesheet" href="{{ URL::asset('css/generalStyle.css') }}">
+<link rel="stylesheet" href="{{ URL::asset('css/bootstrap.min.css') }}">
+<link rel="stylesheet" href="{{ URL::asset('css/registration.css') }}">
+@endsection
+@section('title', 'Reset Password')
+@section('form')
 
-                <div class="card-body">
-                    <form method="POST" action="{{ route('password.update') }}">
-                        @csrf
+<form method="post" action="{{ route('password.update') }}">
+    @csrf
 
-                        <input type="hidden" name="token" value="{{ $token }}">
+    <input type="hidden" name="token" value="{{ $token }}">
 
-                        <div class="row mb-3">
-                            <label for="email" class="col-md-4 col-form-label text-md-end">{{ __('Email Address') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ $email ?? old('email') }}" required autocomplete="email" autofocus>
-
-                                @error('email')
-                                <span class="invalid-feedback" role="alert">
-                                    <strong>{{ $message }}</strong>
-                                </span>
-                                @enderror
-                            </div>
-                        </div>
-
-                        <div class="row mb-3">
-                            <label for="password" class="col-md-4 col-form-label text-md-end">{{ __('Password') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="new-password">
-
-                                @error('password')
-                                <span class="invalid-feedback" role="alert">
-                                    <strong>{{ $message }}</strong>
-                                </span>
-                                @enderror
-                            </div>
-                        </div>
-
-                        <div class="row mb-3">
-                            <label for="password-confirm" class="col-md-4 col-form-label text-md-end">{{ __('Confirm Password') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
-                            </div>
-                        </div>
-
-                        <div class="row mb-0">
-                            <div class="col-md-6 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
-                                    {{ __('Reset Password') }}
-                                </button>
-                            </div>
-                        </div>
-                    </form>
+    <div id="regist-section-1">
+        <div class="row mb-2">
+            <div class="col" align="left">
+                <label for="email" class="placeholder regist-form-text" style="padding:0">{{ __('Email Address') }}</label>
+                <!-- Insert Team Name -->
+                <input id="email" name="email" type="text" class="form-control @error('email') is-invalid @enderror ifest-regist-form text-center" value="{{ $email ?? old('email') }}" autocomplete="email" autofocus>
+                @error('email')
+                <div class="alert alert-danger mt-1 d-flex align-items-center" role="alert" style="width: 100%;
+            max-width: 333px; margin: 0 auto">
+                    <span class="iconify me-1" data-icon="akar-icons:circle-alert" data-inline="false" style="color: #842029;"></span>
+                    {{ $message }}
                 </div>
+                @enderror
             </div>
         </div>
+        <div class="row mb-2">
+            <div class="col" align="left">
+                <label for="password" class="placeholder regist-form-text" style="padding:0">{{ __('Password') }}</label>
+                <!-- Insert Team Name -->
+                <input id="password" name="password" type="text" class="form-control @error('password') is-invalid @enderror ifest-regist-form text-center" required autocomplete="new-password" autofocus>
+                @error('password')
+                <div class="alert alert-danger mt-1 d-flex align-items-center" role="alert" style="width: 100%;
+            max-width: 333px; margin: 0 auto">
+                    <span class="iconify me-1" data-icon="akar-icons:circle-alert" data-inline="false" style="color: #842029;"></span>
+                    {{ $message }}
+                </div>
+                @enderror
+            </div>
+        </div>
+        <div class="row mb-2">
+            <div class="col" align="left">
+                <label for="password-confirm" class="placeholder regist-form-text" style="padding:0">{{ __('Confirm Password') }}</label>
+                <!-- Insert Team Name -->
+                <input id="password-confirm" name="password_confirmation" type="text" class="form-control @error('password-confirm') is-invalid @enderror ifest-regist-form text-center" required autocomplete="new-confirm" autofocus>
+                @error('password-confirm')
+                <div class="alert alert-danger mt-1 d-flex align-items-center" role="alert" style="width: 100%;
+                max-width: 333px; margin: 0 auto">
+                    <span class="iconify me-1" data-icon="akar-icons:circle-alert" data-inline="false" style="color: #842029;"></span>
+                    {{ $message }}
+                </div>
+                @enderror
+            </div>
+        </div>
+        <div class="col" style="padding-top:30px">
+            <button type="submit" class="btn btn-primary" style="background-color: #8267B4; border:none;">
+                {{ __('Reset Password') }}
+            </button>
+        </div>
     </div>
-</div>
+</form>
 @endsection

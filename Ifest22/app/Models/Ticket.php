@@ -15,7 +15,8 @@ class Ticket extends Model
         'ctf_status',
         'techno_seminar_status',
         'techno_ws_status',
-        'startup_status',
+        'startupDay1_status',
+        'startupDay2_status',
         'semnas_status',
         'semnas_paper_status',
     ];

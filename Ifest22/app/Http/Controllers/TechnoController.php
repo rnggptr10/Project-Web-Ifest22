@@ -97,35 +97,17 @@ class TechnoController extends Controller
     // INI NGEDIT NAMBAHIN DATA PAYMENT PROOF, SAMA NGAMBIL DATA DARI DB
     public function savePaymentWorkshop(Request $request)
     {
-        // $request->validate([
-        //     'team_name' => 'required',
-        //     'team_leader' => 'required',
-        //     'team_member_1' => 'required',
-        //     'team_member_2' => 'required',
-        //     'proposal_link' => 'required|url',
-        //     // 'id_card' => 'required|file|mimes:zip|max:3072',
-        // ]);
+        $request->validate([
+            'payment_confirmation' => 'required|image|max:1024',
+        ]);
 
-        // $id_card = $request->file('id_card');
-        // $name_id_card = time(). "_". $id_card->getClientOriginalName();
-        // $id_card->storeAs('public/images/id_card/techno/workshop',$name_id_card);
+        $request->payment_confirmation->store('techno-ws-payment-proof');
 
-        // Techno_ws_form::create([
-        //     'email' => Auth::user()->email,
-        //     'team_name' => $request->team_name,
-        //     'team_leader' => $request->team_leader,
-        //     'team_member_1' => $request->team_member_1,
-        //     'team_member_2' => $request->team_member_2,
-        //     'proposal_link' => $request->proposal_link,
-        //     // 'id_card' => $name_id_card,
-        //     'selected_team' => 'U',
-        // ]);
+        Techno_ws_form::where('email', Auth::user()->email)->update([
+            'proof_payment' => $request->payment_confirmation->store('techno-ws-payment-proof'),
+        ]);
 
-        // Ticket::where('email', Auth::user()->email)->update([
-        //     'techno_seminar_status' => '2'
-        // ]);
-
-        // return redirect()->route('profile')->with('status', 'Registration Completed!');
+        return redirect()->route('profile.ticketDetailsTechnoWorkshop');
     }
 
     public function saveRegisterSeminar()
