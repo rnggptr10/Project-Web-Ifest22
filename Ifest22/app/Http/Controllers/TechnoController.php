@@ -29,15 +29,13 @@ class TechnoController extends Controller
 
     public function registrationWorkshop()
     {
-        $check = Ticket::where('email', Auth::user()->email)->first();
+        $rules = Ticket::where('email', Auth::user()->email)->first();
 
-        // dd($check);
         // Error Handling
-        if ($check->techo_ws_status !== "0") {
+        if ($rules->techno_ws_status != '0') {
             return redirect()->route('profile');
-        } else {
-            return view('registration.regis-techno-workshop');
         }
+        return view('registration.regis-techno-workshop');
     }
 
     public function paymentWorkshop()
@@ -47,63 +45,53 @@ class TechnoController extends Controller
 
     public function saveRegisterWorkshop(Request $request)
     {
-        $check = Ticket::where('email', Auth::user()->email)->first();
+        $request->validate([
+            'team_name' => 'required',
+            'team_leader' => 'required',
+            'team_leader_institute' => 'required',
+            'team_leader_id_card' => 'required',
+            'team_member_1' => 'required',
+            'team_member_1_institute' => 'required',
+            'team_member_1_id_card' => 'required',
+        ]);
 
-        // dd($check);
-        // Error Handling
-        if ($check->techo_ws_status === '0') {
-            return redirect()->route('profile');
+        // Alamat Penyimpanan 
+        $request->team_leader_id_card->store('id-card-techno-ws');
+        $request->team_member_1_id_card->store('id-card-techno-ws');
+
+        // =================================================
+        // IF ELSE UNTUK 'IDCARD' DEFAULTNYA NONREQUIRED
+        // =================================================
+        // ID Card ADD Member 1
+        if ($request->team_member_2_id_card == null) {
+            $file_team_member_2 = null;
         } else {
-
-
-            $request->validate([
-                'team_name' => 'required',
-                'team_leader' => 'required',
-                'team_leader_institute' => 'required',
-                'team_leader_id_card' => 'required',
-                'team_member_1' => 'required',
-                'team_member_1_institute' => 'required',
-                'team_member_1_id_card' => 'required',
-            ]);
-
-            // Alamat Penyimpanan 
-            $request->team_leader_id_card->store('id-card-techno-ws');
-            $request->team_member_1_id_card->store('id-card-techno-ws');
-
-            // =================================================
-            // IF ELSE UNTUK 'IDCARD' DEFAULTNYA NONREQUIRED
-            // =================================================
-            // ID Card ADD Member 1
-            if ($request->team_member_2_id_card == null) {
-                $file_team_member_2 = null;
-            } else {
-                $file_team_member_2 = $request->team_member_2_id_card->store('id-card-techno-ws');
-            }
-
-            Techno_ws_form::create([
-                'email' => Auth::user()->email,
-                'team_name' => $request->team_name,
-                'team_leader' => $request->team_leader,
-                'team_leader_institute' => $request->team_leader_institute,
-                'team_leader_id_card' => $request->team_leader_id_card->store('id-card-techno-ws'),
-                'team_member_1' => $request->team_member_1,
-                'team_member_1_institute' => $request->team_member_1_institute,
-                'team_member_1_id_card' => $request->team_member_1_id_card->store('id-card-techno-ws'),
-                'team_member_2' => $request->team_member_2,
-                'team_member_2_institute' => $request->team_member_2_institute,
-                'team_member_2_id_card' => $file_team_member_2,
-                'status_pembayaran' => 1,
-                'selected_team' => 1,
-            ]);
-
-            Ticket::where('email', Auth::user()->email)->update([
-                'techno_ws_status' => 1,
-                'techno_seminar_status' => 1,
-            ]);
-
-
-            return redirect()->route('profile');
+            $file_team_member_2 = $request->team_member_2_id_card->store('id-card-techno-ws');
         }
+
+        Techno_ws_form::create([
+            'email' => Auth::user()->email,
+            'team_name' => $request->team_name,
+            'team_leader' => $request->team_leader,
+            'team_leader_institute' => $request->team_leader_institute,
+            'team_leader_id_card' => $request->team_leader_id_card->store('id-card-techno-ws'),
+            'team_member_1' => $request->team_member_1,
+            'team_member_1_institute' => $request->team_member_1_institute,
+            'team_member_1_id_card' => $request->team_member_1_id_card->store('id-card-techno-ws'),
+            'team_member_2' => $request->team_member_2,
+            'team_member_2_institute' => $request->team_member_2_institute,
+            'team_member_2_id_card' => $file_team_member_2,
+            'status_pembayaran' => 1,
+            'selected_team' => 1,
+        ]);
+
+        Ticket::where('email', Auth::user()->email)->update([
+            'techno_ws_status' => 1,
+            'techno_seminar_status' => 1,
+        ]);
+
+
+        return redirect()->route('profile');
     }
 
     // INI NGEDIT NAMBAHIN DATA PAYMENT PROOF, SAMA NGAMBIL DATA DARI DB

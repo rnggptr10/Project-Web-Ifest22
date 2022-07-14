@@ -11,16 +11,6 @@ class CtfController extends Controller
 {
     public function index()
     {
-        // $registered = false;
-        // $onLogin = false;
-
-        // if (Auth::check()) {
-        //     $data = Ticket::where('email', Auth::user()->email)->first();
-        //     if ($data->ctf_status != '0') $registered = true;
-        //     $onLogin = true;
-        // }
-
-        // return view('competition.ctf', compact('registered', 'onLogin'));
         return view('competition.ctf');
     }
 

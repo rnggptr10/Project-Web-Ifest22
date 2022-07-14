@@ -70,10 +70,7 @@ class RegisterController extends Controller
         // Alamat penyimpanan sementara
         if ($data['profpic'] != null)
             $data['profpic']->store('profpic-user');
-        // return $data['profpic']->store('profpic-user');
 
-        // untuk testing 
-        // ddd($data);
         Ticket::create([
             'email' => $data['email'],
             'intention_status' => '0',
