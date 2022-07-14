@@ -26,14 +26,14 @@ class CtfController extends Controller
 
     public function registration()
     {
-        // $email = Auth::user()->email;
-        // $check = Ticket::where('email', $email)->first();
-        // if($check->ctf_status != '0'){
-        //     return redirect()->route('profile');
-        // }
+        $check = Ticket::where('email', Auth::user()->email)->first();
+
+        // Error Handling
+        if ($check->ctf_status != '0') {
+            return redirect()->route('profile');
+        }
 
         return view('registration.regis-ctf');
-        // return redirect()->route('ctf');
     }
 
     public function saveRegister(Request $request)

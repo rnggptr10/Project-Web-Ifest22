@@ -2,6 +2,12 @@
 
 /* ------------------- General Styling ------------------- */
 
+body{
+    background: url("/img/haha.jpg");
+    /* background-repeat: no-repeat; */
+    width: 100%;
+}
+
 /* BUTTON LIGHT BG*/
 .btn-outline-primary.ifest-btn-outline-primary-light-bg {
     color: #1c1c1c;

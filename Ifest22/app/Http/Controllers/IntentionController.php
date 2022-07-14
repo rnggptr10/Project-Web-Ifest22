@@ -28,14 +28,14 @@ class IntentionController extends Controller
 
     public function registration()
     {
-        // $email = Auth::user()->email;
-        // $check = Ticket::where('email', $email)->first();
-        // if($check->intention_status != '0'){
-        //     return redirect()->route('profile');
-        // }
+        $check = Ticket::where('email', Auth::user()->email)->first();
+
+        // Error Handling
+        if ($check->intention_status != '0') {
+            return redirect()->route('profile');
+        }
 
         return view('registration.regis-intention');
-        // return redirect()->route('intention');
     }
 
     public function saveRegister(Request $request)
@@ -104,8 +104,7 @@ class IntentionController extends Controller
             'intention_status' => '1'
         ]);
 
-        // return redirect()->route('profile')->with('status', 'Registration Completed!');
-        return redirect()->route('home');
+        return redirect()->route('profile');
     }
 
     public function formProposal()
