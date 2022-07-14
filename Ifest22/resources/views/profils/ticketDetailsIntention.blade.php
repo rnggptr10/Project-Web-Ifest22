@@ -68,34 +68,6 @@
             <div class="col-6" align="left" style="padding:0 8px 0 15px">
                 <h6 class="text-tickets-head">Team Registration</h6>
                 <!-- BUAT STATUS, CLASS TERGANTUNG STATUS DI DATABASE -->
-<<<<<<< HEAD
-                <p class="text-tickets-desc">20-25 Agustus 2022<br>Status : 
-                    @if ($intention->status_pembayaran === '1')
-                        <span class="text-tickets-status status-orange">Waiting for Confirmation</span>
-                    @elseif ($intention->status_pembayaran === '0')
-                        <span class="text-tickets-status status-red">Payment Failed. Please Re-Upload Payment Proof</span>
-                    @elseif ($intention->status_pembayaran === '2')
-                        <span class="text-tickets-status status-green">Payment Completed</span>
-                    @endif
-                </span>
-                </p>
-            </div>
-        </div>
-        <div class="row align-items-center" align="left" style="padding:20px">
-            <div class="col-2" style="padding:0 15px 0 8px">
-                <img class="circular-number" src="{{ URL::asset('icon/page-details/circle-2.svg') }}" alt="2">
-            </div>
-            <div class="col-6" align="left" style="padding:0 8px 0 15px">
-                <h6 class="text-tickets-head">Pengumpulan Proposal</h6>
-                <p class="text-tickets-desc">26-30 Agustus 2022<br>Status : 
-                    @if ($intention->proposal_link === null)
-                        <span class="text-tickets-status status-red">Unsubmitted</span>
-                    @elseif ($intention->proposal_link !== null)
-                        @if ($intention->status_finalist === 0)
-                            <span class="text-tickets-status status-orange">Submitted. Waiting for Selection.</span>
-                        @elseif ($intention->status_finalist === 1)
-                            <span class="text-tickets-status status-green">Proposal Selected!</span>
-=======
                 <p class="text-tickets-desc">24 July - 20 August 2022<br>Status :
                 <?php
                     // SET TANGGAL ACARA
@@ -122,7 +94,6 @@
                             <span class="text-tickets-status status-red">Payment Failed</span>
                         @elseif ($intention->status_pembayaran === '2')
                             <span class="text-tickets-status status-green">Payment Completed</span>
->>>>>>> b271a55367bf266bf5e5992c28071215252322ae
                         @endif
                         <?php
                     }
