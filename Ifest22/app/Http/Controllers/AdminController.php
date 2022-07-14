@@ -132,7 +132,7 @@ class AdminController extends Controller
 
     // DROPDOWN CHANGE
     public function changeSemnasStatusPembayaran(Request $request)
-    {  
+    {
         Semnas_semnas::where('email', $request->semnas_email)->update([
             'status_pembayaran' => $request->semnas_payment_status,
         ]);
@@ -141,7 +141,7 @@ class AdminController extends Controller
     }
 
     public function changeCtfStatusPembayaran(Request $request)
-    {  
+    {
         Ctf_form::where('email', $request->ctf_email)->update([
             'status_pembayaran' => $request->ctf_payment_status,
         ]);
@@ -150,7 +150,7 @@ class AdminController extends Controller
     }
 
     public function changeDacStatusPembayaran(Request $request)
-    {  
+    {
         Da_Form::where('email', $request->dac_email)->update([
             'status_pembayaran' => $request->dac_payment_status,
         ]);
@@ -159,11 +159,11 @@ class AdminController extends Controller
     }
 
     public function changeIntStatusPembayaran(Request $request)
-    {  
+    {
         Intention_Form::where('email', $request->int_email)->update([
             'status_pembayaran' => $request->int_payment_status,
         ]);
 
-        return redirect()->route('admin-int');
+        return redirect()->route('admin-intention');
     }
 }
