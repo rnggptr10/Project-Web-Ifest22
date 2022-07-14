@@ -34,10 +34,10 @@
                     <tbody>
                         @foreach ($intention as $data)
                         <tr>
-                            <form action="{{ route('admin-int-change-status-pembayaran') }}" method="post">
+                            <form action="{{ route('admin-intention-change-status-pembayaran') }}" method="post">
                                 @method('put')
                                 @csrf
-                                <td><input name="int_email" id="int_email" value="{{ $data->email }}" hidden>{{ $data->email }}</td>
+                                <td><input name="intention_email" id="intention_email" value="{{ $data->email }}" hidden>{{ $data->email }}</td>
                                 <td>{{ $data->team_name }}</td>
                                 <td>
                                     {{ $data->team_leader }} - {{ $data->team_leader_institute }} -
@@ -76,7 +76,6 @@
                                     @endif
                                 </td>
                                 <td><a href="{{asset('storage/' . $data['proof_payment'])}}"> Proof Payment</a></td>
-                                <td><a href="{{asset('storage/' . $data['proof_payment'])}}"> Proof Payment</a></td>
                                     <td>
                                         <div class="btn-group">
                                             <!-- <select name="startup-status" id="startup-status" style="color:black">
@@ -84,7 +83,7 @@
                                                 <option value="Pending">Pending</option>
                                                 <option value="Declined">Declined</option>
                                             </select> -->
-                                            <select name="int_payment_status" id="int_payment_status" style="color:black" onchange="this.form.submit()">
+                                            <select name="intention_payment_status" id="intention_payment_status" style="color:black" onchange="this.form.submit()">
                                                 <option style="color:black" value="2" <?php if($data->status_pembayaran === '2') {echo('selected');}?>>Confirmed</option>
                                                 <option style="color:black" value="1" <?php if($data->status_pembayaran === '1') {echo('selected');}?>>Pending</option>
                                                 <option style="color:black" value="0" <?php if($data->status_pembayaran === '0') {echo('selected');}?>>Declined</option>

@@ -68,7 +68,6 @@
             <div class="col-6" align="left" style="padding:0 8px 0 15px">
                 <h6 class="text-tickets-head">Team Registration</h6>
                 <!-- BUAT STATUS, CLASS TERGANTUNG STATUS DI DATABASE -->
-<<<<<<< HEAD
                 <p class="text-tickets-desc">20-25 Agustus 2022<br>Status : 
                     @if ($intention->status_pembayaran === '1')
                         <span class="text-tickets-status status-orange">Waiting for Confirmation</span>
@@ -95,34 +94,6 @@
                             <span class="text-tickets-status status-orange">Submitted. Waiting for Selection.</span>
                         @elseif ($intention->status_finalist === 1)
                             <span class="text-tickets-status status-green">Proposal Selected!</span>
-=======
-                <p class="text-tickets-desc">24 July - 20 August 2022<br>Status :
-                <?php
-                    // SET TANGGAL ACARA
-                    $intention_regist_date_start = Carbon::create(2022, 7, 7, 7, 00, 00, 'Asia/Jakarta');
-                    $intention_regist_date_end = Carbon::create(2022, 7, 17, 15, 00, 00, 'Asia/Jakarta');
-                    $intention_regist_now = Carbon::now('Asia/Jakarta');
-
-                    $intention_regist_date_start->toDateTimeString(); 
-                    $intention_regist_now->toDateTimeString(); 
-
-                    if ($intention_regist_now->greaterThan($intention_regist_date_start) && $intention_regist_now->lessThan($intention_regist_date_end)) {
-                ?> 
-                @if ($intention->status_pembayaran === '1')
-                    <span class="text-tickets-status status-orange">Waiting for Confirmation</span>
-                @elseif ($intention->status_pembayaran === '0')
-                    <span class="text-tickets-status status-red">Payment Failed. Please Re-Upload Payment Proof</span>
-                @elseif ($intention->status_pembayaran === '2')
-                    <span class="text-tickets-status status-green">Payment Completed</span>
-                @endif
-                <?php
-                    } elseif ($intention_regist_now->lessThan($intention_regist_date_start) || $intention_regist_now->greaterThan($intention_regist_date_end)) { 
-                        ?>
-                        @if ($intention->status_pembayaran === '0')
-                            <span class="text-tickets-status status-red">Payment Failed</span>
-                        @elseif ($intention->status_pembayaran === '2')
-                            <span class="text-tickets-status status-green">Payment Completed</span>
->>>>>>> b271a55367bf266bf5e5992c28071215252322ae
                         @endif
                         <?php
                     }

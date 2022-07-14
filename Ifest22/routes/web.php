@@ -135,6 +135,6 @@ Route::put('/admin/seminar-nasional', [AdminController::class, 'changeSemnasStat
 
 Route::put('/admin/ctf', [AdminController::class, 'changeCtfStatusPembayaran'])->name('admin-ctf-change-status-pembayaran');
 Route::put('/admin/dac', [AdminController::class, 'changeDacStatusPembayaran'])->name('admin-dac-change-status-pembayaran');
-Route::put('/admin/int', [AdminController::class, 'changeIntStatusPembayaran'])->name('admin-int-change-status-pembayaran');
+Route::put('/admin/intention', [AdminController::class, 'changeIntentionStatusPembayaran'])->name('admin-intention-change-status-pembayaran');
 
 
