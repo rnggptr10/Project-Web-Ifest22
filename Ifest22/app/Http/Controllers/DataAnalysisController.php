@@ -27,14 +27,14 @@ class DataAnalysisController extends Controller
 
     public function registration()
     {
-        // $email = Auth::user()->email;
-        // $check = Ticket::where('email', $email)->first();
-        // if($check->da_status != '0'){
-        //     return redirect()->route('profile');
-        // }
+        $check = Ticket::where('email', Auth::user()->email)->first();
+
+        // Error Handling
+        if ($check->da_status != '0') {
+            return redirect()->route('profile');
+        }
 
         return view('registration.regis-da');
-        // return redirect()->route('da');
     }
 
     public function saveRegister(Request $request)

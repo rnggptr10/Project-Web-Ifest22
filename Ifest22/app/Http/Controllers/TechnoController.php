@@ -30,9 +30,12 @@ class TechnoController extends Controller
 
     public function registrationWorkshop()
     {
-        // $data_ws = Techno_ws_form::where('email',  Auth::user()->email)->first();
-        // if ($data_ws != null)  return redirect()->route('techno');
-        // return view('registration.regis-techno-ws');
+        $rules = Ticket::where('email', Auth::user()->email)->first();
+
+        // Error Handling
+        if ($rules->techo_ws_status != '0') {
+            return redirect()->route('profile');
+        }
         return view('registration.regis-techno-workshop');
     }
 
@@ -90,8 +93,6 @@ class TechnoController extends Controller
             'techno_ws_status' => 1,
             'techno_seminar_status' => 1,
         ]);
-
-        return redirect()->route('profile');
     }
 
     // INI NGEDIT NAMBAHIN DATA PAYMENT PROOF, SAMA NGAMBIL DATA DARI DB
@@ -112,17 +113,23 @@ class TechnoController extends Controller
 
     public function saveRegisterSeminar()
     {
-        Techno_seminar::create([
-            'email' => Auth::user()->email,
-            'name' => Auth::user()->name,
-            'institute' => Auth::user()->institute,
-        ]);
+        $rules = Ticket::where('email', Auth::user()->email)->first();
 
-        Ticket::where('email', Auth::user()->email)->update([
-            'techno_seminar_status' => 1
-        ]);
+        if ($rules->techno_seminar_status == '1') {
+            return redirect()->route('profile');
+        } else {
+            Techno_seminar::create([
+                'email' => Auth::user()->email,
+                'name' => Auth::user()->name,
+                'institute' => Auth::user()->institute,
+            ]);
 
-        return redirect()->route('profile');
+            Ticket::where('email', Auth::user()->email)->update([
+                'techno_seminar_status' => 1
+            ]);
+
+            return redirect()->route('profile');
+        }
     }
 
     public function payment()

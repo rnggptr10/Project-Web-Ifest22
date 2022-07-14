@@ -44,17 +44,23 @@ class StartupDay1Controller extends Controller
 
     public function saveRegisterDay1()
     {
-        StartupDay1::create([
-            'email' => Auth::user()->email,
-            'name' => Auth::user()->name,
-            'institute' => Auth::user()->institute,
-        ]);
+        $rules = Ticket::where('email', Auth::user()->email)->first();
 
-        Ticket::where('email', Auth::user()->email)->update([
-            'startupDay1_status' => '1'
-        ]);
+        if ($rules->startupDay1_status == '1') {
+            return redirect()->route('profile');
+        } else {
+            StartupDay1::create([
+                'email' => Auth::user()->email,
+                'name' => Auth::user()->name,
+                'institute' => Auth::user()->institute,
+            ]);
+
+            Ticket::where('email', Auth::user()->email)->update([
+                'startupDay1_status' => '1'
+            ]);
 
 
-        return redirect()->route('profile');
+            return redirect()->route('profile');
+        }
     }
 }
