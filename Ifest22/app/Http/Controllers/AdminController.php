@@ -11,7 +11,7 @@ use App\Models\Techno_seminar;
 use App\Models\Techno_ws_form;
 use App\Models\Semnas;
 use App\Models\Intention_form;
-use App\Models\Da_form;
+use App\Models\Da_Form;
 use App\Models\Ctf_form;
 use App\Models\Semnas_semnas;
 
@@ -85,7 +85,7 @@ class AdminController extends Controller
         if (Auth::user()->is_admin == 0) {
             if (Auth::user()->is_admin == 0) return redirect()->route('home');
         } else {
-            $dac = Da_form::all();
+            $dac = Da_Form::all();
             return view('admin.admin-dac', compact('dac'));
         }
     }
@@ -138,5 +138,32 @@ class AdminController extends Controller
         ]);
 
         return redirect()->route('admin-semnas');
+    }
+
+    public function changeCtfStatusPembayaran(Request $request)
+    {  
+        Ctf_form::where('email', $request->ctf_email)->update([
+            'status_pembayaran' => $request->ctf_payment_status,
+        ]);
+
+        return redirect()->route('admin-ctf');
+    }
+
+    public function changeDacStatusPembayaran(Request $request)
+    {  
+        Da_Form::where('email', $request->dac_email)->update([
+            'status_pembayaran' => $request->dac_payment_status,
+        ]);
+
+        return redirect()->route('admin-dac');
+    }
+
+    public function changeIntStatusPembayaran(Request $request)
+    {  
+        Intention_Form::where('email', $request->int_email)->update([
+            'status_pembayaran' => $request->int_payment_status,
+        ]);
+
+        return redirect()->route('admin-int');
     }
 }

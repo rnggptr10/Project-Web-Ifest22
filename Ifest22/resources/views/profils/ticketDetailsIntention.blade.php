@@ -69,11 +69,11 @@
                 <h6 class="text-tickets-head">Registrasi Tim</h6>
                 <!-- BUAT STATUS, CLASS TERGANTUNG STATUS DI DATABASE -->
                 <p class="text-tickets-desc">20-25 Agustus 2022<br>Status : 
-                    @if ($intention->status_pembayaran === 1)
+                    @if ($intention->status_pembayaran === '1')
                         <span class="text-tickets-status status-orange">Waiting for Confirmation</span>
-                    @elseif ($intention->status_pembayaran === 0)
+                    @elseif ($intention->status_pembayaran === '0')
                         <span class="text-tickets-status status-red">Payment Failed. Please Re-Upload Payment Proof</span>
-                    @elseif ($intention->status_pembayaran === 2)
+                    @elseif ($intention->status_pembayaran === '2')
                         <span class="text-tickets-status status-green">Payment Completed</span>
                     @endif
                 </span>

@@ -31,10 +31,13 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
                             @foreach ($dac as $data)
-                                <td>{{ $data->email }}</td>
-                                <td>{{ $data->team_name }}</td>
+                            <tr>
+                                <form action="{{ route('admin-dac-change-status-pembayaran') }}" method="post">
+                                    @method('put')
+                                    @csrf
+                                    <td><input name="dac_email" id="dac_email" value="{{ $data->email }}" hidden>{{ $data->email }}</td>
+                                    <td>{{ $data->team_name }}</td>
                                 <td>
                                     {{ $data->team_leader }} - {{ $data->team_leader_institute }} -
                                     <a href="{{asset('storage/' . $data['team_leader_id_card'])}}"> Id Card</a>
@@ -64,6 +67,23 @@
                                     @endif
                                 </td>
                                 <td><a href="{{asset('storage/' . $data['proof_payment'])}}"> Proof Payment</a></td>
+                                    <td>
+                                        <div class="btn-group">
+                                            <!-- <select name="startup-status" id="startup-status" style="color:black">
+                                                <option value="Confirmed">Confirmed</option>
+                                                <option value="Pending">Pending</option>
+                                                <option value="Declined">Declined</option>
+                                            </select> -->
+                                            <select name="dac_payment_status" id="dac_payment_status" style="color:black" onchange="this.form.submit()">
+                                                <option style="color:black" value="2" <?php if($data->status_pembayaran === '2') {echo('selected');}?>>Confirmed</option>
+                                                <option style="color:black" value="1" <?php if($data->status_pembayaran === '1') {echo('selected');}?>>Pending</option>
+                                                <option style="color:black" value="0" <?php if($data->status_pembayaran === '0') {echo('selected');}?>>Declined</option>
+                                            </select>
+                                        </div>
+                                    </td>
+                                </form>
+                                {{-- <td>{{ $data->email }}</td>
+                               
                                 <td>
                                     <div class="btn-group">
                                         <!-- <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -79,9 +99,9 @@
                                             <option value="Finalist" active>Finalist</option>
                                         </select>
                                     </div>
-                                </td>
+                                </td> --}}
+                            </tr>
                             @endforeach
-                        </tr>
                     </tbody>
                 </table>
             </div>
@@ -117,9 +137,8 @@
                                         <a class="dropdown-item" href="#">Something else here</a>
                                     </div> -->
                                     <select name="confirm-status" id="confirm-status" style="color:black">
-                                        <option value="Confirmed">Confirmed</option>
-                                        <option value="Pending" active>Pending</option>
-                                        <option value="Declined">Declined</option>
+                                        <option value="Finalis">Finalis</option>
+                                        <option value="Peserta" active>Peserta</option>
                                     </select>
                                 </div>
                             </td>

@@ -133,3 +133,8 @@ Route::get('/admin/ctf', [AdminController::class, 'dataCtf'])->name('admin-ctf')
 // Route for Admin Data Dropdown Change
 Route::put('/admin/seminar-nasional', [AdminController::class, 'changeSemnasStatusPembayaran'])->name('admin-semnas-change-status-pembayaran');
 
+Route::put('/admin/ctf', [AdminController::class, 'changeCtfStatusPembayaran'])->name('admin-ctf-change-status-pembayaran');
+Route::put('/admin/dac', [AdminController::class, 'changeDacStatusPembayaran'])->name('admin-dac-change-status-pembayaran');
+Route::put('/admin/int', [AdminController::class, 'changeIntStatusPembayaran'])->name('admin-int-change-status-pembayaran');
+
+
