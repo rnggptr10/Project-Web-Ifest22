@@ -66,90 +66,213 @@
                 <img class="circular-number" src="{{ URL::asset('icon/page-details/circle-1.svg') }}" alt="1">
             </div>
             <div class="col-6" align="left" style="padding:0 8px 0 15px">
-                <h6 class="text-tickets-head">Registrasi Tim</h6>
+                <h6 class="text-tickets-head">Team Registration</h6>
                 <!-- BUAT STATUS, CLASS TERGANTUNG STATUS DI DATABASE -->
-                <p class="text-tickets-desc">20-25 Agustus 2022<br>Status : 
-                    @if ($intention->status_pembayaran === 1)
-                        <span class="text-tickets-status status-orange">Waiting for Confirmation</span>
-                    @elseif ($intention->status_pembayaran === 0)
-                        <span class="text-tickets-status status-red">Payment Failed. Please Re-Upload Payment Proof</span>
-                    @elseif ($intention->status_pembayaran === 2)
-                        <span class="text-tickets-status status-green">Payment Completed</span>
-                    @endif
-                </span>
-                </p>
-            </div>
-        </div>
-        <div class="row align-items-center" align="left" style="padding:20px">
-            <div class="col-2" style="padding:0 15px 0 8px">
-                <img class="circular-number" src="{{ URL::asset('icon/page-details/circle-2.svg') }}" alt="2">
-            </div>
-            <div class="col-6" align="left" style="padding:0 8px 0 15px">
-                <h6 class="text-tickets-head">Pengumpulan Proposal</h6>
-                <p class="text-tickets-desc">26-30 Agustus 2022<br>Status : 
-                    @if ($intention->proposal_link === null)
-                        <span class="text-tickets-status status-red">Unsubmitted</span>
-                    @elseif ($intention->proposal_link !== null)
-                        @if ($intention->status_finalist === 0)
-                            <span class="text-tickets-status status-orange">Submitted. Waiting for Selection.</span>
-                        @elseif ($intention->status_finalist === 1)
-                            <span class="text-tickets-status status-green">Proposal Selected!</span>
+                <p class="text-tickets-desc">24 July - 20 August 2022<br>Status :
+                <?php
+                    // SET TANGGAL ACARA
+                    $intention_regist_date_start = Carbon::create(2022, 7, 7, 7, 00, 00, 'Asia/Jakarta');
+                    $intention_regist_date_end = Carbon::create(2022, 7, 17, 15, 00, 00, 'Asia/Jakarta');
+                    $intention_regist_now = Carbon::now('Asia/Jakarta');
+
+                    $intention_regist_date_start->toDateTimeString(); 
+                    $intention_regist_now->toDateTimeString(); 
+
+                    if ($intention_regist_now->greaterThan($intention_regist_date_start) && $intention_regist_now->lessThan($intention_regist_date_end)) {
+                ?> 
+                @if ($intention->status_pembayaran === '1')
+                    <span class="text-tickets-status status-orange">Waiting for Confirmation</span>
+                @elseif ($intention->status_pembayaran === '0')
+                    <span class="text-tickets-status status-red">Payment Failed. Please Re-Upload Payment Proof</span>
+                @elseif ($intention->status_pembayaran === '2')
+                    <span class="text-tickets-status status-green">Payment Completed</span>
+                @endif
+                <?php
+                    } elseif ($intention_regist_now->lessThan($intention_regist_date_start) || $intention_regist_now->greaterThan($intention_regist_date_end)) { 
+                        ?>
+                        @if ($intention->status_pembayaran === '0')
+                            <span class="text-tickets-status status-red">Payment Failed</span>
+                        @elseif ($intention->status_pembayaran === '2')
+                            <span class="text-tickets-status status-green">Payment Completed</span>
                         @endif
-                    @endif
+                        <?php
+                    }
+                ?>
                 </p>
+            <?php if ($intention_regist_now->greaterThan($intention_regist_date_start) && $intention_regist_now->lessThan($intention_regist_date_end)) { ?>
             </div>
-            <div class="col-4" align="center" style="padding:0">
-                @if ($intention->proposal_link === null)
-                    <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 120px;height: 48px;">
-                        <a class="ifest-btn-primary-dark-bg-text" href="{{ route('intention.submitting.proposal.view') }}">Submit</a>
-                    </button>
-                @elseif ($intention->proposal_link !== null)
+            @if ($intention->status_pembayaran === '0')
+                <div class="col-4" align="center" style="padding:0">
                     <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 120px;height: 48px;">
                         <a class="ifest-btn-primary-dark-bg-text" href="">Re-Submit?</a>
                     </button>
-                @endif
-            </div>
+                </div>
+            @elseif ($intention->status_pembayaran === '1' || $intention->status_pembayaran === '2')
+            @endif
+            <?php
+            } elseif ($intention_regist_now->lessThan($intention_regist_date_start) || $intention_regist_now->greaterThan($intention_regist_date_end)) { ?>
+            <?php
+                }
+            ?>
         </div>
-        <div class="row align-items-center" align="left" style="padding:20px">
-            <div class="col-2" style="padding:0 15px 0 8px">
-                <img class="circular-number" src="{{ URL::asset('icon/page-details/circle-3.svg') }}" alt="3">
-            </div>
-            <div class="col-6" align="left" style="padding:0 8px 0 15px">
-                <h6 class="text-tickets-head">Pengumpulan Project</h6>
-                <p class="text-tickets-desc">1-5 September 2022<br>Status : 
-                    @if ($intention->app_link === null)
-                        <span class="text-tickets-status status-red">Unsubmitted</span>
-                    @elseif ($intention->app_link !== null)
-                        <span class="text-tickets-status status-green">Submitted</span>
+        @if ($intention->status_pembayaran === '2')
+            <div class="row align-items-center" align="left" style="padding:20px">
+                <div class="col-2" style="padding:0 15px 0 8px">
+                    <img class="circular-number" src="{{ URL::asset('icon/page-details/circle-2.svg') }}" alt="2">
+                </div>
+                <div class="col-6" align="left" style="padding:0 8px 0 15px">
+                    <h6 class="text-tickets-head">Proposal and Video Submission</h6>
+                    <p class="text-tickets-desc">27 August - 5 September 2022<br>Status :
+                    <?php
+                        // SET TANGGAL ACARA
+                        $intention_proposal_date_start = Carbon::create(2022, 7, 7, 7, 00, 00, 'Asia/Jakarta');
+                        $intention_proposal_date_end = Carbon::create(2022, 7, 17, 15, 00, 00, 'Asia/Jakarta');
+                        $intention_proposal_now = Carbon::now('Asia/Jakarta');
+
+                        $intention_proposal_date_start->toDateTimeString(); 
+                        $intention_proposal_now->toDateTimeString(); 
+
+                        if ($intention_proposal_now->greaterThan($intention_proposal_date_start) && $intention_proposal_now->lessThan($intention_proposal_date_end)) {
+                    ?>  
+                        @if ($intention->proposal_link === null)
+                            <span class="text-tickets-status status-red">Unsubmitted</span>
+                        @elseif ($intention->proposal_link !== null)
+                            @if ($intention->status_finalist === '0')
+                                <span class="text-tickets-status status-orange">Submitted. Waiting for Selection.</span>
+                            @elseif ($intention->status_finalist === '1')
+                                <span class="text-tickets-status status-green">Proposal Selected!</span>
+                            @endif
+                        @endif
+                    <?php
+                    } elseif ($intention_proposal_now->lessThan($intention_proposal_date_start) || $intention_proposal_now->greaterThan($intention_proposal_date_end)) { 
+                    ?>
+                        @if ($intention->proposal_link === null)
+                            <span class="text-tickets-status status-red">Unsubmitted</span>
+                        @elseif ($intention->proposal_link !== null)
+                            @if ($intention->status_finalist === '0')
+                                <span class="text-tickets-status status-orange">Submitted</span>
+                            @elseif ($intention->status_finalist === '1')
+                                <span class="text-tickets-status status-green">Proposal Selected!</span>
+                            @endif
+                        @endif
+                    <?php
+                        }
+                    ?>
+                    </p>
+                </div>
+                <div class="col-4" align="center" style="padding:0">
+                @if ($intention->status_finalist === '0')
+                    @if ($intention->proposal_link === null)
+                        <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 120px;height: 48px;">
+                            <a class="ifest-btn-primary-dark-bg-text" href="{{ route('intention.submitting.proposal.view') }}">Submit</a>
+                        </button>
+                    @elseif ($intention->proposal_link !== null)
+                        <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 120px;height: 48px;">
+                            <a class="ifest-btn-primary-dark-bg-text" href="{{ route('intention.submitting.proposal.view') }}">Re-Submit?</a>
+                        </button>
                     @endif
-                </p>
-            </div>
-            <div class="col-4" align="center" style="padding:0">
-                @if ($intention->app_link === null)
+                @elseif ($intention->status_finalist === '1')
                     <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 120px;height: 48px;">
-                        <a class="ifest-btn-primary-dark-bg-text" href="{{ route('intention.submitting.project.view') }}">Submit</a>
-                    </button>
-                @elseif ($intention->app_link !== null)
-                    <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 120px;height: 48px;">
-                        <a class="ifest-btn-primary-dark-bg-text" href="">Re-Submit?</a>
+                        <a class="ifest-btn-primary-dark-bg-text" href="{{ $intention->proposal_link }}">View</a>
                     </button>
                 @endif
+                </div>
             </div>
-        </div>
-        <div class="row align-items-center" align="left" style="padding:20px">
-            <div class="col-2" style="padding:0 15px 0 8px">
-                <img class="circular-number" src="{{ URL::asset('icon/page-details/circle-4.svg') }}" alt="4">
+
+            <div class="row align-items-center" align="left" style="padding:20px">
+                <div class="col-2" style="padding:0 15px 0 8px">
+                    <img class="circular-number" src="{{ URL::asset('icon/page-details/circle-3.svg') }}" alt="3">
+                </div>
+                <div class="col-6" align="left" style="padding:0 8px 0 15px">
+                    <h6 class="text-tickets-head">Finalist Announcement</h6>
+                    <p class="text-tickets-desc">9 September 2022<br>Status : 
+                        @if ($intention->status_finalist === '0')
+                            <span class="text-tickets-status status-red">Your team didn't qualify for the Final Round. Keep your spirits up!</span>
+                        @elseif ($intention->status_finalist === '1')
+                            <span class="text-tickets-status status-green">Congratulations! Your team advances to the Final Round</span>
+                        @endif
+                    </p>
+                </div>
             </div>
-            <div class="col-6" align="left" style="padding:0 8px 0 15px">
-                <h6 class="text-tickets-head">Zoom Babak Final</h6>
-                <p class="text-tickets-desc">6 September 2022</p>
+
+            @if ($intention->status_finalist === '1')
+                <div class="row align-items-center" align="left" style="padding:20px">
+                    <div class="col-2" style="padding:0 15px 0 8px">
+                        <img class="circular-number" src="{{ URL::asset('icon/page-details/circle-3.svg') }}" alt="3">
+                    </div>
+                    <div class="col-6" align="left" style="padding:0 8px 0 15px">
+                        <h6 class="text-tickets-head">Pengumpulan Project</h6>
+                        <p class="text-tickets-desc">1-5 September 2022<br>Status : 
+                            @if ($intention->app_link === null)
+                                <span class="text-tickets-status status-red">Unsubmitted</span>
+                            @elseif ($intention->app_link !== null)
+                                <span class="text-tickets-status status-green">Submitted</span>
+                            @endif
+                        </p>
+                    </div>
+                    <div class="col-4" align="center" style="padding:0">
+                        @if ($intention->app_link === null)
+                            <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 120px;height: 48px;">
+                                <a class="ifest-btn-primary-dark-bg-text" href="{{ route('intention.submitting.project.view') }}">Submit</a>
+                            </button>
+                        @elseif ($intention->app_link !== null)
+                            <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 120px;height: 48px;">
+                                <a class="ifest-btn-primary-dark-bg-text" href="{{ route('intention.submitting.project.view') }}">Re-Submit?</a>
+                            </button>
+                        @endif
+                    </div>
+                </div>
+                <div class="row align-items-center" align="left" style="padding:20px">
+                    <div class="col-2" style="padding:0 15px 0 8px">
+                        <img class="circular-number" src="{{ URL::asset('icon/page-details/circle-4.svg') }}" alt="4">
+                    </div>
+                    <div class="col-6" align="left" style="padding:0 8px 0 15px">
+                        <h6 class="text-tickets-head">Zoom Babak Final</h6>
+                        <p class="text-tickets-desc">6 September 2022</p>
+                    </div>
+                    <div class="col-4" align="center" style="padding:0">
+                        <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 120px;height: 48px;" disabled>
+                            <a class="ifest-btn-primary-dark-bg-text" href="">Link Zoom</a>
+                        </button>
+                    </div>
+                </div>
+
+            @elseif ($intention->status_finalist === '0')
+            <div class="row align-items-center" align="left" style="padding:20px">
+                <div class="col-2" style="padding:0 15px 0 8px">
+                    <img class="circular-number" src="{{ URL::asset('icon/page-details/gembok.svg') }}" alt="locked">
+                </div>
+                <div class="col-8" align="left" style="padding:0 8px 0 15px">
+                    <h6 class="text-tickets-head">Progress Locked! Please complete previous step</h6>
+                </div>
             </div>
-            <div class="col-4" align="center" style="padding:0">
-                <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 120px;height: 48px;" disabled>
-                    <a class="ifest-btn-primary-dark-bg-text" href="">Link Zoom</a>
-                </button>
+            @endif
+
+        @elseif ($intention->status_pembayaran === '1')
+            <div class="row align-items-center" align="left" style="padding:20px">
+                <div class="col-2" style="padding:0 15px 0 8px">
+                    <img class="circular-number" src="{{ URL::asset('icon/page-details/gembok.svg') }}" alt="locked">
+                </div>
+                <div class="col-8" align="left" style="padding:0 8px 0 15px">
+                    <h6 class="text-tickets-head">Progress Locked! Please complete previous step</h6>
+                </div>
             </div>
-        </div>
+        @elseif ($intention->status_pembayaran === '0')
+        <?php if ($intention_regist_now->greaterThan($intention_regist_date_start) && $intention_regist_now->lessThan($intention_regist_date_end)) { ?>
+            <div class="row align-items-center" align="left" style="padding:20px">
+                <div class="col-2" style="padding:0 15px 0 8px">
+                    <img class="circular-number" src="{{ URL::asset('icon/page-details/unqualified.svg') }}" alt="unqualified">
+                </div>
+                <div class="col-8" align="left" style="padding:0 8px 0 15px">
+                    <h6 class="text-tickets-head">Registration Failed :( <br>Keep your spirits up!</h6>
+                </div>
+            </div>
+        <?php
+        } elseif ($intention_regist_now->lessThan($intention_regist_date_start) || $intention_regist_now->greaterThan($intention_regist_date_end)) { ?>
+        <?php
+            }
+        ?>
+        @endif
     </div>
 </div>
 @endsection

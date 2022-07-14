@@ -135,7 +135,7 @@ class ProfilController extends Controller
             'proposal_link' => $request->proposal_link,
         ]);
 
-        return redirect()->route('profile');
+        return redirect()->route('profile.ticketDetailsIntention');
     }
 
     public function submittingProjectIntention()
@@ -154,7 +154,7 @@ class ProfilController extends Controller
             'app_link' => $request->app_link,
         ]);
 
-        return redirect()->route('profile');
+        return redirect()->route('profile.ticketDetailsIntention');
     }
 
     // DAC
@@ -181,7 +181,7 @@ class ProfilController extends Controller
             'paper_link' => $request->paper_link,
         ]);
 
-        return redirect()->route('profile');
+        return redirect()->route('profile.ticketDetailsDac');
     }
 
     public function submittingAnalysisDAC()
@@ -200,7 +200,7 @@ class ProfilController extends Controller
             'analytics_result' => $request->analytics_result,
         ]);
 
-        return redirect()->route('profile');
+        return redirect()->route('profile.ticketDetailsDac');
     }
 
     // CTF
@@ -306,7 +306,7 @@ class ProfilController extends Controller
             'proof_payment' => $request->payment_confirmation->store('semnas-payment-proof'),
         ]);
 
-        return redirect()->route('profile');
+        return redirect()->route('profile.ticketDetailsSemnasPresenter');
     }
 
     public function submittingPaper1SemnasPresenter()
@@ -325,7 +325,7 @@ class ProfilController extends Controller
             'paper1_link' => $request->paper1_link,
         ]);
 
-        return redirect()->route('profile');
+        return redirect()->route('profile.ticketDetailsSemnasPresenter');
     }
 
     public function submittingPaper2SemnasPresenter()
@@ -344,6 +344,6 @@ class ProfilController extends Controller
             'paper2_link' => $request->paper2_link,
         ]);
 
-        return redirect()->route('profile');
+        return redirect()->route('profile.ticketDetailsSemnasPresenter');
     }
 }
