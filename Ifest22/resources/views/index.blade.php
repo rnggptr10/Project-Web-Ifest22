@@ -39,7 +39,7 @@
 
             <a href="{{ route('semnas') }}"><span class="register">Register</span></a>
             <!-- <a href="{{ route('semnas') }}"><span class="register">See Details</span></a> -->
-            <a href="{{ route('semnas') }}"><span class="details" id="details">Details</span></a>
+            <a href="{{ route('semnas') }}"><span class="details" style="color:#fff; border-color:#fff;" id="details">Details</span></a>
         </div>
     </div>
 </div>
@@ -69,12 +69,12 @@
             </div>
             <div class="col-sm-4">
                 <div class="title-countdown">
-                    <p>International Conference</p>
+                    <p>Seminar Nasional</p>
                 </div>
             </div>
             <div class="col-sm-4">
                 <div class="conference-btn2">
-                    <button class="btn btn-outline-primary ifest-btn-outline-primary-light-bg col-md-5 float-right mt-3 mt-sm-0 fw-bold"><a class="ifest-btn-outline-primary-light-bg-text" href="{{route('register')}}">Register</a></button>
+                    <button class="btn btn-outline-primary ifest-btn-outline-primary-light-bg col-md-5 float-right mt-3 mt-sm-0 fw-bold" id="conference-btn-responsive"><a style="color:#fff;" class="ifest-btn-outline-primary-light-bg-text" href="{{route('register')}}">Register</a></button>
 
                     <!-- <button class="register">
                             <a href="{{ route('semnas') }}">Register</a>
@@ -82,7 +82,7 @@
                     <!-- <button class="details">
                             <a href="{{ route('semnas') }}">Details</a>
                         </button> -->
-                    <button class="btn btn-outline-primary ifest-btn-outline-primary-light-bg col-md-5 float-right mt-3 mt-sm-0 fw-bold"><a class="ifest-btn-outline-primary-light-bg-text" href="{{route('register')}}">Details</a></button>
+                    <button class="btn btn-outline-primary ifest-btn-outline-primary-light-bg col-md-5 float-right mt-3 mt-sm-0 fw-bold" id="conference-btn-responsive2"><a style="color:#fff;" class="ifest-btn-outline-primary-light-bg-text" href="{{route('register')}}">Details</a></button>
 
                 </div>
             </div>
