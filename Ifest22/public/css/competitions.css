@@ -42,8 +42,7 @@ html, body{
 
 /* Our Judges */
 .photo-flashback {
-  width: 100%;
-  height: 320px;
+  width: 352px;
   border-radius: .25rem;
 }
 
@@ -204,4 +203,28 @@ html, body{
     justify-content: center;
   }
 
+}
+
+#dacFlashback2 {
+  display: none;
+}
+
+@media screen and (max-width:1200px) {
+  #dacFlashback1 {
+      display: none;
+  }
+
+  #dacFlashback2 {
+      display: block;
+  }
+}
+
+@media screen and (max-width:767px) {
+  #dacFlashback1 {
+      display: none;
+  }
+
+  #dacFlashback2 {
+      display: block;
+  }
 }

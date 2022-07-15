@@ -66,14 +66,14 @@
     <!-- Button CP -->
     <div data-aos="fade-up" data-aos-duration="1000" class="row justify-content-center align-items-center" align="center" id="competitionCP" style="margin-left: 0; margin-right:0; padding-top: 30px;padding-bottom: 30px;">
         <h1 class="text-sub-title">Contact Person</h1>
-        <div class="row-cp">
-            <div class="col-btn-left" style="padding-top: 30px;">
+        <div class="row align-items-center">
+            <div class="col" style="padding-top: 30px;">
                 <button id="btn-cp1" type="button" class="btn btn-outline-primary ifest-btn-outline-primary-dark-bg" style="width: fit-content;padding:10px 20px 10px 20px" onclick="window.location.href='@yield('cp1_contact')';">
                     @yield('cp1_media')
                     <span style="margin-left:10px">@yield('cp1_name')</span>
                 </button>
             </div>
-            <div class="col-btn-right" style="padding-top: 30px;">
+            <div class="col" style="padding-top: 30px;">
                 <button id="btn-cp2" type="button" class="btn btn-outline-primary ifest-btn-outline-primary-dark-bg" style="width: fit-content;padding:10px 20px 10px 20px" onclick="window.location.href='@yield('cp2_contact')';">
                     @yield('cp2_media')
                     <span style="margin-left:10px">@yield('cp2_name')</span>
