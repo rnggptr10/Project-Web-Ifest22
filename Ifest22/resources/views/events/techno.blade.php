@@ -25,82 +25,82 @@ Technopreneur is a webinar and workshop that provides training & development fac
 
 <!-- SPEAKERS -->
 @section('techno_speakers_1')
-        <img class="card-img-top" style="width:100%;height:350px;" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg" alt="Speakers-1">
-        <div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
-            <div class="col-7" style="line-height: 5px;">
-                <h5 class="text-photo-card-name">Speaker1</h5>
-                <p class="text-photo-card-position">CEO</p>
-            </div>
-            <div class="col-3">
-                <a href=""><img class="logo-linkedin" src="{{ URL::asset('icon/linkedin.svg') }}" alt="linkedin"></a>
-            </div>
-        </div>
+<img class="card-img-top" style="width:100%;height:350px;" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg" alt="Speakers-1">
+<div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
+    <div class="col-7" style="line-height: 5px;">
+        <h5 class="text-photo-card-name">Speaker1</h5>
+        <p class="text-photo-card-position">CEO</p>
+    </div>
+    <div class="col-3">
+        <a href=""><img class="logo-linkedin" src="{{ URL::asset('icon/linkedin.svg') }}" alt="linkedin"></a>
+    </div>
+</div>
 @endsection
 
 @section('techno_speakers_2')
-        <img class="card-img-top" style="width:100%;height:350px;" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg" alt="Speakers-1">
-        <div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
-            <div class="col-7" style="line-height: 5px;">
-                <h5 class="text-photo-card-name">Speaker2</h5>
-                <p class="text-photo-card-position">CEO</p>
-            </div>
-            <div class="col-3">
-                <a href=""><img class="logo-linkedin" src="{{ URL::asset('icon/linkedin.svg') }}" alt="linkedin"></a>
-            </div>
-        </div>
+<img class="card-img-top" style="width:100%;height:350px;" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg" alt="Speakers-1">
+<div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
+    <div class="col-7" style="line-height: 5px;">
+        <h5 class="text-photo-card-name">Speaker2</h5>
+        <p class="text-photo-card-position">CEO</p>
+    </div>
+    <div class="col-3">
+        <a href=""><img class="logo-linkedin" src="{{ URL::asset('icon/linkedin.svg') }}" alt="linkedin"></a>
+    </div>
+</div>
 @endsection
 
 <!-- MENTORS -->
 @section('techno_mentor_1')
-        <img class="card-img-top" style="width:100%;height:350px;" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg" alt="Speakers-1">
-        <div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
-            <div class="col-7" style="line-height: 5px;">
-                <h5 class="text-photo-card-name">Mentor3</h5>
-                <p class="text-photo-card-position">CEO</p>
-            </div>
-            <div class="col-3">
-                <a href=""><img class="logo-linkedin" src="{{ URL::asset('icon/linkedin.svg') }}" alt="linkedin"></a>
-            </div>
-        </div>
+<img class="card-img-top" style="width:100%;height:350px;" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg" alt="Speakers-1">
+<div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
+    <div class="col-7" style="line-height: 5px;">
+        <h5 class="text-photo-card-name">Mentor3</h5>
+        <p class="text-photo-card-position">CEO</p>
+    </div>
+    <div class="col-3">
+        <a href=""><img class="logo-linkedin" src="{{ URL::asset('icon/linkedin.svg') }}" alt="linkedin"></a>
+    </div>
+</div>
 @endsection
 
 @section('techno_mentor_2')
-        <img class="card-img-top" style="width:100%;height:350px;" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg" alt="Speakers-1">
-        <div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
-            <div class="col-7" style="line-height: 5px;">
-                <h5 class="text-photo-card-name">Mentor4</h5>
-                <p class="text-photo-card-position">CEO</p>
-            </div>
-            <div class="col-3">
-                <a href=""><img class="logo-linkedin" src="{{ URL::asset('icon/linkedin.svg') }}" alt="linkedin"></a>
-            </div>
-        </div>
+<img class="card-img-top" style="width:100%;height:350px;" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg" alt="Speakers-1">
+<div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
+    <div class="col-7" style="line-height: 5px;">
+        <h5 class="text-photo-card-name">Mentor4</h5>
+        <p class="text-photo-card-position">CEO</p>
+    </div>
+    <div class="col-3">
+        <a href=""><img class="logo-linkedin" src="{{ URL::asset('icon/linkedin.svg') }}" alt="linkedin"></a>
+    </div>
+</div>
 @endsection
 
 @section('techno_mentor_3')
-        <img class="card-img-top" style="width:100%;height:350px;" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg" alt="Speakers-1">
-        <div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
-            <div class="col-7" style="line-height: 5px;">
-                <h5 class="text-photo-card-name">Mentor5</h5>
-                <p class="text-photo-card-position">CEO</p>
-            </div>
-            <div class="col-3">
-                <a href=""><img class="logo-linkedin" src="{{ URL::asset('icon/linkedin.svg') }}" alt="linkedin"></a>
-            </div>
-        </div>
+<img class="card-img-top" style="width:100%;height:350px;" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg" alt="Speakers-1">
+<div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
+    <div class="col-7" style="line-height: 5px;">
+        <h5 class="text-photo-card-name">Mentor5</h5>
+        <p class="text-photo-card-position">CEO</p>
+    </div>
+    <div class="col-3">
+        <a href=""><img class="logo-linkedin" src="{{ URL::asset('icon/linkedin.svg') }}" alt="linkedin"></a>
+    </div>
+</div>
 @endsection
 
 @section('techno_mentor_4')
-        <img class="card-img-top" style="width:100%;height:350px;" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg" alt="Speakers-1">
-        <div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
-            <div class="col-7" style="line-height: 5px;">
-                <h5 class="text-photo-card-name">Mentor6</h5>
-                <p class="text-photo-card-position">CEO</p>
-            </div>
-            <div class="col-3">
-                <a href=""><img class="logo-linkedin" src="{{ URL::asset('icon/linkedin.svg') }}" alt="linkedin"></a>
-            </div>
-        </div>
+<img class="card-img-top" style="width:100%;height:350px;" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg" alt="Speakers-1">
+<div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
+    <div class="col-7" style="line-height: 5px;">
+        <h5 class="text-photo-card-name">Mentor6</h5>
+        <p class="text-photo-card-position">CEO</p>
+    </div>
+    <div class="col-3">
+        <a href=""><img class="logo-linkedin" src="{{ URL::asset('icon/linkedin.svg') }}" alt="linkedin"></a>
+    </div>
+</div>
 @endsection
 
 <!-- FAQ -->
@@ -172,7 +172,7 @@ Technopreneur is a webinar and workshop that provides training & development fac
 </div>
 
 <div id="Speaker2" data-aos="fade-down" data-aos-duration="1000" align="center" id="sutSpeakers" style="padding-top: 30px;padding-bottom: 30px;">
-<h1 class="text-event-sub-title">Our Seminar Speakers</h1>
+    <h1 class="text-event-sub-title">Our Seminar Speakers</h1>
     <div id="technoMentor1" class="row justify-content-center carousel slide" data-ride="carousel" style="padding-top: 30px; position:relative">
         <div class="carousel-inner">
             <div class="carousel-item active">
@@ -258,7 +258,7 @@ Technopreneur is a webinar and workshop that provides training & development fac
 </div>
 
 <div id="Speaker2" data-aos="fade-down" data-aos-duration="1000" align="center" id="sutSpeakers" style="padding-top: 30px;padding-bottom: 30px;">
-<h1 class="text-event-sub-title">Our Workshop Mentors</h1>
+    <h1 class="text-event-sub-title">Our Workshop Mentors</h1>
     <div id="technoMentor1" class="row justify-content-center carousel slide" data-ride="carousel" style="padding-top: 30px; position:relative">
         <div class="carousel-inner">
             <div class="carousel-item active">
@@ -350,7 +350,7 @@ Technopreneur is a webinar and workshop that provides training & development fac
 
 @section('event_detail2')
 <!-- INI NANTI BISA PAKE LOOPING AJA -->
-<div data-aos="fade-up" data-aos-duration="1000" class="row align-items-center justify-content-between" align="left" id="technoCards1" style="padding-top: 30px;padding-bottom: 30px;">
+<div data-aos="fade-up" data-aos-duration="1000" class="row align-items-center justify-content-between padding-2-box-top" align="left" id="technoCards1" style="padding-top: 30px;">
     <div class="col-xs-6 col-lg-6" align="center" style="padding:0">
         <div class="card" style="border: 0; width:90%" id="cardTimeline">
             <div class="row align-items-center justify-content-start" style="padding:15px;">
@@ -388,7 +388,7 @@ Technopreneur is a webinar and workshop that provides training & development fac
         </div>
     </div>
 </div>
-<div data-aos="fade-up" data-aos-duration="1000" class="row align-items-center justify-content-between" align="left" id="technoCards2" style="padding-top: 30px;padding-bottom: 30px;">
+<div data-aos="fade-up" data-aos-duration="1000" class="row align-items-center justify-content-between padding-2-box-bottom" align="left" id="technoCards2">
     <div class="col-xs-6 col-lg-6" align="center" style="padding:0">
         <div class="card" style="border: 0; width:90%" id="cardTimeline">
             <div class="row align-items-center justify-content-start" style="padding:15px;">

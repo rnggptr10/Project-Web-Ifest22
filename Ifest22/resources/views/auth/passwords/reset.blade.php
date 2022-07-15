@@ -34,7 +34,7 @@
             <div class="col" align="left">
                 <label for="password" class="placeholder regist-form-text" style="padding:0">{{ __('Password') }}</label>
                 <!-- Insert Team Name -->
-                <input id="password" name="password" type="text" class="form-control @error('password') is-invalid @enderror ifest-regist-form text-center" required autocomplete="new-password" autofocus>
+                <input id="password" name="password" type="password" class="form-control @error('password') is-invalid @enderror ifest-regist-form text-center" required autocomplete="new-password" autofocus>
                 @error('password')
                 <div class="alert alert-danger mt-1 d-flex align-items-center" role="alert" style="width: 100%;
             max-width: 333px; margin: 0 auto">
@@ -48,7 +48,7 @@
             <div class="col" align="left">
                 <label for="password-confirm" class="placeholder regist-form-text" style="padding:0">{{ __('Confirm Password') }}</label>
                 <!-- Insert Team Name -->
-                <input id="password-confirm" name="password_confirmation" type="text" class="form-control @error('password-confirm') is-invalid @enderror ifest-regist-form text-center" required autocomplete="new-confirm" autofocus>
+                <input id="password-confirm" name="password_confirmation" type="password" class="form-control @error('password-confirm') is-invalid @enderror ifest-regist-form text-center" required autocomplete="new-confirm" autofocus>
                 @error('password-confirm')
                 <div class="alert alert-danger mt-1 d-flex align-items-center" role="alert" style="width: 100%;
                 max-width: 333px; margin: 0 auto">

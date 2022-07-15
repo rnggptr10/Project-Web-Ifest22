@@ -391,7 +391,7 @@ Startup Talk is a talk show that aims as a means to bring together Founders or S
     </div>
 </div>
 
-<div data-aos="fade-up" data-aos-duration="1000" class="row align-items-center justify-content-center" align="left" id="sutCards" style="padding-top: 30px;padding-bottom: 30px;">
+<div data-aos="fade-up" data-aos-duration="1000" class="row align-items-center justify-content-center padding-2-box-top" align="left" id="sutCards" style="padding-top: 30px;">
     <div class="col-xs-6 col-lg-6" align="center" style="padding:0">
         <div class="card" style="border: 0; width:90%" id="cardTimeline">
             <div class="row align-items-center justify-content-start" style="padding:15px;">
@@ -428,7 +428,7 @@ Startup Talk is a talk show that aims as a means to bring together Founders or S
         </div>
     </div>
 </div>
-<div data-aos="fade-up" data-aos-duration="1000" class="row align-items-center justify-content-center" align="left" id="sutCards" style="padding-top: 30px;padding-bottom: 30px;">
+<div data-aos="fade-up" data-aos-duration="1000" class="clear-pad-top row align-items-center justify-content-center padding-2-box-bottom" align="left" id="sutCards">
     <div class="col-xs-6 col-lg-6" align="center" style="padding: 0;">
         <div class="card" style="border: 0; width:90%" id="cardPlatform">
             <div class="row align-items-center" style="padding:15px">
@@ -466,23 +466,6 @@ Startup Talk is a talk show that aims as a means to bring together Founders or S
     </div>
 </div>
 @endsection
-
-<!-- @section('competition_button')
-<div class="col-2">
-    <button type="button" class="btn btn-outline-primary ifest-btn-outline-primary-dark-bg" style="width: 147px;height: 48px;">Guidebook</button>
-</div>
-<div class="col-2">
-    <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 147px;height: 48px;">
-        @guest
-        @if(Route::has('login'))
-        <a class="ifest-btn-primary-dark-bg-text" href="{{route('login')}}">Register Now</a>
-        @endif
-        @else
-        <a class="ifest-btn-primary-dark-bg-text" href="{{route('intention.registration.view')}}">Register Now</a>
-        @endguest
-    </button>
-</div>
-@endsection -->
 
 @section('cp1_media')
 <img class="logo-whatsapp" src="{{ URL::asset('icon/whatsapp.svg') }}" alt="Whatsapp">

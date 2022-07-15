@@ -112,7 +112,17 @@ body {
     height: 48px;
 }
 
-/* Responsif */
+.padding-2-box-top{
+    padding-bottom: 30px;
+}
+
+.padding-2-box-bottom{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+/* ============================== */
+/*          Responsif             */
+/* ============================== */
 @media screen and (max-width: 820px) {
 
     .col-btn-left button,
@@ -148,6 +158,15 @@ body {
 }
 
 @media screen and (max-width: 991px) {
+    .padding-2-box-top{
+        padding-bottom: 0px;
+    }
+    
+    .padding-2-box-bottom{
+        padding-top: 0px;
+        padding-bottom: 30px;
+    }
+
     .col-lg-6{
         margin-top: 30px;
     }
