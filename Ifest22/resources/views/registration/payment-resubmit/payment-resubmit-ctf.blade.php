@@ -1,9 +1,9 @@
 @extends('registration.payment-resubmit.payment-resubmit')
 
-@section('title', 'INTENTION')
+@section('title', 'CTF')
 
 @section('form')
-<form action="{{ route('intention.resubmit.payment') }}" method="post" enctype="multipart/form-data">
+<form action="{{ route('ctf.resubmit.payment') }}" method="post" enctype="multipart/form-data">
     @method('patch')
     @csrf
     <div id="regist-section-1">
@@ -29,7 +29,7 @@
                 </div>
                 <div class="row justify-content-center align-items-center" align="center" id="registCompButton2" style="padding:30px 0 30px 0; text-align:center;">
                     <div class="col">
-                        <button class="btn btn-outline-primary ifest-btn-outline-primary-dark-bg mt-3 mt-sm-0 fw-bold text-center" style="height:44px; width:128px;"><a class="ifest-btn-primary-dark-bg-text" href="{{ route('profile.ticketDetailsIntention') }}">{{ __('< Back') }}</a></button>
+                        <button class="btn btn-outline-primary ifest-btn-outline-primary-dark-bg mt-3 mt-sm-0 fw-bold text-center" style="height:44px; width:128px;"><a class="ifest-btn-primary-dark-bg-text" href="{{ route('profile.ticketDetailsCtf') }}">{{ __('< Back') }}</a></button>
                     </div>
                     <div class="col">
                         <button id="regist-submit-regist" type="submit" class="btn btn-primary ifest-btn-primary-dark-bg mt-3 mt-sm-0 fw-bold" style="height:44px; width:128px">{{ __('Submit') }}</button>

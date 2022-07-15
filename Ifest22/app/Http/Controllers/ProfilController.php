@@ -188,6 +188,29 @@ class ProfilController extends Controller
         return view('profils.ticketDetailsDac', compact('data', 'dac'));
     }
 
+    public function paymentResubmitDac()
+    {
+        $data = User::where('email', Auth::user()->email)->first();
+        return view('registration.payment-resubmit.payment-resubmit-dac', compact('data'));
+    }
+
+    public function savePaymentResubmitDac(Request $request)
+    {
+        $request->validate([
+            'payment_confirmation' => 'required',
+        ]);
+
+        // Alamat Penyimpanan
+        $request->payment_confirmation->store('dac-payment-proof');
+
+        Da_form::where('email', Auth::user()->email)->update([
+            'proof_payment' => $request->payment_confirmation->store('dac-payment-proof'),
+            'status_pembayaran' => '1',
+        ]);
+
+        return redirect()->route('profile.ticketDetailsDac');
+    }
+
     public function submittingPaperDAC()
     {
         $data = User::where('email', Auth::user()->email)->first();
@@ -232,6 +255,48 @@ class ProfilController extends Controller
         $data = User::where('email', Auth::user()->email)->first();
         $ctf = Ctf_form::where('email', Auth::user()->email)->first();
         return view('profils.ticketDetailsCtf', compact('data', 'ctf'));
+    }
+
+    public function paymentResubmitCtf()
+    {
+        $data = User::where('email', Auth::user()->email)->first();
+        return view('registration.payment-resubmit.payment-resubmit-ctf', compact('data'));
+    }
+
+    public function savePaymentResubmitCtf(Request $request)
+    {
+        $request->validate([
+            'payment_confirmation' => 'required',
+        ]);
+
+        // Alamat Penyimpanan
+        $request->payment_confirmation->store('ctf-payment-proof');
+
+        Ctf_form::where('email', Auth::user()->email)->update([
+            'proof_payment' => $request->payment_confirmation->store('ctf-payment-proof'),
+            'status_pembayaran' => '1',
+        ]);
+
+        return redirect()->route('profile.ticketDetailsCtf');
+    }
+
+    public function submittingWriteupCtf()
+    {
+        $data = User::where('email', Auth::user()->email)->first();
+        return view('submitting.submitting-ctf-writeup', compact('data'));
+    }
+
+    public function saveWriteupCtf(Request $request)
+    {
+        $request->validate([
+            'writeup_link' => 'required',
+        ]);
+
+        Ctf_form::where('email', Auth::user()->email)->update([
+            'writeup_link' => $request->writeup_link,
+        ]);
+
+        return redirect()->route('profile.ticketDetailsCtf');
     }
 
     // TECHNO WS

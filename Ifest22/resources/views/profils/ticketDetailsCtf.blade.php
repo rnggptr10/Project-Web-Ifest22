@@ -64,9 +64,34 @@
                 <img class="circular-number" src="{{ URL::asset('icon/page-details/circle-1.svg') }}" alt="1">
             </div>
             <div class="col-6" align="left" style="padding:0 8px 0 15px">
-                <h6 class="text-tickets-head">Registrasi Tim</h6>
+                <h6 class="text-tickets-head">Team Registration</h6>
                 <!-- BUAT STATUS, CLASS TERGANTUNG STATUS DI DATABASE -->
-                <p class="text-tickets-desc">20-25 Agustus 2022<br>Status : 
+                <p class="text-tickets-desc">24 July - 20 Agustus 2022<br>Status : 
+                <?php
+                    // SET WAKTU LIVE
+                    $now = Carbon::now('Asia/Jakarta');
+                    $now->toDateTimeString();
+
+                    // SET TANGGAL REGISTRASI CTF
+                    $ctf_regist_date_start = Carbon::create(2022, 7, 7, 7, 00, 00, 'Asia/Jakarta');
+                    $ctf_regist_date_end = Carbon::create(2022, 7, 19, 15, 00, 00, 'Asia/Jakarta');
+                    $ctf_regist_date_start->toDateTimeString(); 
+                    $ctf_regist_date_end->toDateTimeString(); 
+
+                    // SET TANGGAL COMPETITION
+                    $ctf_comp_date_start = Carbon::create(2022, 7, 15, 7, 00, 00, 'Asia/Jakarta');
+                    $ctf_comp_date_end = Carbon::create(2022, 7, 15, 14, 00, 00, 'Asia/Jakarta');
+                    $ctf_comp_date_start->toDateTimeString(); 
+                    $ctf_comp_date_end->toDateTimeString(); 
+
+                    // SET TANGGAL SUBMIT WRITEUP
+                    $ctf_writeup_date_start = Carbon::create(2022, 7, 15, 7, 00, 00, 'Asia/Jakarta');
+                    $ctf_writeup_date_end = Carbon::create(2022, 7, 15, 15, 00, 00, 'Asia/Jakarta');
+                    $ctf_writeup_date_start->toDateTimeString(); 
+                    $ctf_writeup_date_end->toDateTimeString(); 
+
+                    if ($now->greaterThan($ctf_regist_date_start) && $now->lessThan($ctf_regist_date_end)) {
+                ?> 
                     @if ($ctf->status_pembayaran === '1')
                         <span class="text-tickets-status status-orange">Waiting for Confirmation</span>
                     @elseif ($ctf->status_pembayaran === '0')
@@ -74,46 +99,121 @@
                     @elseif ($ctf->status_pembayaran === '2')
                         <span class="text-tickets-status status-green">Payment Completed</span>
                     @endif
-                </span>
+                    <?php } elseif ($now->lessThan($ctf_regist_date_start) || $now->greaterThan($ctf_regist_date_end)) { ?>
+                        @if ($ctf->status_pembayaran === '0')
+                            <span class="text-tickets-status status-red">Payment Failed</span>
+                        @elseif ($ctf->status_pembayaran === '2')
+                            <span class="text-tickets-status status-green">Payment Completed</span>
+                        @endif
+                    <?php } ?>
                 </p>
             </div>
+            <?php if ($now->greaterThan($ctf_regist_date_start) && $now->lessThan($ctf_regist_date_end)) { ?>
+                @if ($ctf->status_pembayaran === '0')
+                <div class="col-4" align="center" style="padding:0">
+                    <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 120px;height: 48px;">
+                        <a class="ifest-btn-primary-dark-bg-text" href="{{ route('ctf.resubmit.payment.view') }}">Re-Submit?</a>
+                    </button>
+                </div>
+            @elseif ($ctf->status_pembayaran === '1' || $ctf->status_pembayaran === '2')
+            @endif
+            <?php
+            } elseif ($now->lessThan($ctf_regist_date_start) || $now->greaterThan($ctf_regist_date_end)) {
+                // BUTTON RE-SUBMIT HILANG (KALAU UDAH LEWAT TANGGAL REGIST)
+            } ?>
         </div>
-        <div class="row align-items-center" align="left" style="padding:20px">
-            <div class="col-2" style="padding:0 15px 0 8px">
-                <img class="circular-number" src="{{ URL::asset('icon/page-details/circle-2.svg') }}" alt="2">
+        @if ($ctf->status_pembayaran === '2')
+            <div class="row align-items-center" align="left" style="padding:20px">
+                <div class="col-2" style="padding:0 15px 0 8px">
+                    <img class="circular-number" src="{{ URL::asset('icon/page-details/circle-2.svg') }}" alt="2">
+                </div>
+                <div class="col-6" align="left" style="padding:0 8px 0 15px">
+                    <h6 class="text-tickets-head">Pelaksanaan Kompetisi</h6>
+                    <p class="text-tickets-desc">26 Agustus 2022<br>8.00 - 16.00
+                    </p>
+                </div>
+                <div class="col-4" align="center" style="padding:0">
+                    <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 120px;height: 48px;" <?php 
+                        if($now->greaterThan($ctf_comp_date_start) && $now->lessThan($ctf_comp_date_end)) { 
+                        } elseif ($now->lessThan($ctf_comp_date_start) || $now->greaterThan($ctf_comp_date_end)){
+                            echo('disabled'); 
+                        }?>>
+                        <a class="ifest-btn-primary-dark-bg-text" href="">Link CTFd</a>
+                    </button>
+                </div>
             </div>
-            <div class="col-6" align="left" style="padding:0 8px 0 15px">
-                <h6 class="text-tickets-head">Pelaksanaan Kompetisi</h6>
-                <p class="text-tickets-desc">26 Agustus 2022<br>8.00 - 16.00
-                </p>
-            </div>
-        </div>
-        <div class="row align-items-center" align="left" style="padding:20px">
-            <div class="col-2" style="padding:0 15px 0 8px">
-                <img class="circular-number" src="{{ URL::asset('icon/page-details/circle-3.svg') }}" alt="3">
-            </div>
-            <div class="col-6" align="left" style="padding:0 8px 0 15px">
-                <h6 class="text-tickets-head">Pengumpulan Writeup</h6>
-                <p class="text-tickets-desc">26-30 Agustus 2022<br>Status : 
-                    <!-- @if ($ctf->writeup_link === null)
-                        <span class="text-tickets-status status-red">Unsubmitted</span>
+            <div class="row align-items-center" align="left" style="padding:20px">
+                <div class="col-2" style="padding:0 15px 0 8px">
+                    <img class="circular-number" src="{{ URL::asset('icon/page-details/circle-3.svg') }}" alt="3">
+                </div>
+                <div class="col-6" align="left" style="padding:0 8px 0 15px">
+                    <h6 class="text-tickets-head">Pengumpulan Writeup</h6>
+                    <p class="text-tickets-desc">26-30 Agustus 2022<br>Status : 
+                        @if ($ctf->writeup_link === null)
+                            <span class="text-tickets-status status-red">Unsubmitted</span>
+                        @elseif ($ctf->writeup_link !== null)
+                            <span class="text-tickets-status status-green">Submitted.</span>
+                        @endif
+                    </p>
+                </div>
+                <div class="col-4" align="center" style="padding:0">
+                    @if ($ctf->writeup_link === null)
+                        <?php if($now->lessThan($ctf_writeup_date_start)) { ?>
+                            <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 120px;height: 48px;" disabled>
+                                <a class="ifest-btn-primary-dark-bg-text" href="{{ route('ctf.submitting.writeup') }}">Submit</a>
+                            </button>
+                        <?php } elseif ($now->greaterThan($ctf_writeup_date_start) && $now->lessThan($ctf_writeup_date_end)) { ?>
+                            <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 120px;height: 48px;">
+                                <a class="ifest-btn-primary-dark-bg-text" href="{{ route('ctf.submitting.writeup') }}">Submit</a>
+                            </button>
+                        <?php } ?>
                     @elseif ($ctf->writeup_link !== null)
-                        <span class="text-tickets-status status-orange">Submitted.</span>
-                    @endif -->
-                </p>
+                        <?php if ($now->greaterThan($ctf_writeup_date_start) && $now->lessThan($ctf_writeup_date_end)) { ?>
+                            <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 120px;height: 48px;">
+                                <a class="ifest-btn-primary-dark-bg-text" href="{{ route('ctf.submitting.writeup') }}">Re-Submit?</a>
+                            </button>
+                        <?php } elseif ($now->greaterThan($ctf_writeup_date_end)) { ?>
+                            <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 120px;height: 48px;">
+                                <a class="ifest-btn-primary-dark-bg-text" href="{{ $ctf->writeup_link }}">View</a>
+                            </button>
+                        <?php } ?>
+                    @endif
+                </div>
             </div>
-            <div class="col-4" align="center" style="padding:0">
-                <!-- @if ($ctf->writeup_link === null)
-                    <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 120px;height: 48px;">
-                        <a class="ifest-btn-primary-dark-bg-text" href="">Submit</a>
-                    </button>
-                @elseif ($ctf->writeup_link !== null)
-                    <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 120px;height: 48px;">
-                        <a class="ifest-btn-primary-dark-bg-text" href="">Re-Submit?</a>
-                    </button>
-                @endif -->
+
+        @elseif ($ctf->status_pembayaran === '1')
+            <div class="row align-items-center" align="left" style="padding:20px">
+                <div class="col-2" style="padding:0 15px 0 8px">
+                    <img class="circular-number" src="{{ URL::asset('icon/page-details/gembok.svg') }}" alt="locked">
+                </div>
+                <div class="col-8" align="left" style="padding:0 8px 0 15px">
+                    <h6 class="text-tickets-head">Progress Locked! Please complete previous step</h6>
+                </div>
             </div>
-        </div>
+
+        @elseif ($ctf->status_pembayaran === '0')
+        <?php if ($now->greaterThan($ctf_regist_date_start) && $now->lessThan($ctf_regist_date_end)) { ?>
+                <div class="row align-items-center" align="left" style="padding:20px">
+                    <div class="col-2" style="padding:0 15px 0 8px">
+                        <img class="circular-number" src="{{ URL::asset('icon/page-details/gembok.svg') }}" alt="locked">
+                    </div>
+                    <div class="col-8" align="left" style="padding:0 8px 0 15px">
+                        <h6 class="text-tickets-head">Progress Locked! Please complete previous step</h6>
+                    </div>
+                </div>
+            <?php } elseif ($now->lessThan($ctf_regist_date_start) || $now->greaterThan($ctf_regist_date_end)) { ?>
+                <div class="row align-items-center" align="left" style="padding:20px">
+                    <div class="col-2" style="padding:0 15px 0 8px">
+                        <img class="circular-number" src="{{ URL::asset('icon/page-details/unqualified.svg') }}" alt="unqualified">
+                    </div>
+                    <div class="col-8" align="left" style="padding:0 8px 0 15px">
+                        <h6 class="text-tickets-head">Registration Failed :( <br>Keep your spirits up!</h6>
+                    </div>
+                </div>
+            <?php
+                }
+            ?>
+        @endif
     </div>
 </div>
 @endsection

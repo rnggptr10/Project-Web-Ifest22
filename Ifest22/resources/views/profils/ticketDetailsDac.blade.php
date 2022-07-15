@@ -62,9 +62,44 @@
                 <img class="circular-number" src="{{ URL::asset('icon/page-details/circle-1.svg') }}" alt="1">
             </div>
             <div class="col-6" align="left" style="padding:0 8px 0 15px">
-                <h6 class="text-tickets-head">Registrasi Tim</h6>
+                <h6 class="text-tickets-head">Team Registration</h6>
                 <!-- BUAT STATUS, CLASS TERGANTUNG STATUS DI DATABASE -->
-                <p class="text-tickets-desc">20-25 Agustus 2022<br>Status : 
+                <p class="text-tickets-desc">24 July - 20 Agustus 2022<br>Status : 
+                <?php
+                    // SET WAKTU LIVE
+                    $now = Carbon::now('Asia/Jakarta');
+                    $now->toDateTimeString();
+
+                    // SET TANGGAL REGISTRASI DAC
+                    $dac_regist_date_start = Carbon::create(2022, 7, 7, 7, 00, 00, 'Asia/Jakarta');
+                    $dac_regist_date_end = Carbon::create(2022, 7, 19, 15, 00, 00, 'Asia/Jakarta');
+                    $dac_regist_date_start->toDateTimeString(); 
+                    $dac_regist_date_end->toDateTimeString(); 
+
+                    // SET TANGGAL SUBMIT PAPER DAC
+                    $dac_paper_date_start = Carbon::create(2022, 7, 15, 7, 00, 00, 'Asia/Jakarta');
+                    $dac_paper_date_end = Carbon::create(2022, 7, 15, 15, 00, 00, 'Asia/Jakarta');
+                    $dac_paper_date_start->toDateTimeString(); 
+                    $dac_paper_date_end->toDateTimeString(); 
+
+                    // SET TANGGAL PENGUMUMAN FINALIST
+                    $dac_finalist_date_start = Carbon::create(2022, 7, 15, 7, 00, 00, 'Asia/Jakarta');
+                    $dac_finalist_date_start->toDateTimeString(); 
+
+                    // SET TANGGAL SUBMIT CODE DAC
+                    $dac_code_date_start = Carbon::create(2022, 7, 15, 7, 00, 00, 'Asia/Jakarta');
+                    $dac_code_date_end = Carbon::create(2022, 7, 15, 15, 00, 00, 'Asia/Jakarta');
+                    $dac_code_date_start->toDateTimeString(); 
+                    $dac_code_date_end->toDateTimeString(); 
+
+                    // SET TANGGAL FINAL STAGE
+                    $dac_final_date_start = Carbon::create(2022, 7, 15, 7, 00, 00, 'Asia/Jakarta');
+                    $dac_final_date_end = Carbon::create(2022, 7, 16, 14, 00, 00, 'Asia/Jakarta');
+                    $dac_final_date_start->toDateTimeString(); 
+                    $dac_final_date_end->toDateTimeString(); 
+
+                    if ($now->greaterThan($dac_regist_date_start) && $now->lessThan($dac_regist_date_end)) {
+                ?> 
                     @if ($dac->status_pembayaran === '1')
                         <span class="text-tickets-status status-orange">Waiting for Confirmation</span>
                     @elseif ($dac->status_pembayaran === '0')
@@ -72,80 +107,234 @@
                     @elseif ($dac->status_pembayaran === '2')
                         <span class="text-tickets-status status-green">Payment Completed</span>
                     @endif
-                </span>
+                <?php } elseif ($now->lessThan($dac_regist_date_start) || $now->greaterThan($dac_regist_date_end)) { ?>
+                    @if ($dac->status_pembayaran === '0')
+                        <span class="text-tickets-status status-red">Payment Failed</span>
+                    @elseif ($dac->status_pembayaran === '2')
+                        <span class="text-tickets-status status-green">Payment Completed</span>
+                    @endif
+                <?php } ?>
                 </p>
             </div>
+            <?php if ($now->greaterThan($dac_regist_date_start) && $now->lessThan($dac_regist_date_end)) { ?>
+                @if ($dac->status_pembayaran === '0')
+                <div class="col-4" align="center" style="padding:0">
+                    <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 120px;height: 48px;">
+                        <a class="ifest-btn-primary-dark-bg-text" href="{{ route('dac.resubmit.payment.view') }}">Re-Submit?</a>
+                    </button>
+                </div>
+            @elseif ($dac->status_pembayaran === '1' || $dac->status_pembayaran === '2')
+            @endif
+            <?php
+            } elseif ($now->lessThan($dac_regist_date_start) || $now->greaterThan($dac_regist_date_end)) {
+                // BUTTON RE-SUBMIT HILANG (KALAU UDAH LEWAT TANGGAL REGIST)
+            } ?>
         </div>
-        <div class="row align-items-center" align="left" style="padding:20px">
-            <div class="col-2" style="padding:0 15px 0 8px">
-                <img class="circular-number" src="{{ URL::asset('icon/page-details/circle-2.svg') }}" alt="2">
-            </div>
-            <div class="col-6" align="left" style="padding:0 8px 0 15px">
-                <h6 class="text-tickets-head">Pengumpulan Paper</h6>
-                <p class="text-tickets-desc">26-30 Agustus 2022<br>Status : 
-                    @if ($dac->proposal_link === null)
-                        <span class="text-tickets-status status-red">Unsubmitted</span>
-                    @elseif ($dac->proposal_link !== null)
-                        @if ($dac->status_finalist === 0)
-                            <span class="text-tickets-status status-orange">Submitted. Waiting for Selection.</span>
-                        @elseif ($dac->status_finalist === 1)
-                            <span class="text-tickets-status status-green">Proposal Selected!</span>
+        @if ($dac->status_pembayaran === '2')
+            <div class="row align-items-center" align="left" style="padding:20px">
+                <div class="col-2" style="padding:0 15px 0 8px">
+                    <img class="circular-number" src="{{ URL::asset('icon/page-details/circle-2.svg') }}" alt="2">
+                </div>
+                <div class="col-6" align="left" style="padding:0 8px 0 15px">
+                    <h6 class="text-tickets-head">Elimination Round</h6>
+                    <p class="text-tickets-desc">5 September - 10 September 2022<br>Status : 
+                    <?php
+                        // SET TANGGAL ACARA
+                        if ($now->greaterThan($dac_paper_date_start) && $now->lessThan($dac_paper_date_end)) {
+                    ?>  
+                        @if ($dac->paper_link === null)
+                            <span class="text-tickets-status status-red">Unsubmitted</span>
+                        @elseif ($dac->paper_link !== null)
+                            @if ($dac->status_finalist === '0')
+                                <?php if ($now->greaterThan($dac_finalist_date_start)) { ?>
+                                    <span class="text-tickets-status status-green">Submitted</span>
+                                <?php } elseif ($now->lessThan($dac_finalist_date_start)) { ?>
+                                    <span class="text-tickets-status status-orange">Submitted. Waiting for Selection.</span>
+                                <?php } ?>
+                            @elseif ($dac->status_finalist === '1')
+                                <?php if ($now->greaterThan($dac_finalist_date_start)) { ?>
+                                    <span class="text-tickets-status status-green">Paper Selected!</span>
+                                <?php } elseif ($now->lessThan($dac_finalist_date_start)) { ?>
+                                    <span class="text-tickets-status status-orange">Submitted. Waiting for Selection.</span>
+                                <?php } ?>
+                            @endif
                         @endif
+                        <?php
+                    } elseif ($now->lessThan($dac_paper_date_start) || $now->greaterThan($dac_paper_date_end)) { 
+                    ?>
+                        @if ($dac->paper_link === null)
+                            <span class="text-tickets-status status-red">Unsubmitted</span>
+                        @elseif ($dac->paper_link !== null)
+                            @if ($dac->status_finalist === '0')
+                                <span class="text-tickets-status status-green">Submitted</span>
+                            @elseif ($dac->status_finalist === '1')
+                                <span class="text-tickets-status status-green">Paper Selected!</span>
+                            @endif
+                        @endif
+                    <?php
+                        }
+                    ?>
+                    </p>
+                </div>
+                <div class="col-4" align="center" style="padding:0">
+                @if ($dac->status_finalist === '0')
+                    @if ($dac->paper_link === null)
+                        <?php if($now->lessThan($dac_paper_date_start)) { ?>
+                            <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 120px;height: 48px;" disabled>
+                                <a class="ifest-btn-primary-dark-bg-text" href="{{ route('dac.submitting.paper.view') }}">Submit</a>
+                            </button>
+                        <?php } elseif($now->greaterThan($dac_paper_date_start) && $now->lessThan($dac_paper_date_end)) { ?>
+                            <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 120px;height: 48px;">
+                                <a class="ifest-btn-primary-dark-bg-text" href="{{ route('dac.submitting.paper.view') }}">Submit</a>
+                            </button>
+                        <?php } elseif($now->greaterThan($dac_paper_date_end)) {?>
+                        <?php } ?>
+                    @elseif ($dac->paper_link !== null)
+                        <?php if ($now->greaterThan($dac_finalist_date_start) || $now->greaterThan($dac_paper_date_end)) { ?>
+                            <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 120px;height: 48px;">
+                                <a class="ifest-btn-primary-dark-bg-text" href="{{ $dac->paper_link }}">View</a>
+                            </button>
+                        <?php } elseif ($now->lessThan($dac_paper_date_end)) { ?>
+                            <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 120px;height: 48px;">
+                                <a class="ifest-btn-primary-dark-bg-text" href="{{ route('dac.submitting.paper.view') }}">Re-Submit?</a>
+                            </button>
+                        <?php } ?>
                     @endif
-                </p>
-            </div>
-            <div class="col-4" align="center" style="padding:0">
-                @if ($dac->proposal_link === null)
+                @elseif ($dac->status_finalist === '1')
                     <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 120px;height: 48px;">
-                        <a class="ifest-btn-primary-dark-bg-text" href="{{ route('dac.submitting.paper.view') }}">Submit</a>
-                    </button>
-                @elseif ($dac->proposal_link !== null)
-                    <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 120px;height: 48px;">
-                        <a class="ifest-btn-primary-dark-bg-text" href="">Re-Submit?</a>
+                        <a class="ifest-btn-primary-dark-bg-text" href="{{ $dac->paper_link }}">View</a>
                     </button>
                 @endif
+                </div>
             </div>
-        </div>
-        <div class="row align-items-center" align="left" style="padding:20px">
-            <div class="col-2" style="padding:0 15px 0 8px">
-                <img class="circular-number" src="{{ URL::asset('icon/page-details/circle-3.svg') }}" alt="3">
+            <div class="row align-items-center" align="left" style="padding:20px">
+                <div class="col-2" style="padding:0 15px 0 8px">
+                    <img class="circular-number" src="{{ URL::asset('icon/page-details/circle-3.svg') }}" alt="3">
+                </div>
+                <div class="col-6" align="left" style="padding:0 8px 0 15px">
+                    <h6 class="text-tickets-head">Finalist Announcement</h6>
+                    <p class="text-tickets-desc">9 September 2022
+                        <?php if ($now->greaterThan($dac_finalist_date_start)) { ?>
+                        <br>Status : 
+                        @if ($dac->status_finalist === '0')
+                            <span class="text-tickets-status status-red">Your team didn't qualify for the Final Round. Keep your spirits up!</span>
+                        @elseif ($dac->status_finalist === '1')
+                            <span class="text-tickets-status status-green">Congratulations! Your team advances to the Final Round</span>
+                        @endif
+                        <?php
+                        } elseif ($now->lessThan($dac_paper_date_start)) { }
+                        ?>
+                    </p>
+                </div>
             </div>
-            <div class="col-6" align="left" style="padding:0 8px 0 15px">
-                <h6 class="text-tickets-head">Pengumpulan Hasil Analisis</h6>
-                <p class="text-tickets-desc">1-5 September 2022<br>Status : 
-                    @if ($dac->app_link === null)
-                        <span class="text-tickets-status status-red">Unsubmitted</span>
-                    @elseif ($dac->app_link !== null)
-                        <span class="text-tickets-status status-green">Submitted</span>
-                    @endif
-                </p>
+
+
+            @if ($dac->status_finalist === '1')
+                <div class="row align-items-center" align="left" style="padding:20px">
+                    <div class="col-2" style="padding:0 15px 0 8px">
+                        <img class="circular-number" src="{{ URL::asset('icon/page-details/circle-4.svg') }}" alt="4">
+                    </div>
+                    <div class="col-6" align="left" style="padding:0 8px 0 15px">
+                        <h6 class="text-tickets-head">Source Code Submission</h6>
+                        <p class="text-tickets-desc">1-5 September 2022<br>Status : 
+                            @if ($dac->analytics_result === null)
+                                <span class="text-tickets-status status-red">Unsubmitted</span>
+                            @elseif ($dac->analytics_result !== null)
+                                <span class="text-tickets-status status-green">Submitted</span>
+                            @endif
+                        </p>
+                    </div>
+                    <div class="col-4" align="center" style="padding:0">
+                        @if ($dac->analytics_result === null)
+                            <?php if($now->lessThan($dac_code_date_start)) { ?>
+                                <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 120px;height: 48px;" disabled>
+                                    <a class="ifest-btn-primary-dark-bg-text" href="{{ route('dac.submitting.analysis.view') }}">Submit</a>
+                                </button>
+                            <?php } elseif ($now->greaterThan($dac_code_date_start) && $now->lessThan($dac_code_date_end)) { ?>
+                                <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 120px;height: 48px;">
+                                    <a class="ifest-btn-primary-dark-bg-text" href="{{ route('dac.submitting.analysis.view') }}">Submit</a>
+                                </button>
+                            <?php } ?>
+                        @elseif ($dac->analytics_result !== null)
+                        <?php if ($now->greaterThan($dac_code_date_start) && $now->lessThan($dac_code_date_end)) { ?>
+                            <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 120px;height: 48px;">
+                                <a class="ifest-btn-primary-dark-bg-text" href="{{ route('dac.submitting.analysis.view') }}">Re-Submit?</a>
+                            </button>
+                        <?php } elseif ($now->greaterThan($dac_code_date_end)) { ?>
+                            <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 120px;height: 48px;">
+                                <a class="ifest-btn-primary-dark-bg-text" href="{{ $dac->analytics_result }}">View</a>
+                            </button>
+                        <?php } ?>
+                        @endif
+                    </div>
+                </div>
+                <div class="row align-items-center" align="left" style="padding:20px">
+                    <div class="col-2" style="padding:0 15px 0 8px">
+                        <img class="circular-number" src="{{ URL::asset('icon/page-details/circle-5.svg') }}" alt="5">
+                    </div>
+                    <div class="col-6" align="left" style="padding:0 8px 0 15px">
+                        <h6 class="text-tickets-head">Final Stage Zoom</h6>
+                        <p class="text-tickets-desc">6 September 2022</p>
+                    </div>
+                    <div class="col-4" align="center" style="padding:0">
+                        <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 120px;height: 48px;" <?php 
+                            if($now->greaterThan($dac_final_date_start) && $now->lessThan($dac_final_date_end)) { ?>
+                                @if ($dac->analytics_result === null)
+                                    <?php echo('disabled'); ?>
+                                @elseif ($dac->analytics_result !== null)
+                                @endif
+                            <?php } elseif ($now->lessThan($dac_final_date_start) || $now->greaterThan($dac_final_date_end)){
+                                echo('disabled'); 
+                            }?>>
+                            <a class="ifest-btn-primary-dark-bg-text" href="">Link Zoom</a>
+                        </button>
+                    </div>
+                </div>
+
+            @elseif ($dac->status_finalist === '0')
+            <div class="row align-items-center" align="left" style="padding:20px">
+                <div class="col-2" style="padding:0 15px 0 8px">
+                    <img class="circular-number" src="{{ URL::asset('icon/page-details/gembok.svg') }}" alt="locked">
+                </div>
+                <div class="col-8" align="left" style="padding:0 8px 0 15px">
+                    <h6 class="text-tickets-head">Progress Locked! Please complete previous step</h6>
+                </div>
             </div>
-            <div class="col-4" align="center" style="padding:0">
-                @if ($dac->app_link === null)
-                    <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 120px;height: 48px;">
-                        <a class="ifest-btn-primary-dark-bg-text" href="{{ route('dac.submitting.analysis.view') }}">Submit</a>
-                    </button>
-                @elseif ($dac->app_link !== null)
-                    <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 120px;height: 48px;">
-                        <a class="ifest-btn-primary-dark-bg-text" href="">Re-Submit?</a>
-                    </button>
-                @endif
+            @endif
+
+        @elseif ($dac->status_pembayaran === '1')
+            <div class="row align-items-center" align="left" style="padding:20px">
+                <div class="col-2" style="padding:0 15px 0 8px">
+                    <img class="circular-number" src="{{ URL::asset('icon/page-details/gembok.svg') }}" alt="locked">
+                </div>
+                <div class="col-8" align="left" style="padding:0 8px 0 15px">
+                    <h6 class="text-tickets-head">Progress Locked! Please complete previous step</h6>
+                </div>
             </div>
-        </div>
-        <div class="row align-items-center" align="left" style="padding:20px">
-            <div class="col-2" style="padding:0 15px 0 8px">
-                <img class="circular-number" src="{{ URL::asset('icon/page-details/circle-4.svg') }}" alt="4">
-            </div>
-            <div class="col-6" align="left" style="padding:0 8px 0 15px">
-                <h6 class="text-tickets-head">Zoom Babak Final</h6>
-                <p class="text-tickets-desc">6 September 2022</p>
-            </div>
-            <div class="col-4" align="center" style="padding:0">
-                <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 120px;height: 48px;" disabled>
-                    <a class="ifest-btn-primary-dark-bg-text" href="">Link Zoom</a>
-                </button>
-            </div>
-        </div>
+
+        @elseif ($dac->status_pembayaran === '0')
+            <?php if ($now->greaterThan($dac_regist_date_start) && $now->lessThan($dac_regist_date_end)) { ?>
+                <div class="row align-items-center" align="left" style="padding:20px">
+                    <div class="col-2" style="padding:0 15px 0 8px">
+                        <img class="circular-number" src="{{ URL::asset('icon/page-details/gembok.svg') }}" alt="locked">
+                    </div>
+                    <div class="col-8" align="left" style="padding:0 8px 0 15px">
+                        <h6 class="text-tickets-head">Progress Locked! Please complete previous step</h6>
+                    </div>
+                </div>
+            <?php } elseif ($now->lessThan($dac_regist_date_start) || $now->greaterThan($dac_regist_date_end)) { ?>
+                <div class="row align-items-center" align="left" style="padding:20px">
+                    <div class="col-2" style="padding:0 15px 0 8px">
+                        <img class="circular-number" src="{{ URL::asset('icon/page-details/unqualified.svg') }}" alt="unqualified">
+                    </div>
+                    <div class="col-8" align="left" style="padding:0 8px 0 15px">
+                        <h6 class="text-tickets-head">Registration Failed :( <br>Keep your spirits up!</h6>
+                    </div>
+                </div>
+            <?php
+                }
+            ?>
+        @endif
     </div>
 </div>
 @endsection

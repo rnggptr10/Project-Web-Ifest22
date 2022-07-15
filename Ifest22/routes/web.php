@@ -55,6 +55,11 @@ Route::get('/profil/ticket-details-dac/submit-paper', [ProfilController::class, 
 Route::patch('/profil/ticket-details-dac/submit-paper', [ProfilController::class, 'savePaperDAC'])->name('dac.submitting.paper');
 Route::get('/profil/ticket-details-dac/submit-analysis', [ProfilController::class, 'submittingAnalysisDAC'])->name('dac.submitting.analysis.view');
 Route::patch('/profil/ticket-details-dac/submit-analysis', [ProfilController::class, 'saveAnalysisDAC'])->name('dac.submitting.analysis');
+
+Route::get('/profil/ticket-details-ctf/submit-writeup', [ProfilController::class, 'submittingWriteupCtf'])->name('ctf.submitting.writeup.view');
+Route::patch('/profil/ticket-details-ctf/submit-writeup', [ProfilController::class, 'saveWriteupCtf'])->name('ctf.submitting.writeup');
+
+
 Route::get('/profil/ticket-details-technopreneur-workshop/submit-proposal', [ProfilController::class, 'submittingProposalTechno'])->name('technoWorkshop.submitting.proposal.view');
 Route::patch('/profil/ticket-details-technopreneur-workshop/submit-proposal', [ProfilController::class, 'saveProposalTechno'])->name('technoWorkshop.submitting.proposal');
 Route::get('/profil/ticket-details-technopreneur-workshop/submit-pitchdeck-1', [ProfilController::class, 'submittingPitchdeck1Techno'])->name('technoWorkshop.submitting.pitchdeck1.view');
@@ -71,6 +76,10 @@ Route::patch('/profil/ticket-details-seminar-nasional/presenter/submit-paper-2',
 // Route for Re-Submit Payment Proof (Confirmation gagal, bukti bayar salah)
 Route::get('/profil/ticket-details-intention/resubmit-payment', [ProfilController::class, 'paymentResubmitIntention'])->name('intention.resubmit.payment.view');
 Route::patch('/profil/ticket-details-intention/resubmit-payment', [ProfilController::class, 'savePaymentResubmitIntention'])->name('intention.resubmit.payment');
+Route::get('/profil/ticket-details-dac/resubmit-payment', [ProfilController::class, 'paymentResubmitDac'])->name('dac.resubmit.payment.view');
+Route::patch('/profil/ticket-details-dac/resubmit-payment', [ProfilController::class, 'savePaymentResubmitDac'])->name('dac.resubmit.payment');
+Route::get('/profil/ticket-details-ctf/resubmit-payment', [ProfilController::class, 'paymentResubmitCtf'])->name('ctf.resubmit.payment.view');
+Route::patch('/profil/ticket-details-ctf/resubmit-payment', [ProfilController::class, 'savePaymentResubmitCtf'])->name('ctf.resubmit.payment');
 
 // Route for Event
 Route::get('/seminar-nasional', [SemnasController::class, 'index'])->name('semnas');
