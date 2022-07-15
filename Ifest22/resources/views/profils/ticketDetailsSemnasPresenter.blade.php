@@ -54,13 +54,13 @@
                 <h6 class="text-tickets-head">Abstract</h6>
                 <!-- BUAT STATUS, CLASS TERGANTUNG STATUS DI DATABASE -->
                 <p class="text-tickets-desc">20-25 Agustus 2022<br>Status :
-                @if ($presenter->status_selected === '0')
+                    @if ($presenter->status_selected === '0')
                     <span class="text-tickets-status status-red">Abstract Declined</span>
-                @elseif ($presenter->status_selected === '1')
+                    @elseif ($presenter->status_selected === '1')
                     <span class="text-tickets-status status-orange">Submitted. Waiting For Review</span>
-                @elseif ($presenter->status_selected === '2')
+                    @elseif ($presenter->status_selected === '2')
                     <span class="text-tickets-status status-green">Abstract Selected</span>
-                @endif
+                    @endif
                 </p>
             </div>
         </div>
@@ -70,7 +70,14 @@
             </div>
             <div class="col-6" align="left" style="padding:0 8px 0 15px">
                 <h6 class="text-tickets-head">Presenter Payment</h6>
-                <p class="text-tickets-desc">1-5 September 2022<br>Status : 
+                <p class="text-tickets-desc">1-5 September 2022<br>Status :
+                    @if ($presenter->status_pembayaran === '0')
+                    <span class="text-tickets-status status-red">Declined</span>
+                    @elseif ($presenter->status_pembayaran === '1')
+                    <span class="text-tickets-status status-orange">Pending</span>
+                    @elseif ($presenter->status_pembayaran === '2')
+                    <span class="text-tickets-status status-green">Confirmed</span>
+                    @endif
                 </p>
             </div>
             <div class="col" align="center" style="padding:0">
@@ -79,18 +86,18 @@
                 </button>
             </div>
         </div>
-        
+
         <div class="row align-items-center" align="left" style="padding:20px">
             <div class="col-2" style="padding:0 15px 0 8px">
                 <img class="circular-number" src="{{ URL::asset('icon/page-details/circle-3.svg') }}" alt="3">
             </div>
             <div class="col-6" align="left" style="padding:0 8px 0 15px">
                 <h6 class="text-tickets-head">Paper Submission</h6>
-                <p class="text-tickets-desc">21-25 September 2022<br>Status : 
+                <p class="text-tickets-desc">21-25 September 2022<br>Status :
                     @if ($presenter->paper1_link === null)
-                        <span class="text-tickets-status status-red">Unsubmitted</span>
+                    <span class="text-tickets-status status-red">Unsubmitted</span>
                     @elseif ($presenter->paper1_link !== null)
-                        <span class="text-tickets-status status-green">Submitted</span>
+                    <span class="text-tickets-status status-green">Submitted</span>
                     @endif
                 </p>
             </div>
@@ -125,11 +132,11 @@
             </div>
             <div class="col-6" align="left" style="padding:0 8px 0 15px">
                 <h6 class="text-tickets-head">Pengumpulan Revisi Paper</h6>
-                <p class="text-tickets-desc">30 September 2022<br>Status : 
+                <p class="text-tickets-desc">30 September 2022<br>Status :
                     @if ($presenter->paper2_link === null)
-                        <span class="text-tickets-status status-red">Unsubmitted</span>
+                    <span class="text-tickets-status status-red">Unsubmitted</span>
                     @elseif ($presenter->paper2_link !== null)
-                        <span class="text-tickets-status status-green">Submitted</span>
+                    <span class="text-tickets-status status-green">Submitted</span>
                     @endif
                 </p>
             </div>

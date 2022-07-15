@@ -14,7 +14,7 @@ class Semnas_paper extends Model
         'institute',
         'abstract_link',
         'status_selected',
-        'proof_payment',
+        'status_pembayaran',
         'paper1_link',
         'paper2_link',
     ];
