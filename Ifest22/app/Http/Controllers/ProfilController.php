@@ -119,6 +119,29 @@ class ProfilController extends Controller
         return view('profils.ticketDetailsIntention', compact('data', 'intention'));
     }
 
+    public function paymentResubmitIntention()
+    {
+        $data = User::where('email', Auth::user()->email)->first();
+        return view('registration.payment-resubmit.payment-resubmit-intention', compact('data'));
+    }
+
+    public function savePaymentResubmitIntention(Request $request)
+    {
+        $request->validate([
+            'payment_confirmation' => 'required',
+        ]);
+
+        // Alamat Penyimpanan
+        $request->payment_confirmation->store('intention-payment-proof');
+
+        Intention_form::where('email', Auth::user()->email)->update([
+            'proof_payment' => $request->payment_confirmation->store('intention-payment-proof'),
+            'status_pembayaran' => '1',
+        ]);
+
+        return redirect()->route('profile.ticketDetailsIntention');
+    }
+
     public function submittingProposalIntention()
     {
         $data = User::where('email', Auth::user()->email)->first();

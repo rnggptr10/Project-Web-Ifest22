@@ -61,13 +61,16 @@ Route::get('/profil/ticket-details-technopreneur-workshop/submit-pitchdeck-1', [
 Route::patch('/profil/ticket-details-technopreneur-workshop/submit-pitchdeck-1', [ProfilController::class, 'savePitchdeck1Techno'])->name('technoWorkshop.submitting.pitchdeck1');
 Route::get('/profil/ticket-details-technopreneur-workshop/submit-pitchdeck-2', [ProfilController::class, 'submittingPitchdeck2Techno'])->name('technoWorkshop.submitting.pitchdeck2.view');
 Route::patch('/profil/ticket-details-technopreneur-workshop/submit-pitchdeck-2', [ProfilController::class, 'savePitchdeck2Techno'])->name('technoWorkshop.submitting.pitchdeck2');
-
 Route::get('/profil/ticket-details-seminar-nasional/presenter/payment', [ProfilController::class, 'paymentSemnasPresenter'])->name('semnas.presenter.payment.view');
 Route::patch('/profil/ticket-details-seminar-nasional/presenter/payment', [ProfilController::class, 'savePaymentSemnasPresenter'])->name('semnas.presenter.payment');
 Route::get('/profil/ticket-details-seminar-nasional/presenter/submit-paper-1', [ProfilController::class, 'submittingPaper1SemnasPresenter'])->name('semnas.presenter.submitting.paper1.view');
 Route::patch('/profil/ticket-details-seminar-nasional/presenter/submit-paper-1', [ProfilController::class, 'savePaper1SemnasPresenter'])->name('semnas.presenter.submitting.paper1');
 Route::get('/profil/ticket-details-seminar-nasional/presenter/submit-paper-2', [ProfilController::class, 'submittingPaper2SemnasPresenter'])->name('semnas.presenter.submitting.paper2.view');
 Route::patch('/profil/ticket-details-seminar-nasional/presenter/submit-paper-2', [ProfilController::class, 'savePaper2SemnasPresenter'])->name('semnas.presenter.submitting.paper2');
+
+// Route for Re-Submit Payment Proof (Confirmation gagal, bukti bayar salah)
+Route::get('/profil/ticket-details-intention/resubmit-payment', [ProfilController::class, 'paymentResubmitIntention'])->name('intention.resubmit.payment.view');
+Route::patch('/profil/ticket-details-intention/resubmit-payment', [ProfilController::class, 'savePaymentResubmitIntention'])->name('intention.resubmit.payment');
 
 // Route for Event
 Route::get('/seminar-nasional', [SemnasController::class, 'index'])->name('semnas');
@@ -131,10 +134,11 @@ Route::get('/admin/dac', [AdminController::class, 'dataDac'])->name('admin-dac')
 Route::get('/admin/ctf', [AdminController::class, 'dataCtf'])->name('admin-ctf');
 
 // Route for Admin Data Dropdown Change
-Route::put('/admin/seminar-nasional', [AdminController::class, 'changeSemnasStatusPembayaran'])->name('admin-semnas-change-status-pembayaran');
+Route::put('/admin/seminar-nasional/change-status-payment', [AdminController::class, 'changeSemnasStatusPembayaran'])->name('admin-semnas-change-status-pembayaran');
+Route::put('/admin/ctf/change-status-payment', [AdminController::class, 'changeCtfStatusPembayaran'])->name('admin-ctf-change-status-pembayaran');
+Route::put('/admin/dac/change-status-payment', [AdminController::class, 'changeDacStatusPembayaran'])->name('admin-dac-change-status-pembayaran');
+Route::put('/admin/intention/change-status-payment', [AdminController::class, 'changeIntentionStatusPembayaran'])->name('admin-intention-change-status-pembayaran');
+Route::put('/admin/intention/change-status-finalist', [AdminController::class, 'changeIntentionStatusFinalist'])->name('admin-intention-change-status-finalist');
 
-Route::put('/admin/ctf', [AdminController::class, 'changeCtfStatusPembayaran'])->name('admin-ctf-change-status-pembayaran');
-Route::put('/admin/dac', [AdminController::class, 'changeDacStatusPembayaran'])->name('admin-dac-change-status-pembayaran');
-Route::put('/admin/intention', [AdminController::class, 'changeIntentionStatusPembayaran'])->name('admin-intention-change-status-pembayaran');
 
 

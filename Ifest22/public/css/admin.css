@@ -2,6 +2,10 @@
 @import url(generalStyle.css);
 
 /* ------------------- General ------------------- */
+body {
+    background-image: none;
+}
+
 .text-title {
     font-family: "Poppins-SemiBold";
     font-size: 40px;

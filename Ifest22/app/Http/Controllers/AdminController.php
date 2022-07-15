@@ -158,10 +158,19 @@ class AdminController extends Controller
         return redirect()->route('admin-dac');
     }
 
-    public function changeIntStatusPembayaran(Request $request)
+    public function changeIntentionStatusPembayaran(Request $request)
     {
-        Intention_Form::where('email', $request->int_email)->update([
-            'status_pembayaran' => $request->int_payment_status,
+        Intention_Form::where('email', $request->intention_email)->update([
+            'status_pembayaran' => $request->intention_payment_status,
+        ]);
+
+        return redirect()->route('admin-intention');
+    }
+
+    public function changeIntentionStatusFinalist(Request $request)
+    {
+        Intention_Form::where('email', $request->intention_email)->update([
+            'status_finalist' => $request->intention_finalist_status,
         ]);
 
         return redirect()->route('admin-intention');
