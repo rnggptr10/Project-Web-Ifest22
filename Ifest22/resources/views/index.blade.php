@@ -261,59 +261,33 @@
                 <span class="sr-only">Next</span>
             </a>
         </div>
-        <div id="ITComp-speakers" class="carousel-pembicara slide" data-ride="carousel">
-            <div class="carousel-inner" class="tabcontent">
-                <div class="carousel-item active" style="background-color: transparent;">
-                    <div class="speaker">
-                        <div class="img-speakers">
-                            <img class="align-self-center mr-3" src="{{asset('img/speakers/pasfotokulyah.jpeg')}}" alt="Generic placeholder image">
-                        </div>
-                        <div class="media-body">
-                            <h5 class="mt-0">Speaker 7</h5>
-                            <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
-                            <div class="button-speakers-details">
-
-                            </div>
-                        </div>
+        <div id="ITComp-speakers" class="carousel-pembicara slide">
+            <div class="ITComp-details">
+                <div class="ITComp-button" class="tabcontent">
+                    <a href="{{ route('ctf') }}" >
+                    <div class="ITComp-info" align="center">
+                        <h2>CTF</h2>
+                        <p>Capture The Flag</p>
                     </div>
+                    </a>
                 </div>
-                <div class="carousel-item" style="background-color: transparent;">
-                    <div class="speaker">
-                        <div class="img-speakers">
-                            <img class="align-self-center mr-3" src="{{asset('img/speakers/pasfotokulyah.jpeg')}}" alt="Generic placeholder image">
-                        </div>
-                        <div class="media-body">
-                            <h5 class="mt-0">Speaker 8</h5>
-                            <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
-                            <div class="button-speakers-details">
-
-                            </div>
-                        </div>
+                <div class="ITComp-button" class="tabcontent">
+                    <a href="{{ route('da') }}" >
+                    <div class="ITComp-info" align="center">
+                        <h2>DAC</h2>
+                        <p>Data Analysis Competition</p>
                     </div>
+                    </a>
                 </div>
-                <div class="carousel-item" style="background-color: transparent;">
-                    <div class="speaker">
-                        <div class="img-speakers">
-                            <img class="align-self-center mr-3" src="{{asset('img/speakers/pasfotokulyah.jpeg')}}" alt="Generic placeholder image">
-                        </div>
-                        <div class="media-body">
-                            <h5 class="mt-0">Speaker 9</h5>
-                            <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
-                            <div class="button-speakers-details">
-
-                            </div>
-                        </div>
+                <div class="ITComp-button" class="tabcontent">
+                    <a href="{{ route('intention') }}" >
+                    <div class="ITComp-info" align="center">
+                        <h2>Intention</h2>
+                        <p>Innovative Technology Competition</p>
                     </div>
-                </div>
-            </div>
-            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
+                    </a>
+                </div>   
+            </div> 
         </div>
         <div id="Semnas-speakers" class="carousel-pembicara slide" data-ride="carousel">
             <div class="carousel-inner" class="tabcontent">
