@@ -23,27 +23,40 @@
                             <th scope="col">Email</th>
                             <th scope="col">Nama Peserta</th>
                             <th scope="col">Instansi</th>
+                            <th scope="col">Abstract Link</th>
                             <th scope="col">Bukti Pembayaran</th>
+                            <th scope="col">Paper Link 1</th>
+                            <th scope="col">Paper Link 2</th>
                             <th scope="col">Status Konfirmasi</th>
                         </tr>
                     </thead>
                     <tbody>
-                        @foreach ($semnas as $data)
+                        @foreach ($semnasPresenter as $data)
                         <tr>
-                            <form action="{{ route('admin-semnas-change-status-pembayaran') }}" method="post">
+                            <form action="{{route('admin-semnas-presenter-change-status-pembayaran')}}" method="post">
                                 @method('put')
                                 @csrf
                                 <td><input name="semnas_email" id="semnas_email" value="{{ $data->email }}" hidden>{{ $data->email }}</td>
                                 <td>{{ $data->name }}</td>
                                 <td>{{ $data->institute }}</td>
-                                <td><a href="{{asset('storage/' . $data['proof_payment'])}}"> Proof Payment</a></td>
+                                <td><a href="{{$data->abstract_link}}">Abstract Link</a></td>
+                                <td><a href="{{asset('storage/' . $data['proof_payment'])}}">Proof Payment</a></td>
+                                <td>
+                                    @if($data->paper1_link == null)
+                                    NULL
+                                    @else
+                                    <a href="{{$data->paper1_link}}">Paper Link 1</a>
+                                    @endif
+                                </td>
+                                <td>
+                                    @if($data->paper2_link == null)
+                                    NULL
+                                    @else
+                                    <a href="{{$data->paper2_link}}">Paper Link 2</a>
+                                    @endif
+                                </td>
                                 <td>
                                     <div class="btn-group">
-                                        <!-- <select name="startup-status" id="startup-status" style="color:black">
-                                        <option value="Confirmed">Confirmed</option>
-                                        <option value="Pending">Pending</option>
-                                        <option value="Declined">Declined</option>
-                                    </select> -->
                                         <select name="semnas_payment_status" id="semnas_payment_status" style="color:black" onchange="this.form.submit()">
                                             <option style="color:black" value="2" <?php if ($data->status_pembayaran === '2') {
                                                                                         echo ('selected');

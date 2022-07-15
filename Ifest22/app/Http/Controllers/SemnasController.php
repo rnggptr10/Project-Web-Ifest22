@@ -87,6 +87,7 @@ class SemnasController extends Controller
             'institute' => Auth::user()->institute,
             'abstract_link' => $request->abstract_link,
             'status_selected' => 1,
+            'status_pembayaran' => 1,
         ]);
 
         Ticket::where('email', Auth::user()->email)->update([
