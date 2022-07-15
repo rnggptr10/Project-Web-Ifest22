@@ -9,10 +9,10 @@ use App\Models\StartupDay1;
 use App\Models\StartupDay2;
 use App\Models\Techno_seminar;
 use App\Models\Techno_ws_form;
-use App\Models\Semnas;
 use App\Models\Intention_form;
 use App\Models\Da_Form;
 use App\Models\Ctf_form;
+use App\Models\Semnas_paper;
 use App\Models\Semnas_semnas;
 
 class AdminController extends Controller
@@ -130,6 +130,17 @@ class AdminController extends Controller
         }
     }
 
+    public function dataSemnasPresenter()
+    {
+        if (Auth::user()->is_admin == 0) {
+            if (Auth::user()->is_admin == 0) return redirect()->route('home');
+        } else {
+            $semnasPresenter = Semnas_paper::all();
+            return view('admin.admin-semnas-paper', compact('semnasPresenter'));
+        }
+    }
+
+
     // DROPDOWN CHANGE
     public function changeSemnasStatusPembayaran(Request $request)
     {
@@ -139,6 +150,16 @@ class AdminController extends Controller
 
         return redirect()->route('admin-semnas');
     }
+
+    public function changeSemnasPresenterStatusPembayaran(Request $request)
+    {
+        Semnas_paper::where('email', $request->semnas_email)->update([
+            'status_pembayaran' => $request->semnas_payment_status,
+        ]);
+
+        return redirect()->route('admin-semnas-presenter');
+    }
+
 
     public function changeCtfStatusPembayaran(Request $request)
     {
