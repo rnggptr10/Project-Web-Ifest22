@@ -138,16 +138,15 @@ Route::get('/admin/startup-talk-day2', [AdminController::class, 'dataStartupDay2
 Route::get('/admin/technopreneur', [AdminController::class, 'dataTechno'])->name('admin-techno');
 Route::get('/admin/technopreneur-workshop', [AdminController::class, 'dataTechnoWs'])->name('admin-techno-ws');
 Route::get('/admin/seminar-nasional', [AdminController::class, 'dataSemnas'])->name('admin-semnas');
+Route::get('/admin/seminar-nasional-presenter', [AdminController::class, 'dataSemnasPresenter'])->name('admin-semnas-presenter');
 Route::get('/admin/intention', [AdminController::class, 'dataIntention'])->name('admin-intention');
 Route::get('/admin/dac', [AdminController::class, 'dataDac'])->name('admin-dac');
 Route::get('/admin/ctf', [AdminController::class, 'dataCtf'])->name('admin-ctf');
 
 // Route for Admin Data Dropdown Change
 Route::put('/admin/seminar-nasional/change-status-payment', [AdminController::class, 'changeSemnasStatusPembayaran'])->name('admin-semnas-change-status-pembayaran');
+Route::put('/admin/seminar-nasional-presenter/change-status-payment', [AdminController::class, 'changeSemnasPresenterStatusPembayaran'])->name('admin-semnas-presenter-change-status-pembayaran');
 Route::put('/admin/ctf/change-status-payment', [AdminController::class, 'changeCtfStatusPembayaran'])->name('admin-ctf-change-status-pembayaran');
 Route::put('/admin/dac/change-status-payment', [AdminController::class, 'changeDacStatusPembayaran'])->name('admin-dac-change-status-pembayaran');
 Route::put('/admin/intention/change-status-payment', [AdminController::class, 'changeIntentionStatusPembayaran'])->name('admin-intention-change-status-pembayaran');
 Route::put('/admin/intention/change-status-finalist', [AdminController::class, 'changeIntentionStatusFinalist'])->name('admin-intention-change-status-finalist');
-
-
-

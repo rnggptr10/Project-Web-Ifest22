@@ -41,7 +41,7 @@
                                     <a href="{{ route('admin-startup-day1') }}" class="burger-details" style="padding-left: 15px;">Startup Talk Day 1</a>
                                     <a href="{{ route('admin-startup-day2') }}" class="burger-details" style="padding-left: 15px;">Startup Talk Day 2</a>
                                     <a href="{{ route('admin-semnas') }}" class="burger-details" style="padding-left: 15px;">Seminar Nasional</a>
-                                    <a href="" class="burger-details" style="padding-left: 15px;">Seminar Nasional - Presenter</a>
+                                    <a href="{{ route('admin-semnas-presenter') }}" class="burger-details" style="padding-left: 15px;">Seminar Nasional - Presenter</a>
                                     <a href="{{ route('admin-techno') }}" class="burger-details" style="padding-left: 15px;">Techno Seminar</a>
                                     <a href="{{ route('admin-techno-ws') }}" class="burger-details" style="padding-left: 15px;">Techno Workshop</a>
                                     <a href="{{ route('admin-intention') }}" class="burger-details" style="padding-left: 15px;">INTENTION</a>
@@ -65,7 +65,7 @@
                                 <a class="item-dropmenu" href="{{ route('admin-startup-day1') }}">Startup Talk Day 1</a>
                                 <a class="item-dropmenu" href="{{ route('admin-startup-day2') }}">Startup Talk Day 2</a>
                                 <a class="item-dropmenu" href="{{ route('admin-semnas') }}">Seminar Nasional</a>
-                                <a class="item-dropmenu" href="">Seminar Nasional - Presenter</a>
+                                <a class="item-dropmenu" href="{{ route('admin-semnas-presenter') }}">Seminar Nasional - Presenter</a>
                                 <a class="item-dropmenu" href="{{ route('admin-techno') }}">Techno Seminar</a>
                                 <a class="item-dropmenu" href="{{ route('admin-techno-ws') }}">Techno Workshop</a>
                                 <a class="item-dropmenu" href="{{ route('admin-ctf') }}">CTF</a>
@@ -116,6 +116,7 @@
             </div>
         </header>
         <main style="padding-top: 10px;">
+
             <body style="background-color: #F0F0F0;">
                 <div class="container" style="padding: 100px 0 50px 0;">
                     <div class="row align-items-center justify-content-center">

@@ -18,7 +18,7 @@ This competition is held online and is intended for high school / vocational stu
 @endsection
 
 @section('competition_flashback')
-<div class="row align-items-center carousel slide" align="center" id="dacFlashback" data-ride="carousel" style="padding-top: 30px;padding-bottom: 30px;">
+<div class="row align-items-center carousel slide" align="center" id="dacFlashback1" data-ride="carousel" style="padding-top: 30px;padding-bottom: 30px;">
     <div class="carousel-inner">
         <div class="carousel-item active">
             <div class="row justify-content-center">
@@ -29,27 +29,54 @@ This competition is held online and is intended for high school / vocational stu
                     <img class="photo-flashback" src="https://cdn6.dissolve.com/p/D1061_185_320/D1061_185_320_1200.jpg">
                 </div>
             </div>
-            <!-- <img class="arrow-switch" src="{{ URL::asset('icon/circle-arrow-left.svg') }}" alt="arrow-left">
-            <img class="arrow-switch" src="{{ URL::asset('icon/circle-arrow-right.svg') }}" alt="arrow-right"> -->
         </div>
         <div class="carousel-item">
             <div class="row justify-content-center">
                 <div class="col-4" align="center" style="padding-right: 25px;">
-                    <img style="width:100%;height: 320px;" src="https://cdn6.dissolve.com/p/D1061_185_320/D1061_185_320_1200.jpg">
+                    <img style="width:352px" src="https://cdn6.dissolve.com/p/D1061_185_320/D1061_185_320_1200.jpg">
                 </div>
                 <div class="col-4" align="center" style="padding-left: 25px;">
-                    <img style="width:100%;height: 320px;" src="https://cdn6.dissolve.com/p/D1061_185_320/D1061_185_320_1200.jpg">
+                    <img style="width:352px" src="https://cdn6.dissolve.com/p/D1061_185_320/D1061_185_320_1200.jpg">
                 </div>
             </div>
             <!-- <img class="arrow-switch" src="{{ URL::asset('icon/circle-arrow-left.svg') }}" alt="arrow-left">
             <img class="arrow-switch" src="{{ URL::asset('icon/circle-arrow-right.svg') }}" alt="arrow-right"> -->
         </div>
     </div>
-    <a class="carousel-control-prev" href="#dacFlashback" role="button" data-slide="prev">
+    <a class="carousel-control-prev" href="#dacFlashback1" role="button" data-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="sr-only">Previous</span>
     </a>
-    <a class="carousel-control-next" href="#dacFlashback" role="button" data-slide="next">
+    <a class="carousel-control-next" href="#dacFlashback1" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+
+<div class="row align-items-center carousel slide" align="center" id="dacFlashback2" data-ride="carousel" style="padding-top: 30px;padding-bottom: 30px;">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <div class="row justify-content-center">
+                <div class="col">
+                    <img class="photo-flashback" src="https://cdn6.dissolve.com/p/D1061_185_320/D1061_185_320_1200.jpg">
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="row justify-content-center">
+                <div class="col">
+                    <img style="width:352px" src="https://cdn6.dissolve.com/p/D1061_185_320/D1061_185_320_1200.jpg">
+                </div>
+            </div>
+            <!-- <img class="arrow-switch" src="{{ URL::asset('icon/circle-arrow-left.svg') }}" alt="arrow-left">
+            <img class="arrow-switch" src="{{ URL::asset('icon/circle-arrow-right.svg') }}" alt="arrow-right"> -->
+        </div>
+    </div>
+    <a class="carousel-control-prev" href="#dacFlashback2" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#dacFlashback2" role="button" data-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="sr-only">Next</span>
     </a>
@@ -167,14 +194,14 @@ This competition is held online and is intended for high school / vocational stu
 @section('cp2_name', 'Rihlan Lumenda Suherman')
 
 @section('add_cp3_cp4')
-<div class="row-cp">
-    <div class="col-btn-left" style="padding-top: 30px;">
+<div class="row align-items-center">
+    <div class="col" style="padding-top: 30px;">
         <button id="btn-cp3" type="button" class="btn btn-outline-primary ifest-btn-outline-primary-dark-bg" style="width: fit-content;padding:10px 20px 10px 20px" onclick="window.location.href='https://wa.me/6285252709071';">
             <img class="logo-whatsapp" src="{{ URL::asset('icon/whatsapp.svg') }}" alt="Whatsapp">
             <span style="margin-left:10px">M. Attila An Naufal</span>
         </button>
     </div>
-    <div class="col-btn-right" style="padding-top: 30px;">
+    <div class="col" style="padding-top: 30px;">
         <button id="btn-cp4" type="button" class="btn btn-outline-primary ifest-btn-outline-primary-dark-bg" style="width: fit-content;padding:10px 20px 10px 20px" onclick="window.location.href='https://line.me/ti/p/~annaufal12';">
             <img class="logo-whatsapp" src="{{ URL::asset('icon/line.svg') }}" alt="Line">
             <span style="margin-left:10px">M. Attila An Naufal</span>

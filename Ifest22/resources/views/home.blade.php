@@ -50,7 +50,7 @@
 
             <a href="{{ route('semnas') }}"><span class="register">Register</span></a>
             <!-- <a href="{{ route('semnas') }}"><span class="register">See Details</span></a> -->
-            <a href="{{ route('semnas') }}"><span class="details" id="details">Details</span></a>
+            <a href="{{ route('semnas') }}"><span class="details" id="details" style="color:#fff; border-color:#fff;">Details</span></a>
         </div>
     </div>
 </div>
@@ -61,31 +61,31 @@
             <div class="col-sm-4">
                 <div class="countdown2">
                     <div class="box-timer">
-                        <div id="days2">0</div>
+                        <div id="days2"></div>
                         <p>days</p>
                     </div>
                     <div class="box-timer">
-                        <div id="hours2">0</div>
+                        <div id="hours2"></div>
                         <p>hours</p>
                     </div>
                     <div class="box-timer">
-                        <div id="minutes2">0</div>
+                        <div id="minutes2"></div>
                         <p>minutes</p>
                     </div>
                     <div class="box-timer">
-                        <div id="seconds2">0</div>
+                        <div id="seconds2"></div>
                         <p>seconds</p>
                     </div>
                 </div>
             </div>
             <div class="col-sm-4">
                 <div class="title-countdown">
-                    <p>International Conference</p>
+                    <p>Seminar Nasional</p>
                 </div>
             </div>
             <div class="col-sm-4">
                 <div class="conference-btn2">
-                    <button class="btn btn-outline-primary ifest-btn-outline-primary-light-bg col-md-5 float-right mt-3 mt-sm-0 fw-bold"><a class="ifest-btn-outline-primary-light-bg-text" href="{{route('register')}}">Register</a></button>
+                    <button class="btn btn-outline-primary ifest-btn-outline-primary-light-bg col-md-5 float-right mt-3 mt-sm-0 fw-bold" id="conference-btn-responsive"><a style="color:#fff;" class="ifest-btn-outline-primary-light-bg-text" href="{{route('register')}}">Register</a></button>
 
                     <!-- <button class="register">
                             <a href="{{ route('semnas') }}">Register</a>
@@ -93,7 +93,7 @@
                     <!-- <button class="details">
                             <a href="{{ route('semnas') }}">Details</a>
                         </button> -->
-                    <button class="btn btn-outline-primary ifest-btn-outline-primary-light-bg col-md-5 float-right mt-3 mt-sm-0 fw-bold"><a class="ifest-btn-outline-primary-light-bg-text" href="{{route('register')}}">Details</a></button>
+                    <button class="btn btn-outline-primary ifest-btn-outline-primary-light-bg col-md-5 float-right mt-3 mt-sm-0 fw-bold" id="conference-btn-responsive2"><a style="color:#fff;" class="ifest-btn-outline-primary-light-bg-text" href="{{route('register')}}">Details</a></button>
 
                 </div>
             </div>

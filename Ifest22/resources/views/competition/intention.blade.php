@@ -25,7 +25,7 @@ This competition is held online and is intended for high school / vocational stu
 @endsection
 
 @section('competition_flashback')
-<div class="row align-items-center carousel slide" align="center" id="intFlashback" data-ride="carousel" style="padding-top: 30px;padding-bottom: 30px;">
+<div class="row align-items-center carousel slide" align="center" id="dacFlashback1" data-ride="carousel" style="padding-top: 30px;padding-bottom: 30px;">
     <div class="carousel-inner">
         <div class="carousel-item active">
             <div class="row justify-content-center">
@@ -36,27 +36,54 @@ This competition is held online and is intended for high school / vocational stu
                     <img class="photo-flashback" src="https://cdn6.dissolve.com/p/D1061_185_320/D1061_185_320_1200.jpg">
                 </div>
             </div>
-            <!-- <img class="arrow-switch" src="{{ URL::asset('icon/circle-arrow-left.svg') }}" alt="arrow-left">
-            <img class="arrow-switch" src="{{ URL::asset('icon/circle-arrow-right.svg') }}" alt="arrow-right"> -->
         </div>
         <div class="carousel-item">
             <div class="row justify-content-center">
                 <div class="col-4" align="center" style="padding-right: 25px;">
-                    <img style="width:100%;height: 320px;" src="https://cdn6.dissolve.com/p/D1061_185_320/D1061_185_320_1200.jpg">
+                    <img style="width:352px" src="https://cdn6.dissolve.com/p/D1061_185_320/D1061_185_320_1200.jpg">
                 </div>
                 <div class="col-4" align="center" style="padding-left: 25px;">
-                    <img style="width:100%;height: 320px;" src="https://cdn6.dissolve.com/p/D1061_185_320/D1061_185_320_1200.jpg">
+                    <img style="width:352px" src="https://cdn6.dissolve.com/p/D1061_185_320/D1061_185_320_1200.jpg">
                 </div>
             </div>
             <!-- <img class="arrow-switch" src="{{ URL::asset('icon/circle-arrow-left.svg') }}" alt="arrow-left">
             <img class="arrow-switch" src="{{ URL::asset('icon/circle-arrow-right.svg') }}" alt="arrow-right"> -->
         </div>
     </div>
-    <a class="carousel-control-prev" href="#intFlashback" role="button" data-slide="prev">
+    <a class="carousel-control-prev" href="#dacFlashback1" role="button" data-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="sr-only">Previous</span>
     </a>
-    <a class="carousel-control-next" href="#intFlashback" role="button" data-slide="next">
+    <a class="carousel-control-next" href="#dacFlashback1" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+
+<div class="row align-items-center carousel slide" align="center" id="dacFlashback2" data-ride="carousel" style="padding-top: 30px;padding-bottom: 30px;">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <div class="row justify-content-center">
+                <div class="col">
+                    <img class="photo-flashback" src="https://cdn6.dissolve.com/p/D1061_185_320/D1061_185_320_1200.jpg">
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="row justify-content-center">
+                <div class="col">
+                    <img style="width:352px" src="https://cdn6.dissolve.com/p/D1061_185_320/D1061_185_320_1200.jpg">
+                </div>
+            </div>
+            <!-- <img class="arrow-switch" src="{{ URL::asset('icon/circle-arrow-left.svg') }}" alt="arrow-left">
+            <img class="arrow-switch" src="{{ URL::asset('icon/circle-arrow-right.svg') }}" alt="arrow-right"> -->
+        </div>
+    </div>
+    <a class="carousel-control-prev" href="#dacFlashback2" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#dacFlashback2" role="button" data-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="sr-only">Next</span>
     </a>
@@ -74,7 +101,7 @@ This competition is held online and is intended for high school / vocational stu
 @endsection
 
 @section('competition_judges')
-<div class="row" data-aos="fade-down" data-aos-duration="1000" align="center" id="intJudges" style="padding-top: 30px;padding-bottom: 30px;">
+<div class="row" data-aos="fade-down" data-aos-duration="1000" align="center" id="dacFlashback1" style="padding-top: 30px;padding-bottom: 30px;">
     <h1 class="text-sub-title">Our Judges</h1>
     <div class="row justify-content-center" style="padding-top: 30px;">
         <div class="col-4" data-aos="fade-right" data-aos-duration="1000" style="padding-right: 50px;">
@@ -104,6 +131,62 @@ This competition is held online and is intended for high school / vocational stu
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+</div>
+
+<div id="dacFlashback2" data-aos="fade-down" data-aos-duration="1000" align="center" id="sutSpeakers" style="padding-top: 30px;padding-bottom: 30px;">
+    <h1 class="text-sub-title">Our Judges</h1>
+    <div id="semnasSpeakers2" class="row justify-content-center carousel slide" data-ride="carousel" style="padding-top: 30px; position:relative">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="row justify-content-center">
+                    <div class="col">
+                        <div class="card ifest-photo-card" style="border: 0;text-align:center; width:350px;">
+                            <img class="card-img-top" style="width:100%;height:350px;" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg" alt="Card image cap">
+                            <div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
+                                <div class="col-7" style="line-height: 5px;">
+                                    <h5 class="text-photo-card-name">Juri 2</h5>
+                                    <p class="text-photo-card-position">FullStack</p>
+                                </div>
+                                <div class="col-3">
+                                    <img class="logo-linkedin" src="{{ URL::asset('icon/linkedin.svg') }}" alt="linkedin">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="row justify-content-center">
+                    <div class="col">
+                        <div class="card ifest-photo-card" style="border: 0; text-align:center; width:350px;">
+                            <img class="card-img-top" style="width:100%;height:350px;" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg" alt="Card image cap">
+                            <div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
+                                <div class="col-7" style="line-height: 5px;">
+                                    <h5 class="text-photo-card-name">Juri 2</h5>
+                                    <p class="text-photo-card-position">FullStack</p>
+                                </div>
+                                <div class="col-3">
+                                    <img class="logo-linkedin" src="{{ URL::asset('icon/linkedin.svg') }}" alt="linkedin">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row justify-content-center" style="padding-top: 30px;">
+        <div class="col-1">
+            <a class="carousel-control-prev" href="#semnasSpeakers2" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#sutSpeakers2Day2" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
         </div>
     </div>
 </div>
@@ -213,15 +296,15 @@ This competition is held online and is intended for high school / vocational stu
 @section('cp2_name', 'Rihlan Lumenda Suherman')
 
 @section('add_cp3_cp4')
-<div class="row-cp">
-    <div class="col-btn-left" style="padding-top: 30px;">
-        <button id="btn-cp3" type="button" class="btn btn-outline-primary ifest-btn-outline-primary-dark-bg" style="width: fit-content;padding:10px 20px 10px 20px" onclick="window.location.href='https://wa.me/6282178237082';">
+<div class="row align-items-center">
+    <div class="col" style="padding-top: 30px;">
+        <button id="btn-cp3" type="button" class="btn btn-outline-primary ifest-btn-outline-primary-dark-bg" style="width: fit-content; padding:10px 20px 10px 20px" onclick="window.location.href='https://wa.me/6282178237082';">
             <img class="logo-whatsapp" src="{{ URL::asset('icon/whatsapp.svg') }}" alt="Whatsapp">
             <span style="margin-left:10px">Hudzaifah Al Mutaz Billah</span>
         </button>
     </div>
-    <div class="col-btn-right" style="padding-top: 30px;">
-        <button id="btn-cp4" type="button" class="btn btn-outline-primary ifest-btn-outline-primary-dark-bg" style="width: fit-content;padding:10px 20px 10px 20px" onclick="window.location.href='https://line.me/ti/p/~saudaramutaz';">
+    <div class="col" style="padding-top: 30px;">
+        <button id="btn-cp4" type="button" class="btn btn-outline-primary ifest-btn-outline-primary-dark-bg" style="width: fit-content; padding:10px 20px 10px 20px" onclick="window.location.href='https://line.me/ti/p/~saudaramutaz';">
             <img class="logo-whatsapp" src="{{ URL::asset('icon/line.svg') }}" alt="Line">
             <span style="margin-left:10px">Hudzaifah Al Mutaz Billah</span>
         </button>
