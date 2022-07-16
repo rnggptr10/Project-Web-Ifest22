@@ -18,25 +18,25 @@
 <div class="col-sm-6">
     <div class="card ifest-card-details" style="padding:0;">
         <div class="row" align="center" style="background-color:#291647; margin:0; border-radius:3px 3px 0 0; padding: 5px 0 5px 0">
-            <h2 class="text-details-card-title" style="color:white; padding:0; margin:0">Data Tim</h2>
+            <h2 class="text-details-card-title" style="color:white; padding:0; margin:0">Team Data</h2>
         </div>
         <div class="row" align="left" style="padding:20px">
             <div class="col">
                 <div class="row" style="padding-bottom:7px;">
-                    <h5 class="text-details-card-head">Nama Tim</h5>
+                    <h5 class="text-details-card-head">Team Name</h5>
                     <p class="text-details-card-desc">{{ $ctf->team_name }}</p>
                 </div>
                 <div class="row" style="padding-bottom:7px">
-                    <h5 class="text-details-card-head">Email Tim</h5>
+                    <h5 class="text-details-card-head">Team Email</h5>
                     <p class="text-details-card-desc">{{ $ctf->email }}</p>
                 </div>
                 <div class="row">
-                    <h5 class="text-details-card-head">Data Ketua Tim</h5>
+                    <h5 class="text-details-card-head">Team Leader Data</h5>
                     <p class="text-details-card-desc">{{ $ctf->team_leader }} - {{ $ctf->team_leader_institute }}</p>
                 </div>
                 @if ($ctf->team_member_1 !== null)
                     <div class="row">
-                        <h5 class="text-details-card-head">Data Anggota Tim</h5>
+                        <h5 class="text-details-card-head">Team Member Data</h5>
                         <p class="text-details-card-desc">
                             • {{ $ctf->team_member_1 }} - {{ $ctf->team_member_1_institute }}
                             @if ($ctf->team_member_2 !== null)
@@ -57,7 +57,7 @@
 <div class="col-sm-6">
     <div class="card ifest-card-details" style="padding:0;">
         <div class="row" align="center" style="background-color:#291647; margin:0; border-radius:3px 3px 0 0; padding: 5px 0 5px 0">
-            <h2 class="text-details-card-title" style="color:white; padding:0; margin:0">Progress Lomba</h2>
+            <h2 class="text-details-card-title" style="color:white; padding:0; margin:0">Competition Progress</h2>
         </div>
         <div class="row align-items-center" align="left" style="padding:20px">
             <div class="col-2" style="padding:0 15px 0 8px">
@@ -128,8 +128,8 @@
                     <img class="circular-number" src="{{ URL::asset('icon/page-details/circle-2.svg') }}" alt="2">
                 </div>
                 <div class="col-6" align="left" style="padding:0 8px 0 15px">
-                    <h6 class="text-tickets-head">Pelaksanaan Kompetisi</h6>
-                    <p class="text-tickets-desc">26 Agustus 2022<br>8.00 - 16.00
+                    <h6 class="text-tickets-head">Online Competition</h6>
+                    <p class="text-tickets-desc">10 September 2022
                     </p>
                 </div>
                 <div class="col-4" align="center" style="padding:0">
@@ -147,12 +147,12 @@
                     <img class="circular-number" src="{{ URL::asset('icon/page-details/circle-3.svg') }}" alt="3">
                 </div>
                 <div class="col-6" align="left" style="padding:0 8px 0 15px">
-                    <h6 class="text-tickets-head">Pengumpulan Writeup</h6>
-                    <p class="text-tickets-desc">26-30 Agustus 2022<br>Status : 
+                    <h6 class="text-tickets-head">Writeup Submission</h6>
+                    <p class="text-tickets-desc">10 - 11 September 2022<br>Status : 
                         @if ($ctf->writeup_link === null)
                             <span class="text-tickets-status status-red">Unsubmitted</span>
                         @elseif ($ctf->writeup_link !== null)
-                            <span class="text-tickets-status status-green">Submitted.</span>
+                            <span class="text-tickets-status status-green">Submitted</span>
                         @endif
                     </p>
                 </div>
@@ -180,6 +180,18 @@
                     @endif
                 </div>
             </div>
+            <?php if($now->greaterThan($ctf_writeup_date_end)) { ?>
+                <div class="row align-items-center" align="left" style="padding:20px">
+                    <div class="col-2" style="padding:0 15px 0 8px">
+                        <img class="circular-number" src="{{ URL::asset('icon/page-details/circle-4.svg') }}" alt="4">
+                    </div>
+                    <div class="col-6" align="left" style="padding:0 8px 0 15px">
+                        <h6 class="text-tickets-head">Winner Announcement</h6>
+                        <p class="text-tickets-desc">17 September 2022</p>
+                    </div>
+                </div>
+            <?php } elseif($now->lessThan($ctf_writeup_date_end)) {  ?>
+            <?php } ?>
 
         @elseif ($ctf->status_pembayaran === '1')
             <div class="row align-items-center" align="left" style="padding:20px">

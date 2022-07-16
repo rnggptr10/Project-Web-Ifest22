@@ -23,7 +23,6 @@
                             <th scope="col">Email</th>
                             <th scope="col">Nama Peserta</th>
                             <th scope="col">Instansi</th>
-                            <th scope="col">Status Konfirmasi</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -32,21 +31,6 @@
                             <td>{{ $data->email }}</td>
                             <td>{{ $data->name }}</td>
                             <td>{{ $data->institute }}</td>
-                            <td>
-                                <div class="btn-group">
-                                    <!-- <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        Confirmed
-                                    </button>
-                                    <div class="dropdown-menu">
-                                        <a class="dropdown-item" href="#">Action</a>
-                                        <a class="dropdown-item" href="#">Another action</a>
-                                        <a class="dropdown-item" href="#">Something else here</a>
-                                    </div> -->
-                                    <select name="startup-status" id="startup-status" style="color:black">
-                                        <option value="Confirmed">Confirmed</option>
-                                    </select>
-                                </div>
-                            </td>
                         @endforeach
                         </tr>
                     </tbody>

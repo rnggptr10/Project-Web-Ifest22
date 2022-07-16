@@ -107,13 +107,13 @@ Data Analysis Competition (DAC) is a national-scale competition organized by Him
             <div class="card ifest-photo-card" style="border: 0; width:max-content">
                 <img class="card-img-top" style="width:100%;height:350px;" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg" alt="Card image cap">
                 <div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
-                    <div class="col-7" style="line-height: 5px;">
+                    <div class="col" style="line-height: 5px;">
                         <h5 class="text-photo-card-name">Juri 1</h5>
                         <p class="text-photo-card-position">Data Analyst</p>
                     </div>
-                    <div class="col-3">
+                    <!-- <div class="col-3">
                         <img class="logo-linkedin" src="{{ URL::asset('icon/linkedin.svg') }}" alt="linkedin">
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
@@ -121,13 +121,13 @@ Data Analysis Competition (DAC) is a national-scale competition organized by Him
             <div class="card ifest-photo-card" style="border: 0; width:max-content">
                 <img class="card-img-top" style="width:100%;height:350px;" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg" alt="Card image cap">
                 <div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
-                    <div class="col-7" style="line-height: 5px;">
+                    <div class="col" style="line-height: 5px;">
                         <h5 class="text-photo-card-name">Juri 2</h5>
                         <p class="text-photo-card-position">Data Analyst</p>
                     </div>
-                    <div class="col-3">
+                    <!-- <div class="col-3">
                         <img class="logo-linkedin" src="{{ URL::asset('icon/linkedin.svg') }}" alt="linkedin">
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
@@ -144,13 +144,13 @@ Data Analysis Competition (DAC) is a national-scale competition organized by Him
                         <div class="card ifest-photo-card" style="border: 0;text-align:center; width:350px;">
                             <img class="card-img-top" style="width:100%;height:350px;" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg" alt="Card image cap">
                             <div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
-                                <div class="col-7" style="line-height: 5px;">
+                                <div class="col" style="line-height: 5px;">
                                     <h5 class="text-photo-card-name">Juri 2</h5>
                                     <p class="text-photo-card-position">Data Analyst</p>
                                 </div>
-                                <div class="col-3">
+                                <!-- <div class="col-3">
                                     <img class="logo-linkedin" src="{{ URL::asset('icon/linkedin.svg') }}" alt="linkedin">
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                     </div>
@@ -162,13 +162,13 @@ Data Analysis Competition (DAC) is a national-scale competition organized by Him
                         <div class="card ifest-photo-card" style="border: 0; text-align:center; width:350px;">
                             <img class="card-img-top" style="width:100%;height:350px;" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg" alt="Card image cap">
                             <div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
-                                <div class="col-7" style="line-height: 5px;">
+                                <div class="col" style="line-height: 5px;">
                                     <h5 class="text-photo-card-name">Juri 2</h5>
                                     <p class="text-photo-card-position">Data Analyst</p>
                                 </div>
-                                <div class="col-3">
+                                <!-- <div class="col-3">
                                     <img class="logo-linkedin" src="{{ URL::asset('icon/linkedin.svg') }}" alt="linkedin">
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                     </div>

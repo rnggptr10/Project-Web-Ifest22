@@ -51,8 +51,8 @@
                 <img class="circular-number" src="{{ URL::asset('icon/page-details/circle-1.svg') }}" alt="1">
             </div>
             <div class="col-6" align="left" style="padding:0 8px 0 15px">
-                <h6 class="text-tickets-head">Abstract</h6>
-                <p class="text-tickets-desc">20-25 Agustus 2022
+                <h6 class="text-tickets-head">Abstract Submission</h6>
+                <p class="text-tickets-desc">24 July - 5 September 2022
                 <?php
                     // SET WAKTU LIVE
                     $now = Carbon::now('Asia/Jakarta');
@@ -124,8 +124,8 @@
                 <img class="circular-number" src="{{ URL::asset('icon/page-details/circle-2.svg') }}" alt="2">
             </div>
             <div class="col-6" align="left" style="padding:0 8px 0 15px">
-                <h6 class="text-tickets-head">Finalist Announcement</h6>
-                <p class="text-tickets-desc">9 September 2022
+                <h6 class="text-tickets-head">Selected Abstract Announcement</h6>
+                <p class="text-tickets-desc">10 September 2022
                     <?php if($now->greaterThan($semnas_announce_date_start)) { ?>
                         @if ($presenter->status_selected === '0')
                             <br>Status : 
@@ -148,7 +148,7 @@
                 </div>
                 <div class="col-6" align="left" style="padding:0 8px 0 15px">
                     <h6 class="text-tickets-head">Presenter Payment</h6>
-                    <p class="text-tickets-desc">1-5 September 2022<br>Status :
+                    <p class="text-tickets-desc">11 - 22 September 2022<br>Status :
                         @if ($presenter->proof_payment === null)
                             <span class="text-tickets-status status-red">Not Yet Paid</span>
                         @elseif ($presenter->proof_payment !== null)
@@ -197,11 +197,11 @@
                 <?php if($now->greaterThan($semnas_paper_1_date_start)) { ?>
                     <div class="row align-items-center" align="left" style="padding:20px">
                         <div class="col-2" style="padding:0 15px 0 8px">
-                            <img class="circular-number" src="{{ URL::asset('icon/page-details/circle-3.svg') }}" alt="3">
+                            <img class="circular-number" src="{{ URL::asset('icon/page-details/circle-4.svg') }}" alt="4">
                         </div>
                         <div class="col-6" align="left" style="padding:0 8px 0 15px">
                             <h6 class="text-tickets-head">Paper Submission</h6>
-                            <p class="text-tickets-desc">21-25 September 2022<br>Status :
+                            <p class="text-tickets-desc">23-27 September 2022<br>Status :
                                 @if ($presenter->paper1_link === null)
                                 <span class="text-tickets-status status-red">Unsubmitted</span>
                                 @elseif ($presenter->paper1_link !== null)
@@ -237,22 +237,22 @@
                     <?php if($now->greaterThan($semnas_revisi_date_start)) { ?> 
                         <div class="row align-items-center" align="left" style="padding:20px">
                             <div class="col-2" style="padding:0 15px 0 8px">
-                                <img class="circular-number" src="{{ URL::asset('icon/page-details/circle-4.svg') }}" alt="4">
+                                <img class="circular-number" src="{{ URL::asset('icon/page-details/circle-5.svg') }}" alt="5">
                             </div>
                             <div class="col-6" align="left" style="padding:0 8px 0 15px">
-                                <h6 class="text-tickets-head">Masa Revisi Paper</h6>
-                                <p class="text-tickets-desc">21-25 September 2022</p>
+                                <h6 class="text-tickets-head">Paper Revision Period</h6>
+                                <p class="text-tickets-desc">28 September - 3 October 2022</p>
                             </div>
                         </div>
 
                         <?php if($now->greaterThan($semnas_paper_2_date_start)) { ?>
                             <div class="row align-items-center" align="left" style="padding:20px">
                                 <div class="col-2" style="padding:0 15px 0 8px">
-                                    <img class="circular-number" src="{{ URL::asset('icon/page-details/circle-5.svg') }}" alt="5">
+                                    <img class="circular-number" src="{{ URL::asset('icon/page-details/circle-6.svg') }}" alt="6">
                                 </div>
                                 <div class="col-6" align="left" style="padding:0 8px 0 15px">
-                                    <h6 class="text-tickets-head">Pengumpulan Revisi Paper</h6>
-                                    <p class="text-tickets-desc">30 September 2022<br>Status :
+                                    <h6 class="text-tickets-head">Final Paper Submission</h6>
+                                    <p class="text-tickets-desc">4 - 7 October 2022<br>Status :
                                         @if ($presenter->paper2_link === null)
                                         <span class="text-tickets-status status-red">Unsubmitted</span>
                                         @elseif ($presenter->paper2_link !== null)
@@ -286,7 +286,7 @@
                             </div>
                             <div class="row align-items-center" align="left" style="padding:20px">
                                 <div class="col-2" style="padding:0 15px 0 8px">
-                                    <img class="circular-number" src="{{ URL::asset('icon/page-details/circle-6.svg') }}" alt="6">
+                                    <img class="circular-number" src="{{ URL::asset('icon/page-details/circle-7.svg') }}" alt="7">
                                 </div>
                                 <div class="col-6" align="left" style="padding:0 8px 0 15px">
                                     <h6 class="text-tickets-head">Seminar Day 1</h6>
@@ -299,18 +299,17 @@
                                             <a class="ifest-btn-primary-dark-bg-text" href="">Link Zoom</a>
                                         </button>
                                     </div>
-                                <?php } elseif ($now->lessThan($semnas_seminar_1_date_start)){ ?>
+                                <?php } elseif ($now->lessThan($semnas_seminar_1_date_start) || $now->greaterThan($semnas_seminar_1_date_end)){ ?>
                                     <div class="col" align="center" style="padding:0">
                                         <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 120px;height: 48px;" disabled>
                                             <a class="ifest-btn-primary-dark-bg-text" href="">Link Zoom</a>
                                         </button>
                                     </div>
-                                <?php } elseif ($now->greaterThan($semnas_seminar_1_date_end)){ ?>
                                 <?php } ?>
                             </div>
                             <div class="row align-items-center" align="left" style="padding:20px">
                                 <div class="col-2" style="padding:0 15px 0 8px">
-                                    <img class="circular-number" src="{{ URL::asset('icon/page-details/circle-6.svg') }}" alt="6">
+                                    <img class="circular-number" src="{{ URL::asset('icon/page-details/circle-8.svg') }}" alt="8">
                                 </div>
                                 <div class="col-6" align="left" style="padding:0 8px 0 15px">
                                     <h6 class="text-tickets-head">Seminar Day 2</h6>
@@ -323,13 +322,12 @@
                                             <a class="ifest-btn-primary-dark-bg-text" href="">Link Zoom</a>
                                         </button>
                                     </div>
-                                <?php } elseif ($now->lessThan($semnas_seminar_2_date_start)){ ?>
+                                <?php } elseif ($now->lessThan($semnas_seminar_2_date_start) || $now->greaterThan($semnas_seminar_2_date_end)){ ?>
                                     <div class="col" align="center" style="padding:0">
                                         <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 120px;height: 48px;" disabled> 
                                             <a class="ifest-btn-primary-dark-bg-text" href="">Link Zoom</a>
                                         </button>
                                     </div>
-                                <?php } elseif ($now->greaterThan($semnas_seminar_2_date_end)){ ?>
                                 <?php } ?>
                             </div>
 

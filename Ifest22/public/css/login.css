@@ -82,3 +82,18 @@
     font-weight: 400;
     text-align: center;
 }
+
+.text-button-href {
+    text-decoration: none;
+    font-family: "Lato-Regular";
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 400;
+    text-align: center;
+    color: #1c1c1c;
+}
+
+.text-button-href:hover {
+    text-decoration: none;
+    color: #1c1c1c;
+}

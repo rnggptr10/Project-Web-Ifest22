@@ -151,10 +151,11 @@ class AdminController extends Controller
         return redirect()->route('admin-semnas');
     }
 
-    public function changeSemnasPresenterStatusPembayaran(Request $request)
+    public function changeSemnasPresenterStatus(Request $request)
     {
         Semnas_paper::where('email', $request->semnas_email)->update([
             'status_pembayaran' => $request->semnas_payment_status,
+            'status_selected' => $request->semnas_selected_status,
         ]);
 
         return redirect()->route('admin-semnas-presenter');
@@ -195,5 +196,32 @@ class AdminController extends Controller
         ]);
 
         return redirect()->route('admin-intention');
+    }
+
+    public function changeDacStatusFinalist(Request $request)
+    {
+        Da_Form::where('email', $request->dac_email)->update([
+            'status_finalist' => $request->dac_finalist_status,
+        ]);
+
+        return redirect()->route('admin-dac');
+    }
+
+    public function changeTechnoWSStatusPembayaran(Request $request)
+    {
+        Techno_ws_form::where('email', $request->techno_ws_email)->update([
+            'status_pembayaran' => $request->techno_ws_payment_status,
+        ]);
+
+        return redirect()->route('admin-techno-ws');
+    }
+
+    public function changeTechnoWSStatusSelected(Request $request)
+    {
+        Techno_ws_form::where('email', $request->techno_ws_email)->update([
+            'selected_team' => $request->techno_ws_selected_status,
+        ]);
+
+        return redirect()->route('admin-techno-ws');
     }
 }
