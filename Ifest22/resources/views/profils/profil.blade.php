@@ -185,7 +185,7 @@
                                     ?>
                                         <div class="col">
                                             <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 147px;height: 48px;">
-                                                <a class="ifest-btn-primary-dark-bg-text" href="">Re-Upload</a>
+                                                <a class="ifest-btn-primary-dark-bg-text" href="{{ route('semnas.resubmit.payment.view') }}">Re-Upload</a>
                                             </button>
                                         </div>
                                     <?php

@@ -105,6 +105,7 @@ class TechnoController extends Controller
 
         Techno_ws_form::where('email', Auth::user()->email)->update([
             'proof_payment' => $request->payment_confirmation->store('techno-ws-payment-proof'),
+            'status_pembayaran' => '1',
         ]);
 
         return redirect()->route('profile.ticketDetailsTechnoWorkshop');

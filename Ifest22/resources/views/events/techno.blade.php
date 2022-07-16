@@ -173,7 +173,7 @@ Technopreneur is a webinar and workshop that provides training & development fac
 
 <div id="Speaker2" data-aos="fade-down" data-aos-duration="1000" align="center" id="sutSpeakers" style="padding-top: 30px;padding-bottom: 30px;">
     <h1 class="text-event-sub-title">Our Seminar Speakers</h1>
-    <div id="technoMentor1" class="row justify-content-center carousel slide" data-ride="carousel" style="padding-top: 30px; position:relative">
+    <div id="technoSpeaker" class="row justify-content-center carousel slide" data-ride="carousel" style="padding-top: 30px; position:relative">
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <div class="row justify-content-center">
@@ -197,11 +197,11 @@ Technopreneur is a webinar and workshop that provides training & development fac
     </div>
     <div class="row justify-content-center" style="padding-top: 30px;">
         <div class="col-1">
-            <a class="carousel-control-prev" href="#technoMentor1" role="button" data-slide="prev">
+            <a class="carousel-control-prev" href="#technoSpeaker" role="button" data-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="sr-only">Previous</span>
             </a>
-            <a class="carousel-control-next" href="#technoMentor1" role="button" data-slide="next">
+            <a class="carousel-control-next" href="#technoSpeaker" role="button" data-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="sr-only">Next</span>
             </a>

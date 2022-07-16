@@ -80,6 +80,8 @@ Route::get('/profil/ticket-details-dac/resubmit-payment', [ProfilController::cla
 Route::patch('/profil/ticket-details-dac/resubmit-payment', [ProfilController::class, 'savePaymentResubmitDac'])->name('dac.resubmit.payment');
 Route::get('/profil/ticket-details-ctf/resubmit-payment', [ProfilController::class, 'paymentResubmitCtf'])->name('ctf.resubmit.payment.view');
 Route::patch('/profil/ticket-details-ctf/resubmit-payment', [ProfilController::class, 'savePaymentResubmitCtf'])->name('ctf.resubmit.payment');
+Route::get('/profil/resubmit-payment-semnas', [ProfilController::class, 'paymentResubmitSemnas'])->name('semnas.resubmit.payment.view');
+Route::patch('/profil/resubmit-payment-semnas', [ProfilController::class, 'savePaymentResubmitSemnas'])->name('semnas.resubmit.payment');
 
 // Route for Event
 Route::get('/seminar-nasional', [SemnasController::class, 'index'])->name('semnas');

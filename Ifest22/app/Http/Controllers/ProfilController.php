@@ -365,6 +365,30 @@ class ProfilController extends Controller
         return redirect()->route('profile.ticketDetailsTechnoWorkshop');
     }
 
+    // SEMNAS
+    public function paymentResubmitSemnas()
+    {
+        $data = User::where('email', Auth::user()->email)->first();
+        return view('registration.payment-resubmit.payment-resubmit-semnas', compact('data'));
+    }
+
+    public function savePaymentResubmitSemnas(Request $request)
+    {
+        $request->validate([
+            'payment_confirmation' => 'required',
+        ]);
+
+        // Alamat Penyimpanan
+        $request->payment_confirmation->store('semnas-payment-proof');
+
+        Semnas_semnas::where('email', Auth::user()->email)->update([
+            'proof_payment' => $request->payment_confirmation->store('semnas-payment-proof'),
+            'status_pembayaran' => '1',
+        ]);
+
+        return redirect()->route('profile');
+    } 
+
 
     // SEMNAS PRESENTER
     public function ticketDetailsSemnasPresenter()
@@ -392,6 +416,7 @@ class ProfilController extends Controller
 
         Semnas_paper::where('email', Auth::user()->email)->update([
             'proof_payment' => $request->payment_confirmation->store('semnas-payment-proof'),
+            'status_pembayaran' => '1',
         ]);
 
         return redirect()->route('profile.ticketDetailsSemnasPresenter');
