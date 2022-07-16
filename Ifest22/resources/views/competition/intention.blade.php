@@ -93,10 +93,10 @@ This competition is held online and is intended for high school / vocational stu
 @section('first_prize', 'Rp.5.000.000')
 @section('second_prize', 'Rp.3.000.000')
 @section('third_prize')
-<div class="col-2">
-    <img style="width:100%;height: 160px;" src="{{ URL::asset('icon/trophy/3.png') }}">
-    <p style="color:white; margin:0">3rd Place</p>
-    <p style="color:white">Rp. 1.000.000</p>
+<div class="col-4">
+    <img class="img-fluid" style="width:150px;" src="{{ URL::asset('icon/trophy/3.png') }}">
+    <p id="prizeFont" style="color:white; margin:0">3rd Place</p>
+    <p id="prizeFont" style="color:white">Rp. 1.000.000</p>
 </div>
 @endsection
 

@@ -30,15 +30,15 @@
             <div data-aos="fade-down" data-aos-duration="1000" class="row-img-prize" align="center" id="competitionPrizes" style="padding-top: 30px;padding-bottom: 30px;">
                 <h1 class="text-sub-title">Prizes</h1>
                 <div class="row justify-content-center" style="padding-top: 20px;"">
-                        <div class=" col-2">
-                    <img style="width:100%;height: 160px;" src="{{ URL::asset('icon/trophy/2.png') }}">
-                    <p style="color:white; margin:0">2nd Place</p>
-                    <p style="color:white">@yield('second_prize')</p>
+                    <div class=" col-4">
+                    <img class="img-fluid" style="width:150px;" src="{{ URL::asset('icon/trophy/2.png') }}">
+                    <p id="prizeFont" style="color:white; margin:0">2nd Place</p>
+                    <p id="prizeFont" style="color:white">@yield('second_prize')</p>
                 </div>
-                <div class="col-2">
-                    <img style="width:100%;height: 180px;" src="{{ URL::asset('icon/trophy/1.png') }}">
-                    <p style="color:white; margin:0">1st Place</p>
-                    <p style="color:white;">@yield('first_prize')</p>
+                <div class="col-4">
+                    <img class="img-fluid" style="width:180px;" src="{{ URL::asset('icon/trophy/1.png') }}">
+                    <p id="prizeFont" style="color:white; margin:0">1st Place</p>
+                    <p id="prizeFont" style="color:white;">@yield('first_prize')</p>
                 </div>
                 @yield('third_prize')
             </div>
