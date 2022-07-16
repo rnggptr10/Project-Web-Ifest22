@@ -16,7 +16,7 @@
 <div class="col-sm-4" style="border: 1px #fff solid;">col-sm-4</div>
 </div>
 </div> -->
-
+<!-- <div id="particles-js"></div> -->
 <div class="content-main">
     <img src="{{asset('img/bg-fix.png')}}" alt="" style="width:100%;">
     <div class="logo-content-main">
@@ -425,6 +425,8 @@
         </div>
     </div>
 </div>
+<script src="{{ asset('js/particles.js') }}"></script>
+<script src="{{ asset('js/bg.js') }}"></script>
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>
     AOS.init();
