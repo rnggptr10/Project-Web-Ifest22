@@ -51,7 +51,7 @@ Startup Talk is a talk show that aims as a means to bring together Founders or S
 
 <!-- SPEAKERS DAY 1 -->
 @section('startup1_speakers')
-<img class="card-img-top" style="width:100%;height:350px;" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg" alt="Speakers-1">
+<img class=" card-img-top size-img-top-speakers" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg" alt="Speakers-1">
 <div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
     <div class="col-7" style="line-height: 5px;">
         <h5 class="text-photo-card-name">Speaker1</h5>
@@ -64,7 +64,7 @@ Startup Talk is a talk show that aims as a means to bring together Founders or S
 @endsection
 
 @section('startup2_speakers')
-<img class="card-img-top" style="width:100%;height:350px;" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg" alt="Speakers-2">
+<img class="card-img-top size-img-top-speakers" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg" alt="Speakers-2">
 <div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
     <div class="col-7" style="line-height: 5px;">
         <h5 class="text-photo-card-name">Speaker2</h5>
@@ -77,7 +77,7 @@ Startup Talk is a talk show that aims as a means to bring together Founders or S
 @endsection
 
 @section('startup3_speakers')
-<img class="card-img-top" style="width:100%;height:350px;" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg" alt="Speakers-3">
+<img class="card-img-top size-img-top-speakers" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg" alt="Speakers-3">
 <div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
     <div class="col-7" style="line-height: 5px;">
         <h5 class="text-photo-card-name">Speaker3</h5>
@@ -90,7 +90,7 @@ Startup Talk is a talk show that aims as a means to bring together Founders or S
 @endsection
 
 @section('startup4_speakers')
-<img class="card-img-top" style="width:100%;height:350px;" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg" alt="Speakers-4">
+<img class="card-img-top size-img-top-speakers" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg" alt="Speakers-4">
 <div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
     <div class="col-7" style="line-height: 5px;">
         <h5 class="text-photo-card-name">Speaker4</h5>
@@ -103,7 +103,7 @@ Startup Talk is a talk show that aims as a means to bring together Founders or S
 @endsection
 
 @section('startup5_speakers')
-<img class="card-img-top" style="width:100%;height:350px;" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg" alt="Speakers-4">
+<img class="card-img-top size-img-top-speakers" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg" alt="Speakers-4">
 <div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
     <div class="col-7" style="line-height: 5px;">
         <h5 class="text-photo-card-name">Speaker4</h5>
@@ -116,7 +116,7 @@ Startup Talk is a talk show that aims as a means to bring together Founders or S
 @endsection
 
 @section('startup6_speakers')
-<img class="card-img-top" style="width:100%;height:350px;" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg" alt="Speakers-4">
+<img class="card-img-top size-img-top-speakers" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg" alt="Speakers-4">
 <div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
     <div class="col-7" style="line-height: 5px;">
         <h5 class="text-photo-card-name">Speaker6</h5>
@@ -129,7 +129,7 @@ Startup Talk is a talk show that aims as a means to bring together Founders or S
 @endsection
 
 @section('startup7_speakers')
-<img class="card-img-top" style="width:100%;height:350px;" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg" alt="Speakers-4">
+<img class="card-img-top size-img-top-speakers" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg" alt="Speakers-4">
 <div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
     <div class="col-7" style="line-height: 5px;">
         <h5 class="text-photo-card-name">Speaker7</h5>
@@ -142,7 +142,7 @@ Startup Talk is a talk show that aims as a means to bring together Founders or S
 @endsection
 
 @section('startup8_speakers')
-<img class="card-img-top" style="width:100%;height:350px;" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg" alt="Speakers-4">
+<img class="card-img-top size-img-top-speakers" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg" alt="Speakers-4">
 <div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
     <div class="col-7" style="line-height: 5px;">
         <h5 class="text-photo-card-name">Speaker8</h5>
@@ -160,7 +160,8 @@ Startup Talk is a talk show that aims as a means to bring together Founders or S
 @section('event_detail')
 <!-- INI STARTUP PENGENNYA GERAK KYK COMPFEST -->
 <div data-aos="fade-down" data-aos-duration="1000" align="center" id="sutStartup" style="padding-top: 30px;padding-bottom: 30px;">
-    <h1 class="text-sub-title">Our Startup Partners</h1>
+    <h1 class="title-1 text-sub-title">Our Startup Partners</h1>
+    <h3 class="title-2">Our Startup Partners</h3>
     <div class="row justify-content-center" style="padding-top: 30px; padding-bottom: 30px;">
         <div class="col">
             <div class="row justify-content-center" style="padding-bottom: 20px;">
@@ -181,7 +182,8 @@ Startup Talk is a talk show that aims as a means to bring together Founders or S
 
 <div id="Speaker1" data-aos="fade-down" data-aos-duration="1000" align="center" id="sutSpeakers" style="padding-top: 30px;padding-bottom: 30px;">
     <h1 class="text-event-sub-title">Startup Talk : Day 1</h1>
-    <h2 class="text-event-sub-theme">"Metaverse, The Next Level of Human Culture"</h2>
+
+    <h2 class="title-1 text-event-sub-theme">"Metaverse, The Next Level of Human Culture"</h2>
     <div id="sutSpeakersDay1" class="row justify-content-center carousel slide" data-ride="carousel" style="padding-top: 30px; position:relative">
         <div class="carousel-inner">
             <div class="carousel-item active">
@@ -229,14 +231,17 @@ Startup Talk is a talk show that aims as a means to bring together Founders or S
 </div>
 
 <div id="Speaker2" data-aos="fade-down" data-aos-duration="1000" align="center" id="sutSpeakers" style="padding-top: 30px;padding-bottom: 30px;">
-    <h1 class="text-event-sub-title">Startup Talk : Day 1</h1>
-    <h2 class="text-event-sub-theme">"Metaverse, The Next Level of Human Culture"</h2>
+    <h1 class="title-1 text-event-sub-title">Startup Talk : Day 1</h1>
+    <h2 class="title-2 text-event-sub-title">Startup Talk : Day 1</h2>
+
+    <h2 class="title-1 text-event-sub-theme">"Metaverse, The Next Level of Human Culture"</h2>
+    <p class="title-2 text-desc text-event-sub-theme">"Metaverse, The Next Level of Human Culture"</p>
     <div id="sutSpeakers2Day1" class="row justify-content-center carousel slide" data-ride="carousel" style="padding-top: 30px; position:relative">
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <div class="row justify-content-center">
                     <div class="col">
-                        <div class="card ifest-photo-card" style="border: 0;text-align:center; width:350px;">
+                        <div class="size-img-speakers card ifest-photo-card size-card-speaker" style="border: 0;text-align:center;">
                             @yield('startup1_speakers')
                         </div>
                     </div>
@@ -245,7 +250,7 @@ Startup Talk is a talk show that aims as a means to bring together Founders or S
             <div class="carousel-item">
                 <div class="row justify-content-center">
                     <div class="col">
-                        <div class="card ifest-photo-card" style="border: 0; text-align:center; width:350px;">
+                        <div class="size-img-speakers card ifest-photo-card size-card-speaker" style="border: 0; text-align:center;">
                             @yield('startup2_speakers')
                         </div>
                     </div>
@@ -254,16 +259,16 @@ Startup Talk is a talk show that aims as a means to bring together Founders or S
             <div class="carousel-item">
                 <div class="row justify-content-center">
                     <div class="col">
-                        <div class="card ifest-photo-card" style="border: 0; text-align:center; width:350px;">
+                        <div class="card ifest-photo-card size-img-speakers" style="border: 0; text-align:center;">
                             @yield('startup3_speakers')
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="carousel-item">
+            <div class=" carousel-item">
                 <div class="row justify-content-center">
                     <div class="col">
-                        <div class="card ifest-photo-card" style="border: 0; text-align:center; width:350px;">
+                        <div class="card ifest-photo-card size-img-speakers" style="border: 0; text-align:center;">
                             @yield('startup4_speakers')
                         </div>
                     </div>
@@ -335,14 +340,16 @@ Startup Talk is a talk show that aims as a means to bring together Founders or S
 </div>
 
 <div id="Speaker2" data-aos="fade-down" data-aos-duration="1000" align="center" id="sutSpeakers" style="padding-top: 30px;padding-bottom: 30px;">
-    <h1 class="text-event-sub-title">Startup Talk : Day 2</h1>
-    <h2 class="text-event-sub-theme">"Evolution of Digital Transformation"</h2>
+    <h1 class="title-1 text-event-sub-title">Startup Talk : Day 2</h1>
+    <h1 class="title-2 text-event-sub-title">Startup Talk : Day 2</h1>
+    <h2 class="title-1 text-event-sub-theme">"Evolution of Digital Transformation"</h2>
+    <p class="title-2 text-desc text-event-sub-theme">"Evolution of Digital Transformation"</p>
     <div id="sutSpeakers2Day2" class="row justify-content-center carousel slide" data-ride="carousel" style="padding-top: 30px; position:relative">
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <div class="row justify-content-center">
                     <div class="col">
-                        <div class="card ifest-photo-card" style="border: 0;text-align:center; width:350px;">
+                        <div class="card ifest-photo-card size-img-speakers" style="border: 0;text-align:center;">
                             @yield('startup5_speakers')
                         </div>
                     </div>
@@ -351,7 +358,7 @@ Startup Talk is a talk show that aims as a means to bring together Founders or S
             <div class="carousel-item">
                 <div class="row justify-content-center">
                     <div class="col">
-                        <div class="card ifest-photo-card" style="border: 0; text-align:center; width:350px;">
+                        <div class="card ifest-photo-card size-img-speakers" style="border: 0; text-align:center;">
                             @yield('startup6_speakers')
                         </div>
                     </div>
@@ -360,7 +367,7 @@ Startup Talk is a talk show that aims as a means to bring together Founders or S
             <div class="carousel-item">
                 <div class="row justify-content-center">
                     <div class="col">
-                        <div class="card ifest-photo-card" style="border: 0; text-align:center; width:350px;">
+                        <div class="card ifest-photo-card size-img-speakers" style="border: 0; text-align:center;">
                             @yield('startup7_speakers')
                         </div>
                     </div>
@@ -369,7 +376,7 @@ Startup Talk is a talk show that aims as a means to bring together Founders or S
             <div class="carousel-item">
                 <div class="row justify-content-center">
                     <div class="col">
-                        <div class="card ifest-photo-card" style="border: 0; text-align:center; width:350px;">
+                        <div class="card ifest-photo-card size-img-speakers" style="border: 0; text-align:center;">
                             @yield('startup8_speakers')
                         </div>
                     </div>
@@ -393,7 +400,7 @@ Startup Talk is a talk show that aims as a means to bring together Founders or S
 
 <div data-aos="fade-up" data-aos-duration="1000" class="row align-items-center justify-content-center padding-2-box-top" align="left" id="sutCards" style="padding-top: 30px;">
     <div class="col-xs-6 col-lg-6" align="center" style="padding:0">
-        <div class="card" style="border: 0; width:90%" id="cardTimeline">
+        <div class="card size-card" style="border: 0;" id="cardTimeline">
             <div class="row align-items-center justify-content-start" style="padding:15px;">
                 <div class="col-2">
                     <img class="img-fluid events-card-logo" src="{{ URL::asset('icon/date.png') }}" alt="Date">
@@ -405,22 +412,33 @@ Startup Talk is a talk show that aims as a means to bring together Founders or S
         </div>
     </div>
     <div class="col-xs-6 col-lg-6" align="center" style="padding:0">
-        <div class="card" style="border: 0; width:90%" id="cardTicket">
+        <div class="card size-card" style="border: 0;" id="cardTicket">
             <div class="row align-items-center" style="padding:15px">
                 <div class="col-2">
                     <img class="img-fluid events-card-logo" src="{{ URL::asset('icon/ticket.png') }}" alt="Ticket">
                 </div>
                 <div class="col-5" style="text-align: left;">
-                    <h5 style="color:black;">Free (Day 1)</h5>
+                    <h5 class="title-1" style="color:black;">Free (Day 1)</h5>
+                    <p class="title-2" style="color:black; margin:0; font-size:14px;">Free (Day 1)</p>
                 </div>
                 <div class="col-5">
                     <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg">
                         @guest
                         @if(Route::has('login'))
-                        <a class="ifest-btn-primary-dark-bg-text" href="{{route('login')}}">Register Now</a>
+                        <a class="title-1 ifest-btn-primary-dark-bg-text" href="{{route('login')}}">
+                            Register Now
+                        </a>
+                        <a class="title-2 ifest-btn-primary-dark-bg-text" href="{{route('login')}}">
+                            <p style="margin: 0; font-size:10px">Register Now</p>
+                        </a>
                         @endif
                         @else
-                        <a class="ifest-btn-primary-dark-bg-text" href="{{ route('startup.day1.registration') }}">Register Now</a>
+                        <a class="title-1 ifest-btn-primary-dark-bg-text" href="{{ route('startup.day1.registration') }}">
+                            Register Now
+                        </a>
+                        <a class="title-2 ifest-btn-primary-dark-bg-text" href="{{ route('startup.day1.registration') }}">
+                            <p style="margin: 0; font-size:10px">Register Now</p>
+                        </a>
                         @endguest
                     </button>
                 </div>
@@ -430,7 +448,7 @@ Startup Talk is a talk show that aims as a means to bring together Founders or S
 </div>
 <div data-aos="fade-up" data-aos-duration="1000" class="clear-pad-top row align-items-center justify-content-center padding-2-box-bottom" align="left" id="sutCards">
     <div class="col-xs-6 col-lg-6" align="center" style="padding: 0;">
-        <div class="card" style="border: 0; width:90%" id="cardPlatform">
+        <div class="card size-card" style="border: 0;" id="cardPlatform">
             <div class="row align-items-center" style="padding:15px">
                 <div class="col-2">
                     <img class="img-fluid events-card-logo" src="{{ URL::asset('icon/platform.png') }}" alt="Platform">
@@ -442,22 +460,33 @@ Startup Talk is a talk show that aims as a means to bring together Founders or S
         </div>
     </div>
     <div class="col-xs-6 col-lg-6" align="center" style="padding:0">
-        <div class="card" style="border: 0; width:90%" id="cardTicket">
+        <div class="card size-card" style="border: 0;" id="cardTicket">
             <div class="row align-items-center" style="padding:15px">
                 <div class="col-2">
                     <img class="img-fluid events-card-logo" src="{{ URL::asset('icon/ticket.png') }}" alt="Ticket">
                 </div>
                 <div class="col-5" style="text-align: left;">
-                    <h5 style="color:black;">Free (Day 2)</h5>
+                    <h5 class="title-1" style="color:black;">Free (Day 2)</h5>
+                    <p class="title-2" style="color:black; margin:0; font-size:14px;">Free (Day 2)</p>
                 </div>
                 <div class="col-5">
                     <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg">
                         @guest
                         @if(Route::has('login'))
-                        <a class="ifest-btn-primary-dark-bg-text" href="{{route('login')}}">Register Now</a>
+                        <a class="title-1 ifest-btn-primary-dark-bg-text" href="{{route('login')}}">
+                            Register Now
+                        </a>
+                        <a class="title-2 ifest-btn-primary-dark-bg-text" href="{{route('login')}}">
+                            <p style="margin: 0; font-size:10px">Register Now</p>
+                        </a>
                         @endif
                         @else
-                        <a class="ifest-btn-primary-dark-bg-text" href="{{ route('startup.day2.registration') }}">Register Now</a>
+                        <a class="title-1 ifest-btn-primary-dark-bg-text" href="{{ route('startup.day2.registration') }}">
+                            Register Now
+                        </a>
+                        <a class="title-2 ifest-btn-primary-dark-bg-text" href="{{ route('startup.day2.registration') }}">
+                            <p style="margin: 0; font-size:10px">Register Now</p>
+                        </a>
                         @endguest
                     </button>
                 </div>

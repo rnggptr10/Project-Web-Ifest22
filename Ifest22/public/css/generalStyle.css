@@ -499,3 +499,17 @@ summary {
 .ps-timeline-sec .container ol.ps-timeline li .ps-bot {
     margin-top: 35px;
 }
+
+/* ==================== */
+/*      Responsif       */
+/* ==================== */
+/* = Tablet */
+@media screen and (max-width:770px) {
+    .ps-timeline-sec{
+        display: none;
+    }
+
+    .tm{
+        display: none;
+    }
+}

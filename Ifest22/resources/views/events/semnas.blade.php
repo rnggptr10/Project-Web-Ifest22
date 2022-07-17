@@ -24,9 +24,9 @@ Seminar Nasional is a national seminar that invites experienced speakers in thos
 
 <!-- SPEAKERS -->
 @section('semnas_speakers_1')
-<img class="card-img-top" style="width:100%;height:350px;" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg" alt="Speakers-1">
+<img class="card-img-top size-img-top-speakers" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg" alt="Speakers-1">
 <div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
-    <div class="col-7">
+    <div class="col-7" style="line-height: 5px;">
         <h5 class="text-photo-card-name">Speaker1</h5>
         <p class="text-photo-card-position">CEO</p>
     </div>
@@ -37,9 +37,9 @@ Seminar Nasional is a national seminar that invites experienced speakers in thos
 @endsection
 
 @section('semnas_speakers_2')
-<img class="card-img-top" style="width:100%;height:350px;" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg" alt="Speakers-1">
+<img class="card-img-top size-img-top-speakers" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg" alt="Speakers-1">
 <div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
-    <div class="col-7">
+    <div class="col-7" style="line-height: 5px;">
         <h5 class="text-photo-card-name">Speaker2</h5>
         <p class="text-photo-card-position">CEO</p>
     </div>
@@ -50,9 +50,9 @@ Seminar Nasional is a national seminar that invites experienced speakers in thos
 @endsection
 
 @section('semnas_speakers_3')
-<img class="card-img-top" style="width:100%;height:350px;" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg" alt="Speakers-1">
+<img class="card-img-top size-img-top-speakers" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg" alt="Speakers-1">
 <div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
-    <div class="col-7">
+    <div class="col-7" style="line-height: 5px;">
         <h5 class="text-photo-card-name">Speaker3</h5>
         <p class="text-photo-card-position">CEO</p>
     </div>
@@ -63,9 +63,9 @@ Seminar Nasional is a national seminar that invites experienced speakers in thos
 @endsection
 
 @section('semnas_speakers_4')
-<img class="card-img-top" style="width:100%;height:350px;" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg" alt="Speakers-1">
+<img class="card-img-top size-img-top-speakers" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg" alt="Speakers-1">
 <div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
-    <div class="col-7">
+    <div class="col-7" style="line-height: 5px;">
         <h5 class="text-photo-card-name">Speaker4</h5>
         <p class="text-photo-card-position">CEO</p>
     </div>
@@ -159,13 +159,15 @@ Seminar Nasional is a national seminar that invites experienced speakers in thos
 </div>
 
 <div id="Speaker2" data-aos="fade-down" data-aos-duration="1000" align="center" id="sutSpeakers" style="padding-top: 30px;padding-bottom: 30px;">
-    <h1 class="text-event-sub-title">Speakers</h1>
+    <h1 class="title-1 text-event-sub-title">Speakers</h1>
+    <h2 class="title-2 text-event-sub-title">Speakers</h2>
+
     <div id="semnasSpeakers2" class="row justify-content-center carousel slide" data-ride="carousel" style="padding-top: 30px; position:relative">
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <div class="row justify-content-center">
                     <div class="col">
-                        <div class="card ifest-photo-card" style="border: 0;text-align:center; width:350px;">
+                        <div class="size-img-speakers card ifest-photo-card" style="border: 0;text-align:center;">
                             @yield('semnas_speakers_1')
                         </div>
                     </div>
@@ -174,7 +176,7 @@ Seminar Nasional is a national seminar that invites experienced speakers in thos
             <div class="carousel-item">
                 <div class="row justify-content-center">
                     <div class="col">
-                        <div class="card ifest-photo-card" style="border: 0; text-align:center; width:350px;">
+                        <div class="size-img-speakers card ifest-photo-card" style="border: 0; text-align:center;">
                             @yield('semnas_speakers_2')
                         </div>
                     </div>
@@ -183,7 +185,7 @@ Seminar Nasional is a national seminar that invites experienced speakers in thos
             <div class="carousel-item">
                 <div class="row justify-content-center">
                     <div class="col">
-                        <div class="card ifest-photo-card" style="border: 0; text-align:center; width:350px;">
+                        <div class="size-img-speakers card ifest-photo-card" style="border: 0; text-align:center;">
                             @yield('semnas_speakers_3')
                         </div>
                     </div>
@@ -192,7 +194,7 @@ Seminar Nasional is a national seminar that invites experienced speakers in thos
             <div class="carousel-item">
                 <div class="row justify-content-center">
                     <div class="col">
-                        <div class="card ifest-photo-card" style="border: 0; text-align:center; width:350px;">
+                        <div class="size-img-speakers card ifest-photo-card" style="border: 0; text-align:center;">
                             @yield('semnas_speakers_4')
                         </div>
                     </div>
@@ -217,7 +219,7 @@ Seminar Nasional is a national seminar that invites experienced speakers in thos
 <!-- INI NANTI BISA PAKE LOOPING AJA -->
 <div data-aos="fade-up" data-aos-duration="1000" class="row align-items-center justify-content-between padding-2-box-top" align="left" id="semnasCards1" style="padding-top: 30px;">
     <div class="col-xs-6 col-lg-6" align="center" style="padding:0">
-        <div class="card" style="border: 0; width:90%;" id="cardTimeline">
+        <div class="card size-card" style="border: 0;" id="cardTimeline">
             <div class="row align-items-center justify-content-start" style="padding:15px;">
                 <div class="col-2">
                     <img class="img-fluid events-card-logo" src="{{ URL::asset('icon/date.png') }}" alt="Date">
@@ -229,22 +231,31 @@ Seminar Nasional is a national seminar that invites experienced speakers in thos
         </div>
     </div>
     <div class="col-xs-6 col-lg-6" align="center" style="padding:0">
-        <div class="card" style="border: 0; width:90%" id="cardTicket">
+        <div class="card size-card" style="border: 0;" id="cardTicket">
             <div class="row align-items-center" style="padding:15px">
                 <div class="col-2">
                     <img class="img-fluid events-card-logo" src="{{ URL::asset('icon/seminar.png') }}" alt="Seminar">
                 </div>
                 <div class="col-5" style="text-align: left;">
-                    <h5 style="color:black">Seminar</h5>
+                    <h5 class="title-1" style="color:black">Seminar</h5>
+                    <p class="title-2" style="color:black; margin:0; font-size:14px;">Seminar</p>
                 </div>
                 <div class="col-5">
                     <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg">
                         @guest
                         @if(Route::has('login'))
-                        <a class="ifest-btn-primary-dark-bg-text" href="{{route('login')}}">Buy Ticket</a>
+                        <a class="title-1 ifest-btn-primary-dark-bg-text" href="{{route('login')}}">
+                            Buy Ticket
+                        </a>
+                        <a class="title-2 ifest-btn-primary-dark-bg-text" href="{{route('login')}}">
+                            <p style="margin: 0; font-size:10px">Buy Ticket</p>
+                        </a>
                         @endif
                         @else
                         <a class="ifest-btn-primary-dark-bg-text" href="{{route('semnas.registration.view')}}">Register Now</a>
+                        <a class="ifest-btn-primary-dark-bg-text" href="{{route('semnas.registration.view')}}">
+                            <p style="margin: 0; font-size:10px">Register Now</p>
+                        </a>
                         @endguest
                     </button>
                 </div>
@@ -254,7 +265,7 @@ Seminar Nasional is a national seminar that invites experienced speakers in thos
 </div>
 <div data-aos="fade-up" data-aos-duration="1000" class="row align-items-center justify-content-between padding-2-box-bottom" align="left" id="semnasCards2">
     <div class="col-xs-6 col-lg-6" align="center" style="padding:0">
-        <div class="card" style="border: 0; width:90%" id="cardTimeline">
+        <div class="card size-card" style="border: 0;" id="cardTimeline">
             <div class="row align-items-center justify-content-start" style="padding:15px;">
                 <div class="col-2">
                     <img class="img-fluid events-card-logo" src="{{ URL::asset('icon/platform.png') }}" alt="Platform">
@@ -266,22 +277,31 @@ Seminar Nasional is a national seminar that invites experienced speakers in thos
         </div>
     </div>
     <div class="col-xs-6 col-lg-6" align="center" style="padding:0">
-        <div class="card" style="border: 0; width:90%" id="cardTicket">
+        <div class="card size-card" style="border: 0;" id="cardTicket">
             <div class="row align-items-center" style="padding:15px">
                 <div class="col-2">
                     <img class="img-fluid events-card-logo" src="{{ URL::asset('icon/paper.png') }}" alt="Paper">
                 </div>
                 <div class="col-5" style="text-align: left;">
-                    <h5 style="color:black;margin-bottom:0;">Presenter Registration</h5>
+                    <h5 class="title-1" style="color:black;margin-bottom:0;">Presenter Registration</h5>
+                    <p class="title-2" style="color:black; margin:0; font-size:14px;">Presenter Registration</p>
                 </div>
                 <div class="col-5">
                     <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg">
                         @guest
                         @if(Route::has('login'))
-                        <a class="ifest-btn-primary-dark-bg-text" href="{{route('login')}}">Register Now</a>
+                        <a class="title-1 ifest-btn-primary-dark-bg-text" href="{{route('login')}}">
+                            Register Now
+                        </a>
+                        <a class="title-2 ifest-btn-primary-dark-bg-text" href="{{route('login')}}">
+                            <p style="margin: 0; font-size:10px">Register Now</p>
+                        </a>
                         @endif
                         @else
                         <a class="ifest-btn-primary-dark-bg-text" href="{{route('semnas.presenter.registration.view')}}">Register Now</a>
+                        <a class="ifest-btn-primary-dark-bg-text" href="{{route('semnas.presenter.registration.view')}}">
+                            <p style="margin: 0; font-size:10px">Register Now</p>
+                        </a>
                         @endguest
                     </button>
                 </div>
@@ -290,9 +310,10 @@ Seminar Nasional is a national seminar that invites experienced speakers in thos
     </div>
 </div>
 <div data-aos="fade-up" data-aos-duration="1000" class="row justify-content-center align-items-center" align="center" id="eventFAQ" style="padding-top: 30px;padding-bottom: 30px;">
-    <h1 class="text-sub-title">Frequently Asked Question (FAQ)</h1>
-    <div class="row" style="padding-top: 30px;">
-        <div class="card-faq text-left">
+    <h1 class="title-1 text-sub-title">Frequently Asked Question (FAQ)</h1>
+    <h2 class="title-2">Frequently Asked Question (FAQ)</h2>
+    <div class="row text-left margin-l-r" style="padding-top: 30px;">
+        <div class="card-faq">
             <details>
                 @yield('faq_semnas_1')
             </details>

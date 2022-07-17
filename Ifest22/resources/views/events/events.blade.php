@@ -16,7 +16,8 @@
             <div class="col" style="padding: 20px 0 20px 0;">
                 <div class="row" align="center" id="eventDescription" style="padding-bottom: 30px;">
                     <div style="padding-bottom: 10px;">
-                        <h1 class="text-title">@yield('event_title')</h1>
+                        <h1 class="title-1 text-title">@yield('event_title')</h1>
+                        <h2 class="title-2">@yield('event_title')</h2>
                     </div>
 
                     <!-- NANTI DI YIELD AJA KLO BUTUH TEMA -->
@@ -28,16 +29,11 @@
                 </div>
                 @yield('event_detail')
             </div>
-
-
-            <!-- <div class="row justify-content-center align-items-center" align="center" id="eventButton" style="padding-top: 30px;padding-bottom: 30px;">
-                @yield('event_button')
-            </div> -->
-
             @yield('event_detail2')
 
             <div data-aos="fade-up" data-aos-duration="1000" class="row justify-content-center align-items-center" align="center" id="competitionCP" style="margin-left: 0; margin-right:0;padding-top: 30px;padding-bottom: 30px;">
-                <h1 class="text-sub-title">Contact Person</h1>
+                <h1 class="title-1 text-sub-title">Contact Person</h1>
+                <h2 class="title-2 text-sub-title">Contact Person</h2>
                 <div class="row-cp">
                     <div class="col-btn-left" style="padding-top: 30px;">
                         <button id="btn-cp1" type="button" class="btn btn-outline-primary ifest-btn-outline-primary-dark-bg" style="width: fit-content;padding:10px 20px 10px 20px" onclick="window.location.href='@yield('cp1_contact')';">
