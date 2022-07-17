@@ -27,13 +27,14 @@
                             <th scope="col">Bukti Pembayaran</th>
                             <th scope="col">Paper Link 1</th>
                             <th scope="col">Paper Link 2</th>
+                            <th scope="col">Status Finalist</th>
                             <th scope="col">Status Konfirmasi</th>
                         </tr>
                     </thead>
                     <tbody>
                         @foreach ($semnasPresenter as $data)
                         <tr>
-                            <form action="{{route('admin-semnas-presenter-change-status-pembayaran')}}" method="post">
+                            <form action="{{route('admin-semnas-presenter-change-status')}}" method="post">
                                 @method('put')
                                 @csrf
                                 <td><input name="semnas_email" id="semnas_email" value="{{ $data->email }}" hidden>{{ $data->email }}</td>
@@ -54,6 +55,21 @@
                                     @else
                                     <a href="{{$data->paper2_link}}">Paper Link 2</a>
                                     @endif
+                                </td>
+                                <td>
+                                    <div class="btn-group">
+                                        <select name="semnas_selected_status" id="semnas_selected_status" style="color:black" onchange="this.form.submit()">
+                                            <option style="color:black" value="2" <?php if ($data->status_selected === '2') {
+                                                                                        echo ('selected');
+                                                                                    } ?>>Confirmed</option>
+                                            <option style="color:black" value="1" <?php if ($data->status_selected === '1') {
+                                                                                        echo ('selected');
+                                                                                    } ?>>Pending</option>
+                                            <option style="color:black" value="0" <?php if ($data->status_selected === '0') {
+                                                                                        echo ('selected');
+                                                                                    } ?>>Declined</option>
+                                        </select>
+                                    </div>
                                 </td>
                                 <td>
                                     <div class="btn-group">

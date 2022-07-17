@@ -18,24 +18,24 @@
 <div class="col-sm-6">
     <div class="card ifest-card-details" style="padding:0;">
         <div class="row" align="center" style="background-color:#291647; margin:0; border-radius:3px 3px 0 0; padding: 5px 0 5px 0">
-            <h2 class="text-details-card-title" style="color:white; padding:0; margin:0">Data Tim</h2>
+            <h2 class="text-details-card-title" style="color:white; padding:0; margin:0">Team Data</h2>
         </div>
         <div class="row" align="left" style="padding:20px">
             <div class="col">
                 <div class="row" style="padding-bottom:7px;">
-                    <h5 class="text-details-card-head">Nama Tim</h5>
+                    <h5 class="text-details-card-head">Team Name</h5>
                     <p class="text-details-card-desc">{{ $techno_ws->team_name }}</p>
                 </div>
                 <div class="row" style="padding-bottom:7px">
-                    <h5 class="text-details-card-head">Email Tim</h5>
+                    <h5 class="text-details-card-head">Team Email</h5>
                     <p class="text-details-card-desc">{{ $techno_ws->email }}</p>
                 </div>
                 <div class="row">
-                    <h5 class="text-details-card-head">Data Ketua Tim</h5>
+                    <h5 class="text-details-card-head">Team Leader Data</h5>
                     <p class="text-details-card-desc">{{ $techno_ws->team_leader }} - {{ $techno_ws->team_leader_institute }}</p>
                 </div>
                 <div class="row">
-                    <h5 class="text-details-card-head">Data Anggota Tim</h5>
+                    <h5 class="text-details-card-head">Team Member Data</h5>
                     <p class="text-details-card-desc">
                         • {{ $techno_ws->team_member_1 }} - {{ $techno_ws->team_member_1_institute }}
                         @if ($techno_ws->team_member_2 !== null)
@@ -54,7 +54,7 @@
 <div class="col-sm-6">
     <div class="card ifest-card-details" style="padding:0;">
         <div class="row" align="center" style="background-color:#291647; margin:0; border-radius:3px 3px 0 0; padding: 5px 0 5px 0">
-            <h2 class="text-details-card-title" style="color:white; padding:0; margin:0">Progress Lomba</h2>
+            <h2 class="text-details-card-title" style="color:white; padding:0; margin:0">Workshop Progress</h2>
         </div>
         <div class="row align-items-center" align="left" style="padding:20px">
             <div class="col-2" style="padding:0 15px 0 8px">
@@ -63,7 +63,7 @@
             <div class="col-6" align="left" style="padding:0 8px 0 15px">
                 <h6 class="text-tickets-head">Team Registration</h6>
                 <!-- BUAT STATUS, CLASS TERGANTUNG STATUS DI DATABASE -->
-                <p class="text-tickets-desc">20-25 Agustus 2022<br>Status : 
+                <p class="text-tickets-desc">24 July - 31 Agustus 2022<br>Status : 
                     <span class="text-tickets-status status-green">
                         Confirmed
                     </span>
@@ -75,8 +75,8 @@
                 <img class="circular-number" src="{{ URL::asset('icon/page-details/circle-2.svg') }}" alt="2">
             </div>
             <div class="col-6" align="left" style="padding:0 8px 0 15px">
-                <h6 class="text-tickets-head">Pengumpulan Ide Bisnis</h6>
-                <p class="text-tickets-desc">26-30 Agustus 2022<br>Status :
+                <h6 class="text-tickets-head">Business Idea Submission</h6>
+                <p class="text-tickets-desc">24 July - 31 Agustus 2022<br>Status :
                 <?php
                     // SET WAKTU LIVE
                     $now = Carbon::now('Asia/Jakarta');
@@ -206,8 +206,8 @@
                 <img class="circular-number" src="{{ URL::asset('icon/page-details/circle-3.svg') }}" alt="3">
             </div>
             <div class="col-6" align="left" style="padding:0 8px 0 15px">
-                <h6 class="text-tickets-head">Finalist Announcement</h6>
-                <p class="text-tickets-desc">9 September 2022
+                <h6 class="text-tickets-head">Selected Team Announcement</h6>
+                <p class="text-tickets-desc">31 August 2022
                     <?php if ($now->greaterThan($techno_ws_announce_date_start)) { ?>     
                     @if ($techno_ws->selected_team === '0')
                         <br>Status : 
@@ -229,7 +229,7 @@
 
                 <div class="row align-items-center" align="left" style="padding:20px">
                     <div class="col-2" style="padding:0 15px 0 8px">
-                        <img class="circular-number" src="{{ URL::asset('icon/page-details/circle-3.svg') }}" alt="3">
+                        <img class="circular-number" src="{{ URL::asset('icon/page-details/circle-4.svg') }}" alt="4">
                     </div>
                     <div class="col-6" align="left" style="padding:0 8px 0 15px">
                         <h6 class="text-tickets-head">Workshop Payment</h6>
@@ -280,10 +280,10 @@
             @if ($techno_ws->status_pembayaran === '2')
                 <div class="row align-items-center" align="left" style="padding:20px">
                     <div class="col-2" style="padding:0 15px 0 8px">
-                        <img class="circular-number" src="{{ URL::asset('icon/page-details/circle-4.svg') }}" alt="4">
+                        <img class="circular-number" src="{{ URL::asset('icon/page-details/circle-5.svg') }}" alt="5">
                     </div>
                     <div class="col-6" align="left" style="padding:0 8px 0 15px">
-                        <h6 class="text-tickets-head">Seminar 1</h6>
+                        <h6 class="text-tickets-head">Seminar & Workshop Day 1</h6>
                         <p class="text-tickets-desc">11 September 2022</p>
                     </div>
                     <?php 
@@ -293,21 +293,20 @@
                                 <a class="ifest-btn-primary-dark-bg-text" href="">Link Zoom</a>
                             </button>
                         </div>
-                    <?php } elseif ($now->lessThan($techno_ws_seminar_1_date_start)){ ?>
+                    <?php } elseif ($now->lessThan($techno_ws_seminar_1_date_start) || $now->greaterThan($techno_ws_seminar_1_date_end)){ ?>
                         <div class="col" align="center" style="padding:0">
                             <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 120px;height: 48px;" disabled>
                                 <a class="ifest-btn-primary-dark-bg-text" href="">Link Zoom</a>
                             </button>
                         </div>
-                    <?php } elseif ($now->greaterThan($techno_ws_seminar_1_date_end)){ ?>
                     <?php } ?>
                 </div>
                 <div class="row align-items-center" align="left" style="padding:20px">
                     <div class="col-2" style="padding:0 15px 0 8px">
-                        <img class="circular-number" src="{{ URL::asset('icon/page-details/circle-4.svg') }}" alt="4">
+                        <img class="circular-number" src="{{ URL::asset('icon/page-details/circle-6.svg') }}" alt="6">
                     </div>
                     <div class="col-6" align="left" style="padding:0 8px 0 15px">
-                        <h6 class="text-tickets-head">Seminar 2</h6>
+                        <h6 class="text-tickets-head">Seminar & Workshop Day 2</h6>
                         <p class="text-tickets-desc">18 September 2022</p>
                     </div>
                     <?php 
@@ -317,24 +316,23 @@
                                 <a class="ifest-btn-primary-dark-bg-text" href="">Link Zoom</a>
                             </button>
                         </div>
-                    <?php } elseif ($now->lessThan($techno_ws_seminar_2_date_start)){ ?>
+                    <?php } elseif ($now->lessThan($techno_ws_seminar_2_date_start) || $now->greaterThan($techno_ws_seminar_2_date_end)){ ?>
                         <div class="col" align="center" style="padding:0">
                             <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 120px;height: 48px;" disabled>
                                 <a class="ifest-btn-primary-dark-bg-text" href="">Link Zoom</a>
                             </button>
                         </div>
-                    <?php } elseif ($now->greaterThan($techno_ws_seminar_2_date_end)){ ?>
                     <?php } ?>
                 </div>
 
                 <?php if($now->greaterThan($techno_ws_pitchdeck_1_date_start)) { ?>
                     <div class="row align-items-center" align="left" style="padding:20px">
                         <div class="col-2" style="padding:0 15px 0 8px">
-                            <img class="circular-number" src="{{ URL::asset('icon/page-details/circle-5.svg') }}" alt="5">
+                            <img class="circular-number" src="{{ URL::asset('icon/page-details/circle-7.svg') }}" alt="7">
                         </div>
                         <div class="col-6" align="left" style="padding:0 8px 0 15px">
-                            <h6 class="text-tickets-head">Pengumpulan Pitchdeck</h6>
-                            <p class="text-tickets-desc">21-25 September 2022<br>Status : 
+                            <h6 class="text-tickets-head">Pitchdeck Submission</h6>
+                            <p class="text-tickets-desc">18 September - 2 October 2022<br>Status : 
                                 @if ($techno_ws->pitcdeck1_link === null)
                                     <span class="text-tickets-status status-red">Unsubmitted</span>
                                 @elseif ($techno_ws->pitcdeck1_link !== null)
@@ -370,22 +368,22 @@
                     <?php if($now->greaterThan($techno_ws_revisi_date_start)) { ?> 
                         <div class="row align-items-center" align="left" style="padding:20px">
                             <div class="col-2" style="padding:0 15px 0 8px">
-                                <img class="circular-number" src="{{ URL::asset('icon/page-details/circle-6.svg') }}" alt="6">
+                                <img class="circular-number" src="{{ URL::asset('icon/page-details/circle-8.svg') }}" alt="8">
                             </div>
                             <div class="col-6" align="left" style="padding:0 8px 0 15px">
-                                <h6 class="text-tickets-head">Masa Revisi Pitchdeck</h6>
-                                <p class="text-tickets-desc">21-25 September 2022</p>
+                                <h6 class="text-tickets-head">Pitchdeck Assesment</h6>
+                                <p class="text-tickets-desc">2 - 9 October 2022</p>
                             </div>
                         </div>
 
                         <?php if($now->greaterThan($techno_ws_pitchdeck_2_date_start)) { ?>
                             <div class="row align-items-center" align="left" style="padding:20px">
                                 <div class="col-2" style="padding:0 15px 0 8px">
-                                    <img class="circular-number" src="{{ URL::asset('icon/page-details/circle-7.svg') }}" alt="7">
+                                    <img class="circular-number" src="{{ URL::asset('icon/page-details/circle-9.svg') }}" alt="9">
                                 </div>
                                 <div class="col-6" align="left" style="padding:0 8px 0 15px">
-                                    <h6 class="text-tickets-head">Pengumpulan Revisi Pitchdeck</h6>
-                                    <p class="text-tickets-desc">30 September 2022<br>Status : 
+                                    <h6 class="text-tickets-head">Final Pitchdeck & Video Submission</h6>
+                                    <p class="text-tickets-desc">9 - 16 October 2022<br>Status : 
                                         @if ($techno_ws->pitcdeck2_link === null)
                                             <span class="text-tickets-status status-red">Unsubmitted</span>
                                         @elseif ($techno_ws->pitcdeck2_link !== null)
@@ -417,6 +415,19 @@
                                     @endif
                                 </div>
                             </div>
+                            <?php if($now->greaterThan($techno_ws_pitchdeck_2_date_end)) { ?>
+                                <div class="row align-items-center" align="left" style="padding:20px">
+                                    <div class="col-2" style="padding:0 15px 0 8px">
+                                        <img class="circular-number" src="{{ URL::asset('icon/page-details/circle-10.svg') }}" alt="10">
+                                    </div>
+                                    <div class="col-6" align="left" style="padding:0 8px 0 15px">
+                                        <h6 class="text-tickets-head">Winner Announcement</h6>
+                                        <p class="text-tickets-desc">30 October 2022</p>
+                                    </div>
+                                </div>
+                            <?php } elseif($now->lessThan($techno_ws_pitchdeck_2_date_end)) {  ?>
+                            <?php } ?>
+
                         <?php } elseif($now->lessThan($techno_ws_pitchdeck_2_date_start)) { ?>
                             <div class="row align-items-center" align="left" style="padding:20px">
                                 <div class="col-2" style="padding:0 15px 0 8px">

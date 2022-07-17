@@ -30,15 +30,15 @@
             <div data-aos="fade-down" data-aos-duration="1000" class="row-img-prize" align="center" id="competitionPrizes" style="padding-top: 30px;padding-bottom: 30px;">
                 <h1 class="text-sub-title">Prizes</h1>
                 <div class="row justify-content-center" style="padding-top: 20px;"">
-                        <div class=" col-2">
-                    <img style="width:100%;height: 160px;" src="{{ URL::asset('icon/trophy/2.png') }}">
-                    <p style="color:white; margin:0">2nd Place</p>
-                    <p style="color:white">@yield('second_prize')</p>
+                    <div class=" col-4">
+                    <img class="img-fluid" style="width:150px;" src="{{ URL::asset('icon/trophy/2.png') }}">
+                    <p id="prizeFont" style="color:white; margin:0">2nd Place</p>
+                    <p id="prizeFont" style="color:white">@yield('second_prize')</p>
                 </div>
-                <div class="col-2">
-                    <img style="width:100%;height: 180px;" src="{{ URL::asset('icon/trophy/1.png') }}">
-                    <p style="color:white; margin:0">1st Place</p>
-                    <p style="color:white;">@yield('first_prize')</p>
+                <div class="col-4">
+                    <img class="img-fluid" style="width:180px;" src="{{ URL::asset('icon/trophy/1.png') }}">
+                    <p id="prizeFont" style="color:white; margin:0">1st Place</p>
+                    <p id="prizeFont" style="color:white;">@yield('first_prize')</p>
                 </div>
                 @yield('third_prize')
             </div>
@@ -58,13 +58,14 @@
     </div>
 
     <!-- FAQ -->
-    <div style="margin-right: 0; margin-left:0;" data-aos="fade-up" data-aos-duration="1000" class="row-faq justify-content-center align-items-center" align="center" id="competitionFAQ" style="padding-top: 30px;padding-bottom: 30px;">
-        <h1 class="text-sub-title">Frequently Asked Question (FAQ)</h1>
+    <div style="margin-top:30px; margin-right: 0; margin-left:0;" data-aos="fade-up" data-aos-duration="1000" class="row-faq justify-content-center align-items-center" align="center" id="competitionFAQ" style="padding-top: 30px;padding-bottom: 30px;">
+        <h1 class="title-1 text-sub-title">Frequently Asked Question (FAQ)</h1>
+        <p class="title-2 text-sub-title" style="font-size:20px;">Frequently Asked Question (FAQ)</p>
         @yield('competition_faq')
     </div>
 
     <!-- Button CP -->
-    <div data-aos="fade-up" data-aos-duration="1000" class="row justify-content-center align-items-center" align="center" id="competitionCP" style="margin-left: 0; margin-right:0; padding-top: 30px;padding-bottom: 30px;">
+    <div data-aos=" fade-up" data-aos-duration="1000" class="row justify-content-center align-items-center" align="center" id="competitionCP" style="margin-left: 0; margin-right:0; padding-top: 30px;padding-bottom: 30px;">
         <h1 class="text-sub-title">Contact Person</h1>
         <div class="row align-items-center">
             <div class="col" style="padding-top: 30px;">

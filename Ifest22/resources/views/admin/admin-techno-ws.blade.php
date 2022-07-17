@@ -30,50 +30,52 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            @foreach ($techno_ws as $data)
-                                <td>{{ $data->email }}</td>
-                                <td>{{ $data->team_name }}</td>
-                                <td>
-                                    {{ $data->team_leader }} - {{ $data->team_leader_institute }} -
-                                    <a href="{{asset('storage/' . $data['team_leader_id_card'])}}"> Id Card</a>
-                                </td>
-                                <td>
-                                    @if ($data->team_member_1 !== null)
-                                        {{ $data->team_member_1 }} - {{ $data->team_member_1_institute }} -
-                                        <a href="{{asset('storage/' . $data['team_member_1_id_card'])}}"> Id Card</a>
-                                    @else
-                                        NULL
-                                    @endif
-                                </td>
-                                <td>
-                                    @if ($data->team_member_2 !== null)
-                                        {{ $data->team_member_2 }} - {{ $data->team_member_2_institute }} -
-                                        <a href="{{asset('storage/' . $data['team_member_2_id_card'])}}"> Id Card</a>
-                                    @else
-                                        NULL
-                                    @endif
-                                </td>
-                                <td><a href="{{asset('storage/' . $data['proof_payment'])}}"> Proof Payment</a></td>
-                                <td>
-                                    <div class="btn-group">
-                                        <!-- <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            Confirmed
-                                        </button>
-                                        <div class="dropdown-menu">
-                                            <a class="dropdown-item" href="#">Action</a>
-                                            <a class="dropdown-item" href="#">Another action</a>
-                                            <a class="dropdown-item" href="#">Something else here</a>
-                                        </div> -->
-                                        <select name="confirm-status" id="confirm-status" style="color:black">
-                                            <option value="Confirmed">Confirmed</option>
-                                            <option value="Pending" active>Pending</option>
-                                            <option value="Declined">Declined</option>
-                                        </select>
-                                    </div>
-                                </td>
-                            @endforeach
-                        </tr>
+                        @foreach ($techno_ws as $data)
+                            <tr>
+                                <form action="{{ route('admin-techno-ws-change-status-pembayaran') }}" method="post">
+                                    @method('put')
+                                    @csrf
+                                    <td><input name="techno_ws_email" id="techno_ws_email" value="{{ $data->email }}" hidden>{{ $data->email }}</td>
+                                    <td>{{ $data->team_name }}</td>
+                                    <td>
+                                        {{ $data->team_leader }} - {{ $data->team_leader_institute }} -
+                                        <a href="{{asset('storage/' . $data['team_leader_id_card'])}}"> Id Card</a>
+                                    </td>
+                                    <td>
+                                        @if ($data->team_member_1 !== null)
+                                            {{ $data->team_member_1 }} - {{ $data->team_member_1_institute }} -
+                                            <a href="{{asset('storage/' . $data['team_member_1_id_card'])}}"> Id Card</a>
+                                        @else
+                                            NULL
+                                        @endif
+                                    </td>
+                                    <td>
+                                        @if ($data->team_member_2 !== null)
+                                            {{ $data->team_member_2 }} - {{ $data->team_member_2_institute }} -
+                                            <a href="{{asset('storage/' . $data['team_member_2_id_card'])}}"> Id Card</a>
+                                        @else
+                                            NULL
+                                        @endif
+                                    </td>
+                                    <td><a href="{{asset('storage/' . $data['proof_payment'])}}"> Proof Payment</a></td>
+                                    <td>
+                                        <div class="btn-group">
+                                            <select name="techno_ws_payment_status" id="techno_ws_payment_status" style="color:black" onchange="this.form.submit()">
+                                                <option style="color:black" value="2" <?php if ($data->status_pembayaran === '2') {
+                                                                                            echo ('selected');
+                                                                                        } ?>>Confirmed</option>
+                                                <option style="color:black" value="1" <?php if ($data->status_pembayaran === '1') {
+                                                                                            echo ('selected');
+                                                                                        } ?>>Pending</option>
+                                                <option style="color:black" value="0" <?php if ($data->status_pembayaran === '0') {
+                                                                                            echo ('selected');
+                                                                                        } ?>>Declined</option>
+                                            </select>
+                                        </div>
+                                    </td>
+                                </form>
+                            </tr>
+                        @endforeach
                     </tbody>
                 </table>
             </div>
@@ -95,49 +97,53 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
                         @foreach ($techno_ws as $data)
-                            <td>{{ $data->team_name }}</td>
-                            <td>{{ $data->team_leader }}</td>
-                            <td>
-                                <div class="btn-group">
-                                    <!-- <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        Confirmed
-                                    </button>
-                                    <div class="dropdown-menu">
-                                        <a class="dropdown-item" href="#">Action</a>
-                                        <a class="dropdown-item" href="#">Another action</a>
-                                        <a class="dropdown-item" href="#">Something else here</a>
-                                    </div> -->
-                                    <select name="confirm-status" id="confirm-status" style="color:black">
-                                        <option value="Participant">Participant</option>
-                                        <option value="Finalist" active>Finalist</option>
-                                    </select>
-                                </div>
-                            </td>
-                            <td>
-                                @if ($data->proposal_link !== null)
-                                    <a href="{{ $data->proposal_link }}">Link Proposal</a>
-                                @else
-                                    NULL
-                                @endif
-                            </td>
-                            <td>
-                                @if ($data->pitcdeck1_link !== null)
-                                    <a href="{{ $data->pitcdeck1_link }}">Link Pitchdeck 1</a>
-                                @else
-                                    NULL
-                                @endif
-                            </td>
-                            <td>
-                                @if ($data->pitcdeck2_link !== null)
-                                    <a href="{{ $data->pitcdeck2_link }}">Link Pitchdeck 2</a>
-                                @else
-                                    NULL
-                                @endif
-                            </td>
+                            <tr>
+                                <form action="{{ route('admin-techno-ws-change-status-tim') }}" method="post">
+                                    @method('put')
+                                    @csrf
+                                    <td hidden><input name="techno_ws_email" id="techno_ws_email" value="{{ $data->email }}" hidden>{{ $data->email }}</td>
+                                    <td>{{ $data->team_name }}</td>
+                                    <td>{{ $data->team_leader }}</td>
+                                    <td>
+                                        <div class="btn-group">
+                                            <select name="techno_ws_selected_status" id="techno_ws_selected_status" style="color:black" onchange="this.form.submit()">
+                                                <option style="color:black" value="2" <?php if ($data->selected_team === '2') {
+                                                                                            echo ('selected');
+                                                                                        } ?>>Selected</option>
+                                                <option style="color:black" value="1" <?php if ($data->selected_team === '1') {
+                                                                                            echo ('selected');
+                                                                                        } ?>>Pending</option>
+                                                <option style="color:black" value="0" <?php if ($data->selected_team === '0') {
+                                                                                            echo ('selected');
+                                                                                        } ?>>Unselected</option>
+                                            </select>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        @if ($data->proposal_link !== null)
+                                            <a href="{{ $data->proposal_link }}">Link Proposal</a>
+                                        @else
+                                            NULL
+                                        @endif
+                                    </td>
+                                    <td>
+                                        @if ($data->pitcdeck1_link !== null)
+                                            <a href="{{ $data->pitcdeck1_link }}">Link Pitchdeck 1</a>
+                                        @else
+                                            NULL
+                                        @endif
+                                    </td>
+                                    <td>
+                                        @if ($data->pitcdeck2_link !== null)
+                                            <a href="{{ $data->pitcdeck2_link }}">Link Pitchdeck 2</a>
+                                        @else
+                                            NULL
+                                        @endif
+                                    </td>
+                                </form>
+                            </tr>
                         @endforeach
-                        </tr>
                     </tbody>
                 </table>
             </div>

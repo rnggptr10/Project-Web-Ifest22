@@ -93,10 +93,10 @@ This competition is held online and is intended for high school / vocational stu
 @section('first_prize', 'Rp.5.000.000')
 @section('second_prize', 'Rp.3.000.000')
 @section('third_prize')
-<div class="col-2">
-    <img style="width:100%;height: 160px;" src="{{ URL::asset('icon/trophy/3.png') }}">
-    <p style="color:white; margin:0">3rd Place</p>
-    <p style="color:white">Rp. 1.000.000</p>
+<div class="col-4">
+    <img class="img-fluid" style="width:150px;" src="{{ URL::asset('icon/trophy/3.png') }}">
+    <p id="prizeFont" style="color:white; margin:0">3rd Place</p>
+    <p id="prizeFont" style="color:white">Rp. 1.000.000</p>
 </div>
 @endsection
 
@@ -108,13 +108,13 @@ This competition is held online and is intended for high school / vocational stu
             <div class="card ifest-photo-card" style="border: 0; width:max-content">
                 <img class="card-img-top" style="width:100%;height:350px;" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg" alt="Card image cap">
                 <div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
-                    <div class="col-7" style="line-height: 5px;">
+                    <div class="col" style="line-height: 5px;">
                         <h5 class="text-photo-card-name">Juri 1</h5>
                         <p class="text-photo-card-position">FullStack</p>
                     </div>
-                    <div class="col-3">
+                    <!-- <div class="col-3">
                         <img class="logo-linkedin" src="{{ URL::asset('icon/linkedin.svg') }}" alt="linkedin">
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
@@ -122,13 +122,13 @@ This competition is held online and is intended for high school / vocational stu
             <div class="card ifest-photo-card" style="border: 0; width:max-content">
                 <img class="card-img-top" style="width:100%;height:350px;" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg" alt="Card image cap">
                 <div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
-                    <div class="col-7" style="line-height: 5px;">
+                    <div class="col" style="line-height: 5px;">
                         <h5 class="text-photo-card-name">Juri 2</h5>
                         <p class="text-photo-card-position">FullStack</p>
                     </div>
-                    <div class="col-3">
+                    <!-- <div class="col-3">
                         <img class="logo-linkedin" src="{{ URL::asset('icon/linkedin.svg') }}" alt="linkedin">
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
@@ -142,11 +142,11 @@ This competition is held online and is intended for high school / vocational stu
             <div class="carousel-item active">
                 <div class="row justify-content-center">
                     <div class="col">
-                        <div class="card ifest-photo-card" style="border: 0;text-align:center; width:350px;">
-                            <img class="card-img-top" style="width:100%;height:350px;" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg" alt="Card image cap">
+                        <div class="size-img-speakers card ifest-photo-card" style="border: 0;text-align:center;">
+                            <img class="card-img-top size-img-top-speakers" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg" alt="Card image cap">
                             <div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
                                 <div class="col-7" style="line-height: 5px;">
-                                    <h5 class="text-photo-card-name">Juri 2</h5>
+                                    <h5 class="text-photo-card-name">Juri 1</h5>
                                     <p class="text-photo-card-position">FullStack</p>
                                 </div>
                                 <div class="col-3">
@@ -160,8 +160,8 @@ This competition is held online and is intended for high school / vocational stu
             <div class="carousel-item">
                 <div class="row justify-content-center">
                     <div class="col">
-                        <div class="card ifest-photo-card" style="border: 0; text-align:center; width:350px;">
-                            <img class="card-img-top" style="width:100%;height:350px;" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg" alt="Card image cap">
+                        <div class="size-img-speakers card ifest-photo-card" style="border: 0; text-align:center;">
+                            <img class="card-img-top size-img-top-speakers" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg" alt="Card image cap">
                             <div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
                                 <div class="col-7" style="line-height: 5px;">
                                     <h5 class="text-photo-card-name">Juri 2</h5>
@@ -226,25 +226,27 @@ This competition is held online and is intended for high school / vocational stu
 @endsection
 
 @section('competition_button')
-<div class="col" data-aos="fade-right" data-aos-duration="1000" style="text-align: right;">
-    <button type="button" class="btn btn-outline-primary ifest-btn-outline-primary-dark-bg" style="width: 147px;height: 48px;">Guidebook</button>
-</div>
-<div class="col" data-aos="fade-left" data-aos-duration="1000" style="text-align: left;">
-    <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 147px;height: 48px;">
-        @guest
-        @if(Route::has('login'))
-        <a class="ifest-btn-primary-dark-bg-text" href="{{route('login')}}">Register Now</a>
-        @endif
-        @else
-        <a class="ifest-btn-primary-dark-bg-text" href="{{route('intention.registration.view')}}">Register Now</a>
-        @endguest
-    </button>
+<div class="row-cp">
+    <div class="col-btn-left" style="padding-top: 30px;" data-aos="fade-right" data-aos-duration="1000">
+        <button type="button" class="btn btn-outline-primary ifest-btn-outline-primary-dark-bg" style="width: 147px;height: 48px;">Guidebook</button>
+    </div>
+    <div class="col-btn-right pad-regist" data-aos="fade-left" data-aos-duration="1000">
+        <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 147px;height: 48px;">
+            @guest
+            @if(Route::has('login'))
+            <a class="ifest-btn-primary-dark-bg-text" href="{{route('login')}}">Register Now</a>
+            @endif
+            @else
+            <a class="ifest-btn-primary-dark-bg-text" href="{{route('intention.registration.view')}}">Register Now</a>
+            @endguest
+        </button>
+    </div>
 </div>
 @endsection
 
 @section('competition_faq')
-<div class="row" style="padding-top: 30px;">
-    <div class="card-faq text-left">
+<div class="row text-left margin-l-r" style="padding-top: 30px;">
+    <div class="card-faq">
         <details>
             <summary class="card-faq-q-text">What type of ID Card is used for the INTENTION 2022 registration ?</summary>
             <p class="card-faq-a-text">Identity card in the form of an active student card uploaded by the team leader on the website.</p>

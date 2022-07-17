@@ -79,6 +79,6 @@ class CtfController extends Controller
             'ctf_status' => '1'
         ]);
 
-        return redirect()->route('home');
+        return redirect()->route('profile');
     }
 }

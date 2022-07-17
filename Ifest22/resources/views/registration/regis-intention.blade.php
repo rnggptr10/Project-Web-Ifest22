@@ -382,8 +382,8 @@
                 </div>
                 <div class="row" style="padding:5px 0 5px 0">
                     <p class="regist-form-text-payment-head">Payment Methods :</p>
-                    <p class="regist-form-text-payment">BRI : 1212434343 a.n. Protprot</p>
-                    <p class="regist-form-text-payment">BNI : 1392832983 a.n. Protprot</p>
+                    <p class="regist-form-text-payment">BRI : 1212434343 a.n. Junet</p>
+                    <p class="regist-form-text-payment">BNI : 1392832983 a.n. Junet</p>
                 </div>
                 <div class="row" style="padding-top:20px">
                     <div class="container-upload dflex">

@@ -25,7 +25,7 @@ Technopreneur is a webinar and workshop that provides training & development fac
 
 <!-- SPEAKERS -->
 @section('techno_speakers_1')
-<img class="card-img-top" style="width:100%;height:350px;" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg" alt="Speakers-1">
+<img class="card-img-top size-img-top-speakers" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg" alt="Speakers-1">
 <div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
     <div class="col-7" style="line-height: 5px;">
         <h5 class="text-photo-card-name">Speaker1</h5>
@@ -38,7 +38,7 @@ Technopreneur is a webinar and workshop that provides training & development fac
 @endsection
 
 @section('techno_speakers_2')
-<img class="card-img-top" style="width:100%;height:350px;" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg" alt="Speakers-1">
+<img class="card-img-top size-img-top-speakers" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg" alt="Speakers-1">
 <div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
     <div class="col-7" style="line-height: 5px;">
         <h5 class="text-photo-card-name">Speaker2</h5>
@@ -52,7 +52,7 @@ Technopreneur is a webinar and workshop that provides training & development fac
 
 <!-- MENTORS -->
 @section('techno_mentor_1')
-<img class="card-img-top" style="width:100%;height:350px;" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg" alt="Speakers-1">
+<img class="card-img-top size-img-top-speakers" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg" alt="Speakers-1">
 <div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
     <div class="col-7" style="line-height: 5px;">
         <h5 class="text-photo-card-name">Mentor3</h5>
@@ -65,7 +65,7 @@ Technopreneur is a webinar and workshop that provides training & development fac
 @endsection
 
 @section('techno_mentor_2')
-<img class="card-img-top" style="width:100%;height:350px;" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg" alt="Speakers-1">
+<img class="card-img-top size-img-top-speakers" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg" alt="Speakers-1">
 <div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
     <div class="col-7" style="line-height: 5px;">
         <h5 class="text-photo-card-name">Mentor4</h5>
@@ -78,7 +78,7 @@ Technopreneur is a webinar and workshop that provides training & development fac
 @endsection
 
 @section('techno_mentor_3')
-<img class="card-img-top" style="width:100%;height:350px;" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg" alt="Speakers-1">
+<img class="card-img-top size-img-top-speakers" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg" alt="Speakers-1">
 <div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
     <div class="col-7" style="line-height: 5px;">
         <h5 class="text-photo-card-name">Mentor5</h5>
@@ -91,7 +91,7 @@ Technopreneur is a webinar and workshop that provides training & development fac
 @endsection
 
 @section('techno_mentor_4')
-<img class="card-img-top" style="width:100%;height:350px;" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg" alt="Speakers-1">
+<img class="card-img-top size-img-top-speakers" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg" alt="Speakers-1">
 <div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
     <div class="col-7" style="line-height: 5px;">
         <h5 class="text-photo-card-name">Mentor6</h5>
@@ -149,26 +149,8 @@ Technopreneur is a webinar and workshop that provides training & development fac
                     </div>
                 </div>
             </div>
-            <!-- <div class="carousel-item">
-                <div class="row justify-content-center">
-                    @yield('techno_speakers_3')
-                    @yield('techno_speakers_4')
-                </div>
-            </div> -->
         </div>
     </div>
-    <!-- <div class="row justify-content-center" style="padding-top: 30px;">
-        <div class="col-1">
-            <a class="carousel-control-prev" href="#technoSpeakers" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#technoSpeakers" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
-        </div>
-    </div> -->
 </div>
 
 <div id="Speaker2" data-aos="fade-down" data-aos-duration="1000" align="center" id="sutSpeakers" style="padding-top: 30px;padding-bottom: 30px;">
@@ -178,7 +160,7 @@ Technopreneur is a webinar and workshop that provides training & development fac
             <div class="carousel-item active">
                 <div class="row justify-content-center">
                     <div class="col">
-                        <div class="card ifest-photo-card" style="border: 0;text-align:center; width:350px;">
+                        <div class="card ifest-photo-card size-img-speakers" style="border: 0;text-align:center;">
                             @yield('techno_speakers_1')
                         </div>
                     </div>
@@ -187,7 +169,7 @@ Technopreneur is a webinar and workshop that provides training & development fac
             <div class="carousel-item">
                 <div class="row justify-content-center">
                     <div class="col">
-                        <div class="card ifest-photo-card" style="border: 0;text-align:center; width:350px;">
+                        <div class="card ifest-photo-card size-img-speakers" style="border: 0;text-align:center;">
                             @yield('techno_speakers_2')
                         </div>
                     </div>
@@ -264,7 +246,7 @@ Technopreneur is a webinar and workshop that provides training & development fac
             <div class="carousel-item active">
                 <div class="row justify-content-center">
                     <div class="col">
-                        <div class="card ifest-photo-card" style="border: 0;text-align:center; width:350px;">
+                        <div class="card ifest-photo-card size-img-speakers" style="border: 0;text-align:center;">
                             @yield('techno_mentor_1')
                         </div>
                     </div>
@@ -273,7 +255,7 @@ Technopreneur is a webinar and workshop that provides training & development fac
             <div class="carousel-item">
                 <div class="row justify-content-center">
                     <div class="col">
-                        <div class="card ifest-photo-card" style="border: 0;text-align:center; width:350px;">
+                        <div class="card ifest-photo-card size-img-speakers" style="border: 0;text-align:center;">
                             @yield('techno_mentor_2')
                         </div>
                     </div>
@@ -282,7 +264,7 @@ Technopreneur is a webinar and workshop that provides training & development fac
             <div class="carousel-item">
                 <div class="row justify-content-center">
                     <div class="col">
-                        <div class="card ifest-photo-card" style="border: 0;text-align:center; width:350px;">
+                        <div class="card ifest-photo-card size-img-speakers" style="border: 0;text-align:center;">
                             @yield('techno_mentor_3')
                         </div>
                     </div>
@@ -291,7 +273,7 @@ Technopreneur is a webinar and workshop that provides training & development fac
             <div class="carousel-item">
                 <div class="row justify-content-center">
                     <div class="col">
-                        <div class="card ifest-photo-card" style="border: 0;text-align:center; width:350px;">
+                        <div class="card ifest-photo-card size-img-speakers" style="border: 0;text-align:center;">
                             @yield('techno_mentor_4')
                         </div>
                     </div>
@@ -314,7 +296,7 @@ Technopreneur is a webinar and workshop that provides training & development fac
 </div>
 
 <div data-aos="fade-up" data-aos-duration="1000" class="row" align="center" id="eventTimeline" style="padding-top: 30px;padding-bottom: 30px;">
-    <h1 class="text-sub-title">Timeline</h1>
+    <h1 class="tm text-sub-title">Timeline</h1>
     <section class="ps-timeline-sec">
         <div class="container">
             <ol class="ps-timeline">
@@ -350,9 +332,9 @@ Technopreneur is a webinar and workshop that provides training & development fac
 
 @section('event_detail2')
 <!-- INI NANTI BISA PAKE LOOPING AJA -->
-<div data-aos="fade-up" data-aos-duration="1000" class="row align-items-center justify-content-between padding-2-box-top" align="left" id="technoCards1" style="padding-top: 30px;">
+<div data-aos="fade-up" data-aos-duration="1000" class="row align-items-center justify-content-center padding-2-box-top" align="left" id="sutCards" style="padding-top: 30px;">
     <div class="col-xs-6 col-lg-6" align="center" style="padding:0">
-        <div class="card" style="border: 0; width:90%" id="cardTimeline">
+        <div class="card size-card" style="border: 0;" id="cardTimeline">
             <div class="row align-items-center justify-content-start" style="padding:15px;">
                 <div class="col-2">
                     <img class="img-fluid events-card-logo" src="{{ URL::asset('icon/platform.png') }}" alt="Platform">
@@ -364,23 +346,35 @@ Technopreneur is a webinar and workshop that provides training & development fac
         </div>
     </div>
     <div class="col-xs-6 col-lg-6" align="center" style="padding:0">
-        <div class="card" style="border: 0; width:90%" id="cardTicket">
+        <div class="card size-card" style="border: 0;" id="cardTicket">
             <div class="row align-items-center" style="padding:15px">
                 <div class="col-2">
                     <img class="img-fluid events-card-logo" src="{{ URL::asset('icon/seminar.png') }}" alt="Seminar">
                 </div>
                 <div class="col-5" style="text-align: left;">
-                    <h5 style="color:black;margin-bottom:0;">Seminar</h5>
-                    <p style="color:black;margin-bottom:0;">Free</p>
+                    <h5 class="title-1" style="color:black;margin-bottom:0;">Seminar</h5>
+                    <p class="title-2" style="color:black;margin:0; font-size:14px;">Seminar</p>
+                    <p class="title-1" style="color:black;margin-bottom:0;">Free</p>
+                    <p class="title-2" style="color:black;margin:0; font-size:12px;">Free</p>
                 </div>
                 <div class="col-5">
                     <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg">
                         @guest
                         @if(Route::has('login'))
-                        <a class="ifest-btn-primary-dark-bg-text" href="{{route('login')}}">Buy Ticket</a>
+                        <a class="title-1 ifest-btn-primary-dark-bg-text" href="{{route('login')}}">
+                            Buy Ticket
+                        </a>
+                        <a class="title-2 ifest-btn-primary-dark-bg-text" href="{{route('login')}}">
+                            <p style="margin: 0; font-size:10px">Buy Ticket</p>
+                        </a>
                         @endif
                         @else
-                        <a class="ifest-btn-primary-dark-bg-text" href="{{route('techoSeminar.registration')}}">Register</a>
+                        <a class="title-1 ifest-btn-primary-dark-bg-text" href="{{route('techoSeminar.registration')}}">
+                            Register
+                        </a>
+                        <a class="title-2 ifest-btn-primary-dark-bg-text" href="{{route('techoSeminar.registration')}}">
+                            <p style="margin: 0; font-size:10px">Register</p>
+                        </a>
                         @endguest
                     </button>
                 </div>
@@ -388,42 +382,54 @@ Technopreneur is a webinar and workshop that provides training & development fac
         </div>
     </div>
 </div>
-<div data-aos="fade-up" data-aos-duration="1000" class="row align-items-center justify-content-between padding-2-box-bottom" align="left" id="technoCards2">
+<div data-aos="fade-up" data-aos-duration="1000" class="row align-items-center justify-content-center padding-2-box-bottom" align="left" id="technoCards2">
     <div class="col-xs-6 col-lg-6" align="center" style="padding:0">
-        <div class="card" style="border: 0; width:90%" id="cardTimeline">
+        <div class="card size-card" style="border: 0;" id="cardTimeline">
             <div class="row align-items-center justify-content-start" style="padding:15px;">
                 <div class="col-2">
                     <img class="img-fluid events-card-logo" src="{{ URL::asset('icon/guidebook.png') }}" alt="Guidebook">
                 </div>
                 <div class="col-5" style="text-align: left;">
-                    <h5 style="color:black;margin-bottom:0;">Workshop Guidebook</h5>
+                    <h5 class="title-1" style="color:black;margin-bottom:0;">Workshop Guidebook</h5>
+                    <p class="title-2" style="color:black;margin:0; font-size:14px;">Workshop Guidebook</p>
                 </div>
                 <div class="col-5">
                     <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg">
-                        <a class="ifest-btn-primary-dark-bg-text" href="">Download</a>
+                        <a class="title-1 ifest-btn-primary-dark-bg-text" href="">Download</a>
+                        <a class="title-2 ifest-btn-primary-dark-bg-text" href="">
+                            <p style="margin: 0; font-size:10px">Download</p>
+                        </a>
                     </button>
                 </div>
             </div>
         </div>
     </div>
     <div class="col-xs-6 col-lg-6" align="center" style="padding:0">
-        <div class="card" style="border: 0; width:90%" id="cardTicket">
+        <div class="card size-card" style="border: 0;" id="cardTicket">
             <div class="row align-items-center" style="padding:15px">
                 <div class="col-2">
                     <img class="img-fluid events-card-logo" src="{{ URL::asset('icon/workshop.png') }}" alt="Workshop">
                 </div>
                 <div class="col-5" style="text-align: left;">
-                    <h5 style="color:black;margin-bottom:0;">Workshop</h5>
-                    <p style="color:black;margin-bottom:0;">Including Seminar</p>
+                    <h5 class="title-1" style="color:black;margin-bottom:0;">Workshop</h5>
+                    <p class="title-2" style="color:black;margin:0; font-size:14px;">Workshop</p>
+                    <p class="title-1" style="color:black;margin-bottom:0;">Including Seminar</p>
+                    <p class="title-2" style="color:black;margin:0; font-size:12px;">Including Seminar</p>
                 </div>
                 <div class="col-5">
                     <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg">
                         @guest
                         @if(Route::has('login'))
-                        <a class="ifest-btn-primary-dark-bg-text" href="{{route('login')}}">Register</a>
+                        <a class="title-1 ifest-btn-primary-dark-bg-text" href="{{route('login')}}">Register</a>
+                        <a class="title-2 ifest-btn-primary-dark-bg-text" href="{{route('login')}}">
+                            <p style="margin: 0; font-size:10px">Register</p>
+                        </a>
                         @endif
                         @else
-                        <a class="ifest-btn-primary-dark-bg-text" href="{{route('technoWorkshop.registration.view')}}">Register</a>
+                        <a class="title-1 ifest-btn-primary-dark-bg-text" href="{{route('technoWorkshop.registration.view')}}">Register</a>
+                        <a class="title-2 ifest-btn-primary-dark-bg-text" href="{{route('technoWorkshop.registration.view')}}">
+                            <p style="margin: 0; font-size:10px">Register</p>
+                        </a>
                         @endguest
                     </button>
                 </div>
@@ -432,8 +438,9 @@ Technopreneur is a webinar and workshop that provides training & development fac
     </div>
 </div>
 <div data-aos="fade-up" data-aos-duration="1000" class="row justify-content-center align-items-center" align="center" id="eventFAQ" style="padding-top: 30px;padding-bottom: 30px;">
-    <h1 class="text-sub-title">Frequently Asked Question (FAQ)</h1>
-    <div class="row" style="padding-top: 30px;">
+    <h1 class="title-1 text-sub-title">Frequently Asked Question (FAQ)</h1>
+    <h2 class="title-2">Frequently Asked Question (FAQ)</h2>
+    <div class="size-card row" style="padding-top: 30px;">
         <div class="card-faq text-left">
             <details>
                 @yield('faq_techno_1')
@@ -462,24 +469,6 @@ Technopreneur is a webinar and workshop that provides training & development fac
     </div>
 </div>
 @endsection
-
-<!-- @section('competition_button')
-<div class="col-2">
-    <button type="button" class="btn btn-outline-primary ifest-btn-outline-primary-dark-bg">Guidebook</button>
-</div>
-<div class="col-2">
-    <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg">
-        @guest
-        @if(Route::has('login'))
-        <a class="ifest-btn-primary-dark-bg-text" href="{{route('login')}}">Register Now</a>
-        @endif
-        @else
-        <a class="ifest-btn-primary-dark-bg-text" href="{{route('intention.registration.view')}}">Register Now</a>
-        @endguest
-    </button>
-</div>
-@endsection -->
-
 @section('cp1_media')
 <img class="logo-whatsapp" src="{{ URL::asset('icon/whatsapp.svg') }}" alt="Whatsapp">
 @endsection

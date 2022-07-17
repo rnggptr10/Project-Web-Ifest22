@@ -18,24 +18,24 @@
 <div class="col-sm-6">
     <div class="card ifest-card-details" style="padding:0;">
         <div class="row" align="center" style="background-color:#291647; margin:0; border-radius:3px 3px 0 0; padding: 5px 0 5px 0">
-            <h2 class="text-details-card-title" style="color:white; padding:0; margin:0">Data Tim</h2>
+            <h2 class="text-details-card-title" style="color:white; padding:0; margin:0">Team Data</h2>
         </div>
         <div class="row" align="left" style="padding:20px">
             <div class="col">
                 <div class="row" style="padding-bottom:7px;">
-                    <h5 class="text-details-card-head">Nama Tim</h5>
+                    <h5 class="text-details-card-head">Team Name</h5>
                     <p class="text-details-card-desc">{{ $intention->team_name }}</p>
                 </div>
                 <div class="row" style="padding-bottom:7px">
-                    <h5 class="text-details-card-head">Email Tim</h5>
+                    <h5 class="text-details-card-head">Team Email</h5>
                     <p class="text-details-card-desc">{{ $intention->email }}</p>
                 </div>
                 <div class="row">
-                    <h5 class="text-details-card-head">Data Ketua Tim</h5>
+                    <h5 class="text-details-card-head">Team Leader Data</h5>
                     <p class="text-details-card-desc">{{ $intention->team_leader }} - {{ $intention->team_leader_institute }}</p>
                 </div>
                 <div class="row">
-                    <h5 class="text-details-card-head">Data Anggota Tim</h5>
+                    <h5 class="text-details-card-head">Team Member Data</h5>
                     <p class="text-details-card-desc">
                         • {{ $intention->team_member_1 }} - {{ $intention->team_member_1_institute }}
                         <br>• {{ $intention->team_member_2 }} - {{ $intention->team_member_2_institute }}
@@ -59,7 +59,7 @@
 <div class="col-sm-6">
     <div class="card ifest-card-details" style="padding:0;">
         <div class="row" align="center" style="background-color:#291647; margin:0; border-radius:3px 3px 0 0; padding: 5px 0 5px 0">
-            <h2 class="text-details-card-title" style="color:white; padding:0; margin:0">Progress Lomba</h2>
+            <h2 class="text-details-card-title" style="color:white; padding:0; margin:0">Competition Progress</h2>
         </div>
         <div class="row align-items-center" align="left" style="padding:20px">
             <div class="col-2" style="padding:0 15px 0 8px">
@@ -81,7 +81,7 @@
 
                     // SET TANGGAL SUBMIT PROPOSAL INTENTION
                     $intention_proposal_date_start = Carbon::create(2022, 7, 15, 7, 00, 00, 'Asia/Jakarta');
-                    $intention_proposal_date_end = Carbon::create(2022, 7, 16, 15, 00, 00, 'Asia/Jakarta');
+                    $intention_proposal_date_end = Carbon::create(2022, 7, 17, 15, 00, 00, 'Asia/Jakarta');
                     $intention_proposal_date_start->toDateTimeString(); 
                     $intention_proposal_date_end->toDateTimeString(); 
 
@@ -90,14 +90,14 @@
                     $intention_finalist_date_start->toDateTimeString(); 
 
                     // SET TANGGAL SUBMIT PRODUCT INTENTION
-                    $intention_product_date_start = Carbon::create(2022, 7, 15, 7, 00, 00, 'Asia/Jakarta');
-                    $intention_product_date_end = Carbon::create(2022, 7, 15, 15, 00, 00, 'Asia/Jakarta');
+                    $intention_product_date_start = Carbon::create(2022, 7, 17, 7, 00, 00, 'Asia/Jakarta');
+                    $intention_product_date_end = Carbon::create(2022, 7, 17, 15, 00, 00, 'Asia/Jakarta');
                     $intention_product_date_start->toDateTimeString(); 
                     $intention_product_date_end->toDateTimeString(); 
 
                     // SET TANGGAL FINAL STAGE
                     $intention_final_date_start = Carbon::create(2022, 7, 15, 7, 00, 00, 'Asia/Jakarta');
-                    $intention_final_date_end = Carbon::create(2022, 7, 15, 14, 00, 00, 'Asia/Jakarta');
+                    $intention_final_date_end = Carbon::create(2022, 7, 16, 14, 00, 00, 'Asia/Jakarta');
                     $intention_final_date_start->toDateTimeString(); 
                     $intention_final_date_end->toDateTimeString(); 
 
@@ -292,6 +292,18 @@
                         </button>
                     </div>
                 </div>
+                <?php if($now->greaterThan($intention_final_date_end)) { ?>
+                    <div class="row align-items-center" align="left" style="padding:20px">
+                        <div class="col-2" style="padding:0 15px 0 8px">
+                            <img class="circular-number" src="{{ URL::asset('icon/page-details/circle-6.svg') }}" alt="6">
+                        </div>
+                        <div class="col-6" align="left" style="padding:0 8px 0 15px">
+                            <h6 class="text-tickets-head">Winner Announcement</h6>
+                            <p class="text-tickets-desc">30 October 2022</p>
+                        </div>
+                    </div>
+                <?php } elseif($now->lessThan($intention_final_date_end)) {  ?>
+                <?php } ?>
 
             @elseif ($intention->status_finalist === '0')
             <div class="row align-items-center" align="left" style="padding:20px">
