@@ -120,13 +120,13 @@ This competition is held online and is intended for high school / vocational stu
 @endsection
 
 @section('competition_button')
-<div class="row-cp" style="margin-left: 0; margin-right:0;">
-    <div class="col-btn-left">
+<div class="row-cp">
+    <div class="col-btn-left" style="padding-top: 30px;">
         <button type="button" class="btn btn-outline-primary ifest-btn-outline-primary-dark-bg">
             <a class="ifest-btn-primary-dark-bg-text" href="">Guidebook</a>
         </button>
     </div>
-    <div class="col-btn-right">
+    <div class="col-btn-right pad-regist">
         <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg">
             @guest
             @if(Route::has('login'))
@@ -141,8 +141,8 @@ This competition is held online and is intended for high school / vocational stu
 @endsection
 
 @section('competition_faq')
-<div class="row-box-question-faq" style="padding-top: 30px;">
-    <div class="card-faq text-left">
+<div class="row text-left margin-l-r" style="padding-top: 30px;">
+    <div class="card-faq">
         <details>
             <summary class="card-faq-q-text">What type of ID Card is used for the CTF 2022 registration ?</summary>
             <p class="card-faq-a-text">Identity card in the form of an active student card uploaded by the team leader on the website.</p>

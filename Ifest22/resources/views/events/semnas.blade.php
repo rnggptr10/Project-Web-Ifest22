@@ -86,7 +86,7 @@ Seminar Nasional is a national seminar that invites experienced speakers in thos
 @section('faq_semnas_2')
 <summary class="card-faq-q-text">What is the order of the registration flow?</summary>
 <p class="card-faq-a-text">Participants : can register until the D day (Public and Students)<br>
-Presenter : send abstract, after abstract is accepted, payment can be made until 22 September 2022
+    Presenter : send abstract, after abstract is accepted, payment can be made until 22 September 2022
 </p>
 @endsection
 
@@ -96,13 +96,13 @@ Presenter : send abstract, after abstract is accepted, payment can be made until
 @endsection
 
 @section('faq_semnas_4')
-<summary class="card-faq-q-text">Can Author  be more than 1 person?</summary>
+<summary class="card-faq-q-text">Can Author be more than 1 person?</summary>
 <p class="card-faq-a-text">Yes, according to the number of the research team</p>
 @endsection
 
 @section('faq_semnas_5')
 <summary class="card-faq-q-text">When is the announcement of acceptance of abstracts?</summary>
-<p class="card-faq-a-text">Announcement of acceptance of abstract on September 10, 2022 VIA  email</p>
+<p class="card-faq-a-text">Announcement of acceptance of abstract on September 10, 2022 VIA email</p>
 @endsection
 
 @section('faq_semnas_6')
@@ -113,7 +113,7 @@ Presenter : send abstract, after abstract is accepted, payment can be made until
 @section('faq_semnas_7')
 <summary class="card-faq-q-text">If the Abstract is accepted, what should be done next?</summary>
 <p class="card-faq-a-text">What you have to do is Upload Full Paper: <br>
-If there are problems, please contact our contact person or email us at :
+    If there are problems, please contact our contact person or email us at :
 </p>
 @endsection
 

@@ -58,13 +58,14 @@
     </div>
 
     <!-- FAQ -->
-    <div style="margin-right: 0; margin-left:0;" data-aos="fade-up" data-aos-duration="1000" class="row-faq justify-content-center align-items-center" align="center" id="competitionFAQ" style="padding-top: 30px;padding-bottom: 30px;">
-        <h1 class="text-sub-title">Frequently Asked Question (FAQ)</h1>
+    <div style="margin-top:30px; margin-right: 0; margin-left:0;" data-aos="fade-up" data-aos-duration="1000" class="row-faq justify-content-center align-items-center" align="center" id="competitionFAQ" style="padding-top: 30px;padding-bottom: 30px;">
+        <h1 class="title-1 text-sub-title">Frequently Asked Question (FAQ)</h1>
+        <p class="title-2 text-sub-title" style="font-size:20px;">Frequently Asked Question (FAQ)</p>
         @yield('competition_faq')
     </div>
 
     <!-- Button CP -->
-    <div data-aos="fade-up" data-aos-duration="1000" class="row justify-content-center align-items-center" align="center" id="competitionCP" style="margin-left: 0; margin-right:0; padding-top: 30px;padding-bottom: 30px;">
+    <div data-aos=" fade-up" data-aos-duration="1000" class="row justify-content-center align-items-center" align="center" id="competitionCP" style="margin-left: 0; margin-right:0; padding-top: 30px;padding-bottom: 30px;">
         <h1 class="text-sub-title">Contact Person</h1>
         <div class="row align-items-center">
             <div class="col" style="padding-top: 30px;">
