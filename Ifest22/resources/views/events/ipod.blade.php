@@ -43,13 +43,13 @@
             <div class="row justify-content-center" style="padding-bottom: 20px;">
                 <div data-aos="fade-up" data-aos-duration="1000">
                     <div class="ipod-box" style="margin-top: 50px; margin-bottom: 30px;">
-                        <p>Podcast</p>
+                        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/1ZsrDL3ENMe3pExT4tGYzD?utm_source=generator&theme=0" style="background: #291647"  width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
                     </div>
                     <div class="ipod-box" style="margin-bottom: 30px;">
-                        <p>Podcast</p>
+                        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/1ZsrDL3ENMe3pExT4tGYzD?utm_source=generator&theme=0" style="background: #291647"  width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
                     </div>
                     <div class="ipod-box" style="margin-bottom: 30px;">
-                        <p>Podcast</p>
+                        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/1ZsrDL3ENMe3pExT4tGYzD?utm_source=generator&theme=0" style="background: #291647"  width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
                     </div>
                 </div>
             </div>

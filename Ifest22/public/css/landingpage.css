@@ -2,7 +2,7 @@
 
 body{
     background: url("/img/haha.jpg");
-    /* background-repeat: no-repeat; */
+    /*   */
     width: 100%;
 }
 
@@ -418,8 +418,6 @@ div.countdown2 p {
     display: inline-block;
     border: 2px solid #ffff;
 }
-
-a.
 
 /* Ket : Setengah Layar */
 @media screen and (max-width: 1167px) {
