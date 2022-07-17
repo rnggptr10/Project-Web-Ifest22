@@ -80,6 +80,8 @@ Route::get('/profil/ticket-details-dac/resubmit-payment', [ProfilController::cla
 Route::patch('/profil/ticket-details-dac/resubmit-payment', [ProfilController::class, 'savePaymentResubmitDac'])->name('dac.resubmit.payment');
 Route::get('/profil/ticket-details-ctf/resubmit-payment', [ProfilController::class, 'paymentResubmitCtf'])->name('ctf.resubmit.payment.view');
 Route::patch('/profil/ticket-details-ctf/resubmit-payment', [ProfilController::class, 'savePaymentResubmitCtf'])->name('ctf.resubmit.payment');
+Route::get('/profil/resubmit-payment-semnas', [ProfilController::class, 'paymentResubmitSemnas'])->name('semnas.resubmit.payment.view');
+Route::patch('/profil/resubmit-payment-semnas', [ProfilController::class, 'savePaymentResubmitSemnas'])->name('semnas.resubmit.payment');
 
 // Route for Event
 Route::get('/seminar-nasional', [SemnasController::class, 'index'])->name('semnas');
@@ -145,8 +147,12 @@ Route::get('/admin/ctf', [AdminController::class, 'dataCtf'])->name('admin-ctf')
 
 // Route for Admin Data Dropdown Change
 Route::put('/admin/seminar-nasional/change-status-payment', [AdminController::class, 'changeSemnasStatusPembayaran'])->name('admin-semnas-change-status-pembayaran');
-Route::put('/admin/seminar-nasional-presenter/change-status-payment', [AdminController::class, 'changeSemnasPresenterStatusPembayaran'])->name('admin-semnas-presenter-change-status-pembayaran');
+Route::put('/admin/seminar-nasional-presenter/change-status-payment', [AdminController::class, 'changeSemnasPresenterStatus'])->name('admin-semnas-presenter-change-status');
 Route::put('/admin/ctf/change-status-payment', [AdminController::class, 'changeCtfStatusPembayaran'])->name('admin-ctf-change-status-pembayaran');
 Route::put('/admin/dac/change-status-payment', [AdminController::class, 'changeDacStatusPembayaran'])->name('admin-dac-change-status-pembayaran');
+Route::put('/admin/dac/change-status-finalist', [AdminController::class, 'changeDacStatusFinalist'])->name('admin-dac-change-status-finalist');
 Route::put('/admin/intention/change-status-payment', [AdminController::class, 'changeIntentionStatusPembayaran'])->name('admin-intention-change-status-pembayaran');
 Route::put('/admin/intention/change-status-finalist', [AdminController::class, 'changeIntentionStatusFinalist'])->name('admin-intention-change-status-finalist');
+Route::put('/admin/techno-workshop/change-status-payment', [AdminController::class, 'changeTechnoWSStatusPembayaran'])->name('admin-techno-ws-change-status-pembayaran');
+Route::put('/admin/techno-workshop/change-status-tim', [AdminController::class, 'changeTechnoWSStatusSelected'])->name('admin-techno-ws-change-status-tim');
+

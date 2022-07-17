@@ -18,24 +18,24 @@
 <div class="col-sm-6">
     <div class="card ifest-card-details" style="padding:0;">
         <div class="row" align="center" style="background-color:#291647; margin:0; border-radius:3px 3px 0 0; padding: 5px 0 5px 0">
-            <h2 class="text-details-card-title" style="color:white; padding:0; margin:0">Data Tim</h2>
+            <h2 class="text-details-card-title" style="color:white; padding:0; margin:0">Team Data</h2>
         </div>
         <div class="row" align="left" style="padding:20px">
             <div class="col">
                 <div class="row" style="padding-bottom:7px;">
-                    <h5 class="text-details-card-head">Nama Tim</h5>
+                    <h5 class="text-details-card-head">Team Name</h5>
                     <p class="text-details-card-desc">{{ $dac->team_name }}</p>
                 </div>
                 <div class="row" style="padding-bottom:7px">
-                    <h5 class="text-details-card-head">Email Tim</h5>
+                    <h5 class="text-details-card-head">Team Email</h5>
                     <p class="text-details-card-desc">{{ $dac->email }}</p>
                 </div>
                 <div class="row">
-                    <h5 class="text-details-card-head">Data Ketua Tim</h5>
+                    <h5 class="text-details-card-head">Team Leader Data</h5>
                     <p class="text-details-card-desc">{{ $dac->team_leader }} - {{ $dac->team_leader_institute }}</p>
                 </div>
                 <div class="row">
-                    <h5 class="text-details-card-head">Data Anggota Tim</h5>
+                    <h5 class="text-details-card-head">Team Member Data</h5>
                     <p class="text-details-card-desc">
                         • {{ $dac->team_member_1 }} - {{ $dac->team_member_1_institute }}
                         <br>• {{ $dac->team_member_2 }} - {{ $dac->team_member_2_institute }}
@@ -55,7 +55,7 @@
 <div class="col-sm-6">
     <div class="card ifest-card-details" style="padding:0;">
         <div class="row" align="center" style="background-color:#291647; margin:0; border-radius:3px 3px 0 0; padding: 5px 0 5px 0">
-            <h2 class="text-details-card-title" style="color:white; padding:0; margin:0">Progress Lomba</h2>
+            <h2 class="text-details-card-title" style="color:white; padding:0; margin:0">Competition Progress</h2>
         </div>
         <div class="row align-items-center" align="left" style="padding:20px">
             <div class="col-2" style="padding:0 15px 0 8px">
@@ -78,7 +78,7 @@
 
                     // SET TANGGAL SUBMIT PAPER DAC
                     $dac_paper_date_start = Carbon::create(2022, 7, 15, 7, 00, 00, 'Asia/Jakarta');
-                    $dac_paper_date_end = Carbon::create(2022, 7, 15, 15, 00, 00, 'Asia/Jakarta');
+                    $dac_paper_date_end = Carbon::create(2022, 7, 17, 15, 00, 00, 'Asia/Jakarta');
                     $dac_paper_date_start->toDateTimeString(); 
                     $dac_paper_date_end->toDateTimeString(); 
 
@@ -88,7 +88,7 @@
 
                     // SET TANGGAL SUBMIT CODE DAC
                     $dac_code_date_start = Carbon::create(2022, 7, 15, 7, 00, 00, 'Asia/Jakarta');
-                    $dac_code_date_end = Carbon::create(2022, 7, 15, 15, 00, 00, 'Asia/Jakarta');
+                    $dac_code_date_end = Carbon::create(2022, 7, 16, 15, 00, 00, 'Asia/Jakarta');
                     $dac_code_date_start->toDateTimeString(); 
                     $dac_code_date_end->toDateTimeString(); 
 
@@ -137,7 +137,7 @@
                 </div>
                 <div class="col-6" align="left" style="padding:0 8px 0 15px">
                     <h6 class="text-tickets-head">Elimination Round</h6>
-                    <p class="text-tickets-desc">5 September - 10 September 2022<br>Status : 
+                    <p class="text-tickets-desc">5 - 10 September 2022<br>Status : 
                     <?php
                         // SET TANGGAL ACARA
                         if ($now->greaterThan($dac_paper_date_start) && $now->lessThan($dac_paper_date_end)) {
@@ -213,7 +213,7 @@
                 </div>
                 <div class="col-6" align="left" style="padding:0 8px 0 15px">
                     <h6 class="text-tickets-head">Finalist Announcement</h6>
-                    <p class="text-tickets-desc">9 September 2022
+                    <p class="text-tickets-desc">20 September 2022
                         <?php if ($now->greaterThan($dac_finalist_date_start)) { ?>
                         <br>Status : 
                         @if ($dac->status_finalist === '0')
@@ -236,7 +236,7 @@
                     </div>
                     <div class="col-6" align="left" style="padding:0 8px 0 15px">
                         <h6 class="text-tickets-head">Source Code Submission</h6>
-                        <p class="text-tickets-desc">1-5 September 2022<br>Status : 
+                        <p class="text-tickets-desc">1 October 2022<br>Status : 
                             @if ($dac->analytics_result === null)
                                 <span class="text-tickets-status status-red">Unsubmitted</span>
                             @elseif ($dac->analytics_result !== null)
@@ -274,7 +274,7 @@
                     </div>
                     <div class="col-6" align="left" style="padding:0 8px 0 15px">
                         <h6 class="text-tickets-head">Final Stage Zoom</h6>
-                        <p class="text-tickets-desc">6 September 2022</p>
+                        <p class="text-tickets-desc">2 October 2022</p>
                     </div>
                     <div class="col-4" align="center" style="padding:0">
                         <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 120px;height: 48px;" <?php 
@@ -290,6 +290,18 @@
                         </button>
                     </div>
                 </div>
+                <?php if($now->greaterThan($dac_final_date_end)) { ?>
+                    <div class="row align-items-center" align="left" style="padding:20px">
+                        <div class="col-2" style="padding:0 15px 0 8px">
+                            <img class="circular-number" src="{{ URL::asset('icon/page-details/circle-6.svg') }}" alt="6">
+                        </div>
+                        <div class="col-6" align="left" style="padding:0 8px 0 15px">
+                            <h6 class="text-tickets-head">Winner Announcement</h6>
+                            <p class="text-tickets-desc">8 October 2022</p>
+                        </div>
+                    </div>
+                <?php } elseif($now->lessThan($dac_final_date_end)) {  ?>
+                <?php } ?>
 
             @elseif ($dac->status_finalist === '0')
             <div class="row align-items-center" align="left" style="padding:20px">

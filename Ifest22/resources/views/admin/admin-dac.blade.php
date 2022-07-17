@@ -38,35 +38,35 @@
                                     @csrf
                                     <td><input name="dac_email" id="dac_email" value="{{ $data->email }}" hidden>{{ $data->email }}</td>
                                     <td>{{ $data->team_name }}</td>
-                                <td>
-                                    {{ $data->team_leader }} - {{ $data->team_leader_institute }} -
-                                    <a href="{{asset('storage/' . $data['team_leader_id_card'])}}"> Id Card</a>
-                                </td>
-                                <td>
-                                    @if ($data->team_member_1 !== null)
-                                        {{ $data->team_member_1 }} - {{ $data->team_member_1_institute }} -
-                                        <a href="{{asset('storage/' . $data['team_member_1_id_card'])}}"> Id Card</a>
-                                    @else
-                                        NULL
-                                    @endif
-                                </td>
-                                <td>
-                                    @if ($data->team_member_2 !== null)
-                                        {{ $data->team_member_2 }} - {{ $data->team_member_2_institute }} -
-                                        <a href="{{asset('storage/' . $data['team_member_2_id_card'])}}"> Id Card</a>
-                                    @else
-                                        NULL
-                                    @endif
-                                </td>
-                                <td>
-                                    @if ($data->team_member_3 !== null)
-                                        {{ $data->team_member_3 }} - {{ $data->team_member_3_institute }} -
-                                        <a href="{{asset('storage/' . $data['team_member_3_id_card'])}}"> Id Card</a>
-                                    @else
-                                        NULL
-                                    @endif
-                                </td>
-                                <td><a href="{{asset('storage/' . $data['proof_payment'])}}"> Proof Payment</a></td>
+                                    <td>
+                                        {{ $data->team_leader }} - {{ $data->team_leader_institute }} -
+                                        <a href="{{asset('storage/' . $data['team_leader_id_card'])}}"> Id Card</a>
+                                    </td>
+                                    <td>
+                                        @if ($data->team_member_1 !== null)
+                                            {{ $data->team_member_1 }} - {{ $data->team_member_1_institute }} -
+                                            <a href="{{asset('storage/' . $data['team_member_1_id_card'])}}"> Id Card</a>
+                                        @else
+                                            NULL
+                                        @endif
+                                    </td>
+                                    <td>
+                                        @if ($data->team_member_2 !== null)
+                                            {{ $data->team_member_2 }} - {{ $data->team_member_2_institute }} -
+                                            <a href="{{asset('storage/' . $data['team_member_2_id_card'])}}"> Id Card</a>
+                                        @else
+                                            NULL
+                                        @endif
+                                    </td>
+                                    <td>
+                                        @if ($data->team_member_3 !== null)
+                                            {{ $data->team_member_3 }} - {{ $data->team_member_3_institute }} -
+                                            <a href="{{asset('storage/' . $data['team_member_3_id_card'])}}"> Id Card</a>
+                                        @else
+                                            NULL
+                                        @endif
+                                    </td>
+                                    <td><a href="{{asset('storage/' . $data['proof_payment'])}}"> Proof Payment</a></td>
                                     <td>
                                         <div class="btn-group">
                                             <!-- <select name="startup-status" id="startup-status" style="color:black">
@@ -82,24 +82,6 @@
                                         </div>
                                     </td>
                                 </form>
-                                {{-- <td>{{ $data->email }}</td>
-                               
-                                <td>
-                                    <div class="btn-group">
-                                        <!-- <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            Confirmed
-                                        </button>
-                                        <div class="dropdown-menu">
-                                            <a class="dropdown-item" href="#">Action</a>
-                                            <a class="dropdown-item" href="#">Another action</a>
-                                            <a class="dropdown-item" href="#">Something else here</a>
-                                        </div> -->
-                                        <select name="confirm-status" id="confirm-status" style="color:black">
-                                            <option value="Participant">Participant</option>
-                                            <option value="Finalist" active>Finalist</option>
-                                        </select>
-                                    </div>
-                                </td> --}}
                             </tr>
                             @endforeach
                     </tbody>
@@ -122,42 +104,44 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
                         @foreach ($dac as $data)
-                            <td>{{ $data->team_name }}</td>
-                            <td>{{ $data->team_leader }}</td>
-                            <td>
-                                <div class="btn-group">
-                                    <!-- <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        Confirmed
-                                    </button>
-                                    <div class="dropdown-menu">
-                                        <a class="dropdown-item" href="#">Action</a>
-                                        <a class="dropdown-item" href="#">Another action</a>
-                                        <a class="dropdown-item" href="#">Something else here</a>
-                                    </div> -->
-                                    <select name="confirm-status" id="confirm-status" style="color:black">
-                                        <option value="Finalis">Finalis</option>
-                                        <option value="Peserta" active>Peserta</option>
-                                    </select>
-                                </div>
-                            </td>
-                            <td>
-                                @if ($data->paper_link !== null)
-                                    <a href="">{{ $data->paper_link }}</a>
-                                @else
-                                    NULL
-                                @endif
-                            </td>
-                            <td>
-                                @if ($data->analytics_result !== null)
-                                    <a href="">{{ $data->analytics_result }}</a>
-                                @else
-                                    NULL
-                                @endif
-                            </td>
+                            <tr>
+                                <form action="{{ route('admin-dac-change-status-finalist') }}" method="post">
+                                    @method('put')
+                                    @csrf
+                                    <td hidden><input name="dac_email" id="dac_email" value="{{ $data->email }}" hidden>{{ $data->email }}</td>
+                                    <td>{{ $data->team_name }}</td>
+                                    <td>{{ $data->team_leader }}</td>
+                                    <td>
+                                        <div class="btn-group">
+                                            <!-- <select name="startup-status" id="startup-status" style="color:black">
+                                                <option value="Confirmed">Confirmed</option>
+                                                <option value="Pending">Pending</option>
+                                                <option value="Declined">Declined</option>
+                                            </select> -->
+                                            <select name="dac_finalist_status" id="dac_finalist_status" style="color:black" onchange="this.form.submit()">
+                                                <option style="color:black" value="1" <?php if($data->status_finalist === '1') {echo('selected');}?>>Finalist</option>
+                                                <option style="color:black" value="0" <?php if($data->status_finalist === '0') {echo('selected');}?>>Participant</option>
+                                            </select>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        @if ($data->paper_link !== null)
+                                            <a href="">{{ $data->paper_link }}</a>
+                                        @else
+                                            NULL
+                                        @endif
+                                    </td>
+                                    <td>
+                                        @if ($data->analytics_result !== null)
+                                            <a href="">{{ $data->analytics_result }}</a>
+                                        @else
+                                            NULL
+                                        @endif
+                                    </td>
+                                </form>
+                            </tr>
                         @endforeach
-                        </tr>
                     </tbody>
                 </table>
             </div>

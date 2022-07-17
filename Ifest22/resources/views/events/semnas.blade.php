@@ -77,35 +77,44 @@ Seminar Nasional is a national seminar that invites experienced speakers in thos
 
 <!-- FAQ -->
 @section('faq_semnas_1')
-<summary>Pertanyaan 1</summary>
-<p>Lorem Ipsum is simply dummy text of the printing and typesetting
-    industry.
-    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
-    unknown</p>
+<summary class="card-faq-q-text">What is the delivery method for abstracts?</summary>
+<p class="card-faq-a-text">Abstracts can be uploaded via the following :
+    <br>Download the Abstract template at :
+</p>
 @endsection
 
 @section('faq_semnas_2')
-<summary>Pertanyaan 2</summary>
-<p>Lorem Ipsum is simply dummy text of the printing and typesetting
-    industry.
-    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
-    unknown</p>
+<summary class="card-faq-q-text">What is the order of the registration flow?</summary>
+<p class="card-faq-a-text">Participants : can register until the D day (Public and Students)<br>
+Presenter : send abstract, after abstract is accepted, payment can be made until 22 September 2022
+</p>
 @endsection
 
 @section('faq_semnas_3')
-<summary>Pertanyaan 3</summary>
-<p>Lorem Ipsum is simply dummy text of the printing and typesetting
-    industry.
-    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
-    unknown</p>
+<summary class="card-faq-q-text">Where can the seminar registration form be obtained?</summary>
+<p class="card-faq-a-text">The seminar registration form can be accessed via :</p>
 @endsection
 
 @section('faq_semnas_4')
-<summary>Pertanyaan 4</summary>
-<p>Lorem Ipsum is simply dummy text of the printing and typesetting
-    industry.
-    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
-    unknown</p>
+<summary class="card-faq-q-text">Can Author  be more than 1 person?</summary>
+<p class="card-faq-a-text">Yes, according to the number of the research team</p>
+@endsection
+
+@section('faq_semnas_5')
+<summary class="card-faq-q-text">When is the announcement of acceptance of abstracts?</summary>
+<p class="card-faq-a-text">Announcement of acceptance of abstract on September 10, 2022 VIA  email</p>
+@endsection
+
+@section('faq_semnas_6')
+<summary class="card-faq-q-text">Seminars and Oral Presentations conducted via what?</summary>
+<p class="card-faq-a-text">Via Zoom, the zoom link will be emailed before the seminar takes place</p>
+@endsection
+
+@section('faq_semnas_7')
+<summary class="card-faq-q-text">If the Abstract is accepted, what should be done next?</summary>
+<p class="card-faq-a-text">What you have to do is Upload Full Paper: <br>
+If there are problems, please contact our contact person or email us at :
+</p>
 @endsection
 
 <!-- TEMPLATE BODY -->
@@ -208,7 +217,7 @@ Seminar Nasional is a national seminar that invites experienced speakers in thos
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="sr-only">Previous</span>
             </a>
-            <a class="carousel-control-next" href="#sutSpeakers2Day2" role="button" data-slide="next">
+            <a class="carousel-control-next" href="#semnasSpeakers2" role="button" data-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="sr-only">Next</span>
             </a>
@@ -225,7 +234,7 @@ Seminar Nasional is a national seminar that invites experienced speakers in thos
                     <img class="img-fluid events-card-logo" src="{{ URL::asset('icon/date.png') }}" alt="Date">
                 </div>
                 <div class="col-10" style="text-align: left;">
-                    <h5 style="color:black;">22 Agustus 2022</h5>
+                    <h5 style="color:black;">8 - 9 October 2022</h5>
                 </div>
             </div>
         </div>
@@ -331,6 +340,21 @@ Seminar Nasional is a national seminar that invites experienced speakers in thos
         <div class="card-faq text-left">
             <details>
                 @yield('faq_semnas_4')
+            </details>
+        </div>
+        <div class="card-faq text-left">
+            <details>
+                @yield('faq_semnas_5')
+            </details>
+        </div>
+        <div class="card-faq text-left">
+            <details>
+                @yield('faq_semnas_6')
+            </details>
+        </div>
+        <div class="card-faq text-left">
+            <details>
+                @yield('faq_semnas_7')
             </details>
         </div>
     </div>

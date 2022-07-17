@@ -94,6 +94,6 @@ class DataAnalysisController extends Controller
             'da_status' => '1'
         ]);
 
-        return redirect()->route('home');
+        return redirect()->route('profile');
     }
 }

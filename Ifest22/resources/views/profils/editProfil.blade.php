@@ -60,9 +60,9 @@
                         </div>
                         @enderror
                     </div>
-                    <div class="row mb-2 data-item" style="margin-top:10px">
-                        <!-- <button class="form-control ifest-form" href="">{{ __('Change Password?') }}</button> -->
-                        <a href="{{route('profile.edit.password')}}">Change Password ?</a>
+                    <div class="row mb-2 data-item" style="margin-top:20px">
+                        <label for="password" class="d-flex justify-content-center align-items-center placeholder text-form button-upload text-button-upload"><a class="text-button-href" href="{{route('profile.edit.password')}}">{{ __('Change Password?') }}</a></label>
+                        <input id="password" name="password"  class="form-control ifest-form" style="color:transparent" hidden>
                     </div>
 
                     <div class="form-group form-action-d-flex mb-3 justify-content-center" style="margin-top:20px">
