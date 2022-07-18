@@ -18,7 +18,7 @@ This competition is held online and is intended for high school / vocational stu
 @endsection
 
 @section('competition_flashback')
-<div class="row align-items-center carousel slide" align="center" id="dacFlashback1" data-ride="carousel" style="padding-top: 30px;padding-bottom: 30px;">
+<!-- <div class="row align-items-center carousel slide" align="center" id="dacFlashback1" data-ride="carousel" style="padding-top: 30px;padding-bottom: 30px;">
     <div class="carousel-inner">
         <div class="carousel-item active">
             <div class="row justify-content-center">
@@ -40,7 +40,7 @@ This competition is held online and is intended for high school / vocational stu
                 </div>
             </div>
             <!-- <img class="arrow-switch" src="{{ URL::asset('icon/circle-arrow-left.svg') }}" alt="arrow-left">
-            <img class="arrow-switch" src="{{ URL::asset('icon/circle-arrow-right.svg') }}" alt="arrow-right"> -->
+            <img class="arrow-switch" src="{{ URL::asset('icon/circle-arrow-right.svg') }}" alt="arrow-right">
         </div>
     </div>
     <a class="carousel-control-prev" href="#dacFlashback1" role="button" data-slide="prev">
@@ -51,9 +51,9 @@ This competition is held online and is intended for high school / vocational stu
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="sr-only">Next</span>
     </a>
-</div>
+</div> -->
 
-<div class="row align-items-center carousel slide" align="center" id="dacFlashback2" data-ride="carousel" style="padding-top: 30px;padding-bottom: 30px;">
+<!-- <div class="row align-items-center carousel slide" align="center" id="dacFlashback2" data-ride="carousel" style="padding-top: 30px;padding-bottom: 30px;">
     <div class="carousel-inner">
         <div class="carousel-item active">
             <div class="row justify-content-center">
@@ -69,18 +69,18 @@ This competition is held online and is intended for high school / vocational stu
                 </div>
             </div>
             <!-- <img class="arrow-switch" src="{{ URL::asset('icon/circle-arrow-left.svg') }}" alt="arrow-left">
-            <img class="arrow-switch" src="{{ URL::asset('icon/circle-arrow-right.svg') }}" alt="arrow-right"> -->
-        </div>
-    </div>
-    <a class="carousel-control-prev" href="#dacFlashback2" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-    </a>
-    <a class="carousel-control-next" href="#dacFlashback2" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-    </a>
+            <img class="arrow-switch" src="{{ URL::asset('icon/circle-arrow-right.svg') }}" alt="arrow-right"> 
 </div>
+</div>
+<a class="carousel-control-prev" href="#dacFlashback2" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+</a>
+<a class="carousel-control-next" href="#dacFlashback2" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+</a>
+</div> -->
 @endsection
 
 @section('first_prize', 'Rp 2.000.000')
@@ -90,27 +90,31 @@ This competition is held online and is intended for high school / vocational stu
 <section class="ps-timeline-sec">
     <div class="container">
         <ol class="ps-timeline">
-            <li>
+            <li style="padding-top: 10px;">
                 <div class="ps-bot">
-                    <p>Timeline 1</p>
+                    <p>24 July 2022</p>
+                    <p>Open Registration</p>
                 </div>
                 <span class="ps-sp"></span>
             </li>
-            <li>
+            <li style="padding-top:10px;">
                 <div class="ps-bot">
-                    <p>Timeline 2</p>
+                    <p>20 August 2022</p>
+                    <p>Close Registration</p>
                 </div>
                 <span class="ps-sp"></span>
             </li>
-            <li>
+            <li style="padding-top:10px;">
                 <div class="ps-bot">
-                    <p>Timeline 3</p>
+                    <p>10 September 2022</p>
+                    <p>Online Competition</p>
                 </div>
                 <span class="ps-sp"></span>
             </li>
-            <li>
+            <li style="padding-top:10px;">
                 <div class="ps-bot">
-                    <p>Timeline 4</p>
+                    <p>17 September 2022</p>
+                    <p>Winner Announcement </p>
                 </div>
                 <span class="ps-sp"></span>
             </li>

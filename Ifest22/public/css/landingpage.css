@@ -202,8 +202,8 @@ div.countdown2 p {
 }
 
 .tablink {
-    background-color: #c0bebe;
-    color: white;
+    background-color: #e7ecf1;
+    color: black;
     border: none;
     outline: none;
     cursor: pointer;
@@ -215,6 +215,7 @@ div.countdown2 p {
 
 .tablink:hover {
     background-color: #291647;
+    color: white;
 }
 
 /* Style the tab content (and add height:100% for full page content) */
@@ -268,10 +269,9 @@ div.countdown2 p {
     padding: 5px;
     border-radius: 10px 10px 0px 0px;
     /* background: #291647; */
-    background-color: #c4c4c4;
+    background-color: #E6EEF7;
     color: white;
     margin: 100px auto 0;
-    /* code ini akan membuat div berada di tengah atas */
 }
 
 .isian-tab2 {
@@ -280,8 +280,7 @@ div.countdown2 p {
     width: 80%;
     padding: 10px;
     border-radius: 10px 10px 0px 0px;
-    /* background: #291647; */
-    background-color: #c4c4c4;
+    background-color: #E6EEF7;
     color: white;
     margin: 100px auto 0;
 }
@@ -290,8 +289,7 @@ div.countdown2 p {
     width: 80%;
     height: 300px;
     padding: 20px;
-    /* background: #291647; */
-    background-color: #c4c4c4;
+    background-color: #E6EEF7;
     color: white;
     margin: 0px auto;
 }
@@ -299,7 +297,6 @@ div.countdown2 p {
 .box-speaker {
     width: 80%;
     padding: 20px;
-    /* background: #291647; */
     background-color: #291647;
     color: white;
     margin: 0px auto 50px auto;
@@ -326,10 +323,11 @@ div.countdown2 p {
     height: 500px;
 }
 
-/* #Home {background-color: red;}
-#News {background-color: green;}
-#Contact {background-color: blue;}
-#About {background-color: orange;} */
+/* Warna tulisan */
+#Home h3, #Home p, #News h3, #News p, #Contact h3, #Contact p,
+#About h3, #About p, #About2 h3, #About2 p{
+    color: #000;
+}
 
 /* Medpart - Sponsored */
 .medpart-box,
