@@ -42,7 +42,7 @@
                         </button>
                     </div>
                     <div class="col-btn-right" style="padding-top: 30px;">
-                        <button id="btn-cp2" type="button" class="btn btn-outline-primary ifest-btn-outline-primary-dark-bg" style="width: fit-content;padding:10px 20px 10px 20px" onclick="window.location.href='https://wa.me/@yield('cp2_contact')';">
+                        <button id="btn-cp2" type="button" class="btn btn-outline-primary ifest-btn-outline-primary-dark-bg" style="width: fit-content;padding:10px 20px 10px 20px" onclick="window.location.href='@yield('cp2_contact')';">
                             @yield('cp2_media')
                             <span style="margin-left:10px">@yield('cp2_name')</span>
                         </button>
