@@ -351,7 +351,7 @@
             <div class="col" style="padding:0">
                 <p class="regist-form-notes-text">
                     Notes :<br>
-                    • ID Card hanya dapat berbentuk KTP, KTM, SIM, dan Paspor.<br>
+                    • ID Card berupa kartu pelajar untuk siswa SMA/SMK atau KTM untuk mahasiswa.<br>
                     • Scan/Foto ID Card harus jelas.<br>
                     • Apabila tidak memenuhi 2 poin diatas, maka pendaftaran ditolak.
                 </p>
@@ -382,7 +382,7 @@
                 </div>
                 <div class="row" style="padding:5px 0 5px 0">
                     <p class="regist-form-text-payment-head">Payment Methods :</p>
-                    <p class="regist-form-text-payment">BRI : 1212434343 a.n. Junet</p>
+                    <p class="regist-form-text-payment">BCA : 5725562729 a.n. Sarah Khairunnisa Prihantoro</p>
                     <p class="regist-form-text-payment">BNI : 1392832983 a.n. Junet</p>
                 </div>
                 <div class="row" style="padding-top:20px">

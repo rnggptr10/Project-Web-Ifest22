@@ -180,7 +180,7 @@
                             <a class="tombol footer-img-2" href=""><i class="fab fa-facebook-f"></i></a>
                             <a class="tombol footer-img-2" href=""><i class="fab fa-tiktok"></i></a>
                             <a class="tombol footer-img-2" href=""><i class="fab fa-instagram"></i></a>
-                            <a class="tombol footer-img-2" href=""><i class="fab fa-linkedin"></i></a>
+                            <a class="tombol footer-img-2" href="https://www.linkedin.com/company/ifest-unpad"><i class="fab fa-linkedin"></i></a>
 
                             <!-- <img class="footer-img-2" src="{{asset('img/organizer/himatif.png')}}" alt="logo unpad" width="50px" height="50px"> -->
                             <!-- <img class="footer-img-2" src="{{asset('img/organizer/unpad.png')}}" alt="logo himatif" width="50px" height="50px">
