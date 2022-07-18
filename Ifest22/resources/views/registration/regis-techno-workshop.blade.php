@@ -210,9 +210,8 @@
             <div class="col" style="padding:0">
                 <p class="regist-form-notes-text">
                     Notes :<br>
-                    • ID Card hanya dapat berbentuk KTP, KTM, SIM, dan Paspor.<br>
-                    • Scan/Foto ID Card harus jelas.<br>
-                    • Apabila tidak memenuhi 2 poin diatas, maka pendaftaran ditolak.
+                    • ID Card hanya dapat berbentuk KTM/KRS/Kartu Pelajar.<br>
+                    • Scan/Foto ID Card harus jelas.
                 </p>
             </div>
         </div>

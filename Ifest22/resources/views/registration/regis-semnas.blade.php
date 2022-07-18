@@ -36,16 +36,15 @@
                                         <h6 class="regist-text-subhead">Registration Payment</h6>
                                     </div>
                                     <div class="row">
-                                        <div class="col">
+                                        <div class="col" style="padding:10px 0 0 0">
                                             <div class="row" style="padding:0 0 5px 0">
-                                                <p class="regist-form-text-payment-head">Amount to pay :</p>
-                                                <p class="regist-form-text-price">Student : Rp.40000</p>
-                                                <p class="regist-form-text-price">Public : Rp.45000</p>
+                                                <p class="regist-form-text-payment-head" style="margin:0">Amount to pay :</p>
+                                                <p class="regist-form-text-price" style="margin:0">Student : Rp.40000</p>
+                                                <p class="regist-form-text-price" style="margin:0">Public : Rp.45000</p>
                                             </div>
                                             <div class="row" style="padding:5px 0 5px 0">
-                                                <p class="regist-form-text-payment-head">Payment Methods :</p>
-                                                <p class="regist-form-text-payment">BRI : 1212434343 a.n. Junet</p>
-                                                <p class="regist-form-text-payment">BNI : 1392832983 a.n. Junet</p>
+                                                <p class="regist-form-text-payment-head" style="margin:0">Payment Methods :</p>
+                                                <p class="regist-form-text-payment">• BCA : 5725562729 a.n. Sarah Khairunnisa Prihantoro</p>
                                             </div>
                                             <div class="row" style="padding-top:20px">
                                                 <div class="container-upload dflex">

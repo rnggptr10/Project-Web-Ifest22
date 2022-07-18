@@ -256,9 +256,14 @@
             <div class="col" style="padding:0">
                 <p class="regist-form-notes-text">
                     Notes :<br>
+<<<<<<< HEAD
                     • ID Card berupa kartu pelajar untuk siswa SMA/SMK atau KTM untuk mahasiswa.<br>
+=======
+                    • ID Card hanya dapat berbentuk KTM/KRS/Kartu Pelajar.<br>
+                    • Kartu Pelajar untuk peserta siswa SMA/SMK.<br>
+                    • KTM/KRS untuk peserta mahasiswa.<br>
+>>>>>>> bccced6c0165fc9dcdb1a87886d07c54723d072e
                     • Scan/Foto ID Card harus jelas.<br>
-                    • Apabila tidak memenuhi 2 poin diatas, maka pendaftaran ditolak.
                 </p>
             </div>
         </div>
@@ -282,15 +287,20 @@
             <h6 class="regist-text-subhead">Registration Payment</h6>
         </div>
         <div class="row">
-            <div class="col">
+            <div class="col" style="padding:10px 0 0 0">
                 <div class="row" style="padding:0 0 5px 0">
-                    <p class="regist-form-text-payment-head">Amount to pay :</p>
+                    <p class="regist-form-text-payment-head" style="margin:0">Amount to pay :</p>
                     <p class="regist-form-text-price">Rp.100000</p>
                 </div>
                 <div class="row" style="padding:5px 0 5px 0">
+<<<<<<< HEAD
                     <p class="regist-form-text-payment-head">Payment Methods :</p>
                     <p class="regist-form-text-payment">BCA : 5725562729 a.n. Sarah Khairunnisa Prihantoro<br>
                         BNI : 1392832983 a.n. Junet</p>
+=======
+                    <p class="regist-form-text-payment-head" style="margin:0">Payment Methods :</p>
+                    <p class="regist-form-text-payment">• BCA : 5725562729 a.n. Sarah Khairunnisa Prihantoro</p>
+>>>>>>> bccced6c0165fc9dcdb1a87886d07c54723d072e
                 </div>
                 <div class="row" style="padding-top:20px">
                     <div class="container-upload dflex">

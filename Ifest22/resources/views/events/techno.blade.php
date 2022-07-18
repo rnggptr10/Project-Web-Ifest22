@@ -300,27 +300,52 @@ Technopreneur is a webinar and workshop that provides training & development fac
     <section class="ps-timeline-sec">
         <div class="container">
             <ol class="ps-timeline">
-                <li>
+                <li style="width: 14.2%; padding-top:10px;">
                     <div class="ps-bot">
-                        <p>Timeline 1</p>
+                        <p style="font-size:12px;">24 July - 31 August 2022</p>
+                        <p style="font-size:14px;">Registration</p>
                     </div>
                     <span class="ps-sp"></span>
                 </li>
-                <li>
+                <li style="width: 14.2%; padding-top:10px;">
                     <div class="ps-bot">
-                        <p>Timeline 2</p>
+                        <p style="font-size:12px;">11 September 2022</p>
+                        <p style="font-size:14px;">Seminar and Workshop Day 1</p>
                     </div>
                     <span class="ps-sp"></span>
                 </li>
-                <li>
+                <li style="width: 14.2%; padding-top:10px;">
                     <div class="ps-bot">
-                        <p>Timeline 3</p>
+                        <p style="font-size:12px;">18 September 2022</p>
+                        <p style="font-size:14px;">Seminar and Workshop Day 2</p>
                     </div>
                     <span class="ps-sp"></span>
                 </li>
-                <li>
+                <li style="width: 14.2%; padding-top:10px;">
                     <div class="ps-bot">
-                        <p>Timeline 4</p>
+                        <p style="font-size:12px;">18 September - 2 October 2022</p>
+                        <p style="font-size:14px;">Pitchdeck making</p>
+                    </div>
+                    <span class=" ps-sp"></span>
+                </li>
+                <li style="width: 14.2%; padding-top:10px;">
+                    <div class="ps-bot">
+                        <p style="font-size:12px;">2 - 9 October 2022</p>
+                        <p style="font-size:14px;">Assesment Stage 1</p>
+                    </div>
+                    <span class="ps-sp"></span>
+                </li>
+                <li style="width: 14.2%; padding-top:10px;">
+                    <div class="ps-bot">
+                        <p style="font-size:12px;">9 - 16 October 2022</p>
+                        <p style="font-size:14px;">Pitchdeck Presentation Video Creation</p>
+                    </div>
+                    <span class="ps-sp"></span>
+                </li>
+                <li style="width: 14.2%; padding-top:10px;">
+                    <div class="ps-bot">
+                        <p style="font-size:12px;">16 - 25 October 2022</p>
+                        <p style="font-size:14px;">Assesment Stage 2</p>
                     </div>
                     <span class="ps-sp"></span>
                 </li>
