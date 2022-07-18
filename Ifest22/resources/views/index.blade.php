@@ -75,13 +75,6 @@
             <div class="col-sm-4">
                 <div class="conference-btn2">
                     <button class="btn btn-outline-primary ifest-btn-outline-primary-light-bg col-md-5 float-right mt-3 mt-sm-0 fw-bold" id="conference-btn-responsive"><a style="color:#fff;" class="ifest-btn-outline-primary-light-bg-text" href="{{route('register')}}">Register</a></button>
-
-                    <!-- <button class="register">
-                            <a href="{{ route('semnas') }}">Register</a>
-                        </button> -->
-                    <!-- <button class="details">
-                            <a href="{{ route('semnas') }}">Details</a>
-                        </button> -->
                     <button class="btn btn-outline-primary ifest-btn-outline-primary-light-bg col-md-5 float-right mt-3 mt-sm-0 fw-bold" id="conference-btn-responsive2"><a style="color:#fff;" class="ifest-btn-outline-primary-light-bg-text" href="{{route('register')}}">Details</a></button>
 
                 </div>
@@ -99,21 +92,6 @@
         <button class="tablink" onclick="openPage('About2', 'AwardingNight-speakers', this, '#291647')">Awarding Night</button>
     </div>
     <div class="isian-tab2">
-        <!-- <div class="sa">
-            <div class="card-faq text-left">
-                <details>
-                    <summary>Our Events</summary>
-                    <!-- <a href="{{ route('startup') }}" class="burger-details" style="padding-left: 15px;">Startup Talk</a>
-                    <a href="{{ route('semnas') }}" class="burger-details" style="padding-left: 15px;">Seminar Nasional</a>
-                    <a href="{{ route('techno') }}" class="burger-details" style="padding-left: 15px;">Technopreneur</a> -->
-        <!-- <a href="#" onclick="openPage('Home','StartupTalk-speakers' , this, '#291647')">Startup Talk</a>
-                    <a href="#" onclick="openPage('News', 'Technopreneur-speakers', this, '#291647')">Technopreneur</a>
-                    <a href="#" onclick="openPage('Contact','ITComp-speakers', this, '#291647')">IT Competition</a>
-                    <a href="#" onclick="openPage('About', 'Semnas-speakers', this, '#291647')">Seminar Nasional</a>
-                    <a href="#" onclick="openPage('About2', 'AwardingNight-speakers', this, '#291647')">Awarding Night</a> -->
-        <!-- </details>
-            </div> -->
-        <!-- </div> -->
         <ul class="menu" style="margin-bottom: 0;">
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle left-nav" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -125,7 +103,6 @@
                     <a class="item-dropmenu" style="padding: 0.25rem 1rem;" href="#" onclick="openPage('Contact','ITComp-speakers', this, '#291647')">IT Competition</a>
                     <a class="item-dropmenu" style="padding: 0.25rem 1rem;" href="#" onclick="openPage('About', 'Semnas-speakers', this, '#291647')">Seminar Nasional</a>
                     <a class="item-dropmenu" style="padding: 0.25rem 1rem;" href="#" onclick="openPage('About2', 'AwardingNight-speakers', this, '#291647')">Awarding Night</a>
-
                 </div>
             </li>
         </ul>
@@ -264,30 +241,30 @@
         <div id="ITComp-speakers" class="carousel-pembicara slide">
             <div class="ITComp-details">
                 <div class="ITComp-button" class="tabcontent">
-                    <a href="{{ route('ctf') }}" >
-                    <div class="ITComp-info" align="center">
-                        <h2>CTF</h2>
-                        <p>Capture The Flag</p>
-                    </div>
+                    <a href="{{ route('ctf') }}">
+                        <div class="ITComp-info" align="center">
+                            <h2>CTF</h2>
+                            <p>Capture The Flag</p>
+                        </div>
                     </a>
                 </div>
                 <div class="ITComp-button" class="tabcontent">
-                    <a href="{{ route('da') }}" >
-                    <div class="ITComp-info" align="center">
-                        <h2>DAC</h2>
-                        <p>Data Analysis Competition</p>
-                    </div>
+                    <a href="{{ route('da') }}">
+                        <div class="ITComp-info" align="center">
+                            <h2>DAC</h2>
+                            <p>Data Analysis Competition</p>
+                        </div>
                     </a>
                 </div>
                 <div class="ITComp-button" class="tabcontent">
-                    <a href="{{ route('intention') }}" >
-                    <div class="ITComp-info" align="center">
-                        <h2>Intention</h2>
-                        <p>Innovative Technology Competition</p>
-                    </div>
+                    <a href="{{ route('intention') }}">
+                        <div class="ITComp-info" align="center">
+                            <h2>Intention</h2>
+                            <p>Innovative Technology Competition</p>
+                        </div>
                     </a>
-                </div>   
-            </div> 
+                </div>
+            </div>
         </div>
         <div id="Semnas-speakers" class="carousel-pembicara slide" data-ride="carousel">
             <div class="carousel-inner" class="tabcontent">

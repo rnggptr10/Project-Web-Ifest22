@@ -228,27 +228,45 @@ This competition is held online and is intended for high school / vocational stu
 <section class="ps-timeline-sec">
     <div class="container">
         <ol class="ps-timeline">
-            <li>
+            <li style="padding-top:10px; width:16%;">
                 <div class="ps-bot">
-                    <p>Timeline 1</p>
+                    <p style="font-size:12px;">24 July - 20 August 2022</p>
+                    <p style="font-size:14px;">Registration</p>
                 </div>
                 <span class="ps-sp"></span>
             </li>
-            <li>
+            <li style="padding-top:10px; width:16%;">
                 <div class="ps-bot">
-                    <p>Timeline 2</p>
+                    <p style="font-size:12px;">27 August - 5 September 2022</p>
+                    <p style="font-size:14px;">Proposal and Video Submission</p>
                 </div>
                 <span class="ps-sp"></span>
             </li>
-            <li>
+            <li style="padding-top:10px; width:16%;">
                 <div class="ps-bot">
-                    <p>Timeline 3</p>
+                    <p style="font-size:12px;">9 September 2022</p>
+                    <p style="font-size:14px;">Finalist Announcement</p>
                 </div>
                 <span class="ps-sp"></span>
             </li>
-            <li>
+            <li style="padding-top:10px; width:16%;">
                 <div class="ps-bot">
-                    <p>Timeline 4</p>
+                    <p style="font-size:12px;">10 September - 18 October 2022</p>
+                    <p style="font-size:14px;">Final Product Submission</p>
+                </div>
+                <span class="ps-sp"></span>
+            </li>
+            <li style="padding-top:10px; width:16%;">
+                <div class="ps-bot">
+                    <p style="font-size:12px;">22 October 2022</p>
+                    <p style="font-size:14px;">Final Product Presentation</p>
+                </div>
+                <span class="ps-sp"></span>
+            </li>
+            <li style="padding-top:10px; width:16%;">
+                <div class="ps-bot">
+                    <p style="font-size:12px;">30 October 2022</p>
+                    <p style="font-size:14px;">Winner Announcement</p>
                 </div>
                 <span class="ps-sp"></span>
             </li>

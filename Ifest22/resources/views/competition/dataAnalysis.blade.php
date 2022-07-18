@@ -227,27 +227,38 @@ Data Analysis Competition (DAC) is a national-scale competition organized by Him
 <section class="ps-timeline-sec">
     <div class="container">
         <ol class="ps-timeline">
-            <li>
+            <li style="width: 20%; padding-top:10px;">
                 <div class="ps-bot">
-                    <p>Timeline 1</p>
+                    <p style="font-size:12px;">24 July - 20 August 2022</p>
+                    <p style="font-size:14px;">Registration</p>
                 </div>
                 <span class="ps-sp"></span>
             </li>
-            <li>
+            <li style="width: 20%; padding-top:10px;">
                 <div class="ps-bot">
-                    <p>Timeline 2</p>
+                    <p style="font-size:12px;">5-10 September 2022</p>
+                    <p style="font-size:14px;">Elimination Round</p>
                 </div>
                 <span class="ps-sp"></span>
             </li>
-            <li>
+            <li style="width: 20%; padding-top:10px;">
                 <div class="ps-bot">
-                    <p>Timeline 3</p>
+                    <p style="font-size:12px;">20 September 2022</p>
+                    <p style="font-size:14px;">Finalist Announcement</p>
+                </div>
+                <span class=" ps-sp"></span>
+            </li>
+            <li style="width: 20%; padding-top:10px;">
+                <div class="ps-bot">
+                    <p style="font-size:12px;">1-2 October 2022</p>
+                    <p style="font-size:14px;">Final Round</p>
                 </div>
                 <span class="ps-sp"></span>
             </li>
-            <li>
+            <li style="width: 20%; padding-top:10px;">
                 <div class="ps-bot">
-                    <p>Timeline 4</p>
+                    <p style="font-size:12px;">8 October 2022</p>
+                    <p style="font-size:14px;">Winner Announcement</p>
                 </div>
                 <span class="ps-sp"></span>
             </li>
