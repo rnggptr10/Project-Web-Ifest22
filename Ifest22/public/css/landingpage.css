@@ -551,3 +551,22 @@ div.countdown2 p {
         font-size: 12px;
     }
 }
+
+/* ========= */
+/* Responsif */
+/* ========= */
+
+/* Mobile L */
+@media screen and (max-width: 320px) {
+    .content-main{
+        margin-top: 50px;
+    }    
+}
+
+/* Tablet */
+@media screen and (max-width:768px) {
+    .content-main{
+        margin-top: 20px;
+    }    
+
+}

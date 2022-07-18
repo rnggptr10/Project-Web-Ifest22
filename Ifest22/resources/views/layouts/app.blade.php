@@ -111,14 +111,9 @@
                         <button class="button-login"><a href="{{route('login')}}" style="color: #1c1c1c; text-decoration:none;">Login</a></button>
                         @endif
                         @else
-                        <a class="nav-link dropdown-toggle right-nav" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: #ffff;">
+                        <a class="font-nm nav-link dropdown-toggle right-nav" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: #ffff;">
                             {{ Auth::user()->name }}
                         </a>
-                        <!-- <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: #1c1c1c;">
-                            <a class="dropdown-item" href="{{route('profile')}}" style="color: #8267B4;">Profile</a>
-                            <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();" style=" color: #8267B4;">Logout</a>
-                        </div> -->
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: #1c1c1c;">
                             <a class="dropdown-item" href="{{route('profile')}}" style="color: #8267B4;">Profile</a>
                             @if (Auth::user()->is_admin === '1')
@@ -136,7 +131,7 @@
                 </ul>
             </div>
         </header>
-        <main style="padding-top: 10px;">
+        <main>
             @yield('content')
         </main>
         <footer class="footer_ bd-grid">
