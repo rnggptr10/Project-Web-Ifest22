@@ -120,7 +120,7 @@ Seminar Nasional is a national seminar that invites experienced speakers in thos
 <!-- TEMPLATE BODY -->
 @section('event_detail')
 <div id="Speaker1" data-aos="fade-down" data-aos-duration="1000" align="center" style="padding-top: 30px;padding-bottom: 30px;">
-    <h1 class="text-event-sub-title">Our Workshop Mentors</h1>
+    <h1 class="text-event-sub-title">Our Seminar Speakers</h1>
     <div id="semnasSpeakers" class="row justify-content-center carousel slide" data-ride="carousel" style="padding-top: 30px;">
         <div class="carousel-inner">
             <div class="carousel-item active">
@@ -262,9 +262,9 @@ Seminar Nasional is a national seminar that invites experienced speakers in thos
                         @endif
                         @else
                         <a class="ifest-btn-primary-dark-bg-text" href="{{route('semnas.registration.view')}}">Register Now</a>
-                        <a class="ifest-btn-primary-dark-bg-text" href="{{route('semnas.registration.view')}}">
+                        <!-- <a class="ifest-btn-primary-dark-bg-text" href="{{route('semnas.registration.view')}}">
                             <p style="margin: 0; font-size:10px">Register Now</p>
-                        </a>
+                        </a> -->
                         @endguest
                     </button>
                 </div>
@@ -308,9 +308,9 @@ Seminar Nasional is a national seminar that invites experienced speakers in thos
                         @endif
                         @else
                         <a class="ifest-btn-primary-dark-bg-text" href="{{route('semnas.presenter.registration.view')}}">Register Now</a>
-                        <a class="ifest-btn-primary-dark-bg-text" href="{{route('semnas.presenter.registration.view')}}">
+                        <!-- <a class="ifest-btn-primary-dark-bg-text" href="{{route('semnas.presenter.registration.view')}}">
                             <p style="margin: 0; font-size:10px">Register Now</p>
-                        </a>
+                        </a> -->
                         @endguest
                     </button>
                 </div>

@@ -10,18 +10,24 @@
 
 @section('competition_webtitle', 'INTENTION')
 
-@section('competition_title', 'Innovative Technology Competition (INTENTION)')
+@section('competition_title')
+<div class="col-3" align="center">
+    <img class="img-fluid" style="width:200px;" src="{{ URL::asset('img/competition/logo/int.png') }}">
+</div>
+<div class="col-8">
+    <p class="title-competition" style="margin:0; margin-top:10px">Innovative Technology Competition (INTENTION)</p>
+</div>
+@endsection
 
 @section('competition_theme')
 <div style="padding-top: 10px;padding-bottom: 10px;">
-    <h2 class="text-theme">"Reigniting and Developing Innovative Ideas to Face Rapidly Changing Technology"</h2>
+    <h2 class="text-theme" style="margin:0">"Reigniting and Developing Innovative Ideas to Face Rapidly Changing Technology"</h2>
 </div>
 @endsection
 
 @section('competition_desc')
 Innovative Technology Competition (INTENTION) is a national-scale competition organized by Himatif FMIPA Unpad as part of the Informatics Festival (IFest) 2022. INTENTION is a competition to turn innovative ideas into useful applications or websites.
 This competition is held online and is intended for high school / vocational students or active S1/D4/D3 students as evidenced by a student card. Participants in this competition are a team of 3-5 people. In addition, this competition is divided into two rounds, namely the preliminary round and the final round. With this theme, we hope that participants will be able to create applications that can be a trigger to reignite the spirit of innovation which is much needed to face the ever-changing technological trends.
-
 @endsection
 
 @section('competition_flashback')
@@ -30,24 +36,22 @@ This competition is held online and is intended for high school / vocational stu
         <div class="carousel-item active">
             <div class="row justify-content-center">
                 <div class="col-4" align="center" style="padding-right: 25px;">
-                    <img class="photo-flashback" src="https://cdn6.dissolve.com/p/D1061_185_320/D1061_185_320_1200.jpg">
+                    <img class="photo-flashback" src="{{ URL::asset('img/competition/flashback/int1.jpg') }}" alt="flashback">
                 </div>
                 <div class="col-4" align="center" style="padding-left: 25px;">
-                    <img class="photo-flashback" src="https://cdn6.dissolve.com/p/D1061_185_320/D1061_185_320_1200.jpg">
+                    <img class="photo-flashback" src="{{ URL::asset('img/competition/flashback/int2.png') }}" alt="flashback">
                 </div>
             </div>
         </div>
         <div class="carousel-item">
             <div class="row justify-content-center">
                 <div class="col-4" align="center" style="padding-right: 25px;">
-                    <img style="width:352px" src="https://cdn6.dissolve.com/p/D1061_185_320/D1061_185_320_1200.jpg">
+                    <img class="photo-flashback" src="{{ URL::asset('img/competition/flashback/int3.png') }}" alt="flashback">
                 </div>
                 <div class="col-4" align="center" style="padding-left: 25px;">
-                    <img style="width:352px" src="https://cdn6.dissolve.com/p/D1061_185_320/D1061_185_320_1200.jpg">
+                    <img class="photo-flashback" src="{{ URL::asset('img/competition/flashback/int4.png') }}" alt="flashback">
                 </div>
             </div>
-            <!-- <img class="arrow-switch" src="{{ URL::asset('icon/circle-arrow-left.svg') }}" alt="arrow-left">
-            <img class="arrow-switch" src="{{ URL::asset('icon/circle-arrow-right.svg') }}" alt="arrow-right"> -->
         </div>
     </div>
     <a class="carousel-control-prev" href="#dacFlashback1" role="button" data-slide="prev">
@@ -65,18 +69,30 @@ This competition is held online and is intended for high school / vocational stu
         <div class="carousel-item active">
             <div class="row justify-content-center">
                 <div class="col">
-                    <img class="photo-flashback" src="https://cdn6.dissolve.com/p/D1061_185_320/D1061_185_320_1200.jpg">
+                    <img class="photo-flashback" src="{{ URL::asset('img/competition/flashback/int1.jpg') }}" alt="flashback">
                 </div>
             </div>
         </div>
         <div class="carousel-item">
             <div class="row justify-content-center">
                 <div class="col">
-                    <img style="width:352px" src="https://cdn6.dissolve.com/p/D1061_185_320/D1061_185_320_1200.jpg">
+                    <img class="photo-flashback" src="{{ URL::asset('img/competition/flashback/int2.png') }}" alt="flashback">
                 </div>
             </div>
-            <!-- <img class="arrow-switch" src="{{ URL::asset('icon/circle-arrow-left.svg') }}" alt="arrow-left">
-            <img class="arrow-switch" src="{{ URL::asset('icon/circle-arrow-right.svg') }}" alt="arrow-right"> -->
+        </div>
+        <div class="carousel-item">
+            <div class="row justify-content-center">
+                <div class="col">
+                    <img class="photo-flashback" src="{{ URL::asset('img/competition/flashback/int3.png') }}" alt="flashback">
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="row justify-content-center">
+                <div class="col">
+                    <img class="photo-flashback" src="{{ URL::asset('img/competition/flashback/int4.png') }}" alt="flashback">
+                </div>
+            </div>
         </div>
     </div>
     <a class="carousel-control-prev" href="#dacFlashback2" role="button" data-slide="prev">
@@ -90,13 +106,37 @@ This competition is held online and is intended for high school / vocational stu
 </div>
 @endsection
 
-@section('first_prize', 'Rp.5.000.000')
-@section('second_prize', 'Rp.3.000.000')
-@section('third_prize')
-<div class="col-4">
-    <img class="img-fluid" style="width:150px;" src="{{ URL::asset('icon/trophy/3.png') }}">
-    <p id="prizeFont" style="color:white; margin:0">3rd Place</p>
-    <p id="prizeFont" style="color:white">Rp. 1.000.000</p>
+@section('competition_prizes')
+<div data-aos="fade-down" data-aos-duration="1000" class="row-img-prize" align="center" id="competitionPrizes" style="padding-top: 30px;padding-bottom: 30px;">
+    <h1 class="text-sub-title">Prizes</h1>
+    <div class="row justify-content-center" style="padding-top: 20px;"">
+        <div class=" col-4">
+            <img class="img-fluid" style="width:180px;" src="{{ URL::asset('img/competition/trophy/INTENTION/2.png') }}">
+            <div class="col-8">
+                <p class="text-desc">+ Rp2.000.000 Dewacloud Credit for each team member</p>
+            </div>
+        </div>
+        <div class="col-4">
+            <img class="img-fluid" style="width:220px;" src="{{ URL::asset('img/competition/trophy/INTENTION/1.png') }}">
+            <div class="col-8">
+                <p class="text-desc">+ Rp3.000.000 Dewacloud Credit for each team member</p>
+            </div>
+        </div>
+        <div class="col-4">
+            <img class="img-fluid" style="width:180px;" src="{{ URL::asset('img/competition/trophy/INTENTION/3.png') }}">
+            <div class="col-8">
+                <p class="text-desc">+ Rp1.000.000 Dewacloud Credit for each team member</p>
+            </div>
+        </div>
+    </div>
+    <div class="row justify-content-center" style="padding-top:30px">
+        <div class="col-6">
+            <p class="text-desc">
+                • All participants will get an E-Certificate
+                <br>• Participants who pass the preliminary round will get a Free Pass for the 2022 National Seminar
+            </p>
+        </div>
+    </div>
 </div>
 @endsection
 
@@ -109,12 +149,10 @@ This competition is held online and is intended for high school / vocational stu
                 <img class="card-img-top" style="width:100%;height:350px;" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg" alt="Card image cap">
                 <div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
                     <div class="col" style="line-height: 5px;">
-                        <h5 class="text-photo-card-name">Juri 1</h5>
-                        <p class="text-photo-card-position">FullStack</p>
+                        <h5 class="text-photo-card-name">To Be Announced Soon!</h5>
+                        <!-- <h5 class="text-photo-card-name">Juri 1</h5>
+                        <p class="text-photo-card-position">FullStack</p> -->
                     </div>
-                    <!-- <div class="col-3">
-                        <img class="logo-linkedin" src="{{ URL::asset('icon/linkedin.svg') }}" alt="linkedin">
-                    </div> -->
                 </div>
             </div>
         </div>
@@ -123,12 +161,10 @@ This competition is held online and is intended for high school / vocational stu
                 <img class="card-img-top" style="width:100%;height:350px;" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg" alt="Card image cap">
                 <div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
                     <div class="col" style="line-height: 5px;">
-                        <h5 class="text-photo-card-name">Juri 2</h5>
-                        <p class="text-photo-card-position">FullStack</p>
+                    <h5 class="text-photo-card-name">To Be Announced Soon!</h5>
+                        <!-- <h5 class="text-photo-card-name">Juri 2</h5>
+                        <p class="text-photo-card-position">FullStack</p> -->
                     </div>
-                    <!-- <div class="col-3">
-                        <img class="logo-linkedin" src="{{ URL::asset('icon/linkedin.svg') }}" alt="linkedin">
-                    </div> -->
                 </div>
             </div>
         </div>
@@ -145,12 +181,10 @@ This competition is held online and is intended for high school / vocational stu
                         <div class="size-img-speakers card ifest-photo-card" style="border: 0;text-align:center;">
                             <img class="card-img-top size-img-top-speakers" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg" alt="Card image cap">
                             <div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
-                                <div class="col-7" style="line-height: 5px;">
-                                    <h5 class="text-photo-card-name">Juri 1</h5>
-                                    <p class="text-photo-card-position">FullStack</p>
-                                </div>
-                                <div class="col-3">
-                                    <img class="logo-linkedin" src="{{ URL::asset('icon/linkedin.svg') }}" alt="linkedin">
+                                <div class="col" style="line-height: 5px;">
+                                    <h5 class="text-photo-card-name">To Be Announced Soon!</h5>
+                                    <!-- <h5 class="text-photo-card-name">Juri 1</h5>
+                                    <p class="text-photo-card-position">FullStack</p> -->
                                 </div>
                             </div>
                         </div>
@@ -163,12 +197,10 @@ This competition is held online and is intended for high school / vocational stu
                         <div class="size-img-speakers card ifest-photo-card" style="border: 0; text-align:center;">
                             <img class="card-img-top size-img-top-speakers" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg" alt="Card image cap">
                             <div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
-                                <div class="col-7" style="line-height: 5px;">
-                                    <h5 class="text-photo-card-name">Juri 2</h5>
-                                    <p class="text-photo-card-position">FullStack</p>
-                                </div>
-                                <div class="col-3">
-                                    <img class="logo-linkedin" src="{{ URL::asset('icon/linkedin.svg') }}" alt="linkedin">
+                                <div class="col" style="line-height: 5px;">
+                                    <h5 class="text-photo-card-name">To Be Announced Soon!</h5>
+                                    <!-- <h5 class="text-photo-card-name">Juri 2</h5>
+                                    <p class="text-photo-card-position">FullStack</p> -->
                                 </div>
                             </div>
                         </div>
@@ -227,7 +259,7 @@ This competition is held online and is intended for high school / vocational stu
 
 @section('competition_button')
 <div class="row-cp">
-    <div class="col-btn-left" style="padding-top: 30px;" data-aos="fade-right" data-aos-duration="1000">
+    <div class="col-btn-left pad-regist" style="padding-top: 30px;" data-aos="fade-right" data-aos-duration="1000">
         <button type="button" class="btn btn-outline-primary ifest-btn-outline-primary-dark-bg" style="width: 147px;height: 48px;">Guidebook</button>
     </div>
     <div class="col-btn-right pad-regist" data-aos="fade-left" data-aos-duration="1000">

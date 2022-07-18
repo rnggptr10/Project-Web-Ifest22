@@ -10,7 +10,14 @@
 
 @section('competition_webtitle', 'Data Analysis Competition')
 
-@section('competition_title', 'Data Analysis Competition')
+@section('competition_title')
+<div class="col-3" align="center">
+    <img class="img-fluid" style="width:200px;" src="{{ URL::asset('img/competition/logo/dac.png') }}">
+</div>
+<div class="col-6">
+    <p class="title-competition" style="margin:0; ">Data Analysis Competition</p>
+</div>
+@endsection
 
 @section('competition_theme')
 <div style="padding-top: 10px;padding-bottom: 10px;">
@@ -20,7 +27,13 @@
 
 @section('competition_desc')
 Data Analysis Competition (DAC) is a national-scale competition organized by Himatif FMIPA Unpad as part of the Informatics Festival (IFest) 2022. Data Analysis Competition is a competition to analyze data to obtain useful information and support decision-making. The purpose of this activity is to encourage millennials to have good analytical skills to solve various problems in the digital era. This online competition is intended for high school / vocational school students or active S1/D4/D3 students as evidenced by a student card. Participants in this competition are a team of 3-4 people. In addition, this competition is held in two rounds, namely the preliminary round and the final round. We choose this theme because after the pandemic, digital transformation experienced an extraordinary acceleration, this was evidenced by the lifestyle or activities of people who switched from offline to online. Therefore, the importance of data management at this time is the key to success in facing future challenges.
+@endsection
 
+@section('competition_collab')
+<div data-aos="fade-down" data-aos-duration="1000" class="row-img-prize justify-content-center" align="center" id="competitionPrizes" style="padding-bottom: 50px;">
+    <h1 class="text-sub-title" style="font-size:24px">In Collaboration with</h1>
+    <img class="img-fluid" style="width:200px;" src="{{ URL::asset('img/logo/sponsor/collab_cda.jpg') }}">
+</div>
 @endsection
 
 @section('competition_flashback')
@@ -29,20 +42,20 @@ Data Analysis Competition (DAC) is a national-scale competition organized by Him
         <div class="carousel-item active">
             <div class="row justify-content-center">
                 <div class="col-4" align="center" style="padding-right: 25px;">
-                    <img class="photo-flashback" src="https://cdn6.dissolve.com/p/D1061_185_320/D1061_185_320_1200.jpg">
+                    <img class="photo-flashback" src="{{ URL::asset('img/competition/flashback/dac1.jpg') }}">
                 </div>
                 <div class="col-4" align="center" style="padding-left: 25px;">
-                    <img class="photo-flashback" src="https://cdn6.dissolve.com/p/D1061_185_320/D1061_185_320_1200.jpg">
+                    <img class="photo-flashback" src="{{ URL::asset('img/competition/flashback/dac2.png') }}">
                 </div>
             </div>
         </div>
         <div class="carousel-item">
             <div class="row justify-content-center">
                 <div class="col-4" align="center" style="padding-right: 25px;">
-                    <img style="width:352px" src="https://cdn6.dissolve.com/p/D1061_185_320/D1061_185_320_1200.jpg">
+                    <img style="width:352px" src="{{ URL::asset('img/competition/flashback/dac3.png') }}">
                 </div>
                 <div class="col-4" align="center" style="padding-left: 25px;">
-                    <img style="width:352px" src="https://cdn6.dissolve.com/p/D1061_185_320/D1061_185_320_1200.jpg">
+                    <img style="width:352px" src="{{ URL::asset('img/competition/flashback/dac4.png') }}">
                 </div>
             </div>
             <!-- <img class="arrow-switch" src="{{ URL::asset('icon/circle-arrow-left.svg') }}" alt="arrow-left">
@@ -64,18 +77,30 @@ Data Analysis Competition (DAC) is a national-scale competition organized by Him
         <div class="carousel-item active">
             <div class="row justify-content-center">
                 <div class="col">
-                    <img class="photo-flashback" src="https://cdn6.dissolve.com/p/D1061_185_320/D1061_185_320_1200.jpg">
+                    <img class="photo-flashback" src="{{ URL::asset('img/competition/flashback/dac1.jpg') }}">
                 </div>
             </div>
         </div>
         <div class="carousel-item">
             <div class="row justify-content-center">
                 <div class="col">
-                    <img style="width:352px" src="https://cdn6.dissolve.com/p/D1061_185_320/D1061_185_320_1200.jpg">
+                    <img style="width:352px" src="{{ URL::asset('img/competition/flashback/dac2.png') }}">
                 </div>
             </div>
-            <!-- <img class="arrow-switch" src="{{ URL::asset('icon/circle-arrow-left.svg') }}" alt="arrow-left">
-            <img class="arrow-switch" src="{{ URL::asset('icon/circle-arrow-right.svg') }}" alt="arrow-right"> -->
+        </div>
+        <div class="carousel-item">
+            <div class="row justify-content-center">
+                <div class="col">
+                    <img style="width:352px" src="{{ URL::asset('img/competition/flashback/dac3.png') }}">
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="row justify-content-center">
+                <div class="col">
+                    <img style="width:352px" src="{{ URL::asset('img/competition/flashback/dac4.png') }}">
+                </div>
+            </div>
         </div>
     </div>
     <a class="carousel-control-prev" href="#dacFlashback2" role="button" data-slide="prev">
@@ -89,13 +114,28 @@ Data Analysis Competition (DAC) is a national-scale competition organized by Him
 </div>
 @endsection
 
-@section('first_prize', 'Rp.3.000.000')
-@section('second_prize', 'Rp.2.000.000')
-@section('third_prize')
-<div class="col-4">
-    <img class="img-fluid" style="width:150px;" src="{{ URL::asset('icon/trophy/3.png') }}">
-    <p id="prizeFont" style="color:white; margin:0">3rd Place</p>
-    <p id="prizeFont" style="color:white">Rp. 1.000.000</p>
+@section('competition_prizes')
+<div data-aos="fade-down" data-aos-duration="1000" class="row-img-prize" align="center" id="competitionPrizes" style="padding-top: 30px;padding-bottom: 30px;">
+    <h1 class="text-sub-title">Prizes</h1>
+    <div class="row justify-content-center" style="padding-top: 20px;"">
+        <div class=" col-4">
+            <img class="img-fluid" style="width:180px;" src="{{ URL::asset('img/competition/trophy/DAC/2.png') }}">
+        </div>
+        <div class="col-4">
+            <img class="img-fluid" style="width:220px;" src="{{ URL::asset('img/competition/trophy/DAC/1.png') }}">
+        </div>
+        <div class="col-4">
+            <img class="img-fluid" style="width:180px;" src="{{ URL::asset('img/competition/trophy/DAC/3.png') }}">
+        </div>
+    </div>
+    <div class="row justify-content-center" style="padding-top:30px">
+        <div class="col-6">
+            <p class="text-desc">
+                • All participants will get an E-Certificate
+                <br>• Participants who pass the preliminary round will get a Free Pass for the 2022 National Seminar
+            </p>
+        </div>
+    </div>
 </div>
 @endsection
 
@@ -108,8 +148,9 @@ Data Analysis Competition (DAC) is a national-scale competition organized by Him
                 <img class="card-img-top" style="width:100%;height:350px;" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg" alt="Card image cap">
                 <div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
                     <div class="col" style="line-height: 5px;">
-                        <h5 class="text-photo-card-name">Juri 1</h5>
-                        <p class="text-photo-card-position">Data Analyst</p>
+                        <h5 class="text-photo-card-name">To Be Announced Soon!</h5>
+                        <!-- <h5 class="text-photo-card-name">Juri 1</h5>
+                        <p class="text-photo-card-position">Data Analyst</p> -->
                     </div>
                 </div>
             </div>
@@ -119,12 +160,10 @@ Data Analysis Competition (DAC) is a national-scale competition organized by Him
                 <img class="card-img-top" style="width:100%;height:350px;" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg" alt="Card image cap">
                 <div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
                     <div class="col" style="line-height: 5px;">
-                        <h5 class="text-photo-card-name">Juri 2</h5>
-                        <p class="text-photo-card-position">Data Analyst</p>
+                        <h5 class="text-photo-card-name">To Be Announced Soon!</h5>
+                        <!-- <h5 class="text-photo-card-name">Juri 2</h5>
+                        <p class="text-photo-card-position">Data Analyst</p> -->
                     </div>
-                    <!-- <div class="col-3">
-                        <img class="logo-linkedin" src="{{ URL::asset('icon/linkedin.svg') }}" alt="linkedin">
-                    </div> -->
                 </div>
             </div>
         </div>
@@ -141,12 +180,10 @@ Data Analysis Competition (DAC) is a national-scale competition organized by Him
                         <div class="size-img-speakers card ifest-photo-card" style="border: 0;text-align:center;">
                             <img class="card-img-top size-img-top-speakers" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg" alt="Card image cap">
                             <div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
-                                <div class="col-7" style="line-height: 5px;">
-                                    <h5 class="text-photo-card-name">Juri 1</h5>
-                                    <p class="text-photo-card-position">Data Analyst</p>
-                                </div>
-                                <div class="col-3">
-                                    <img class="logo-linkedin" src="{{ URL::asset('icon/linkedin.svg') }}" alt="linkedin">
+                                <div class="col" style="line-height: 5px;">
+                                    <h5 class="text-photo-card-name">To Be Announced Soon!</h5>
+                                    <!-- <h5 class="text-photo-card-name">Juri 1</h5>
+                                    <p class="text-photo-card-position">Data Analyst</p> -->
                                 </div>
                             </div>
                         </div>
@@ -159,12 +196,10 @@ Data Analysis Competition (DAC) is a national-scale competition organized by Him
                         <div class="size-img-speakers card ifest-photo-card" style="border: 0; text-align:center;">
                             <img class="card-img-top size-img-top-speakers" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg" alt="Card image cap">
                             <div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
-                                <div class="col-7" style="line-height: 5px;">
-                                    <h5 class="text-photo-card-name">Juri 2</h5>
-                                    <p class="text-photo-card-position">Data Analyst</p>
-                                </div>
-                                <div class="col-3">
-                                    <img class="logo-linkedin" src="{{ URL::asset('icon/linkedin.svg') }}" alt="linkedin">
+                                <div class="col" style="line-height: 5px;">
+                                    <h5 class="text-photo-card-name">To Be Announced Soon!</h5>
+                                    <!-- <h5 class="text-photo-card-name">Juri 2</h5>
+                                    <p class="text-photo-card-position">Data Analyst</p> -->
                                 </div>
                             </div>
                         </div>
@@ -223,7 +258,7 @@ Data Analysis Competition (DAC) is a national-scale competition organized by Him
 
 @section('competition_button')
 <div class="row-cp">
-    <div class="col-btn-left" data-aos="fade-right" data-aos-duration="1000" style="text-align: right;">
+    <div class="col-btn-left pad-regist" data-aos="fade-right" data-aos-duration="1000" style="text-align: right;">
         <button type="button" class="btn btn-outline-primary ifest-btn-outline-primary-dark-bg" style="width: 147px;height: 48px;">Guidebook</button>
     </div>
     <div class="col-btn-right pad-regist" data-aos="fade-left" data-aos-duration="1000" style="text-align: left;">

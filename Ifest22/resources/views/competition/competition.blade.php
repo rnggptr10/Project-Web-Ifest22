@@ -13,47 +13,49 @@
 <!-- <body style="background-color: #1c1c1c;"> -->
 <div class="container" style="padding: 100px 0 50px 0;">
     <div class="row" style="margin-left: 0; margin-right:0;">
-        <div class="col-desc" style="padding: 20px 0 20px 0;">
-            <div class="row" align="center" id="competitionDescription" style="padding-bottom: 30px;">
-                <div style="padding-bottom: 10px;">
-                    <p class="title-competition">@yield('competition_title')</p>
-                    <!-- <h1 class="text-title"></h1> -->
+        <!-- <div class="col">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-3" align="center">
+                    <img class="img-fluid" style="width:200px;" src="{{ URL::asset('img/competition/logo/int.png') }}">
                 </div>
-                @yield('competition_theme')
-                <div style="padding: 10px 50px 0 50px; font-size: 16px;">
-                    <p class="text-desc">@yield('competition_desc')</p>
+                <div class="col-desc col-9">
+                    <div class="row" align="center" id="competitionDescription">
+                        <p class="title-competition" style="margin:0; padding-bottom:5px">@yield('competition_title')</p>
+                        @yield('competition_theme')
+                    </div>
                 </div>
             </div>
-
-            @yield('competition_flashback')
-
-            <div data-aos="fade-down" data-aos-duration="1000" class="row-img-prize" align="center" id="competitionPrizes" style="padding-top: 30px;padding-bottom: 30px;">
-                <h1 class="text-sub-title">Prizes</h1>
-                <div class="row justify-content-center" style="padding-top: 20px;"">
-                    <div class=" col-4">
-                    <img class="img-fluid" style="width:150px;" src="{{ URL::asset('icon/trophy/2.png') }}">
-                    <p id="prizeFont" style="color:white; margin:0">2nd Place</p>
-                    <p id="prizeFont" style="color:white">@yield('second_prize')</p>
+        </div> -->
+        <div class="col-desc" style="padding: 20px 0 20px 0;">
+            <div class="row" align="center" id="competitionDescription" style="padding-bottom: 30px;">
+                <div class="col" style="padding-bottom:25px">
+                    <div class="row align-items-center justify-content-center">
+                        @yield('competition_title')
+                    </div>
                 </div>
-                <div class="col-4">
-                    <img class="img-fluid" style="width:180px;" src="{{ URL::asset('icon/trophy/1.png') }}">
-                    <p id="prizeFont" style="color:white; margin:0">1st Place</p>
-                    <p id="prizeFont" style="color:white;">@yield('first_prize')</p>
+                @yield('competition_theme')
+                <div style="padding: 30px 30px 0 50px; font-size: 16px;">
+                    <p class="text-desc">@yield('competition_desc')</p>
                 </div>
-                @yield('third_prize')
             </div>
         </div>
     </div>
 
+    @yield('competition_collab')
+
+    @yield('competition_flashback')
+
+    @yield('competition_prizes')
+
     @yield('competition_judges')
 
-    <div data-aos="fade-up" data-aos-duration="1000" class="row-timeline" align="center" id="competitionTimeline" style="margin-left:0; margin-right:0; padding-top: 30px;padding-bottom: 30px;">
+    <div data-aos="fade-up" data-aos-duration="1000" class="row-timeline" align="center" id="competitionTimeline" style="margin-left:0; margin-right:0; padding-top: 30px;">
         <h1 class="text-sub-title">Timeline</h1>
         @yield('competition_timeline')
     </div>
 
     <!-- Competition Button -->
-    <div data-aos="fade-up" data-aos-duration="1000" class="row justify-content-center align-items-center" align="center" id="competitionButton" style="margin-left:0; margin-right:0; padding-top: 30px;padding-bottom: 30px;">
+    <div data-aos="fade-up" data-aos-duration="1000" class="row justify-content-center align-items-center" align="center" id="competitionButton" style="margin-left:0; margin-right:0;padding-bottom: 30px;">
         @yield('competition_button')
     </div>
 

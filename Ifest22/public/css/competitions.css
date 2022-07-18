@@ -5,7 +5,8 @@
   margin: 0;
 }
 
-html, body{
+html,
+body {
   overflow-x: hidden;
   width: 100%;
 }
@@ -21,7 +22,7 @@ html, body{
 .text-theme {
   font-family: "Poppins-Medium";
   font-size: 28px;
-  line-height: 40px;
+  line-height: 28px;
   color: #ffffff;
 }
 
@@ -43,7 +44,9 @@ html, body{
 /* Our Judges */
 .photo-flashback {
   width: 352px;
+  height: 200px;
   border-radius: .25rem;
+  border: 1px solid #2d2d2d;
 }
 
 /* Our Judges */
@@ -139,24 +142,24 @@ html, body{
   height: 48px;
 }
 
-.size-img-speakers{
+.size-img-speakers {
   width: 350px;
 }
 
-.size-img-top-speakers{
-  width:100%;
-  height:350px;
+.size-img-top-speakers {
+  width: 100%;
+  height: 350px;
 }
 
-.row-cp{
+.row-cp {
   display: flex;
 }
 
-.pad-regist{
+.pad-regist {
   padding-top: 30px;
 }
 
-.title-2{
+.title-2 {
   display: none;
 }
 
@@ -231,33 +234,33 @@ html, body{
 
 @media screen and (max-width:1200px) {
   #dacFlashback1 {
-      display: none;
+    display: none;
   }
 
   #dacFlashback2 {
-      display: block;
+    display: block;
   }
 }
 
 @media screen and (max-width:767px) {
   #dacFlashback1 {
-      display: none;
+    display: none;
   }
 
   #dacFlashback2 {
-      display: block;
+    display: block;
   }
 }
 
 @media screen and (max-width:459px) {
   #prizeFont {
-      font-size: 12px;
+    font-size: 12px;
   }
 }
 
 @media screen and (max-width:380px) {
   #prizeFont {
-      font-size: 10px;
+    font-size: 10px;
   }
 }
 
@@ -267,52 +270,53 @@ html, body{
 
 /* Mobile M */
 @media screen and (max-width:380px) {
-  .size-img-speakers{
-      width: 70%;
-      margin-left: 50px;
-      margin-right: 50px;
+  .size-img-speakers {
+    width: 70%;
+    margin-left: 50px;
+    margin-right: 50px;
   }
 
-  .size-img-top-speakers{
-      height: 250px;
+  .size-img-top-speakers {
+    height: 250px;
   }
 }
 
 /* MOBILE L */
 @media screen and (max-width:450px) {
-  .title-1{
-      display: none;
+  .title-1 {
+    display: none;
   }
 
-  .title-2{
-      display: block;
+  .title-2 {
+    display: block;
   }
 
-  .text-desc{
-      font-size: 12px;
+  .text-desc {
+    font-size: 12px;
   }
 }
 
 /* Tablet */
 @media screen and (max-width:770px) {
+
   /* cp */
-  .row-cp{
+  .row-cp {
     display: inline;
   }
 
-  .pad-regist{
+  .pad-regist {
     padding-top: 10px;
   }
 
-  .col-btn-left{
+  .col-btn-left {
     justify-content: center;
   }
 
-  .col-btn-right{
+  .col-btn-right {
     justify-content: center;
   }
 
-  .margin-l-r{
+  .margin-l-r {
     padding-left: 50px;
     padding-right: 50px;
   }

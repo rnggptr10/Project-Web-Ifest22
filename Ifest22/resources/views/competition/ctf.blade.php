@@ -10,15 +10,29 @@
 
 @section('competition_webtitle', 'Capture The Flag')
 
-@section('competition_title', 'Capture The Flag')
+@section('competition_title')
+<div class="col-3" align="center">
+    <img class="img-fluid" style="width:200px;" src="{{ URL::asset('img/competition/logo/ctf.png') }}">
+</div>
+<div class="col-4">
+    <p class="title-competition" style="margin:0; margin-top:20px ">Capture The Flag</p>
+</div>
+@endsection
 
 @section('competition_desc')
 Capture The Flag (CTF) is a national-scale competition organized by Himatif FMIPA Unpad as part of the Informatics Festival (IFest) 2022. Capture The Flag is a competition in the field of network security that requires each participant to think creatively in search of certain strings called flags.
 This competition is held online and is intended for high school / vocational students or active S1/D4/D3 students as evidenced by a student card. This competition uses the jeopardy concept which will test participants' abilities in the fields of Web Hacking, Binary Exploitation, Reverse Engineering, Digital Forensic, Cryptography, and Misc and will be contested by the entire team consisting of 1-3 people.
 @endsection
 
+@section('competition_collab')
+<div data-aos="fade-down" data-aos-duration="1000" class="row-img-prize justify-content-center" align="center" id="competitionPrizes" style="padding-bottom: 50px;">
+    <h1 class="text-sub-title" style="font-size:24px">Exclusive Cloud Hosting Partner</h1>
+    <img class="img-fluid" style="width:200px;" src="{{ URL::asset('img/logo/sponsor/collab_dewaweb_white.png') }}">
+</div>
+@endsection
+
 @section('competition_flashback')
-<div class="row align-items-center carousel slide" align="center" id="dacFlashback1" data-ride="carousel" style="padding-top: 30px;padding-bottom: 30px;">
+<!-- <div class="row align-items-center carousel slide" align="center" id="dacFlashback1" data-ride="carousel" style="padding-top: 30px;padding-bottom: 30px;">
     <div class="carousel-inner">
         <div class="carousel-item active">
             <div class="row justify-content-center">
@@ -39,8 +53,6 @@ This competition is held online and is intended for high school / vocational stu
                     <img style="width:352px" src="https://cdn6.dissolve.com/p/D1061_185_320/D1061_185_320_1200.jpg">
                 </div>
             </div>
-            <!-- <img class="arrow-switch" src="{{ URL::asset('icon/circle-arrow-left.svg') }}" alt="arrow-left">
-            <img class="arrow-switch" src="{{ URL::asset('icon/circle-arrow-right.svg') }}" alt="arrow-right"> -->
         </div>
     </div>
     <a class="carousel-control-prev" href="#dacFlashback1" role="button" data-slide="prev">
@@ -68,8 +80,6 @@ This competition is held online and is intended for high school / vocational stu
                     <img style="width:352px" src="https://cdn6.dissolve.com/p/D1061_185_320/D1061_185_320_1200.jpg">
                 </div>
             </div>
-            <!-- <img class="arrow-switch" src="{{ URL::asset('icon/circle-arrow-left.svg') }}" alt="arrow-left">
-            <img class="arrow-switch" src="{{ URL::asset('icon/circle-arrow-right.svg') }}" alt="arrow-right"> -->
         </div>
     </div>
     <a class="carousel-control-prev" href="#dacFlashback2" role="button" data-slide="prev">
@@ -80,11 +90,37 @@ This competition is held online and is intended for high school / vocational stu
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="sr-only">Next</span>
     </a>
-</div>
+</div> -->
 @endsection
 
-@section('first_prize', 'Rp 2.000.000')
-@section('second_prize', 'Rp 1.000.000')
+@section('competition_prizes')
+<div data-aos="fade-down" data-aos-duration="1000" class="row-img-prize" align="center" id="competitionPrizes" style="padding-top: 30px;padding-bottom: 30px;">
+    <h1 class="text-sub-title">Prizes</h1>
+    <div class="row justify-content-center" style="padding-top: 20px;"">
+        <div class=" col-4">
+            <img class="img-fluid" style="width:180px;" src="{{ URL::asset('img/competition/trophy/CTF/2.png') }}">
+            <div class="col-8">
+                <p class="text-desc">+ Rp2.000.000 Dewacloud Credit for each team member</p>
+            </div>
+        </div>
+        <div class="col-4">
+            <img class="img-fluid" style="width:220px;" src="{{ URL::asset('img/competition/trophy/CTF/1.png') }}">
+            <div class="col-8">
+                <p class="text-desc">+ Rp3.000.000 Dewacloud Credit for each team member</p>
+            </div>
+        </div>
+    </div>
+    <div class="row justify-content-center" style="padding-top:30px">
+        <div class="col-7">
+            <p class="text-desc">
+                • All participants will get an E-Certificate
+                <br>• 3rd Winner will get Rp1.000.000 Dewacloud Credit for each team member
+                <br>• Participants who are in top 5 rankings will get a Free Pass for the 2022 National Seminar
+            </p>
+        </div>
+    </div>
+</div>
+@endsection
 
 @section('competition_timeline')
 <section class="ps-timeline-sec">
@@ -121,7 +157,7 @@ This competition is held online and is intended for high school / vocational stu
 
 @section('competition_button')
 <div class="row-cp">
-    <div class="col-btn-left" style="padding-top: 30px;">
+    <div class="col-btn-left pad-regist" style="padding-top: 30px;">
         <button type="button" class="btn btn-outline-primary ifest-btn-outline-primary-dark-bg">
             <a class="ifest-btn-primary-dark-bg-text" href="">Guidebook</a>
         </button>
