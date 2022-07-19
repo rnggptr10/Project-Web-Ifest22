@@ -69,8 +69,6 @@
                     <div class="row" align="center">
                         <h2 class="text-card-title">Your Tickets</h2>
                     </div>
-                    <!-- NANTI INI PAKE LOOPING TERGANTUNG TIKET DI USER -->
-                    <!-- DATANYA JG BEDA TIAP TIKET, DI SET DI SETIAP IF ELSE -->
                     @if ($status->startupDay1_status === '1' || $status->startupDay2_status === '1' || $status->semnas_status === '1' || $status->semnas_paper_status === '1' || $status->techno_seminar_status === '1' || $status->techno_ws_status === '1' || $status->intention_status === '1' || $status->dac_status === '1' || $status->ctf_status === '1')
                     @if ($status->startupDay1_status === '1')
                     <div class="row" align="center" style="padding:5px 0 5px 0">
@@ -176,9 +174,9 @@
                                                 <h6 class="text-tickets-head">Seminar Nasional</h6>
                                                 <p class="text-tickets-desc">8 - 9 October 2022
                                                 <?php
-                                                    // SET TANGGAL REGIST SEMNAS (UNSET)
-                                                    $semnas_payment_date_start = Carbon::create(2022, 7, 15, 7, 00, 00, 'Asia/Jakarta');
-                                                    $semnas_payment_date_end = Carbon::create(2022, 7, 18, 14, 00, 00, 'Asia/Jakarta');
+                                                    // SET TANGGAL REGIST SEMNAS
+                                                    $semnas_payment_date_start = Carbon::create(2022, 7, 24, 00, 00, 01, 'Asia/Jakarta');
+                                                    $semnas_payment_date_end = Carbon::create(2022, 10, 7, 23, 59, 59, 'Asia/Jakarta');
 
                                                     $semnas_payment_date_start->toDateTimeString();
                                                     $semnas_payment_date_end->toDateTimeString();

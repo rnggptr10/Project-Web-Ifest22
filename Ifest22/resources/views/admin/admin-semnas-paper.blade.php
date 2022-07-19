@@ -24,11 +24,11 @@
                             <th scope="col">Nama Peserta</th>
                             <th scope="col">Instansi</th>
                             <th scope="col">Abstract Link</th>
+                            <th scope="col">Status Seleksi</th>
                             <th scope="col">Bukti Pembayaran</th>
                             <th scope="col">Status Konfirmasi</th>
                             <th scope="col">Paper Link 1</th>
                             <th scope="col">Paper Link 2</th>
-                            <th scope="col">Status Seleksi</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -41,6 +41,27 @@
                                 <td>{{ $data->name }}</td>
                                 <td>{{ $data->institute }}</td>
                                 <td><a href="{{$data->abstract_link}}">Abstract Link</a></td>
+                                <td>
+                                    <div class="btn-group">
+                                        <select name="semnas_selected_status" id="semnas_selected_status"
+                                        class="
+                                            <?php if($data->status_selected === '2'){echo('dd-blue');}
+                                            elseif($data->status_selected === '1'){echo('dd-yellow');} 
+                                            elseif($data->status_selected === '0'){echo('dd-maroon');} ?>
+                                        "
+                                        onchange="this.form.submit()">
+                                            <option class="dd-blue" value="2" 
+                                                <?php if ($data->status_selected === '2') {echo ('selected');} ?>>Selected
+                                            </option>
+                                            <option class="dd-yellow" value="1" 
+                                                <?php if ($data->status_selected === '1') {echo ('selected');} ?>>Pending
+                                            </option>
+                                            <option class="dd-maroon" value="0" 
+                                                <?php if ($data->status_selected === '0') {echo ('selected');} ?>>Unselected
+                                            </option>
+                                        </select>
+                                    </div>
+                                </td>
                                 @if($data->proof_payment !== NULL)
                                     <td><a href="{{asset('storage/' . $data['proof_payment'])}}">Proof Payment</a></td>
                                 @elseif($data->proof_payment === NULL)
@@ -77,27 +98,6 @@
                                     @else
                                         <a href="{{$data->paper2_link}}">Paper Link 2</a>
                                     @endif
-                                </td>
-                                <td>
-                                    <div class="btn-group">
-                                        <select name="semnas_selected_status" id="semnas_selected_status"
-                                        class="
-                                            <?php if($data->status_selected === '2'){echo('dd-blue');}
-                                            elseif($data->status_selected === '1'){echo('dd-yellow');} 
-                                            elseif($data->status_selected === '0'){echo('dd-maroon');} ?>
-                                        "
-                                        onchange="this.form.submit()">
-                                            <option class="dd-blue" value="2" 
-                                                <?php if ($data->status_selected === '2') {echo ('selected');} ?>>Selected
-                                            </option>
-                                            <option class="dd-yellow" value="1" 
-                                                <?php if ($data->status_selected === '1') {echo ('selected');} ?>>Pending
-                                            </option>
-                                            <option class="dd-maroon" value="0" 
-                                                <?php if ($data->status_selected === '0') {echo ('selected');} ?>>Unselected
-                                            </option>
-                                        </select>
-                                    </div>
                                 </td>
                             </form>
                         </tr>

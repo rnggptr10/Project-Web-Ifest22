@@ -71,30 +71,30 @@
                     $now->toDateTimeString();
 
                     // SET TANGGAL REGISTRASI DAC
-                    $dac_regist_date_start = Carbon::create(2022, 7, 7, 7, 00, 00, 'Asia/Jakarta');
-                    $dac_regist_date_end = Carbon::create(2022, 7, 19, 15, 00, 00, 'Asia/Jakarta');
+                    $dac_regist_date_start = Carbon::create(2022, 7, 24, 00, 00, 01, 'Asia/Jakarta');
+                    $dac_regist_date_end = Carbon::create(2022, 8, 20, 23, 59, 59, 'Asia/Jakarta');
                     $dac_regist_date_start->toDateTimeString(); 
                     $dac_regist_date_end->toDateTimeString(); 
 
                     // SET TANGGAL SUBMIT PAPER DAC
-                    $dac_paper_date_start = Carbon::create(2022, 7, 15, 7, 00, 00, 'Asia/Jakarta');
-                    $dac_paper_date_end = Carbon::create(2022, 7, 17, 15, 00, 00, 'Asia/Jakarta');
+                    $dac_paper_date_start = Carbon::create(2022, 9, 5, 00, 00, 01, 'Asia/Jakarta');
+                    $dac_paper_date_end = Carbon::create(2022, 9, 10, 23, 59, 59, 'Asia/Jakarta');
                     $dac_paper_date_start->toDateTimeString(); 
                     $dac_paper_date_end->toDateTimeString(); 
 
                     // SET TANGGAL PENGUMUMAN FINALIST
-                    $dac_finalist_date_start = Carbon::create(2022, 7, 15, 7, 00, 00, 'Asia/Jakarta');
+                    $dac_finalist_date_start = Carbon::create(2022, 9, 20, 00, 00, 01, 'Asia/Jakarta');
                     $dac_finalist_date_start->toDateTimeString(); 
 
-                    // SET TANGGAL SUBMIT CODE DAC
-                    $dac_code_date_start = Carbon::create(2022, 7, 15, 7, 00, 00, 'Asia/Jakarta');
-                    $dac_code_date_end = Carbon::create(2022, 7, 16, 15, 00, 00, 'Asia/Jakarta');
+                    // SET TANGGAL SUBMIT CODE DAC (UNSET JAM)
+                    $dac_code_date_start = Carbon::create(2022, 10, 1, 7, 00, 00, 'Asia/Jakarta');
+                    $dac_code_date_end = Carbon::create(2022, 10, 1, 23, 59, 59, 'Asia/Jakarta');
                     $dac_code_date_start->toDateTimeString(); 
                     $dac_code_date_end->toDateTimeString(); 
 
-                    // SET TANGGAL FINAL STAGE
-                    $dac_final_date_start = Carbon::create(2022, 7, 15, 7, 00, 00, 'Asia/Jakarta');
-                    $dac_final_date_end = Carbon::create(2022, 7, 16, 14, 00, 00, 'Asia/Jakarta');
+                    // SET TANGGAL FINAL STAGE (UNSET JAM)
+                    $dac_final_date_start = Carbon::create(2022, 10, 2, 8, 00, 00, 'Asia/Jakarta');
+                    $dac_final_date_end = Carbon::create(2022, 10, 2, 18, 00, 00, 'Asia/Jakarta');
                     $dac_final_date_start->toDateTimeString(); 
                     $dac_final_date_end->toDateTimeString(); 
 
@@ -110,6 +110,8 @@
                 <?php } elseif ($now->lessThan($dac_regist_date_start) || $now->greaterThan($dac_regist_date_end)) { ?>
                     @if ($dac->status_pembayaran === '0')
                         <span class="text-tickets-status status-red">Payment Failed</span>
+                    @elseif ($dac->status_pembayaran === '1')
+                        <span class="text-tickets-status status-orange">Waiting for Confirmation</span>
                     @elseif ($dac->status_pembayaran === '2')
                         <span class="text-tickets-status status-green">Payment Completed</span>
                     @endif

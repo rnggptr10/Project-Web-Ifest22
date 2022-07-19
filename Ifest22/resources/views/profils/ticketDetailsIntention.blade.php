@@ -74,30 +74,30 @@
                     $now->toDateTimeString();
 
                     // SET TANGGAL REGISTRASI INTENTION
-                    $intention_regist_date_start = Carbon::create(2022, 7, 7, 7, 00, 00, 'Asia/Jakarta');
-                    $intention_regist_date_end = Carbon::create(2022, 7, 19, 15, 00, 00, 'Asia/Jakarta');
+                    $intention_regist_date_start = Carbon::create(2022, 7, 24, 00, 00, 01, 'Asia/Jakarta');
+                    $intention_regist_date_end = Carbon::create(2022, 8, 20, 23, 59, 59, 'Asia/Jakarta');
                     $intention_regist_date_start->toDateTimeString(); 
                     $intention_regist_date_end->toDateTimeString(); 
 
                     // SET TANGGAL SUBMIT PROPOSAL INTENTION
-                    $intention_proposal_date_start = Carbon::create(2022, 7, 15, 7, 00, 00, 'Asia/Jakarta');
-                    $intention_proposal_date_end = Carbon::create(2022, 7, 17, 15, 00, 00, 'Asia/Jakarta');
+                    $intention_proposal_date_start = Carbon::create(2022, 8, 27, 00, 00, 01, 'Asia/Jakarta');
+                    $intention_proposal_date_end = Carbon::create(2022, 9, 5, 23, 59, 59, 'Asia/Jakarta');
                     $intention_proposal_date_start->toDateTimeString(); 
                     $intention_proposal_date_end->toDateTimeString(); 
 
                     // SET TANGGAL PENGUMUMAN FINALIST
-                    $intention_finalist_date_start = Carbon::create(2022, 7, 15, 7, 00, 00, 'Asia/Jakarta');
+                    $intention_finalist_date_start = Carbon::create(2022, 9, 9, 00, 00, 01, 'Asia/Jakarta');
                     $intention_finalist_date_start->toDateTimeString(); 
 
                     // SET TANGGAL SUBMIT PRODUCT INTENTION
-                    $intention_product_date_start = Carbon::create(2022, 7, 17, 7, 00, 00, 'Asia/Jakarta');
-                    $intention_product_date_end = Carbon::create(2022, 7, 17, 15, 00, 00, 'Asia/Jakarta');
+                    $intention_product_date_start = Carbon::create(2022, 9, 10, 00, 00, 01, 'Asia/Jakarta');
+                    $intention_product_date_end = Carbon::create(2022, 10, 18, 23, 59, 59, 'Asia/Jakarta');
                     $intention_product_date_start->toDateTimeString(); 
                     $intention_product_date_end->toDateTimeString(); 
 
-                    // SET TANGGAL FINAL STAGE
-                    $intention_final_date_start = Carbon::create(2022, 7, 15, 7, 00, 00, 'Asia/Jakarta');
-                    $intention_final_date_end = Carbon::create(2022, 7, 16, 14, 00, 00, 'Asia/Jakarta');
+                    // SET TANGGAL FINAL STAGE (UNSET JAM)
+                    $intention_final_date_start = Carbon::create(2022, 10, 22, 8, 00, 00, 'Asia/Jakarta');
+                    $intention_final_date_end = Carbon::create(2022, 10, 22, 15, 00, 00, 'Asia/Jakarta');
                     $intention_final_date_start->toDateTimeString(); 
                     $intention_final_date_end->toDateTimeString(); 
 
@@ -113,6 +113,8 @@
                 <?php } elseif ($now->lessThan($intention_regist_date_start) || $now->greaterThan($intention_regist_date_end)) { ?>
                     @if ($intention->status_pembayaran === '0')
                         <span class="text-tickets-status status-red">Payment Failed</span>
+                    @elseif ($intention->status_pembayaran === '1')
+                        <span class="text-tickets-status status-orange">Waiting for Confirmation</span>
                     @elseif ($intention->status_pembayaran === '2')
                         <span class="text-tickets-status status-green">Payment Completed</span>
                     @endif
