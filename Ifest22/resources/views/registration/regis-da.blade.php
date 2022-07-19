@@ -291,34 +291,7 @@
             </div>
         </div>
 
-        <!-- <div class="mt-4 upload-idcard-regis">
-        <label for="id_card" class="file-upload d-flex justify-content-center align-items-center">
-            <span class="iconify me-2" data-icon="feather:upload" data-inline="false" style="color: #001d3d;">
-                </span> Upload ID-Card (ZIP File)
-            </label>
-            <br>
-            <input type="file" id="id_card" name="id_card" accept=".zip">
-            <div id="idcard-chosen" class="text-center">No file chosen</div>
-        </div>
-        <div class="hint hint-file hint-file-regis">
-            <p>ID-card file size limit to 2MB</p>
-        </div>
-        @error('id_card')
-        <div class="alert alert-danger mt-1 d-flex align-items-center" role="alert" style="width: 100%;
-        max-width: 333px; margin: 0 auto">
-        <span class="iconify me-1" data-icon="akar-icons:circle-alert" data-inline="false" style="color: #842029;"></span>
-        {{ $message }}
-    </div>
-    @enderror -->
-
         <div class="row mb-2 text-left">
-<<<<<<< HEAD
-            <div class="          <p class=" regist-form-notes-text">
-                Notes :<br>
-                • ID Card berupa kartu pelajar untuk siswa SMA/SMK atau KTM untuk mahasiswa.<br>
-                • Scan/Foto ID Card harus jelas.<br>
-                • Apabila tidak memenuhi 2 poin diatas, maka pendaftaran ditolak.
-=======
             <div class="col" style="padding:0">
                 <p class="regist-form-notes-text">
                     Notes :<br>
@@ -326,7 +299,6 @@
                     • Kartu Pelajar untuk peserta siswa SMA/SMK.<br>
                     • KTM/KRS untuk peserta mahasiswa.<br>
                     • Scan/Foto ID Card harus jelas.<br>
->>>>>>> bccced6c0165fc9dcdb1a87886d07c54723d072e
                 </p>
             </div>
         </div>
@@ -354,14 +326,8 @@
                     <p class="regist-form-text-price">Rp.150000</p>
                 </div>
                 <div class="row" style="padding:5px 0 5px 0">
-<<<<<<< HEAD
-                    <p class="regist-form-text-payment-head">Payment Methods :</p>
-                    <p class="regist-form-text-payment">BCA : 5725562729 a.n. Sarah Khairunnisa Prihantoro</p>
-                    <p class="regist-form-text-payment">BNI : 1392832983 a.n. Junet</p>
-=======
                     <p class="regist-form-text-payment-head" style="margin:0">Payment Methods :</p>
                     <p class="regist-form-text-payment">• BCA : 5725562729 a.n. Sarah Khairunnisa Prihantoro</p>
->>>>>>> bccced6c0165fc9dcdb1a87886d07c54723d072e
                 </div>
                 <div class="row" style="padding-top:20px">
                     <div class="container-upload dflex">

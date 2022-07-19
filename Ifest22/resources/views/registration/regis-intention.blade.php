@@ -351,13 +351,9 @@
             <div class="col" style="padding:0">
                 <p class="regist-form-notes-text">
                     Notes :<br>
-<<<<<<< HEAD
-                    • ID Card berupa kartu pelajar untuk siswa SMA/SMK atau KTM untuk mahasiswa.<br>
-=======
                     • ID Card hanya dapat berbentuk KTM/KRS/Kartu Pelajar.<br>
                     • Kartu Pelajar untuk peserta siswa SMA/SMK.<br>
                     • KTM/KRS untuk peserta mahasiswa.<br>
->>>>>>> bccced6c0165fc9dcdb1a87886d07c54723d072e
                     • Scan/Foto ID Card harus jelas.<br>
                 </p>
             </div>
@@ -386,14 +382,8 @@
                     <p class="regist-form-text-price">Rp150.000</p>
                 </div>
                 <div class="row" style="padding:5px 0 5px 0">
-<<<<<<< HEAD
-                    <p class="regist-form-text-payment-head">Payment Methods :</p>
-                    <p class="regist-form-text-payment">BCA : 5725562729 a.n. Sarah Khairunnisa Prihantoro</p>
-                    <p class="regist-form-text-payment">BNI : 1392832983 a.n. Junet</p>
-=======
                     <p class="regist-form-text-payment-head" style="margin:0">Payment Methods :</p>
                     <p class="regist-form-text-payment">• BCA : 5725562729 a.n. Sarah Khairunnisa Prihantoro</p>
->>>>>>> bccced6c0165fc9dcdb1a87886d07c54723d072e
                 </div>
                 <div class="row" style="padding-top:20px">
                     <div class="container-upload dflex">

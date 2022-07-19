@@ -172,7 +172,7 @@
                         </ul> -->
                         <div class="dflex padding-center">
                             <!-- Sosmed -->
-                            <a class="tombol footer-img-2" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="tombol footer-img-2" href=""><i class="fab fa-youtube"></i></a>
                             <a class="tombol footer-img-2" href=""><i class="fab fa-tiktok"></i></a>
                             <a class="tombol footer-img-2" href=""><i class="fab fa-instagram"></i></a>
                             <a class="tombol footer-img-2" href="https://www.linkedin.com/company/ifest-unpad"><i class="fab fa-linkedin"></i></a>
