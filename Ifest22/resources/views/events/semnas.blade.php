@@ -27,12 +27,13 @@ Seminar Nasional is a national seminar that invites experienced speakers in thos
 <img class="card-img-top size-img-top-speakers" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg" alt="Speakers-1">
 <div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
     <div class="col-7" style="line-height: 5px;">
-        <h5 class="text-photo-card-name">Speaker1</h5>
-        <p class="text-photo-card-position">CEO</p>
+        <h5 class="text-photo-card-name">To Be Announced Soon!</h5>
+        <!-- <h5 class="text-photo-card-name">Speaker1</h5>
+        <p class="text-photo-card-position">CEO</p> -->
     </div>
-    <div class="col-3">
+    <!-- <div class="col-3">
         <a href=""><img class="logo-linkedin" src="{{ URL::asset('icon/linkedin.svg') }}" alt="linkedin"></a>
-    </div>
+    </div> -->
 </div>
 @endsection
 
@@ -40,12 +41,13 @@ Seminar Nasional is a national seminar that invites experienced speakers in thos
 <img class="card-img-top size-img-top-speakers" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg" alt="Speakers-1">
 <div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
     <div class="col-7" style="line-height: 5px;">
-        <h5 class="text-photo-card-name">Speaker2</h5>
-        <p class="text-photo-card-position">CEO</p>
+        <h5 class="text-photo-card-name">To Be Announced Soon!</h5>
+        <!-- <h5 class="text-photo-card-name">Speaker2</h5>
+        <p class="text-photo-card-position">CEO</p> -->
     </div>
-    <div class="col-3">
+    <!-- <div class="col-3">
         <a href=""><img class="logo-linkedin" src="{{ URL::asset('icon/linkedin.svg') }}" alt="linkedin"></a>
-    </div>
+    </div> -->
 </div>
 @endsection
 
@@ -53,12 +55,13 @@ Seminar Nasional is a national seminar that invites experienced speakers in thos
 <img class="card-img-top size-img-top-speakers" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg" alt="Speakers-1">
 <div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
     <div class="col-7" style="line-height: 5px;">
-        <h5 class="text-photo-card-name">Speaker3</h5>
-        <p class="text-photo-card-position">CEO</p>
+        <h5 class="text-photo-card-name">To Be Announced Soon!</h5>
+        <!-- <h5 class="text-photo-card-name">Speaker3</h5>
+        <p class="text-photo-card-position">CEO</p> -->
     </div>
-    <div class="col-3">
+    <!-- <div class="col-3">
         <a href=""><img class="logo-linkedin" src="{{ URL::asset('icon/linkedin.svg') }}" alt="linkedin"></a>
-    </div>
+    </div> -->
 </div>
 @endsection
 
@@ -66,12 +69,13 @@ Seminar Nasional is a national seminar that invites experienced speakers in thos
 <img class="card-img-top size-img-top-speakers" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg" alt="Speakers-1">
 <div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
     <div class="col-7" style="line-height: 5px;">
-        <h5 class="text-photo-card-name">Speaker4</h5>
-        <p class="text-photo-card-position">CEO</p>
+        <h5 class="text-photo-card-name">To Be Announced Soon!</h5>
+        <!-- <h5 class="text-photo-card-name">Speaker4</h5>
+        <p class="text-photo-card-position">CEO</p> -->
     </div>
-    <div class="col-3">
+    <!-- <div class="col-3">
         <a href=""><img class="logo-linkedin" src="{{ URL::asset('icon/linkedin.svg') }}" alt="linkedin"></a>
-    </div>
+    </div> -->
 </div>
 @endsection
 
@@ -234,7 +238,7 @@ Seminar Nasional is a national seminar that invites experienced speakers in thos
                     <img class="img-fluid events-card-logo" src="{{ URL::asset('icon/date.png') }}" alt="Date">
                 </div>
                 <div class="col-10" style="text-align: left;">
-                    <h5 style="color:black;">8 - 9 October 2022</h5>
+                    <h5 style="color:black;margin:0;">8 - 9 October 2022</h5>
                 </div>
             </div>
         </div>
@@ -246,28 +250,60 @@ Seminar Nasional is a national seminar that invites experienced speakers in thos
                     <img class="img-fluid events-card-logo" src="{{ URL::asset('icon/seminar.png') }}" alt="Seminar">
                 </div>
                 <div class="col-5" style="text-align: left;">
-                    <h5 class="title-1" style="color:black">Seminar</h5>
+                    <h5 class="title-1" style="color:black;margin:0;">Seminar</h5>
                     <p class="title-2" style="color:black; margin:0; font-size:14px;">Seminar</p>
                 </div>
-                <div class="col-5">
-                    <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg">
-                        @guest
-                        @if(Route::has('login'))
-                        <a class="title-1 ifest-btn-primary-dark-bg-text" href="{{route('login')}}">
-                            Buy Ticket
-                        </a>
-                        <a class="title-2 ifest-btn-primary-dark-bg-text" href="{{route('login')}}">
-                            <p style="margin: 0; font-size:10px">Buy Ticket</p>
-                        </a>
-                        @endif
-                        @else
-                        <a class="ifest-btn-primary-dark-bg-text" href="{{route('semnas.registration.view')}}">Register Now</a>
-                        <!-- <a class="ifest-btn-primary-dark-bg-text" href="{{route('semnas.registration.view')}}">
-                            <p style="margin: 0; font-size:10px">Register Now</p>
-                        </a> -->
-                        @endguest
-                    </button>
-                </div>
+                <?php
+                // SET TANGGAL REGIST SEMINAR NASIONAL NONPRESENTER
+                $semnas_s_regist_start = Carbon::create(2022, 7, 24, 00, 00, 01, 'Asia/Jakarta');
+                $semnas_s_regist_end = Carbon::create(2022, 10, 7, 23, 59, 59, 'Asia/Jakarta');
+                $now = Carbon::now('Asia/Jakarta');
+
+                $semnas_s_regist_start->toDateTimeString();
+                $semnas_s_regist_end->toDateTimeString();
+                $now->toDateTimeString();
+
+                if ($now->greaterThan($semnas_s_regist_start) && $now->lessThan($semnas_s_regist_end)) { ?>
+                    <div class="col-5">
+                        <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg">
+                            @guest
+                            @if(Route::has('login'))
+                            <a class="title-1 ifest-btn-primary-dark-bg-text" href="{{route('login')}}">
+                                Buy Ticket
+                            </a>
+                            <a class="title-2 ifest-btn-primary-dark-bg-text" href="{{route('login')}}">
+                                <p style="margin: 0; font-size:10px">Buy Ticket</p>
+                            </a>
+                            @endif
+                            @else
+                            <a class="title-1 ifest-btn-primary-dark-bg-text" href="{{route('semnas.registration.view')}}">Register Now</a>
+                            <a class="title-2 ifest-btn-primary-dark-bg-text" href="{{route('semnas.registration.view')}}">
+                                <p style="margin: 0; font-size:10px">Register Now</p>
+                            </a>
+                            @endguest
+                        </button>
+                    </div>
+                <?php } elseif ($now->lessThan($semnas_s_regist_start) || $now->greaterThan($semnas_s_regist_end)) { ?>
+                    <div class="col-5">
+                        <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" disabled>
+                            @guest
+                            @if(Route::has('login'))
+                            <a class="title-1 ifest-btn-primary-dark-bg-text" href="{{route('login')}}">
+                                Buy Ticket
+                            </a>
+                            <a class="title-2 ifest-btn-primary-dark-bg-text" href="{{route('login')}}">
+                                <p style="margin: 0; font-size:10px">Buy Ticket</p>
+                            </a>
+                            @endif
+                            @else
+                            <a class="title-1 ifest-btn-primary-dark-bg-text" href="{{route('semnas.registration.view')}}">Register Now</a>
+                            <a class="title-2 ifest-btn-primary-dark-bg-text" href="{{route('semnas.registration.view')}}">
+                                <p style="margin: 0; font-size:10px">Register Now</p>
+                            </a>
+                            @endguest
+                        </button>
+                    </div>
+                <?php } ?>
             </div>
         </div>
     </div>
@@ -280,7 +316,7 @@ Seminar Nasional is a national seminar that invites experienced speakers in thos
                     <img class="img-fluid events-card-logo" src="{{ URL::asset('icon/platform.png') }}" alt="Platform">
                 </div>
                 <div class="col-10" style="text-align: left;">
-                    <h5 style="color:black;">Zoom Meetings</h5>
+                    <h5 style="color:black;margin:0;">Zoom Meetings</h5>
                 </div>
             </div>
         </div>
@@ -295,25 +331,57 @@ Seminar Nasional is a national seminar that invites experienced speakers in thos
                     <h5 class="title-1" style="color:black;margin-bottom:0;">Presenter Registration</h5>
                     <p class="title-2" style="color:black; margin:0; font-size:14px;">Presenter Registration</p>
                 </div>
-                <div class="col-5">
-                    <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg">
-                        @guest
-                        @if(Route::has('login'))
-                        <a class="title-1 ifest-btn-primary-dark-bg-text" href="{{route('login')}}">
-                            Register Now
-                        </a>
-                        <a class="title-2 ifest-btn-primary-dark-bg-text" href="{{route('login')}}">
-                            <p style="margin: 0; font-size:10px">Register Now</p>
-                        </a>
-                        @endif
-                        @else
-                        <a class="ifest-btn-primary-dark-bg-text" href="{{route('semnas.presenter.registration.view')}}">Register Now</a>
-                        <!-- <a class="ifest-btn-primary-dark-bg-text" href="{{route('semnas.presenter.registration.view')}}">
-                            <p style="margin: 0; font-size:10px">Register Now</p>
-                        </a> -->
-                        @endguest
-                    </button>
-                </div>
+                <?php
+                // SET TANGGAL REGIST SEMINAR NASIONAL NONPRESENTER
+                $semnas_p_regist_start = Carbon::create(2022, 7, 24, 00, 00, 01, 'Asia/Jakarta');
+                $semnas_p_regist_end = Carbon::create(2022, 9, 5, 23, 59, 59, 'Asia/Jakarta');
+                $now = Carbon::now('Asia/Jakarta');
+
+                $semnas_p_regist_start->toDateTimeString();
+                $semnas_p_regist_end->toDateTimeString();
+                $now->toDateTimeString();
+
+                if ($now->greaterThan($semnas_p_regist_start) && $now->lessThan($semnas_p_regist_end)) { ?>
+                    <div class="col-5">
+                        <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg">
+                            @guest
+                            @if(Route::has('login'))
+                            <a class="title-1 ifest-btn-primary-dark-bg-text" href="{{route('login')}}">
+                                Register Now
+                            </a>
+                            <a class="title-2 ifest-btn-primary-dark-bg-text" href="{{route('login')}}">
+                                <p style="margin: 0; font-size:10px">Register Now</p>
+                            </a>
+                            @endif
+                            @else
+                            <a class="title-1 ifest-btn-primary-dark-bg-text" href="{{route('semnas.presenter.registration.view')}}">Register Now</a>
+                            <a class="title-2 ifest-btn-primary-dark-bg-text" href="{{route('semnas.presenter.registration.view')}}">
+                                <p style="margin: 0; font-size:10px">Register Now</p>
+                            </a>
+                            @endguest
+                        </button>
+                    </div>
+                <?php } elseif ($now->lessThan($semnas_p_regist_start) || $now->greaterThan($semnas_p_regist_end)) { ?>
+                    <div class="col-5">
+                        <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" disabled>
+                            @guest
+                            @if(Route::has('login'))
+                            <a class="title-1 ifest-btn-primary-dark-bg-text" href="{{route('login')}}">
+                                Register Now
+                            </a>
+                            <a class="title-2 ifest-btn-primary-dark-bg-text" href="{{route('login')}}">
+                                <p style="margin: 0; font-size:10px">Register Now</p>
+                            </a>
+                            @endif
+                            @else
+                            <a class="title-1 ifest-btn-primary-dark-bg-text" href="{{route('semnas.presenter.registration.view')}}">Register Now</a>
+                            <a class="title-2 ifest-btn-primary-dark-bg-text" href="{{route('semnas.presenter.registration.view')}}">
+                                <p style="margin: 0; font-size:10px">Register Now</p>
+                            </a>
+                            @endguest
+                        </button>
+                    </div>
+                <?php } ?>
             </div>
         </div>
     </div>

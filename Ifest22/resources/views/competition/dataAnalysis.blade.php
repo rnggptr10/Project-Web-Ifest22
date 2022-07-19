@@ -32,7 +32,7 @@ Data Analysis Competition (DAC) is a national-scale competition organized by Him
 @section('competition_collab')
 <div data-aos="fade-down" data-aos-duration="1000" class="row-img-prize justify-content-center" align="center" id="competitionPrizes" style="padding-bottom: 50px;">
     <h1 class="text-sub-title" style="font-size:24px">In Collaboration with</h1>
-    <img class="img-fluid" style="width:200px;" src="{{ URL::asset('img/logo/sponsor/collab_cda.jpg') }}">
+    <img class="img-fluid" style="width:240px;" src="{{ URL::asset('img/logo/sponsor/collab_cda.jpg') }}">
 </div>
 @endsection
 
@@ -272,17 +272,41 @@ Data Analysis Competition (DAC) is a national-scale competition organized by Him
     <div class="col-btn-left pad-regist" data-aos="fade-right" data-aos-duration="1000" style="text-align: right;">
         <button type="button" class="btn btn-outline-primary ifest-btn-outline-primary-dark-bg" style="width: 147px;height: 48px;">Guidebook</button>
     </div>
-    <div class="col-btn-right pad-regist" data-aos="fade-left" data-aos-duration="1000" style="text-align: left;">
-        <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 147px;height: 48px;">
-            @guest
-            @if(Route::has('login'))
-            <a class="ifest-btn-primary-dark-bg-text" href="{{route('login')}}">Register Now</a>
-            @endif
-            @else
-            <a class="ifest-btn-primary-dark-bg-text" href="{{route('dac.registration.view')}}">Register Now</a>
-            @endguest
-        </button>
-    </div>
+    <?php
+    // SET TANGGAL REGIST LOMBA
+    $comp_regist_start = Carbon::create(2022, 7, 24, 00, 00, 01, 'Asia/Jakarta');
+    $comp_regist_end = Carbon::create(2022, 8, 20, 23, 59, 59, 'Asia/Jakarta');
+    $now = Carbon::now('Asia/Jakarta');
+
+    $comp_regist_start->toDateTimeString();
+    $comp_regist_end->toDateTimeString();
+    $now->toDateTimeString();
+
+    if ($now->greaterThan($comp_regist_start) && $now->lessThan($comp_regist_end)) { ?>
+        <div class="col-btn-right pad-regist" data-aos="fade-left" data-aos-duration="1000" style="text-align: left;">
+            <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 147px;height: 48px;">
+                @guest
+                @if(Route::has('login'))
+                <a class="ifest-btn-primary-dark-bg-text" href="{{route('login')}}">Register Now</a>
+                @endif
+                @else
+                <a class="ifest-btn-primary-dark-bg-text" href="{{route('dac.registration.view')}}">Register Now</a>
+                @endguest
+            </button>
+        </div>
+    <?php } elseif ($now->lessThan($comp_regist_start) || $now->greaterThan($comp_regist_end)) { ?>
+        <div class="col-btn-right pad-regist" data-aos="fade-left" data-aos-duration="1000" style="text-align: left;">
+            <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 147px;height: 48px;" disabled>
+                @guest
+                @if(Route::has('login'))
+                <a class="ifest-btn-primary-dark-bg-text" href="{{route('login')}}">Register Now</a>
+                @endif
+                @else
+                <a class="ifest-btn-primary-dark-bg-text" href="{{route('dac.registration.view')}}">Register Now</a>
+                @endguest
+            </button>
+        </div>
+    <?php } ?>
 </div>
 @endsection
 

@@ -67,7 +67,7 @@
             </div>
             <div class="col-6" align="left" style="padding:0 8px 0 15px">
                 <h6 class="text-tickets-head">Team Registration</h6>
-                <p class="text-tickets-desc">24 July - 20 Agustus 2022<br>Status : 
+                <p class="text-tickets-desc">24 July - 20 August 2022<br>Status : 
                 <?php
                     // SET WAKTU LIVE
                     $now = Carbon::now('Asia/Jakarta');

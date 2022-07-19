@@ -28,12 +28,13 @@ Technopreneur is a webinar and workshop that provides training & development fac
 <img class="card-img-top size-img-top-speakers" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg" alt="Speakers-1">
 <div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
     <div class="col-7" style="line-height: 5px;">
-        <h5 class="text-photo-card-name">Speaker1</h5>
-        <p class="text-photo-card-position">CEO</p>
+        <h5 class="text-photo-card-name">To Be Announced Soon!</h5>
+        <!-- <h5 class="text-photo-card-name">Speaker1</h5>
+        <p class="text-photo-card-position">CEO</p> -->
     </div>
-    <div class="col-3">
+    <!-- <div class="col-3">
         <a href=""><img class="logo-linkedin" src="{{ URL::asset('icon/linkedin.svg') }}" alt="linkedin"></a>
-    </div>
+    </div> -->
 </div>
 @endsection
 
@@ -41,12 +42,13 @@ Technopreneur is a webinar and workshop that provides training & development fac
 <img class="card-img-top size-img-top-speakers" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg" alt="Speakers-1">
 <div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
     <div class="col-7" style="line-height: 5px;">
-        <h5 class="text-photo-card-name">Speaker2</h5>
-        <p class="text-photo-card-position">CEO</p>
+        <h5 class="text-photo-card-name">To Be Announced Soon!</h5>
+        <!-- <h5 class="text-photo-card-name">Speaker2</h5>
+        <p class="text-photo-card-position">CEO</p> -->
     </div>
-    <div class="col-3">
+    <!-- <div class="col-3">
         <a href=""><img class="logo-linkedin" src="{{ URL::asset('icon/linkedin.svg') }}" alt="linkedin"></a>
-    </div>
+    </div> -->
 </div>
 @endsection
 
@@ -55,12 +57,13 @@ Technopreneur is a webinar and workshop that provides training & development fac
 <img class="card-img-top size-img-top-speakers" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg" alt="Speakers-1">
 <div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
     <div class="col-7" style="line-height: 5px;">
-        <h5 class="text-photo-card-name">Mentor3</h5>
-        <p class="text-photo-card-position">CEO</p>
+        <h5 class="text-photo-card-name">To Be Announced Soon!</h5>
+        <!-- <h5 class="text-photo-card-name">Mentor3</h5>
+        <p class="text-photo-card-position">CEO</p> -->
     </div>
-    <div class="col-3">
+    <!-- <div class="col-3">
         <a href=""><img class="logo-linkedin" src="{{ URL::asset('icon/linkedin.svg') }}" alt="linkedin"></a>
-    </div>
+    </div> -->
 </div>
 @endsection
 
@@ -68,12 +71,13 @@ Technopreneur is a webinar and workshop that provides training & development fac
 <img class="card-img-top size-img-top-speakers" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg" alt="Speakers-1">
 <div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
     <div class="col-7" style="line-height: 5px;">
-        <h5 class="text-photo-card-name">Mentor4</h5>
-        <p class="text-photo-card-position">CEO</p>
+        <h5 class="text-photo-card-name">To Be Announced Soon!</h5>
+        <!-- <h5 class="text-photo-card-name">Mentor4</h5>
+        <p class="text-photo-card-position">CEO</p> -->
     </div>
-    <div class="col-3">
+    <!-- <div class="col-3">
         <a href=""><img class="logo-linkedin" src="{{ URL::asset('icon/linkedin.svg') }}" alt="linkedin"></a>
-    </div>
+    </div> -->
 </div>
 @endsection
 
@@ -81,12 +85,13 @@ Technopreneur is a webinar and workshop that provides training & development fac
 <img class="card-img-top size-img-top-speakers" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg" alt="Speakers-1">
 <div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
     <div class="col-7" style="line-height: 5px;">
-        <h5 class="text-photo-card-name">Mentor5</h5>
-        <p class="text-photo-card-position">CEO</p>
+        <h5 class="text-photo-card-name">To Be Announced Soon!</h5>
+        <!-- <h5 class="text-photo-card-name">Mentor5</h5>
+        <p class="text-photo-card-position">CEO</p> -->
     </div>
-    <div class="col-3">
+    <!-- <div class="col-3">
         <a href=""><img class="logo-linkedin" src="{{ URL::asset('icon/linkedin.svg') }}" alt="linkedin"></a>
-    </div>
+    </div> -->
 </div>
 @endsection
 
@@ -94,12 +99,13 @@ Technopreneur is a webinar and workshop that provides training & development fac
 <img class="card-img-top size-img-top-speakers" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg" alt="Speakers-1">
 <div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
     <div class="col-7" style="line-height: 5px;">
-        <h5 class="text-photo-card-name">Mentor6</h5>
-        <p class="text-photo-card-position">CEO</p>
+        <h5 class="text-photo-card-name">To Be Announced Soon!</h5>
+        <!-- <h5 class="text-photo-card-name">Mentor6</h5>
+        <p class="text-photo-card-position">CEO</p> -->
     </div>
-    <div class="col-3">
+    <!-- <div class="col-3">
         <a href=""><img class="logo-linkedin" src="{{ URL::asset('icon/linkedin.svg') }}" alt="linkedin"></a>
-    </div>
+    </div> -->
 </div>
 @endsection
 
@@ -148,9 +154,35 @@ Technopreneur is a webinar and workshop that provides training & development fac
                         </div>
                     </div>
                 </div>
+                <!-- <div class="carousel-item">
+                    <div class="row justify-content-center">
+                        <div class="col-4">
+                            <div class="card ifest-photo-card" style="border: 0; width:max-content">
+                                @yield('techno_speakers_3')
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="card ifest-photo-card" style="border: 0; width:max-content">
+                                @yield('techno_speakers_4')
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
             </div>
         </div>
     </div>
+    <!-- <div class="row justify-content-center" style="padding-top: 30px;">
+        <div class="col-1">
+            <a class="carousel-control-prev" href="#technoSpeakers" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#technoSpeakers" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div> -->
 </div>
 
 <div id="Speaker2" data-aos="fade-down" data-aos-duration="1000" align="center" id="sutSpeakers" style="padding-top: 30px;padding-bottom: 30px;">
@@ -365,7 +397,7 @@ Technopreneur is a webinar and workshop that provides training & development fac
                     <img class="img-fluid events-card-logo" src="{{ URL::asset('icon/platform.png') }}" alt="Platform">
                 </div>
                 <div class="col-10" style="text-align:left;">
-                    <h5 style="color:black;">Youtube & Zoom Meetings</h5>
+                    <h5 style="color:black;margin:0;">Youtube & Zoom Meetings</h5>
                 </div>
             </div>
         </div>
@@ -382,27 +414,61 @@ Technopreneur is a webinar and workshop that provides training & development fac
                     <p class="title-1" style="color:black;margin-bottom:0;">Free</p>
                     <p class="title-2" style="color:black;margin:0; font-size:12px;">Free</p>
                 </div>
-                <div class="col-5">
-                    <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg">
-                        @guest
-                        @if(Route::has('login'))
-                        <a class="title-1 ifest-btn-primary-dark-bg-text" href="{{route('login')}}">
-                            Buy Ticket
-                        </a>
-                        <a class="title-2 ifest-btn-primary-dark-bg-text" href="{{route('login')}}">
-                            <p style="margin: 0; font-size:10px">Buy Ticket</p>
-                        </a>
-                        @endif
-                        @else
-                        <a class="title-1 ifest-btn-primary-dark-bg-text" href="{{route('techoSeminar.registration')}}">
-                            Register
-                        </a>
-                        <a class="title-2 ifest-btn-primary-dark-bg-text" href="{{route('techoSeminar.registration')}}">
-                            <p style="margin: 0; font-size:10px">Register</p>
-                        </a>
-                        @endguest
-                    </button>
-                </div>
+                <?php
+                // SET TANGGAL REGIST TECHNO SEMINAR & WORKSHOP
+                $techno_regist_start = Carbon::create(2022, 7, 24, 00, 00, 01, 'Asia/Jakarta');
+                $techno_regist_end = Carbon::create(2022, 8, 31, 23, 59, 59, 'Asia/Jakarta');
+                $now = Carbon::now('Asia/Jakarta');
+
+                $techno_regist_start->toDateTimeString();
+                $techno_regist_end->toDateTimeString();
+                $now->toDateTimeString();
+
+                if ($now->greaterThan($techno_regist_start) && $now->lessThan($techno_regist_end)) { ?>
+                    <div class="col-5">
+                        <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg">
+                            @guest
+                            @if(Route::has('login'))
+                            <a class="title-1 ifest-btn-primary-dark-bg-text" href="{{route('login')}}">
+                                Buy Ticket
+                            </a>
+                            <a class="title-2 ifest-btn-primary-dark-bg-text" href="{{route('login')}}">
+                                <p style="margin: 0; font-size:10px">Buy Ticket</p>
+                            </a>
+                            @endif
+                            @else
+                            <a class="title-1 ifest-btn-primary-dark-bg-text" href="{{route('techoSeminar.registration')}}">
+                                Register
+                            </a>
+                            <a class="title-2 ifest-btn-primary-dark-bg-text" href="{{route('techoSeminar.registration')}}">
+                                <p style="margin: 0; font-size:10px">Register</p>
+                            </a>
+                            @endguest
+                        </button>
+                    </div>
+                <?php } elseif ($now->lessThan($techno_regist_start) || $now->greaterThan($techno_regist_end)) { ?>
+                    <div class="col-5">
+                        <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" disabled>
+                            @guest
+                            @if(Route::has('login'))
+                            <a class="title-1 ifest-btn-primary-dark-bg-text" href="{{route('login')}}">
+                                Buy Ticket
+                            </a>
+                            <a class="title-2 ifest-btn-primary-dark-bg-text" href="{{route('login')}}">
+                                <p style="margin: 0; font-size:10px">Buy Ticket</p>
+                            </a>
+                            @endif
+                            @else
+                            <a class="title-1 ifest-btn-primary-dark-bg-text" href="{{route('techoSeminar.registration')}}">
+                                Register
+                            </a>
+                            <a class="title-2 ifest-btn-primary-dark-bg-text" href="{{route('techoSeminar.registration')}}">
+                                <p style="margin: 0; font-size:10px">Register</p>
+                            </a>
+                            @endguest
+                        </button>
+                    </div>
+                <?php } ?>
             </div>
         </div>
     </div>
@@ -441,23 +507,43 @@ Technopreneur is a webinar and workshop that provides training & development fac
                     <p class="title-1" style="color:black;margin-bottom:0;">Including Seminar</p>
                     <p class="title-2" style="color:black;margin:0; font-size:12px;">Including Seminar</p>
                 </div>
-                <div class="col-5">
-                    <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg">
-                        @guest
-                        @if(Route::has('login'))
-                        <a class="title-1 ifest-btn-primary-dark-bg-text" href="{{route('login')}}">Register</a>
-                        <a class="title-2 ifest-btn-primary-dark-bg-text" href="{{route('login')}}">
-                            <p style="margin: 0; font-size:10px">Register</p>
-                        </a>
-                        @endif
-                        @else
-                        <a class="title-1 ifest-btn-primary-dark-bg-text" href="{{route('technoWorkshop.registration.view')}}">Register</a>
-                        <a class="title-2 ifest-btn-primary-dark-bg-text" href="{{route('technoWorkshop.registration.view')}}">
-                            <p style="margin: 0; font-size:10px">Register</p>
-                        </a>
-                        @endguest
-                    </button>
-                </div>
+                <?php if ($now->greaterThan($techno_regist_start) && $now->lessThan($techno_regist_end)) { ?>
+                    <div class="col-5">
+                        <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg">
+                            @guest
+                            @if(Route::has('login'))
+                            <a class="title-1 ifest-btn-primary-dark-bg-text" href="{{route('login')}}">Register</a>
+                            <a class="title-2 ifest-btn-primary-dark-bg-text" href="{{route('login')}}">
+                                <p style="margin: 0; font-size:10px">Register</p>
+                            </a>
+                            @endif
+                            @else
+                            <a class="title-1 ifest-btn-primary-dark-bg-text" href="{{route('technoWorkshop.registration.view')}}">Register</a>
+                            <a class="title-2 ifest-btn-primary-dark-bg-text" href="{{route('technoWorkshop.registration.view')}}">
+                                <p style="margin: 0; font-size:10px">Register</p>
+                            </a>
+                            @endguest
+                        </button>
+                    </div>
+                <?php } elseif ($now->lessThan($techno_regist_start) || $now->greaterThan($techno_regist_end)) { ?>
+                    <div class="col-5">
+                        <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" disabled>
+                            @guest
+                            @if(Route::has('login'))
+                            <a class="title-1 ifest-btn-primary-dark-bg-text" href="{{route('login')}}">Register</a>
+                            <a class="title-2 ifest-btn-primary-dark-bg-text" href="{{route('login')}}">
+                                <p style="margin: 0; font-size:10px">Register</p>
+                            </a>
+                            @endif
+                            @else
+                            <a class="title-1 ifest-btn-primary-dark-bg-text" href="{{route('technoWorkshop.registration.view')}}">Register</a>
+                            <a class="title-2 ifest-btn-primary-dark-bg-text" href="{{route('technoWorkshop.registration.view')}}">
+                                <p style="margin: 0; font-size:10px">Register</p>
+                            </a>
+                            @endguest
+                        </button>
+                    </div>
+                <?php } ?>
             </div>
         </div>
     </div>

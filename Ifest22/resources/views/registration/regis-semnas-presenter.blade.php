@@ -13,7 +13,7 @@
 @section('content')
 
 <body style="background-color: #1c1c1c;">
-    <div class="container" style="padding: 0; ">
+    <div class="container" style="padding: 30px 0 100px 0; ">
         <div class="row">
             <div class="col" style="padding: 100px 0 50px 0;">
                 <div class="row" align="center" id="technoWSPayment" style="padding-bottom: 30px;">

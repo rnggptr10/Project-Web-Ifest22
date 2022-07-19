@@ -129,10 +129,10 @@
                     <?php if($now->greaterThan($semnas_announce_date_start)) { ?>
                         @if ($presenter->status_selected === '0')
                             <br>Status : 
-                            <span class="text-tickets-status status-red">Your team didn't qualify for the Final Round. Keep your spirits up!</span>
+                            <span class="text-tickets-status status-red">Abstract not Selected. Keep your spirits up!</span>
                         @elseif ($presenter->status_selected === '2')
                             <br>Status : 
-                            <span class="text-tickets-status status-green">Congratulations! Your team advances to the Final Round</span>
+                            <span class="text-tickets-status status-green">Congratulations! Abstract Selected!</span>
                         @elseif ($presenter->status_selected === '1')
                         @endif
                     <?php } elseif($now->lessThan($semnas_announce_date_start)) {} ?>
@@ -396,7 +396,7 @@
                         <img class="circular-number" src="{{ URL::asset('icon/page-details/unqualified.svg') }}" alt="unqualified">
                     </div>
                     <div class="col-8" align="left" style="padding:0 8px 0 15px">
-                        <h6 class="text-tickets-head">Your team didn't qualify for the Final Round. <br>Keep your spirits up!</h6>
+                        <h6 class="text-tickets-head">You didn't qualify for the next Stage. Keep your spirits up!</h6>
                     </div>
                 </div>
             <?php } elseif ($now->lessThan($semnas_announce_date_start)) { ?>

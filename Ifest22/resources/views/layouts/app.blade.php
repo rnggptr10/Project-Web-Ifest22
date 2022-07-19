@@ -142,9 +142,9 @@
                         <div class="fmain-event">
                             <h3 class="footer-header">Event</h3>
                             <ul class="footer-ul">
-                                <li class="footer-li"><a href="{{ route('semnas') }}">International Conference</a></li>
+                                <li class="footer-li"><a href="{{ route('semnas') }}">Seminar Nasional</a></li>
                                 <li class="footer-li"><a href="{{ route('techno') }}">Technopreneur</a></li>
-                                <li class="footer-li"><a href="{{ route('startup') }}">StartUp Talk</a></li>
+                                <li class="footer-li"><a href="{{ route('startup') }}">Startup Talk</a></li>
                             </ul>
                         </div>
                         <div class="fcomp">
@@ -185,7 +185,7 @@
                     </div>
                 </div>
             </div>
-            <h5 class="footer-copy text-center mt-4">&copy 2021 IFest</h5>
+            <h5 class="footer-copy text-center mt-4">&copy 2022 IFest</h5>
         </footer>
     </div>
     <script>

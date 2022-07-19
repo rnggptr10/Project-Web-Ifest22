@@ -79,22 +79,23 @@
                                 <div class="row align-items-center">
                                     <div class="col-7" align="left">
                                         <h6 class="text-tickets-head">Startup Talk Day 1</h6>
-                                        <p class="text-tickets-desc">20 Agustus 2022<br>Registration Status :
+                                        <p class="text-tickets-desc">Saturday, 20 Agustus 2022<br>Registration Status :
                                             <span class="text-tickets-status status-green">
                                                 Confirmed
                                             </span>
                                         </p>
                                     </div>
                                     <?php
-                                    // SET TANGGAL ACARA
-                                    $sut_1_date_start = Carbon::create(2022, 7, 17, 7, 00, 00, 'Asia/Jakarta');
-                                    $sut_1_date_end = Carbon::create(2022, 7, 18, 14, 00, 00, 'Asia/Jakarta');
-                                    $sut_1_now = Carbon::now('Asia/Jakarta');
+                                    // SET TANGGAL ACARA SUT DAY 1
+                                    $sut_1_date_start = Carbon::create(2022, 8, 20, 8, 30, 00, 'Asia/Jakarta');
+                                    $sut_1_date_end = Carbon::create(2022, 8, 20, 12, 00, 00, 'Asia/Jakarta');
+                                    $now = Carbon::now('Asia/Jakarta');
 
                                     $sut_1_date_start->toDateTimeString();
-                                    $sut_1_now->toDateTimeString();
+                                    $sut_1_date_end->toDateTimeString();
+                                    $now->toDateTimeString();
 
-                                    if ($sut_1_now->greaterThan($sut_1_date_start) && $sut_1_now->lessThan($sut_1_date_end)) {
+                                    if ($now->greaterThan($sut_1_date_start) && $now->lessThan($sut_1_date_end)) {
                                     ?>
                                         <div class="col">
                                             <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 147px;height: 48px;">
@@ -102,7 +103,7 @@
                                             </button>
                                         </div>
                                     <?php
-                                    } elseif ($sut_1_now->lessThan($sut_1_date_start) || $sut_1_now->greaterThan($sut_1_date_end)) {
+                                    } elseif ($now->lessThan($sut_1_date_start) || $now->greaterThan($sut_1_date_end)) {
                                     ?>
                                         <div class="col">
                                             <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 147px;height: 48px;" disabled>
@@ -125,22 +126,21 @@
                                 <div class="row align-items-center">
                                     <div class="col-7" align="left">
                                         <h6 class="text-tickets-head">Startup Talk Day 2</h6>
-                                        <p class="text-tickets-desc">21 Agustus 2022<br>Registration Status :
+                                        <p class="text-tickets-desc">Sunday, 21 Agustus 2022<br>Registration Status :
                                             <span class="text-tickets-status status-green">
                                                 Confirmed
                                             </span>
                                         </p>
                                     </div>
                                     <?php
-                                    // SET TANGGAL ACARA
-                                    $sut_2_date_start = Carbon::create(2022, 7, 12, 7, 00, 00, 'Asia/Jakarta');
-                                    $sut_2_date_end = Carbon::create(2022, 7, 15, 14, 00, 00, 'Asia/Jakarta');
-                                    $sut_2_now = Carbon::now('Asia/Jakarta');
+                                    // SET TANGGAL ACARA SUT DAY 2
+                                    $sut_2_date_start = Carbon::create(2022, 8, 21, 8, 30, 00, 'Asia/Jakarta');
+                                    $sut_2_date_end = Carbon::create(2022, 8, 21, 12, 00, 00, 'Asia/Jakarta');
 
                                     $sut_2_date_start->toDateTimeString();
-                                    $sut_2_now->toDateTimeString();
+                                    $sut_2_date_end->toDateTimeString();
 
-                                    if ($sut_2_now->greaterThan($sut_2_date_start) && $sut_2_now->lessThan($sut_2_date_end)) {
+                                    if ($now->greaterThan($sut_2_date_start) && $now->lessThan($sut_2_date_end)) {
                                     ?>
                                         <div class="col">
                                             <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 147px;height: 48px;">
@@ -148,7 +148,7 @@
                                             </button>
                                         </div>
                                     <?php
-                                    } elseif ($sut_2_now->lessThan($sut_2_date_start) || $sut_2_now->greaterThan($sut_2_date_end)) {
+                                    } elseif ($now->lessThan($sut_2_date_start) || $now->greaterThan($sut_2_date_end)) {
                                     ?>
                                         <div class="col">
                                             <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 147px;height: 48px;" disabled>
@@ -176,19 +176,18 @@
                                                 <h6 class="text-tickets-head">Seminar Nasional</h6>
                                                 <p class="text-tickets-desc">8 - 9 October 2022
                                                 <?php
-                                                    // SET TANGGAL ACARA
+                                                    // SET TANGGAL REGIST SEMNAS (UNSET)
                                                     $semnas_payment_date_start = Carbon::create(2022, 7, 15, 7, 00, 00, 'Asia/Jakarta');
                                                     $semnas_payment_date_end = Carbon::create(2022, 7, 18, 14, 00, 00, 'Asia/Jakarta');
-                                                    $semnas_payment_now = Carbon::now('Asia/Jakarta');
 
                                                     $semnas_payment_date_start->toDateTimeString();
-                                                    $semnas_payment_now->toDateTimeString();
+                                                    $semnas_payment_date_end->toDateTimeString();
                                                 ?>
                                                     @if ($semnas->status_pembayaran === '0')
-                                                        <?php if ($semnas_payment_now->greaterThan($semnas_payment_date_start) && $semnas_payment_now->lessThan($semnas_payment_date_end)) { ?>
+                                                        <?php if ($now->greaterThan($semnas_payment_date_start) && $now->lessThan($semnas_payment_date_end)) { ?>
                                                             <br>Registration Status :
                                                             <span class="text-tickets-status status-red">Payment Failed. Please Re-Upload Payment Proof.</span>
-                                                        <?php } elseif ($semnas_payment_now->greaterThan($semnas_payment_date_end)) { ?>
+                                                        <?php } elseif ($now->greaterThan($semnas_payment_date_end)) { ?>
                                                             <br>Registration Status :
                                                             <span class="text-tickets-status status-red">Payment Failed</span>
                                                         <?php } ?>
@@ -201,13 +200,13 @@
                                                     @endif
                                                 </p>
                                             </div>
-                                            <?php if ($semnas_payment_now->greaterThan($semnas_payment_date_start) && $semnas_payment_now->lessThan($semnas_payment_date_end)) { ?>
+                                            <?php if ($now->greaterThan($semnas_payment_date_start) && $now->lessThan($semnas_payment_date_end)) { ?>
                                                 <div class="col">
                                                     <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 147px;height: 48px;">
                                                         <a class="ifest-btn-primary-dark-bg-text" href="{{ route('semnas.resubmit.payment.view') }}">Re-Upload</a>
                                                     </button>
                                                 </div>
-                                            <?php } elseif ($semnas_payment_now->lessThan($semnas_payment_date_start) || $semnas_payment_now->greaterThan($semnas_payment_date_end)) { ?>
+                                            <?php } elseif ($now->lessThan($semnas_payment_date_start) || $now->greaterThan($semnas_payment_date_end)) { ?>
                                             <?php } ?>
                                         </div>
                                     </div>
@@ -235,20 +234,19 @@
                                         <div class="row align-items-center">
                                             <div class="col-7" align="left">
                                                 <h6 class="text-tickets-head">Seminar Nasional Day 1</h6>
-                                                <p class="text-tickets-desc">8 October 2022<br>Registration Status :
+                                                <p class="text-tickets-desc">Saturday, 8 October 2022<br>Registration Status :
                                                     <span class="text-tickets-status status-green">Confirmed</span>
                                                 </p>
                                             </div>
                                             <?php
-                                            // SET TANGGAL ACARA
-                                            $semnas_day1_date_start = Carbon::create(2022, 7, 12, 7, 00, 00, 'Asia/Jakarta');
-                                            $semnas_day1_date_end = Carbon::create(2022, 7, 13, 14, 00, 00, 'Asia/Jakarta');
-                                            $semnas_day1_now = Carbon::now('Asia/Jakarta');
+                                            // SET TANGGAL ACARA SEMNAS DAY 1
+                                            $semnas_day1_date_start = Carbon::create(2022, 10, 8, 10, 00, 00, 'Asia/Jakarta');
+                                            $semnas_day1_date_end = Carbon::create(2022, 10, 8, 13, 00, 00, 'Asia/Jakarta');
 
                                             $semnas_day1_date_start->toDateTimeString();
-                                            $semnas_day1_now->toDateTimeString();
+                                            $semnas_day1_date_end->toDateTimeString();
 
-                                            if ($semnas_day1_now->greaterThan($semnas_day1_date_start) && $semnas_day1_now->lessThan($semnas_day1_date_end)) {
+                                            if ($now->greaterThan($semnas_day1_date_start) && $now->lessThan($semnas_day1_date_end)) {
                                             ?>
                                                 <div class="col">
                                                     <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 147px;height: 48px;">
@@ -256,7 +254,7 @@
                                                     </button>
                                                 </div>
                                             <?php
-                                            } elseif ($semnas_day1_now->lessThan($semnas_day1_date_start) || $semnas_day1_now->greaterThan($semnas_day1_date_end)) {
+                                            } elseif ($now->lessThan($semnas_day1_date_start) || $now->greaterThan($semnas_day1_date_end)) {
                                             ?>
                                                 <div class="col">
                                                     <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 147px;height: 48px;" disabled>
@@ -276,20 +274,19 @@
                                         <div class="row align-items-center">
                                             <div class="col-7" align="left">
                                                 <h6 class="text-tickets-head">Seminar Nasional Day 2</h6>
-                                                <p class="text-tickets-desc">9 October 2022<br>Registration Status :
+                                                <p class="text-tickets-desc">Sunday, 9 October 2022<br>Registration Status :
                                                     <span class="text-tickets-status status-green">Confirmed</span>
                                                 </p>
                                             </div>
                                             <?php
-                                            // SET TANGGAL ACARA
-                                            $semnas_day2_date_start = Carbon::create(2022, 7, 12, 7, 00, 00, 'Asia/Jakarta');
-                                            $semnas_day2_date_end = Carbon::create(2022, 7, 13, 14, 00, 00, 'Asia/Jakarta');
-                                            $semnas_day2_now = Carbon::now('Asia/Jakarta');
+                                            // SET TANGGAL ACARA SEMNAS DAY 2
+                                            $semnas_day2_date_start = Carbon::create(2022, 10, 9, 10, 00, 00, 'Asia/Jakarta');
+                                            $semnas_day2_date_end = Carbon::create(2022, 10, 9, 12, 00, 00, 'Asia/Jakarta');
 
                                             $semnas_day2_date_start->toDateTimeString();
-                                            $semnas_day2_now->toDateTimeString();
+                                            $semnas_day2_date_end->toDateTimeString();
 
-                                            if ($semnas_day2_now->greaterThan($semnas_day2_date_start) && $semnas_day2_now->lessThan($semnas_day2_date_end)) {
+                                            if ($now->greaterThan($semnas_day2_date_start) && $now->lessThan($semnas_day2_date_end)) {
                                             ?>
                                                 <div class="col">
                                                     <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 147px;height: 48px;">
@@ -297,7 +294,7 @@
                                                     </button>
                                                 </div>
                                             <?php
-                                            } elseif ($semnas_day2_now->lessThan($semnas_day2_date_start) || $semnas_day2_now->greaterThan($semnas_day2_date_end)) {
+                                            } elseif ($now->lessThan($semnas_day2_date_start) || $now->greaterThan($semnas_day2_date_end)) {
                                             ?>
                                                 <div class="col">
                                                     <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 147px;height: 48px;" disabled>
@@ -344,17 +341,34 @@
                                 <div class="row align-items-center">
                                     <div class="col-7" align="left">
                                         <h6 class="text-tickets-head">Technopreneur Seminar Day 1</h6>
-                                        <p class="text-tickets-desc">11 September 2022<br>Registration Status :
+                                        <p class="text-tickets-desc">Sunday, 11 September 2022<br>Registration Status :
                                             <span class="text-tickets-status status-green">
                                                 Confirmed
                                             </span>
                                         </p>
                                     </div>
-                                    <div class="col">
-                                        <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 147px;height: 48px;" disabled>
-                                            <a class="ifest-btn-primary-dark-bg-text" href="">Link Youtube</a>
-                                        </button>
-                                    </div>
+                                    <?php
+                                    // SET TANGGAL ACARA TECHNO SEMINAR DAY 1
+                                    $techno_s_day1_date_start = Carbon::create(2022, 9, 11, 8, 00, 00, 'Asia/Jakarta');
+                                    $techno_s_day1_date_end = Carbon::create(2022, 9, 11, 15, 00, 00, 'Asia/Jakarta');
+
+                                    $techno_s_day1_date_start->toDateTimeString();
+                                    $techno_s_day1_date_end->toDateTimeString();
+
+                                    if ($now->greaterThan($techno_s_day1_date_start) && $now->lessThan($techno_s_day1_date_end)) {
+                                    ?>
+                                        <div class="col">
+                                            <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 147px;height: 48px;">
+                                                <a class="ifest-btn-primary-dark-bg-text" href="">Link Youtube</a>
+                                            </button>
+                                        </div>
+                                    <?php } elseif ($now->lessThan($techno_s_day1_date_start) || $now->greaterThan($techno_s_day1_date_end)) { ?>
+                                        <div class="col">
+                                            <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 147px;height: 48px;" disabled>
+                                                <a class="ifest-btn-primary-dark-bg-text" href="">Link Youtube</a>
+                                            </button>
+                                        </div>
+                                    <?php } ?>
                                 </div>
                             </div>
                         </div>
@@ -365,17 +379,34 @@
                                 <div class="row align-items-center">
                                     <div class="col-7" align="left">
                                         <h6 class="text-tickets-head">Technopreneur Seminar Day 2</h6>
-                                        <p class="text-tickets-desc">18 September 2022<br>Registration Status :
+                                        <p class="text-tickets-desc">Sunday, 18 September 2022<br>Registration Status :
                                             <span class="text-tickets-status status-green">
                                                 Confirmed
                                             </span>
                                         </p>
                                     </div>
-                                    <div class="col">
-                                        <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 147px;height: 48px;" disabled>
-                                            <a class="ifest-btn-primary-dark-bg-text" href="">Link Youtube</a>
-                                        </button>
-                                    </div>
+                                    <?php
+                                    // SET TANGGAL ACARA TECHNO SEMINAR DAY 2
+                                    $techno_s_day2_date_start = Carbon::create(2022, 9, 18, 8, 00, 00, 'Asia/Jakarta');
+                                    $techno_s_day2_date_end = Carbon::create(2022, 9, 18, 15, 00, 00, 'Asia/Jakarta');
+
+                                    $techno_s_day2_date_start->toDateTimeString();
+                                    $techno_s_day2_date_end->toDateTimeString();
+
+                                    if ($now->greaterThan($techno_s_day2_date_start) && $now->lessThan($techno_s_day2_date_end)) {
+                                    ?>
+                                        <div class="col">
+                                            <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 147px;height: 48px;">
+                                                <a class="ifest-btn-primary-dark-bg-text" href="">Link Youtube</a>
+                                            </button>
+                                        </div>
+                                    <?php } elseif ($now->lessThan($techno_s_day2_date_start) || $now->greaterThan($techno_s_day2_date_end)) { ?>
+                                        <div class="col">
+                                            <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 147px;height: 48px;" disabled>
+                                                <a class="ifest-btn-primary-dark-bg-text" href="">Link Youtube</a>
+                                            </button>
+                                        </div>
+                                    <?php } ?>
                                 </div>
                             </div>
                         </div>

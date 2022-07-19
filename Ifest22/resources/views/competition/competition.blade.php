@@ -26,8 +26,8 @@
                 </div>
             </div>
         </div> -->
-        <div class="col-desc" style="padding: 20px 0 20px 0;">
-            <div class="row" align="center" id="competitionDescription" style="padding-bottom: 30px;">
+        <div class="col-desc" style="padding: 20px 0 10px 0;">
+            <div class="row" align="center" id="competitionDescription" style="padding-bottom: 10px;">
                 <div class="col" style="padding-bottom:25px">
                     <div class="row align-items-center justify-content-center">
                         @yield('competition_title')
