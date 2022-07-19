@@ -46,7 +46,7 @@
                                             {{ $data->team_member_1 }} - {{ $data->team_member_1_institute }} -
                                             <a href="{{asset('storage/' . $data['team_member_1_id_card'])}}"> Id Card</a>
                                         @else
-                                            NULL
+                                            -
                                         @endif
                                     </td>
                                     <td>
@@ -54,22 +54,25 @@
                                             {{ $data->team_member_2 }} - {{ $data->team_member_2_institute }} -
                                             <a href="{{asset('storage/' . $data['team_member_2_id_card'])}}"> Id Card</a>
                                         @else
-                                            NULL
+                                            -
                                         @endif
                                     </td>
                                     <td><a href="{{asset('storage/' . $data['proof_payment'])}}"> Proof Payment</a></td>
                                     <td>
                                         <div class="btn-group">
-                                            <select name="techno_ws_payment_status" id="techno_ws_payment_status" style="color:black" onchange="this.form.submit()">
-                                                <option style="color:black" value="2" <?php if ($data->status_pembayaran === '2') {
-                                                                                            echo ('selected');
-                                                                                        } ?>>Confirmed</option>
-                                                <option style="color:black" value="1" <?php if ($data->status_pembayaran === '1') {
-                                                                                            echo ('selected');
-                                                                                        } ?>>Pending</option>
-                                                <option style="color:black" value="0" <?php if ($data->status_pembayaran === '0') {
-                                                                                            echo ('selected');
-                                                                                        } ?>>Declined</option>
+                                            <select name="techno_ws_payment_status" id="techno_ws_payment_status"
+                                            class="
+                                                <?php if($data->status_pembayaran === '2'){echo('dd-green');}
+                                                elseif($data->status_pembayaran === '1'){echo('dd-orange');} 
+                                                elseif($data->status_pembayaran === '0'){echo('dd-red');} ?>
+                                            "
+                                            onchange="this.form.submit()">
+                                                <option class="dd-green" value="2" 
+                                                <?php if ($data->status_pembayaran === '2') {echo ('selected');} ?>>Confirmed</option>
+                                                <option class="dd-orange" value="1" 
+                                                <?php if ($data->status_pembayaran === '1') {echo ('selected');} ?>>Pending</option>
+                                                <option class="dd-red" value="0" 
+                                                <?php if ($data->status_pembayaran === '0') {echo ('selected');} ?>>Declined</option>
                                             </select>
                                         </div>
                                     </td>
@@ -81,7 +84,7 @@
             </div>
         </div>
         <div class="row justify-content-center" style="padding-bottom: 10px;">
-            <h1 class="text-table-title ">Data Project Lomba</h1>
+            <h1 class="text-table-title ">Data Workshop</h1>
         </div>
         <div class="row justify-content-center" style="padding-bottom: 30px;">
             <div class="table-responsive">
@@ -107,16 +110,19 @@
                                     <td>{{ $data->team_leader }}</td>
                                     <td>
                                         <div class="btn-group">
-                                            <select name="techno_ws_selected_status" id="techno_ws_selected_status" style="color:black" onchange="this.form.submit()">
-                                                <option style="color:black" value="2" <?php if ($data->selected_team === '2') {
-                                                                                            echo ('selected');
-                                                                                        } ?>>Selected</option>
-                                                <option style="color:black" value="1" <?php if ($data->selected_team === '1') {
-                                                                                            echo ('selected');
-                                                                                        } ?>>Pending</option>
-                                                <option style="color:black" value="0" <?php if ($data->selected_team === '0') {
-                                                                                            echo ('selected');
-                                                                                        } ?>>Unselected</option>
+                                            <select name="techno_ws_selected_status" id="techno_ws_selected_status"
+                                            class="
+                                                <?php if($data->selected_team === '2'){echo('dd-blue');}
+                                                elseif($data->selected_team === '1'){echo('dd-yellow');} 
+                                                elseif($data->selected_team === '0'){echo('dd-maroon');} ?>
+                                            "
+                                            onchange="this.form.submit()">
+                                                <option class="dd-blue" value="2" 
+                                                <?php if ($data->selected_team === '2') {echo ('selected');} ?>>Selected</option>
+                                                <option class="dd-yellow" value="1" 
+                                                <?php if ($data->selected_team === '1') {echo ('selected');} ?>>Pending</option>
+                                                <option class="dd-maroon" value="0" 
+                                                <?php if ($data->selected_team === '0') { echo ('selected');} ?>>Unselected</option>
                                             </select>
                                         </div>
                                     </td>
@@ -124,21 +130,21 @@
                                         @if ($data->proposal_link !== null)
                                             <a href="{{ $data->proposal_link }}">Link Proposal</a>
                                         @else
-                                            NULL
+                                            Not Uploaded
                                         @endif
                                     </td>
                                     <td>
                                         @if ($data->pitcdeck1_link !== null)
                                             <a href="{{ $data->pitcdeck1_link }}">Link Pitchdeck 1</a>
                                         @else
-                                            NULL
+                                            Not Uploaded
                                         @endif
                                     </td>
                                     <td>
                                         @if ($data->pitcdeck2_link !== null)
                                             <a href="{{ $data->pitcdeck2_link }}">Link Pitchdeck 2</a>
                                         @else
-                                            NULL
+                                            Not Uploaded
                                         @endif
                                     </td>
                                 </form>

@@ -30,20 +30,22 @@
                     </thead>
                     <tbody>
                         @foreach ($user as $data)
-                        <tr>
-                            <td>{{ $data->id }}</td>
-                            <td>{{ $data->email }}</td>
-                            <td>{{ $data->name }}</td>
-                            <td>{{ $data->institute }}</td>
-                            <td><a href="{{asset('storage/' . $data['image'])}}"> Profpic</a></td>
-                            <td>
+                            <tr>
+                                <td>{{ $data->id }}</td>
+                                <td>{{ $data->email }}</td>
+                                <td>{{ $data->name }}</td>
+                                <td>{{ $data->institute }}</td>
+                                <td><a href="{{asset('storage/' . $data['image'])}}"> Profpic</a></td>
                                 @if($data->is_admin === '1')
-                                    Admin
-                                @else  
-                                    Peserta
+                                    <td style="background-color: green; color:white;">
+                                        Admin
+                                    </td>
+                                @else
+                                    <td>
+                                        Peserta
+                                    </td>
                                 @endif
-                            </td>
-                        </tr>
+                            </tr>
                         @endforeach
                     </tbody>
                 </table>

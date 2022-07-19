@@ -30,7 +30,7 @@
                         </tr>
                     </thead>
                     <tbody>
-                            @foreach ($ctf as $data)
+                        @foreach ($ctf as $data)
                             <tr>
                                 <form action="{{ route('admin-ctf-change-status-pembayaran') }}" method="post">
                                     @method('put')
@@ -46,7 +46,7 @@
                                             {{ $data->team_member_1 }} - {{ $data->team_member_1_institute }} -
                                             <a href="{{asset('storage/' . $data['team_member_1_id_card'])}}"> Id Card</a>
                                         @else
-                                            NULL
+                                            -
                                         @endif
                                     </td>
                                     <td>
@@ -54,27 +54,28 @@
                                             {{ $data->team_member_2 }} - {{ $data->team_member_2_institute }} -
                                             <a href="{{asset('storage/' . $data['team_member_2_id_card'])}}"> Id Card</a>
                                         @else
-                                            NULL
+                                            -
                                         @endif
                                     </td>
                                     <td><a href="{{asset('storage/' . $data['proof_payment'])}}"> Proof Payment</a></td>
                                     <td>
                                         <div class="btn-group">
-                                            <!-- <select name="startup-status" id="startup-status" style="color:black">
-                                                <option value="Confirmed">Confirmed</option>
-                                                <option value="Pending">Pending</option>
-                                                <option value="Declined">Declined</option>
-                                            </select> -->
-                                            <select name="ctf_payment_status" id="ctf_payment_status" style="color:black" onchange="this.form.submit()">
-                                                <option style="color:black" value="2" <?php if($data->status_pembayaran === '2') {echo('selected');}?>>Confirmed</option>
-                                                <option style="color:black" value="1" <?php if($data->status_pembayaran === '1') {echo('selected');}?>>Pending</option>
-                                                <option style="color:black" value="0" <?php if($data->status_pembayaran === '0') {echo('selected');}?>>Declined</option>
+                                            <select name="ctf_payment_status" id="ctf_payment_status"
+                                            class="
+                                                <?php if($data->status_pembayaran === '2'){echo('dd-green');}
+                                                elseif($data->status_pembayaran === '1'){echo('dd-orange');} 
+                                                elseif($data->status_pembayaran === '0'){echo('dd-red');} ?>
+                                            "
+                                            onchange="this.form.submit()">
+                                                <option class="dd-green" value="2" <?php if($data->status_pembayaran === '2') {echo('selected');}?>>Confirmed</option>
+                                                <option class="dd-orange" value="1" <?php if($data->status_pembayaran === '1') {echo('selected');}?>>Pending</option>
+                                                <option class="dd-red" value="0" <?php if($data->status_pembayaran === '0') {echo('selected');}?>>Declined</option>
                                             </select>
                                         </div>
                                     </td>
                                 </form>
                             </tr>
-                            @endforeach
+                        @endforeach
                     </tbody>
                 </table>
             </div>
