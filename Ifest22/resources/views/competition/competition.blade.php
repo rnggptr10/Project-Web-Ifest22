@@ -26,8 +26,8 @@
                 </div>
             </div>
         </div> -->
-        <div class="col-desc" style="padding: 20px 0 20px 0;">
-            <div class="row" align="center" id="competitionDescription" style="padding-bottom: 30px;">
+        <div class="col-desc" style="padding: 20px 0 10px 0;">
+            <div class="row" align="center" id="competitionDescription" style="padding-bottom: 10px;">
                 <div class="col" style="padding-bottom:25px">
                     <div class="row align-items-center justify-content-center">
                         @yield('competition_title')
@@ -67,7 +67,7 @@
     </div>
 
     <!-- Button CP -->
-    <div data-aos=" fade-up" data-aos-duration="1000" class="row justify-content-center align-items-center" align="center" id="competitionCP" style="margin-left: 0; margin-right:0; padding-top: 30px;padding-bottom: 30px;">
+    <div data-aos="fade-up" data-aos-duration="1000" class="row justify-content-center align-items-center" align="center" id="competitionCP" style="margin-left: 0; margin-right:0; padding-top: 30px;padding-bottom: 30px;">
         <h1 class="text-sub-title">Contact Person</h1>
         <div class="row align-items-center">
             <div class="col" style="padding-top: 30px;">

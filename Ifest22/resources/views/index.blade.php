@@ -112,15 +112,18 @@
     <div class="pasklik">
         <div id="Home" class="tabcontent">
             <h3>Startup Talk</h3>
+            <p style="margin-bottom: 0px;">Startup:Day1 "Metaverse, The Next Level of Human Culture"</p>
+            <p>Startup:Day2 "Evolution of Digital Transformation"</p>
             <p>Startup Talk is a talk show that aims as a means to bring together Founders or Strategic Partners of a Startup with participants to share experiences about Metaverse & Digital Transformation. This series is the right place for startups to do soft selling and increase brand awareness.</p>
         </div>
         <div id="News" class="tabcontent">
             <h3>Technopreneur</h3>
-            <p>Technopreneur is a webinar and workshop that provides training & development facilities by professionals to develop people's entrepreneurial interests and talents in IT, so that they are able to use digital technology as an opportunity to develop business. Technopreneur 2022 collaborating with great incubators and companies in Indonesia to help the participants in developing their digital startup idea so that it is ready to be executed. Technopreneur 2022 presents concepts and themes where participants can practice and develop digital startup ideas from a young age, of course, accompanied by professionals. The materials that will be presented are "Introduction to Startup and Design Thinking", "Business Concept", "Branding and Market Validation", and "Funding and Pitching".</p>
+            <p>"Innovative Digital Startup For Youngpreneur"</p>
+            <p style="font-size: 14px;">Technopreneur is a webinar and workshop that provides training & development facilities by professionals to develop people's entrepreneurial interests and talents in IT, so that they are able to use digital technology as an opportunity to develop business. Technopreneur 2022 collaborating with great incubators and companies in Indonesia to help the participants in developing their digital startup idea so that it is ready to be executed. Technopreneur 2022 presents concepts and themes where participants can practice and develop digital startup ideas from a young age, of course, accompanied by professionals. The materials that will be presented are "Introduction to Startup and Design Thinking", "Business Concept", "Branding and Market Validation", and "Funding and Pitching".</p>
         </div>
         <div id="Contact" class="tabcontent">
             <h3>IT Competition</h3>
-            <p>Description IT Competition...</p>
+            <p>IT Competition is a series of national-scale competitions at IFest 2022 that invites all the best students in Indonesia to compete and improve their digital skills to become a future-ready generation.</p>
         </div>
         <div id="About" class="tabcontent">
             <h3>Seminar Nasional</h3>
@@ -134,29 +137,34 @@
     <div class="box-speaker">
         <div id="StartupTalk-speakers" class="carousel-pembicara slide" data-ride="carousel">
             <div class="carousel-inner" class="tabcontent">
+                <h4 style="text-align:center;">Meet Our Speakers</h4>
                 <div class="carousel-item active" style="background-color: transparent;">
                     <div class="speaker">
                         <div class="img-speakers">
-                            <img class="align-self-center mr-3" src="{{asset('img/speakers/pasfotokulyah.jpeg')}}" alt="Generic placeholder image">
+                            <img class="align-self-center mr-3" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg" alt="Generic placeholder image">
                         </div>
                         <div class="media-body">
                             <h5 class="mt-0">Speaker 1</h5>
-                            <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
-                            <div class="button-speakers-details">
+                            <!-- <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p> -->
+                            <!-- <p></p> -->
+                            <p>To Be Announced Soon!</p>
+                            <div class="button-speakers-details" style="padding-top: 90px;">
                                 <button class="allspeaker"><a style="color:white; text-decoration:none;" href="">See All Speakers</a></button>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item" style="background-color: transparent;">
+
                     <div class="speaker">
                         <div class="img-speakers">
-                            <img class="align-self-center mr-3" src="{{asset('img/speakers/pasfotokulyah.jpeg')}}" alt="Generic placeholder image">
+                            <img class="align-self-center mr-3" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg" alt="Generic placeholder image">
                         </div>
                         <div class="media-body">
                             <h5 class="mt-0">Speaker 2</h5>
-                            <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
-                            <div class="button-speakers-details">
+                            <!-- <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p> -->
+                            <p>To Be Announced Soon!</p>
+                            <div class="button-speakers-details" style="padding-top: 90px;">
                                 <button class="allspeaker"><a style="color:white; text-decoration:none;" href="">See All Speakers</a></button>
                             </div>
                         </div>
@@ -165,12 +173,13 @@
                 <div class="carousel-item" style="background-color: transparent;">
                     <div class="speaker">
                         <div class="img-speakers">
-                            <img class="align-self-center mr-3" src="{{asset('img/speakers/pasfotokulyah.jpeg')}}" alt="Generic placeholder image">
+                            <img class="align-self-center mr-3" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg" alt="Generic placeholder image">
                         </div>
                         <div class="media-body">
                             <h5 class="mt-0">Speaker 3</h5>
-                            <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
-                            <div class="button-speakers-details">
+                            <!-- <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p> -->
+                            <p>To Be Announced Soon!</p>
+                            <div class="button-speakers-details" style="padding-top: 90px;">
                                 <button class="allspeaker"><a style="color:white; text-decoration:none;" href="">See All Speakers</a></button>
                             </div>
                         </div>
@@ -188,15 +197,18 @@
         </div>
         <div id="Technopreneur-speakers" class="carousel-pembicara slide" data-ride="carousel">
             <div class="carousel-inner" class="tabcontent">
+                <h4 style="text-align:center;">Meet Our Speakers</h4>
                 <div class="carousel-item active" style="background-color: transparent;">
+                    <!-- <h3>Meet Our Speakers</h3> -->
                     <div class="speaker">
                         <div class="img-speakers">
-                            <img class="align-self-center mr-3" src="{{asset('img/speakers/pasfotokulyah.jpeg')}}" alt="Generic placeholder image">
+                            <img class="align-self-center mr-3" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg" alt="Generic placeholder image">
                         </div>
                         <div class="media-body">
-                            <h5 class="mt-0">Speaker 4</h5>
-                            <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
-                            <div class="button-speakers-details">
+                            <h5 class="mt-0">Speaker 1</h5>
+                            <!-- <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p> -->
+                            <p>To Be Announced Soon!</p>
+                            <div class="button-speakers-details" style="padding-top: 90px;">
                                 <button class="allspeaker"><a style="color:white; text-decoration:none;" href="">See All Speakers</a></button>
                             </div>
                         </div>
@@ -205,12 +217,13 @@
                 <div class="carousel-item" style="background-color: transparent;">
                     <div class="speaker">
                         <div class="img-speakers">
-                            <img class="align-self-center mr-3" src="{{asset('img/speakers/pasfotokulyah.jpeg')}}" alt="Generic placeholder image">
+                            <img class="align-self-center mr-3" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg" alt="Generic placeholder image">
                         </div>
                         <div class="media-body">
-                            <h5 class="mt-0">Speaker 5</h5>
-                            <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
-                            <div class="button-speakers-details">
+                            <h5 class="mt-0">Speaker 2</h5>
+                            <!-- <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p> -->
+                            <p>To Be Announced Soon!</p>
+                            <div class="button-speakers-details" style="padding-top: 90px;">
                                 <button class="allspeaker"><a style="color:white; text-decoration:none;" href="">See All Speakers</a></button>
                             </div>
                         </div>
@@ -219,13 +232,14 @@
                 <div class="carousel-item" style="background-color: transparent;">
                     <div class="speaker">
                         <div class="img-speakers">
-                            <img class="align-self-center mr-3" src="{{asset('img/speakers/pasfotokulyah.jpeg')}}" alt="Generic placeholder image">
+                            <img class="align-self-center mr-3" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg" alt="Generic placeholder image">
                         </div>
                         <div class="media-body">
-                            <h5 class="mt-0">Speaker 6</h5>
-                            <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
-                            <div class="button-speakers-details">
-
+                            <h5 class="mt-0">Speaker 3</h5>
+                            <!-- <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p> -->
+                            <p>To Be Announced Soon!</p>
+                            <div class="button-speakers-details" style="padding-top: 90px;">
+                                <button class="allspeaker"><a style="color:white; text-decoration:none;" href="">See All Speakers</a></button>
                             </div>
                         </div>
                     </div>
@@ -271,15 +285,17 @@
         <div id="Semnas-speakers" class="carousel-pembicara slide" data-ride="carousel">
             <div class="carousel-inner" class="tabcontent">
                 <div class="carousel-item active" style="background-color: transparent;">
+                    <h4 style="text-align:center;">Meet Our Speakers</h4>
                     <div class="speaker">
                         <div class="img-speakers">
-                            <img class="align-self-center mr-3" src="{{asset('img/speakers/pasfotokulyah.jpeg')}}" alt="Generic placeholder image">
+                            <img class="align-self-center mr-3" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg" alt="Generic placeholder image">
                         </div>
                         <div class="media-body">
-                            <h5 class="mt-0">Speaker 10</h5>
-                            <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
-                            <div class="button-speakers-details">
-
+                            <h5 class="mt-0">Speaker 1</h5>
+                            <!-- <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p> -->
+                            <p>To Be Announced Soon!</p>
+                            <div class="button-speakers-details" style="padding-top: 90px;">
+                                <button class="allspeaker"><a style="color:white; text-decoration:none;" href="">See All Speakers</a></button>
                             </div>
                         </div>
                     </div>
@@ -287,13 +303,14 @@
                 <div class="carousel-item" style="background-color: transparent;">
                     <div class="speaker">
                         <div class="img-speakers">
-                            <img class="align-self-center mr-3" src="{{asset('img/speakers/pasfotokulyah.jpeg')}}" alt="Generic placeholder image">
+                            <img class="align-self-center mr-3" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg" alt="Generic placeholder image">
                         </div>
                         <div class="media-body">
-                            <h5 class="mt-0">Speaker 11</h5>
-                            <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
-                            <div class="button-speakers-details">
-
+                            <h5 class="mt-0">Speaker 2</h5>
+                            <!-- <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p> -->
+                            <p>To Be Announced Soon!</p>
+                            <div class="button-speakers-details" style="padding-top: 90px;">
+                                <button class="allspeaker"><a style="color:white; text-decoration:none;" href="">See All Speakers</a></button>
                             </div>
                         </div>
                     </div>
@@ -301,13 +318,14 @@
                 <div class="carousel-item" style="background-color: transparent;">
                     <div class="speaker">
                         <div class="img-speakers">
-                            <img class="align-self-center mr-3" src="{{asset('img/speakers/pasfotokulyah.jpeg')}}" alt="Generic placeholder image">
+                            <img class="align-self-center mr-3" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg  " alt="Generic placeholder image">
                         </div>
                         <div class="media-body">
-                            <h5 class="mt-0">Speaker 12</h5>
-                            <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
-                            <div class="button-speakers-details">
-
+                            <h5 class="mt-0">Speaker 3</h5>
+                            <!-- <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p> -->
+                            <p>To Be Announced Soon!</p>
+                            <div class="button-speakers-details" style="padding-top: 90px;">
+                                <button class="allspeaker"><a style="color:white; text-decoration:none;" href="">See All Speakers</a></button>
                             </div>
                         </div>
                     </div>
@@ -324,16 +342,18 @@
         </div>
         <div id="AwardingNight-speakers" class="carousel-pembicara slide" data-ride="carousel">
             <div class="carousel-inner" class="tabcontent">
+                <h4 style="text-align:center;">Meet Our Speakers</h4>
                 <div class="carousel-item active" style="background-color: transparent;">
                     <div class="speaker">
                         <div class="img-speakers">
-                            <img class="align-self-center mr-3" src="{{asset('img/speakers/pasfotokulyah.jpeg')}}" alt="Generic placeholder image">
+                            <img class="align-self-center mr-3" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg  " alt="Generic placeholder image">
                         </div>
                         <div class="media-body">
-                            <h5 class="mt-0">Speaker 13</h5>
-                            <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
-                            <div class="button-speakers-details">
-
+                            <h5 class="mt-0">Speaker 1</h5>
+                            <!-- <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p> -->
+                            <p>To Be Announced Soon!</p>
+                            <div class="button-speakers-details" style="padding-top: 90px;">
+                                <button class="allspeaker"><a style="color:white; text-decoration:none;" href="">See All Speakers</a></button>
                             </div>
                         </div>
                     </div>
@@ -341,13 +361,14 @@
                 <div class="carousel-item" style="background-color: transparent;">
                     <div class="speaker">
                         <div class="img-speakers">
-                            <img class="align-self-center mr-3" src="{{asset('img/speakers/pasfotokulyah.jpeg')}}" alt="Generic placeholder image">
+                            <img class="align-self-center mr-3" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg  " alt="Generic placeholder image">
                         </div>
                         <div class="media-body">
-                            <h5 class="mt-0">Speaker 14</h5>
-                            <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
-                            <div class="button-speakers-details">
-
+                            <h5 class="mt-0">Speaker 2</h5>
+                            <!-- <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p> -->
+                            <p>To Be Announced Soon!</p>
+                            <div class="button-speakers-details" style="padding-top: 90px;">
+                                <button class="allspeaker"><a style="color:white; text-decoration:none;" href="">See All Speakers</a></button>
                             </div>
                         </div>
                     </div>
@@ -355,13 +376,14 @@
                 <div class="carousel-item" style="background-color: transparent;">
                     <div class="speaker">
                         <div class="img-speakers">
-                            <img class="align-self-center mr-3" src="{{asset('img/speakers/pasfotokulyah.jpeg')}}" alt="Generic placeholder image">
+                            <img class="align-self-center mr-3" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg  " alt="Generic placeholder image">
                         </div>
                         <div class="media-body">
-                            <h5 class="mt-0">Speaker 15</h5>
-                            <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
-                            <div class="button-speakers-details">
-
+                            <h5 class="mt-0">Speaker 3</h5>
+                            <!-- <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p> -->
+                            <p>To Be Announced Soon!</p>
+                            <div class="button-speakers-details" style="padding-top: 90px;">
+                                <button class="allspeaker"><a style="color:white; text-decoration:none;" href="">See All Speakers</a></button>
                             </div>
                         </div>
                     </div>

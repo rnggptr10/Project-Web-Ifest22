@@ -26,13 +26,13 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
                         @foreach ($startup as $data)
-                            <td>{{ $data->email }}</td>
-                            <td>{{ $data->name }}</td>
-                            <td>{{ $data->institute }}</td>
+                            <tr>
+                                <td>{{ $data->email }}</td>
+                                <td>{{ $data->name }}</td>
+                                <td>{{ $data->institute }}</td>
+                            </tr>
                         @endforeach
-                        </tr>
                     </tbody>
                 </table>
             </div>

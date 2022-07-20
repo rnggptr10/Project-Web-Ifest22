@@ -52,49 +52,49 @@
             </div>
             <div class="col-6" align="left" style="padding:0 8px 0 15px">
                 <h6 class="text-tickets-head">Abstract Submission</h6>
-                <p class="text-tickets-desc">24 July - 5 September 2022
+                <p class="text-tickets-desc">24 July - 9 September 2022
                 <?php
                     // SET WAKTU LIVE
                     $now = Carbon::now('Asia/Jakarta');
                     $now->toDateTimeString(); 
 
                     // SET TANGGAL PENGUMUMAN SELECTED TEAM
-                    $semnas_announce_date_start = Carbon::create(2022, 7, 15, 7, 00, 00, 'Asia/Jakarta');
+                    $semnas_announce_date_start = Carbon::create(2022, 9, 10, 00, 00, 01, 'Asia/Jakarta');
                     $semnas_announce_date_start->toDateTimeString(); 
 
                     // SET TANGGAL SUBMIT PAYMENT
-                    $semnas_payment_date_start = Carbon::create(2022, 7, 15, 7, 00, 00, 'Asia/Jakarta');
-                    $semnas_payment_date_end = Carbon::create(2022, 7, 16, 15, 00, 00, 'Asia/Jakarta');
+                    $semnas_payment_date_start = Carbon::create(2022, 9, 11, 00, 00, 01, 'Asia/Jakarta');
+                    $semnas_payment_date_end = Carbon::create(2022, 9, 22, 23, 59, 59, 'Asia/Jakarta');
                     $semnas_payment_date_start->toDateTimeString(); 
                     $semnas_payment_date_end->toDateTimeString(); 
                     
                     // SET TANGGAL SUBMIT PAPER 1
-                    $semnas_paper_1_date_start = Carbon::create(2022, 7, 15, 7, 00, 00, 'Asia/Jakarta');
-                    $semnas_paper_1_date_end = Carbon::create(2022, 7, 16, 15, 00, 00, 'Asia/Jakarta');
+                    $semnas_paper_1_date_start = Carbon::create(2022, 9, 11, 00, 00, 01, 'Asia/Jakarta');
+                    $semnas_paper_1_date_end = Carbon::create(2022, 9, 22, 23, 59, 59, 'Asia/Jakarta');
                     $semnas_paper_1_date_start->toDateTimeString(); 
                     $semnas_paper_1_date_end->toDateTimeString();
                     
                     // SET TANGGAL REVISI
-                    $semnas_revisi_date_start = Carbon::create(2022, 7, 15, 7, 00, 00, 'Asia/Jakarta');
-                    $semnas_revisi_date_end = Carbon::create(2022, 7, 17, 15, 00, 00, 'Asia/Jakarta');
+                    $semnas_revisi_date_start = Carbon::create(2022, 9, 23, 00, 00, 01, 'Asia/Jakarta');
+                    $semnas_revisi_date_end = Carbon::create(2022, 10, 6, 23, 59, 59, 'Asia/Jakarta');
                     $semnas_revisi_date_start->toDateTimeString(); 
                     $semnas_revisi_date_end->toDateTimeString(); 
 
-                    // SET TANGGAL SUBMIT PAPER 2
-                    $semnas_paper_2_date_start = Carbon::create(2022, 7, 15, 7, 00, 00, 'Asia/Jakarta');
-                    $semnas_paper_2_date_end = Carbon::create(2022, 7, 16, 15, 00, 00, 'Asia/Jakarta');
+                    // SET TANGGAL SUBMIT PAPER 2 (SET SAMA KY REVISI)
+                    $semnas_paper_2_date_start = Carbon::create(2022, 9, 23, 00, 00, 01, 'Asia/Jakarta');
+                    $semnas_paper_2_date_end = Carbon::create(2022, 10, 6, 23, 59, 59, 'Asia/Jakarta');
                     $semnas_paper_2_date_start->toDateTimeString(); 
                     $semnas_paper_2_date_end->toDateTimeString();
                     
                     // SET TANGGAL SEMINAR DAY 1
-                    $semnas_seminar_1_date_start = Carbon::create(2022, 7, 15, 7, 00, 00, 'Asia/Jakarta');
-                    $semnas_seminar_1_date_end = Carbon::create(2022, 7, 16, 14, 00, 00, 'Asia/Jakarta');
+                    $semnas_seminar_1_date_start = Carbon::create(2022, 10, 8, 10, 00, 00, 'Asia/Jakarta');
+                    $semnas_seminar_1_date_end = Carbon::create(2022, 10, 8, 13, 00, 00, 'Asia/Jakarta');
                     $semnas_seminar_1_date_start->toDateTimeString(); 
                     $semnas_seminar_1_date_end->toDateTimeString();
                     
                     // SET TANGGAL SEMINAR DAY 2
-                    $semnas_seminar_2_date_start = Carbon::create(2022, 7, 15, 7, 00, 00, 'Asia/Jakarta');
-                    $semnas_seminar_2_date_end = Carbon::create(2022, 7, 16, 14, 00, 00, 'Asia/Jakarta');
+                    $semnas_seminar_2_date_start = Carbon::create(2022, 10, 9, 10, 00, 00, 'Asia/Jakarta');
+                    $semnas_seminar_2_date_end = Carbon::create(2022, 10, 9, 12, 00, 00, 'Asia/Jakarta');
                     $semnas_seminar_2_date_start->toDateTimeString(); 
                     $semnas_seminar_2_date_end->toDateTimeString();
 
@@ -129,10 +129,10 @@
                     <?php if($now->greaterThan($semnas_announce_date_start)) { ?>
                         @if ($presenter->status_selected === '0')
                             <br>Status : 
-                            <span class="text-tickets-status status-red">Your team didn't qualify for the Final Round. Keep your spirits up!</span>
+                            <span class="text-tickets-status status-red">Abstract not Selected. Keep your spirits up!</span>
                         @elseif ($presenter->status_selected === '2')
                             <br>Status : 
-                            <span class="text-tickets-status status-green">Congratulations! Your team advances to the Final Round</span>
+                            <span class="text-tickets-status status-green">Congratulations! Abstract Selected!</span>
                         @elseif ($presenter->status_selected === '1')
                         @endif
                     <?php } elseif($now->lessThan($semnas_announce_date_start)) {} ?>
@@ -201,7 +201,7 @@
                         </div>
                         <div class="col-6" align="left" style="padding:0 8px 0 15px">
                             <h6 class="text-tickets-head">Paper Submission</h6>
-                            <p class="text-tickets-desc">23-27 September 2022<br>Status :
+                            <p class="text-tickets-desc">11 - 22 September 2022<br>Status :
                                 @if ($presenter->paper1_link === null)
                                 <span class="text-tickets-status status-red">Unsubmitted</span>
                                 @elseif ($presenter->paper1_link !== null)
@@ -241,7 +241,7 @@
                             </div>
                             <div class="col-6" align="left" style="padding:0 8px 0 15px">
                                 <h6 class="text-tickets-head">Paper Revision Period</h6>
-                                <p class="text-tickets-desc">28 September - 3 October 2022</p>
+                                <p class="text-tickets-desc">23 September - 6 October 2022</p>
                             </div>
                         </div>
 
@@ -396,7 +396,7 @@
                         <img class="circular-number" src="{{ URL::asset('icon/page-details/unqualified.svg') }}" alt="unqualified">
                     </div>
                     <div class="col-8" align="left" style="padding:0 8px 0 15px">
-                        <h6 class="text-tickets-head">Your team didn't qualify for the Final Round. <br>Keep your spirits up!</h6>
+                        <h6 class="text-tickets-head">You didn't qualify for the next Stage. Keep your spirits up!</h6>
                     </div>
                 </div>
             <?php } elseif ($now->lessThan($semnas_announce_date_start)) { ?>

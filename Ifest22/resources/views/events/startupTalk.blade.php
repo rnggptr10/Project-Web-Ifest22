@@ -54,12 +54,13 @@ Startup Talk is a talk show that aims as a means to bring together Founders or S
 <img class=" card-img-top size-img-top-speakers" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg" alt="Speakers-1">
 <div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
     <div class="col-7" style="line-height: 5px;">
-        <h5 class="text-photo-card-name">Speaker1</h5>
-        <p class="text-photo-card-position">CEO</p>
+        <h5 class="text-photo-card-name">To Be Announced Soon!</h5>
+        <!-- <h5 class="text-photo-card-name">Speaker1</h5>
+        <p class="text-photo-card-position">CEO</p> -->
     </div>
-    <div class="col-3">
+    <!-- <div class="col-3">
         <a href=""><img class="logo-linkedin" src="{{ URL::asset('icon/linkedin.svg') }}" alt="linkedin"></a>
-    </div>
+    </div> -->
 </div>
 @endsection
 
@@ -67,12 +68,13 @@ Startup Talk is a talk show that aims as a means to bring together Founders or S
 <img class="card-img-top size-img-top-speakers" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg" alt="Speakers-2">
 <div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
     <div class="col-7" style="line-height: 5px;">
-        <h5 class="text-photo-card-name">Speaker2</h5>
-        <p class="text-photo-card-position">CEO</p>
+        <h5 class="text-photo-card-name">To Be Announced Soon!</h5>
+        <!-- <h5 class="text-photo-card-name">Speaker2</h5>
+        <p class="text-photo-card-position">CEO</p> -->
     </div>
-    <div class="col-3">
+    <!-- <div class="col-3">
         <a href=""><img class="logo-linkedin" src="{{ URL::asset('icon/linkedin.svg') }}" alt="linkedin"></a>
-    </div>
+    </div> -->
 </div>
 @endsection
 
@@ -80,12 +82,13 @@ Startup Talk is a talk show that aims as a means to bring together Founders or S
 <img class="card-img-top size-img-top-speakers" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg" alt="Speakers-3">
 <div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
     <div class="col-7" style="line-height: 5px;">
-        <h5 class="text-photo-card-name">Speaker3</h5>
-        <p class="text-photo-card-position">CEO</p>
+        <h5 class="text-photo-card-name">To Be Announced Soon!</h5>    
+        <!-- <h5 class="text-photo-card-name">Speaker3</h5>
+        <p class="text-photo-card-position">CEO</p> -->
     </div>
-    <div class="col-3">
+    <!-- <div class="col-3">
         <a href=""><img class="logo-linkedin" src="{{ URL::asset('icon/linkedin.svg') }}" alt="linkedin"></a>
-    </div>
+    </div> -->
 </div>
 @endsection
 
@@ -93,12 +96,13 @@ Startup Talk is a talk show that aims as a means to bring together Founders or S
 <img class="card-img-top size-img-top-speakers" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg" alt="Speakers-4">
 <div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
     <div class="col-7" style="line-height: 5px;">
-        <h5 class="text-photo-card-name">Speaker4</h5>
-        <p class="text-photo-card-position">CEO</p>
+        <h5 class="text-photo-card-name">To Be Announced Soon!</h5>
+        <!-- <h5 class="text-photo-card-name">Speaker4</h5>
+        <p class="text-photo-card-position">CEO</p> -->
     </div>
-    <div class="col-3">
+    <!-- <div class="col-3">
         <a href=""><img class="logo-linkedin" src="{{ URL::asset('icon/linkedin.svg') }}" alt="linkedin"></a>
-    </div>
+    </div> -->
 </div>
 @endsection
 
@@ -106,12 +110,13 @@ Startup Talk is a talk show that aims as a means to bring together Founders or S
 <img class="card-img-top size-img-top-speakers" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg" alt="Speakers-4">
 <div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
     <div class="col-7" style="line-height: 5px;">
-        <h5 class="text-photo-card-name">Speaker4</h5>
-        <p class="text-photo-card-position">CEO</p>
+        <h5 class="text-photo-card-name">To Be Announced Soon!</h5>
+        <!-- <h5 class="text-photo-card-name">Speaker4</h5>
+        <p class="text-photo-card-position">CEO</p> -->
     </div>
-    <div class="col-3">
+    <!-- <div class="col-3">
         <a href=""><img class="logo-linkedin" src="{{ URL::asset('icon/linkedin.svg') }}" alt="linkedin"></a>
-    </div>
+    </div> -->
 </div>
 @endsection
 
@@ -119,12 +124,13 @@ Startup Talk is a talk show that aims as a means to bring together Founders or S
 <img class="card-img-top size-img-top-speakers" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg" alt="Speakers-4">
 <div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
     <div class="col-7" style="line-height: 5px;">
-        <h5 class="text-photo-card-name">Speaker6</h5>
-        <p class="text-photo-card-position">CEO</p>
+        <h5 class="text-photo-card-name">To Be Announced Soon!</h5>
+        <!-- <h5 class="text-photo-card-name">Speaker6</h5>
+        <p class="text-photo-card-position">CEO</p> -->
     </div>
-    <div class="col-3">
+    <!-- <div class="col-3">
         <a href=""><img class="logo-linkedin" src="{{ URL::asset('icon/linkedin.svg') }}" alt="linkedin"></a>
-    </div>
+    </div> -->
 </div>
 @endsection
 
@@ -132,12 +138,13 @@ Startup Talk is a talk show that aims as a means to bring together Founders or S
 <img class="card-img-top size-img-top-speakers" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg" alt="Speakers-4">
 <div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
     <div class="col-7" style="line-height: 5px;">
-        <h5 class="text-photo-card-name">Speaker7</h5>
-        <p class="text-photo-card-position">CEO</p>
+        <h5 class="text-photo-card-name">To Be Announced Soon!</h5>
+        <!-- <h5 class="text-photo-card-name">Speaker7</h5>
+        <p class="text-photo-card-position">CEO</p> -->
     </div>
-    <div class="col-3">
+    <!-- <div class="col-3">
         <a href=""><img class="logo-linkedin" src="{{ URL::asset('icon/linkedin.svg') }}" alt="linkedin"></a>
-    </div>
+    </div> -->
 </div>
 @endsection
 
@@ -145,12 +152,13 @@ Startup Talk is a talk show that aims as a means to bring together Founders or S
 <img class="card-img-top size-img-top-speakers" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg" alt="Speakers-4">
 <div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
     <div class="col-7" style="line-height: 5px;">
-        <h5 class="text-photo-card-name">Speaker8</h5>
-        <p class="text-photo-card-position">CEO</p>
+        <h5 class="text-photo-card-name">To Be Announced Soon!</h5>
+        <!-- <h5 class="text-photo-card-name">Speaker8</h5>
+        <p class="text-photo-card-position">CEO</p> -->
     </div>
-    <div class="col-3">
+    <!-- <div class="col-3">
         <a href=""><img class="logo-linkedin" src="{{ URL::asset('icon/linkedin.svg') }}" alt="linkedin"></a>
-    </div>
+    </div> -->
 </div>
 @endsection
 
@@ -159,7 +167,7 @@ Startup Talk is a talk show that aims as a means to bring together Founders or S
 <!-- TEMPLATE BODY -->
 @section('event_detail')
 <!-- INI STARTUP PENGENNYA GERAK KYK COMPFEST -->
-<div data-aos="fade-down" data-aos-duration="1000" align="center" id="sutStartup" style="padding-top: 30px;padding-bottom: 30px;">
+<div data-aos="fade-down" data-aos-duration="1000" align="center" id="sutStartup" style="padding-top: 30px;padding-bottom: 30px;" hidden>
     <h1 class="title-1 text-sub-title">Our Startup Partners</h1>
     <h3 class="title-2">Our Startup Partners</h3>
     <div class="row justify-content-center" style="padding-top: 30px; padding-bottom: 30px;">
@@ -406,7 +414,7 @@ Startup Talk is a talk show that aims as a means to bring together Founders or S
                     <img class="img-fluid events-card-logo" src="{{ URL::asset('icon/date.png') }}" alt="Date">
                 </div>
                 <div class="col-10" style="text-align: left;">
-                    <h5 style="color:black;">20 - 21 Agustus 2022</h5>
+                    <h5 style="color:black; margin:0">20 - 21 Agustus 2022</h5>
                 </div>
             </div>
         </div>
@@ -418,30 +426,64 @@ Startup Talk is a talk show that aims as a means to bring together Founders or S
                     <img class="img-fluid events-card-logo" src="{{ URL::asset('icon/ticket.png') }}" alt="Ticket">
                 </div>
                 <div class="col-5" style="text-align: left;">
-                    <h5 class="title-1" style="color:black;">Free (Day 1)</h5>
+                    <h5 class="title-1" style="color:black;margin:0;">Free (Day 1)</h5>
                     <p class="title-2" style="color:black; margin:0; font-size:14px;">Free (Day 1)</p>
                 </div>
-                <div class="col-5">
-                    <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg">
-                        @guest
-                        @if(Route::has('login'))
-                        <a class="title-1 ifest-btn-primary-dark-bg-text" href="{{route('login')}}">
-                            Register Now
-                        </a>
-                        <a class="title-2 ifest-btn-primary-dark-bg-text" href="{{route('login')}}">
-                            <p style="margin: 0; font-size:10px">Register Now</p>
-                        </a>
-                        @endif
-                        @else
-                        <a class="title-1 ifest-btn-primary-dark-bg-text" href="{{ route('startup.day1.registration') }}">
-                            Register Now
-                        </a>
-                        <a class="title-2 ifest-btn-primary-dark-bg-text" href="{{ route('startup.day1.registration') }}">
-                            <p style="margin: 0; font-size:10px">Register Now</p>
-                        </a>
-                        @endguest
-                    </button>
-                </div>
+                <?php
+                // SET TANGGAL ACARA SUT DAY1
+                $sut_1_regist_start = Carbon::create(2022, 7, 24, 00, 00, 01, 'Asia/Jakarta');
+                $sut_1_regist_end = Carbon::create(2022, 8, 19, 23, 59, 59, 'Asia/Jakarta');
+                $now = Carbon::now('Asia/Jakarta');
+
+                $sut_1_regist_start->toDateTimeString();
+                $sut_1_regist_end->toDateTimeString();
+                $now->toDateTimeString();
+
+                if ($now->greaterThan($sut_1_regist_start) && $now->lessThan($sut_1_regist_end)) { ?>
+                    <div class="col-5">
+                        <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg">
+                            @guest
+                            @if(Route::has('login'))
+                            <a class="title-1 ifest-btn-primary-dark-bg-text" href="{{route('login')}}">
+                                Register Now
+                            </a>
+                            <a class="title-2 ifest-btn-primary-dark-bg-text" href="{{route('login')}}">
+                                <p style="margin: 0; font-size:10px">Register Now</p>
+                            </a>
+                            @endif
+                            @else
+                            <a class="title-1 ifest-btn-primary-dark-bg-text" href="{{ route('startup.day1.registration') }}">
+                                Register Now
+                            </a>
+                            <a class="title-2 ifest-btn-primary-dark-bg-text" href="{{ route('startup.day1.registration') }}">
+                                <p style="margin: 0; font-size:10px">Register Now</p>
+                            </a>
+                            @endguest
+                        </button>
+                    </div>
+                <?php } elseif ($now->lessThan($sut_1_regist_start) || $now->greaterThan($sut_1_regist_end)) { ?>
+                    <div class="col-5">
+                        <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" disabled>
+                            @guest
+                            @if(Route::has('login'))
+                            <a class="title-1 ifest-btn-primary-dark-bg-text" href="{{route('login')}}">
+                                Register Now
+                            </a>
+                            <a class="title-2 ifest-btn-primary-dark-bg-text" href="{{route('login')}}">
+                                <p style="margin: 0; font-size:10px">Register Now</p>
+                            </a>
+                            @endif
+                            @else
+                            <a class="title-1 ifest-btn-primary-dark-bg-text" href="{{ route('startup.day1.registration') }}">
+                                Register Now
+                            </a>
+                            <a class="title-2 ifest-btn-primary-dark-bg-text" href="{{ route('startup.day1.registration') }}">
+                                <p style="margin: 0; font-size:10px">Register Now</p>
+                            </a>
+                            @endguest
+                        </button>
+                    </div>
+                <?php } ?>
             </div>
         </div>
     </div>
@@ -454,7 +496,7 @@ Startup Talk is a talk show that aims as a means to bring together Founders or S
                     <img class="img-fluid events-card-logo" src="{{ URL::asset('icon/platform.png') }}" alt="Platform">
                 </div>
                 <div class="col-10" style="text-align:left;">
-                    <h5 style="color:black; ">Zoom Meeting</h5>
+                    <h5 style="color:black; margin:0 ">Zoom Meeting</h5>
                 </div>
             </div>
         </div>
@@ -466,30 +508,62 @@ Startup Talk is a talk show that aims as a means to bring together Founders or S
                     <img class="img-fluid events-card-logo" src="{{ URL::asset('icon/ticket.png') }}" alt="Ticket">
                 </div>
                 <div class="col-5" style="text-align: left;">
-                    <h5 class="title-1" style="color:black;">Free (Day 2)</h5>
+                    <h5 class="title-1" style="color:black; margin:0">Free (Day 2)</h5>
                     <p class="title-2" style="color:black; margin:0; font-size:14px;">Free (Day 2)</p>
                 </div>
-                <div class="col-5">
-                    <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg">
-                        @guest
-                        @if(Route::has('login'))
-                        <a class="title-1 ifest-btn-primary-dark-bg-text" href="{{route('login')}}">
-                            Register Now
-                        </a>
-                        <a class="title-2 ifest-btn-primary-dark-bg-text" href="{{route('login')}}">
-                            <p style="margin: 0; font-size:10px">Register Now</p>
-                        </a>
-                        @endif
-                        @else
-                        <a class="title-1 ifest-btn-primary-dark-bg-text" href="{{ route('startup.day2.registration') }}">
-                            Register Now
-                        </a>
-                        <a class="title-2 ifest-btn-primary-dark-bg-text" href="{{ route('startup.day2.registration') }}">
-                            <p style="margin: 0; font-size:10px">Register Now</p>
-                        </a>
-                        @endguest
-                    </button>
-                </div>
+                <?php
+                // SET TANGGAL ACARA SUT DAY 2
+                $sut_2_regist_start = Carbon::create(2022, 7, 24, 00, 00, 01, 'Asia/Jakarta');
+                $sut_2_regist_end = Carbon::create(2022, 8, 19, 23, 59, 59, 'Asia/Jakarta');
+
+                $sut_2_regist_start->toDateTimeString();
+                $sut_2_regist_end->toDateTimeString();
+
+                if ($now->greaterThan($sut_2_regist_start) && $now->lessThan($sut_2_regist_end)) { ?>
+                    <div class="col-5">
+                        <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg">
+                            @guest
+                            @if(Route::has('login'))
+                            <a class="title-1 ifest-btn-primary-dark-bg-text" href="{{route('login')}}">
+                                Register Now
+                            </a>
+                            <a class="title-2 ifest-btn-primary-dark-bg-text" href="{{route('login')}}">
+                                <p style="margin: 0; font-size:10px">Register Now</p>
+                            </a>
+                            @endif
+                            @else
+                            <a class="title-1 ifest-btn-primary-dark-bg-text" href="{{ route('startup.day2.registration') }}">
+                                Register Now
+                            </a>
+                            <a class="title-2 ifest-btn-primary-dark-bg-text" href="{{ route('startup.day2.registration') }}">
+                                <p style="margin: 0; font-size:10px">Register Now</p>
+                            </a>
+                            @endguest
+                        </button>
+                    </div>
+                <?php } elseif ($now->lessThan($sut_2_regist_start) || $now->greaterThan($sut_2_regist_end)) { ?>
+                    <div class="col-5">
+                        <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" disabled>
+                            @guest
+                            @if(Route::has('login'))
+                            <a class="title-1 ifest-btn-primary-dark-bg-text" href="{{route('login')}}">
+                                Register Now
+                            </a>
+                            <a class="title-2 ifest-btn-primary-dark-bg-text" href="{{route('login')}}">
+                                <p style="margin: 0; font-size:10px">Register Now</p>
+                            </a>
+                            @endif
+                            @else
+                            <a class="title-1 ifest-btn-primary-dark-bg-text" href="{{ route('startup.day2.registration') }}">
+                                Register Now
+                            </a>
+                            <a class="title-2 ifest-btn-primary-dark-bg-text" href="{{ route('startup.day2.registration') }}">
+                                <p style="margin: 0; font-size:10px">Register Now</p>
+                            </a>
+                            @endguest
+                        </button>
+                    </div>
+                <?php } ?>
             </div>
         </div>
     </div>

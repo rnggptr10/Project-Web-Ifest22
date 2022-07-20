@@ -37,3 +37,33 @@ table tbody tr td {
     color: #000000;
     border: 1px solid black;
 }
+
+.dd-green {
+    color: white;
+    background-color: green;
+}
+
+.dd-orange {
+    color: white;
+    background-color: #c0780b;
+}
+
+.dd-red {
+    color: white;
+    background-color: #D71515;
+}
+
+.dd-blue {
+    color: black;
+    background-color: #00B2FF;
+}
+
+.dd-yellow {
+    color: black;
+    background-color: #FAFF00;
+}
+
+.dd-maroon {
+    color: white;
+    background-color: maroon;
+}

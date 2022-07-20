@@ -126,7 +126,7 @@
                         <div class="row mb-2">
                             <div class="col">
                                 <label class="button-upload text-button-upload" for="team_member_1_id_card">+ ID Card</label>
-                                <input type="file" id="team_member_1_id_card"  name="team_member_1_id_card" accept=".png" style="color:transparent" hidden>
+                                <input type="file" id="team_member_1_id_card" name="team_member_1_id_card" accept=".png" style="color:transparent" hidden>
                                 @error('id_card')
                                 <div class="alert alert-danger mt-1 d-flex align-items-center" role="alert" style="width: 100%;
                             max-width: 333px; margin: 0 auto">
@@ -256,9 +256,13 @@
             <div class="col" style="padding:0">
                 <p class="regist-form-notes-text">
                     Notes :<br>
+<<<<<<< HEAD
+                    • ID Card berupa kartu pelajar untuk siswa SMA/SMK atau KTM untuk mahasiswa.<br>
+=======
                     • ID Card hanya dapat berbentuk KTM/KRS/Kartu Pelajar.<br>
                     • Kartu Pelajar untuk peserta siswa SMA/SMK.<br>
                     • KTM/KRS untuk peserta mahasiswa.<br>
+>>>>>>> bccced6c0165fc9dcdb1a87886d07c54723d072e
                     • Scan/Foto ID Card harus jelas.<br>
                 </p>
             </div>
@@ -289,8 +293,14 @@
                     <p class="regist-form-text-price">Rp.100000</p>
                 </div>
                 <div class="row" style="padding:5px 0 5px 0">
+<<<<<<< HEAD
+                    <p class="regist-form-text-payment-head">Payment Methods :</p>
+                    <p class="regist-form-text-payment">BCA : 5725562729 a.n. Sarah Khairunnisa Prihantoro<br>
+                        BNI : 1392832983 a.n. Junet</p>
+=======
                     <p class="regist-form-text-payment-head" style="margin:0">Payment Methods :</p>
                     <p class="regist-form-text-payment">• BCA : 5725562729 a.n. Sarah Khairunnisa Prihantoro</p>
+>>>>>>> bccced6c0165fc9dcdb1a87886d07c54723d072e
                 </div>
                 <div class="row" style="padding-top:20px">
                     <div class="container-upload dflex">

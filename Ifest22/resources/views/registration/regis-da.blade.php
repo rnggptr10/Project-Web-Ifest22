@@ -291,26 +291,6 @@
             </div>
         </div>
 
-        <!-- <div class="mt-4 upload-idcard-regis">
-        <label for="id_card" class="file-upload d-flex justify-content-center align-items-center">
-            <span class="iconify me-2" data-icon="feather:upload" data-inline="false" style="color: #001d3d;">
-                </span> Upload ID-Card (ZIP File)
-            </label>
-            <br>
-            <input type="file" id="id_card" name="id_card" accept=".zip">
-            <div id="idcard-chosen" class="text-center">No file chosen</div>
-        </div>
-        <div class="hint hint-file hint-file-regis">
-            <p>ID-card file size limit to 2MB</p>
-        </div>
-        @error('id_card')
-        <div class="alert alert-danger mt-1 d-flex align-items-center" role="alert" style="width: 100%;
-        max-width: 333px; margin: 0 auto">
-        <span class="iconify me-1" data-icon="akar-icons:circle-alert" data-inline="false" style="color: #842029;"></span>
-        {{ $message }}
-    </div>
-    @enderror -->
-
         <div class="row mb-2 text-left">
             <div class="col" style="padding:0">
                 <p class="regist-form-notes-text">

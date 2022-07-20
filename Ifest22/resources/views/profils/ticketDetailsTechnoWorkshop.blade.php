@@ -63,7 +63,7 @@
             <div class="col-6" align="left" style="padding:0 8px 0 15px">
                 <h6 class="text-tickets-head">Team Registration</h6>
                 <!-- BUAT STATUS, CLASS TERGANTUNG STATUS DI DATABASE -->
-                <p class="text-tickets-desc">24 July - 31 Agustus 2022<br>Status : 
+                <p class="text-tickets-desc">24 July - 31 August 2022<br>Status : 
                     <span class="text-tickets-status status-green">
                         Confirmed
                     </span>
@@ -76,55 +76,55 @@
             </div>
             <div class="col-6" align="left" style="padding:0 8px 0 15px">
                 <h6 class="text-tickets-head">Business Idea Submission</h6>
-                <p class="text-tickets-desc">24 July - 31 Agustus 2022<br>Status :
+                <p class="text-tickets-desc">24 July - 31 August 2022<br>Status :
                 <?php
                     // SET WAKTU LIVE
                     $now = Carbon::now('Asia/Jakarta');
                     $now->toDateTimeString();
 
                     // SET TANGGAL UPLOAD PROPOSAL
-                    $techno_ws_proposal_date_start = Carbon::create(2022, 7, 7, 7, 00, 00, 'Asia/Jakarta');
-                    $techno_ws_proposal_date_end = Carbon::create(2022, 7, 15, 15, 00, 00, 'Asia/Jakarta');
+                    $techno_ws_proposal_date_start = Carbon::create(2022, 7, 24, 00, 00, 01, 'Asia/Jakarta');
+                    $techno_ws_proposal_date_end = Carbon::create(2022, 8, 31, 23, 59, 59, 'Asia/Jakarta');
                     $techno_ws_proposal_date_start->toDateTimeString(); 
                     $techno_ws_proposal_date_end->toDateTimeString(); 
 
                     // SET TANGGAL PENGUMUMAN SELECTED TEAM
-                    $techno_ws_announce_date_start = Carbon::create(2022, 7, 15, 7, 00, 00, 'Asia/Jakarta');
+                    $techno_ws_announce_date_start = Carbon::create(2022, 9, 1, 00, 00, 01, 'Asia/Jakarta');
                     $techno_ws_announce_date_start->toDateTimeString(); 
 
                     // SET TANGGAL SUBMIT PAYMENT
-                    $techno_ws_payment_date_start = Carbon::create(2022, 7, 15, 7, 00, 00, 'Asia/Jakarta');
-                    $techno_ws_payment_date_end = Carbon::create(2022, 7, 18, 15, 00, 00, 'Asia/Jakarta');
+                    $techno_ws_payment_date_start = Carbon::create(2022, 9, 1, 00, 00, 01, 'Asia/Jakarta');
+                    $techno_ws_payment_date_end = Carbon::create(2022, 9, 7, 23, 59, 59, 'Asia/Jakarta');
                     $techno_ws_payment_date_start->toDateTimeString(); 
                     $techno_ws_payment_date_end->toDateTimeString(); 
 
                     // SET TANGGAL SEMINAR 1
-                    $techno_ws_seminar_1_date_start = Carbon::create(2022, 7, 15, 7, 00, 00, 'Asia/Jakarta');
-                    $techno_ws_seminar_1_date_end = Carbon::create(2022, 7, 15, 14, 00, 00, 'Asia/Jakarta');
+                    $techno_ws_seminar_1_date_start = Carbon::create(2022, 9, 11, 8, 00, 00, 'Asia/Jakarta');
+                    $techno_ws_seminar_1_date_end = Carbon::create(2022, 9, 11, 15, 00, 00, 'Asia/Jakarta');
                     $techno_ws_seminar_1_date_start->toDateTimeString(); 
                     $techno_ws_seminar_1_date_end->toDateTimeString(); 
 
                     // SET TANGGAL SEMINAR 2
-                    $techno_ws_seminar_2_date_start = Carbon::create(2022, 7, 16, 7, 00, 00, 'Asia/Jakarta');
-                    $techno_ws_seminar_2_date_end = Carbon::create(2022, 7, 16, 14, 00, 00, 'Asia/Jakarta');
+                    $techno_ws_seminar_2_date_start = Carbon::create(2022, 9, 18, 8, 00, 00, 'Asia/Jakarta');
+                    $techno_ws_seminar_2_date_end = Carbon::create(2022, 9, 18, 15, 00, 00, 'Asia/Jakarta');
                     $techno_ws_seminar_2_date_start->toDateTimeString(); 
                     $techno_ws_seminar_2_date_end->toDateTimeString();
                     
                     // SET TANGGAL SUBMIT PITCHDECK 1
-                    $techno_ws_pitchdeck_1_date_start = Carbon::create(2022, 7, 15, 7, 00, 00, 'Asia/Jakarta');
-                    $techno_ws_pitchdeck_1_date_end = Carbon::create(2022, 7, 16, 15, 00, 00, 'Asia/Jakarta');
+                    $techno_ws_pitchdeck_1_date_start = Carbon::create(2022, 9, 18, 15, 00, 00, 'Asia/Jakarta');
+                    $techno_ws_pitchdeck_1_date_end = Carbon::create(2022, 10, 2, 23, 59, 59, 'Asia/Jakarta');
                     $techno_ws_pitchdeck_1_date_start->toDateTimeString(); 
                     $techno_ws_pitchdeck_1_date_end->toDateTimeString();
                     
                     // SET TANGGAL REVISI
-                    $techno_ws_revisi_date_start = Carbon::create(2022, 7, 15, 7, 00, 00, 'Asia/Jakarta');
-                    $techno_ws_revisi_date_end = Carbon::create(2022, 7, 16, 15, 00, 00, 'Asia/Jakarta');
+                    $techno_ws_revisi_date_start = Carbon::create(2022, 10, 3, 00, 00, 01, 'Asia/Jakarta');
+                    $techno_ws_revisi_date_end = Carbon::create(2022, 10, 9, 23, 59, 59, 'Asia/Jakarta');
                     $techno_ws_revisi_date_start->toDateTimeString(); 
                     $techno_ws_revisi_date_end->toDateTimeString(); 
 
                     // SET TANGGAL SUBMIT PITCHDECK 2
-                    $techno_ws_pitchdeck_2_date_start = Carbon::create(2022, 7, 16, 7, 00, 00, 'Asia/Jakarta');
-                    $techno_ws_pitchdeck_2_date_end = Carbon::create(2022, 7, 16, 15, 00, 00, 'Asia/Jakarta');
+                    $techno_ws_pitchdeck_2_date_start = Carbon::create(2022, 10, 10, 00, 00, 01, 'Asia/Jakarta');
+                    $techno_ws_pitchdeck_2_date_end = Carbon::create(2022, 10, 16, 23, 59, 59, 'Asia/Jakarta');
                     $techno_ws_pitchdeck_2_date_start->toDateTimeString(); 
                     $techno_ws_pitchdeck_2_date_end->toDateTimeString(); 
 

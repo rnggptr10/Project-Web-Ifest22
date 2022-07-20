@@ -111,32 +111,32 @@ This competition is held online and is intended for high school / vocational stu
     <h1 class="text-sub-title">Prizes</h1>
     <div class="row justify-content-center" style="padding-top: 20px;"">
         <div class=" col-4">
-            <img class="img-fluid" style="width:180px;" src="{{ URL::asset('img/competition/trophy/INTENTION/2.png') }}">
-            <div class="col-8">
-                <p class="text-desc">+ Rp2.000.000 Dewacloud Credit for each team member</p>
-            </div>
-        </div>
-        <div class="col-4">
-            <img class="img-fluid" style="width:220px;" src="{{ URL::asset('img/competition/trophy/INTENTION/1.png') }}">
-            <div class="col-8">
-                <p class="text-desc">+ Rp3.000.000 Dewacloud Credit for each team member</p>
-            </div>
-        </div>
-        <div class="col-4">
-            <img class="img-fluid" style="width:180px;" src="{{ URL::asset('img/competition/trophy/INTENTION/3.png') }}">
-            <div class="col-8">
-                <p class="text-desc">+ Rp1.000.000 Dewacloud Credit for each team member</p>
-            </div>
+        <img class="img-fluid" style="width:180px;" src="{{ URL::asset('img/competition/trophy/INTENTION/2.png') }}">
+        <div class="col-8">
+            <p class="text-desc">+ Rp2.000.000 Dewacloud Credit for each team member</p>
         </div>
     </div>
-    <div class="row justify-content-center" style="padding-top:30px">
-        <div class="col-6">
-            <p class="text-desc">
-                • All participants will get an E-Certificate
-                <br>• Participants who pass the preliminary round will get a Free Pass for the 2022 National Seminar
-            </p>
+    <div class="col-4">
+        <img class="img-fluid" style="width:220px;" src="{{ URL::asset('img/competition/trophy/INTENTION/1.png') }}">
+        <div class="col-8">
+            <p class="text-desc">+ Rp3.000.000 Dewacloud Credit for each team member</p>
         </div>
     </div>
+    <div class="col-4">
+        <img class="img-fluid" style="width:180px;" src="{{ URL::asset('img/competition/trophy/INTENTION/3.png') }}">
+        <div class="col-8">
+            <p class="text-desc">+ Rp1.000.000 Dewacloud Credit for each team member</p>
+        </div>
+    </div>
+</div>
+<div class="row justify-content-center" style="padding-top:30px">
+    <div class="col-6">
+        <p class="text-desc">
+            • All participants will get an E-Certificate
+            <br>• Participants who pass the preliminary round will get a Free Pass for the 2022 National Seminar
+        </p>
+    </div>
+</div>
 </div>
 @endsection
 
@@ -161,7 +161,7 @@ This competition is held online and is intended for high school / vocational stu
                 <img class="card-img-top" style="width:100%;height:350px;" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg" alt="Card image cap">
                 <div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
                     <div class="col" style="line-height: 5px;">
-                    <h5 class="text-photo-card-name">To Be Announced Soon!</h5>
+                        <h5 class="text-photo-card-name">To Be Announced Soon!</h5>
                         <!-- <h5 class="text-photo-card-name">Juri 2</h5>
                         <p class="text-photo-card-position">FullStack</p> -->
                     </div>
@@ -280,17 +280,41 @@ This competition is held online and is intended for high school / vocational stu
     <div class="col-btn-left pad-regist" style="padding-top: 30px;" data-aos="fade-right" data-aos-duration="1000">
         <button type="button" class="btn btn-outline-primary ifest-btn-outline-primary-dark-bg" style="width: 147px;height: 48px;">Guidebook</button>
     </div>
-    <div class="col-btn-right pad-regist" data-aos="fade-left" data-aos-duration="1000">
-        <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 147px;height: 48px;">
-            @guest
-            @if(Route::has('login'))
-            <a class="ifest-btn-primary-dark-bg-text" href="{{route('login')}}">Register Now</a>
-            @endif
-            @else
-            <a class="ifest-btn-primary-dark-bg-text" href="{{route('intention.registration.view')}}">Register Now</a>
-            @endguest
-        </button>
-    </div>
+    <?php
+    // SET TANGGAL REGIST LOMBA
+    $comp_regist_start = Carbon::create(2022, 7, 24, 00, 00, 01, 'Asia/Jakarta');
+    $comp_regist_end = Carbon::create(2022, 8, 20, 23, 59, 59, 'Asia/Jakarta');
+    $now = Carbon::now('Asia/Jakarta');
+
+    $comp_regist_start->toDateTimeString();
+    $comp_regist_end->toDateTimeString();
+    $now->toDateTimeString();
+
+    if ($now->greaterThan($comp_regist_start) && $now->lessThan($comp_regist_end)) { ?>
+        <div class="col-btn-right pad-regist" data-aos="fade-left" data-aos-duration="1000">
+            <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 147px;height: 48px;">
+                @guest
+                @if(Route::has('login'))
+                <a class="ifest-btn-primary-dark-bg-text" href="{{route('login')}}">Register Now</a>
+                @endif
+                @else
+                <a class="ifest-btn-primary-dark-bg-text" href="{{route('intention.registration.view')}}">Register Now</a>
+                @endguest
+            </button>
+        </div>
+    <?php } elseif ($now->lessThan($comp_regist_start) || $now->greaterThan($comp_regist_end)) { ?>
+        <div class="col-btn-right pad-regist" data-aos="fade-left" data-aos-duration="1000">
+            <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 147px;height: 48px;" disabled>
+                @guest
+                @if(Route::has('login'))
+                <a class="ifest-btn-primary-dark-bg-text" href="{{route('login')}}">Register Now</a>
+                @endif
+                @else
+                <a class="ifest-btn-primary-dark-bg-text" href="{{route('intention.registration.view')}}">Register Now</a>
+                @endguest
+            </button>
+        </div>
+    <?php } ?>
 </div>
 @endsection
 

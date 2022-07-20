@@ -179,6 +179,10 @@ a {
     background-color: transparent;
 }
 
+main{
+    padding-top: 10px;
+}
+
 @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
@@ -211,5 +215,25 @@ a {
 
     .hamburger-menu{
         display: block;
+    }
+}
+
+/* ============ */
+/*  Responsif   */
+/* ============ */
+/* Mobile S */
+@media screen and (max-width:320px) {
+    main{
+        padding-top: 35px;
+    }
+}
+/* Tablet */
+@media screen and (max-width:768px) {
+    header{
+        padding: 5px 10px;
+    }
+
+    .font-nm{
+        font-size: 12px;
     }
 }

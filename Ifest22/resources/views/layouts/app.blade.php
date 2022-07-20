@@ -111,14 +111,9 @@
                         <button class="button-login"><a href="{{route('login')}}" style="color: #1c1c1c; text-decoration:none;">Login</a></button>
                         @endif
                         @else
-                        <a class="nav-link dropdown-toggle right-nav" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: #ffff;">
+                        <a class="font-nm nav-link dropdown-toggle right-nav" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: #ffff;">
                             {{ Auth::user()->name }}
                         </a>
-                        <!-- <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: #1c1c1c;">
-                            <a class="dropdown-item" href="{{route('profile')}}" style="color: #8267B4;">Profile</a>
-                            <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();" style=" color: #8267B4;">Logout</a>
-                        </div> -->
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: #1c1c1c;">
                             <a class="dropdown-item" href="{{route('profile')}}" style="color: #8267B4;">Profile</a>
                             @if (Auth::user()->is_admin === '1')
@@ -136,7 +131,7 @@
                 </ul>
             </div>
         </header>
-        <main style="padding-top: 10px;">
+        <main>
             @yield('content')
         </main>
         <footer class="footer_ bd-grid">
@@ -147,9 +142,9 @@
                         <div class="fmain-event">
                             <h3 class="footer-header">Event</h3>
                             <ul class="footer-ul">
-                                <li class="footer-li"><a href="{{ route('semnas') }}">International Conference</a></li>
+                                <li class="footer-li"><a href="{{ route('semnas') }}">Seminar Nasional</a></li>
                                 <li class="footer-li"><a href="{{ route('techno') }}">Technopreneur</a></li>
-                                <li class="footer-li"><a href="{{ route('startup') }}">StartUp Talk</a></li>
+                                <li class="footer-li"><a href="{{ route('startup') }}">Startup Talk</a></li>
                             </ul>
                         </div>
                         <div class="fcomp">
@@ -177,10 +172,10 @@
                         </ul> -->
                         <div class="dflex padding-center">
                             <!-- Sosmed -->
-                            <a class="tombol footer-img-2" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="tombol footer-img-2" href=""><i class="fab fa-youtube"></i></a>
                             <a class="tombol footer-img-2" href=""><i class="fab fa-tiktok"></i></a>
                             <a class="tombol footer-img-2" href=""><i class="fab fa-instagram"></i></a>
-                            <a class="tombol footer-img-2" href=""><i class="fab fa-linkedin"></i></a>
+                            <a class="tombol footer-img-2" href="https://www.linkedin.com/company/ifest-unpad"><i class="fab fa-linkedin"></i></a>
 
                             <!-- <img class="footer-img-2" src="{{asset('img/organizer/himatif.png')}}" alt="logo unpad" width="50px" height="50px"> -->
                             <!-- <img class="footer-img-2" src="{{asset('img/organizer/unpad.png')}}" alt="logo himatif" width="50px" height="50px">
@@ -190,7 +185,7 @@
                     </div>
                 </div>
             </div>
-            <h5 class="footer-copy text-center mt-4">&copy 2021 IFest</h5>
+            <h5 class="footer-copy text-center mt-4">&copy 2022 IFest</h5>
         </footer>
     </div>
     <script>

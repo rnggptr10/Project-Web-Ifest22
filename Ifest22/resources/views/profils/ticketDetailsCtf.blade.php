@@ -66,27 +66,27 @@
             <div class="col-6" align="left" style="padding:0 8px 0 15px">
                 <h6 class="text-tickets-head">Team Registration</h6>
                 <!-- BUAT STATUS, CLASS TERGANTUNG STATUS DI DATABASE -->
-                <p class="text-tickets-desc">24 July - 20 Agustus 2022<br>Status : 
+                <p class="text-tickets-desc">24 July - 20 August 2022<br>Status : 
                 <?php
                     // SET WAKTU LIVE
                     $now = Carbon::now('Asia/Jakarta');
                     $now->toDateTimeString();
 
                     // SET TANGGAL REGISTRASI CTF
-                    $ctf_regist_date_start = Carbon::create(2022, 7, 7, 7, 00, 00, 'Asia/Jakarta');
-                    $ctf_regist_date_end = Carbon::create(2022, 7, 19, 15, 00, 00, 'Asia/Jakarta');
+                    $ctf_regist_date_start = Carbon::create(2022, 7, 24, 00, 00, 01, 'Asia/Jakarta');
+                    $ctf_regist_date_end = Carbon::create(2022, 8, 20, 23, 59, 59, 'Asia/Jakarta');
                     $ctf_regist_date_start->toDateTimeString(); 
                     $ctf_regist_date_end->toDateTimeString(); 
 
                     // SET TANGGAL COMPETITION
-                    $ctf_comp_date_start = Carbon::create(2022, 7, 15, 7, 00, 00, 'Asia/Jakarta');
-                    $ctf_comp_date_end = Carbon::create(2022, 7, 15, 14, 00, 00, 'Asia/Jakarta');
+                    $ctf_comp_date_start = Carbon::create(2022, 9, 10, 7, 00, 00, 'Asia/Jakarta');
+                    $ctf_comp_date_end = Carbon::create(2022, 9, 10, 19, 00, 00, 'Asia/Jakarta');
                     $ctf_comp_date_start->toDateTimeString(); 
                     $ctf_comp_date_end->toDateTimeString(); 
 
                     // SET TANGGAL SUBMIT WRITEUP
-                    $ctf_writeup_date_start = Carbon::create(2022, 7, 15, 7, 00, 00, 'Asia/Jakarta');
-                    $ctf_writeup_date_end = Carbon::create(2022, 7, 15, 15, 00, 00, 'Asia/Jakarta');
+                    $ctf_writeup_date_start = Carbon::create(2022, 9, 10, 19, 00, 00, 'Asia/Jakarta');
+                    $ctf_writeup_date_end = Carbon::create(2022, 9, 11, 12, 00, 00, 'Asia/Jakarta');
                     $ctf_writeup_date_start->toDateTimeString(); 
                     $ctf_writeup_date_end->toDateTimeString(); 
 
@@ -102,6 +102,8 @@
                     <?php } elseif ($now->lessThan($ctf_regist_date_start) || $now->greaterThan($ctf_regist_date_end)) { ?>
                         @if ($ctf->status_pembayaran === '0')
                             <span class="text-tickets-status status-red">Payment Failed</span>
+                        @elseif ($ctf->status_pembayaran === '1')
+                            <span class="text-tickets-status status-orange">Waiting for Confirmation</span>
                         @elseif ($ctf->status_pembayaran === '2')
                             <span class="text-tickets-status status-green">Payment Completed</span>
                         @endif
