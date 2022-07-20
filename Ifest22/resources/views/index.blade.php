@@ -8,7 +8,9 @@
 <div class="content-main">
     <img src="{{asset('img/bg-fix.png')}}" alt="" style="width:100%;">
     <div class="logo-content-main">
-        <img class="logo-landing" src="{{asset('img/logo/logo_landing.png')}}" alt="">
+        <a href="{{route('company')}}" >
+            <img class="logo-landing" src="{{asset('img/logo/logo_landing.png')}}" alt="">
+        </a>
     </div>
 </div>
 

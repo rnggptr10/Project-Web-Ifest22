@@ -88,6 +88,8 @@ Route::get('/seminar-nasional', [SemnasController::class, 'index'])->name('semna
 Route::get('/technopreneur', [TechnoController::class, 'index'])->name('techno');
 Route::get('/startup-talk', [StartupDay1Controller::class, 'index'])->name('startup');
 Route::get('/ipod', [HomeController::class, 'ipodIndex'])->name('ipod');
+Route::get('/company-profile', [HomeController::class, 'companyIndex'])->name('company');
+
 
 // Route for Competition
 Route::get('/intention', [IntentionController::class, 'index'])->name('intention');
