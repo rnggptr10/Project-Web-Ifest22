@@ -203,7 +203,7 @@ div.countdown2 p {
 
 .tablink {
     background-color: #e7ecf1;
-    color: black;
+    color: rgb(164, 163, 163);
     border: none;
     outline: none;
     cursor: pointer;
@@ -417,6 +417,9 @@ div.countdown2 p {
     border: 2px solid #ffff;
 }
 
+#Home h3, #Home p, #News h3, #News p, #Contact h3, #Contact p, #About h3, #About p, #About2 h3, #About2 p{
+    text-align: center;
+}
 /* Ket : Setengah Layar */
 @media screen and (max-width: 1167px) {
     div.banner div.countdown > div {
