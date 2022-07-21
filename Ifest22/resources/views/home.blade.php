@@ -278,24 +278,21 @@
                 <div class="ITComp-button" class="tabcontent">
                     <a href="{{ route('ctf') }}" >
                     <div class="ITComp-info" align="center">
-                        <h2>CTF</h2>
-                        <p>Capture The Flag</p>
+                        <img class="img-fluid" style="width:70%;" src="{{ URL::asset('img/competition/logo/ctf.png') }}">
                     </div>
                     </a>
                 </div>
                 <div class="ITComp-button" class="tabcontent">
                     <a href="{{ route('da') }}" >
                     <div class="ITComp-info" align="center">
-                        <h2>DAC</h2>
-                        <p>Data Analysis Competition</p>
+                        <img class="img-fluid" style="width:70%;" src="{{ URL::asset('img/competition/logo/dac.png') }}">                       
                     </div>
                     </a>
                 </div>
                 <div class="ITComp-button" class="tabcontent">
                     <a href="{{ route('intention') }}" >
                     <div class="ITComp-info" align="center">
-                        <h2>Intention</h2>
-                        <p>Innovative Technology Competition</p>
+                        <img class="img-fluid" style="width:70%;" src="{{ URL::asset('img/competition/logo/int.png') }}">
                     </div>
                     </a>
                 </div>   
