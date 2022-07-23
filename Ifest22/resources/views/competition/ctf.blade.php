@@ -25,9 +25,15 @@ This competition is held online and is intended for high school / vocational stu
 @endsection
 
 @section('competition_collab')
+<div data-aos="fade-down" data-aos-duration="1000" class="row-img-prize justify-content-center" align="center" id="competitionPrizes" style="padding-bottom: 30px;">
+    <h1 class="text-sub-title" style="font-size:24px">Problem Setter Collaboration</h1>
+    <a href="https://petircysec.com/">
+        <img class="img-fluid" style="width:180px;" src="{{ URL::asset('img/logo/sponsor/collab_petir_no_bg.png') }}">
+    </a>
+</div>
 <div data-aos="fade-down" data-aos-duration="1000" class="row-img-prize justify-content-center" align="center" id="competitionPrizes" style="padding-bottom: 50px;">
     <h1 class="text-sub-title" style="font-size:24px">Exclusive Cloud Hosting Partner</h1>
-    <img class="img-fluid" style="width:240px;" src="{{ URL::asset('img/logo/sponsor/collab_dewaweb_white.png') }}">
+    <img class="img-fluid" style="width:280px;" src="{{ URL::asset('img/logo/sponsor/collab_dewaweb_white.png') }}">
 </div>
 @endsection
 
@@ -113,12 +119,17 @@ This competition is held online and is intended for high school / vocational stu
                 <p class="text-desc">+ Rp3.000.000 Dewacloud Credit for each team member</p>
             </div>
         </div>
+        <div class="col-4">
+            <img class="img-fluid" style="width:180px;" src="{{ URL::asset('img/competition/trophy/CTF/3.png') }}">
+            <div class="col-8">
+                <p class="text-desc">Rp1.000.000 Dewacloud Credit for each team member</p>
+            </div>
+        </div>
     </div>
     <div class="row justify-content-center" style="padding-top:30px">
         <div class="col-7">
             <p class="text-desc">
                 • All participants will get an E-Certificate
-                <br>• 3rd Winner will get Rp1.000.000 Dewacloud Credit for each team member
                 <br>• Participants who are in top 5 rankings will get a Free Pass for the 2022 National Seminar
             </p>
         </div>

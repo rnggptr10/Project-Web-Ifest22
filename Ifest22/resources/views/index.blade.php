@@ -35,7 +35,7 @@
                 <p>seconds</p>
             </div>
         </div>
-        <p class="title-cd">Semninar Nasional</p>
+        <p class="title-cd" style="margin:0">Startup Talk</p>
         <!-- <h3>International Conference</h3> -->
         <div class="conference-btn">
 
@@ -71,7 +71,7 @@
             </div>
             <div class="col-sm-4">
                 <div class="title-countdown">
-                    <p>Seminar Nasional</p>
+                    <p style="margin:0">Startup Talk</p>
                 </div>
             </div>
             <div class="col-sm-4">
@@ -416,6 +416,7 @@
         </div>
     </div>
 </div>
+<script src="{{ asset('js/countdown.js') }}"></script>
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>
     AOS.init();

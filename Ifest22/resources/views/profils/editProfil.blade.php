@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>IFest 2022 - Edit Profile</title>
     <meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport' />
-    <link rel="icon" href="{{ asset('img/favicon.ico') }}" type="image/x-icon" />
+    <link rel="icon" href="{{ asset('img/logo/logo_nav.png') }}">
 
     <!-- CSS Files -->
     <link rel="stylesheet" href="{{ asset('atlantis/css/bootstrap.min.css') }}">
