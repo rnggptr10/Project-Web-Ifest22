@@ -8,7 +8,7 @@
 <div class="content-main">
     <img src="{{asset('img/bg-fix.png')}}" alt="" style="width:100%;">
     <div class="logo-content-main">
-        <a href="{{route('company')}}" >
+        <a href="{{route('company')}}">
             <img class="logo-landing" src="{{asset('img/logo/logo_landing.png')}}" alt="">
         </a>
     </div>
@@ -99,12 +99,12 @@
                 <a class="nav-link dropdown-toggle left-nav" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Our Events
                 </a>
-                <div class="dropdown-menu border-dropmenu" aria-labelledby="navbarDropdown" style="background-color: #c4c4c4; border: none;">
-                    <a class="item-dropmenu" style="padding: 0.25rem 1rem;" href="#" onclick="openPage('Home','StartupTalk-speakers' , this, '#291647')">Startup Talk</a>
-                    <a class="item-dropmenu" style="padding: 0.25rem 1rem;" href="#" onclick="openPage('News', 'Technopreneur-speakers', this, '#291647')">Technopreneur</a>
-                    <a class="item-dropmenu" style="padding: 0.25rem 1rem;" href="#" onclick="openPage('Contact','ITComp-speakers', this, '#291647')">IT Competition</a>
-                    <a class="item-dropmenu" style="padding: 0.25rem 1rem;" href="#" onclick="openPage('About', 'Semnas-speakers', this, '#291647')">Seminar Nasional</a>
-                    <a class="item-dropmenu" style="padding: 0.25rem 1rem;" href="#" onclick="openPage('About2', 'AwardingNight-speakers', this, '#291647')">Awarding Night</a>
+                <div class="dropdown-menu border-dropmenu" aria-labelledby="navbarDropdown" style="background-color: #E6EEF7; border: 1px solid #fff;">
+                    <a class="item-dropmenu" style="padding: 0.25rem 1rem;" href="#" onclick="openPage('Home','StartupTalk-speakers' , this, '')">Startup Talk</a>
+                    <a class="item-dropmenu" style="padding: 0.25rem 1rem;" href="#" onclick="openPage('News', 'Technopreneur-speakers', this, '')">Technopreneur</a>
+                    <a class="item-dropmenu" style="padding: 0.25rem 1rem;" href="#" onclick="openPage('Contact','ITComp-speakers', this, '')">IT Competition</a>
+                    <a class="item-dropmenu" style="padding: 0.25rem 1rem;" href="#" onclick="openPage('About', 'Semnas-speakers', this, '')">Seminar Nasional</a>
+                    <a class="item-dropmenu" style="padding: 0.25rem 1rem;" href="#" onclick="openPage('About2', 'AwardingNight-speakers', this, '')">Awarding Night</a>
                 </div>
             </li>
         </ul>
@@ -119,7 +119,7 @@
         <div id="News" class="tabcontent">
             <h3>Technopreneur</h3>
             <p>"Innovative Digital Startup For Youngpreneur"</p>
-            <p style="font-size: 14px;">Technopreneur is a webinar and workshop that provides training & development facilities by professionals to develop people's entrepreneurial interests and talents in IT, so that they are able to use digital technology as an opportunity to develop business. Technopreneur 2022 collaborating with great incubators and companies in Indonesia to help the participants in developing their digital startup idea so that it is ready to be executed. Technopreneur 2022 presents concepts and themes where participants can practice and develop digital startup ideas from a young age, of course, accompanied by professionals. The materials that will be presented are "Introduction to Startup and Design Thinking", "Business Concept", "Branding and Market Validation", and "Funding and Pitching".</p>
+            <p>Technopreneur is a webinar and workshop that provides training & development facilities by professionals to develop people's entrepreneurial interests and talents in IT, so that they are able to use digital technology as an opportunity to develop business. Technopreneur 2022 collaborating with great incubators and companies in Indonesia to help the participants in developing their digital startup idea so that it is ready to be executed. Technopreneur 2022 presents concepts and themes where participants can practice and develop digital startup ideas from a young age, of course, accompanied by professionals. The materials that will be presented are "Introduction to Startup and Design Thinking", "Business Concept", "Branding and Market Validation", and "Funding and Pitching".</p>
         </div>
         <div id="Contact" class="tabcontent">
             <h3>IT Competition</h3>
@@ -131,22 +131,20 @@
         </div>
         <div id="About2" class="tabcontent">
             <h3>Awarding Night</h3>
-            <p>Description Awarding Night...</p>
+            <p>Coming Soon</p>
         </div>
     </div>
     <div class="box-speaker">
-        <div id="StartupTalk-speakers" class="carousel-pembicara slide" data-ride="carousel">
+        <div id="StartupTalk-speakers" class="carousel carousel-pembicara slide" data-ride="carousel">
             <div class="carousel-inner" class="tabcontent">
                 <h4 style="text-align:center;">Meet Our Speakers</h4>
                 <div class="carousel-item active" style="background-color: transparent;">
                     <div class="speaker">
                         <div class="img-speakers">
-                            <img class="align-self-center mr-3" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg" alt="Generic placeholder image">
+                            <img class="align-self-center rm-3" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg" alt="Generic placeholder image">
                         </div>
                         <div class="media-body">
                             <h5 class="mt-0">Speaker 1</h5>
-                            <!-- <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p> -->
-                            <!-- <p></p> -->
                             <p>To Be Announced Soon!</p>
                             <div class="button-speakers-details" style="padding-top: 90px;">
                                 <button class="allspeaker"><a style="color:white; text-decoration:none;" href="">See All Speakers</a></button>
@@ -155,10 +153,9 @@
                     </div>
                 </div>
                 <div class="carousel-item" style="background-color: transparent;">
-
                     <div class="speaker">
                         <div class="img-speakers">
-                            <img class="align-self-center mr-3" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg" alt="Generic placeholder image">
+                            <img class="align-self-center rm-3" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg" alt="Generic placeholder image">
                         </div>
                         <div class="media-body">
                             <h5 class="mt-0">Speaker 2</h5>
@@ -173,7 +170,7 @@
                 <div class="carousel-item" style="background-color: transparent;">
                     <div class="speaker">
                         <div class="img-speakers">
-                            <img class="align-self-center mr-3" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg" alt="Generic placeholder image">
+                            <img class="align-self-center rm-3" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg" alt="Generic placeholder image">
                         </div>
                         <div class="media-body">
                             <h5 class="mt-0">Speaker 3</h5>
@@ -199,14 +196,12 @@
             <div class="carousel-inner" class="tabcontent">
                 <h4 style="text-align:center;">Meet Our Speakers</h4>
                 <div class="carousel-item active" style="background-color: transparent;">
-                    <!-- <h3>Meet Our Speakers</h3> -->
                     <div class="speaker">
                         <div class="img-speakers">
-                            <img class="align-self-center mr-3" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg" alt="Generic placeholder image">
+                            <img class="align-self-center rm-3" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg" alt="Generic placeholder image">
                         </div>
                         <div class="media-body">
                             <h5 class="mt-0">Speaker 1</h5>
-                            <!-- <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p> -->
                             <p>To Be Announced Soon!</p>
                             <div class="button-speakers-details" style="padding-top: 90px;">
                                 <button class="allspeaker"><a style="color:white; text-decoration:none;" href="">See All Speakers</a></button>
@@ -217,7 +212,7 @@
                 <div class="carousel-item" style="background-color: transparent;">
                     <div class="speaker">
                         <div class="img-speakers">
-                            <img class="align-self-center mr-3" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg" alt="Generic placeholder image">
+                            <img class="align-self-center rm-3" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg" alt="Generic placeholder image">
                         </div>
                         <div class="media-body">
                             <h5 class="mt-0">Speaker 2</h5>
@@ -232,7 +227,7 @@
                 <div class="carousel-item" style="background-color: transparent;">
                     <div class="speaker">
                         <div class="img-speakers">
-                            <img class="align-self-center mr-3" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg" alt="Generic placeholder image">
+                            <img class="align-self-center rm-3" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg" alt="Generic placeholder image">
                         </div>
                         <div class="media-body">
                             <h5 class="mt-0">Speaker 3</h5>
@@ -259,24 +254,37 @@
                 <div class="ITComp-button" class="tabcontent">
                     <a href="{{ route('ctf') }}">
                         <div class="ITComp-info" align="center">
-                            <h2>CTF</h2>
-                            <p>Capture The Flag</p>
+                            <div class="hovereffect">
+                                <img class="img-fluid" src="{{ URL::asset('img/competition/logo/ctf.png') }}">
+                                <div class="overlay">
+                                    <h2>Capture The Flag</h2>
+                                </div>
+                            </div>
                         </div>
                     </a>
                 </div>
                 <div class="ITComp-button" class="tabcontent">
                     <a href="{{ route('da') }}">
                         <div class="ITComp-info" align="center">
-                            <h2>DAC</h2>
-                            <p>Data Analysis Competition</p>
+                            <div class="hovereffect">
+                                <img class="img-fluid" src="{{ URL::asset('img/competition/logo/dac.png') }}">
+                                <div class="overlay">
+                                    <h2>Data Analysis Competition</h2>
+                                </div>
+                            </div>
                         </div>
                     </a>
                 </div>
                 <div class="ITComp-button" class="tabcontent">
                     <a href="{{ route('intention') }}">
                         <div class="ITComp-info" align="center">
-                            <h2>Intention</h2>
-                            <p>Innovative Technology Competition</p>
+                            <div class="hovereffect">
+                                <img class="img-fluid" src="{{ URL::asset('img/competition/logo/int.png') }}">
+                                <div class="overlay">
+                                    <h2>INTENTION</h2>
+                                </div>
+                            </div>
+
                         </div>
                     </a>
                 </div>
@@ -288,7 +296,7 @@
                     <h4 style="text-align:center;">Meet Our Speakers</h4>
                     <div class="speaker">
                         <div class="img-speakers">
-                            <img class="align-self-center mr-3" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg" alt="Generic placeholder image">
+                            <img class="align-self-center rm-3" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg" alt="Generic placeholder image">
                         </div>
                         <div class="media-body">
                             <h5 class="mt-0">Speaker 1</h5>
@@ -303,7 +311,7 @@
                 <div class="carousel-item" style="background-color: transparent;">
                     <div class="speaker">
                         <div class="img-speakers">
-                            <img class="align-self-center mr-3" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg" alt="Generic placeholder image">
+                            <img class="align-self-center rm-3" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg" alt="Generic placeholder image">
                         </div>
                         <div class="media-body">
                             <h5 class="mt-0">Speaker 2</h5>
@@ -318,7 +326,7 @@
                 <div class="carousel-item" style="background-color: transparent;">
                     <div class="speaker">
                         <div class="img-speakers">
-                            <img class="align-self-center mr-3" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg  " alt="Generic placeholder image">
+                            <img class="align-self-center rm-3" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg  " alt="Generic placeholder image">
                         </div>
                         <div class="media-body">
                             <h5 class="mt-0">Speaker 3</h5>
@@ -346,7 +354,7 @@
                 <div class="carousel-item active" style="background-color: transparent;">
                     <div class="speaker">
                         <div class="img-speakers">
-                            <img class="align-self-center mr-3" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg  " alt="Generic placeholder image">
+                            <img class="align-self-center rm-3" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg  " alt="Generic placeholder image">
                         </div>
                         <div class="media-body">
                             <h5 class="mt-0">Speaker 1</h5>
@@ -361,7 +369,7 @@
                 <div class="carousel-item" style="background-color: transparent;">
                     <div class="speaker">
                         <div class="img-speakers">
-                            <img class="align-self-center mr-3" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg  " alt="Generic placeholder image">
+                            <img class="align-self-center rm-3" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg  " alt="Generic placeholder image">
                         </div>
                         <div class="media-body">
                             <h5 class="mt-0">Speaker 2</h5>
@@ -376,7 +384,7 @@
                 <div class="carousel-item" style="background-color: transparent;">
                     <div class="speaker">
                         <div class="img-speakers">
-                            <img class="align-self-center mr-3" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg  " alt="Generic placeholder image">
+                            <img class="align-self-center rm-3" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg  " alt="Generic placeholder image">
                         </div>
                         <div class="media-body">
                             <h5 class="mt-0">Speaker 3</h5>

@@ -5,18 +5,6 @@
 <link rel="stylesheet" href="{{ asset('atlantis/css/bootstrap.min.css') }}">
 @endsection
 @section('content')
-
-<!-- <div class="container" style="margin-top: 100px; margin-bottom:100px; width:100%">
-    <div class="row">
-        <div class="col-sm-8" style="border: 1px #fff solid;">
-            <!-- <p style="font-size: 100px; width: max-content; color: #8E84D1  ;"><b>IFEST 2022</b></p> -->
-<!-- <h1>IFEST 2022</h1>
-<img class="logo-landing" src="{{asset('img/logo/logo_landing.png')}}" alt="logo" width="60%">
-</div>
-<div class="col-sm-4" style="border: 1px #fff solid;">col-sm-4</div>
-</div>
-</div> -->
-<!-- <div id="particles-js"></div> -->
 <div class="content-main">
     <img src="{{asset('img/bg-fix.png')}}" alt="" style="width:100%;">
     <div class="logo-content-main">
@@ -112,21 +100,7 @@
         <button class="tablink justify-content-center" onclick="openPage('About2', 'AwardingNight-speakers', this, '#291647')">Awarding Night</button>
     </div>
     <div class="isian-tab2">
-        <!-- <div class="sa">
-            <div class="card-faq text-left">
-                <details>
-                    <summary>Our Events</summary>
-                    <!-- <a href="{{ route('startup') }}" class="burger-details" style="padding-left: 15px;">Startup Talk</a>
-                    <a href="{{ route('semnas') }}" class="burger-details" style="padding-left: 15px;">Seminar Nasional</a>
-                    <a href="{{ route('techno') }}" class="burger-details" style="padding-left: 15px;">Technopreneur</a> -->
-        <!-- <a href="#" onclick="openPage('Home','StartupTalk-speakers' , this, '#291647')">Startup Talk</a>
-                    <a href="#" onclick="openPage('News', 'Technopreneur-speakers', this, '#291647')">Technopreneur</a>
-                    <a href="#" onclick="openPage('Contact','ITComp-speakers', this, '#291647')">IT Competition</a>
-                    <a href="#" onclick="openPage('About', 'Semnas-speakers', this, '#291647')">Seminar Nasional</a>
-                    <a href="#" onclick="openPage('About2', 'AwardingNight-speakers', this, '#291647')">Awarding Night</a> -->
-        <!-- </details>
-            </div> -->
-        <!-- </div> -->
+
         <ul class="menu" style="margin-bottom: 0;">
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle left-nav" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -276,27 +250,27 @@
         <div id="ITComp-speakers" class="carousel-pembicara slide">
             <div class="ITComp-details">
                 <div class="ITComp-button" class="tabcontent">
-                    <a href="{{ route('ctf') }}" >
-                    <div class="ITComp-info" align="center">
-                        <img class="img-fluid" style="width:70%;" src="{{ URL::asset('img/competition/logo/ctf.png') }}">
-                    </div>
+                    <a href="{{ route('ctf') }}">
+                        <div class="ITComp-info" align="center">
+                            <img class="img-fluid" style="width:70%;" src="{{ URL::asset('img/competition/logo/ctf.png') }}">
+                        </div>
                     </a>
                 </div>
                 <div class="ITComp-button" class="tabcontent">
-                    <a href="{{ route('da') }}" >
-                    <div class="ITComp-info" align="center">
-                        <img class="img-fluid" style="width:70%;" src="{{ URL::asset('img/competition/logo/dac.png') }}">                       
-                    </div>
+                    <a href="{{ route('da') }}">
+                        <div class="ITComp-info" align="center">
+                            <img class="img-fluid" style="width:70%;" src="{{ URL::asset('img/competition/logo/dac.png') }}">
+                        </div>
                     </a>
                 </div>
                 <div class="ITComp-button" class="tabcontent">
-                    <a href="{{ route('intention') }}" >
-                    <div class="ITComp-info" align="center">
-                        <img class="img-fluid" style="width:70%;" src="{{ URL::asset('img/competition/logo/int.png') }}">
-                    </div>
+                    <a href="{{ route('intention') }}">
+                        <div class="ITComp-info" align="center">
+                            <img class="img-fluid" style="width:70%;" src="{{ URL::asset('img/competition/logo/int.png') }}">
+                        </div>
                     </a>
-                </div>   
-            </div> 
+                </div>
+            </div>
         </div>
         <div id="Semnas-speakers" class="carousel-pembicara slide" data-ride="carousel">
             <div class="carousel-inner" class="tabcontent">

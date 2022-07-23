@@ -495,42 +495,6 @@ div.countdown2 p {
     width: 105%;
 }
 
-/* ---------------------- */
-/* Responsif Landing Page */
-/* ---------------------- */
-
-/* Countdown */
-/* @media screen and  (max-width:1224px){
-    div.banner div.countdown > div {
-        width: 55px;
-        height: 70px;
-    }
-
-    div.countdown div {
-        font-size: 1.2rem;
-    }
-
-    div.countdown p {
-        color: #1c1c1c;
-        font-size: 0.5rem;
-    }
-}
-@media screen and  (max-width:1090px){
-    div.banner div.countdown > div {
-        width: 45px;
-        height: 60px;
-    }
-
-    div.countdown div {
-        font-size: 1.0rem;
-    }
-
-    div.countdown p {
-        color: #1c1c1c;
-        font-size: 0.4rem;
-    }
-} */
-
 #conference-btn-responsive {
     padding: 10px 30px;
     background-color: #8267B4;
@@ -565,6 +529,10 @@ div.countdown2 p {
 #About2 h3,
 #About2 p {
     text-align: center;
+}
+
+.rm-3{
+    margin-right: 1rem;
 }
 
 /* Ket : Setengah Layar */
@@ -650,7 +618,7 @@ div.countdown2 p {
     }
 
     .speaker {
-        display: inline-block;
+        display: block;
     }
 
     .img-speakers {
@@ -706,10 +674,14 @@ div.countdown2 p {
 /* Responsif */
 /* ========= */
 
-/* Mobile L */
-@media screen and (max-width: 320px) {
-    .content-main {
-        margin-top: 50px;
+/* Laptop Mini */
+@media screen and (max-width:1024px) {
+    .pasklik{
+        height: auto;
+    }
+
+    #News p{
+        font-size: 12px;
     }
 }
 
@@ -719,4 +691,27 @@ div.countdown2 p {
         margin-top: 20px;
     }
 
+    .rm-3{
+        margin-right: 0;
+    }
+
+    .media-body p{
+        text-align: center;
+    }
 }
+
+/* Mobile S */
+@media screen and (max-width: 320px) {
+    .content-main{
+        margin-top: 50px;
+    }
+    
+    #News p{
+        font-size: 10px;
+    }
+
+    .pasklik{
+        height: auto;
+    }
+}
+
