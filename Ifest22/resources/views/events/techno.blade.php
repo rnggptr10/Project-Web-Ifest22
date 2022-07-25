@@ -385,9 +385,7 @@ Technopreneur is a webinar and workshop that provides training & development fac
         </div>
     </section>
 </div>
-@endsection
 
-@section('event_detail2')
 <!-- INI NANTI BISA PAKE LOOPING AJA -->
 <div data-aos="fade-up" data-aos-duration="1000" class="row align-items-center justify-content-center padding-2-box-top" align="left" id="sutCards" style="padding-top: 30px;">
     <div class="col-xs-6 col-lg-6" align="center" style="padding:0">
