@@ -278,7 +278,9 @@ This competition is held online and is intended for high school / vocational stu
 @section('competition_button')
 <div class="row-cp">
     <div class="col-btn-left pad-regist" style="padding-top: 30px;" data-aos="fade-right" data-aos-duration="1000">
-        <button type="button" class="btn btn-outline-primary ifest-btn-outline-primary-dark-bg" style="width: 147px;height: 48px;">Guidebook</button>
+        <button type="button" class="btn btn-outline-primary ifest-btn-outline-primary-dark-bg" style="width: 147px;height: 48px;">
+            <a class="ifest-btn-primary-dark-bg-text" target="_blank" href="https://drive.google.com/file/d/1nEXAGMxijc5rVU9mip-Pd4Q16c5hnF0v/view?usp=sharing">Guidebook</a>
+        </button>
     </div>
     <?php
     // SET TANGGAL REGIST LOMBA

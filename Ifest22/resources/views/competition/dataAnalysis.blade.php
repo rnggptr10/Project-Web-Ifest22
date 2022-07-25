@@ -119,23 +119,23 @@ Data Analysis Competition (DAC) is a national-scale competition organized by Him
     <h1 class="text-sub-title">Prizes</h1>
     <div class="row justify-content-center" style="padding-top: 20px;"">
         <div class=" col-4">
-            <img class="img-fluid" style="width:180px;" src="{{ URL::asset('img/competition/trophy/DAC/2.png') }}">
-        </div>
-        <div class="col-4">
-            <img class="img-fluid" style="width:220px;" src="{{ URL::asset('img/competition/trophy/DAC/1.png') }}">
-        </div>
-        <div class="col-4">
-            <img class="img-fluid" style="width:180px;" src="{{ URL::asset('img/competition/trophy/DAC/3.png') }}">
-        </div>
+        <img class="img-fluid" style="width:180px;" src="{{ URL::asset('img/competition/trophy/DAC/2.png') }}">
     </div>
-    <div class="row justify-content-center" style="padding-top:30px">
-        <div class="col-6">
-            <p class="text-desc">
-                • All participants will get an E-Certificate
-                <br>• Participants who pass the preliminary round will get a Free Pass for the 2022 National Seminar
-            </p>
-        </div>
+    <div class="col-4">
+        <img class="img-fluid" style="width:220px;" src="{{ URL::asset('img/competition/trophy/DAC/1.png') }}">
     </div>
+    <div class="col-4">
+        <img class="img-fluid" style="width:180px;" src="{{ URL::asset('img/competition/trophy/DAC/3.png') }}">
+    </div>
+</div>
+<div class="row justify-content-center" style="padding-top:30px">
+    <div class="col-6">
+        <p class="text-desc">
+            • All participants will get an E-Certificate
+            <br>• Participants who pass the preliminary round will get a Free Pass for the 2022 National Seminar
+        </p>
+    </div>
+</div>
 </div>
 @endsection
 
@@ -270,7 +270,9 @@ Data Analysis Competition (DAC) is a national-scale competition organized by Him
 @section('competition_button')
 <div class="row-cp">
     <div class="col-btn-left pad-regist" data-aos="fade-right" data-aos-duration="1000" style="text-align: right;">
-        <button type="button" class="btn btn-outline-primary ifest-btn-outline-primary-dark-bg" style="width: 147px;height: 48px;">Guidebook</button>
+        <button type="button" class="btn btn-outline-primary ifest-btn-outline-primary-dark-bg" style="width: 147px;height: 48px;">
+            <a class="ifest-btn-primary-dark-bg-text" target="_blank" href="https://drive.google.com/file/d/1IPcPPjTAKtr_PnpxoNKlzA5uLB5OgQxK/view?usp=sharing">Guidebook</a>
+        </button>
     </div>
     <?php
     // SET TANGGAL REGIST LOMBA

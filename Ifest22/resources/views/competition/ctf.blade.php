@@ -108,32 +108,32 @@ This competition is held online and is intended for high school / vocational stu
     <h1 class="text-sub-title">Prizes</h1>
     <div class="row justify-content-center" style="padding-top: 20px;"">
         <div class=" col-4">
-            <img class="img-fluid" style="width:180px;" src="{{ URL::asset('img/competition/trophy/CTF/2.png') }}">
-            <div class="col-8">
-                <p class="text-desc">+ Rp2.000.000 Dewacloud Credit for each team member</p>
-            </div>
-        </div>
-        <div class="col-4">
-            <img class="img-fluid" style="width:220px;" src="{{ URL::asset('img/competition/trophy/CTF/1.png') }}">
-            <div class="col-8">
-                <p class="text-desc">+ Rp3.000.000 Dewacloud Credit for each team member</p>
-            </div>
-        </div>
-        <div class="col-4">
-            <img class="img-fluid" style="width:180px;" src="{{ URL::asset('img/competition/trophy/CTF/3.png') }}">
-            <div class="col-8">
-                <p class="text-desc">Rp1.000.000 Dewacloud Credit for each team member</p>
-            </div>
+        <img class="img-fluid" style="width:180px;" src="{{ URL::asset('img/competition/trophy/CTF/2.png') }}">
+        <div class="col-8">
+            <p class="text-desc">+ Rp2.000.000 Dewacloud Credit for each team member</p>
         </div>
     </div>
-    <div class="row justify-content-center" style="padding-top:30px">
-        <div class="col-7">
-            <p class="text-desc">
-                • All participants will get an E-Certificate
-                <br>• Participants who are in top 5 rankings will get a Free Pass for the 2022 National Seminar
-            </p>
+    <div class="col-4">
+        <img class="img-fluid" style="width:220px;" src="{{ URL::asset('img/competition/trophy/CTF/1.png') }}">
+        <div class="col-8">
+            <p class="text-desc">+ Rp3.000.000 Dewacloud Credit for each team member</p>
         </div>
     </div>
+    <div class="col-4">
+        <img class="img-fluid" style="width:180px;" src="{{ URL::asset('img/competition/trophy/CTF/3.png') }}">
+        <div class="col-8">
+            <p class="text-desc">Rp1.000.000 Dewacloud Credit for each team member</p>
+        </div>
+    </div>
+</div>
+<div class="row justify-content-center" style="padding-top:30px">
+    <div class="col-7">
+        <p class="text-desc">
+            • All participants will get an E-Certificate
+            <br>• Participants who are in top 5 rankings will get a Free Pass for the 2022 National Seminar
+        </p>
+    </div>
+</div>
 </div>
 @endsection
 
@@ -178,7 +178,7 @@ This competition is held online and is intended for high school / vocational stu
 <div class="row-cp">
     <div class="col-btn-left pad-regist" style="padding-top: 30px;">
         <button type="button" class="btn btn-outline-primary ifest-btn-outline-primary-dark-bg">
-            <a class="ifest-btn-primary-dark-bg-text" href="">Guidebook</a>
+            <a class="ifest-btn-primary-dark-bg-text" target="_blank" href="https://drive.google.com/file/d/1IaLLqAbb3zgewSplyaNvYGekBAnZZ7F7/view?usp=sharing">Guidebook</a>
         </button>
     </div>
     <?php
