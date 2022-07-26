@@ -548,9 +548,9 @@ Technopreneur is a webinar and workshop that provides training & development fac
 </div>
 <div data-aos="fade-up" data-aos-duration="1000" class="row justify-content-center align-items-center" align="center" id="eventFAQ" style="padding-top: 30px;padding-bottom: 30px;">
     <h1 class="title-1 text-sub-title">Frequently Asked Question (FAQ)</h1>
-    <h2 class="title-2">Frequently Asked Question (FAQ)</h2>
-    <div class="size-card row" style="padding-top: 30px;">
-        <div class="card-faq text-left">
+    <p class="title-2 text-sub-title" style="font-size:20px;">Frequently Asked Question (FAQ)</p>
+    <div class="row text-left margin-l-r" style="padding-top: 30px;">
+        <div class="card-faq">
             <details>
                 @yield('faq_techno_1')
             </details>

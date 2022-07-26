@@ -82,7 +82,7 @@ Startup Talk is a talk show that aims as a means to bring together Founders or S
 <img class="card-img-top size-img-top-speakers" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg" alt="Speakers-3">
 <div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
     <div class="col-7" style="line-height: 5px;">
-        <h5 class="text-photo-card-name">To Be Announced Soon!</h5>    
+        <h5 class="text-photo-card-name">To Be Announced Soon!</h5>
         <!-- <h5 class="text-photo-card-name">Speaker3</h5>
         <p class="text-photo-card-position">CEO</p> -->
     </div>

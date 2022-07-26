@@ -28,12 +28,7 @@ Seminar Nasional is a national seminar that invites experienced speakers in thos
 <div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
     <div class="col-7" style="line-height: 5px;">
         <h5 class="text-photo-card-name">To Be Announced Soon!</h5>
-        <!-- <h5 class="text-photo-card-name">Speaker1</h5>
-        <p class="text-photo-card-position">CEO</p> -->
     </div>
-    <!-- <div class="col-3">
-        <a href=""><img class="logo-linkedin" src="{{ URL::asset('icon/linkedin.svg') }}" alt="linkedin"></a>
-    </div> -->
 </div>
 @endsection
 
@@ -388,7 +383,7 @@ Seminar Nasional is a national seminar that invites experienced speakers in thos
 </div>
 <div data-aos="fade-up" data-aos-duration="1000" class="row justify-content-center align-items-center" align="center" id="eventFAQ" style="padding-top: 30px;padding-bottom: 30px;">
     <h1 class="title-1 text-sub-title">Frequently Asked Question (FAQ)</h1>
-    <h2 class="title-2">Frequently Asked Question (FAQ)</h2>
+    <p class="title-2 text-sub-title" style="font-size:20px;">Frequently Asked Question (FAQ)</p>
     <div class="row text-left margin-l-r" style="padding-top: 30px;">
         <div class="card-faq">
             <details>
