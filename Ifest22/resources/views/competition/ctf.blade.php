@@ -26,7 +26,7 @@ This competition is held online and is intended for high school / vocational stu
 
 @section('competition_collab')
 <div data-aos="fade-down" data-aos-duration="1000" class="row-img-prize justify-content-center" align="center" id="competitionPrizes" style="padding-bottom: 30px;">
-    <h1 class="text-sub-title" style="font-size:24px">Problem Setter Collaboration</h1>
+    <h1 class="text-sub-title" style="font-size:24px">Problem Setter</h1>
     <a href="https://petircysec.com/">
         <img class="img-fluid" style="width:180px;" src="{{ URL::asset('img/logo/sponsor/collab_petir_no_bg.png') }}">
     </a>

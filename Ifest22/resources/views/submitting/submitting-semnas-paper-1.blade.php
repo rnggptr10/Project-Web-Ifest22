@@ -23,6 +23,16 @@
             </div>
             @enderror
         </div>
+        <div class="row mb-2 text-left" style="padding:0 0 20px 0">
+            <div class="col" style="padding:0">
+                <p class="regist-form-notes-text">
+                    Notes :<br>
+                    • Make sure file is accessible.<br>
+                    • Download the Abstract template <a target="_blank" href="https://bit.ly/TemplatePaperSemnas2022">here</a>.
+                </p>
+            </div>
+        </div>
+
         <div class="row justify-content-center align-items-center" align="center" id="registCompButton" style="padding:30px 0 30px 0">
             <div class="col-4">
                 <!-- VERTICAL ALIGN NYA BELOM JALAN -->

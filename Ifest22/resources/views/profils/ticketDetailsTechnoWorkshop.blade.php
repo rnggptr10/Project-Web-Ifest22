@@ -75,7 +75,7 @@
                 <img class="circular-number" src="{{ URL::asset('icon/page-details/circle-2.svg') }}" alt="2">
             </div>
             <div class="col-6" align="left" style="padding:0 8px 0 15px">
-                <h6 class="text-tickets-head">Business Idea Submission</h6>
+                <h6 class="text-tickets-head">Business Idea and Workshop Document Submission</h6>
                 <p class="text-tickets-desc">24 July - 31 August 2022<br>Status :
                 <?php
                     // SET WAKTU LIVE
@@ -89,11 +89,11 @@
                     $techno_ws_proposal_date_end->toDateTimeString(); 
 
                     // SET TANGGAL PENGUMUMAN SELECTED TEAM
-                    $techno_ws_announce_date_start = Carbon::create(2022, 9, 1, 00, 00, 01, 'Asia/Jakarta');
+                    $techno_ws_announce_date_start = Carbon::create(2022, 8, 31, 00, 00, 01, 'Asia/Jakarta');
                     $techno_ws_announce_date_start->toDateTimeString(); 
 
                     // SET TANGGAL SUBMIT PAYMENT
-                    $techno_ws_payment_date_start = Carbon::create(2022, 9, 1, 00, 00, 01, 'Asia/Jakarta');
+                    $techno_ws_payment_date_start = Carbon::create(2022, 8, 31, 00, 00, 01, 'Asia/Jakarta');
                     $techno_ws_payment_date_end = Carbon::create(2022, 9, 7, 23, 59, 59, 'Asia/Jakarta');
                     $techno_ws_payment_date_start->toDateTimeString(); 
                     $techno_ws_payment_date_end->toDateTimeString(); 
@@ -211,10 +211,10 @@
                     <?php if ($now->greaterThan($techno_ws_announce_date_start)) { ?>     
                     @if ($techno_ws->selected_team === '0')
                         <br>Status : 
-                        <span class="text-tickets-status status-red">Your team didn't qualify for the Final Round. Keep your spirits up!</span>
+                        <span class="text-tickets-status status-red">Your team didn't qualify for the Next Round. Keep your spirits up!</span>
                     @elseif ($techno_ws->selected_team === '2')
                         <br>Status : 
-                        <span class="text-tickets-status status-green">Congratulations! Your team advances to the Final Round</span>
+                        <span class="text-tickets-status status-green">Congratulations! Your team advances to the Next Round</span>
                     @elseif ($techno_ws->selected_team === '1')
                     @endif
                 <?php

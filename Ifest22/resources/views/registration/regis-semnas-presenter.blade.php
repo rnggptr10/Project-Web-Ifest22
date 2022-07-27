@@ -43,6 +43,15 @@
                                         </div>
                                         @enderror
                                     </div>
+                                    <div class="row mb-2 text-left" style="padding:0 0 20px 0">
+                                        <div class="col" style="padding:0">
+                                            <p class="regist-form-notes-text">
+                                                Notes :<br>
+                                                • Make sure file is accessible.<br>
+                                                • Download the Abstract template <a target="_blank" href="https://bit.ly/TemplateAbstrakSemnas">here</a>.
+                                            </p>
+                                        </div>
+                                    </div>
 
                                     <div class="row">
                                         <div class="col">

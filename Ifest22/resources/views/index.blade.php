@@ -2,6 +2,7 @@
 @section('css')
 <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 <link rel="stylesheet" href="{{ asset('css/landingpage.css') }}">
+<!-- KALO GANTI DI WEB PAKE HOME CSS -->
 <link rel="stylesheet" href="{{ asset('atlantis/css/bootstrap.min.css') }}">
 @endsection
 @section('content')
@@ -183,11 +184,11 @@
                     </div>
                 </div>
             </div>
-            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <a class="carousel-control-prev" href="#StartupTalk-speakers" role="button" data-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="sr-only">Previous</span>
             </a>
-            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <a class="carousel-control-next" href="#StartupTalk-speakers" role="button" data-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="sr-only">Next</span>
             </a>
@@ -240,11 +241,11 @@
                     </div>
                 </div>
             </div>
-            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <a class="carousel-control-prev" href="#Technopreneur-speakers" role="button" data-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="sr-only">Previous</span>
             </a>
-            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <a class="carousel-control-next" href="#Technopreneur-speakers" role="button" data-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="sr-only">Next</span>
             </a>
@@ -290,7 +291,7 @@
                 </div>
             </div>
         </div>
-        <div id="Semnas-speakers" class="carousel-pembicara slide" data-ride="carousel">
+        <div id="Semnas-speakers" class="carousel carousel-pembicara slide" data-ride="carousel">
             <div class="carousel-inner" class="tabcontent">
                 <div class="carousel-item active" style="background-color: transparent;">
                     <h4 style="text-align:center;">Meet Our Speakers</h4>
@@ -339,16 +340,16 @@
                     </div>
                 </div>
             </div>
-            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <a class="carousel-control-prev" href="#Semnas-speakers" role="button" data-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="sr-only">Previous</span>
             </a>
-            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <a class="carousel-control-next" href="#Semnas-speakers" role="button" data-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="sr-only">Next</span>
             </a>
         </div>
-        <div id="AwardingNight-speakers" class="carousel-pembicara slide" data-ride="carousel">
+        <div id="AwardingNight-speakers" class="carousel carousel-pembicara slide" data-ride="carousel">
             <div class="carousel-inner" class="tabcontent">
                 <h4 style="text-align:center;">Meet Our Speakers</h4>
                 <div class="carousel-item active" style="background-color: transparent;">
@@ -397,11 +398,11 @@
                     </div>
                 </div>
             </div>
-            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <a class="carousel-control-prev" href="#AwardingNight-speakers" role="button" data-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="sr-only">Previous</span>
             </a>
-            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <a class="carousel-control-next" href="#AwardingNight-speakers" role="button" data-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="sr-only">Next</span>
             </a>

@@ -63,25 +63,25 @@
                     $semnas_announce_date_start->toDateTimeString(); 
 
                     // SET TANGGAL SUBMIT PAYMENT
-                    $semnas_payment_date_start = Carbon::create(2022, 9, 11, 00, 00, 01, 'Asia/Jakarta');
+                    $semnas_payment_date_start = Carbon::create(2022, 9, 10, 00, 00, 01, 'Asia/Jakarta');
                     $semnas_payment_date_end = Carbon::create(2022, 9, 22, 23, 59, 59, 'Asia/Jakarta');
                     $semnas_payment_date_start->toDateTimeString(); 
                     $semnas_payment_date_end->toDateTimeString(); 
                     
                     // SET TANGGAL SUBMIT PAPER 1
-                    $semnas_paper_1_date_start = Carbon::create(2022, 9, 11, 00, 00, 01, 'Asia/Jakarta');
+                    $semnas_paper_1_date_start = Carbon::create(2022, 9, 10, 00, 00, 01, 'Asia/Jakarta');
                     $semnas_paper_1_date_end = Carbon::create(2022, 9, 22, 23, 59, 59, 'Asia/Jakarta');
                     $semnas_paper_1_date_start->toDateTimeString(); 
                     $semnas_paper_1_date_end->toDateTimeString();
                     
                     // SET TANGGAL REVISI
-                    $semnas_revisi_date_start = Carbon::create(2022, 9, 23, 00, 00, 01, 'Asia/Jakarta');
+                    $semnas_revisi_date_start = Carbon::create(2022, 9, 29, 00, 00, 01, 'Asia/Jakarta');
                     $semnas_revisi_date_end = Carbon::create(2022, 10, 6, 23, 59, 59, 'Asia/Jakarta');
                     $semnas_revisi_date_start->toDateTimeString(); 
                     $semnas_revisi_date_end->toDateTimeString(); 
 
                     // SET TANGGAL SUBMIT PAPER 2 (SET SAMA KY REVISI)
-                    $semnas_paper_2_date_start = Carbon::create(2022, 9, 23, 00, 00, 01, 'Asia/Jakarta');
+                    $semnas_paper_2_date_start = Carbon::create(2022, 9, 29, 00, 00, 01, 'Asia/Jakarta');
                     $semnas_paper_2_date_end = Carbon::create(2022, 10, 6, 23, 59, 59, 'Asia/Jakarta');
                     $semnas_paper_2_date_start->toDateTimeString(); 
                     $semnas_paper_2_date_end->toDateTimeString();
@@ -148,7 +148,7 @@
                 </div>
                 <div class="col-6" align="left" style="padding:0 8px 0 15px">
                     <h6 class="text-tickets-head">Presenter Payment</h6>
-                    <p class="text-tickets-desc">11 - 22 September 2022<br>Status :
+                    <p class="text-tickets-desc">10 - 22 September 2022<br>Status :
                         @if ($presenter->proof_payment === null)
                             <span class="text-tickets-status status-red">Not Yet Paid</span>
                         @elseif ($presenter->proof_payment !== null)
@@ -201,7 +201,7 @@
                         </div>
                         <div class="col-6" align="left" style="padding:0 8px 0 15px">
                             <h6 class="text-tickets-head">Paper Submission</h6>
-                            <p class="text-tickets-desc">11 - 22 September 2022<br>Status :
+                            <p class="text-tickets-desc">10 - 22 September 2022<br>Status :
                                 @if ($presenter->paper1_link === null)
                                 <span class="text-tickets-status status-red">Unsubmitted</span>
                                 @elseif ($presenter->paper1_link !== null)
@@ -241,7 +241,7 @@
                             </div>
                             <div class="col-6" align="left" style="padding:0 8px 0 15px">
                                 <h6 class="text-tickets-head">Paper Revision Period</h6>
-                                <p class="text-tickets-desc">23 September - 6 October 2022</p>
+                                <p class="text-tickets-desc">29 September - 6 October 2022</p>
                             </div>
                         </div>
 

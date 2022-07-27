@@ -23,6 +23,14 @@
             </div>
             @enderror
         </div>
+        <div class="row mb-2 text-left" style="padding:0 0 20px 0">
+            <div class="col" style="padding:0">
+                <p class="regist-form-notes-text">
+                    Notes :<br>
+                    • Make sure file is accessible.<br>
+                </p>
+            </div>
+        </div>
 
         <div class="row justify-content-center align-items-center" align="center" id="registCompButton" style="padding:30px 0 30px 0">
             <div class="col-4">

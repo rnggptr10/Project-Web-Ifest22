@@ -114,9 +114,9 @@ Startup Talk is a talk show that aims as a means to bring together Founders or S
         <h5 class="text-photo-card-name">Fransiskus Alvin</h5>
         <p class="text-photo-card-position">Founder Course-Net</p>
     </div>
-    <div class="col-3">
+    <!-- <div class="col-3">
         <a href=""><img class="logo-linkedin" src="{{ URL::asset('icon/linkedin.svg') }}" alt="linkedin"></a>
-    </div>
+    </div> -->
 </div>
 @endsection
 
@@ -128,9 +128,9 @@ Startup Talk is a talk show that aims as a means to bring together Founders or S
         <h5 class="text-photo-card-name">Luthfy Ardiansyah</h5>
         <p class="text-photo-card-position">CEO Data Academy</p>
     </div>
-    <div class="col-3">
+    <!-- <div class="col-3">
         <a href=""><img class="logo-linkedin" src="{{ URL::asset('icon/linkedin.svg') }}" alt="linkedin"></a>
-    </div>
+    </div> -->
 </div>
 @endsection
 

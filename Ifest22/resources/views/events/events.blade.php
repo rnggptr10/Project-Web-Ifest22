@@ -48,6 +48,7 @@
                         </button>
                     </div>
                 </div>
+                @yield('add_cp3_cp4')
             </div>
         </div>
     </div>

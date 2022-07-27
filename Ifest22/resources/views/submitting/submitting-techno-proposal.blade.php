@@ -1,8 +1,8 @@
 @extends('submitting.submitting')
 
-@section('competition_webtitle', 'Technopreneur Workshop Proposal')
+@section('competition_webtitle', 'Technopreneur Workshop Business Idea & Workshop Document')
 
-@section('competition_title', 'Technopreneur Workshop - Proposal')
+@section('competition_title', 'Technopreneur Workshop - Business Idea & Workshop Document')
 
 @section('action_form', "")
 
@@ -14,8 +14,8 @@
     @csrf
     <div id="regist-section-1">
         <div class="row mb-2">
-            <label for="proposal_link" class="placeholder regist-form-text" style="padding:0">{{ __('Proposal Link') }}</label>
-            <input id="proposal_link" name="proposal_link" type="text" class="form-control @error('proposal_link') is-invalid @enderror ifest-regist-form text-center" value="{{ old('proposal_link') }}" required autocomplete="proposal_link" autofocus placeholder="Insert Proposal Link">
+            <label for="proposal_link" class="placeholder regist-form-text" style="padding:0">{{ __('Business Idea and Workshop Document Link') }}</label>
+            <input id="proposal_link" name="proposal_link" type="text" class="form-control @error('proposal_link') is-invalid @enderror ifest-regist-form text-center" value="{{ old('proposal_link') }}" required autocomplete="proposal_link" autofocus placeholder="Insert Drive Link">
             @error('proposal_link')
             <div class="alert alert-danger mt-1 d-flex align-items-center" role="alert" style="width: 100%;
         max-width: 333px; margin: 0 auto">
@@ -23,6 +23,16 @@
                 {{ $message }}
             </div>
             @enderror
+        </div>
+        <div class="row mb-2 text-left" style="padding:20px 0 20px 0">
+            <div class="col" style="padding:0">
+                <p class="regist-form-notes-text">
+                    Notes :<br>
+                    • File Ide Bisnis dan Lembar Pernyataan disatukan dalam satu folder Google Drive.<br>
+                    • Pastikan 2 file tersebut dapat diakses.<br>
+                    • Lembar Pernyataan Workshop Technopreneur dapat didownload <a target="_blank" href="https://docs.google.com/document/d/1CUFOBXg9yMAU_si0KDMfYp3dUD10Rq4Y/edit?usp=sharing&ouid=108585323743663505070&rtpof=true&sd=true">disini</a>.
+                </p>
+            </div>
         </div>
 
         <div class="row justify-content-center align-items-center" align="center" id="registCompButton" style="padding:30px 0 30px 0">

@@ -27,12 +27,11 @@ Technopreneur is a webinar and workshop that provides training & development fac
 @section('techno_speakers_1')
 <img class="card-img-top size-img-top-speakers" src="{{ asset('img/event/techno/speakers/speaker_11.png') }}" alt="Speakers-1">
 <div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
-    <div class="col-7" style="line-height: 5px;">
+    <div class="col-10" style="line-height: 5px;">
         <!-- <h5 class="text-photo-card-name">To Be Announced Soon!</h5> -->
         <h5 class="text-photo-card-name">Tita Bukian</h5>
         <p class="text-photo-card-position">Business Transformation Innovation <br>
             Excellence Director PT Cybertrend Intrabuana
-
         </p>
     </div>
     <!-- <div class="col-3">
@@ -487,8 +486,8 @@ Technopreneur is a webinar and workshop that provides training & development fac
                 </div>
                 <div class="col-5">
                     <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg">
-                        <a class="title-1 ifest-btn-primary-dark-bg-text" href="">Download</a>
-                        <a class="title-2 ifest-btn-primary-dark-bg-text" href="">
+                        <a class="title-1 ifest-btn-primary-dark-bg-text" target="_blank" href="https://drive.google.com/file/d/1W0xB0XIx0xZ5xuu9jtn7VbvOhxL0m7IK/view?usp=sharing">Download</a>
+                        <a class="title-2 ifest-btn-primary-dark-bg-text" target="_blank" href="https://drive.google.com/file/d/1W0xB0XIx0xZ5xuu9jtn7VbvOhxL0m7IK/view?usp=sharing">
                             <p style="margin: 0; font-size:10px">Download</p>
                         </a>
                     </button>

@@ -77,8 +77,8 @@ Seminar Nasional is a national seminar that invites experienced speakers in thos
 <!-- FAQ -->
 @section('faq_semnas_1')
 <summary class="card-faq-q-text">What is the delivery method for abstracts?</summary>
-<p class="card-faq-a-text">Abstracts can be uploaded via the following :
-    <br>Download the Abstract template at :
+<p class="card-faq-a-text">Abstracts can be uploaded via the ticket details at profile.
+    <br>Download the Abstract template <a target="_blank" href="https://bit.ly/TemplateAbstrakSemnas">here</a>.
 </p>
 @endsection
 
@@ -91,7 +91,7 @@ Seminar Nasional is a national seminar that invites experienced speakers in thos
 
 @section('faq_semnas_3')
 <summary class="card-faq-q-text">Where can the seminar registration form be obtained?</summary>
-<p class="card-faq-a-text">The seminar registration form can be accessed via :</p>
+<p class="card-faq-a-text">The seminar registration form can be accessed via register button at seminar page.</p>
 @endsection
 
 @section('faq_semnas_4')
@@ -111,8 +111,8 @@ Seminar Nasional is a national seminar that invites experienced speakers in thos
 
 @section('faq_semnas_7')
 <summary class="card-faq-q-text">If the Abstract is accepted, what should be done next?</summary>
-<p class="card-faq-a-text">What you have to do is Upload Full Paper: <br>
-    If there are problems, please contact our contact person or email us at :
+<p class="card-faq-a-text">What you have to do is Upload Full Paper. Template for full paper is available <a target="_blank" href="https://bit.ly/TemplatePaperSemnas2022">here</a>.<br>
+    If there are problems, please contact our contact person.
 </p>
 @endsection
 
@@ -435,3 +435,20 @@ Seminar Nasional is a national seminar that invites experienced speakers in thos
 @endsection
 @section('cp2_contact', 'https://line.me/ti/p/~johanesbagus2506')
 @section('cp2_name', 'Bagus Prasetyo')
+
+@section('add_cp3_cp4')
+<div class="row-cp">
+    <div class="col-btn-left" style="padding-top: 30px;">
+        <button id="btn-cp3" type="button" class="btn btn-outline-primary ifest-btn-outline-primary-dark-bg" style="width: fit-content; padding:10px 20px 10px 20px" onclick="window.location.href='https://wa.me/6282208238182';">
+            <img class="logo-whatsapp" src="{{ URL::asset('icon/whatsapp.svg') }}" alt="Whatsapp">
+            <span style="margin-left:10px">Zakia</span>
+        </button>
+    </div>
+    <div class="col-btn-right" style="padding-top: 30px;">
+        <button id="btn-cp4" type="button" class="btn btn-outline-primary ifest-btn-outline-primary-dark-bg" style="width: fit-content; padding:10px 20px 10px 20px" onclick="window.location.href='https://line.me/ti/p/~zaqiana';">
+            <img class="logo-whatsapp" src="{{ URL::asset('icon/line.svg') }}" alt="Line">
+            <span style="margin-left:10px">Zakia</span>
+        </button>
+    </div>
+</div>
+@endsection
