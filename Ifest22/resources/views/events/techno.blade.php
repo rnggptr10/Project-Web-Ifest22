@@ -25,12 +25,15 @@ Technopreneur is a webinar and workshop that provides training & development fac
 
 <!-- SPEAKERS -->
 @section('techno_speakers_1')
-<img class="card-img-top size-img-top-speakers" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg" alt="Speakers-1">
+<img class="card-img-top size-img-top-speakers" src="{{ asset('img/event/techno/speakers/speaker_11.png') }}" alt="Speakers-1">
 <div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
     <div class="col-7" style="line-height: 5px;">
-        <h5 class="text-photo-card-name">To Be Announced Soon!</h5>
-        <!-- <h5 class="text-photo-card-name">Speaker1</h5>
-        <p class="text-photo-card-position">CEO</p> -->
+        <!-- <h5 class="text-photo-card-name">To Be Announced Soon!</h5> -->
+        <h5 class="text-photo-card-name">Tita Bukian</h5>
+        <p class="text-photo-card-position">Business Transformation Innovation <br>
+            Excellence Director PT Cybertrend Intrabuana
+
+        </p>
     </div>
     <!-- <div class="col-3">
         <a href=""><img class="logo-linkedin" src="{{ URL::asset('icon/linkedin.svg') }}" alt="linkedin"></a>
