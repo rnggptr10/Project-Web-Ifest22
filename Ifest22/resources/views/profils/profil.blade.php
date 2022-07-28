@@ -69,7 +69,7 @@
                     <div class="row" align="center">
                         <h2 class="text-card-title">Your Tickets</h2>
                     </div>
-                    @if ($status->startupDay1_status === '1' || $status->startupDay2_status === '1' || $status->semnas_status === '1' || $status->semnas_paper_status === '1' || $status->techno_seminar_status === '1' || $status->techno_ws_status === '1' || $status->intention_status === '1' || $status->dac_status === '1' || $status->ctf_status === '1')
+                    @if ($status->startupDay1_status === '1' || $status->startupDay2_status === '1' || $status->semnas_status === '1' || $status->semnas_paper_status === '1' || $status->techno_seminar_status === '1' || $status->techno_ws_status === '1' || $status->intention_status === '1' || $status->da_status === '1' || $status->ctf_status === '1')
                     @if ($status->startupDay1_status === '1')
                     <div class="row" align="center" style="padding:5px 0 5px 0">
                         <div class="col">
