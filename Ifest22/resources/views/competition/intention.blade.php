@@ -30,6 +30,15 @@ Innovative Technology Competition (INTENTION) is a national-scale competition or
 This competition is held online and is intended for high school / vocational students or active S1/D4/D3 students as evidenced by a student card. Participants in this competition are a team of 3-5 people. In addition, this competition is divided into two rounds, namely the preliminary round and the final round. With this theme, we hope that participants will be able to create applications that can be a trigger to reignite the spirit of innovation which is much needed to face the ever-changing technological trends.
 @endsection
 
+@section('competition_collab')
+<div data-aos="fade-down" data-aos-duration="1000" class="row-img-prize justify-content-center" align="center" id="competitionPrizes" style="padding-bottom: 50px;">
+    <h1 class="text-sub-title" style="font-size:24px">In Collaboration With</h1>
+    <a href="https://coding.id" target="_blank">
+        <img class="img-fluid" style="width:180px;" src="{{ URL::asset('img/logo/sponsor/coding-01.png') }}">
+    </a>
+</div>
+@endsection
+
 @section('competition_flashback')
 <div class="row align-items-center carousel slide" align="center" id="dacFlashback1" data-ride="carousel" style="padding-top: 30px;padding-bottom: 30px;">
     <div class="carousel-inner">
@@ -146,24 +155,24 @@ This competition is held online and is intended for high school / vocational stu
     <div class="row justify-content-center" style="padding-top: 30px;">
         <div class="col-4" data-aos="fade-right" data-aos-duration="1000" style="padding-right: 50px;">
             <div class="card ifest-photo-card" style="border: 0; width:max-content">
-                <img class="card-img-top" style="width:100%;height:350px;" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg" alt="Card image cap">
+                <img class="card-img-top" style="width:100%;height:350px;" src="{{ asset('img/event/intention/juri_2.png') }}" alt="Card image cap">
                 <div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
                     <div class="col" style="line-height: 5px;">
-                        <h5 class="text-photo-card-name">To Be Announced Soon!</h5>
-                        <!-- <h5 class="text-photo-card-name">Juri 1</h5>
-                        <p class="text-photo-card-position">FullStack</p> -->
+                        <h5 class="text-photo-card-name">Diki Muhamad Syidik</h5>
+                        <!-- <h5 class="text-photo-card-name">Juri 1</h5> -->
+                        <p class="text-photo-card-position">Software Developer at <br> Nawa Data Solutions</p>
                     </div>
                 </div>
             </div>
         </div>
         <div class="col-4" data-aos="fade-left" data-aos-duration="1000" style="padding-left: 50px;">
             <div class="card ifest-photo-card" style="border: 0; width:max-content">
-                <img class="card-img-top" style="width:100%;height:350px;" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg" alt="Card image cap">
+                <img class="card-img-top" style="width:100%;height:350px;" src="{{ asset('img/event/intention/juri_1.png') }}" alt="Card image cap">
                 <div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
                     <div class="col" style="line-height: 5px;">
-                        <h5 class="text-photo-card-name">To Be Announced Soon!</h5>
-                        <!-- <h5 class="text-photo-card-name">Juri 2</h5>
-                        <p class="text-photo-card-position">FullStack</p> -->
+                        <h5 class="text-photo-card-name">Muhamad Nizham</h5>
+                        <!-- <h5 class="text-photo-card-name">Juri 2</h5> -->
+                        <p class="text-photo-card-position">Coach at Coding.id</p>
                     </div>
                 </div>
             </div>
@@ -179,12 +188,12 @@ This competition is held online and is intended for high school / vocational stu
                 <div class="row justify-content-center">
                     <div class="col">
                         <div class="size-img-speakers card ifest-photo-card" style="border: 0;text-align:center;">
-                            <img class="card-img-top size-img-top-speakers" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg" alt="Card image cap">
+                            <img class="card-img-top size-img-top-speakers" src="{{ asset('img/event/intention/juri_2.png') }}" alt="Card image cap">
                             <div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
                                 <div class="col" style="line-height: 5px;">
-                                    <h5 class="text-photo-card-name">To Be Announced Soon!</h5>
-                                    <!-- <h5 class="text-photo-card-name">Juri 1</h5>
-                                    <p class="text-photo-card-position">FullStack</p> -->
+                                    <h5 class="text-photo-card-name">Diki Muhamad Syidik</h5>
+                                    <!-- <h5 class="text-photo-card-name">Juri 1</h5> -->
+                                    <p class="text-photo-card-position">Software Developer at <br> Nawa Data Solutions</p>
                                 </div>
                             </div>
                         </div>
@@ -195,12 +204,12 @@ This competition is held online and is intended for high school / vocational stu
                 <div class="row justify-content-center">
                     <div class="col">
                         <div class="size-img-speakers card ifest-photo-card" style="border: 0; text-align:center;">
-                            <img class="card-img-top size-img-top-speakers" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg" alt="Card image cap">
+                            <img class="card-img-top size-img-top-speakers" src="{{ asset('img/event/intention/juri_1.png') }}" alt="Card image cap">
                             <div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
                                 <div class="col" style="line-height: 5px;">
-                                    <h5 class="text-photo-card-name">To Be Announced Soon!</h5>
-                                    <!-- <h5 class="text-photo-card-name">Juri 2</h5>
-                                    <p class="text-photo-card-position">FullStack</p> -->
+                                    <h5 class="text-photo-card-name">Muhamad Nizham</h5>
+                                    <!-- <h5 class="text-photo-card-name">Juri 2</h5> -->
+                                    <p class="text-photo-card-position">Coach at Coding.id</p>
                                 </div>
                             </div>
                         </div>

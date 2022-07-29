@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Facades\Auth;
-use App\Models\Da_form;
+use App\Models\Da_Form;
 use App\Models\Ticket;
 
 class DataAnalysisController extends Controller

@@ -59,7 +59,6 @@ Route::patch('/profil/ticket-details-dac/submit-analysis', [ProfilController::cl
 Route::get('/profil/ticket-details-ctf/submit-writeup', [ProfilController::class, 'submittingWriteupCtf'])->name('ctf.submitting.writeup.view');
 Route::patch('/profil/ticket-details-ctf/submit-writeup', [ProfilController::class, 'saveWriteupCtf'])->name('ctf.submitting.writeup');
 
-
 Route::get('/profil/ticket-details-technopreneur-workshop/submit-proposal', [ProfilController::class, 'submittingProposalTechno'])->name('technoWorkshop.submitting.proposal.view');
 Route::patch('/profil/ticket-details-technopreneur-workshop/submit-proposal', [ProfilController::class, 'saveProposalTechno'])->name('technoWorkshop.submitting.proposal');
 Route::get('/profil/ticket-details-technopreneur-workshop/submit-pitchdeck-1', [ProfilController::class, 'submittingPitchdeck1Techno'])->name('technoWorkshop.submitting.pitchdeck1.view');
@@ -106,7 +105,7 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/data-analysis-competition/registration', [DataAnalysisController::class, 'registration'])->name('dac.registration.view');
     Route::patch('/data-analysis-competition/registration', [DataAnalysisController::class, 'saveRegister'])->name('dac.registration');
 
-    // DAC
+    // Intention
     Route::get('/intention/registration', [IntentionController::class, 'registration'])->name('intention.registration.view');
     Route::patch('/intention/registration', [IntentionController::class, 'saveRegister'])->name('intention.registration');
 
@@ -157,4 +156,3 @@ Route::put('/admin/intention/change-status-payment', [AdminController::class, 'c
 Route::put('/admin/intention/change-status-finalist', [AdminController::class, 'changeIntentionStatusFinalist'])->name('admin-intention-change-status-finalist');
 Route::put('/admin/techno-workshop/change-status-payment', [AdminController::class, 'changeTechnoWSStatusPembayaran'])->name('admin-techno-ws-change-status-pembayaran');
 Route::put('/admin/techno-workshop/change-status-tim', [AdminController::class, 'changeTechnoWSStatusSelected'])->name('admin-techno-ws-change-status-tim');
-
