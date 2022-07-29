@@ -8,7 +8,7 @@
 <meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport' />
 <link rel="stylesheet" href="{{ URL::asset('css/generalStyle.css') }}">
 <link rel="stylesheet" href="{{ URL::asset('css/bootstrap.min.css') }}">
-<link rel="stylesheet" href="{{ asset('css/comprof.css') }}">
+<link rel="stylesheet" href="{{ URL::asset('css/comprof.css') }}">
 
 
 @extends('layouts.app')
@@ -43,30 +43,49 @@
     </div>
 
     <!-- Video -->
-
     <!-- Core Value -->
-    <div class="container" style="padding: 100px 0 50px 0;">
-        <h1 style="display: flex; justify-content:center;">Our Core Values</h1>
-        <div style=" display: flex; justify-content:space-around;">
+    <div class="container" style="padding: 30px 0 50px 0;">
+        <h1 style="display: flex; row justify-content-center;">Our Core Values</h1>
+        <div class="container">
+            <div class="box">
+              <div class="boxContent">
+                <img class="fa icon image" src="{{ asset('img/coreValue/relation new.png') }}">
+                <h1 class="title">Relation</h1>
+                <p class="desc">We build valuable relationships with numerous Indonesian IT companies and all the participants to support the event.</p>
+              </div>
+            </div>
+            <div class="box">
+              <div class="boxContent">
+                <img class="fa icon image" src="{{ asset('img/coreValue/quality new.png') }}">
+                <h1 class="title">Quality</h1>
+                <p class="desc">We provide quality by giving our best effort to the event by incorporating students' creativity to build a valuable event.</p>
+              </div>
+            </div>
+            <div class="box">
+              <div class="boxContent">
+                <img class="fa icon image" src="{{ asset('img/coreValue/continuos_improvement new.png') }}">
+                <h1 class="title">Continuos Improvement</h1>
+                <p class="desc">We balance quality with continuous improvement to provide an event that satisfies all parties who have contributed to the event.</p>
+              </div>
+            </div>
+          </div>
+        {{-- <div style=" display: flex; justify-content:space-around;">
             <div class="person">
                 <div class="cont">
                     <div class="cont-inner">
-                        <!-- <img class="circle" src="" /> -->
-                        <div class="circle"></div>
-                        <img class="img img1" src="rafi1.png" />
+                        <img class="circle" src="{{ asset('img/coreValue/relation2.png') }}" />
                     </div>
                 </div>
-                <div class="divider"></div>
-                <div class="name">Relation</div>
-                <div class="title">We build valuable relationships with numerous Indonesian IT companies and all the participants to support the event.</div>
+                <div class="cont-desc">
+                    <div class="divider"></div>
+                    <div class="name">Relation</div>
+                    <div class="title">We build valuable relationships with numerous Indonesian IT companies and all the participants to support the event.</div>
+                </div>
             </div>
             <div class="person">
                 <div class="cont">
                     <div class="cont-inner">
-                        <!-- <img class="circle" src="" /> -->
-                        <div class="circle">
-                            <img class="img img2" src="{{ asset('img/coreValue/relation.png') }}" />
-                        </div>
+                        <img class="circle" src="{{ asset('img/coreValue/quality2.png') }}" />
                     </div>
                 </div>
                 <div class="divider"></div>
@@ -76,17 +95,14 @@
             <div class="person">
                 <div class="cont">
                     <div class="cont-inner">
-                        <!-- <img class="circle" src=""> -->
-                        <div class="circle">
-                            <img class="img img3" src="{{ asset('img/coreValue/quality.png') }}" />
-                        </div>
+                        <img class="circle" src="{{ asset('img/coreValue/continuos improvement2.png') }}" />
                     </div>
                 </div>
                 <div class="divider"></div>
                 <div class="name">Continues Improvement</div>
                 <div class="title">We balance quality with continuous improvement to provide an event that satisfies all parties who have contributed to the event.</div>
             </div>
-        </div>
+        </div> --}}
     </div>
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
