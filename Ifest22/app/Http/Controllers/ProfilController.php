@@ -12,7 +12,7 @@ use App\Models\Ticket;
 use App\Models\Semnas_semnas;
 use App\Models\Semnas_paper;
 use App\Models\Intention_form;
-use App\Models\Da_form;
+use App\Models\Da_Form;
 use App\Models\Ctf_form;
 use Illuminate\Support\Facades\Hash;
 
@@ -184,7 +184,7 @@ class ProfilController extends Controller
     public function ticketDetailsDac()
     {
         $data = User::where('email', Auth::user()->email)->first();
-        $dac = Da_form::where('email', Auth::user()->email)->first();
+        $dac = Da_Form::where('email', Auth::user()->email)->first();
         return view('profils.ticketDetailsDac', compact('data', 'dac'));
     }
 
@@ -203,7 +203,7 @@ class ProfilController extends Controller
         // Alamat Penyimpanan
         $request->payment_confirmation->store('dac-payment-proof');
 
-        Da_form::where('email', Auth::user()->email)->update([
+        Da_Form::where('email', Auth::user()->email)->update([
             'proof_payment' => $request->payment_confirmation->store('dac-payment-proof'),
             'status_pembayaran' => '1',
         ]);
@@ -223,7 +223,7 @@ class ProfilController extends Controller
             'paper_link' => 'required',
         ]);
 
-        Da_form::where('email', Auth::user()->email)->update([
+        Da_Form::where('email', Auth::user()->email)->update([
             'paper_link' => $request->paper_link,
         ]);
 
@@ -242,7 +242,7 @@ class ProfilController extends Controller
             'analytics_result' => 'required',
         ]);
 
-        Da_form::where('email', Auth::user()->email)->update([
+        Da_Form::where('email', Auth::user()->email)->update([
             'analytics_result' => $request->analytics_result,
         ]);
 

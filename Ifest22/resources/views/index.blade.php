@@ -40,9 +40,9 @@
         <!-- <h3>International Conference</h3> -->
         <div class="conference-btn">
 
-            <a href="{{ route('semnas') }}"><span class="register">Register</span></a>
+            <!-- <a href="{{ route('semnas') }}"><span class="register">Register</span></a> -->
             <!-- <a href="{{ route('semnas') }}"><span class="register">See Details</span></a> -->
-            <a href="{{ route('semnas') }}"><span class="details" style="color:#fff; border-color:#fff;" id="details">Details</span></a>
+            <a href="{{ route('startup') }}"><span class="details" style="color:#fff; border-color:#fff;" id="details">Details</span></a>
         </div>
     </div>
 </div>
