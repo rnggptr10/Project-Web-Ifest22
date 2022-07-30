@@ -138,7 +138,7 @@ Startup Talk is a talk show that aims as a means to bring together Founders or S
 <img class="card-img-top size-img-top-speakers" src="{{ asset('img/event/startup/speaker_3.png') }}" alt="Speakers-4">
 <div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
     <div class="col-7" style="line-height: 5px;">
-        <h5 class="text-photo-card-name">Adhitya Yoga Yudanto </h5>
+        <h5 class="text-photo-card-name">Adhitya Yoga Yudanto</h5>
         <!-- <h5 class="text-photo-card-name">Speaker7</h5> -->
         <p class="text-photo-card-position">Head Of Product Development</p>
     </div>

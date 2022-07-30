@@ -137,4 +137,17 @@
     filter:brightness(100);
   }
 
+  .title-2{
+    display: none;
+}
 
+/* Responsif */
+@media screen and (max-width:450px) {
+  .title-1{
+      display: none;
+  }
+
+  .title-2{
+    display: block;
+  }
+}

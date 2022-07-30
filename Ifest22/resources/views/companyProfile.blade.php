@@ -18,7 +18,7 @@
 <body style="background-color: #1c1c1c;">
     <!-- Deskripsi IFEST 2022 -->
     <div class="container" style="padding: 100px 0 50px 0;">
-        <div class="row justify-content-center" style="padding: 5%">
+        <div class="row justify-content-center" style="padding: 5%;margin-left: 0px;margin-right: 0px;">
             <img src="{{asset('img/company_profile.png')}}">
             <div style="padding: 10px 50px 0 50px; font-size: 16px; text-align:center;">
                 <p class="text-desc">
@@ -45,64 +45,65 @@
     <!-- Video -->
     <!-- Core Value -->
     <div class="container" style="padding: 30px 0 50px 0;">
-        <h1 style="display: flex; row justify-content-center;">Our Core Values</h1>
+        <h1 class="title-1 text-sub-title">Our Core Values</h1>
+        <p class="title-2 text-sub-title" style="font-size:20px;">Our Core Values</p>
         <div class="container">
             <div class="box">
-              <div class="boxContent">
-                <img class="fa icon image" src="{{ asset('img/coreValue/relation new.png') }}">
-                <h1 class="title">Relation</h1>
-                <p class="desc">We build valuable relationships with numerous Indonesian IT companies and all the participants to support the event.</p>
-              </div>
+                <div class="boxContent">
+                    <img class="fa icon image" src="{{ asset('img/coreValue/relation new.png') }}">
+                    <h1 class="title">Relation</h1>
+                    <p class="desc">We build valuable relationships with numerous Indonesian IT companies and all the participants to support the event.</p>
+                </div>
             </div>
             <div class="box">
-              <div class="boxContent">
-                <img class="fa icon image" src="{{ asset('img/coreValue/quality new.png') }}">
-                <h1 class="title">Quality</h1>
-                <p class="desc">We provide quality by giving our best effort to the event by incorporating students' creativity to build a valuable event.</p>
-              </div>
+                <div class="boxContent">
+                    <img class="fa icon image" src="{{ asset('img/coreValue/quality new.png') }}">
+                    <h1 class="title">Quality</h1>
+                    <p class="desc">We provide quality by giving our best effort to the event by incorporating students' creativity to build a valuable event.</p>
+                </div>
             </div>
             <div class="box">
-              <div class="boxContent">
-                <img class="fa icon image" src="{{ asset('img/coreValue/continuos_improvement new.png') }}">
-                <h1 class="title">Continuos Improvement</h1>
-                <p class="desc">We balance quality with continuous improvement to provide an event that satisfies all parties who have contributed to the event.</p>
-              </div>
+                <div class="boxContent">
+                    <img class="fa icon image" src="{{ asset('img/coreValue/continuos_improvement new.png') }}">
+                    <h1 class="title">Continuos Improvement</h1>
+                    <p class="desc">We balance quality with continuous improvement to provide an event that satisfies all parties who have contributed to the event.</p>
+                </div>
             </div>
-          </div>
+        </div>
         {{-- <div style=" display: flex; justify-content:space-around;">
             <div class="person">
                 <div class="cont">
                     <div class="cont-inner">
                         <img class="circle" src="{{ asset('img/coreValue/relation2.png') }}" />
-                    </div>
-                </div>
-                <div class="cont-desc">
-                    <div class="divider"></div>
-                    <div class="name">Relation</div>
-                    <div class="title">We build valuable relationships with numerous Indonesian IT companies and all the participants to support the event.</div>
-                </div>
+    </div>
+    </div>
+    <div class="cont-desc">
+        <div class="divider"></div>
+        <div class="name">Relation</div>
+        <div class="title">We build valuable relationships with numerous Indonesian IT companies and all the participants to support the event.</div>
+    </div>
+    </div>
+    <div class="person">
+        <div class="cont">
+            <div class="cont-inner">
+                <img class="circle" src="{{ asset('img/coreValue/quality2.png') }}" />
             </div>
-            <div class="person">
-                <div class="cont">
-                    <div class="cont-inner">
-                        <img class="circle" src="{{ asset('img/coreValue/quality2.png') }}" />
-                    </div>
-                </div>
-                <div class="divider"></div>
-                <div class="name">Quality</div>
-                <div class="title">We provide quality by giving our best effort to the event by incorporating students' creativity to build a valuable event.</div>
+        </div>
+        <div class="divider"></div>
+        <div class="name">Quality</div>
+        <div class="title">We provide quality by giving our best effort to the event by incorporating students' creativity to build a valuable event.</div>
+    </div>
+    <div class="person">
+        <div class="cont">
+            <div class="cont-inner">
+                <img class="circle" src="{{ asset('img/coreValue/continuos improvement2.png') }}" />
             </div>
-            <div class="person">
-                <div class="cont">
-                    <div class="cont-inner">
-                        <img class="circle" src="{{ asset('img/coreValue/continuos improvement2.png') }}" />
-                    </div>
-                </div>
-                <div class="divider"></div>
-                <div class="name">Continues Improvement</div>
-                <div class="title">We balance quality with continuous improvement to provide an event that satisfies all parties who have contributed to the event.</div>
-            </div>
-        </div> --}}
+        </div>
+        <div class="divider"></div>
+        <div class="name">Continues Improvement</div>
+        <div class="title">We balance quality with continuous improvement to provide an event that satisfies all parties who have contributed to the event.</div>
+    </div>
+    </div> --}}
     </div>
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>

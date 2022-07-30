@@ -32,10 +32,4 @@ class HomeController extends Controller
     {
         return view('events.ipod');
     }
-
-    public function companyIndex()
-    {
-        return view('companyProfile');
-    }
-
 }

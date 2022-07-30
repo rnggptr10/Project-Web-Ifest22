@@ -12,6 +12,7 @@ use App\Http\Controllers\StartupDay1Controller;
 use App\Http\Controllers\StartupDay2Controller;
 use App\Http\Controllers\TechnoController;
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\ComprofController;
 
 /*
 |--------------------------------------------------------------------------
@@ -87,7 +88,7 @@ Route::get('/seminar-nasional', [SemnasController::class, 'index'])->name('semna
 Route::get('/technopreneur', [TechnoController::class, 'index'])->name('techno');
 Route::get('/startup-talk', [StartupDay1Controller::class, 'index'])->name('startup');
 Route::get('/ipod', [HomeController::class, 'ipodIndex'])->name('ipod');
-Route::get('/company-profile', [HomeController::class, 'companyIndex'])->name('company');
+Route::get('/company-profile', [ComprofController::class, 'companyIndex'])->name('company');
 
 
 // Route for Competition

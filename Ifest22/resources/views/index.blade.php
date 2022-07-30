@@ -142,12 +142,14 @@
                 <div class="carousel-item active" style="background-color: transparent;">
                     <div class="speaker">
                         <div class="img-speakers">
-                            <img class="align-self-center rm-3" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg" alt="Generic placeholder image">
+                            <img class="align-self-center rm-3" src="{{ asset('img/event/startup/speaker_1.png') }}" alt="Generic placeholder image">
                         </div>
                         <div class="media-body">
-                            <h5 class="mt-0">Speaker 1</h5>
-                            <p>To Be Announced Soon!</p>
-                            <div class="button-speakers-details" style="padding-top: 90px;">
+                            <!-- <p> <b>Startup Talk:Day 2 "Evolution of Digital Transformation"</b></p> -->
+                            <h6>Startup Talk:Day 2 "Evolution of Digital Transformation"</h6>
+                            <h5 class="mt-0">Fransiskus Alvin</h5>
+                            <p>Founder Course-Net</p>
+                            <div class="button-speakers-details" style="">
                                 <button class="allspeaker"><a style="color:white; text-decoration:none;" href="">See All Speakers</a></button>
                             </div>
                         </div>
@@ -156,13 +158,14 @@
                 <div class="carousel-item" style="background-color: transparent;">
                     <div class="speaker">
                         <div class="img-speakers">
-                            <img class="align-self-center rm-3" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg" alt="Generic placeholder image">
+                            <img class="align-self-center rm-3" src="{{ asset('img/event/startup/speaker_2.png') }}" alt="Generic placeholder image">
                         </div>
                         <div class="media-body">
-                            <h5 class="mt-0">Speaker 2</h5>
+                            <h6>Startup Talk:Day 2 "Evolution of Digital Transformation"</h6>
+                            <h5 class="mt-0">Luthfy Ardiansyah</h5>
                             <!-- <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p> -->
-                            <p>To Be Announced Soon!</p>
-                            <div class="button-speakers-details" style="padding-top: 90px;">
+                            <p>CEO Data Academy</p>
+                            <div class="button-speakers-details" style="">
                                 <button class="allspeaker"><a style="color:white; text-decoration:none;" href="">See All Speakers</a></button>
                             </div>
                         </div>
@@ -171,13 +174,14 @@
                 <div class="carousel-item" style="background-color: transparent;">
                     <div class="speaker">
                         <div class="img-speakers">
-                            <img class="align-self-center rm-3" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg" alt="Generic placeholder image">
+                            <img class="align-self-center rm-3" src="{{ asset('img/event/startup/speaker_3.png') }}" alt="Generic placeholder image">
                         </div>
                         <div class="media-body">
-                            <h5 class="mt-0">Speaker 3</h5>
+                            <h6>Startup Talk:Day 2 "Evolution of Digital Transformation"</h6>
+                            <h5 class="mt-0">Adhitya Yoga Yudanto</h5>
                             <!-- <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p> -->
-                            <p>To Be Announced Soon!</p>
-                            <div class="button-speakers-details" style="padding-top: 90px;">
+                            <p>Head Of Product Development</p>
+                            <div class="button-speakers-details" style="">
                                 <button class="allspeaker"><a style="color:white; text-decoration:none;" href="">See All Speakers</a></button>
                             </div>
                         </div>
