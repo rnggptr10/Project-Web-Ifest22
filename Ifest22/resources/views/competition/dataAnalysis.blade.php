@@ -32,7 +32,9 @@ Data Analysis Competition (DAC) is a national-scale competition organized by Him
 @section('competition_collab')
 <div data-aos="fade-down" data-aos-duration="1000" class="row-img-prize justify-content-center" align="center" id="competitionPrizes" style="padding-bottom: 50px;">
     <h1 class="text-sub-title" style="font-size:24px">In Collaboration with</h1>
-    <img class="img-fluid" style="width:240px;" src="{{ URL::asset('img/logo/sponsor/collab_cda.jpg') }}">
+    <a href="https://dataacademy.co.id/id/" target="_blank">
+        <img class="img-fluid" style="width:240px;" src="{{ URL::asset('img/logo/sponsor/collab_cda.jpg') }}">
+    </a>
 </div>
 @endsection
 

@@ -33,7 +33,9 @@ This competition is held online and is intended for high school / vocational stu
 </div>
 <div data-aos="fade-down" data-aos-duration="1000" class="row-img-prize justify-content-center" align="center" id="competitionPrizes" style="padding-bottom: 50px;">
     <h1 class="text-sub-title" style="font-size:24px">Exclusive Cloud Hosting Partner</h1>
-    <img class="img-fluid" style="width:280px;" src="{{ URL::asset('img/logo/sponsor/collab_dewaweb_white.png') }}">
+    <a href="https://www.dewaweb.com" target="_blank">
+        <img class="img-fluid" style="width:280px;" src="{{ URL::asset('img/logo/sponsor/collab_dewaweb_white.png') }}">
+    </a>
 </div>
 @endsection
 

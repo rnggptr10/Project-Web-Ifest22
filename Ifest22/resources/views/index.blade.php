@@ -203,12 +203,12 @@
                 <div class="carousel-item active" style="background-color: transparent;">
                     <div class="speaker">
                         <div class="img-speakers">
-                            <img class="align-self-center rm-3" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg" alt="Generic placeholder image">
+                            <img class="align-self-center rm-3" src="{{ asset('img/event/techno/speakers/speaker_11.png') }}" alt="Generic placeholder image">
                         </div>
                         <div class="media-body">
-                            <h5 class="mt-0">Speaker 1</h5>
-                            <p>To Be Announced Soon!</p>
-                            <div class="button-speakers-details" style="padding-top: 90px;">
+                            <h5 class="mt-0">Tita Bukian</h5>
+                            <p>Business Transformation Innovation Excellence Director PT Cybertrend Intrabuana</p>
+                            <div class="button-speakers-details" style="">
                                 <button class="allspeaker"><a style="color:white; text-decoration:none;" href="">See All Speakers</a></button>
                             </div>
                         </div>
@@ -263,6 +263,8 @@
                                 <img class="img-fluid" src="{{ URL::asset('img/competition/logo/ctf.png') }}">
                                 <div class="overlay">
                                     <h2>Capture The Flag</h2>
+                                    <!-- <p>CTF</p> -->
+                                    <!-- <h6>CTF</h6> -->
                                 </div>
                             </div>
                         </div>
@@ -418,14 +420,58 @@
     <div data-aos="fade-up" data-aos-duration="1000">
         <h1 class="title-box">Media Partner</h1>
         <div class="medpart-box">
-
+            <div class="row">
+                <div class="col-sm" style="text-align:center;">
+                    <!-- One of three columns -->
+                </div>
+                <div class="col-sm" style="text-align:center;">
+                    <!-- One of three columns -->
+                </div>
+                <div class="col-sm" style="text-align: center;">
+                    <!-- One of three columns -->
+                    <a href="https://coding.id/" target="_blank">
+                        <img src="{{asset('img/logo/sponsor/coding-01.png')}}" alt="" style="width: 100%;">
+                    </a>
+                    <!-- <img src="{{asset('img/logo/sponsor/collab_dewaweb.png')}}" alt="" style="width: 100%;"> -->
+                </div>
+                <div class="col-sm" style="text-align: center;">
+                    <!-- <img src="{{asset('img/logo/sponsor/collab_cda_nobg.png')}}" alt="" style="width: 100%;"> -->
+                </div>
+                <div class="col-sm" style="text-align: center;">
+                    <!-- One of three columns -->
+                </div>
+            </div>
         </div>
     </div>
 
     <div data-aos="fade-up" data-aos-duration="1000">
         <h1 class="title-box">Sponsored By</h1>
         <div class="sponsored-box">
-
+            <div class="row">
+                <div class="col-sm" style="text-align:center;">
+                    <!-- One of three columns -->
+                </div>
+                <div class="col-sm" style="text-align:center;">
+                    <!-- One of three columns -->
+                    <a href="https://www.dewaweb.com" target="_blank">
+                        <img src="{{asset('img/logo/sponsor/collab_dewaweb.png')}}" alt="" style="width: 100%;">
+                    </a>
+                </div>
+                <div class="col-sm" style="text-align: center;">
+                    <!-- One of three columns -->
+                    <a href="https://petircysec.com/" target="_blank">
+                        <img src="{{asset('img/logo/sponsor/collab_petir_no_bg.png')}}" alt="" style="width: 100%;">
+                    </a>
+                </div>
+                <div class="col-sm" style="text-align: center;">
+                    <a href="https://dataacademy.co.id/id/" target="_blank">
+                        <img src="{{asset('img/logo/sponsor/collab_cda_nobg.png')}}" alt="" style="width: 100%;">
+                    </a>
+                </div>
+                <div class="col-sm" style="text-align: center;">
+                    <!-- One of three columns -->
+                </div>
+            </div>
         </div>
     </div>
 </div>
