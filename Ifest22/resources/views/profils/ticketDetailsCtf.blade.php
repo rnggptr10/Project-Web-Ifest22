@@ -97,7 +97,8 @@
                         @elseif ($ctf->status_pembayaran === '0')
                         <span class="text-tickets-status status-red">Payment Failed. Please Re-Upload Payment Proof</span>
                         @elseif ($ctf->status_pembayaran === '2')
-                        <span class="text-tickets-status status-green">Payment Completed</span>
+                        <span class="text-tickets-status status-green">Payment Completed</span><br>
+                        <span class="text-tickets-desc">Please Join Our Discord for Further Information!<span>
                         @endif
                     <?php } elseif ($now->lessThan($ctf_regist_date_start) || $now->greaterThan($ctf_regist_date_end)) { ?>
                         @if ($ctf->status_pembayaran === '0')
@@ -105,7 +106,8 @@
                         @elseif ($ctf->status_pembayaran === '1')
                         <span class="text-tickets-status status-orange">Waiting for Confirmation</span>
                         @elseif ($ctf->status_pembayaran === '2')
-                        <span class="text-tickets-status status-green">Payment Completed</span>
+                        <span class="text-tickets-status status-green">Payment Completed</span><br>
+                        <span class="text-tickets-desc">Please Join Our Discord for Further Information!<span>
                         @endif
                     <?php } ?>
                 </p>
@@ -117,7 +119,13 @@
                         <a class="ifest-btn-primary-dark-bg-text" href="{{ route('ctf.resubmit.payment.view') }}">Re-Submit?</a>
                     </button>
                 </div>
-                @elseif ($ctf->status_pembayaran === '1' || $ctf->status_pembayaran === '2')
+                @elseif ($ctf->status_pembayaran === '1')
+                @elseif ($ctf->status_pembayaran === '2')
+                <div class="col-4" align="center" style="padding:0">
+                    <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 120px;height: 60px;">
+                        <a class="ifest-btn-primary-dark-bg-text" target="_blank" href="https://discord.gg/T3hbNbW9">Discord<br>IFest 2022</a>
+                    </button>
+                </div>
                 @endif
             <?php
             } elseif ($now->lessThan($ctf_regist_date_start) || $now->greaterThan($ctf_regist_date_end)) {

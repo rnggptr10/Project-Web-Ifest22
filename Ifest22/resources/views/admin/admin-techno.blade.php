@@ -20,6 +20,7 @@
                 <table class="table table-hover">
                     <thead class="thead-dark">
                         <tr>
+                            <th scope="col">Id</th>
                             <th scope="col">Email</th>
                             <th scope="col">Nama Peserta</th>
                             <th scope="col">Instansi</th>
@@ -28,6 +29,7 @@
                     <tbody>
                         @foreach ($techno as $data)
                             <tr>
+                                <td>{{ $data->id }}</td>
                                 <td>{{ $data->email }}</td>
                                 <td>{{ $data->name }}</td>
                                 <td>{{ $data->institute }}</td>

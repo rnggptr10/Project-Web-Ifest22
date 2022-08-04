@@ -87,10 +87,11 @@
                                     // SET TANGGAL ACARA SUT DAY 1
                                     $sut_1_date_start = Carbon::create(2022, 8, 20, 8, 30, 00, 'Asia/Jakarta');
                                     $sut_1_date_end = Carbon::create(2022, 8, 20, 12, 00, 00, 'Asia/Jakarta');
-                                    $now = Carbon::now('Asia/Jakarta');
-
+                                    
                                     $sut_1_date_start->toDateTimeString();
                                     $sut_1_date_end->toDateTimeString();
+
+                                    $now = Carbon::now('Asia/Jakarta');
                                     $now->toDateTimeString();
 
                                     if ($now->greaterThan($sut_1_date_start) && $now->lessThan($sut_1_date_end)) {
@@ -138,6 +139,9 @@
                                     $sut_2_date_start->toDateTimeString();
                                     $sut_2_date_end->toDateTimeString();
 
+                                    $now = Carbon::now('Asia/Jakarta');
+                                    $now->toDateTimeString();
+
                                     if ($now->greaterThan($sut_2_date_start) && $now->lessThan($sut_2_date_end)) {
                                     ?>
                                         <div class="col">
@@ -180,6 +184,9 @@
 
                                                     $semnas_payment_date_start->toDateTimeString();
                                                     $semnas_payment_date_end->toDateTimeString();
+
+                                                    $now = Carbon::now('Asia/Jakarta');
+                                                    $now->toDateTimeString();
                                                 ?>
                                                     @if ($semnas->status_pembayaran === '0')
                                                         <?php if ($now->greaterThan($semnas_payment_date_start) && $now->lessThan($semnas_payment_date_end)) { ?>
@@ -244,6 +251,9 @@
                                             $semnas_day1_date_start->toDateTimeString();
                                             $semnas_day1_date_end->toDateTimeString();
 
+                                            $now = Carbon::now('Asia/Jakarta');
+                                            $now->toDateTimeString();
+
                                             if ($now->greaterThan($semnas_day1_date_start) && $now->lessThan($semnas_day1_date_end)) {
                                             ?>
                                                 <div class="col">
@@ -283,6 +293,9 @@
 
                                             $semnas_day2_date_start->toDateTimeString();
                                             $semnas_day2_date_end->toDateTimeString();
+
+                                            $now = Carbon::now('Asia/Jakarta');
+                                            $now->toDateTimeString();
 
                                             if ($now->greaterThan($semnas_day2_date_start) && $now->lessThan($semnas_day2_date_end)) {
                                             ?>
@@ -353,6 +366,9 @@
                                     $techno_s_day1_date_start->toDateTimeString();
                                     $techno_s_day1_date_end->toDateTimeString();
 
+                                    $now = Carbon::now('Asia/Jakarta');
+                                    $now->toDateTimeString();
+
                                     if ($now->greaterThan($techno_s_day1_date_start) && $now->lessThan($techno_s_day1_date_end)) {
                                     ?>
                                         <div class="col">
@@ -390,6 +406,9 @@
 
                                     $techno_s_day2_date_start->toDateTimeString();
                                     $techno_s_day2_date_end->toDateTimeString();
+
+                                    $now = Carbon::now('Asia/Jakarta');
+                                    $now->toDateTimeString();
 
                                     if ($now->greaterThan($techno_s_day2_date_start) && $now->lessThan($techno_s_day2_date_end)) {
                                     ?>

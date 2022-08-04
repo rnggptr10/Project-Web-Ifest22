@@ -64,10 +64,14 @@
                 <h6 class="text-tickets-head">Team Registration</h6>
                 <!-- BUAT STATUS, CLASS TERGANTUNG STATUS DI DATABASE -->
                 <p class="text-tickets-desc">24 July - 31 August 2022<br>Status : 
-                    <span class="text-tickets-status status-green">
-                        Confirmed
-                    </span>
+                    <span class="text-tickets-status status-green">Confirmed</span><br>
+                    <span class="text-tickets-desc">Please Join Our Discord for Further Information!<span>
                 </p>
+            </div>
+            <div class="col-4" align="center" style="padding:0">
+                <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 120px;height: 60px;">
+                    <a class="ifest-btn-primary-dark-bg-text" target="_blank" href="https://discord.gg/T3hbNbW9">Discord<br>IFest 2022</a>
+                </button>
             </div>
         </div>
         <div class="row align-items-center" align="left" style="padding:20px">

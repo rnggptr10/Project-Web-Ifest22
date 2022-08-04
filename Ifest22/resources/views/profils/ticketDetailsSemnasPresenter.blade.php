@@ -36,6 +36,18 @@
                 </div>
             </div>
         </div>
+        <div class="row align-items-center justify-content-center" style="padding:0 0 30px 0">
+            <div class="col-5">
+                <div class="row" align="center">
+                    <p class="text-tickets-desc">Please Join Our Discord for Further Information!<p>
+                </div>
+                <div class="row justify-content-center">
+                    <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 120px;height: 60px;">
+                        <a class="ifest-btn-primary-dark-bg-text" target="_blank" href="https://discord.gg/T3hbNbW9">Discord<br>IFest 2022</a>
+                    </button>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 @endsection
