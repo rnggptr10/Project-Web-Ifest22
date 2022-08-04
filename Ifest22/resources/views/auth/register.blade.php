@@ -70,16 +70,16 @@
                         </span>
                         @enderror
                     </div>
-                    <div class="row mb-2">
+                    <!-- <div class="row mb-2">
                         <label for="profpic" class="placeholder text-form">{{ __('Profile Picture') }}</label>
 
-                        <input id="profpic" type="file" class="form-control @error('profpic') is-invalid @enderror ifest-form" name="profpic" value="{{ old('profpic') }}" required autocomplete="profpic" autofocus>
+                        <input id="profpic" type="file" class="form-control @error('profpic') is-invalid @enderror ifest-form" name="profpic" value="{{ old('profpic') }}" autocomplete="profpic" autofocus>
                         @error('profpic')
                         <span class="invalid-feedback" role="alert">
                             <strong>{{ $message }}</strong>
                         </span>
                         @enderror
-                    </div>
+                    </div> -->
                     <div class="form-group form-action-d-flex mb-3" style="margin-top:20px">
                         <button type="button" class="btn btn-outline-primary ifest-btn-outline-primary-light-bg col-md-5 float-right mt-3 mt-sm-0 fw-bold">
                             <a href="{{ route('login') }}" class="ifest-btn-outline-primary-light-bg-text">{{ __('< Back') }}</a>

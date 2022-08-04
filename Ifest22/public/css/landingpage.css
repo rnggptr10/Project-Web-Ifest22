@@ -183,6 +183,13 @@ div.countdown2 p {
 /* 
     Tabline
 */
+.tabcontent h3{
+    font-family: "Poppins-SemiBold";
+}
+.tabcontent p{
+    font-family: "Poppins-Regular";
+}
+
 .media-body p {
     font-family: "Poppins-Regular";
     text-align: justify;

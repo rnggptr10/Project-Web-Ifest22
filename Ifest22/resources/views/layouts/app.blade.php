@@ -57,7 +57,8 @@
                                 </details>
                             </div>
                         </div>
-                        <a href="#">Ipod</a>
+                        <!-- <a href="#">Ipod</a> -->
+                        <a class="nav-link left-nav" href="{{ route('ipod') }}">Ipod</a>
                     </div>
                     <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
                 </div>
@@ -171,15 +172,10 @@
                         </ul> -->
                         <div class="dflex padding-center">
                             <!-- Sosmed -->
-                            <a class="tombol footer-img-2" href=""><i class="fab fa-youtube"></i></a>
-                            <a class="tombol footer-img-2" href=""><i class="fab fa-tiktok"></i></a>
-                            <a class="tombol footer-img-2" href=""><i class="fab fa-instagram"></i></a>
-                            <a class="tombol footer-img-2" href="https://www.linkedin.com/company/ifest-unpad"><i class="fab fa-linkedin"></i></a>
-
-                            <!-- <img class="footer-img-2" src="{{asset('img/organizer/himatif.png')}}" alt="logo unpad" width="50px" height="50px"> -->
-                            <!-- <img class="footer-img-2" src="{{asset('img/organizer/unpad.png')}}" alt="logo himatif" width="50px" height="50px">
-                            <img class="footer-img-2" src="{{asset('img/organizer/himatif.png')}}" alt="logo unpad" width="50px" height="50px">
-                            <img class="footer-img-2" src="{{asset('img/organizer/unpad.png')}}" alt="logo himatif" width="50px" height="50px"> -->
+                            <a class="tombol footer-img-2" href="https://www.youtube.com/channel/UCEpIP3VIHbpJ2qYVBHAezKg" target="_blank"><i class="fab fa-youtube"></i></a>
+                            <a class="tombol footer-img-2" href="https://www.tiktok.com/@ifestunpad" target="_blank"><i class="fab fa-tiktok"></i></a>
+                            <a class="tombol footer-img-2" href="https://www.instagram.com/ifestunpad/?hl=id" target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a class="tombol footer-img-2" href="https://www.linkedin.com/company/ifest-unpad" target="_blank"><i class="fab fa-linkedin"></i></a>
                         </div>
                     </div>
                 </div>

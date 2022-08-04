@@ -51,16 +51,16 @@ Startup Talk is a talk show that aims as a means to bring together Founders or S
 
 <!-- SPEAKERS DAY 1 -->
 @section('startup1_speakers')
-<img class=" card-img-top size-img-top-speakers" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg" alt="Speakers-1">
+<img class=" card-img-top size-img-top-speakers" src="{{ asset('img/event/startup/speaker_4.png') }}" alt="Speakers-1">
 <div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
     <div class="col-7" style="line-height: 5px;">
-        <h5 class="text-photo-card-name">To Be Announced Soon!</h5>
-        <!-- <h5 class="text-photo-card-name">Fransiskus Alvin</h5>
-        <p class="text-photo-card-position">Founder Course-Net</p> -->
+        <!-- <h5 class="text-photo-card-name">To Be Announced Soon!</h5> -->
+        <h5 class="text-photo-card-name">Muhamad Andri Saputro</h5>
+        <p class="text-photo-card-position">Chief Design Officer / Product Designer</p>
     </div>
-    <!-- <div class="col-3">
-        <a href=""><img class="logo-linkedin" src="{{ URL::asset('icon/linkedin.svg') }}" alt="linkedin"></a>
-    </div> -->
+    <div class="col-3">
+        <a href="https://www.linkedin.com/in/masscity/" target="_blank"><img class="logo-linkedin" src="{{ URL::asset('icon/linkedin.svg') }}" alt="linkedin"></a>
+    </div>
 </div>
 @endsection
 

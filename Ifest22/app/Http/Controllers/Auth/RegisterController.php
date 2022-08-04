@@ -68,8 +68,10 @@ class RegisterController extends Controller
     protected function create(array $data)
     {
         // Alamat penyimpanan sementara
-        if ($data['profpic'] != null)
-            $data['profpic']->store('profpic-user');
+        // if ($data['profpic'] != null)
+        //     $url_image =  $data['profpic']->store('profpic-user');
+        // else
+        //    $url_image =  null; 
 
         Ticket::create([
             'email' => $data['email'],
@@ -90,7 +92,7 @@ class RegisterController extends Controller
             'institute' => $data['institute'],
             'password' => Hash::make($data['password']),
             'is_admin' => 0,
-            'image' => $data['profpic']->store('profpic-user'),
+            // 'image' => $url_image,
         ]);
     }
 }
