@@ -123,7 +123,7 @@
     <div class="pasklik">
         <div id="Home" class="tabcontent">
             <h3>Startup Talk</h3>
-            <p style="margin-bottom: 0px;">Startup:Day1 "Metaverse, The Next Level of Human Culture"</p>
+            <p style="margin-bottom: 0px; font-family: 'Poppins-Regular'">Startup:Day1 "Metaverse, The Next Level of Human Culture"</p>
             <p>Startup:Day2 "Evolution of Digital Transformation"</p>
             <p>Startup Talk is a talk show that aims as a means to bring together Founders or Strategic Partners of a Startup with participants to share experiences about Metaverse & Digital Transformation. This series is the right place for startups to do soft selling and increase brand awareness.</p>
         </div>
@@ -156,9 +156,10 @@
                         </div>
                         <div class="media-body">
                             <!-- <p> <b>Startup Talk:Day 2 "Evolution of Digital Transformation"</b></p> -->
-                            <h6>Startup Talk:Day 2 "Evolution of Digital Transformation"</h6>
+                            <!-- <h6>Startup Talk:Day 2 "Evolution of Digital Transformation"</h6> -->
                             <h5 class="mt-0">Fransiskus Alvin</h5>
-                            <p>Founder Course-Net</p>
+                            <!-- <p>Founder Course-Net</p> -->
+                            <p>Our speaker at Startup Talk day 2 with the theme "Evolution of Digital Transformation". Position as Founder Course-Net at ITBox.</p>
                             <div class="button-speakers-details" style="">
                                 <button class="allspeaker"><a style="color:white; text-decoration:none;" href="">See All Speakers</a></button>
                             </div>
@@ -171,10 +172,11 @@
                             <img class="align-self-center rm-3" src="{{ asset('img/event/startup/speaker_2.png') }}" alt="Generic placeholder image">
                         </div>
                         <div class="media-body">
-                            <h6>Startup Talk:Day 2 "Evolution of Digital Transformation"</h6>
+                            <!-- <h6>Startup Talk:Day 2 "Evolution of Digital Transformation"</h6> -->
                             <h5 class="mt-0">Luthfy Ardiansyah</h5>
                             <!-- <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p> -->
-                            <p>CEO Data Academy</p>
+                            <!-- <p>CEO Data Academy</p> -->
+                            <p>Our speaker at Startup Talk day 2 with the theme "Evolution of Digital Transformation". Position as CEO Data Academy.</p>
                             <div class="button-speakers-details" style="">
                                 <button class="allspeaker"><a style="color:white; text-decoration:none;" href="">See All Speakers</a></button>
                             </div>
@@ -187,10 +189,11 @@
                             <img class="align-self-center rm-3" src="{{ asset('img/event/startup/speaker_3.png') }}" alt="Generic placeholder image">
                         </div>
                         <div class="media-body">
-                            <h6>Startup Talk:Day 2 "Evolution of Digital Transformation"</h6>
+                            <!-- <h6>Startup Talk:Day 2 "Evolution of Digital Transformation"</h6> -->
                             <h5 class="mt-0">Adhitya Yoga Yudanto</h5>
                             <!-- <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p> -->
-                            <p>Head Of Product Development</p>
+                            <!-- <p>Head Of Product Development</p> -->
+                            <p>Our speaker at Startup Talk day 2 with the theme "Evolution of Digital Transformation". Position as Head of Product Development at Coding.ID.</p>
                             <div class="button-speakers-details" style="">
                                 <button class="allspeaker"><a style="color:white; text-decoration:none;" href="">See All Speakers</a></button>
                             </div>
@@ -217,7 +220,8 @@
                         </div>
                         <div class="media-body">
                             <h5 class="mt-0">Tita Bukian</h5>
-                            <p>Business Transformation Innovation Excellence Director PT Cybertrend Intrabuana</p>
+                            <p>Our Seminar Speaker at Technopreneur with the theme "Innovative Digital Startup For Youngpreneur". Position as Business Transformation Innovation Excellence Director PT Cybertrend Intrabuana.</p>
+                            <!-- <p>Business Transformation Innovation Excellence Director PT Cybertrend Intrabuana</p> -->
                             <div class="button-speakers-details" style="">
                                 <button class="allspeaker"><a style="color:white; text-decoration:none;" href="">See All Speakers</a></button>
                             </div>
@@ -430,14 +434,58 @@
     <div data-aos="fade-up" data-aos-duration="1000">
         <h1 class="title-box">Media Partner</h1>
         <div class="medpart-box">
-
+            <div class="row">
+                <div class="col-sm" style="text-align:center;">
+                    <!-- One of three columns -->
+                </div>
+                <div class="col-sm" style="text-align:center;">
+                    <!-- One of three columns -->
+                </div>
+                <div class="col-sm" style="text-align: center;">
+                    <!-- One of three columns -->
+                    <a href="https://coding.id/" target="_blank">
+                        <img src="{{asset('img/logo/sponsor/coding-01.png')}}" alt="" style="width: 100%;">
+                    </a>
+                    <!-- <img src="{{asset('img/logo/sponsor/collab_dewaweb.png')}}" alt="" style="width: 100%;"> -->
+                </div>
+                <div class="col-sm" style="text-align: center;">
+                    <!-- <img src="{{asset('img/logo/sponsor/collab_cda_nobg.png')}}" alt="" style="width: 100%;"> -->
+                </div>
+                <div class="col-sm" style="text-align: center;">
+                    <!-- One of three columns -->
+                </div>
+            </div>
         </div>
     </div>
 
     <div data-aos="fade-up" data-aos-duration="1000">
         <h1 class="title-box">Sponsored By</h1>
         <div class="sponsored-box">
-
+            <div class="row">
+                <div class="col-sm" style="text-align:center;">
+                    <!-- One of three columns -->
+                </div>
+                <div class="col-sm" style="text-align:center;">
+                    <!-- One of three columns -->
+                    <a href="https://www.dewaweb.com" target="_blank">
+                        <img src="{{asset('img/logo/sponsor/collab_dewaweb.png')}}" alt="" style="width: 100%;">
+                    </a>
+                </div>
+                <div class="col-sm" style="text-align: center;">
+                    <!-- One of three columns -->
+                    <a href="https://petircysec.com/" target="_blank">
+                        <img src="{{asset('img/logo/sponsor/collab_petir_no_bg.png')}}" alt="" style="width: 100%;">
+                    </a>
+                </div>
+                <div class="col-sm" style="text-align: center;">
+                    <a href="https://dataacademy.co.id/id/" target="_blank">
+                        <img src="{{asset('img/logo/sponsor/collab_cda_nobg.png')}}" alt="" style="width: 100%;">
+                    </a>
+                </div>
+                <div class="col-sm" style="text-align: center;">
+                    <!-- One of three columns -->
+                </div>
+            </div>
         </div>
     </div>
 </div>
