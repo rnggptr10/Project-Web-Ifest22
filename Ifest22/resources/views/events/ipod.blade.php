@@ -41,16 +41,15 @@
     </div>
         <div class="container-fluid" style="background-color: #2d2d2d;">
             <div class="row justify-content-center" style="padding-bottom: 20px;">
-                <div data-aos="fade-up" data-aos-duration="1000">
-                    <div class="ipod-box" style="margin-top: 50px; margin-bottom: 30px;">
-                        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/1ZsrDL3ENMe3pExT4tGYzD?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>    
-                    </div>
-                    <div class="ipod-box" style="margin-bottom: 30px;">
+                <div data-aos="fade-up" data-aos-duration="1000" style="margin:20px;padding-left: 20px;padding-right: 20px;">
+                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/2iresOUzaXmMVTvd7EXWqM?utm_source=generator&amp;t=0" width="100%" height="170" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                    
+                    {{-- <div class="ipod-box" style="margin-bottom: 30px;">
+                        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/2iresOUzaXmMVTvd7EXWqM?utm_source=generator&t=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                    </div> --}}
+                    {{-- <div class="ipod-box" style="margin-bottom: 30px;">
                         <iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/1ZsrDL3ENMe3pExT4tGYzD?utm_source=generator&theme=0"   width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
-                    </div>
-                    <div class="ipod-box" style="margin-bottom: 30px;">
-                        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/1ZsrDL3ENMe3pExT4tGYzD?utm_source=generator&theme=0"   width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
-                    </div>
+                    </div> --}}
                 </div>
             </div>
         </div>
