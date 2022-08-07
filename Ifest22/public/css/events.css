@@ -46,9 +46,9 @@ body {
 .text-photo-card-name {
     font-family: "Poppins-SemiBold";
     font-size: 20px;
-    line-height: 30px;
+    line-height: 25px;
     color: #ffffff;
-    margin: 0;
+    margin: 0 0 10px 0;
 }
 
 .text-photo-card-position {
@@ -64,7 +64,7 @@ body {
 }
 
 .sut-image {
-    height: 100px;
+    height: 85px;
     width: max-content;
     padding: 0 20px 0 20px;
 }
@@ -112,29 +112,29 @@ body {
     height: 48px;
 }
 
-.padding-2-box-top{
+.padding-2-box-top {
     padding-bottom: 30px;
 }
 
-.padding-2-box-bottom{
+.padding-2-box-bottom {
     padding-top: 30px;
     padding-bottom: 30px;
 }
 
-.title-2{
+.title-2 {
     display: none;
 }
 
-.size-img-speakers{
+.size-img-speakers {
     width: 350px;
 }
 
-.size-img-top-speakers{
-    width:100%;
-    height:350px;
+.size-img-top-speakers {
+    width: 100%;
+    height: 350px;
 }
 
-.size-card{
+.size-card {
     width: 90%;
 }
 
@@ -176,21 +176,21 @@ body {
 }
 
 @media screen and (max-width: 991px) {
-    .padding-2-box-top{
+    .padding-2-box-top {
         padding-bottom: 0px;
     }
-    
-    .padding-2-box-bottom{
+
+    .padding-2-box-bottom {
         padding-top: 0px;
         padding-bottom: 30px;
     }
 
-    .col-lg-6{
+    .col-lg-6 {
         margin-top: 30px;
     }
 }
 
-#Speaker2{
+#Speaker2 {
     display: none;
 }
 
@@ -210,52 +210,52 @@ body {
 
 /* = MOBILE L */
 @media screen and (max-width:450px) {
-    .title-1{
+    .title-1 {
         display: none;
     }
 
-    .title-2{
+    .title-2 {
         display: block;
     }
 
-    .text-desc{
+    .text-desc {
         font-size: 12px;
     }
 }
 
 /* = MOBILE M */
 @media screen and (max-width:380px) {
-    .size-img-speakers{
+    .size-img-speakers {
         width: 70%;
         margin-left: 50px;
         margin-right: 50px;
     }
 
-    .size-img-top-speakers{
+    .size-img-top-speakers {
         height: 250px;
     }
 }
 
 /* = Tablet */
 @media screen and (max-width:770px) {
-    .size-card{
+    .size-card {
         width: 75%;
     }
 
     /* cp */
-    .row-cp{
+    .row-cp {
         display: inline;
     }
 
-    .col-btn-left{
-            justify-content: center;
-    }
-
-    .col-btn-right{
+    .col-btn-left {
         justify-content: center;
     }
 
-    .margin-l-r{
+    .col-btn-right {
+        justify-content: center;
+    }
+
+    .margin-l-r {
         padding-left: 50px;
         padding-right: 50px;
     }

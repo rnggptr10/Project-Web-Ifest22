@@ -18,47 +18,47 @@ Startup Talk is a talk show that aims as a means to bring together Founders or S
 
 <!-- STARTUP LOGO -->
 @section('startup1_logo')
-<img class="sut-image" src="https://logodownload.org/wp-content/uploads/2014/04/mercedes-benz-logo-8.png" alt="Startup1">
+<img class="sut-image" src="{{ URL::asset('img/logo/sponsor/collab_cube_studio.png') }}" alt="Cube Studio">
 @endsection
 
 @section('startup2_logo')
-<img class="sut-image" src="https://www.motoinsight.com/wp-content/themes/motoinsight/html/images/oem/honda-logo.png" alt="Startup2">
+<img class="sut-image" src="{{ URL::asset('img/logo/sponsor/collab_itbox.png') }}" alt="ITBOX">
 @endsection
 
 @section('startup3_logo')
-<img class="sut-image" src="https://logodownload.org/wp-content/uploads/2019/08/land-rover-logo.png" alt="Startup3">
+<!-- <img class="sut-image" src="https://logodownload.org/wp-content/uploads/2019/08/land-rover-logo.png" alt="Startup3"> -->
 @endsection
 
 @section('startup4_logo')
-<img class="sut-image" src="https://i0.wp.com/brzoapp.com/wp-content/uploads/2018/11/Porsche-Logo.png?w=1080&ssl=1" alt="Startup4">
+<!-- <img class="sut-image" src="https://i0.wp.com/brzoapp.com/wp-content/uploads/2018/11/Porsche-Logo.png?w=1080&ssl=1" alt="Startup4"> -->
 @endsection
 
 @section('startup5_logo')
-<img class="sut-image" src="https://logodownload.org/wp-content/uploads/2014/04/mercedes-benz-logo-8.png" alt="Startup1">
+<img class="sut-image" src="{{ URL::asset('img/logo/sponsor/collab_cda.jpg') }}" alt="DATA ACADEMY">
 @endsection
 
 @section('startup6_logo')
-<img class="sut-image" src="https://www.motoinsight.com/wp-content/themes/motoinsight/html/images/oem/honda-logo.png" alt="Startup2">
+<img class="sut-image" src="{{ URL::asset('img/logo/sponsor/coding-01.png') }}" alt="CODING.ID">
 @endsection
 
 @section('startup7_logo')
-<img class="sut-image" src="https://logodownload.org/wp-content/uploads/2019/08/land-rover-logo.png" alt="Startup3">
+<!-- <img class="sut-image" src="https://logodownload.org/wp-content/uploads/2019/08/land-rover-logo.png" alt="Startup3"> -->
 @endsection
 
 @section('startup8_logo')
-<img class="sut-image" src="https://i0.wp.com/brzoapp.com/wp-content/uploads/2018/11/Porsche-Logo.png?w=1080&ssl=1" alt="Startup4">
+<!-- <img class="sut-image" src="https://i0.wp.com/brzoapp.com/wp-content/uploads/2018/11/Porsche-Logo.png?w=1080&ssl=1" alt="Startup4"> -->
 @endsection
 
 <!-- SPEAKERS DAY 1 -->
 @section('startup1_speakers')
 <img class=" card-img-top size-img-top-speakers" src="{{ asset('img/event/startup/speaker_4.png') }}" alt="Speakers-1">
 <div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
-    <div class="col-7" style="line-height: 5px;">
+    <div class="col-9" style="line-height: 5px;">
         <!-- <h5 class="text-photo-card-name">To Be Announced Soon!</h5> -->
         <h5 class="text-photo-card-name">Muhamad Andri Saputro</h5>
         <p class="text-photo-card-position">Chief Design Officer / Product Designer</p>
     </div>
-    <div class="col-3">
+    <div class="col-2" style="padding:0;" align="left">
         <a href="https://www.linkedin.com/in/masscity/" target="_blank"><img class="logo-linkedin" src="{{ URL::asset('icon/linkedin.svg') }}" alt="linkedin"></a>
     </div>
 </div>
@@ -109,26 +109,26 @@ Startup Talk is a talk show that aims as a means to bring together Founders or S
 @section('startup5_speakers')
 <img class="card-img-top size-img-top-speakers" src="{{ asset('img/event/startup/speaker_1.png') }}" alt="Speakers-4">
 <div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
-    <div class="col-7" style="line-height: 5px;">
+    <div class="col-9" style="line-height: 5px;">
         <!-- <h5 class="text-photo-card-name">To Be Announced Soon!</h5> -->
         <h5 class="text-photo-card-name">Fransiskus Alvin</h5>
         <p class="text-photo-card-position">Founder Course-Net</p>
     </div>
-    <!-- <div class="col-3">
-        <a href=""><img class="logo-linkedin" src="{{ URL::asset('icon/linkedin.svg') }}" alt="linkedin"></a>
-    </div> -->
+    <div class="col-2" style="padding:0;" align="left">
+        <a href="https://www.linkedin.com/in/fransiskus-alvin-winata-885579a8/"><img class="logo-linkedin" src="{{ URL::asset('icon/linkedin.svg') }}" alt="linkedin"></a>
+    </div>
 </div>
 @endsection
 
 @section('startup6_speakers')
 <img class="card-img-top size-img-top-speakers" src="{{ asset('img/event/startup/speaker_2.png') }}" alt="Speakers-4">
 <div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
-    <div class="col-7" style="line-height: 5px;">
+    <div class="col-9" style="line-height: 5px;">
         <!-- <h5 class="text-photo-card-name">To Be Announced Soon!</h5> -->
         <h5 class="text-photo-card-name">Luthfy Ardiansyah</h5>
         <p class="text-photo-card-position">CEO Data Academy</p>
     </div>
-    <!-- <div class="col-3">
+    <!-- <div class="col-2" style="padding:0;" align="left">
         <a href=""><img class="logo-linkedin" src="{{ URL::asset('icon/linkedin.svg') }}" alt="linkedin"></a>
     </div> -->
 </div>
@@ -137,12 +137,12 @@ Startup Talk is a talk show that aims as a means to bring together Founders or S
 @section('startup7_speakers')
 <img class="card-img-top size-img-top-speakers" src="{{ asset('img/event/startup/speaker_3.png') }}" alt="Speakers-4">
 <div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
-    <div class="col-7" style="line-height: 5px;">
+    <div class="col-9" style="line-height: 5px;">
         <h5 class="text-photo-card-name">Adhitya Yoga Yudanto</h5>
         <!-- <h5 class="text-photo-card-name">Speaker7</h5> -->
         <p class="text-photo-card-position">Head Of Product Development</p>
     </div>
-    <div class="col-3">
+    <div class="col-2" style="padding:0;" align="left">
         <a href=" https://www.linkedin.com/in/adhityayogayudanto/" target="_blank"><img class="logo-linkedin" src="{{ URL::asset('icon/linkedin.svg') }}" alt="linkedin"></a>
     </div>
 </div>
@@ -167,7 +167,7 @@ Startup Talk is a talk show that aims as a means to bring together Founders or S
 <!-- TEMPLATE BODY -->
 @section('event_detail')
 <!-- INI STARTUP PENGENNYA GERAK KYK COMPFEST -->
-<div data-aos="fade-down" data-aos-duration="1000" align="center" id="sutStartup" style="padding-top: 30px;padding-bottom: 30px;" hidden>
+<div data-aos="fade-down" data-aos-duration="1000" align="center" id="sutStartup" style="padding-top: 30px;padding-bottom: 30px;">
     <h1 class="title-1 text-sub-title">Our Startup Partners</h1>
     <h3 class="title-2">Our Startup Partners</h3>
     <div class="row justify-content-center" style="padding-top: 30px; padding-bottom: 30px;">

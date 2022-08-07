@@ -157,10 +157,10 @@ This competition is held online and is intended for high school / vocational stu
             <div class="card ifest-photo-card" style="border: 0; width:max-content">
                 <img class="card-img-top" style="width:100%;height:350px;" src="{{ asset('img/event/intention/juri_2.png') }}" alt="Card image cap">
                 <div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
-                    <div class="col" style="line-height: 5px;">
+                    <div class="col-10" style="line-height: 5px;">
                         <h5 class="text-photo-card-name">Diki Muhamad Syidik</h5>
                         <!-- <h5 class="text-photo-card-name">Juri 1</h5> -->
-                        <p class="text-photo-card-position">Software Developer at <br> Nawa Data Solutions</p>
+                        <p class="text-photo-card-position">Software Developer at Nawa Data Solutions</p>
                     </div>
                 </div>
             </div>
@@ -169,7 +169,7 @@ This competition is held online and is intended for high school / vocational stu
             <div class="card ifest-photo-card" style="border: 0; width:max-content">
                 <img class="card-img-top" style="width:100%;height:350px;" src="{{ asset('img/event/intention/juri_1.png') }}" alt="Card image cap">
                 <div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
-                    <div class="col" style="line-height: 5px;">
+                    <div class="col-10" style="line-height: 5px;">
                         <h5 class="text-photo-card-name">Muhamad Nizham</h5>
                         <!-- <h5 class="text-photo-card-name">Juri 2</h5> -->
                         <p class="text-photo-card-position">Coach at Coding.id</p>
