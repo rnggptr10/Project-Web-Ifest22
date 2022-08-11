@@ -431,8 +431,9 @@
 </div>
 
 <div>
-    <div data-aos="fade-up" data-aos-duration="1000" style="margin-bottom:30px">
-        <div class="row justify-content-center" style="margin:0">
+
+<div data-aos="fade-up" data-aos-duration="1000" style="margin-bottom:30px">
+        <div class="row justify-content-center" style="margin:0;">
             <h1 class="title-box">Exclusive Cloud Hosting Partner</h1>
             <div class="sponsored-box">
                 <div class="row justify-content-center">
@@ -452,10 +453,10 @@
                     <img src="{{asset('img/logo/sponsor/collab_dewaweb_white.png')}}" alt="" class="logo-sponsor-xl">
                 </a>
                 <a href="https://petircysec.com/" target="_blank">
-                    <img src="{{asset('img/logo/sponsor/collab_petir_no_bg.png')}}" alt="" class="logo-sponsor-m" style="height:100px">
+                    <img src="{{asset('img/logo/sponsor/collab_petir_no_bg.png')}}" alt="" class="logo-sponsor-m" style="height:90px">
                 </a>
                 <a href="https://dataacademy.co.id/id/" target="_blank">
-                    <img src="{{asset('img/logo/sponsor/collab_cda_nobg.png')}}" alt="" class="logo-sponsor-xl" style="height:120px">
+                    <img src="{{asset('img/logo/sponsor/collab_cda_nobg.png')}}" alt="" class="logo-sponsor-xl" style="height:110px">
                 </a>
             </div>
         </div>
@@ -469,28 +470,31 @@
                     <img src="{{asset('img/logo/sponsor/collab_dewaweb_white.png')}}" alt="" class="logo-sponsor-xl">
                 </a>
                 <a href="https://dataacademy.co.id/id/" target="_blank">
-                    <img src="{{asset('img/logo/sponsor/collab_cda_nobg.png')}}" alt="" class="logo-sponsor-xl" style="height:120px">
+                    <img src="{{asset('img/logo/sponsor/collab_cda_nobg.png')}}" alt="" class="logo-sponsor-xl" style="height:110px">
                 </a>
                 <a href="https://petircysec.com/" target="_blank">
-                    <img src="{{asset('img/logo/sponsor/collab_petir_no_bg.png')}}" alt="" class="logo-sponsor-m" style="height:100px">
+                    <img src="{{asset('img/logo/sponsor/collab_petir_no_bg.png')}}" alt="" class="logo-sponsor-m" style="height:90px">
                 </a>  
-                <a href="" target="_blank">
+                <a>
                     <img src="{{asset('img/logo/sponsor/collab_arutala.png')}}" alt="" class="logo-sponsor-m">
                 </a>
-                <a href="" target="_blank">
-                    <img src="{{asset('img/logo/sponsor/collab_binar.png')}}" alt="" class="logo-sponsor-m" style="height:65px">
+                <a>
+                    <img src="{{asset('img/logo/sponsor/collab_binar.png')}}" alt="" class="logo-sponsor-m" style="height:55px">
                 </a>
-                <a href="" target="_blank">
-                    <img src="{{asset('img/logo/sponsor/collab_talent-growth.jpeg')}}" alt="" class="logo-sponsor-m" style="height:50px">
+                <a>
+                    <img src="{{asset('img/logo/sponsor/collab_talent-growth.jpeg')}}" alt="" class="logo-sponsor-m" style="height:40px">
                 </a>
-                <a href="" target="_blank">
+                <a>
                     <img src="{{asset('img/logo/sponsor/collab_itbox.png')}}" alt="" class="logo-sponsor-m">
                 </a>
-                <a href="" target="_blank">
+                <a href="https://coding.id/" target="_blank">
                     <img src="{{asset('img/logo/sponsor/coding-01.png')}}" alt="" class="logo-sponsor-m">
                 </a>
-                <a href="" target="_blank">
+                <a>
                     <img src="{{asset('img/logo/sponsor/collab_cube_studio.png')}}" alt="" class="logo-sponsor-m">
+                </a>
+                <a>
+                    <img src="{{asset('img/logo/sponsor/collab_jagel.png')}}" alt="" class="logo-sponsor-m" style="height:100px">
                 </a>
             </div>
         </div>
@@ -498,29 +502,32 @@
     <div data-aos="fade-up" data-aos-duration="1000">
         <h1 class="title-box">Media Partner</h1>
         <div class="medpart-box">
-            <div class="row">
-                <div class="col-sm" style="text-align:center;">
-                    <!-- One of three columns -->
-                </div>
-                <div class="col-sm" style="text-align:center;">
-                    <!-- One of three columns -->
-                </div>
-                <div class="col-sm" style="text-align: center;">
-                    <!-- One of three columns -->
-                    <a href="https://coding.id/" target="_blank">
-                        <img src="{{asset('img/logo/sponsor/coding-01.png')}}" alt="" style="width: 100%;">
-                    </a>
-                    <!-- <img src="{{asset('img/logo/sponsor/collab_dewaweb.png')}}" alt="" style="width: 100%;"> -->
-                </div>
-                <div class="col-sm" style="text-align: center;">
-                    <!-- <img src="{{asset('img/logo/sponsor/collab_cda_nobg.png')}}" alt="" style="width: 100%;"> -->
-                </div>
-                <div class="col-sm" style="text-align: center;">
-                    <!-- One of three columns -->
-                </div>
+            <div class="row justify-content-center align-items-center">
+                <a href="https://coding.id/" target="_blank">
+                    <img src="{{asset('img/logo/medpart/medpart_coding_id.png')}}" alt="" class="logo-medpart">
+                </a>
+                <a>
+                    <img src="{{asset('img/logo/medpart/medpart_berita_lomba.png')}}" alt="" class="logo-medpart">
+                </a>
+                <a>
+                    <img src="{{asset('img/logo/medpart/medpart_event_apaaja.png')}}" alt="" class="logo-medpart">
+                </a>
+                <a>
+                    <img src="{{asset('img/logo/medpart/medpart_event_kampus.png')}}" alt="" class="logo-medpart">
+                </a>
+                <a>
+                    <img src="{{asset('img/logo/medpart/medpart_hmj_if_unla.png')}}" alt="" class="logo-medpart">
+                </a>
+                <a>
+                    <img src="{{asset('img/logo/medpart/medpart_mading_event_cerah.png')}}" alt="" class="logo-medpart">
+                </a>
+                <a>
+                    <img src="{{asset('img/logo/medpart/medpart_webinar.png')}}" alt="" class="logo-medpart">
+                </a>
             </div>
         </div>
     </div>
+
 </div>
 <script src="{{ asset('js/particles.js') }}"></script>
 <script src="{{ asset('js/bg.js') }}"></script>
