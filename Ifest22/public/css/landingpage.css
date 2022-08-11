@@ -183,10 +183,11 @@ div.countdown2 p {
 /* 
     Tabline
 */
-.tabcontent h3{
+.tabcontent h3 {
     font-family: "Poppins-SemiBold";
 }
-.tabcontent p{
+
+.tabcontent p {
     font-family: "Poppins-Regular";
 }
 
@@ -474,17 +475,8 @@ div.countdown2 p {
 }
 
 /* Medpart - Sponsored */
-.medpart-box{
+.medpart-box {
     width: 80%;
-    padding: 20px;
-    /* background: #2d2d2d; */
-    color: white;
-    margin: 0px auto 100px;
-    /* code ini akan membuat div berada di tengah atas */
-}
-.sponsored-box {
-    width: 80%;
-    /* height: 200px; */
     padding: 20px;
     /* background: #2d2d2d; */
     color: white;
@@ -492,9 +484,34 @@ div.countdown2 p {
     /* code ini akan membuat div berada di tengah atas */
 }
 
+.sponsored-box {
+    width: 80%;
+    /* height: 200px; */
+    padding: 0;
+    /* background: #2d2d2d; */
+    color: white;
+    margin: 0 auto 30px auto;
+    /* code ini akan membuat div berada di tengah atas */
+}
+
 .title-box {
     width: max-content;
-    margin: 100px auto 30px;
+    margin: 0 auto 20px auto;
+    font-size: 28px;
+}
+
+.logo-sponsor-xl {
+    width: 100%;
+    height: 180px;
+    margin: 10px 0 10px 0;
+    padding: 0 15px 0 15px;
+}
+
+.logo-sponsor-m {
+    width: 100%;
+    height: 80px;
+    margin: 10px 0 10px 0;
+    padding: 0 15px 0 15px;
 }
 
 /* speaker  */
@@ -545,7 +562,7 @@ div.countdown2 p {
     text-align: center;
 }
 
-.rm-3{
+.rm-3 {
     margin-right: 1rem;
 }
 
@@ -690,11 +707,11 @@ div.countdown2 p {
 
 /* Laptop Mini */
 @media screen and (max-width:1024px) {
-    .pasklik{
+    .pasklik {
         height: auto;
     }
 
-    #News p{
+    #News p {
         font-size: 12px;
     }
 }
@@ -705,27 +722,26 @@ div.countdown2 p {
         margin-top: 20px;
     }
 
-    .rm-3{
+    .rm-3 {
         margin-right: 0;
     }
 
-    .media-body p{
+    .media-body p {
         text-align: center;
     }
 }
 
 /* Mobile S */
 @media screen and (max-width: 320px) {
-    .content-main{
+    .content-main {
         margin-top: 50px;
     }
-    
-    #News p{
+
+    #News p {
         font-size: 10px;
     }
 
-    .pasklik{
+    .pasklik {
         height: auto;
     }
 }
-

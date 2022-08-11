@@ -421,6 +421,71 @@
 </div>
 
 <div>
+    
+    <div data-aos="fade-up" data-aos-duration="1000" style="margin-bottom:30px">
+        <div class="row justify-content-center" style="margin:0">
+            <h1 class="title-box">Exclusive Cloud Hosting Partner</h1>
+            <div class="sponsored-box">
+                <div class="row justify-content-center">
+                    <a href="https://www.dewaweb.com" target="_blank">
+                        <img src="{{asset('img/logo/sponsor/collab_dewaweb_white.png')}}" alt="" class="logo-sponsor-xl">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div data-aos="fade-up" data-aos-duration="1000" style="margin-bottom:60px">
+        <h1 class="title-box">Sponsored by</h1>
+        <div class="sponsored-box">
+            <div class="row justify-content-center align-items-center">
+                <!-- One of three columns -->
+                <a href="https://www.dewaweb.com" target="_blank">
+                    <img src="{{asset('img/logo/sponsor/collab_dewaweb_white.png')}}" alt="" class="logo-sponsor-xl">
+                </a>
+                <a href="https://petircysec.com/" target="_blank">
+                    <img src="{{asset('img/logo/sponsor/collab_petir_no_bg.png')}}" alt="" class="logo-sponsor-m" style="height:100px">
+                </a>
+                <a href="https://dataacademy.co.id/id/" target="_blank">
+                    <img src="{{asset('img/logo/sponsor/collab_cda_nobg.png')}}" alt="" class="logo-sponsor-xl" style="height:120px">
+                </a>
+            </div>
+        </div>
+    </div>
+    <div data-aos="fade-up" data-aos-duration="1000" style="margin-bottom:60px">
+        <h1 class="title-box">Supported by</h1>
+        <div class="sponsored-box">
+            <div class="row justify-content-center align-items-center">
+                <!-- One of three columns -->
+                <a href="https://www.dewaweb.com" target="_blank">
+                    <img src="{{asset('img/logo/sponsor/collab_dewaweb_white.png')}}" alt="" class="logo-sponsor-xl">
+                </a>
+                <a href="https://dataacademy.co.id/id/" target="_blank">
+                    <img src="{{asset('img/logo/sponsor/collab_cda_nobg.png')}}" alt="" class="logo-sponsor-xl" style="height:120px">
+                </a>
+                <a href="https://petircysec.com/" target="_blank">
+                    <img src="{{asset('img/logo/sponsor/collab_petir_no_bg.png')}}" alt="" class="logo-sponsor-m" style="height:100px">
+                </a>  
+                <a href="" target="_blank">
+                    <img src="{{asset('img/logo/sponsor/collab_arutala.png')}}" alt="" class="logo-sponsor-m">
+                </a>
+                <a href="" target="_blank">
+                    <img src="{{asset('img/logo/sponsor/collab_binar.png')}}" alt="" class="logo-sponsor-m" style="height:65px">
+                </a>
+                <a href="" target="_blank">
+                    <img src="{{asset('img/logo/sponsor/collab_talent-growth.jpeg')}}" alt="" class="logo-sponsor-m" style="height:50px">
+                </a>
+                <a href="" target="_blank">
+                    <img src="{{asset('img/logo/sponsor/collab_itbox.png')}}" alt="" class="logo-sponsor-m">
+                </a>
+                <a href="" target="_blank">
+                    <img src="{{asset('img/logo/sponsor/coding-01.png')}}" alt="" class="logo-sponsor-m">
+                </a>
+                <a href="" target="_blank">
+                    <img src="{{asset('img/logo/sponsor/collab_cube_studio.png')}}" alt="" class="logo-sponsor-m">
+                </a>
+            </div>
+        </div>
+    </div>
     <div data-aos="fade-up" data-aos-duration="1000">
         <h1 class="title-box">Media Partner</h1>
         <div class="medpart-box">
@@ -448,37 +513,8 @@
         </div>
     </div>
 
-    <div data-aos="fade-up" data-aos-duration="1000">
-        <h1 class="title-box">Sponsored By</h1>
-        <div class="sponsored-box">
-            <div class="row">
-                <div class="col-sm" style="text-align:center;">
-                    <!-- One of three columns -->
-                </div>
-                <div class="col-sm" style="text-align:center;">
-                    <!-- One of three columns -->
-                    <a href="https://www.dewaweb.com" target="_blank">
-                        <img src="{{asset('img/logo/sponsor/collab_dewaweb.png')}}" alt="" style="width: 100%;">
-                    </a>
-                </div>
-                <div class="col-sm" style="text-align: center;">
-                    <!-- One of three columns -->
-                    <a href="https://petircysec.com/" target="_blank">
-                        <img src="{{asset('img/logo/sponsor/collab_petir_no_bg.png')}}" alt="" style="width: 100%;">
-                    </a>
-                </div>
-                <div class="col-sm" style="text-align: center;">
-                    <a href="https://dataacademy.co.id/id/" target="_blank">
-                        <img src="{{asset('img/logo/sponsor/collab_cda_nobg.png')}}" alt="" style="width: 100%;">
-                    </a>
-                </div>
-                <div class="col-sm" style="text-align: center;">
-                    <!-- One of three columns -->
-                </div>
-            </div>
-        </div>
-    </div>
 </div>
+
 <script src="{{ asset('js/countdown.js') }}"></script>
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>
