@@ -12,7 +12,7 @@
 
 @section('competition_title')
 <div class="col-3" align="center">
-    <img class="img-fluid" style="width:200px;" src="{{ URL::asset('img/competition/logo/int.png') }}">
+    <img class="img-fluid" style="width:200px;" src="{{ URL::asset('img/competition/logo/int.png') }}" alt="Logo Intention">
 </div>
 <div class="col-8">
     <p class="title-competition" style="margin:0; margin-top:10px">Innovative Technology Competition (INTENTION)</p>
@@ -34,7 +34,7 @@ This competition is held online and is intended for high school / vocational stu
 <div data-aos="fade-down" data-aos-duration="1000" class="row-img-prize justify-content-center" align="center" id="competitionPrizes" style="padding-bottom: 50px;">
     <h1 class="text-sub-title" style="font-size:24px">In Collaboration With</h1>
     <a href="https://coding.id" target="_blank">
-        <img class="img-fluid" style="width:180px;" src="{{ URL::asset('img/logo/sponsor/coding-01.png') }}">
+        <img class="img-fluid" style="width:180px;" src="{{ URL::asset('img/logo/sponsor/coding-01.png') }}" alt="CODING.ID">
     </a>
 </div>
 @endsection
@@ -155,11 +155,10 @@ This competition is held online and is intended for high school / vocational stu
     <div class="row justify-content-center" style="padding-top: 30px;">
         <div class="col-4" data-aos="fade-right" data-aos-duration="1000" style="padding-right: 50px;">
             <div class="card ifest-photo-card" style="border: 0; width:max-content">
-                <img class="card-img-top" style="width:100%;height:350px;" src="{{ asset('img/event/intention/juri_2.png') }}" alt="Card image cap">
+                <img class="card-img-top" style="width:100%;height:350px;" src="{{ asset('img/event/intention/juri_2.png') }}" alt="Diki Muhamad Syidik">
                 <div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
                     <div class="col-10" style="line-height: 5px;">
                         <h5 class="text-photo-card-name">Diki Muhamad Syidik</h5>
-                        <!-- <h5 class="text-photo-card-name">Juri 1</h5> -->
                         <p class="text-photo-card-position">Software Developer at Nawa Data Solutions</p>
                     </div>
                 </div>
@@ -167,11 +166,10 @@ This competition is held online and is intended for high school / vocational stu
         </div>
         <div class="col-4" data-aos="fade-left" data-aos-duration="1000" style="padding-left: 50px;">
             <div class="card ifest-photo-card" style="border: 0; width:max-content">
-                <img class="card-img-top" style="width:100%;height:350px;" src="{{ asset('img/event/intention/juri_1.png') }}" alt="Card image cap">
+                <img class="card-img-top" style="width:100%;height:350px;" src="{{ asset('img/event/intention/juri_1.png') }}" alt="Muhamad Nizham">
                 <div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
                     <div class="col-10" style="line-height: 5px;">
                         <h5 class="text-photo-card-name" style="margin-top:12px">Muhamad Nizham</h5>
-                        <!-- <h5 class="text-photo-card-name">Juri 2</h5> -->
                         <p class="text-photo-card-position" style="margin-bottom:12px">Coach at Coding.id</p>
                     </div>
                 </div>
@@ -188,11 +186,10 @@ This competition is held online and is intended for high school / vocational stu
                 <div class="row justify-content-center">
                     <div class="col">
                         <div class="size-img-speakers card ifest-photo-card" style="border: 0;text-align:center;">
-                            <img class="card-img-top size-img-top-speakers" src="{{ asset('img/event/intention/juri_2.png') }}" alt="Card image cap">
+                            <img class="card-img-top size-img-top-speakers" src="{{ asset('img/event/intention/juri_2.png') }}" alt="Diki Muhamad Syidik">
                             <div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
                                 <div class="col" style="line-height: 5px;">
                                     <h5 class="text-photo-card-name">Diki Muhamad Syidik</h5>
-                                    <!-- <h5 class="text-photo-card-name">Juri 1</h5> -->
                                     <p class="text-photo-card-position">Software Developer at <br> Nawa Data Solutions</p>
                                 </div>
                             </div>
@@ -204,11 +201,10 @@ This competition is held online and is intended for high school / vocational stu
                 <div class="row justify-content-center">
                     <div class="col">
                         <div class="size-img-speakers card ifest-photo-card" style="border: 0; text-align:center;">
-                            <img class="card-img-top size-img-top-speakers" src="{{ asset('img/event/intention/juri_1.png') }}" alt="Card image cap">
+                            <img class="card-img-top size-img-top-speakers" src="{{ asset('img/event/intention/juri_1.png') }}" alt="Muhamad Nizham">
                             <div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
                                 <div class="col" style="line-height: 5px;">
                                     <h5 class="text-photo-card-name" style="margin-top:12px">Muhamad Nizham</h5>
-                                    <!-- <h5 class="text-photo-card-name">Juri 2</h5> -->
                                     <p class="text-photo-card-position" style="margin-bottom:12px">Coach at Coding.id</p>
                                 </div>
                             </div>

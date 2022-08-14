@@ -7,10 +7,10 @@
 @endsection
 @section('content')
 <div class="content-main">
-    <img src="{{asset('img/bg-fix.png')}}" alt="" style="width:100%;">
+    <img src="{{asset('img/bg-fix.png')}}" alt="bg" style="width:100%;">
     <div class="logo-content-main">
         <a href="{{route('company')}}">
-            <img class="logo-landing" src="{{asset('img/logo/logo_landing.png')}}" alt="">
+            <img class="logo-landing" src="{{asset('img/logo/logo_landing.png')}}" alt="IFest Logo">
         </a>
     </div>
 </div>
@@ -142,7 +142,7 @@
                 <div class="carousel-item active" style="background-color: transparent;">
                     <div class="speaker">
                         <div class="img-speakers">
-                            <img class="align-self-center rm-3" src="{{ asset('img/event/startup/speaker_4.png') }}" alt="Generic placeholder image">
+                            <img class="align-self-center rm-3" src="{{ asset('img/event/startup/speaker_4.png') }}" alt="Muhamad Andri Saputro">
                         </div>
                         <div class="media-body">
                             <h5 class="mt-0">Muhamad Andri Saputro</h5>
@@ -153,7 +153,7 @@
                 <div class="carousel-item" style="background-color: transparent;">
                     <div class="speaker">
                         <div class="img-speakers">
-                            <img class="align-self-center rm-3" src="{{ asset('img/event/startup/speaker_6.png') }}" alt="Generic placeholder image">
+                            <img class="align-self-center rm-3" src="{{ asset('img/event/startup/speaker_6.png') }}" alt="Ahmad S Zankie">
                         </div>
                         <div class="media-body">
                             <h5 class="mt-0">Ahmad S Zankie</h5>
@@ -164,7 +164,7 @@
                 <div class="carousel-item" style="background-color: transparent;">
                     <div class="speaker">
                         <div class="img-speakers">
-                            <img class="align-self-center rm-3" src="{{ asset('img/event/startup/speaker_7.png') }}" alt="Generic placeholder image">
+                            <img class="align-self-center rm-3" src="{{ asset('img/event/startup/speaker_7.png') }}" alt="Erick Young">
                         </div>
                         <div class="media-body">
                             <h5 class="mt-0">Erick Young</h5>
@@ -175,7 +175,7 @@
                 <div class="carousel-item" style="background-color: transparent;">
                     <div class="speaker">
                         <div class="img-speakers">
-                            <img class="align-self-center rm-3" src="{{ asset('img/event/startup/speaker_1.png') }}" alt="Generic placeholder image">
+                            <img class="align-self-center rm-3" src="{{ asset('img/event/startup/speaker_1.png') }}" alt="Fransiskus Alvin">
                         </div>
                         <div class="media-body">
                             <h5 class="mt-0">Fransiskus Alvin</h5>
@@ -186,7 +186,7 @@
                 <div class="carousel-item" style="background-color: transparent;">
                     <div class="speaker">
                         <div class="img-speakers">
-                            <img class="align-self-center rm-3" src="{{ asset('img/event/startup/speaker_2.png') }}" alt="Generic placeholder image">
+                            <img class="align-self-center rm-3" src="{{ asset('img/event/startup/speaker_2.png') }}" alt="Luthfy Ardiansyah">
                         </div>
                         <div class="media-body">
                             <h5 class="mt-0">Luthfy Ardiansyah</h5>
@@ -197,7 +197,7 @@
                 <div class="carousel-item" style="background-color: transparent;">
                     <div class="speaker">
                         <div class="img-speakers">
-                            <img class="align-self-center rm-3" src="{{ asset('img/event/startup/speaker_3.png') }}" alt="Generic placeholder image">
+                            <img class="align-self-center rm-3" src="{{ asset('img/event/startup/speaker_3.png') }}" alt="Adhitya Yoga Yudanto">
                         </div>
                         <div class="media-body">
                             <h5 class="mt-0">Adhitya Yoga Yudanto</h5>
@@ -208,7 +208,7 @@
                 <div class="carousel-item" style="background-color: transparent;">
                     <div class="speaker">
                         <div class="img-speakers">
-                            <img class="align-self-center rm-3" src="{{ asset('img/event/startup/speaker_5.png') }}" alt="Generic placeholder image">
+                            <img class="align-self-center rm-3" src="{{ asset('img/event/startup/speaker_5.png') }}" alt="Gilang Rizky Pradana">
                         </div>
                         <div class="media-body">
                             <h5 class="mt-0">Gilang Rizky Pradana</h5>
@@ -232,7 +232,7 @@
                 <div class="carousel-item active" style="background-color: transparent;">
                     <div class="speaker">
                         <div class="img-speakers">
-                            <img class="align-self-center rm-3" src="{{ asset('img/event/techno/speakers/speaker_11.png') }}" alt="Generic placeholder image">
+                            <img class="align-self-center rm-3" src="{{ asset('img/event/techno/speakers/speaker_11.png') }}" alt="Tita Bukian">
                         </div>
                         <div class="media-body">
                             <h5 class="mt-0">Tita Bukian</h5>
@@ -243,7 +243,7 @@
                 <div class="carousel-item" style="background-color: transparent;">
                     <div class="speaker">
                         <div class="img-speakers">
-                            <img class="align-self-center rm-3" src="{{ asset('img/event/techno/speakers/speaker_2.png') }}" alt="Generic placeholder image">
+                            <img class="align-self-center rm-3" src="{{ asset('img/event/techno/speakers/speaker_2.png') }}" alt="Yubi Vebiona Hartono">
                         </div>
                         <div class="media-body">
                             <h5 class="mt-0">Yubi Vebiona Hartono</h5>
@@ -254,7 +254,7 @@
                 <div class="carousel-item" style="background-color: transparent;">
                     <div class="speaker">
                         <div class="img-speakers">
-                            <img class="align-self-center rm-3" src="{{ asset('img/event/techno/speakers/speaker_3.png') }}" alt="Generic placeholder image">
+                            <img class="align-self-center rm-3" src="{{ asset('img/event/techno/speakers/speaker_3.png') }}" alt="Danny Liong">
                         </div>
                         <div class="media-body">
                             <h5 class="mt-0">Danny Liong</h5>
@@ -433,7 +433,7 @@
             <div class="sponsored-box">
                 <div class="row justify-content-center">
                     <a href="https://www.dewaweb.com" target="_blank">
-                        <img src="{{asset('img/logo/sponsor/collab_dewaweb_white.png')}}" alt="" class="logo-sponsor-xl">
+                        <img src="{{asset('img/logo/sponsor/collab_dewaweb_white.png')}}" alt="Dewaweb" class="logo-sponsor-xl">
                     </a>
                 </div>
             </div>
@@ -445,10 +445,10 @@
             <div class="row justify-content-center align-items-center">
                 <!-- One of three columns -->
                 <a href="https://www.dewaweb.com" target="_blank">
-                    <img src="{{asset('img/logo/sponsor/collab_dewaweb_white.png')}}" alt="" class="logo-sponsor-xl">
+                    <img src="{{asset('img/logo/sponsor/collab_dewaweb_white.png')}}" alt="Dewaweb" class="logo-sponsor-xl">
                 </a>
                 <a href="https://dataacademy.co.id/id/" target="_blank">
-                    <img src="{{asset('img/logo/sponsor/collab_cda_nobg.png')}}" alt="" class="logo-sponsor-xl" style="height:110px">
+                    <img src="{{asset('img/logo/sponsor/collab_cda_nobg.png')}}" alt="Cybertrend Data Academy" class="logo-sponsor-xl" style="height:110px">
                 </a>
             </div>
         </div>
@@ -459,40 +459,40 @@
             <div class="row justify-content-center align-items-center">
                 <!-- One of three columns -->
                 <a href="https://www.dewaweb.com" target="_blank">
-                    <img src="{{asset('img/logo/sponsor/collab_dewaweb_white.png')}}" alt="" class="logo-sponsor-xl">
+                    <img src="{{asset('img/logo/sponsor/collab_dewaweb_white.png')}}" alt="Dewaweb" class="logo-sponsor-xl">
                 </a>
                 <a href="https://dataacademy.co.id/id/" target="_blank">
-                    <img src="{{asset('img/logo/sponsor/collab_cda_nobg.png')}}" alt="" class="logo-sponsor-xl" style="height:110px">
+                    <img src="{{asset('img/logo/sponsor/collab_cda_nobg.png')}}" alt="Cybertrend Data Academy" class="logo-sponsor-xl" style="height:110px">
                 </a>
                 <a href="https://petircysec.com/" target="_blank">
-                    <img src="{{asset('img/logo/sponsor/collab_petir_no_bg.png')}}" alt="" class="logo-sponsor-m" style="height:90px">
+                    <img src="{{asset('img/logo/sponsor/collab_petir_no_bg.png')}}" alt="Petir Cyber Security" class="logo-sponsor-m" style="height:90px">
                 </a>  
                 <a>
-                    <img src="{{asset('img/logo/sponsor/collab_arutala.png')}}" alt="" class="logo-sponsor-m">
+                    <img src="{{asset('img/logo/sponsor/collab_arutala.png')}}" alt="Arutala" class="logo-sponsor-m">
                 </a>
                 <a>
-                    <img src="{{asset('img/logo/sponsor/collab_binar.png')}}" alt="" class="logo-sponsor-m" style="height:55px">
+                    <img src="{{asset('img/logo/sponsor/collab_binar.png')}}" alt="Binar Academy" class="logo-sponsor-m" style="height:55px">
                 </a>
                 <a>
-                    <img src="{{asset('img/logo/sponsor/collab_talent-growth.jpeg')}}" alt="" class="logo-sponsor-m" style="height:40px">
+                    <img src="{{asset('img/logo/sponsor/collab_talent-growth.jpeg')}}" alt="Talent Growth" class="logo-sponsor-m" style="height:40px">
                 </a>
                 <a>
-                    <img src="{{asset('img/logo/sponsor/collab_itbox.png')}}" alt="" class="logo-sponsor-m">
+                    <img src="{{asset('img/logo/sponsor/collab_itbox.png')}}" alt="ITBOX" class="logo-sponsor-m">
                 </a>
                 <a href="https://coding.id/" target="_blank">
-                    <img src="{{asset('img/logo/sponsor/coding-01.png')}}" alt="" class="logo-sponsor-m">
+                    <img src="{{asset('img/logo/sponsor/coding-01.png')}}" alt="CODING.ID" class="logo-sponsor-m">
                 </a>
                 <a>
-                    <img src="{{asset('img/logo/sponsor/collab_cube_studio.png')}}" alt="" class="logo-sponsor-m">
+                    <img src="{{asset('img/logo/sponsor/collab_cube_studio.png')}}" alt="Cube Studio" class="logo-sponsor-m">
                 </a>
                 <a>
-                    <img src="{{asset('img/logo/sponsor/collab_jagel.png')}}" alt="" class="logo-sponsor-m" style="height:100px">
+                    <img src="{{asset('img/logo/sponsor/collab_jagel.png')}}" alt="Jagel" class="logo-sponsor-m" style="height:100px">
                 </a>
                 <a>
-                    <img src="{{asset('img/logo/sponsor/collab_atourin.png')}}" alt="" class="logo-sponsor-m" style="height:55px">
+                    <img src="{{asset('img/logo/sponsor/collab_atourin.png')}}" alt="Atourin" class="logo-sponsor-m" style="height:55px">
                 </a>
                 <a>
-                    <img src="{{asset('img/logo/sponsor/collab_spin.png')}}" alt="" class="logo-sponsor-m" style="height:55px">
+                    <img src="{{asset('img/logo/sponsor/collab_spin.png')}}" alt="Spindonesia" class="logo-sponsor-m" style="height:55px">
                 </a>
             </div>
         </div>
@@ -502,28 +502,28 @@
         <div class="medpart-box">
             <div class="row justify-content-center align-items-center">
                 <a href="https://coding.id/" target="_blank">
-                    <img src="{{asset('img/logo/medpart/medpart_coding_id.png')}}" alt="" class="logo-medpart">
+                    <img src="{{asset('img/logo/medpart/medpart_coding_id.png')}}" alt="CODING.ID" class="logo-medpart">
                 </a>
                 <a>
-                    <img src="{{asset('img/logo/medpart/medpart_berita_lomba.png')}}" alt="" class="logo-medpart">
+                    <img src="{{asset('img/logo/medpart/medpart_berita_lomba.png')}}" alt="Berita Lomba" class="logo-medpart">
                 </a>
                 <a>
-                    <img src="{{asset('img/logo/medpart/medpart_event_apaaja.png')}}" alt="" class="logo-medpart">
+                    <img src="{{asset('img/logo/medpart/medpart_event_apaaja.png')}}" alt="Event Apaaja" class="logo-medpart">
                 </a>
                 <a>
-                    <img src="{{asset('img/logo/medpart/medpart_event_kampus.png')}}" alt="" class="logo-medpart">
+                    <img src="{{asset('img/logo/medpart/medpart_event_kampus.png')}}" alt="Event Kampus" class="logo-medpart">
                 </a>
                 <a>
-                    <img src="{{asset('img/logo/medpart/medpart_hmj_if_unla.png')}}" alt="" class="logo-medpart">
+                    <img src="{{asset('img/logo/medpart/medpart_hmj_if_unla.png')}}" alt="HMJ IF UNLA" class="logo-medpart">
                 </a>
                 <a>
-                    <img src="{{asset('img/logo/medpart/medpart_mading_event_cerah.png')}}" alt="" class="logo-medpart">
+                    <img src="{{asset('img/logo/medpart/medpart_mading_event_cerah.png')}}" alt="Event Cerah" class="logo-medpart">
                 </a>
                 <a>
-                    <img src="{{asset('img/logo/medpart/medpart_webinar.png')}}" alt="" class="logo-medpart">
+                    <img src="{{asset('img/logo/medpart/medpart_webinar.png')}}" alt="Webinar" class="logo-medpart">
                 </a>
                 <a>
-                    <img src="{{asset('img/logo/medpart/medpart_HMSE_ITTP.png')}}" alt="" class="logo-medpart">
+                    <img src="{{asset('img/logo/medpart/medpart_HMSE_ITTP.png')}}" alt="HMSE ITTP" class="logo-medpart">
                 </a>
             </div>
         </div>

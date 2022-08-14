@@ -12,7 +12,7 @@
 
 @section('competition_title')
 <div class="col-3" align="center">
-    <img class="img-fluid" style="width:200px;" src="{{ URL::asset('img/competition/logo/dac.png') }}">
+    <img class="img-fluid" style="width:200px;" src="{{ URL::asset('img/competition/logo/dac.png') }}" alt="Logo DAC">
 </div>
 <div class="col-6">
     <p class="title-competition" style="margin:0; ">Data Analysis Competition</p>
@@ -33,7 +33,7 @@ Data Analysis Competition (DAC) is a national-scale competition organized by Him
 <div data-aos="fade-down" data-aos-duration="1000" class="row-img-prize justify-content-center" align="center" id="competitionPrizes" style="padding-bottom: 50px;">
     <h1 class="text-sub-title" style="font-size:24px">In Collaboration with</h1>
     <a href="https://dataacademy.co.id/id/" target="_blank">
-        <img class="img-fluid" style="width:240px;" src="{{ URL::asset('img/logo/sponsor/collab_cda.jpg') }}">
+        <img class="img-fluid" style="width:240px;" src="{{ URL::asset('img/logo/sponsor/collab_cda.jpg') }}" alt="Cybertrend Data Academy">
     </a>
 </div>
 @endsection

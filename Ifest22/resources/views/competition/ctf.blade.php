@@ -12,7 +12,7 @@
 
 @section('competition_title')
 <div class="col-3" align="center">
-    <img class="img-fluid" style="width:200px;" src="{{ URL::asset('img/competition/logo/ctf.png') }}">
+    <img class="img-fluid" style="width:200px;" src="{{ URL::asset('img/competition/logo/ctf.png') }}" alt="Logo CTF">
 </div>
 <div class="col-4">
     <p class="title-competition" style="margin:0; margin-top:20px ">Capture The Flag</p>
@@ -28,13 +28,13 @@ This competition is held online and is intended for high school / vocational stu
 <div data-aos="fade-down" data-aos-duration="1000" class="row-img-prize justify-content-center" align="center" id="competitionPrizes" style="padding-bottom: 30px;">
     <h1 class="text-sub-title" style="font-size:24px">Problem Setter</h1>
     <a href="https://petircysec.com/" target="_blank">
-        <img class="img-fluid" style="width:180px;" src="{{ URL::asset('img/logo/sponsor/collab_petir_no_bg.png') }}">
+        <img class="img-fluid" style="width:180px;" src="{{ URL::asset('img/logo/sponsor/collab_petir_no_bg.png') }}" alt="Petir Cyber Security">
     </a>
 </div>
 <div data-aos="fade-down" data-aos-duration="1000" class="row-img-prize justify-content-center" align="center" id="competitionPrizes" style="padding-bottom: 50px;">
     <h1 class="text-sub-title" style="font-size:24px">Exclusive Cloud Hosting Partner</h1>
     <a href="https://www.dewaweb.com" target="_blank">
-        <img class="img-fluid" style="width:280px;" src="{{ URL::asset('img/logo/sponsor/collab_dewaweb_white.png') }}">
+        <img class="img-fluid" style="width:280px;" src="{{ URL::asset('img/logo/sponsor/collab_dewaweb_white.png') }}" alt="Dewaweb">
     </a>
 </div>
 @endsection

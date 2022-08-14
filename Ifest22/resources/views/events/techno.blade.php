@@ -25,10 +25,9 @@ Technopreneur is a webinar and workshop that provides training & development fac
 
 <!-- SPEAKERS -->
 @section('techno_speakers_1')
-<img class="card-img-top size-img-top-speakers" src="{{ asset('img/event/techno/speakers/speaker_11.png') }}" alt="Speakers-1">
+<img class="card-img-top size-img-top-speakers" src="{{ asset('img/event/techno/speakers/speaker_11.png') }}" alt="Tita Bukian">
 <div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
     <div class="col-10" style="line-height: 5px;">
-        <!-- <h5 class="text-photo-card-name">To Be Announced Soon!</h5> -->
         <h5 class="text-photo-card-name">Tita Bukian</h5>
         <p class="text-photo-card-position" style="font-size: 14px">Business Transformation Innovation <br>
             Excellence Director PT Cybertrend <br> Intrabuana
@@ -39,10 +38,9 @@ Technopreneur is a webinar and workshop that provides training & development fac
 @endsection
 
 @section('techno_speakers_2')
-<img class="card-img-top size-img-top-speakers" src="{{ asset('img/event/techno/speakers/speaker_2.png') }}" alt="Speakers-1">
+<img class="card-img-top size-img-top-speakers" src="{{ asset('img/event/techno/speakers/speaker_2.png') }}" alt="Yubi Vebiona Hartono">
 <div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
     <div class="col-10" style="line-height: 5px;">
-        <!-- <h5 class="text-photo-card-name">To Be Announced Soon!</h5> -->
         <h5 class="text-photo-card-name">Yubi Vebiona Hartono</h5>
         <p class="text-photo-card-position" style="font-size: 12px;">Content Creator & Contributor Writer di Haluan <br> Media Group, Ex-Corporate Human Capital <br> Project di United Tractors
         </p>
@@ -52,10 +50,9 @@ Technopreneur is a webinar and workshop that provides training & development fac
 @endsection
 
 @section('techno_speakers_3')
-<img class="card-img-top size-img-top-speakers" src="{{ asset('img/event/techno/speakers/speaker_3.png') }}" alt="Speakers-1">
+<img class="card-img-top size-img-top-speakers" src="{{ asset('img/event/techno/speakers/speaker_3.png') }}" alt="Danny Liong">
 <div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
     <div class="col-10" style="line-height: 5px;">
-        <!-- <h5 class="text-photo-card-name">To Be Announced Soon!</h5> -->
         <h5 class="text-photo-card-name" style="margin-top:24px">Danny Liong</h5>
         <p class="text-photo-card-position" style="margin-bottom:24px">Chief Executive Officer at Jagel</p>
         <a href="https://id.linkedin.com/in/danny-liong-95b3a8206#:~:text=Danny%20Liong%20%2D%20Chief%20Executive%20Officer%20%2D%20Jagel%20%7C%20LinkedIn" target="_blank"><img class="logo-linkedin" src="{{ URL::asset('icon/linkedin.svg') }}" alt="linkedin" style="margin-top: 20px;"></a>
@@ -65,7 +62,7 @@ Technopreneur is a webinar and workshop that provides training & development fac
 
 <!-- MENTORS -->
 @section('techno_mentor_1')
-<img class="card-img-top size-img-top-speakers" src="{{ asset('img/event/techno/mentors/mentor_1.jpg') }}" alt="Mentor-1">
+<img class="card-img-top size-img-top-speakers" src="{{ asset('img/event/techno/mentors/mentor_1.jpg') }}" alt="Benarivo Putra">
 <div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
     <div class="col-9" style="line-height: 5px;">
         <h5 class="text-photo-card-name">Benarivo Putra</h5>

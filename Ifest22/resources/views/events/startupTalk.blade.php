@@ -37,13 +37,13 @@ Startup Talk is a talk show that aims as a means to bring together Founders or S
 
 @section('startup4_logo')
 <a style="width:fit-content">
-    <img class="sut-image" src="{{ URL::asset('img/logo/sponsor/collab_binar.png') }}" alt="Binar">
+    <img class="sut-image" src="{{ URL::asset('img/logo/sponsor/collab_binar.png') }}" alt="Binar Academy">
 </a>
 @endsection
 
 @section('startup5_logo')
 <a href="https://dataacademy.co.id/id/" target="_blank" style="width:fit-content">
-    <img class="sut-image" src="{{ URL::asset('img/logo/sponsor/collab_cda.jpg') }}" alt="DATA ACADEMY">
+    <img class="sut-image" src="{{ URL::asset('img/logo/sponsor/collab_cda.jpg') }}" alt="Cybertrend Data Academy">
 </a>
 @endsection
 
@@ -55,7 +55,7 @@ Startup Talk is a talk show that aims as a means to bring together Founders or S
 
 @section('startup7_logo')
 <a style="width:fit-content;">
-    <img class="sut-image" src="{{ URL::asset('img/logo/sponsor/collab_spin.png') }}" alt="Spin" style="height:75px">
+    <img class="sut-image" src="{{ URL::asset('img/logo/sponsor/collab_spin.png') }}" alt="Spindonesia" style="height:75px">
 </a>
 @endsection
 
@@ -65,7 +65,7 @@ Startup Talk is a talk show that aims as a means to bring together Founders or S
 
 <!-- SPEAKERS DAY 1 -->
 @section('startup1_speakers')
-<img class=" card-img-top size-img-top-speakers" src="{{ asset('img/event/startup/speaker_4.png') }}" alt="Speakers-1">
+<img class=" card-img-top size-img-top-speakers" src="{{ asset('img/event/startup/speaker_4.png') }}" alt="Muhamad Andri Saputro">
 <div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
     <div class="col-9" style="line-height: 5px;">
         <h5 class="text-photo-card-name">Muhamad Andri Saputro</h5>
@@ -78,7 +78,7 @@ Startup Talk is a talk show that aims as a means to bring together Founders or S
 @endsection
 
 @section('startup2_speakers')
-<img class="card-img-top size-img-top-speakers" src="{{ asset('img/event/startup/speaker_6.png') }}" alt="Speakers-2">
+<img class="card-img-top size-img-top-speakers" src="{{ asset('img/event/startup/speaker_6.png') }}" alt="Ahmad S Zankie">
 <div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
     <div class="col-9" style="line-height: 5px;">
         <h5 class="text-photo-card-name" style="margin-top:12px">Ahmad S Zankie</h5>
@@ -91,7 +91,7 @@ Startup Talk is a talk show that aims as a means to bring together Founders or S
 @endsection
 
 @section('startup3_speakers')
-<img class="card-img-top size-img-top-speakers" src="{{ asset('img/event/startup/speaker_7.png') }}" alt="Speakers-3">
+<img class="card-img-top size-img-top-speakers" src="{{ asset('img/event/startup/speaker_7.png') }}" alt="Erick Young">
 <div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
     <div class="col-9" style="line-height: 5px;">
         <h5 class="text-photo-card-name" style="margin-top:12px">Erick Young</h5>
@@ -118,7 +118,7 @@ Startup Talk is a talk show that aims as a means to bring together Founders or S
 @endsection
 
 @section('startup5_speakers')
-<img class="card-img-top size-img-top-speakers" src="{{ asset('img/event/startup/speaker_1.png') }}" alt="Speakers-4">
+<img class="card-img-top size-img-top-speakers" src="{{ asset('img/event/startup/speaker_1.png') }}" alt="Fransiskus Alvin">
 <div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
     <div class="col-9" style="line-height: 5px;">
         <h5 class="text-photo-card-name" style="margin-top:12px">Fransiskus Alvin</h5>
@@ -131,7 +131,7 @@ Startup Talk is a talk show that aims as a means to bring together Founders or S
 @endsection
 
 @section('startup6_speakers')
-<img class="card-img-top size-img-top-speakers" src="{{ asset('img/event/startup/speaker_2.png') }}" alt="Speakers-4">
+<img class="card-img-top size-img-top-speakers" src="{{ asset('img/event/startup/speaker_2.png') }}" alt="Luthfy Ardiansyah">
 <div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
     <div class="col-9" style="line-height: 5px;">
         <h5 class="text-photo-card-name" style="margin-top:12px">Luthfy Ardiansyah</h5>
@@ -144,7 +144,7 @@ Startup Talk is a talk show that aims as a means to bring together Founders or S
 @endsection
 
 @section('startup7_speakers')
-<img class="card-img-top size-img-top-speakers" src="{{ asset('img/event/startup/speaker_3.png') }}" alt="Speakers-4">
+<img class="card-img-top size-img-top-speakers" src="{{ asset('img/event/startup/speaker_3.png') }}" alt="Adhitya Yoga Yudanto">
 <div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
     <div class="col-9" style="line-height: 5px;">
         <h5 class="text-photo-card-name" style="margin-top:12px">Adhitya Yoga Yudanto</h5>
@@ -157,7 +157,7 @@ Startup Talk is a talk show that aims as a means to bring together Founders or S
 @endsection
 
 @section('startup8_speakers')
-<img class="card-img-top size-img-top-speakers" src="{{ asset('img/event/startup/speaker_5.png') }}" alt="Speakers-4">
+<img class="card-img-top size-img-top-speakers" src="{{ asset('img/event/startup/speaker_5.png') }}" alt="Gilang Rizky Pradana">
 <div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
     <div class="col-9" style="line-height: 5px;">
         <h5 class="text-photo-card-name" style="margin-top:12px">Gilang Rizky Pradana</h5>
