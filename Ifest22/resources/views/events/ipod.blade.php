@@ -33,7 +33,7 @@
                     <p class="text-desc" style="margin: 0 0 0 0; font-size: 20px;">Informatics Festival<br>Podcast</p>
                 </div>
                 <div style="padding: 10px 50px 0 50px; font-size: 16px; text-align:left;">
-                    <p class="text-desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    <p class="text-desc"> Young entrepreneurs and tech enthusiasts, know more about IT and business with the professionals here in IPod 3.0</p>
                 </div>
             </div>
         </div>

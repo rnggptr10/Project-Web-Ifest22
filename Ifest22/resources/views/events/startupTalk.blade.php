@@ -65,16 +65,16 @@ Startup Talk is a talk show that aims as a means to bring together Founders or S
 @endsection
 
 @section('startup2_speakers')
-<img class="card-img-top size-img-top-speakers" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg" alt="Speakers-2">
+<img class="card-img-top size-img-top-speakers" src="{{ asset('img/event/startup/speaker_6.png') }}" alt="Speakers-2">
 <div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
-    <div class="col-7" style="line-height: 5px;">
-        <h5 class="text-photo-card-name">To Be Announced Soon!</h5>
-        <!-- <h5 class="text-photo-card-name">Luthfy Ardiansyah</h5>
-        <p class="text-photo-card-position">CEO Data Academy</p> -->
+    <div class="col-9" style="line-height: 5px;">
+        <!-- <h5 class="text-photo-card-name">To Be Announced Soon!</h5> -->
+        <h5 class="text-photo-card-name">Ahmad S Zankie</h5>
+        <p class="text-photo-card-position">CEO ARUTALA</p>
     </div>
-    <!-- <div class="col-3">
-        <a href=""><img class="logo-linkedin" src="{{ URL::asset('icon/linkedin.svg') }}" alt="linkedin"></a>
-    </div> -->
+    <div class="col-3">
+        <a href="https://www.linkedin.com/in/dinzankie" target="_blank"><img class="logo-linkedin" src="{{ URL::asset('icon/linkedin.svg') }}" alt="linkedin"></a>
+    </div>
 </div>
 @endsection
 
@@ -149,16 +149,16 @@ Startup Talk is a talk show that aims as a means to bring together Founders or S
 @endsection
 
 @section('startup8_speakers')
-<img class="card-img-top size-img-top-speakers" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg" alt="Speakers-4">
+<img class="card-img-top size-img-top-speakers" src="{{ asset('img/event/startup/speaker_5.png') }}" alt="Speakers-4">
 <div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
-    <div class="col-7" style="line-height: 5px;">
-        <h5 class="text-photo-card-name">To Be Announced Soon!</h5>
-        <!-- <h5 class="text-photo-card-name">Speaker8</h5>
-        <p class="text-photo-card-position">CEO</p> -->
+    <div class="col-9" style="line-height: 5px;">
+        <h5 class="text-photo-card-name">Gilang Rizky Pradana</h5>
+        <!-- <h5 class="text-photo-card-name">Speaker7</h5> -->
+        <p class="text-photo-card-position">Product Marketing Associate</p>
     </div>
-    <!-- <div class="col-3">
-        <a href=""><img class="logo-linkedin" src="{{ URL::asset('icon/linkedin.svg') }}" alt="linkedin"></a>
-    </div> -->
+    <div class="col-3">
+        <a href="https://www.linkedin.com/in/gilangrizky/" target="_blank"><img class="logo-linkedin" src="{{ URL::asset('icon/linkedin.svg') }}" alt="linkedin"></a>
+    </div>
 </div>
 @endsection
 
