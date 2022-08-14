@@ -170,9 +170,9 @@ This competition is held online and is intended for high school / vocational stu
                 <img class="card-img-top" style="width:100%;height:350px;" src="{{ asset('img/event/intention/juri_1.png') }}" alt="Card image cap">
                 <div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
                     <div class="col-10" style="line-height: 5px;">
-                        <h5 class="text-photo-card-name">Muhamad Nizham</h5>
+                        <h5 class="text-photo-card-name" style="margin-top:12px">Muhamad Nizham</h5>
                         <!-- <h5 class="text-photo-card-name">Juri 2</h5> -->
-                        <p class="text-photo-card-position">Coach at Coding.id</p>
+                        <p class="text-photo-card-position" style="margin-bottom:12px">Coach at Coding.id</p>
                     </div>
                 </div>
             </div>
@@ -207,9 +207,9 @@ This competition is held online and is intended for high school / vocational stu
                             <img class="card-img-top size-img-top-speakers" src="{{ asset('img/event/intention/juri_1.png') }}" alt="Card image cap">
                             <div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
                                 <div class="col" style="line-height: 5px;">
-                                    <h5 class="text-photo-card-name">Muhamad Nizham</h5>
+                                    <h5 class="text-photo-card-name" style="margin-top:12px">Muhamad Nizham</h5>
                                     <!-- <h5 class="text-photo-card-name">Juri 2</h5> -->
-                                    <p class="text-photo-card-position">Coach at Coding.id</p>
+                                    <p class="text-photo-card-position" style="margin-bottom:12px">Coach at Coding.id</p>
                                 </div>
                             </div>
                         </div>

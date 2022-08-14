@@ -130,7 +130,7 @@
         <div id="News" class="tabcontent">
             <h3>Technopreneur</h3>
             <p>"Innovative Digital Startup For Youngpreneur"</p>
-            <p style="font-size: 14px;">Technopreneur is a webinar and workshop that provides training & development facilities by professionals to develop people's entrepreneurial interests and talents in IT, so that they are able to use digital technology as an opportunity to develop business. Technopreneur 2022 collaborating with great incubators and companies in Indonesia to help the participants in developing their digital startup idea so that it is ready to be executed. Technopreneur 2022 presents concepts and themes where participants can practice and develop digital startup ideas from a young age, of course, accompanied by professionals. The materials that will be presented are "Introduction to Startup and Design Thinking", "Business Concept", "Branding and Market Validation", and "Funding and Pitching".</p>
+            <p style="font-size: 14px;">Technopreneur is a webinar and workshop that provides training & development facilities by professionals to develop people's entrepreneurial interests and talents in IT, so that they are able to use digital technology as an opportunity to develop business. Technopreneur 2022 collaborating with great incubators and companies in Indonesia to help the participants in developing their digital startup idea so that it is ready to be executed. Technopreneur 2022 presents concepts and themes where participants can practice and develop digital startup ideas from a young age, of course, accompanied by professionals.</p>
         </div>
         <div id="Contact" class="tabcontent">
             <h3>IT Competition</h3>
@@ -147,22 +147,49 @@
     </div>
     <div class="box-speaker">
         <div id="StartupTalk-speakers" class="carousel carousel-pembicara slide" data-ride="carousel">
-            <div class="carousel-inner" class="tabcontent">
+        <div class="carousel-inner" class="tabcontent">
                 <h4 style="text-align:center;">Meet Our Speakers</h4>
                 <div class="carousel-item active" style="background-color: transparent;">
+                    <div class="speaker">
+                        <div class="img-speakers">
+                            <img class="align-self-center rm-3" src="{{ asset('img/event/startup/speaker_4.png') }}" alt="Generic placeholder image">
+                        </div>
+                        <div class="media-body">
+                            <h5 class="mt-0">Muhamad Andri Saputro</h5>
+                            <p>Our speaker at Startup Talk day 1 with the theme "Metaverse, The Next Level of Human Culture". Position as Chief Design Officer / Product Designer at Cube Studio.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item" style="background-color: transparent;">
+                    <div class="speaker">
+                        <div class="img-speakers">
+                            <img class="align-self-center rm-3" src="{{ asset('img/event/startup/speaker_6.png') }}" alt="Generic placeholder image">
+                        </div>
+                        <div class="media-body">
+                            <h5 class="mt-0">Ahmad S Zankie</h5>
+                            <p>Our speaker at Startup Talk day 1 with the theme "Metaverse, The Next Level of Human Culture". Position as CEO at Arutala.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item" style="background-color: transparent;">
+                    <div class="speaker">
+                        <div class="img-speakers">
+                            <img class="align-self-center rm-3" src="{{ asset('img/event/startup/speaker_7.png') }}" alt="Generic placeholder image">
+                        </div>
+                        <div class="media-body">
+                            <h5 class="mt-0">Erick Young</h5>
+                            <p>Our speaker at Startup Talk day 1 with the theme "Metaverse, The Next Level of Human Culture". Position as Creative Director at Spindonesia.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item" style="background-color: transparent;">
                     <div class="speaker">
                         <div class="img-speakers">
                             <img class="align-self-center rm-3" src="{{ asset('img/event/startup/speaker_1.png') }}" alt="Generic placeholder image">
                         </div>
                         <div class="media-body">
-                            <!-- <p> <b>Startup Talk:Day 2 "Evolution of Digital Transformation"</b></p> -->
-                            <!-- <h6>Startup Talk:Day 2 "Evolution of Digital Transformation"</h6> -->
                             <h5 class="mt-0">Fransiskus Alvin</h5>
-                            <!-- <p>Founder Course-Net</p> -->
                             <p>Our speaker at Startup Talk day 2 with the theme "Evolution of Digital Transformation". Position as Founder Course-Net at ITBox.</p>
-                            <div class="button-speakers-details" style="">
-                                <button class="allspeaker"><a style="color:white; text-decoration:none;" href="">See All Speakers</a></button>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -172,14 +199,8 @@
                             <img class="align-self-center rm-3" src="{{ asset('img/event/startup/speaker_2.png') }}" alt="Generic placeholder image">
                         </div>
                         <div class="media-body">
-                            <!-- <h6>Startup Talk:Day 2 "Evolution of Digital Transformation"</h6> -->
                             <h5 class="mt-0">Luthfy Ardiansyah</h5>
-                            <!-- <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p> -->
-                            <!-- <p>CEO Data Academy</p> -->
                             <p>Our speaker at Startup Talk day 2 with the theme "Evolution of Digital Transformation". Position as CEO Data Academy.</p>
-                            <div class="button-speakers-details" style="">
-                                <button class="allspeaker"><a style="color:white; text-decoration:none;" href="">See All Speakers</a></button>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -189,14 +210,19 @@
                             <img class="align-self-center rm-3" src="{{ asset('img/event/startup/speaker_3.png') }}" alt="Generic placeholder image">
                         </div>
                         <div class="media-body">
-                            <!-- <h6>Startup Talk:Day 2 "Evolution of Digital Transformation"</h6> -->
                             <h5 class="mt-0">Adhitya Yoga Yudanto</h5>
-                            <!-- <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p> -->
-                            <!-- <p>Head Of Product Development</p> -->
                             <p>Our speaker at Startup Talk day 2 with the theme "Evolution of Digital Transformation". Position as Head of Product Development at Coding.ID.</p>
-                            <div class="button-speakers-details" style="">
-                                <button class="allspeaker"><a style="color:white; text-decoration:none;" href="">See All Speakers</a></button>
-                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item" style="background-color: transparent;">
+                    <div class="speaker">
+                        <div class="img-speakers">
+                            <img class="align-self-center rm-3" src="{{ asset('img/event/startup/speaker_5.png') }}" alt="Generic placeholder image">
+                        </div>
+                        <div class="media-body">
+                            <h5 class="mt-0">Gilang Rizky Pradana</h5>
+                            <p>Our speaker at Startup Talk day 2 with the theme "Evolution of Digital Transformation". Position as Product Marketing Associate at Binar Academy.</p>
                         </div>
                     </div>
                 </div>
@@ -210,7 +236,7 @@
                 <span class="sr-only">Next</span>
             </a>
         </div>
-        <div id="Technopreneur-speakers" class="carousel-pembicara slide" data-ride="carousel">
+        <div id="Technopreneur-speakers" class="carousel carousel-pembicara slide" data-ride="carousel">
             <div class="carousel-inner" class="tabcontent">
                 <h4 style="text-align:center;">Meet Our Speakers</h4>
                 <div class="carousel-item active" style="background-color: transparent;">
@@ -221,40 +247,28 @@
                         <div class="media-body">
                             <h5 class="mt-0">Tita Bukian</h5>
                             <p>Our Seminar Speaker at Technopreneur with the theme "Innovative Digital Startup For Youngpreneur". Position as Business Transformation Innovation Excellence Director PT Cybertrend Intrabuana.</p>
-                            <!-- <p>Business Transformation Innovation Excellence Director PT Cybertrend Intrabuana</p> -->
-                            <div class="button-speakers-details" style="">
-                                <button class="allspeaker"><a style="color:white; text-decoration:none;" href="">See All Speakers</a></button>
-                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item" style="background-color: transparent;">
                     <div class="speaker">
                         <div class="img-speakers">
-                            <img class="align-self-center rm-3" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg" alt="Generic placeholder image">
+                            <img class="align-self-center rm-3" src="{{ asset('img/event/techno/speakers/speaker_2.png') }}" alt="Generic placeholder image">
                         </div>
                         <div class="media-body">
-                            <h5 class="mt-0">Speaker 2</h5>
-                            <!-- <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p> -->
-                            <p>To Be Announced Soon!</p>
-                            <div class="button-speakers-details" style="padding-top: 90px;">
-                                <button class="allspeaker"><a style="color:white; text-decoration:none;" href="">See All Speakers</a></button>
-                            </div>
+                            <h5 class="mt-0">Yubi Vebiona Hartono</h5>
+                            <p>Our Seminar Speaker at Technopreneur with the theme "Innovative Digital Startup For Youngpreneur". Position as Content Creator & Contributor Writer di Haluan Media Group, Ex-Corporate Human Capital Project di United Tractors</p>
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item" style="background-color: transparent;">
                     <div class="speaker">
                         <div class="img-speakers">
-                            <img class="align-self-center rm-3" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg" alt="Generic placeholder image">
+                            <img class="align-self-center rm-3" src="{{ asset('img/event/techno/speakers/speaker_3.png') }}" alt="Generic placeholder image">
                         </div>
                         <div class="media-body">
-                            <h5 class="mt-0">Speaker 3</h5>
-                            <!-- <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p> -->
-                            <p>To Be Announced Soon!</p>
-                            <div class="button-speakers-details" style="padding-top: 90px;">
-                                <button class="allspeaker"><a style="color:white; text-decoration:none;" href="">See All Speakers</a></button>
-                            </div>
+                            <h5 class="mt-0">Danny Liong</h5>
+                            <p>Our Seminar Speaker at Technopreneur with the theme "Innovative Digital Startup For Youngpreneur". Position as Chief Executive Officer at Jagel</p>
                         </div>
                     </div>
                 </div>
@@ -277,8 +291,6 @@
                                 <img class="img-fluid" src="{{ URL::asset('img/competition/logo/ctf.png') }}">
                                 <div class="overlay">
                                     <h2>Capture The Flag</h2>
-                                    <!-- <p>CTF</p> -->
-                                    <!-- <h6>CTF</h6> -->
                                 </div>
                             </div>
                         </div>
@@ -321,7 +333,6 @@
                         </div>
                         <div class="media-body">
                             <h5 class="mt-0">Speaker 1</h5>
-                            <!-- <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p> -->
                             <p>To Be Announced Soon!</p>
                             <div class="button-speakers-details" style="padding-top: 90px;">
                                 <button class="allspeaker"><a style="color:white; text-decoration:none;" href="">See All Speakers</a></button>
@@ -336,7 +347,6 @@
                         </div>
                         <div class="media-body">
                             <h5 class="mt-0">Speaker 2</h5>
-                            <!-- <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p> -->
                             <p>To Be Announced Soon!</p>
                             <div class="button-speakers-details" style="padding-top: 90px;">
                                 <button class="allspeaker"><a style="color:white; text-decoration:none;" href="">See All Speakers</a></button>
@@ -351,7 +361,6 @@
                         </div>
                         <div class="media-body">
                             <h5 class="mt-0">Speaker 3</h5>
-                            <!-- <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p> -->
                             <p>To Be Announced Soon!</p>
                             <div class="button-speakers-details" style="padding-top: 90px;">
                                 <button class="allspeaker"><a style="color:white; text-decoration:none;" href="">See All Speakers</a></button>
@@ -379,7 +388,6 @@
                         </div>
                         <div class="media-body">
                             <h5 class="mt-0">Speaker 1</h5>
-                            <!-- <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p> -->
                             <p>To Be Announced Soon!</p>
                             <div class="button-speakers-details" style="padding-top: 90px;">
                                 <button class="allspeaker"><a style="color:white; text-decoration:none;" href="">See All Speakers</a></button>
@@ -394,7 +402,6 @@
                         </div>
                         <div class="media-body">
                             <h5 class="mt-0">Speaker 2</h5>
-                            <!-- <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p> -->
                             <p>To Be Announced Soon!</p>
                             <div class="button-speakers-details" style="padding-top: 90px;">
                                 <button class="allspeaker"><a style="color:white; text-decoration:none;" href="">See All Speakers</a></button>
@@ -409,7 +416,6 @@
                         </div>
                         <div class="media-body">
                             <h5 class="mt-0">Speaker 3</h5>
-                            <!-- <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p> -->
                             <p>To Be Announced Soon!</p>
                             <div class="button-speakers-details" style="padding-top: 90px;">
                                 <button class="allspeaker"><a style="color:white; text-decoration:none;" href="">See All Speakers</a></button>
@@ -452,9 +458,6 @@
                 <a href="https://www.dewaweb.com" target="_blank">
                     <img src="{{asset('img/logo/sponsor/collab_dewaweb_white.png')}}" alt="" class="logo-sponsor-xl">
                 </a>
-                <a href="https://petircysec.com/" target="_blank">
-                    <img src="{{asset('img/logo/sponsor/collab_petir_no_bg.png')}}" alt="" class="logo-sponsor-m" style="height:90px">
-                </a>
                 <a href="https://dataacademy.co.id/id/" target="_blank">
                     <img src="{{asset('img/logo/sponsor/collab_cda_nobg.png')}}" alt="" class="logo-sponsor-xl" style="height:110px">
                 </a>
@@ -496,6 +499,12 @@
                 <a>
                     <img src="{{asset('img/logo/sponsor/collab_jagel.png')}}" alt="" class="logo-sponsor-m" style="height:100px">
                 </a>
+                <a>
+                    <img src="{{asset('img/logo/sponsor/collab_atourin.png')}}" alt="" class="logo-sponsor-m" style="height:55px">
+                </a>
+                <a>
+                    <img src="{{asset('img/logo/sponsor/collab_spin.png')}}" alt="" class="logo-sponsor-m" style="height:55px">
+                </a>
             </div>
         </div>
     </div>
@@ -523,6 +532,9 @@
                 </a>
                 <a>
                     <img src="{{asset('img/logo/medpart/medpart_webinar.png')}}" alt="" class="logo-medpart">
+                </a>
+                <a>
+                    <img src="{{asset('img/logo/medpart/medpart_HMSE_ITTP.png')}}" alt="" class="logo-medpart">
                 </a>
             </div>
         </div>

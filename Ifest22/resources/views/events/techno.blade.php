@@ -30,12 +30,10 @@ Technopreneur is a webinar and workshop that provides training & development fac
     <div class="col-10" style="line-height: 5px;">
         <!-- <h5 class="text-photo-card-name">To Be Announced Soon!</h5> -->
         <h5 class="text-photo-card-name">Tita Bukian</h5>
-        <p class="text-photo-card-position" style="font-size: 14px;">Business Transformation Innovation <br>
+        <p class="text-photo-card-position" style="font-size: 14px">Business Transformation Innovation <br>
             Excellence Director PT Cybertrend <br> Intrabuana
         </p>
-    </div>
-    <div class="col-3" style="margin-top: 20px;">
-        <a href="#"><img class="logo-linkedin" src="{{ URL::asset('icon/linkedin.svg') }}" alt="linkedin"></a>
+        <a><img class="logo-linkedin" src="{{ URL::asset('icon/linkedin.svg') }}" alt="linkedin" style="margin-top: 20px;"></a>
     </div>
 </div>
 @endsection
@@ -46,31 +44,36 @@ Technopreneur is a webinar and workshop that provides training & development fac
     <div class="col-10" style="line-height: 5px;">
         <!-- <h5 class="text-photo-card-name">To Be Announced Soon!</h5> -->
         <h5 class="text-photo-card-name">Yubi Vebiona Hartono</h5>
-        <p class="text-photo-card-position" style="font-size: 12px;">Content Creator & Contributor Writer
-            di Haluan <br> Media Group, Ex-Corporate Human Capital <br> Project di United Tractors
+        <p class="text-photo-card-position" style="font-size: 12px;">Content Creator & Contributor Writer di Haluan <br> Media Group, Ex-Corporate Human Capital <br> Project di United Tractors
         </p>
-        <!-- Content Creator & Contributor Writer di Haluan Media Group, Ex-Corporate Human Capital Project di United Tractors -->
-    </div>
-    <div class="col-3" style="margin-top: 20px;">
-        <a href="https://www.linkedin.com/in/yubivebionahartono" target="_blank"><img class="logo-linkedin" src="{{ URL::asset('icon/linkedin.svg') }}" alt="linkedin"></a>
+        <a href="https://www.linkedin.com/in/yubivebionahartono" target="_blank"><img class="logo-linkedin" src="{{ URL::asset('icon/linkedin.svg') }}" alt="linkedin" style="margin-top: 20px;"></a>
     </div>
 </div>
 @endsection
 
-
+@section('techno_speakers_3')
+<img class="card-img-top size-img-top-speakers" src="{{ asset('img/event/techno/speakers/speaker_3.png') }}" alt="Speakers-1">
+<div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
+    <div class="col-10" style="line-height: 5px;">
+        <!-- <h5 class="text-photo-card-name">To Be Announced Soon!</h5> -->
+        <h5 class="text-photo-card-name" style="margin-top:24px">Danny Liong</h5>
+        <p class="text-photo-card-position" style="margin-bottom:24px">Chief Executive Officer at Jagel</p>
+        <a href="https://id.linkedin.com/in/danny-liong-95b3a8206#:~:text=Danny%20Liong%20%2D%20Chief%20Executive%20Officer%20%2D%20Jagel%20%7C%20LinkedIn" target="_blank"><img class="logo-linkedin" src="{{ URL::asset('icon/linkedin.svg') }}" alt="linkedin" style="margin-top: 20px;"></a>
+    </div>
+</div>
+@endsection
 
 <!-- MENTORS -->
 @section('techno_mentor_1')
-<img class="card-img-top size-img-top-speakers" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg" alt="Speakers-1">
+<img class="card-img-top size-img-top-speakers" src="{{ asset('img/event/techno/mentors/mentor_1.jpg') }}" alt="Mentor-1">
 <div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
-    <div class="col-7" style="line-height: 5px;">
-        <h5 class="text-photo-card-name">To Be Announced Soon!</h5>
-        <!-- <h5 class="text-photo-card-name">Mentor3</h5>
-        <p class="text-photo-card-position">CEO</p> -->
+    <div class="col-9" style="line-height: 5px;">
+        <h5 class="text-photo-card-name">Benarivo Putra</h5>
+        <p class="text-photo-card-position">Co-Founder & CEO of Atourin</p>
     </div>
-    <!-- <div class="col-3">
-        <a href=""><img class="logo-linkedin" src="{{ URL::asset('icon/linkedin.svg') }}" alt="linkedin"></a>
-    </div> -->
+    <div class="col-2" style="padding:0;" align="left">
+        <a href="https://id.linkedin.com/in/benarivotp#:~:text=Benarivo%20Putra%20%2D%20Chief%20Executive%20Officer%20%2D%20Atourin%20%7C%20LinkedIn" target="_blank"><img class="logo-linkedin" src="{{ URL::asset('icon/linkedin.svg') }}" alt="linkedin"></a>
+    </div>
 </div>
 @endsection
 
@@ -146,53 +149,23 @@ Technopreneur is a webinar and workshop that provides training & development fac
 @section('event_detail')
 <div id="Speaker1" data-aos="fade-down" data-aos-duration="1000" class="row align-items-center" align="center" style="padding-top: 30px;padding-bottom: 30px;">
     <h1 class="text-event-sub-title">Our Seminar Speakers</h1>
-    <div id="technoSpeakers" class="row justify-content-center carousel slide" data-ride="carousel" style="padding-top: 30px; position:relative">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <div class="row justify-content-center">
-                    <div class="col-4">
-                        <div class="card ifest-photo-card" style="border: 0; width:max-content">
-                            @yield('techno_speakers_1')
-                        </div>
-                    </div>
-                    <div class="col-4">
-                        <div class="card ifest-photo-card" style="border: 0; width:max-content">
-                            <img class="card-img-top size-img-top-speakers" src="{{ asset('img/event/techno/speakers/speaker_3.png') }}" alt="Speakers-1">
-                            <div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
-                                <div class="col-10" style="line-height: 5px;">
-                                    <!-- <h5 class="text-photo-card-name">To Be Announced Soon!</h5> -->
-                                    <h5 class="text-photo-card-name">Danny Liong</h5>
-                                    <p class="text-photo-card-position">Chief Executive Officer at Jagel
-                                    </p>
-                                </div>
-                                <div class="col-3" style="margin-top: 20px;">
-                                    <a href="https://id.linkedin.com/in/danny-liong-95b3a8206#:~:text=Danny%20Liong%20%2D%20Chief%20Executive%20Officer%20%2D%20Jagel%20%7C%20LinkedIn" target="_blank"><img class="logo-linkedin" src="{{ URL::asset('icon/linkedin.svg') }}" alt="linkedin"></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-4">
-                        <div class="card ifest-photo-card" style="border: 0; width:max-content">
-                            @yield('techno_speakers_2')
-                        </div>
-                    </div>
-
+    <div id="technoSpeakers" class="row justify-content-center" style="padding-top: 30px; position:relative">
+        <div class="row justify-content-center">
+            <div class="col-4">
+                <div class="card ifest-photo-card" style="border: 0; width:max-content">
+                    @yield('techno_speakers_1')
                 </div>
             </div>
-            <!-- <div class="carousel-item">
-                    <div class="row justify-content-center">
-                        <div class="col-4">
-                            <div class="card ifest-photo-card" style="border: 0; width:max-content">
-                                @yield('techno_speakers_3')
-                            </div>
-                        </div>
-                        <div class="col-4">
-                            <div class="card ifest-photo-card" style="border: 0; width:max-content">
-                                @yield('techno_speakers_4')
-                            </div>
-                        </div>
-                    </div>
-                </div> -->
+            <div class="col-4">
+                <div class="card ifest-photo-card" style="border: 0; width:max-content">
+                    @yield('techno_speakers_2')
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card ifest-photo-card" style="border: 0; width:max-content">
+                    @yield('techno_speakers_3')
+                </div>
+            </div>
         </div>
     </div>
 </div>
@@ -207,8 +180,8 @@ Technopreneur is a webinar and workshop that provides training & development fac
                 <span class="sr-only">Next</span>
             </a>
         </div>
-    </div> -->
-</div>
+    </div>
+</div> -->
 
 <div id="Speaker2" data-aos="fade-down" data-aos-duration="1000" align="center" id="sutSpeakers" style="padding-top: 30px;padding-bottom: 30px;">
     <h1 class="text-event-sub-title">Our Seminar Speakers</h1>
@@ -236,18 +209,7 @@ Technopreneur is a webinar and workshop that provides training & development fac
                 <div class="row justify-content-center">
                     <div class="col">
                         <div class="card ifest-photo-card size-img-speakers" style="border: 0;text-align:center;">
-                            <img class="card-img-top size-img-top-speakers" src="{{ asset('img/event/techno/speakers/speaker_3.png') }}" alt="Speakers-1">
-                            <div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
-                                <div class="col-10" style="line-height: 5px;">
-                                    <!-- <h5 class="text-photo-card-name">To Be Announced Soon!</h5> -->
-                                    <h5 class="text-photo-card-name">Danny Liong</h5>
-                                    <p class="text-photo-card-position">Chief Executive Officer at Jagel
-                                    </p>
-                                </div>
-                                <div class="col-3" style="margin-top: 20px;">
-                                    <a href="https://id.linkedin.com/in/danny-liong-95b3a8206#:~:text=Danny%20Liong%20%2D%20Chief%20Executive%20Officer%20%2D%20Jagel%20%7C%20LinkedIn" target="_blank"><img class="logo-linkedin" src="{{ URL::asset('icon/linkedin.svg') }}" alt="linkedin"></a>
-                                </div>
-                            </div>
+                            @yield('techno_speakers_3')
                         </div>
                     </div>
                 </div>

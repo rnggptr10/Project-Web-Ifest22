@@ -131,7 +131,7 @@
             @elseif($dac->status_pembayaran === '2')
                 <div class="col-4" align="center" style="padding:0">
                     <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 120px;height: 60px;">
-                        <a class="ifest-btn-primary-dark-bg-text" target="_blank" href="https://discord.gg/T3hbNbW9">Discord<br>IFest 2022</a>
+                        <a class="ifest-btn-primary-dark-bg-text" target="_blank" href="https://discord.gg/F2eVM23bQ8">Discord<br>IFest 2022</a>
                     </button>
                 </div>
             @endif

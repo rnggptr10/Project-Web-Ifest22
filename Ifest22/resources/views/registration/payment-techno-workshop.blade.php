@@ -42,7 +42,10 @@
                                             </div>
                                             <div class="row" style="padding:5px 0 5px 0">
                                                 <p class="regist-form-text-payment-head" style="margin:0">Payment Methods :</p>
-                                                <p class="regist-form-text-payment">• BCA : 5725562729 a.n. Sarah Khairunnisa Prihantoro</p>
+                                                <p class="regist-form-text-payment">
+                                                    • BCA : 5725562729 a.n. Sarah Khairunnisa Prihantoro<br>
+                                                    • DANA : 081289516275 a.n. Sarah Khairunnisa Prihantoro
+                                                </p>
                                             </div>
                                             <div class="row" style="padding-top:20px">
                                                 <div class="container-upload dflex">

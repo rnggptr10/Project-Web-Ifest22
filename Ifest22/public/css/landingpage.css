@@ -450,6 +450,7 @@ div.countdown2 p {
 .speaker img {
     width: 180px;
     height: 200px;
+    border-radius: 10px;
 }
 
 .carousel-pembicara {

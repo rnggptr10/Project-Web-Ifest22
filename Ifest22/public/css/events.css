@@ -65,8 +65,10 @@ body {
 
 .sut-image {
     height: 85px;
-    width: max-content;
-    padding: 0 20px 0 20px;
+    width: 100%;
+    /* padding: 0 20px 0 20px; */
+    margin: 10px 0 10px 0;
+    padding: 0 15px 0 15px;
 }
 
 .events-card-logo {

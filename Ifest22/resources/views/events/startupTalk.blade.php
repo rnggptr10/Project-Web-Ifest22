@@ -18,31 +18,45 @@ Startup Talk is a talk show that aims as a means to bring together Founders or S
 
 <!-- STARTUP LOGO -->
 @section('startup1_logo')
-<img class="sut-image" src="{{ URL::asset('img/logo/sponsor/collab_cube_studio.png') }}" alt="Cube Studio">
+<a style="width:fit-content">
+    <img class="sut-image" src="{{ URL::asset('img/logo/sponsor/collab_cube_studio.png') }}" alt="Cube Studio">
+</a>
 @endsection
 
 @section('startup2_logo')
-<img class="sut-image" src="{{ URL::asset('img/logo/sponsor/collab_itbox.png') }}" alt="ITBOX">
+<a style="width:fit-content">
+    <img class="sut-image" src="{{ URL::asset('img/logo/sponsor/collab_itbox.png') }}" alt="ITBOX">
+</a>
 @endsection
 
 @section('startup3_logo')
-<!-- <img class="sut-image" src="https://logodownload.org/wp-content/uploads/2019/08/land-rover-logo.png" alt="Startup3"> -->
+<a style="width:fit-content">
+    <img class="sut-image" src="{{ URL::asset('img/logo/sponsor/collab_arutala.png') }}" alt="Arutala">
+</a>
 @endsection
 
 @section('startup4_logo')
-<!-- <img class="sut-image" src="https://i0.wp.com/brzoapp.com/wp-content/uploads/2018/11/Porsche-Logo.png?w=1080&ssl=1" alt="Startup4"> -->
+<a style="width:fit-content">
+    <img class="sut-image" src="{{ URL::asset('img/logo/sponsor/collab_binar.png') }}" alt="Binar">
+</a>
 @endsection
 
 @section('startup5_logo')
-<img class="sut-image" src="{{ URL::asset('img/logo/sponsor/collab_cda.jpg') }}" alt="DATA ACADEMY">
+<a href="https://dataacademy.co.id/id/" target="_blank" style="width:fit-content">
+    <img class="sut-image" src="{{ URL::asset('img/logo/sponsor/collab_cda.jpg') }}" alt="DATA ACADEMY">
+</a>
 @endsection
 
 @section('startup6_logo')
-<img class="sut-image" src="{{ URL::asset('img/logo/sponsor/coding-01.png') }}" alt="CODING.ID">
+<a href="https://coding.id/" target="_blank" style="width:fit-content">
+    <img class="sut-image" src="{{ URL::asset('img/logo/sponsor/coding-01.png') }}" alt="CODING.ID">
+</a>
 @endsection
 
 @section('startup7_logo')
-<!-- <img class="sut-image" src="https://logodownload.org/wp-content/uploads/2019/08/land-rover-logo.png" alt="Startup3"> -->
+<a style="width:fit-content;">
+    <img class="sut-image" src="{{ URL::asset('img/logo/sponsor/collab_spin.png') }}" alt="Spin" style="height:75px">
+</a>
 @endsection
 
 @section('startup8_logo')
@@ -54,7 +68,6 @@ Startup Talk is a talk show that aims as a means to bring together Founders or S
 <img class=" card-img-top size-img-top-speakers" src="{{ asset('img/event/startup/speaker_4.png') }}" alt="Speakers-1">
 <div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
     <div class="col-9" style="line-height: 5px;">
-        <!-- <h5 class="text-photo-card-name">To Be Announced Soon!</h5> -->
         <h5 class="text-photo-card-name">Muhamad Andri Saputro</h5>
         <p class="text-photo-card-position">Chief Design Officer / Product Designer</p>
     </div>
@@ -68,35 +81,33 @@ Startup Talk is a talk show that aims as a means to bring together Founders or S
 <img class="card-img-top size-img-top-speakers" src="{{ asset('img/event/startup/speaker_6.png') }}" alt="Speakers-2">
 <div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
     <div class="col-9" style="line-height: 5px;">
-        <!-- <h5 class="text-photo-card-name">To Be Announced Soon!</h5> -->
-        <h5 class="text-photo-card-name">Ahmad S Zankie</h5>
-        <p class="text-photo-card-position">CEO ARUTALA</p>
+        <h5 class="text-photo-card-name" style="margin-top:12px">Ahmad S Zankie</h5>
+        <p class="text-photo-card-position" style="margin-bottom:12px">CEO ARUTALA</p>
     </div>
-    <div class="col-3">
+    <div class="col-2" style="padding:0;" align="left">
         <a href="https://www.linkedin.com/in/dinzankie" target="_blank"><img class="logo-linkedin" src="{{ URL::asset('icon/linkedin.svg') }}" alt="linkedin"></a>
     </div>
 </div>
 @endsection
 
 @section('startup3_speakers')
-<img class="card-img-top size-img-top-speakers" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg" alt="Speakers-3">
+<img class="card-img-top size-img-top-speakers" src="{{ asset('img/event/startup/speaker_7.png') }}" alt="Speakers-3">
 <div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
-    <div class="col-7" style="line-height: 5px;">
-        <h5 class="text-photo-card-name">To Be Announced Soon!</h5>
-        <!-- <h5 class="text-photo-card-name">Speaker3</h5>
-        <p class="text-photo-card-position">CEO</p> -->
+    <div class="col-9" style="line-height: 5px;">
+        <h5 class="text-photo-card-name" style="margin-top:12px">Erick Young</h5>
+        <p class="text-photo-card-position" style="margin-bottom:12px">Creative Director</p>
     </div>
-    <!-- <div class="col-3">
-        <a href=""><img class="logo-linkedin" src="{{ URL::asset('icon/linkedin.svg') }}" alt="linkedin"></a>
-    </div> -->
+    <div class="col-2" style="padding:0;" align="left">
+        <a href="https://www.linkedin.com/in/epic-young-76b6838/" target="_blank"><img class="logo-linkedin" src="{{ URL::asset('icon/linkedin.svg') }}" alt="linkedin"></a>
+    </div>
 </div>
 @endsection
 
 @section('startup4_speakers')
 <img class="card-img-top size-img-top-speakers" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg" alt="Speakers-4">
 <div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
-    <div class="col-7" style="line-height: 5px;">
-        <h5 class="text-photo-card-name">To Be Announced Soon!</h5>
+    <div class="col-9" style="line-height: 5px;">
+        <h5 class="text-photo-card-name" style="margin-top:29px; margin-bottom:29px">To Be Announced Soon!</h5>
         <!-- <h5 class="text-photo-card-name">Speaker4</h5>
         <p class="text-photo-card-position">CEO</p> -->
     </div>
@@ -110,9 +121,8 @@ Startup Talk is a talk show that aims as a means to bring together Founders or S
 <img class="card-img-top size-img-top-speakers" src="{{ asset('img/event/startup/speaker_1.png') }}" alt="Speakers-4">
 <div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
     <div class="col-9" style="line-height: 5px;">
-        <!-- <h5 class="text-photo-card-name">To Be Announced Soon!</h5> -->
-        <h5 class="text-photo-card-name">Fransiskus Alvin</h5>
-        <p class="text-photo-card-position">Founder Course-Net</p>
+        <h5 class="text-photo-card-name" style="margin-top:12px">Fransiskus Alvin</h5>
+        <p class="text-photo-card-position" style="margin-bottom:12px">Founder Course-Net</p>
     </div>
     <div class="col-2" style="padding:0;" align="left">
         <a href="https://www.linkedin.com/in/fransiskus-alvin-winata-885579a8/"><img class="logo-linkedin" src="{{ URL::asset('icon/linkedin.svg') }}" alt="linkedin"></a>
@@ -124,9 +134,8 @@ Startup Talk is a talk show that aims as a means to bring together Founders or S
 <img class="card-img-top size-img-top-speakers" src="{{ asset('img/event/startup/speaker_2.png') }}" alt="Speakers-4">
 <div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
     <div class="col-9" style="line-height: 5px;">
-        <!-- <h5 class="text-photo-card-name">To Be Announced Soon!</h5> -->
-        <h5 class="text-photo-card-name">Luthfy Ardiansyah</h5>
-        <p class="text-photo-card-position">CEO Data Academy</p>
+        <h5 class="text-photo-card-name" style="margin-top:12px">Luthfy Ardiansyah</h5>
+        <p class="text-photo-card-position" style="margin-bottom:12px">CEO Data Academy</p>
     </div>
     <!-- <div class="col-2" style="padding:0;" align="left">
         <a href=""><img class="logo-linkedin" src="{{ URL::asset('icon/linkedin.svg') }}" alt="linkedin"></a>
@@ -138,9 +147,8 @@ Startup Talk is a talk show that aims as a means to bring together Founders or S
 <img class="card-img-top size-img-top-speakers" src="{{ asset('img/event/startup/speaker_3.png') }}" alt="Speakers-4">
 <div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
     <div class="col-9" style="line-height: 5px;">
-        <h5 class="text-photo-card-name">Adhitya Yoga Yudanto</h5>
-        <!-- <h5 class="text-photo-card-name">Speaker7</h5> -->
-        <p class="text-photo-card-position">Head Of Product Development</p>
+        <h5 class="text-photo-card-name" style="margin-top:12px">Adhitya Yoga Yudanto</h5>
+        <p class="text-photo-card-position" style="margin-bottom:12px">Head Of Product Development</p>
     </div>
     <div class="col-2" style="padding:0;" align="left">
         <a href=" https://www.linkedin.com/in/adhityayogayudanto/" target="_blank"><img class="logo-linkedin" src="{{ URL::asset('icon/linkedin.svg') }}" alt="linkedin"></a>
@@ -152,11 +160,10 @@ Startup Talk is a talk show that aims as a means to bring together Founders or S
 <img class="card-img-top size-img-top-speakers" src="{{ asset('img/event/startup/speaker_5.png') }}" alt="Speakers-4">
 <div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
     <div class="col-9" style="line-height: 5px;">
-        <h5 class="text-photo-card-name">Gilang Rizky Pradana</h5>
-        <!-- <h5 class="text-photo-card-name">Speaker7</h5> -->
-        <p class="text-photo-card-position">Product Marketing Associate</p>
+        <h5 class="text-photo-card-name" style="margin-top:12px">Gilang Rizky Pradana</h5>
+        <p class="text-photo-card-position" style="margin-bottom:12px">Product Marketing Associate</p>
     </div>
-    <div class="col-3">
+    <div class="col-2" style="padding:0;" align="left">
         <a href="https://www.linkedin.com/in/gilangrizky/" target="_blank"><img class="logo-linkedin" src="{{ URL::asset('icon/linkedin.svg') }}" alt="linkedin"></a>
     </div>
 </div>
@@ -171,14 +178,12 @@ Startup Talk is a talk show that aims as a means to bring together Founders or S
     <h1 class="title-1 text-sub-title">Our Startup Partners</h1>
     <h3 class="title-2">Our Startup Partners</h3>
     <div class="row justify-content-center" style="padding-top: 30px; padding-bottom: 30px;">
-        <div class="col">
-            <div class="row justify-content-center" style="padding-bottom: 20px;">
+        <div class="col-10">
+            <div class="row justify-content-center align-items-center" style="padding-top: 20px;padding-bottom: 20px;background-color: #2d2d2d;border-radius: 10px;">
                 @yield('startup1_logo')
                 @yield('startup2_logo')
                 @yield('startup3_logo')
                 @yield('startup4_logo')
-            </div>
-            <div class="row justify-content-center" style="padding-top: 20px;">
                 @yield('startup5_logo')
                 @yield('startup6_logo')
                 @yield('startup7_logo')
