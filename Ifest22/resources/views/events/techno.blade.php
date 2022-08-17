@@ -62,7 +62,7 @@ Technopreneur is a webinar and workshop that provides training & development fac
 
 <!-- MENTORS -->
 @section('techno_mentor_1')
-<img class="card-img-top size-img-top-speakers" src="{{ asset('img/event/techno/mentors/mentor_1.jpg') }}" alt="Benarivo Putra">
+<img class="card-img-top size-img-top-speakers" src="{{ asset('img/event/techno/mentors/mentor_1.png') }}" alt="Benarivo Putra">
 <div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
     <div class="col-9" style="line-height: 5px;">
         <h5 class="text-photo-card-name">Benarivo Putra</h5>

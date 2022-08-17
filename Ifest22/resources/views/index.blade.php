@@ -426,7 +426,7 @@
 </div>
 
 <div>
-    
+
     <div data-aos="fade-up" data-aos-duration="1000" style="margin-bottom:30px">
         <div class="row justify-content-center" style="margin:0;">
             <h1 class="title-box">Exclusive Cloud Hosting Partner</h1>
@@ -466,7 +466,7 @@
                 </a>
                 <a href="https://petircysec.com/" target="_blank">
                     <img src="{{asset('img/logo/sponsor/collab_petir_no_bg.png')}}" alt="Petir Cyber Security" class="logo-sponsor-m" style="height:90px">
-                </a>  
+                </a>
                 <a>
                     <img src="{{asset('img/logo/sponsor/collab_arutala.png')}}" alt="Arutala" class="logo-sponsor-m">
                 </a>
@@ -528,15 +528,33 @@
             </div>
         </div>
     </div>
+    <div data-aos="fade-up" data-aos-duration="1000">
+        <h1 class="title-box">Data Academy</h1>
+        <div class="medpart-box" style="background: none;">
+            <div class="row justify-content-center align-items-center">
+                <video controls style="width:70%; border-radius:10px">
+                    <source src=" {{ asset('video/DataAcademy.mp4') }}" />
+                </video>
+            </div>
+        </div>
+    </div>
+    <div data-aos="fade-up" data-aos-duration="1000">
+        <h1 class="title-box">Dewaweb</h1>
+        <div class="medpart-box" style="background: none;">
+            <div class="row justify-content-center align-items-center">
+                <video controls style="width:70%; border-radius:10px">
+                    <source src="{{ asset('video/Dewaweb.mp4') }}" />
+                </video>
+            </div>
+        </div>
+    </div>
 
-</div>
-
-<script src="{{ asset('js/countdown.js') }}"></script>
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script>
-    AOS.init();
-</script>
-<script>
-    document.getElementById("defaultOpen").click();
-</script>
-@endsection
+    <script src="{{ asset('js/countdown.js') }}"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script>
+        document.getElementById("defaultOpen").click();
+    </script>
+    @endsection

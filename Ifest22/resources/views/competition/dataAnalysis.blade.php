@@ -147,24 +147,24 @@ Data Analysis Competition (DAC) is a national-scale competition organized by Him
     <div class="row justify-content-center" style="padding-top: 30px;">
         <div class="col-4" data-aos="fade-right" data-aos-duration="1000" style="padding-right: 50px;">
             <div class="card ifest-photo-card" style="border: 0; width:max-content">
-                <img class="card-img-top" style="width:100%;height:350px;" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg" alt="Card image cap">
+                <img class="card-img-top" style="width:100%;height:350px;" src="{{ asset('img/competition/dac/judges/judge_1.png') }}" alt="Card image cap">
                 <div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
                     <div class="col" style="line-height: 5px;">
-                        <h5 class="text-photo-card-name">To Be Announced Soon!</h5>
-                        <!-- <h5 class="text-photo-card-name">Juri 1</h5>
-                        <p class="text-photo-card-position">Data Analyst</p> -->
+                        <!-- <h5 class="text-photo-card-name">To Be Announced Soon!</h5> -->
+                        <h5 class="text-photo-card-name">Nurul Mu'minah</h5>
+                        <p class="text-photo-card-position">Business Intelligence Specialist <br> at Cybertrend Intrabuana</p>
                     </div>
                 </div>
             </div>
         </div>
         <div class="col-4" data-aos="fade-left" data-aos-duration="1000" style="padding-left: 50px;">
             <div class="card ifest-photo-card" style="border: 0; width:max-content">
-                <img class="card-img-top" style="width:100%;height:350px;" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg" alt="Card image cap">
+                <img class="card-img-top" style="width:100%;height:350px;" src="{{ asset('img/competition/dac/judges/judge_2.png') }}" alt="Card image cap">
                 <div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
                     <div class="col" style="line-height: 5px;">
-                        <h5 class="text-photo-card-name">To Be Announced Soon!</h5>
-                        <!-- <h5 class="text-photo-card-name">Juri 2</h5>
-                        <p class="text-photo-card-position">Data Analyst</p> -->
+                        <!-- <h5 class="text-photo-card-name">To Be Announced Soon!</h5> -->
+                        <h5 class="text-photo-card-name">Ike Kurniati</h5>
+                        <p class="text-photo-card-position">Data Scientist at Cybertrend Intrabuana <br> <br></p>
                     </div>
                 </div>
             </div>
@@ -180,12 +180,12 @@ Data Analysis Competition (DAC) is a national-scale competition organized by Him
                 <div class="row justify-content-center">
                     <div class="col">
                         <div class="size-img-speakers card ifest-photo-card" style="border: 0;text-align:center;">
-                            <img class="card-img-top size-img-top-speakers" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg" alt="Card image cap">
+                            <img class="card-img-top size-img-top-speakers" src="{{ asset('img/competition/dac/judges/judge_1.png') }}" alt="Card image cap">
                             <div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
                                 <div class="col" style="line-height: 5px;">
-                                    <h5 class="text-photo-card-name">To Be Announced Soon!</h5>
-                                    <!-- <h5 class="text-photo-card-name">Juri 1</h5>
-                                    <p class="text-photo-card-position">Data Analyst</p> -->
+                                    <!-- <h5 class="text-photo-card-name">To Be Announced Soon!</h5> -->
+                                    <h5 class="text-photo-card-name">Nurul Mu'minah</h5>
+                                    <p class="text-photo-card-position">Business Intelligence Specialist <br> at Cybertrend Intrabuana</p>
                                 </div>
                             </div>
                         </div>
@@ -196,12 +196,12 @@ Data Analysis Competition (DAC) is a national-scale competition organized by Him
                 <div class="row justify-content-center">
                     <div class="col">
                         <div class="size-img-speakers card ifest-photo-card" style="border: 0; text-align:center;">
-                            <img class="card-img-top size-img-top-speakers" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg" alt="Card image cap">
+                            <img class="card-img-top size-img-top-speakers" src="{{ asset('img/competition/dac/judges/judge_2.png') }}" alt="Card image cap">
                             <div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
                                 <div class="col" style="line-height: 5px;">
-                                    <h5 class="text-photo-card-name">To Be Announced Soon!</h5>
-                                    <!-- <h5 class="text-photo-card-name">Juri 2</h5>
-                                    <p class="text-photo-card-position">Data Analyst</p> -->
+                                    <!-- <h5 class="text-photo-card-name">To Be Announced Soon!</h5> -->
+                                    <h5 class="text-photo-card-name">Ike Kurniati</h5>
+                                    <p class="text-photo-card-position">Data Scientist at Cybertrend Intrabuana <br> <br></p>
                                 </div>
                             </div>
                         </div>
