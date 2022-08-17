@@ -314,8 +314,8 @@
         </div>
         <div id="Semnas-speakers" class="carousel carousel-pembicara slide" data-ride="carousel">
             <div class="carousel-inner" class="tabcontent">
+                <h4 style="text-align:center;">Meet Our Speakers</h4>
                 <div class="carousel-item active" style="background-color: transparent;">
-                    <h4 style="text-align:center;">Meet Our Speakers</h4>
                     <div class="speaker">
                         <div class="img-speakers">
                             <img class="align-self-center rm-3" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg" alt="Generic placeholder image">
@@ -323,9 +323,6 @@
                         <div class="media-body">
                             <h5 class="mt-0">Speaker 1</h5>
                             <p>To Be Announced Soon!</p>
-                            <div class="button-speakers-details" style="padding-top: 90px;">
-                                <button class="allspeaker"><a style="color:white; text-decoration:none;" href="">See All Speakers</a></button>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -337,9 +334,6 @@
                         <div class="media-body">
                             <h5 class="mt-0">Speaker 2</h5>
                             <p>To Be Announced Soon!</p>
-                            <div class="button-speakers-details" style="padding-top: 90px;">
-                                <button class="allspeaker"><a style="color:white; text-decoration:none;" href="">See All Speakers</a></button>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -351,9 +345,6 @@
                         <div class="media-body">
                             <h5 class="mt-0">Speaker 3</h5>
                             <p>To Be Announced Soon!</p>
-                            <div class="button-speakers-details" style="padding-top: 90px;">
-                                <button class="allspeaker"><a style="color:white; text-decoration:none;" href="">See All Speakers</a></button>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -378,9 +369,6 @@
                         <div class="media-body">
                             <h5 class="mt-0">Speaker 1</h5>
                             <p>To Be Announced Soon!</p>
-                            <div class="button-speakers-details" style="padding-top: 90px;">
-                                <button class="allspeaker"><a style="color:white; text-decoration:none;" href="">See All Speakers</a></button>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -392,9 +380,6 @@
                         <div class="media-body">
                             <h5 class="mt-0">Speaker 2</h5>
                             <p>To Be Announced Soon!</p>
-                            <div class="button-speakers-details" style="padding-top: 90px;">
-                                <button class="allspeaker"><a style="color:white; text-decoration:none;" href="">See All Speakers</a></button>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -406,9 +391,6 @@
                         <div class="media-body">
                             <h5 class="mt-0">Speaker 3</h5>
                             <p>To Be Announced Soon!</p>
-                            <div class="button-speakers-details" style="padding-top: 90px;">
-                                <button class="allspeaker"><a style="color:white; text-decoration:none;" href="">See All Speakers</a></button>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -433,7 +415,7 @@
             <div class="sponsored-box">
                 <div class="row justify-content-center">
                     <a href="https://www.dewaweb.com" target="_blank">
-                        <img src="{{asset('img/logo/sponsor/collab_dewaweb_white.png')}}" alt="Dewaweb" class="logo-sponsor-xl">
+                        <img src="{{asset('img/logo/sponsor/collab_dewaweb_white.png')}}" alt="Dewaweb" class="logo-sponsor-xl" style="height:160px">
                     </a>
                 </div>
             </div>
@@ -445,7 +427,7 @@
             <div class="row justify-content-center align-items-center">
                 <!-- One of three columns -->
                 <a href="https://www.dewaweb.com" target="_blank">
-                    <img src="{{asset('img/logo/sponsor/collab_dewaweb_white.png')}}" alt="Dewaweb" class="logo-sponsor-xl">
+                    <img src="{{asset('img/logo/sponsor/collab_dewaweb_white.png')}}" alt="Dewaweb" class="logo-sponsor-xl" style="height:160px">
                 </a>
                 <a href="https://dataacademy.co.id/id/" target="_blank">
                     <img src="{{asset('img/logo/sponsor/collab_cda_nobg.png')}}" alt="Cybertrend Data Academy" class="logo-sponsor-xl" style="height:110px">
@@ -459,7 +441,7 @@
             <div class="row justify-content-center align-items-center">
                 <!-- One of three columns -->
                 <a href="https://www.dewaweb.com" target="_blank">
-                    <img src="{{asset('img/logo/sponsor/collab_dewaweb_white.png')}}" alt="Dewaweb" class="logo-sponsor-xl">
+                    <img src="{{asset('img/logo/sponsor/collab_dewaweb_white.png')}}" alt="Dewaweb" class="logo-sponsor-xl" style="height:160px">
                 </a>
                 <a href="https://dataacademy.co.id/id/" target="_blank">
                     <img src="{{asset('img/logo/sponsor/collab_cda_nobg.png')}}" alt="Cybertrend Data Academy" class="logo-sponsor-xl" style="height:110px">
@@ -468,7 +450,7 @@
                     <img src="{{asset('img/logo/sponsor/collab_petir_no_bg.png')}}" alt="Petir Cyber Security" class="logo-sponsor-m" style="height:90px">
                 </a>
                 <a>
-                    <img src="{{asset('img/logo/sponsor/collab_arutala.png')}}" alt="Arutala" class="logo-sponsor-m">
+                    <img src="{{asset('img/logo/sponsor/collab_arutala.png')}}" alt="Arutala" class="logo-sponsor-m" style="height:70px">
                 </a>
                 <a>
                     <img src="{{asset('img/logo/sponsor/collab_binar.png')}}" alt="Binar Academy" class="logo-sponsor-m" style="height:55px">
@@ -477,13 +459,13 @@
                     <img src="{{asset('img/logo/sponsor/collab_talent-growth.jpeg')}}" alt="Talent Growth" class="logo-sponsor-m" style="height:40px">
                 </a>
                 <a>
-                    <img src="{{asset('img/logo/sponsor/collab_itbox.png')}}" alt="ITBOX" class="logo-sponsor-m">
+                    <img src="{{asset('img/logo/sponsor/collab_itbox.png')}}" alt="ITBOX" class="logo-sponsor-m" style="height:70px">
                 </a>
                 <a href="https://coding.id/" target="_blank">
-                    <img src="{{asset('img/logo/sponsor/coding-01.png')}}" alt="CODING.ID" class="logo-sponsor-m">
+                    <img src="{{asset('img/logo/sponsor/coding-01.png')}}" alt="CODING.ID" class="logo-sponsor-m" style="height:70px">
                 </a>
                 <a>
-                    <img src="{{asset('img/logo/sponsor/collab_cube_studio.png')}}" alt="Cube Studio" class="logo-sponsor-m">
+                    <img src="{{asset('img/logo/sponsor/collab_cube_studio.png')}}" alt="Cube Studio" class="logo-sponsor-m" style="height:70px">
                 </a>
                 <a>
                     <img src="{{asset('img/logo/sponsor/collab_jagel.png')}}" alt="Jagel" class="logo-sponsor-m" style="height:100px">
@@ -502,35 +484,38 @@
         <div class="medpart-box">
             <div class="row justify-content-center align-items-center">
                 <a href="https://coding.id/" target="_blank">
-                    <img src="{{asset('img/logo/medpart/medpart_coding_id.png')}}" alt="CODING.ID" class="logo-medpart">
+                    <img src="{{asset('img/logo/medpart/medpart_coding_id.png')}}" alt="CODING.ID" class="logo-medpart" style="height:90px">
                 </a>
                 <a>
-                    <img src="{{asset('img/logo/medpart/medpart_berita_lomba.png')}}" alt="Berita Lomba" class="logo-medpart">
+                    <img src="{{asset('img/logo/medpart/medpart_berita_lomba.png')}}" alt="Berita Lomba" class="logo-medpart" style="height:90px">
                 </a>
                 <a>
-                    <img src="{{asset('img/logo/medpart/medpart_event_apaaja.png')}}" alt="Event Apaaja" class="logo-medpart">
+                    <img src="{{asset('img/logo/medpart/medpart_event_apaaja.png')}}" alt="Event Apaaja" class="logo-medpart" style="height:90px">
                 </a>
                 <a>
-                    <img src="{{asset('img/logo/medpart/medpart_event_kampus.png')}}" alt="Event Kampus" class="logo-medpart">
+                    <img src="{{asset('img/logo/medpart/medpart_event_kampus.png')}}" alt="Event Kampus" class="logo-medpart" style="height:90px">
                 </a>
                 <a>
-                    <img src="{{asset('img/logo/medpart/medpart_hmj_if_unla.png')}}" alt="HMJ IF UNLA" class="logo-medpart">
+                    <img src="{{asset('img/logo/medpart/medpart_hmj_if_unla.png')}}" alt="HMJ IF UNLA" class="logo-medpart" style="height:90px">
                 </a>
                 <a>
-                    <img src="{{asset('img/logo/medpart/medpart_mading_event_cerah.png')}}" alt="Event Cerah" class="logo-medpart">
+                    <img src="{{asset('img/logo/medpart/medpart_mading_event_cerah.png')}}" alt="Event Cerah" class="logo-medpart" style="height:90px">
                 </a>
                 <a>
-                    <img src="{{asset('img/logo/medpart/medpart_webinar.png')}}" alt="Webinar" class="logo-medpart">
+                    <img src="{{asset('img/logo/medpart/medpart_webinar.png')}}" alt="Webinar" class="logo-medpart" style="height:90px">
                 </a>
                 <a>
-                    <img src="{{asset('img/logo/medpart/medpart_HMSE_ITTP.png')}}" alt="HMSE ITTP" class="logo-medpart">
+                    <img src="{{asset('img/logo/medpart/medpart_HMSE_ITTP.png')}}" alt="HMSE ITTP" class="logo-medpart" style="height:90px">
+                </a>
+                <a>
+                    <img src="{{asset('img/logo/medpart/medpart_uin.jpg')}}" alt="UIN Sunan Ampel" class="logo-medpart" style="height:90px">
                 </a>
             </div>
         </div>
     </div>
     <div data-aos="fade-up" data-aos-duration="1000">
         <h1 class="title-box">Data Academy</h1>
-        <div class="medpart-box" style="background: none;">
+        <div class="medpart-box" style="background: none;padding:0">
             <div class="row justify-content-center align-items-center">
                 <video controls style="width:70%; border-radius:10px">
                     <source src=" {{ asset('video/DataAcademy.mp4') }}" />
@@ -540,11 +525,19 @@
     </div>
     <div data-aos="fade-up" data-aos-duration="1000">
         <h1 class="title-box">Dewaweb</h1>
-        <div class="medpart-box" style="background: none;">
+        <div class="medpart-box" style="background: none;padding:0">
             <div class="row justify-content-center align-items-center">
                 <video controls style="width:70%; border-radius:10px">
                     <source src="{{ asset('video/Dewaweb.mp4') }}" />
                 </video>
+            </div>
+        </div>
+    </div>
+    <div data-aos="fade-up" data-aos-duration="1000">
+        <div class="row align-items-center justify-content-center" style="margin-bottom:50px">
+            <div class="col-5" align="center">
+                <h1 class="title-box" style="font-size:16px; margin-bottom:10px">Check This Article from Dewaweb!</h1>
+                <button class="article-button"><a style="color:white; text-decoration:none;" href="https://www.dewaweb.com/blog/cara-membuat-web-portofolio/" target="_blank">7 Cara Praktis Membuat Web Portofolio Sendiri, Tanpa Koding!</a></button>
             </div>
         </div>
     </div>

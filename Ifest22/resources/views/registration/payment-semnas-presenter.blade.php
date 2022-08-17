@@ -51,7 +51,7 @@
                                                         <span class="iconify me-2" data-icon="feather:upload" data-inline="false" style="color: #001d3d;"></span>
                                                         Upload Payment Proof
                                                     </label>
-                                                    <input type="file" id="payment_confirmation" name="payment_confirmation" accept=".jpg, .png, .jpeg" style="color:transparent" required hidden>
+                                                    <input type="file" id="payment_confirmation" name="payment_confirmation" accept=".jpg, .png, .jpeg, .jfif" style="color:transparent" required hidden>
                                                 </div>
                                                 @error('payment_confirmation')
                                                 <div class="alert alert-danger mt-1 d-flex align-items-center" role="alert" style="width: 100%; margin: 0 auto">

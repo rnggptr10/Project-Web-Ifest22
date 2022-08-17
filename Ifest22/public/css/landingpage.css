@@ -390,9 +390,13 @@ div.countdown2 p {
     transition-delay: 0.2s;
 }
 
-
-
-
+.article-button {
+    padding: 5px 20px;
+    background-color: #8267b4;
+    border-radius: 5px;
+    display: inline-block;
+    border: none;
+}
 
 
 .memek {

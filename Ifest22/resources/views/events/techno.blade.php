@@ -488,8 +488,8 @@ Technopreneur is a webinar and workshop that provides training & development fac
                 </div>
                 <div class="col-5">
                     <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg">
-                        <a class="title-1 ifest-btn-primary-dark-bg-text" target="_blank" href="https://drive.google.com/file/d/1W0xB0XIx0xZ5xuu9jtn7VbvOhxL0m7IK/view?usp=sharing">Download</a>
-                        <a class="title-2 ifest-btn-primary-dark-bg-text" target="_blank" href="https://drive.google.com/file/d/1W0xB0XIx0xZ5xuu9jtn7VbvOhxL0m7IK/view?usp=sharing">
+                        <a class="title-1 ifest-btn-primary-dark-bg-text" target="_blank" href="https://drive.google.com/file/d/1K7Z9eqiRE4rtYj3NLJqcm_IWrdoV5l5W/view?usp=sharing">Download</a>
+                        <a class="title-2 ifest-btn-primary-dark-bg-text" target="_blank" href="https://drive.google.com/file/d/1K7Z9eqiRE4rtYj3NLJqcm_IWrdoV5l5W/view?usp=sharing">
                             <p style="margin: 0; font-size:10px">Download</p>
                         </a>
                     </button>
