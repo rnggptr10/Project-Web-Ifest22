@@ -235,8 +235,8 @@ This competition is held online and is intended for high school / vocational stu
         <ol class="ps-timeline">
             <li style="padding-top:10px; width:16%;">
                 <div class="ps-bot">
-                    <p style="font-size:12px;">24 July - 20 August 2022</p>
-                    <p style="font-size:14px;">Registration</p>
+                    <p style="font-size:12px;">24 July - 25 August 2022</p>
+                    <p style="font-size:14px;">Registration (EXTENDED)</p>
                 </div>
                 <span class="ps-sp"></span>
             </li>
@@ -290,7 +290,7 @@ This competition is held online and is intended for high school / vocational stu
     <?php
     // SET TANGGAL REGIST LOMBA
     $comp_regist_start = Carbon::create(2022, 7, 24, 00, 00, 01, 'Asia/Jakarta');
-    $comp_regist_end = Carbon::create(2022, 8, 20, 23, 59, 59, 'Asia/Jakarta');
+    $comp_regist_end = Carbon::create(2022, 8, 25, 23, 59, 59, 'Asia/Jakarta');
     $now = Carbon::now('Asia/Jakarta');
 
     $comp_regist_start->toDateTimeString();

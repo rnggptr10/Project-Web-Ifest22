@@ -72,7 +72,7 @@
 
                     // SET TANGGAL REGISTRASI DAC
                     $dac_regist_date_start = Carbon::create(2022, 7, 24, 00, 00, 01, 'Asia/Jakarta');
-                    $dac_regist_date_end = Carbon::create(2022, 8, 20, 23, 59, 59, 'Asia/Jakarta');
+                    $dac_regist_date_end = Carbon::create(2022, 8, 25, 23, 59, 59, 'Asia/Jakarta');
                     $dac_regist_date_start->toDateTimeString(); 
                     $dac_regist_date_end->toDateTimeString(); 
 

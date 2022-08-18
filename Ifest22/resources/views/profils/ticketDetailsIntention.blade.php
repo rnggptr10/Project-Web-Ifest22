@@ -75,7 +75,7 @@
 
                     // SET TANGGAL REGISTRASI INTENTION
                     $intention_regist_date_start = Carbon::create(2022, 7, 24, 00, 00, 01, 'Asia/Jakarta');
-                    $intention_regist_date_end = Carbon::create(2022, 8, 20, 23, 59, 59, 'Asia/Jakarta');
+                    $intention_regist_date_end = Carbon::create(2022, 8, 25, 23, 59, 59, 'Asia/Jakarta');
                     $intention_regist_date_start->toDateTimeString(); 
                     $intention_regist_date_end->toDateTimeString(); 
 
