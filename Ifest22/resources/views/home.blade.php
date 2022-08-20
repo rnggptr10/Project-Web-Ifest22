@@ -419,10 +419,8 @@
 </div>
 
 <div>
-
     <div data-aos="fade-up" data-aos-duration="1000" style="margin-bottom:30px">
-        <div class="row justify-content-center" style="margin:0;">
-            <h1 class="title-box">Exclusive Cloud Hosting Partner</h1>
+            <h1 class="title-box">Exclusive Cloud<br>Hosting Partner</h1>
             <div class="sponsored-box">
                 <div class="row justify-content-center">
                     <a href="https://www.dewaweb.com" target="_blank">
@@ -441,7 +439,7 @@
                     <img src="{{asset('img/logo/sponsor/collab_dewaweb_white.png')}}" alt="Dewaweb" class="logo-sponsor-xl" style="height:160px">
                 </a>
                 <a href="https://dataacademy.co.id/id/" target="_blank">
-                    <img src="{{asset('img/logo/sponsor/collab_cda_nobg.png')}}" alt="Cybertrend Data Academy" class="logo-sponsor-xl" style="height:110px">
+                    <img src="{{asset('img/logo/sponsor/collab_cda_nobg.png')}}" alt="Cybertrend Data Academy" class="logo-sponsor-xl" style="height:90px">
                 </a>
             </div>
         </div>
@@ -455,7 +453,7 @@
                     <img src="{{asset('img/logo/sponsor/collab_dewaweb_white.png')}}" alt="Dewaweb" class="logo-sponsor-xl" style="height:160px">
                 </a>
                 <a href="https://dataacademy.co.id/id/" target="_blank">
-                    <img src="{{asset('img/logo/sponsor/collab_cda_nobg.png')}}" alt="Cybertrend Data Academy" class="logo-sponsor-xl" style="height:110px">
+                    <img src="{{asset('img/logo/sponsor/collab_cda_nobg.png')}}" alt="Cybertrend Data Academy" class="logo-sponsor-xl" style="height:90px">
                 </a>
                 <a href="https://petircysec.com/" target="_blank">
                     <img src="{{asset('img/logo/sponsor/collab_petir_no_bg.png')}}" alt="Petir Cyber Security" class="logo-sponsor-m" style="height:90px">
@@ -467,7 +465,7 @@
                     <img src="{{asset('img/logo/sponsor/collab_binar.png')}}" alt="Binar Academy" class="logo-sponsor-m" style="height:55px">
                 </a>
                 <a>
-                    <img src="{{asset('img/logo/sponsor/collab_talent-growth.jpeg')}}" alt="Talent Growth" class="logo-sponsor-m" style="height:40px">
+                    <img src="{{asset('img/logo/sponsor/collab_talent-growth.jpeg')}}" alt="Talent Growth" class="logo-sponsor-m" style="height:35px">
                 </a>
                 <a>
                     <img src="{{asset('img/logo/sponsor/collab_itbox.png')}}" alt="ITBOX" class="logo-sponsor-m" style="height:70px">
@@ -479,13 +477,47 @@
                     <img src="{{asset('img/logo/sponsor/collab_cube_studio.png')}}" alt="Cube Studio" class="logo-sponsor-m" style="height:70px">
                 </a>
                 <a>
-                    <img src="{{asset('img/logo/sponsor/collab_jagel.png')}}" alt="Jagel" class="logo-sponsor-m" style="height:100px">
+                    <img src="{{asset('img/logo/sponsor/collab_jagel.png')}}" alt="Jagel" class="logo-sponsor-m" style="height:90px">
                 </a>
                 <a>
                     <img src="{{asset('img/logo/sponsor/collab_atourin.png')}}" alt="Atourin" class="logo-sponsor-m" style="height:55px">
                 </a>
                 <a>
                     <img src="{{asset('img/logo/sponsor/collab_spin.png')}}" alt="Spindonesia" class="logo-sponsor-m" style="height:55px">
+                </a>
+            </div>
+        </div>
+    </div>
+    <div data-aos="fade-up" data-aos-duration="1000">
+        <h1 class="title-box">Media Partner</h1>
+        <div class="medpart-box">
+            <div class="row justify-content-center align-items-center">
+                <a href="https://coding.id/" target="_blank">
+                    <img src="{{asset('img/logo/medpart/medpart_coding_id.png')}}" alt="CODING.ID" class="logo-medpart" style="height:70px">
+                </a>
+                <a>
+                    <img src="{{asset('img/logo/medpart/medpart_berita_lomba.png')}}" alt="Berita Lomba" class="logo-medpart" style="height:90px">
+                </a>
+                <a>
+                    <img src="{{asset('img/logo/medpart/medpart_event_apaaja.png')}}" alt="Event Apaaja" class="logo-medpart" style="height:90px">
+                </a>
+                <a>
+                    <img src="{{asset('img/logo/medpart/medpart_event_kampus.png')}}" alt="Event Kampus" class="logo-medpart" style="height:90px">
+                </a>
+                <a>
+                    <img src="{{asset('img/logo/medpart/medpart_hmj_if_unla.png')}}" alt="HMJ IF UNLA" class="logo-medpart" style="height:90px">
+                </a>
+                <a>
+                    <img src="{{asset('img/logo/medpart/medpart_mading_event_cerah.png')}}" alt="Event Cerah" class="logo-medpart" style="height:90px">
+                </a>
+                <a>
+                    <img src="{{asset('img/logo/medpart/medpart_webinar.png')}}" alt="Webinar" class="logo-medpart" style="height:90px">
+                </a>
+                <a>
+                    <img src="{{asset('img/logo/medpart/medpart_HMSE_ITTP.png')}}" alt="HMSE ITTP" class="logo-medpart" style="height:90px">
+                </a>
+                <a>
+                    <img src="{{asset('img/logo/medpart/medpart_uin.jpg')}}" alt="UIN Sunan Ampel" class="logo-medpart" style="height:90px">
                 </a>
             </div>
         </div>

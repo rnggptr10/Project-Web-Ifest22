@@ -512,22 +512,19 @@ div.countdown2 p {
 }
 
 .logo-sponsor-xl {
-    width: 100%;
-    height: 160px;
+    width: auto;
     margin: 10px 0 10px 0;
     padding: 0 15px 0 15px;
 }
 
 .logo-sponsor-m {
-    width: 100%;
-    height: 70px;
+    width: auto;
     margin: 10px 0 10px 0;
     padding: 0 15px 0 15px;
 }
 
 .logo-medpart {
-    width: 100%;
-    height: 90px;
+    width: auto;
     margin: 10px 0 10px 0;
     padding: 0 15px 0 15px;
 }
