@@ -413,7 +413,7 @@
             <div class="sponsored-box">
                 <div class="row justify-content-center">
                     <a href="https://www.dewaweb.com" target="_blank">
-                        <img src="{{asset('img/logo/sponsor/collab_dewaweb_white.png')}}" alt="Dewaweb" class="logo-sponsor-xl" style="height:160px">
+                        <img id="resp" src="{{asset('img/logo/sponsor/collab_dewaweb_white.png')}}" alt="Dewaweb" class="logo-sponsor-xl">
                     </a>
                 </div>
             </div>
@@ -425,10 +425,10 @@
             <div class="row justify-content-center align-items-center">
                 <!-- One of three columns -->
                 <a href="https://www.dewaweb.com" target="_blank">
-                    <img src="{{asset('img/logo/sponsor/collab_dewaweb_white.png')}}" alt="Dewaweb" class="logo-sponsor-xl" style="height:160px">
+                    <img id="resp" src="{{asset('img/logo/sponsor/collab_dewaweb_white.png')}}" alt="Dewaweb" class="logo-sponsor-xl">
                 </a>
                 <a href="https://dataacademy.co.id/id/" target="_blank">
-                    <img src="{{asset('img/logo/sponsor/collab_cda_nobg.png')}}" alt="Cybertrend Data Academy" class="logo-sponsor-xl" style="height:90px">
+                    <img id="resp1" src="{{asset('img/logo/sponsor/collab_cda_nobg.png')}}" alt="Cybertrend Data Academy" class="logo-sponsor-xl">
                 </a>
             </div>
         </div>
@@ -439,10 +439,10 @@
             <div class="row justify-content-center align-items-center">
                 <!-- One of three columns -->
                 <a href="https://www.dewaweb.com" target="_blank">
-                    <img src="{{asset('img/logo/sponsor/collab_dewaweb_white.png')}}" alt="Dewaweb" class="logo-sponsor-xl" style="height:160px">
+                    <img id="resp" src="{{asset('img/logo/sponsor/collab_dewaweb_white.png')}}" alt="Dewaweb" class="logo-sponsor-xl">
                 </a>
                 <a href="https://dataacademy.co.id/id/" target="_blank">
-                    <img src="{{asset('img/logo/sponsor/collab_cda_nobg.png')}}" alt="Cybertrend Data Academy" class="logo-sponsor-xl" style="height:90px">
+                    <img id="resp1" src="{{asset('img/logo/sponsor/collab_cda_nobg.png')}}" alt="Cybertrend Data Academy" class="logo-sponsor-xl">
                 </a>
                 <a href="https://petircysec.com/" target="_blank">
                     <img src="{{asset('img/logo/sponsor/collab_petir_no_bg.png')}}" alt="Petir Cyber Security" class="logo-sponsor-m" style="height:90px">

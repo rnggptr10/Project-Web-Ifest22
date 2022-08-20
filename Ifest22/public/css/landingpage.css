@@ -529,6 +529,24 @@ div.countdown2 p {
     padding: 0 15px 0 15px;
 }
 
+#resp{
+    height: 160px;
+}
+
+#resp1{
+    height: 90px;
+}
+
+@media screen and (max-width: 400px) {
+    #resp{
+        height: 120px;
+    }
+
+    #resp1{
+        height: 67.5px;
+    }
+}
+
 /* speaker  */
 
 /* Logo Landing */
