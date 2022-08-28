@@ -1,4 +1,4 @@
-const countDate = new Date("Aug 20, 2022 00:00:01").getTime();
+const countDate = new Date("Sep 11, 2022 00:00:01").getTime();
 
 const changeTime = (h = 0, j = 0, m = 0, d = 0) => {
     document.getElementById("days").innerText = h;

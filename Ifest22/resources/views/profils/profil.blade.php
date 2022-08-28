@@ -85,9 +85,9 @@
                                     </div>
                                     <?php
                                     // SET TANGGAL ACARA SUT DAY 1
-                                    $sut_1_date_start = Carbon::create(2022, 8, 20, 8, 30, 00, 'Asia/Jakarta');
+                                    $sut_1_date_start = Carbon::create(2022, 8, 20, 8, 00, 00, 'Asia/Jakarta');
                                     $sut_1_date_end = Carbon::create(2022, 8, 20, 12, 00, 00, 'Asia/Jakarta');
-                                    
+
                                     $sut_1_date_start->toDateTimeString();
                                     $sut_1_date_end->toDateTimeString();
 
@@ -98,7 +98,7 @@
                                     ?>
                                         <div class="col">
                                             <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 147px;height: 48px;">
-                                                <a class="ifest-btn-primary-dark-bg-text" href="">Link Zoom</a>
+                                                <a class="ifest-btn-primary-dark-bg-text" href="https://us06web.zoom.us/j/87212445628?pwd=SnpiUVdvK2Q3R1hRVDhsK28rd0ozZz09" target="_blank">Link Zoom</a>
                                             </button>
                                         </div>
                                     <?php
@@ -169,158 +169,158 @@
 
 
                     @if ($status->semnas_status === '1')
-                        @if ($semnas->status_pembayaran === '0')
-                            <div class="row" align="center" style="padding:5px 0 5px 0">
-                                <div class="col">
-                                    <div class="card" style="background-color:#e6eef7;padding:20px">
-                                        <div class="row align-items-center">
-                                            <div class="col-7" align="left">
-                                                <h6 class="text-tickets-head">Seminar Nasional</h6>
-                                                <p class="text-tickets-desc">8 - 9 October 2022
-                                                <?php
-                                                    // SET TANGGAL REGIST SEMNAS
-                                                    $semnas_payment_date_start = Carbon::create(2022, 7, 24, 00, 00, 01, 'Asia/Jakarta');
-                                                    $semnas_payment_date_end = Carbon::create(2022, 10, 7, 23, 59, 59, 'Asia/Jakarta');
+                    @if ($semnas->status_pembayaran === '0')
+                    <div class="row" align="center" style="padding:5px 0 5px 0">
+                        <div class="col">
+                            <div class="card" style="background-color:#e6eef7;padding:20px">
+                                <div class="row align-items-center">
+                                    <div class="col-7" align="left">
+                                        <h6 class="text-tickets-head">Seminar Nasional</h6>
+                                        <p class="text-tickets-desc">8 - 9 October 2022
+                                            <?php
+                                            // SET TANGGAL REGIST SEMNAS
+                                            $semnas_payment_date_start = Carbon::create(2022, 7, 24, 00, 00, 01, 'Asia/Jakarta');
+                                            $semnas_payment_date_end = Carbon::create(2022, 10, 7, 23, 59, 59, 'Asia/Jakarta');
 
-                                                    $semnas_payment_date_start->toDateTimeString();
-                                                    $semnas_payment_date_end->toDateTimeString();
+                                            $semnas_payment_date_start->toDateTimeString();
+                                            $semnas_payment_date_end->toDateTimeString();
 
-                                                    $now = Carbon::now('Asia/Jakarta');
-                                                    $now->toDateTimeString();
-                                                ?>
-                                                    @if ($semnas->status_pembayaran === '0')
-                                                        <?php if ($now->greaterThan($semnas_payment_date_start) && $now->lessThan($semnas_payment_date_end)) { ?>
-                                                            <br>Registration Status :
-                                                            <span class="text-tickets-status status-red">Payment Failed. Please Re-Upload Payment Proof.</span>
-                                                        <?php } elseif ($now->greaterThan($semnas_payment_date_end)) { ?>
-                                                            <br>Registration Status :
-                                                            <span class="text-tickets-status status-red">Payment Failed</span>
-                                                        <?php } ?>
-                                                    @elseif ($semnas->status_pembayaran === '1')
-                                                        <br>Registration Status :
-                                                        <span class="text-tickets-status status-orange">Waiting for Confirmation</span>
-                                                    @elseif ($semnas->status_pembayaran === '2')
-                                                        <br>Registration Status :
-                                                        <span class="text-tickets-status status-green">Payment Completed</span>
-                                                    @endif
-                                                </p>
-                                            </div>
+                                            $now = Carbon::now('Asia/Jakarta');
+                                            $now->toDateTimeString();
+                                            ?>
+                                            @if ($semnas->status_pembayaran === '0')
                                             <?php if ($now->greaterThan($semnas_payment_date_start) && $now->lessThan($semnas_payment_date_end)) { ?>
-                                                <div class="col">
-                                                    <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 147px;height: 48px;">
-                                                        <a class="ifest-btn-primary-dark-bg-text" href="{{ route('semnas.resubmit.payment.view') }}">Re-Upload</a>
-                                                    </button>
-                                                </div>
-                                            <?php } elseif ($now->lessThan($semnas_payment_date_start) || $now->greaterThan($semnas_payment_date_end)) { ?>
+                                                <br>Registration Status :
+                                                <span class="text-tickets-status status-red">Payment Failed. Please Re-Upload Payment Proof.</span>
+                                            <?php } elseif ($now->greaterThan($semnas_payment_date_end)) { ?>
+                                                <br>Registration Status :
+                                                <span class="text-tickets-status status-red">Payment Failed</span>
                                             <?php } ?>
+                                            @elseif ($semnas->status_pembayaran === '1')
+                                            <br>Registration Status :
+                                            <span class="text-tickets-status status-orange">Waiting for Confirmation</span>
+                                            @elseif ($semnas->status_pembayaran === '2')
+                                            <br>Registration Status :
+                                            <span class="text-tickets-status status-green">Payment Completed</span>
+                                            @endif
+                                        </p>
+                                    </div>
+                                    <?php if ($now->greaterThan($semnas_payment_date_start) && $now->lessThan($semnas_payment_date_end)) { ?>
+                                        <div class="col">
+                                            <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 147px;height: 48px;">
+                                                <a class="ifest-btn-primary-dark-bg-text" href="{{ route('semnas.resubmit.payment.view') }}">Re-Upload</a>
+                                            </button>
                                         </div>
+                                    <?php } elseif ($now->lessThan($semnas_payment_date_start) || $now->greaterThan($semnas_payment_date_end)) { ?>
+                                    <?php } ?>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    @elseif ($semnas->status_pembayaran === '1')
+                    <div class="row" align="center" style="padding:5px 0 5px 0">
+                        <div class="col">
+                            <div class="card" style="background-color:#e6eef7;padding:20px">
+                                <div class="row align-items-center">
+                                    <div class="col-7" align="left">
+                                        <h6 class="text-tickets-head">Seminar Nasional</h6>
+                                        <p class="text-tickets-desc">8 - 9 October 2022<br>Registration Status :
+                                            <span class="text-tickets-status status-orange">Waiting for Confirmation</span>
+                                        </p>
                                     </div>
                                 </div>
                             </div>
-                        @elseif ($semnas->status_pembayaran === '1')
-                            <div class="row" align="center" style="padding:5px 0 5px 0">
-                                <div class="col">
-                                    <div class="card" style="background-color:#e6eef7;padding:20px">
-                                        <div class="row align-items-center">
-                                            <div class="col-7" align="left">
-                                                <h6 class="text-tickets-head">Seminar Nasional</h6>
-                                                <p class="text-tickets-desc">8 - 9 October 2022<br>Registration Status :
-                                                    <span class="text-tickets-status status-orange">Waiting for Confirmation</span>
-                                                </p>
-                                            </div>
-                                        </div>
+                        </div>
+                    </div>
+                    @elseif ($semnas->status_pembayaran === '2')
+                    <div class="row" align="center" style="padding:5px 0 5px 0">
+                        <div class="col">
+                            <div class="card" style="background-color:#e6eef7;padding:20px">
+                                <div class="row align-items-center">
+                                    <div class="col-7" align="left">
+                                        <h6 class="text-tickets-head">Seminar Nasional Day 1</h6>
+                                        <p class="text-tickets-desc">Saturday, 8 October 2022<br>Registration Status :
+                                            <span class="text-tickets-status status-green">Confirmed</span>
+                                        </p>
                                     </div>
+                                    <?php
+                                    // SET TANGGAL ACARA SEMNAS DAY 1
+                                    $semnas_day1_date_start = Carbon::create(2022, 10, 8, 10, 00, 00, 'Asia/Jakarta');
+                                    $semnas_day1_date_end = Carbon::create(2022, 10, 8, 13, 00, 00, 'Asia/Jakarta');
+
+                                    $semnas_day1_date_start->toDateTimeString();
+                                    $semnas_day1_date_end->toDateTimeString();
+
+                                    $now = Carbon::now('Asia/Jakarta');
+                                    $now->toDateTimeString();
+
+                                    if ($now->greaterThan($semnas_day1_date_start) && $now->lessThan($semnas_day1_date_end)) {
+                                    ?>
+                                        <div class="col">
+                                            <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 147px;height: 48px;">
+                                                <a class="ifest-btn-primary-dark-bg-text" href="">Link Zoom</a>
+                                            </button>
+                                        </div>
+                                    <?php
+                                    } elseif ($now->lessThan($semnas_day1_date_start) || $now->greaterThan($semnas_day1_date_end)) {
+                                    ?>
+                                        <div class="col">
+                                            <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 147px;height: 48px;" disabled>
+                                                <a class="ifest-btn-primary-dark-bg-text" href="">Link Zoom</a>
+                                            </button>
+                                        </div>
+                                    <?php
+                                    }
+                                    ?>
                                 </div>
                             </div>
-                        @elseif ($semnas->status_pembayaran === '2')
-                            <div class="row" align="center" style="padding:5px 0 5px 0">
-                                <div class="col">
-                                    <div class="card" style="background-color:#e6eef7;padding:20px">
-                                        <div class="row align-items-center">
-                                            <div class="col-7" align="left">
-                                                <h6 class="text-tickets-head">Seminar Nasional Day 1</h6>
-                                                <p class="text-tickets-desc">Saturday, 8 October 2022<br>Registration Status :
-                                                    <span class="text-tickets-status status-green">Confirmed</span>
-                                                </p>
-                                            </div>
-                                            <?php
-                                            // SET TANGGAL ACARA SEMNAS DAY 1
-                                            $semnas_day1_date_start = Carbon::create(2022, 10, 8, 10, 00, 00, 'Asia/Jakarta');
-                                            $semnas_day1_date_end = Carbon::create(2022, 10, 8, 13, 00, 00, 'Asia/Jakarta');
-
-                                            $semnas_day1_date_start->toDateTimeString();
-                                            $semnas_day1_date_end->toDateTimeString();
-
-                                            $now = Carbon::now('Asia/Jakarta');
-                                            $now->toDateTimeString();
-
-                                            if ($now->greaterThan($semnas_day1_date_start) && $now->lessThan($semnas_day1_date_end)) {
-                                            ?>
-                                                <div class="col">
-                                                    <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 147px;height: 48px;">
-                                                        <a class="ifest-btn-primary-dark-bg-text" href="">Link Zoom</a>
-                                                    </button>
-                                                </div>
-                                            <?php
-                                            } elseif ($now->lessThan($semnas_day1_date_start) || $now->greaterThan($semnas_day1_date_end)) {
-                                            ?>
-                                                <div class="col">
-                                                    <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 147px;height: 48px;" disabled>
-                                                        <a class="ifest-btn-primary-dark-bg-text" href="">Link Zoom</a>
-                                                    </button>
-                                                </div>
-                                            <?php
-                                            }
-                                            ?>
-                                        </div>
+                        </div>
+                    </div>
+                    <div class="row" align="center" style="padding:5px 0 5px 0">
+                        <div class="col">
+                            <div class="card" style="background-color:#e6eef7;padding:20px">
+                                <div class="row align-items-center">
+                                    <div class="col-7" align="left">
+                                        <h6 class="text-tickets-head">Seminar Nasional Day 2</h6>
+                                        <p class="text-tickets-desc">Sunday, 9 October 2022<br>Registration Status :
+                                            <span class="text-tickets-status status-green">Confirmed</span>
+                                        </p>
                                     </div>
+                                    <?php
+                                    // SET TANGGAL ACARA SEMNAS DAY 2
+                                    $semnas_day2_date_start = Carbon::create(2022, 10, 9, 10, 00, 00, 'Asia/Jakarta');
+                                    $semnas_day2_date_end = Carbon::create(2022, 10, 9, 12, 00, 00, 'Asia/Jakarta');
+
+                                    $semnas_day2_date_start->toDateTimeString();
+                                    $semnas_day2_date_end->toDateTimeString();
+
+                                    $now = Carbon::now('Asia/Jakarta');
+                                    $now->toDateTimeString();
+
+                                    if ($now->greaterThan($semnas_day2_date_start) && $now->lessThan($semnas_day2_date_end)) {
+                                    ?>
+                                        <div class="col">
+                                            <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 147px;height: 48px;">
+                                                <a class="ifest-btn-primary-dark-bg-text" href="">Link Zoom</a>
+                                            </button>
+                                        </div>
+                                    <?php
+                                    } elseif ($now->lessThan($semnas_day2_date_start) || $now->greaterThan($semnas_day2_date_end)) {
+                                    ?>
+                                        <div class="col">
+                                            <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 147px;height: 48px;" disabled>
+                                                <a class="ifest-btn-primary-dark-bg-text" href="">Link Zoom</a>
+                                            </button>
+                                        </div>
+                                    <?php
+                                    }
+                                    ?>
                                 </div>
                             </div>
-                            <div class="row" align="center" style="padding:5px 0 5px 0">
-                                <div class="col">
-                                    <div class="card" style="background-color:#e6eef7;padding:20px">
-                                        <div class="row align-items-center">
-                                            <div class="col-7" align="left">
-                                                <h6 class="text-tickets-head">Seminar Nasional Day 2</h6>
-                                                <p class="text-tickets-desc">Sunday, 9 October 2022<br>Registration Status :
-                                                    <span class="text-tickets-status status-green">Confirmed</span>
-                                                </p>
-                                            </div>
-                                            <?php
-                                            // SET TANGGAL ACARA SEMNAS DAY 2
-                                            $semnas_day2_date_start = Carbon::create(2022, 10, 9, 10, 00, 00, 'Asia/Jakarta');
-                                            $semnas_day2_date_end = Carbon::create(2022, 10, 9, 12, 00, 00, 'Asia/Jakarta');
+                        </div>
+                    </div>
 
-                                            $semnas_day2_date_start->toDateTimeString();
-                                            $semnas_day2_date_end->toDateTimeString();
-
-                                            $now = Carbon::now('Asia/Jakarta');
-                                            $now->toDateTimeString();
-
-                                            if ($now->greaterThan($semnas_day2_date_start) && $now->lessThan($semnas_day2_date_end)) {
-                                            ?>
-                                                <div class="col">
-                                                    <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 147px;height: 48px;">
-                                                        <a class="ifest-btn-primary-dark-bg-text" href="">Link Zoom</a>
-                                                    </button>
-                                                </div>
-                                            <?php
-                                            } elseif ($now->lessThan($semnas_day2_date_start) || $now->greaterThan($semnas_day2_date_end)) {
-                                            ?>
-                                                <div class="col">
-                                                    <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 147px;height: 48px;" disabled>
-                                                        <a class="ifest-btn-primary-dark-bg-text" href="">Link Zoom</a>
-                                                    </button>
-                                                </div>
-                                            <?php
-                                            }
-                                            ?>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                        @endif
+                    @endif
                     @elseif ($status->semnas_status === '0')
                     @endif
 

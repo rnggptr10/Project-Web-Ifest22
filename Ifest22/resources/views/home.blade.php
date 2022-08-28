@@ -39,7 +39,7 @@
                 <p>seconds</p>
             </div>
         </div>
-        <p class="title-cd" style="margin:0">Startup Talk</p>
+        <p class="title-cd" style="margin:0">Technopreneur</p>
         <!-- <h3>International Conference</h3> -->
         <div class="conference-btn">
 
@@ -75,7 +75,7 @@
             </div>
             <div class="col-sm-4">
                 <div class="title-countdown">
-                    <p style="margin:0">Startup Talk</p>
+                    <p style="margin:0">Technopreneur</p>
                 </div>
             </div>
             <div class="col-sm-4">
@@ -420,172 +420,170 @@
 
 <div>
     <div data-aos="fade-up" data-aos-duration="1000" style="margin-bottom:30px">
-            <h1 class="title-box">Exclusive Cloud<br>Hosting Partner</h1>
-            <div class="sponsored-box">
-                <div class="row justify-content-center">
-                    <a href="https://www.dewaweb.com" target="_blank">
-                        <img src="{{asset('img/logo/sponsor/collab_dewaweb_white.png')}}" alt="Dewaweb" class="logo-sponsor-xl" style="height:160px">
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div data-aos="fade-up" data-aos-duration="1000" style="margin-bottom:60px">
-        <h1 class="title-box">Sponsored by</h1>
+        <h1 class="title-box">Exclusive Cloud<br>Hosting Partner</h1>
         <div class="sponsored-box">
-            <div class="row justify-content-center align-items-center">
-                <!-- One of three columns -->
+            <div class="row justify-content-center">
                 <a href="https://www.dewaweb.com" target="_blank">
                     <img src="{{asset('img/logo/sponsor/collab_dewaweb_white.png')}}" alt="Dewaweb" class="logo-sponsor-xl" style="height:160px">
                 </a>
-                <a href="https://dataacademy.co.id/id/" target="_blank">
-                    <img src="{{asset('img/logo/sponsor/collab_cda_nobg.png')}}" alt="Cybertrend Data Academy" class="logo-sponsor-xl" style="height:90px">
-                </a>
-            </div>
-        </div>
-    </div>
-    <div data-aos="fade-up" data-aos-duration="1000" style="margin-bottom:60px">
-        <h1 class="title-box">Supported by</h1>
-        <div class="sponsored-box">
-            <div class="row justify-content-center align-items-center">
-                <!-- One of three columns -->
-                <a href="https://www.dewaweb.com" target="_blank">
-                    <img src="{{asset('img/logo/sponsor/collab_dewaweb_white.png')}}" alt="Dewaweb" class="logo-sponsor-xl" style="height:160px">
-                </a>
-                <a href="https://dataacademy.co.id/id/" target="_blank">
-                    <img src="{{asset('img/logo/sponsor/collab_cda_nobg.png')}}" alt="Cybertrend Data Academy" class="logo-sponsor-xl" style="height:90px">
-                </a>
-                <a href="https://petircysec.com/" target="_blank">
-                    <img src="{{asset('img/logo/sponsor/collab_petir_no_bg.png')}}" alt="Petir Cyber Security" class="logo-sponsor-m" style="height:90px">
-                </a>
-                <a>
-                    <img src="{{asset('img/logo/sponsor/collab_arutala.png')}}" alt="Arutala" class="logo-sponsor-m" style="height:70px">
-                </a>
-                <a>
-                    <img src="{{asset('img/logo/sponsor/collab_binar.png')}}" alt="Binar Academy" class="logo-sponsor-m" style="height:55px">
-                </a>
-                <a>
-                    <img src="{{asset('img/logo/sponsor/collab_talent-growth.jpeg')}}" alt="Talent Growth" class="logo-sponsor-m" style="height:35px">
-                </a>
-                <a>
-                    <img src="{{asset('img/logo/sponsor/collab_itbox.png')}}" alt="ITBOX" class="logo-sponsor-m" style="height:70px">
-                </a>
-                <a href="https://coding.id/" target="_blank">
-                    <img src="{{asset('img/logo/sponsor/coding-01.png')}}" alt="CODING.ID" class="logo-sponsor-m" style="height:70px">
-                </a>
-                <a>
-                    <img src="{{asset('img/logo/sponsor/collab_cube_studio.png')}}" alt="Cube Studio" class="logo-sponsor-m" style="height:70px">
-                </a>
-                <a>
-                    <img src="{{asset('img/logo/sponsor/collab_jagel.png')}}" alt="Jagel" class="logo-sponsor-m" style="height:90px">
-                </a>
-                <a>
-                    <img src="{{asset('img/logo/sponsor/collab_atourin.png')}}" alt="Atourin" class="logo-sponsor-m" style="height:55px">
-                </a>
-                <a>
-                    <img src="{{asset('img/logo/sponsor/collab_spin.png')}}" alt="Spindonesia" class="logo-sponsor-m" style="height:55px">
-                </a>
-            </div>
-        </div>
-    </div>
-    <div data-aos="fade-up" data-aos-duration="1000">
-        <h1 class="title-box">Media Partner</h1>
-        <div class="medpart-box">
-            <div class="row justify-content-center align-items-center">
-                <a href="https://coding.id/" target="_blank">
-                    <img src="{{asset('img/logo/medpart/medpart_coding_id.png')}}" alt="CODING.ID" class="logo-medpart" style="height:70px">
-                </a>
-                <a>
-                    <img src="{{asset('img/logo/medpart/medpart_berita_lomba.png')}}" alt="Berita Lomba" class="logo-medpart" style="height:90px">
-                </a>
-                <a>
-                    <img src="{{asset('img/logo/medpart/medpart_event_apaaja.png')}}" alt="Event Apaaja" class="logo-medpart" style="height:90px">
-                </a>
-                <a>
-                    <img src="{{asset('img/logo/medpart/medpart_event_kampus.png')}}" alt="Event Kampus" class="logo-medpart" style="height:90px">
-                </a>
-                <a>
-                    <img src="{{asset('img/logo/medpart/medpart_hmj_if_unla.png')}}" alt="HMJ IF UNLA" class="logo-medpart" style="height:90px">
-                </a>
-                <a>
-                    <img src="{{asset('img/logo/medpart/medpart_mading_event_cerah.png')}}" alt="Event Cerah" class="logo-medpart" style="height:90px">
-                </a>
-                <a>
-                    <img src="{{asset('img/logo/medpart/medpart_webinar.png')}}" alt="Webinar" class="logo-medpart" style="height:90px">
-                </a>
-                <a>
-                    <img src="{{asset('img/logo/medpart/medpart_HMSE_ITTP.png')}}" alt="HMSE ITTP" class="logo-medpart" style="height:90px">
-                </a>
-                <a>
-                    <img src="{{asset('img/logo/medpart/medpart_uin.jpg')}}" alt="UIN Sunan Ampel" class="logo-medpart" style="height:90px">
-                </a>
-            </div>
-        </div>
-    </div>
-    <div data-aos="fade-up" data-aos-duration="1000">
-        <h1 class="title-box">Media Partner</h1>
-        <div class="medpart-box">
-            <div class="row justify-content-center align-items-center">
-                <a href="https://coding.id/" target="_blank">
-                    <img src="{{asset('img/logo/medpart/medpart_coding_id.png')}}" alt="CODING.ID" class="logo-medpart" style="height:90px">
-                </a>
-                <a>
-                    <img src="{{asset('img/logo/medpart/medpart_berita_lomba.png')}}" alt="Berita Lomba" class="logo-medpart" style="height:90px">
-                </a>
-                <a>
-                    <img src="{{asset('img/logo/medpart/medpart_event_apaaja.png')}}" alt="Event Apaaja" class="logo-medpart" style="height:90px">
-                </a>
-                <a>
-                    <img src="{{asset('img/logo/medpart/medpart_event_kampus.png')}}" alt="Event Kampus" class="logo-medpart" style="height:90px">
-                </a>
-                <a>
-                    <img src="{{asset('img/logo/medpart/medpart_hmj_if_unla.png')}}" alt="HMJ IF UNLA" class="logo-medpart" style="height:90px">
-                </a>
-                <a>
-                    <img src="{{asset('img/logo/medpart/medpart_mading_event_cerah.png')}}" alt="Event Cerah" class="logo-medpart" style="height:90px">
-                </a>
-                <a>
-                    <img src="{{asset('img/logo/medpart/medpart_webinar.png')}}" alt="Webinar" class="logo-medpart" style="height:90px">
-                </a>
-                <a>
-                    <img src="{{asset('img/logo/medpart/medpart_HMSE_ITTP.png')}}" alt="HMSE ITTP" class="logo-medpart" style="height:90px">
-                </a>
-                <a>
-                    <img src="{{asset('img/logo/medpart/medpart_uin.jpg')}}" alt="UIN Sunan Ampel" class="logo-medpart" style="height:90px">
-                </a>
-            </div>
-        </div>
-    </div>
-    <div data-aos="fade-up" data-aos-duration="1000">
-        <h1 class="title-box">Data Academy</h1>
-        <div class="medpart-box" style="background: none;padding:0">
-            <div class="row justify-content-center align-items-center">
-                <video controls style="width:70%; border-radius:10px">
-                    <source src=" {{ asset('video/DataAcademy.mp4') }}" />
-                </video>
-            </div>
-        </div>
-    </div>
-    <div data-aos="fade-up" data-aos-duration="1000">
-        <h1 class="title-box">Dewaweb</h1>
-        <div class="medpart-box" style="background: none;padding:0">
-            <div class="row justify-content-center align-items-center">
-                <video controls style="width:70%; border-radius:10px">
-                    <source src="{{ asset('video/Dewaweb.mp4') }}" />
-                </video>
-            </div>
-        </div>
-    </div>
-    <div data-aos="fade-up" data-aos-duration="1000">
-        <div class="row align-items-center justify-content-center" style="margin-bottom:50px">
-            <div class="col-5" align="center">
-                <h1 class="title-box" style="font-size:16px; margin-bottom:10px">Check This Article from Dewaweb!</h1>
-                <button class="article-button"><a style="color:white; text-decoration:none;" href="https://www.dewaweb.com/blog/cara-membuat-web-portofolio/" target="_blank">7 Cara Praktis Membuat Web Portofolio Sendiri, Tanpa Koding!</a></button>
             </div>
         </div>
     </div>
 </div>
+<div data-aos="fade-up" data-aos-duration="1000" style="margin-bottom:60px">
+    <h1 class="title-box">Sponsored by</h1>
+    <div class="sponsored-box">
+        <div class="row justify-content-center align-items-center">
+            <!-- One of three columns -->
+            <a href="https://www.dewaweb.com" target="_blank">
+                <img src="{{asset('img/logo/sponsor/collab_dewaweb_white.png')}}" alt="Dewaweb" class="logo-sponsor-xl" style="height:160px">
+            </a>
+            <a href="https://dataacademy.co.id/id/" target="_blank">
+                <img src="{{asset('img/logo/sponsor/collab_cda_nobg.png')}}" alt="Cybertrend Data Academy" class="logo-sponsor-xl" style="height:90px">
+            </a>
+        </div>
+    </div>
+</div>
+<div data-aos="fade-up" data-aos-duration="1000" style="margin-bottom:60px">
+    <h1 class="title-box">Supported by</h1>
+    <div class="sponsored-box">
+        <div class="row justify-content-center align-items-center">
+            <!-- One of three columns -->
+            <a href="https://www.dewaweb.com" target="_blank">
+                <img src="{{asset('img/logo/sponsor/collab_dewaweb_white.png')}}" alt="Dewaweb" class="logo-sponsor-xl" style="height:160px">
+            </a>
+            <a href="https://dataacademy.co.id/id/" target="_blank">
+                <img src="{{asset('img/logo/sponsor/collab_cda_nobg.png')}}" alt="Cybertrend Data Academy" class="logo-sponsor-xl" style="height:90px">
+            </a>
+            <a href="https://petircysec.com/" target="_blank">
+                <img src="{{asset('img/logo/sponsor/collab_petir_no_bg.png')}}" alt="Petir Cyber Security" class="logo-sponsor-m" style="height:90px">
+            </a>
+            <a>
+                <img src="{{asset('img/logo/sponsor/collab_arutala.png')}}" alt="Arutala" class="logo-sponsor-m" style="height:70px">
+            </a>
+            <a>
+                <img src="{{asset('img/logo/sponsor/collab_binar.png')}}" alt="Binar Academy" class="logo-sponsor-m" style="height:55px">
+            </a>
+            <a>
+                <img src="{{asset('img/logo/sponsor/collab_talent-growth.jpeg')}}" alt="Talent Growth" class="logo-sponsor-m" style="height:35px">
+            </a>
+            <a>
+                <img src="{{asset('img/logo/sponsor/collab_itbox.png')}}" alt="ITBOX" class="logo-sponsor-m" style="height:70px">
+            </a>
+            <a href="https://coding.id/" target="_blank">
+                <img src="{{asset('img/logo/sponsor/coding-01.png')}}" alt="CODING.ID" class="logo-sponsor-m" style="height:70px">
+            </a>
+            <a>
+                <img src="{{asset('img/logo/sponsor/collab_cube_studio.png')}}" alt="Cube Studio" class="logo-sponsor-m" style="height:70px">
+            </a>
+            <a>
+                <img src="{{asset('img/logo/sponsor/collab_jagel.png')}}" alt="Jagel" class="logo-sponsor-m" style="height:90px">
+            </a>
+            <a>
+                <img src="{{asset('img/logo/sponsor/collab_atourin.png')}}" alt="Atourin" class="logo-sponsor-m" style="height:55px">
+            </a>
+            <a>
+                <img src="{{asset('img/logo/sponsor/collab_spin.png')}}" alt="Spindonesia" class="logo-sponsor-m" style="height:55px">
+            </a>
+        </div>
+    </div>
+</div>
+<div data-aos="fade-up" data-aos-duration="1000">
+    <h1 class="title-box">Media Partner</h1>
+    <div class="medpart-box">
+        <div class="row justify-content-center align-items-center">
+            <a href="https://coding.id/" target="_blank">
+                <img src="{{asset('img/logo/medpart/medpart_coding_id.png')}}" alt="CODING.ID" class="logo-medpart" style="height:70px">
+            </a>
+            <a>
+                <img src="{{asset('img/logo/medpart/medpart_berita_lomba.png')}}" alt="Berita Lomba" class="logo-medpart" style="height:90px">
+            </a>
+            <a>
+                <img src="{{asset('img/logo/medpart/medpart_event_apaaja.png')}}" alt="Event Apaaja" class="logo-medpart" style="height:90px">
+            </a>
+            <a>
+                <img src="{{asset('img/logo/medpart/medpart_event_kampus.png')}}" alt="Event Kampus" class="logo-medpart" style="height:90px">
+            </a>
+            <a>
+                <img src="{{asset('img/logo/medpart/medpart_hmj_if_unla.png')}}" alt="HMJ IF UNLA" class="logo-medpart" style="height:90px">
+            </a>
+            <a>
+                <img src="{{asset('img/logo/medpart/medpart_mading_event_cerah.png')}}" alt="Event Cerah" class="logo-medpart" style="height:90px">
+            </a>
+            <a>
+                <img src="{{asset('img/logo/medpart/medpart_webinar.png')}}" alt="Webinar" class="logo-medpart" style="height:90px">
+            </a>
+            <a>
+                <img src="{{asset('img/logo/medpart/medpart_HMSE_ITTP.png')}}" alt="HMSE ITTP" class="logo-medpart" style="height:90px">
+            </a>
+            <a>
+                <img src="{{asset('img/logo/medpart/medpart_uin.jpg')}}" alt="UIN Sunan Ampel" class="logo-medpart" style="height:90px">
+            </a>
+        </div>
+    </div>
+</div>
+<div data-aos="fade-up" data-aos-duration="1000">
+    <h1 class="title-box">Media Partner</h1>
+    <div class="medpart-box">
+        <div class="row justify-content-center align-items-center">
+            <a href="https://coding.id/" target="_blank">
+                <img src="{{asset('img/logo/medpart/medpart_coding_id.png')}}" alt="CODING.ID" class="logo-medpart" style="height:90px">
+            </a>
+            <a>
+                <img src="{{asset('img/logo/medpart/medpart_berita_lomba.png')}}" alt="Berita Lomba" class="logo-medpart" style="height:90px">
+            </a>
+            <a>
+                <img src="{{asset('img/logo/medpart/medpart_event_apaaja.png')}}" alt="Event Apaaja" class="logo-medpart" style="height:90px">
+            </a>
+            <a>
+                <img src="{{asset('img/logo/medpart/medpart_event_kampus.png')}}" alt="Event Kampus" class="logo-medpart" style="height:90px">
+            </a>
+            <a>
+                <img src="{{asset('img/logo/medpart/medpart_hmj_if_unla.png')}}" alt="HMJ IF UNLA" class="logo-medpart" style="height:90px">
+            </a>
+            <a>
+                <img src="{{asset('img/logo/medpart/medpart_mading_event_cerah.png')}}" alt="Event Cerah" class="logo-medpart" style="height:90px">
+            </a>
+            <a>
+                <img src="{{asset('img/logo/medpart/medpart_webinar.png')}}" alt="Webinar" class="logo-medpart" style="height:90px">
+            </a>
+            <a>
+                <img src="{{asset('img/logo/medpart/medpart_HMSE_ITTP.png')}}" alt="HMSE ITTP" class="logo-medpart" style="height:90px">
+            </a>
+            <a>
+                <img src="{{asset('img/logo/medpart/medpart_uin.jpg')}}" alt="UIN Sunan Ampel" class="logo-medpart" style="height:90px">
+            </a>
+        </div>
+    </div>
+</div>
+<div data-aos="fade-up" data-aos-duration="1000">
+    <h1 class="title-box">Data Academy</h1>
+    <div class="medpart-box" style="background: none;padding:0">
+        <div class="row justify-content-center align-items-center">
+            <video controls style="width:70%; border-radius:10px">
+                <source src=" {{ asset('video/DataAcademy.mp4') }}" />
+            </video>
+        </div>
+    </div>
+</div>
+<div data-aos="fade-up" data-aos-duration="1000">
+    <h1 class="title-box">Dewaweb</h1>
+    <div class="medpart-box" style="background: none;padding:0">
+        <div class="row justify-content-center align-items-center">
+            <video controls style="width:70%; border-radius:10px">
+                <source src="{{ asset('video/Dewaweb.mp4') }}" />
+            </video>
+        </div>
+    </div>
+</div>
+<div data-aos="fade-up" data-aos-duration="1000">
+    <h1 class="title-box" style="font-size:16px;">Check This Article from Dewaweb!</h1>
+    <div class=" medpart-box" style="background: none;padding:0" align="center">
+        <button class="article-button"><a style="color:white; text-decoration:none;" href="https://www.dewaweb.com/blog/cara-membuat-web-portofolio/" target="_blank">7 Cara Praktis Membuat Web Portofolio Sendiri, Tanpa Koding!</a></button>
+    </div>
+</div>
 <script src="{{ asset('js/particles.js') }}"></script>
+<script src="{{ asset('js/countdown.js') }}"></script>
 <script src="{{ asset('js/bg.js') }}"></script>
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>
