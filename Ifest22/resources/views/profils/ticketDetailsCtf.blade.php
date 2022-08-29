@@ -149,11 +149,7 @@
                 </p>
             </div>
             <div class="col-4" align="center" style="padding:0">
-                <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 120px;height: 48px;" <?php
-                                                                                                                            if ($now->greaterThan($ctf_comp_date_start) && $now->lessThan($ctf_comp_date_end)) {
-                                                                                                                            } elseif ($now->lessThan($ctf_comp_date_start) || $now->greaterThan($ctf_comp_date_end)) {
-                                                                                                                                echo ('disabled');
-                                                                                                                            } ?>>
+                <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 120px;height: 48px;">
                     <a class="ifest-btn-primary-dark-bg-text" target="_blank" href="https://ctf.ifestunpad.id">Link CTFd</a>
                 </button>
             </div>
