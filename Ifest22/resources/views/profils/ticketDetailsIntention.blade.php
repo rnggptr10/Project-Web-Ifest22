@@ -139,9 +139,15 @@
                 </div>
             @endif
             <?php
-            } elseif ($now->lessThan($intention_regist_date_start) || $now->greaterThan($intention_regist_date_end)) {
-                // BUTTON RE-SUBMIT HILANG (KALAU UDAH LEWAT TANGGAL REGIST)
-            } ?>
+            } elseif ($now->lessThan($intention_regist_date_start) || $now->greaterThan($intention_regist_date_end)) { ?>
+                @if ($ctf->status_pembayaran === '2')
+                <div class="col-4" align="center" style="padding:0">
+                    <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg" style="width: 120px;height: 60px;">
+                        <a class="ifest-btn-primary-dark-bg-text" target="_blank" href="https://discord.gg/F2eVM23bQ8">Discord<br>IFest 2022</a>
+                    </button>
+                </div>
+                @endif
+            <?php } ?>
         </div>
         @if ($intention->status_pembayaran === '2')
             <div class="row align-items-center" align="left" style="padding:20px">

@@ -42,7 +42,7 @@
 <div class="container-fluid">
     <div class="row justify-content-center" style="padding-bottom: 20px;">
         <div data-aos="fade-up" data-aos-duration="1000">
-            <div class="ipod-box" style="margin-top: 50px; margin-bottom: 30px;">
+            <div class="ipod-box" style="margin-top: 50px; margin-bottom: 30px; height:max-content">
                 <iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/2iresOUzaXmMVTvd7EXWqM?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
             </div>
             <!-- <div class="ipod-box" style="margin-bottom: 30px;">

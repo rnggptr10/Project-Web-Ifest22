@@ -38,7 +38,7 @@ Technopreneur is a webinar and workshop that provides training & development fac
 @endsection
 
 @section('techno_speakers_2')
-<img class="card-img-top size-img-top-speakers" src="{{ asset('img/event/techno/speakers/speaker_2.png') }}" alt="Yubi Vebiona Hartono">
+<img class="card-img-top size-img-top-speakers" src="{{ asset('img/event/techno/speakers/speaker_2_2.jpg') }}" alt="Yubi Vebiona Hartono">
 <div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
     <div class="col-10" style="line-height: 5px;">
         <h5 class="text-photo-card-name">Yubi Vebiona Hartono</h5>
@@ -57,6 +57,21 @@ Technopreneur is a webinar and workshop that provides training & development fac
         <p class="text-photo-card-position" style="margin-bottom:24px">Chief Executive Officer at Jagel</p>
         <a href="https://id.linkedin.com/in/danny-liong-95b3a8206#:~:text=Danny%20Liong%20%2D%20Chief%20Executive%20Officer%20%2D%20Jagel%20%7C%20LinkedIn" target="_blank"><img class="logo-linkedin" src="{{ URL::asset('icon/linkedin.svg') }}" alt="linkedin" style="margin-top: 20px;"></a>
     </div>
+</div>
+@endsection
+
+
+@section('techno_speakers_4')
+<img class="card-img-top size-img-top-speakers" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg" alt="Speakers-1">
+<div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
+    <div class="col-7" style="line-height: 5px;">
+        <h5 class="text-photo-card-name" style="margin-top:58.5px; margin-bottom:58.5px">To Be Announced Soon!</h5>
+        <!-- <h5 class="text-photo-card-name">Mentor6</h5>
+        <p class="text-photo-card-position">CEO</p> -->
+    </div>
+    <!-- <div class="col-3">
+        <a href=""><img class="logo-linkedin" src="{{ URL::asset('icon/linkedin.svg') }}" alt="linkedin"></a>
+    </div> -->
 </div>
 @endsection
 
@@ -144,25 +159,50 @@ Technopreneur is a webinar and workshop that provides training & development fac
 
 <!-- TEMPLATE BODY -->
 @section('event_detail')
-<div id="Speaker1" data-aos="fade-down" data-aos-duration="1000" class="row align-items-center" align="center" style="padding-top: 30px;padding-bottom: 30px;">
-    <h1 class="text-event-sub-title">Our Seminar Speakers</h1>
-    <div id="technoSpeakers" class="row justify-content-center" style="padding-top: 30px; position:relative">
-        <div class="row justify-content-center">
-            <div class="col-4">
-                <div class="card ifest-photo-card" style="border: 0; width:max-content">
-                    @yield('techno_speakers_1')
+<div id="Speaker1" data-aos="fade-down" data-aos-duration="1000" align="center" style="padding-top: 30px;padding-bottom: 30px;">
+    <h1 class="text-event-sub-title">Our Workshop Speakers</h1>
+    <div id="technoSpeakers" class="row justify-content-center carousel slide" data-ride="carousel" style="padding-top: 30px; position:relative">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="row justify-content-center">
+                    <div class="col-4">
+                        <div class="card ifest-photo-card" style="border: 0; width:max-content">
+                            @yield('techno_speakers_1')
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card ifest-photo-card" style="border: 0; width:max-content">
+                            @yield('techno_speakers_2')
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="col-4">
-                <div class="card ifest-photo-card" style="border: 0; width:max-content">
-                    @yield('techno_speakers_2')
+            <div class="carousel-item">
+                <div class="row justify-content-center">
+                    <div class="col-4">
+                        <div class="card ifest-photo-card" style="border: 0; width:max-content">
+                            @yield('techno_speakers_3')
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card ifest-photo-card" style="border: 0; width:max-content">
+                            @yield('techno_speakers_4')
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="col-4">
-                <div class="card ifest-photo-card" style="border: 0; width:max-content">
-                    @yield('techno_speakers_3')
-                </div>
-            </div>
+        </div>
+    </div>
+    <div class="row justify-content-center" style="padding-top: 30px;">
+        <div class="col-1">
+            <a class="carousel-control-prev" href="#technoSpeakers" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#technoSpeakers" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
         </div>
     </div>
 </div>
