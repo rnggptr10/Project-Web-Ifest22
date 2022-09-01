@@ -88,17 +88,17 @@
 
                     // SET TANGGAL UPLOAD PROPOSAL
                     $techno_ws_proposal_date_start = Carbon::create(2022, 7, 24, 00, 00, 01, 'Asia/Jakarta');
-                    $techno_ws_proposal_date_end = Carbon::create(2022, 8, 31, 23, 59, 59, 'Asia/Jakarta');
+                    $techno_ws_proposal_date_end = Carbon::create(2022, 9, 8, 23, 59, 59, 'Asia/Jakarta');
                     $techno_ws_proposal_date_start->toDateTimeString(); 
                     $techno_ws_proposal_date_end->toDateTimeString(); 
 
                     // SET TANGGAL PENGUMUMAN SELECTED TEAM
-                    $techno_ws_announce_date_start = Carbon::create(2022, 8, 31, 00, 00, 01, 'Asia/Jakarta');
+                    $techno_ws_announce_date_start = Carbon::create(2022, 9, 9, 00, 00, 01, 'Asia/Jakarta');
                     $techno_ws_announce_date_start->toDateTimeString(); 
 
                     // SET TANGGAL SUBMIT PAYMENT
-                    $techno_ws_payment_date_start = Carbon::create(2022, 8, 31, 00, 00, 01, 'Asia/Jakarta');
-                    $techno_ws_payment_date_end = Carbon::create(2022, 9, 7, 23, 59, 59, 'Asia/Jakarta');
+                    $techno_ws_payment_date_start = Carbon::create(2022, 9, 9, 00, 00, 01, 'Asia/Jakarta');
+                    $techno_ws_payment_date_end = Carbon::create(2022, 9, 10, 23, 59, 59, 'Asia/Jakarta');
                     $techno_ws_payment_date_start->toDateTimeString(); 
                     $techno_ws_payment_date_end->toDateTimeString(); 
 

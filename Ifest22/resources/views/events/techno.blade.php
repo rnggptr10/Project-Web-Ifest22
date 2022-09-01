@@ -79,27 +79,22 @@ Technopreneur is a webinar and workshop that provides training & development fac
 @section('techno_mentor_1')
 <img class="card-img-top size-img-top-speakers" src="{{ asset('img/event/techno/mentors/mentor_1.png') }}" alt="Benarivo Putra">
 <div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
-    <div class="col-9" style="line-height: 5px;">
-        <h5 class="text-photo-card-name">Benarivo Putra</h5>
-        <p class="text-photo-card-position">Co-Founder & CEO of Atourin</p>
-    </div>
-    <div class="col-2" style="padding:0;" align="left">
+    <div class="col-10" style="line-height: 5px;">
+        <h5 class="text-photo-card-name" style="margin-top:32px">Benarivo Putra</h5>
+        <p class="text-photo-card-position" style="margin-bottom:32px">Co-Founder & CEO of Atourin</p>
         <a href="https://id.linkedin.com/in/benarivotp#:~:text=Benarivo%20Putra%20%2D%20Chief%20Executive%20Officer%20%2D%20Atourin%20%7C%20LinkedIn" target="_blank"><img class="logo-linkedin" src="{{ URL::asset('icon/linkedin.svg') }}" alt="linkedin"></a>
     </div>
 </div>
 @endsection
 
 @section('techno_mentor_2')
-<img class="card-img-top size-img-top-speakers" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg" alt="Speakers-1">
+<img class="card-img-top size-img-top-speakers" src="{{ asset('img/event/techno/mentors/mentor_2.png') }}" alt="Speakers-2">
 <div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
-    <div class="col-7" style="line-height: 5px;">
-        <h5 class="text-photo-card-name">To Be Announced Soon!</h5>
-        <!-- <h5 class="text-photo-card-name">Mentor4</h5>
-        <p class="text-photo-card-position">CEO</p> -->
+    <div class="col-10" style="line-height: 5px;">
+        <h5 class="text-photo-card-name">Nurillah Jamil Achmawati <br>Novel, S.AB., MBA</h5>
+        <p class="text-photo-card-position" style="margin-bottom:16px">Dosen Dept. Administrasi Bisnis, <br>Prodi Bisnis Logistik, Fisip Unpad.</p>
+        <a href="https://www.linkedin.com/in/nurillah-jamil-achmawati-novel-23183855/" target="_blank"><img class="logo-linkedin" src="{{ URL::asset('icon/linkedin.svg') }}" alt="linkedin"></a>
     </div>
-    <!-- <div class="col-3">
-        <a href=""><img class="logo-linkedin" src="{{ URL::asset('icon/linkedin.svg') }}" alt="linkedin"></a>
-    </div> -->
 </div>
 @endsection
 
@@ -107,7 +102,7 @@ Technopreneur is a webinar and workshop that provides training & development fac
 <img class="card-img-top size-img-top-speakers" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg" alt="Speakers-1">
 <div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
     <div class="col-7" style="line-height: 5px;">
-        <h5 class="text-photo-card-name">To Be Announced Soon!</h5>
+        <h5 class="text-photo-card-name" style="margin-top:56.5px; margin-bottom:56.5px">To Be Announced Soon!</h5>
         <!-- <h5 class="text-photo-card-name">Mentor5</h5>
         <p class="text-photo-card-position">CEO</p> -->
     </div>
@@ -121,7 +116,7 @@ Technopreneur is a webinar and workshop that provides training & development fac
 <img class="card-img-top size-img-top-speakers" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg" alt="Speakers-1">
 <div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
     <div class="col-7" style="line-height: 5px;">
-        <h5 class="text-photo-card-name">To Be Announced Soon!</h5>
+        <h5 class="text-photo-card-name" style="margin-top:56.5px; margin-bottom:56.5px">To Be Announced Soon!</h5>
         <!-- <h5 class="text-photo-card-name">Mentor6</h5>
         <p class="text-photo-card-position">CEO</p> -->
     </div>
@@ -247,6 +242,15 @@ Technopreneur is a webinar and workshop that provides training & development fac
                     <div class="col">
                         <div class="card ifest-photo-card size-img-speakers" style="border: 0;text-align:center;">
                             @yield('techno_speakers_3')
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="row justify-content-center">
+                    <div class="col">
+                        <div class="card ifest-photo-card size-img-speakers" style="border: 0;text-align:center;">
+                            @yield('techno_speakers_4')
                         </div>
                     </div>
                 </div>
@@ -378,7 +382,7 @@ Technopreneur is a webinar and workshop that provides training & development fac
             <ol class="ps-timeline">
                 <li style="width: 14.2%; padding-top:10px;">
                     <div class="ps-bot">
-                        <p style="font-size:12px;">24 July - 31 August 2022</p>
+                        <p style="font-size:12px;">24 July - 8 September 2022</p>
                         <p style="font-size:14px;">Registration</p>
                     </div>
                     <span class="ps-sp"></span>
@@ -459,7 +463,7 @@ Technopreneur is a webinar and workshop that provides training & development fac
                 <?php
                 // SET TANGGAL REGIST TECHNO SEMINAR & WORKSHOP
                 $techno_regist_start = Carbon::create(2022, 7, 24, 00, 00, 01, 'Asia/Jakarta');
-                $techno_regist_end = Carbon::create(2022, 8, 31, 23, 59, 59, 'Asia/Jakarta');
+                $techno_regist_end = Carbon::create(2022, 9, 8, 23, 59, 59, 'Asia/Jakarta');
                 $now = Carbon::now('Asia/Jakarta');
 
                 $techno_regist_start->toDateTimeString();
@@ -528,8 +532,8 @@ Technopreneur is a webinar and workshop that provides training & development fac
                 </div>
                 <div class="col-5">
                     <button type="button" class="btn btn-primary ifest-btn-primary-dark-bg">
-                        <a class="title-1 ifest-btn-primary-dark-bg-text" target="_blank" href="https://drive.google.com/file/d/1K7Z9eqiRE4rtYj3NLJqcm_IWrdoV5l5W/view?usp=sharing">Download</a>
-                        <a class="title-2 ifest-btn-primary-dark-bg-text" target="_blank" href="https://drive.google.com/file/d/1K7Z9eqiRE4rtYj3NLJqcm_IWrdoV5l5W/view?usp=sharing">
+                        <a class="title-1 ifest-btn-primary-dark-bg-text" target="_blank" href="https://bit.ly/GuideBookTechnopreneur22">Download</a>
+                        <a class="title-2 ifest-btn-primary-dark-bg-text" target="_blank" href="https://bit.ly/GuideBookTechnopreneur22">
                             <p style="margin: 0; font-size:10px">Download</p>
                         </a>
                     </button>
