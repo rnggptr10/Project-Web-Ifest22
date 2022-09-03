@@ -62,16 +62,13 @@ Technopreneur is a webinar and workshop that provides training & development fac
 
 
 @section('techno_speakers_4')
-<img class="card-img-top size-img-top-speakers" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg" alt="Speakers-1">
+<img class="card-img-top size-img-top-speakers" src="{{ asset('img/event/techno/speakers/speaker_4.jpg') }}" alt="Frank G J Silitonga">
 <div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
-    <div class="col-7" style="line-height: 5px;">
-        <h5 class="text-photo-card-name" style="margin-top:58.5px; margin-bottom:58.5px">To Be Announced Soon!</h5>
-        <!-- <h5 class="text-photo-card-name">Mentor6</h5>
-        <p class="text-photo-card-position">CEO</p> -->
+    <div class="col-10" style="line-height: 5px;">
+        <h5 class="text-photo-card-name" style="margin-top:24px">Frank G J Silitonga</h5>
+        <p class="text-photo-card-position" style="margin-bottom:24px">Startup Business Mentor</p>
+        <a href="https://www.linkedin.com/in/frank-gerard-jacobus-silitonga-7703a07/" target="_blank"><img class="logo-linkedin" src="{{ URL::asset('icon/linkedin.svg') }}" alt="linkedin" style="margin-top: 20px;"></a>
     </div>
-    <!-- <div class="col-3">
-        <a href=""><img class="logo-linkedin" src="{{ URL::asset('icon/linkedin.svg') }}" alt="linkedin"></a>
-    </div> -->
 </div>
 @endsection
 
@@ -88,7 +85,7 @@ Technopreneur is a webinar and workshop that provides training & development fac
 @endsection
 
 @section('techno_mentor_2')
-<img class="card-img-top size-img-top-speakers" src="{{ asset('img/event/techno/mentors/mentor_2.png') }}" alt="Speakers-2">
+<img class="card-img-top size-img-top-speakers" src="{{ asset('img/event/techno/mentors/mentor_2.png') }}" alt="Nurillah Jamil Achmawati Novel">
 <div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
     <div class="col-10" style="line-height: 5px;">
         <h5 class="text-photo-card-name">Nurillah Jamil Achmawati <br>Novel, S.AB., MBA</h5>
@@ -99,16 +96,13 @@ Technopreneur is a webinar and workshop that provides training & development fac
 @endsection
 
 @section('techno_mentor_3')
-<img class="card-img-top size-img-top-speakers" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg" alt="Speakers-1">
+<img class="card-img-top size-img-top-speakers" src="{{ asset('img/event/techno/mentors/mentor_3.jpg') }}" alt="Faishal Wahiduddin">
 <div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
-    <div class="col-7" style="line-height: 5px;">
-        <h5 class="text-photo-card-name" style="margin-top:56.5px; margin-bottom:56.5px">To Be Announced Soon!</h5>
-        <!-- <h5 class="text-photo-card-name">Mentor5</h5>
-        <p class="text-photo-card-position">CEO</p> -->
+    <div class="col-10" style="line-height: 5px;">
+        <h5 class="text-photo-card-name" style="margin-top:32px">Faishal Wahiduddin</h5>
+        <p class="text-photo-card-position" style="margin-bottom:32px">CEO DoCheck</p>
+        <a href="https://www.linkedin.com/in/faishalwahiduddin/" target="_blank"><img class="logo-linkedin" src="{{ URL::asset('icon/linkedin.svg') }}" alt="linkedin"></a>
     </div>
-    <!-- <div class="col-3">
-        <a href=""><img class="logo-linkedin" src="{{ URL::asset('icon/linkedin.svg') }}" alt="linkedin"></a>
-    </div> -->
 </div>
 @endsection
 
