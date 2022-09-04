@@ -474,6 +474,12 @@
             <a>
                 <img src="{{asset('img/logo/sponsor/collab_spin.png')}}" alt="Spindonesia" class="logo-sponsor-m" style="height:55px">
             </a>
+            <a>
+                <img src="{{asset('img/logo/sponsor/collab_oorange.png')}}" alt="Oorange" class="logo-sponsor-m" style="height:55px">
+            </a>
+            <a>
+                <img src="{{asset('img/logo/sponsor/collab_itsec.png')}}" alt="ITSEC" class="logo-sponsor-m" style="height:55px">
+            </a>
         </div>
     </div>
 </div>
@@ -535,6 +541,9 @@
     <h1 class="title-box" style="font-size:16px;">Check This Article from Dewaweb!</h1>
     <div class=" medpart-box" style="background: none;padding:0" align="center">
         <button class="article-button"><a style="color:white; text-decoration:none;" href="https://www.dewaweb.com/blog/cara-membuat-web-portofolio/" target="_blank">7 Cara Praktis Membuat Web Portofolio Sendiri, Tanpa Koding!</a></button>
+    </div>
+    <div class=" medpart-box" style="background: none;padding:0" align="center">
+        <button class="article-button"><a style="color:white; text-decoration:none;" href="https://www.dewaweb.com/blog/cara-membuat-website/" target="_blank">Cara Mudah Membuat Website Pertamamu (Tanpa Koding!)</a></button>
     </div>
 </div>
 
