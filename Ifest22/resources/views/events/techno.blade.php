@@ -107,16 +107,13 @@ Technopreneur is a webinar and workshop that provides training & development fac
 @endsection
 
 @section('techno_mentor_4')
-<img class="card-img-top size-img-top-speakers" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg" alt="Speakers-1">
+<img class="card-img-top size-img-top-speakers" src="{{ asset('img/event/techno/mentors/mentor_4.jpeg') }}" alt="Farisadri Fauzan">
 <div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
-    <div class="col-7" style="line-height: 5px;">
-        <h5 class="text-photo-card-name" style="margin-top:56.5px; margin-bottom:56.5px">To Be Announced Soon!</h5>
-        <!-- <h5 class="text-photo-card-name">Mentor6</h5>
-        <p class="text-photo-card-position">CEO</p> -->
+    <div class="col-10" style="line-height: 5px;">
+        <h5 class="text-photo-card-name" style="margin-top:20px">Farisadri Fauzan</h5>
+        <p class="text-photo-card-position" style="margin-bottom:20px">Assistant Professor at Universitas Padjadjaran</p>
+        <a href="https://www.linkedin.com/in/farisadri-fauzan?jobid=1234&lipi=urn%3Ali%3Apage%3Ad_jobs_easyapply_pdfgenresume%3BiUy%2F8p6dQZymPDDv88Adiw%3D%3D&licu=urn%3Ali%3Acontrol%3Ad_jobs_easyapply_pdfgenresume-v02_profile" target="_blank"><img class="logo-linkedin" src="{{ URL::asset('icon/linkedin.svg') }}" alt="linkedin"></a>
     </div>
-    <!-- <div class="col-3">
-        <a href=""><img class="logo-linkedin" src="{{ URL::asset('icon/linkedin.svg') }}" alt="linkedin"></a>
-    </div> -->
 </div>
 @endsection
 
