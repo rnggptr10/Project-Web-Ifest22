@@ -491,6 +491,9 @@
             <a>
                 <img src="{{asset('img/logo/sponsor/collab_itsec.png')}}" alt="ITSEC" class="logo-sponsor-m" style="height:55px">
             </a>
+            <a>
+                <img src="{{asset('img/logo/sponsor/collab_docheck.jpeg')}}" alt="DoCheck" class="logo-sponsor-m" style="height:90px">
+            </a>
         </div>
     </div>
 </div>
