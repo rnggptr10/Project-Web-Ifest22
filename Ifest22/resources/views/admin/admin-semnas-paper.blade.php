@@ -40,7 +40,9 @@
                                 <td><input name="semnas_email" id="semnas_email" value="{{ $data->email }}" hidden>{{ $data->email }}</td>
                                 <td>{{ $data->name }}</td>
                                 <td>{{ $data->institute }}</td>
-                                <td><a href="{{$data->abstract_link}}">Abstract Link</a></td>
+                                <td>
+                                    <a href="{{$data->abstract_link}}" target="_blank">Abstract Link</a>
+                                </td>
                                 <td>
                                     <div class="btn-group">
                                         <select name="semnas_selected_status" id="semnas_selected_status"
@@ -89,14 +91,14 @@
                                     @if($data->paper1_link == null)
                                         Not Uploaded
                                     @else
-                                        <a href="{{$data->paper1_link}}">Paper Link 1</a>
+                                        <a href="{{$data->paper1_link}}" target="_blank">Paper Link 1</a>
                                     @endif
                                 </td>
                                 <td>
                                     @if($data->paper2_link == null)
                                         Not Uploaded
                                     @else
-                                        <a href="{{$data->paper2_link}}">Paper Link 2</a>
+                                        <a href="{{$data->paper2_link}}" target="_blank">Paper Link 2</a>
                                     @endif
                                 </td>
                             </form>

@@ -128,14 +128,14 @@
                                     </td>
                                     <td>
                                         @if ($data->paper_link !== null)
-                                            <a href="">{{ $data->paper_link }}</a>
+                                            <a href="{{ $data->paper_link }}" target="_blank">Link Paper</a>
                                         @else
                                             Not Uploaded
                                         @endif
                                     </td>
                                     <td>
                                         @if ($data->analytics_result !== null)
-                                            <a href="">{{ $data->analytics_result }}</a>
+                                            <a href="{{ $data->analytics_result }}" target="_blank">Link Analisis</a>
                                         @else
                                             Not Uploaded
                                         @endif

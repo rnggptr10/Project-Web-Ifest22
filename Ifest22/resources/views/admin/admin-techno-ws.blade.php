@@ -128,21 +128,21 @@
                                     </td>
                                     <td>
                                         @if ($data->proposal_link !== null)
-                                            <a href="{{ $data->proposal_link }}">Link Proposal</a>
+                                            <a href="{{ $data->proposal_link }}" target="_blank">Link Proposal</a>
                                         @else
                                             Not Uploaded
                                         @endif
                                     </td>
                                     <td>
                                         @if ($data->pitcdeck1_link !== null)
-                                            <a href="{{ $data->pitcdeck1_link }}">Link Pitchdeck 1</a>
+                                            <a href="{{ $data->pitcdeck1_link }}" target="_blank">Link Pitchdeck 1</a>
                                         @else
                                             Not Uploaded
                                         @endif
                                     </td>
                                     <td>
                                         @if ($data->pitcdeck2_link !== null)
-                                            <a href="{{ $data->pitcdeck2_link }}">Link Pitchdeck 2</a>
+                                            <a href="{{ $data->pitcdeck2_link }}" target="_blank">Link Pitchdeck 2</a>
                                         @else
                                             Not Uploaded
                                         @endif

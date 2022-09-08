@@ -27,6 +27,7 @@
                             <th scope="col">Anggota 2</th>
                             <th scope="col">Bukti Bayar</th>
                             <th scope="col">Status Konfirmasi</th>
+                            <th scope="col">Link WriteUp</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -72,6 +73,13 @@
                                                 <option class="dd-red" value="0" <?php if($data->status_pembayaran === '0') {echo('selected');}?>>Declined</option>
                                             </select>
                                         </div>
+                                    </td>
+                                    <td>
+                                        @if ($data->writeup_link !== null)
+                                            <a href="{{ $data->writeup_link }}" target="_blank">Link WriteUp</a>
+                                        @else
+                                            Not Uploaded
+                                        @endif
                                     </td>
                                 </form>
                             </tr>
