@@ -454,7 +454,7 @@ Technopreneur is a webinar and workshop that provides training & development fac
                 <?php
                 // SET TANGGAL REGIST TECHNO SEMINAR & WORKSHOP
                 $techno_regist_start = Carbon::create(2022, 7, 24, 00, 00, 01, 'Asia/Jakarta');
-                $techno_regist_end = Carbon::create(2022, 9, 8, 23, 59, 59, 'Asia/Jakarta');
+                $techno_regist_end = Carbon::create(2022, 9, 10, 23, 59, 59, 'Asia/Jakarta');
                 $now = Carbon::now('Asia/Jakarta');
 
                 $techno_regist_start->toDateTimeString();

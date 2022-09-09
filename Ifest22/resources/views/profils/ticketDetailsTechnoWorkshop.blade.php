@@ -88,7 +88,7 @@
 
                     // SET TANGGAL UPLOAD PROPOSAL
                     $techno_ws_proposal_date_start = Carbon::create(2022, 7, 24, 00, 00, 01, 'Asia/Jakarta');
-                    $techno_ws_proposal_date_end = Carbon::create(2022, 9, 8, 23, 59, 59, 'Asia/Jakarta');
+                    $techno_ws_proposal_date_end = Carbon::create(2022, 9, 10, 23, 59, 59, 'Asia/Jakarta');
                     $techno_ws_proposal_date_start->toDateTimeString(); 
                     $techno_ws_proposal_date_end->toDateTimeString(); 
 
