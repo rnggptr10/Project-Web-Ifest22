@@ -245,8 +245,8 @@
                                     </div>
                                     <?php
                                     // SET TANGGAL ACARA SEMNAS DAY 1
-                                    $semnas_day1_date_start = Carbon::create(2022, 10, 8, 10, 00, 00, 'Asia/Jakarta');
-                                    $semnas_day1_date_end = Carbon::create(2022, 10, 8, 13, 00, 00, 'Asia/Jakarta');
+                                    $semnas_day1_date_start = Carbon::create(2022, 10, 9, 8, 00, 00, 'Asia/Jakarta');
+                                    $semnas_day1_date_end = Carbon::create(2022, 10, 9, 14, 00, 00, 'Asia/Jakarta');
 
                                     $semnas_day1_date_start->toDateTimeString();
                                     $semnas_day1_date_end->toDateTimeString();
@@ -288,8 +288,8 @@
                                     </div>
                                     <?php
                                     // SET TANGGAL ACARA SEMNAS DAY 2
-                                    $semnas_day2_date_start = Carbon::create(2022, 10, 9, 10, 00, 00, 'Asia/Jakarta');
-                                    $semnas_day2_date_end = Carbon::create(2022, 10, 9, 12, 00, 00, 'Asia/Jakarta');
+                                    $semnas_day2_date_start = Carbon::create(2022, 10, 16, 8, 00, 00, 'Asia/Jakarta');
+                                    $semnas_day2_date_end = Carbon::create(2022, 10, 16, 14, 00, 00, 'Asia/Jakarta');
 
                                     $semnas_day2_date_start->toDateTimeString();
                                     $semnas_day2_date_end->toDateTimeString();

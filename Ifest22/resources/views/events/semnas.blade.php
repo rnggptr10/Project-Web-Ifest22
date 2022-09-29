@@ -233,7 +233,7 @@ Seminar Nasional is a national seminar that invites experienced speakers in thos
                     <img class="img-fluid events-card-logo" src="{{ URL::asset('icon/date.png') }}" alt="Date">
                 </div>
                 <div class="col-10" style="text-align: left;">
-                    <h5 style="color:black;margin:0;">8 - 9 October 2022</h5>
+                    <h5 style="color:black;margin:0;">9 & 16 October 2022</h5>
                 </div>
             </div>
         </div>
@@ -251,7 +251,7 @@ Seminar Nasional is a national seminar that invites experienced speakers in thos
                 <?php
                 // SET TANGGAL REGIST SEMINAR NASIONAL NONPRESENTER
                 $semnas_s_regist_start = Carbon::create(2022, 7, 24, 00, 00, 01, 'Asia/Jakarta');
-                $semnas_s_regist_end = Carbon::create(2022, 10, 7, 23, 59, 59, 'Asia/Jakarta');
+                $semnas_s_regist_end = Carbon::create(2022, 10, 8, 23, 59, 59, 'Asia/Jakarta');
                 $now = Carbon::now('Asia/Jakarta');
 
                 $semnas_s_regist_start->toDateTimeString();
