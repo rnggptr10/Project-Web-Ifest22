@@ -37,15 +37,14 @@ Seminar Nasional is a national seminar that invites experienced speakers in thos
 @endsection
 
 @section('semnas_speakers_2')
-<img class="card-img-top size-img-top-speakers" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg" alt="Speakers-1">
+<img class=" card-img-top size-img-top-speakers" src="{{ asset('img/event/semnas/speaker_2.jpg') }}" alt="Anugerah Pratama">
 <div class="row card-body justify-content-center align-items-center" style="padding: 20px 0 20px 0;">
-    <div class="col-7" style="line-height: 5px;">
-        <h5 class="text-photo-card-name" style="margin-top:16.5px; margin-bottom:16.5px">To Be Announced Soon!</h5>
-        <!-- <h5 class="text-photo-card-name">Speaker2</h5>
-        <p class="text-photo-card-position">CEO</p> -->
+    <div class="col-9" style="line-height: 5px;">
+        <h5 class="text-photo-card-name">Anugerah Pratama</h5>
+        <p class="text-photo-card-position">Cloud Infra Engineer Indonesian Cloud</p>
     </div>
-    <!-- <div class="col-3">
-        <a href=""><img class="logo-linkedin" src="{{ URL::asset('icon/linkedin.svg') }}" alt="linkedin"></a>
+    <!-- <div class="col-2" style="padding:0;" align="left">
+        <a href="" target="_blank"><img class="logo-linkedin" src="{{ URL::asset('icon/linkedin.svg') }}" alt="linkedin"></a>
     </div> -->
 </div>
 @endsection

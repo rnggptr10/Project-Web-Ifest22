@@ -39,13 +39,13 @@
                 <p>seconds</p>
             </div>
         </div>
-        <p class="title-cd" style="margin:0">Technopreneur</p>
+        <p class="title-cd" style="margin:0">Seminar Nasional</p>
         <!-- <h3>International Conference</h3> -->
         <div class="conference-btn">
 
             <!-- <a href="{{ route('semnas') }}"><span class="register">Register</span></a> -->
             <!-- <a href="{{ route('semnas') }}"><span class="register">See Details</span></a> -->
-            <a href="{{ route('startup') }}"><span class="details" id="details" style="color:#fff; border-color:#fff;">Details</span></a>
+            <a href="{{ route('semnas') }}"><span class="details" id="details" style="color:#fff; border-color:#fff;">Details</span></a>
         </div>
     </div>
 </div>
@@ -75,7 +75,7 @@
             </div>
             <div class="col-sm-4">
                 <div class="title-countdown">
-                    <p style="margin:0">Technopreneur</p>
+                    <p style="margin:0">Seminar Nasional</p>
                 </div>
             </div>
             <div class="col-sm-4">
@@ -329,22 +329,22 @@
                 <div class="carousel-item active" style="background-color: transparent;">
                     <div class="speaker">
                         <div class="img-speakers">
-                            <img class="align-self-center rm-3" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg" alt="Generic placeholder image">
+                            <img class="align-self-center rm-3" src="{{ asset('img/event/semnas/speaker_1.jpg') }}" alt="Octaviano Pratama">
                         </div>
                         <div class="media-body">
-                            <h5 class="mt-0">Speaker 1</h5>
-                            <p>To Be Announced Soon!</p>
+                            <h5 class="mt-0">Octaviano Pratama</h5>
+                            <p>Our Seminar Speaker at Seminar Nasional with the theme "Cloud Computing for Digital Era". Position as Direktur Utama BISA AI Academy.</p>
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item" style="background-color: transparent;">
                     <div class="speaker">
                         <div class="img-speakers">
-                            <img class="align-self-center rm-3" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg" alt="Generic placeholder image">
+                            <img class="align-self-center rm-3" src="{{ asset('img/event/semnas/speaker_2.jpg') }}" alt="Anugerah Pratama">
                         </div>
                         <div class="media-body">
-                            <h5 class="mt-0">Speaker 2</h5>
-                            <p>To Be Announced Soon!</p>
+                            <h5 class="mt-0">Anugerah Pratama</h5>
+                            <p>Our Seminar Speaker at Seminar Nasional with the theme "Cloud Computing for Digital Era". Position as Cloud Infra Engineer Indonesian Cloud.</p>
                         </div>
                     </div>
                 </div>
@@ -493,6 +493,12 @@
             </a>
             <a>
                 <img src="{{asset('img/logo/sponsor/collab_docheck.jpeg')}}" alt="DoCheck" class="logo-sponsor-m" style="height:90px">
+            </a>
+            <a>
+                <img src="{{asset('img/logo/sponsor/collab_indocloud.jpg')}}" alt="Indonesian Cloud" class="logo-sponsor-m" style="height:55px">
+            </a>
+            <a>
+                <img src="{{asset('img/logo/sponsor/collab_bisaai.png')}}" alt="Bisa AI" class="logo-sponsor-m" style="height:55px">
             </a>
         </div>
     </div>
