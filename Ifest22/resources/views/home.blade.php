@@ -351,11 +351,11 @@
                 <div class="carousel-item" style="background-color: transparent;">
                     <div class="speaker">
                         <div class="img-speakers">
-                            <img class="align-self-center rm-3" src="https://archpainting.com/wp-content/uploads/2017/02/empty-profile-pic.jpg  " alt="Generic placeholder image">
+                            <img class="align-self-center rm-3" src="{{ asset('img/event/semnas/speaker_3.jpg') }}" alt="Zufar Dhiyaulhaq">
                         </div>
                         <div class="media-body">
-                            <h5 class="mt-0">Speaker 3</h5>
-                            <p>To Be Announced Soon!</p>
+                            <h5 class="mt-0">Zufar Dhiyaulhaq</h5>
+                            <p>Our Seminar Speaker at Seminar Nasional with the theme "Cloud Computing for Digital Era". Position as Cloud Platform Engineer GoTo Financial.</p>
                         </div>
                     </div>
                 </div>
